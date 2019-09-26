@@ -1,0 +1,711 @@
+[{
+    "author": "Daniel Weinberger",
+    "featured": false,
+    "id": "android-messages",
+    "name": "Android Messages",
+    "version": "1.2.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/android-messages/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/android-messages/src/icon.svg"
+    }
+}, {
+    "author": "Koma",
+    "featured": false,
+    "id": "chatwork",
+    "name": "chatwork",
+    "version": "1.0.3",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/chatwork/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/chatwork/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "ciscospark",
+    "name": "Cisco Spark",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/ciscospark/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/ciscospark/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "franz-custom-website",
+    "name": "Custom Website",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/franz-custom-website/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/franz-custom-website/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "discord",
+    "name": "Discord",
+    "version": "1.0.3",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/discord/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/discord/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "facebookpages",
+    "name": "Facebook Pages",
+    "version": "1.1.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/facebookpages/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/facebookpages/src/icon.svg"
+    }
+}, {
+    "author": "Alan Plum <me@pluma.io>",
+    "featured": false,
+    "id": "fastmail",
+    "name": "FastMail",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/fastmail/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/fastmail/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "flowdock",
+    "name": "Flowdock",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/flowdock/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/flowdock/src/icon.svg"
+    }
+}, {
+    "author": "Wojciech Zięciak <wojciech.zieciak@gmail.com>",
+    "featured": false,
+    "id": "gadugadu",
+    "name": "Gadu-Gadu",
+    "version": "1.0.2",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/gadugadu/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/gadugadu/src/icon.svg"
+    }
+}, {
+    "author": "Sudhir Ganesan",
+    "featured": false,
+    "id": "github",
+    "name": "GitHub",
+    "version": "1.0.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/github/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/github/src/icon.svg"
+    }
+}, {
+    "author": "Brian Gilbert <brian@briangilbert.net>",
+    "featured": false,
+    "id": "gitter",
+    "name": "Gitter",
+    "version": "1.0.2",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/gitter/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/gitter/src/icon.svg"
+    }
+}, {
+    "author": "Jonathan Juursema <dev@jonathanj.nl>",
+    "featured": false,
+    "id": "glowingbear",
+    "name": "Glowing Bear",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/glowingbear/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/glowingbear/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "gmail",
+    "name": "Gmail",
+    "version": "1.1.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/gmail/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/gmail/src/icon.svg"
+    }
+}, {
+    "author": "SiloCityLabs LLC",
+    "featured": false,
+    "id": "googleallo",
+    "name": "Google Allo",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/googleallo/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/googleallo/src/icon.svg"
+    }
+}, {
+    "author": "Rico Herwig <rherwig4711@gmail.com>",
+    "featured": false,
+    "id": "googlecalendar",
+    "name": "Google Calendar",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/googlecalendar/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/googlecalendar/src/icon.svg"
+    }
+}, {
+    "author": "SiloCityLabs LLC",
+    "featured": false,
+    "id": "googlekeep",
+    "name": "Google Keep",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/googlekeep/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/googlekeep/src/icon.svg"
+    }
+}, {
+    "author": "Behind The Math <behindthemath@gmail.com>",
+    "featured": false,
+    "id": "ex-google-voice",
+    "name": "Google Voice",
+    "version": "0.3.2",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/ex-google-voice/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/ex-google-voice/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "grape",
+    "name": "Grape",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/grape/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/grape/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "groupme",
+    "name": "GroupMe",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/groupme/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/groupme/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "hangouts",
+    "name": "Hangouts",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/hangouts/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/hangouts/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "hangoutschat",
+    "name": "Hangouts Chat",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/hangoutschat/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/hangoutschat/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "hipchat",
+    "name": "HipChat",
+    "version": "1.0.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/hipchat/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/hipchat/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "icq",
+    "name": "ICQ",
+    "version": "1.0.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/icq/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/icq/src/icon.svg"
+    }
+}, {
+    "author": "",
+    "featured": false,
+    "id": "idobata",
+    "name": "Idobata",
+    "version": "0.1.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/idobata/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/idobata/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "gmailinbox",
+    "name": "Inbox by Gmail",
+    "version": "1.0.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/gmailinbox/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/gmailinbox/src/icon.svg"
+    }
+}, {
+    "author": "Alberto Murillo <albertomurillosilva@gmail.com>",
+    "featured": false,
+    "id": "irccloud",
+    "name": "IRCCloud",
+    "version": "1.0.2",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/irccloud/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/irccloud/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "linkedin",
+    "name": "LinkedIn",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/linkedin/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/linkedin/src/icon.svg"
+    }
+}, {
+    "author": "Jonas Hilke <jonashilke@gmail.com>",
+    "featured": false,
+    "id": "mailbox.org",
+    "name": "mailbox.org",
+    "version": "1.1.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/mailbox.org/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/mailbox.org/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "mattermost",
+    "name": "Mattermost",
+    "version": "1.2.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/mattermost/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/mattermost/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "messenger",
+    "name": "Messenger",
+    "version": "1.0.8",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/messenger/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/messenger/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "kaizala",
+    "name": "Microsoft Kaizala",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/kaizala/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/kaizala/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "msteams",
+    "name": "Microsoft Teams",
+    "version": "1.1.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/msteams/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/msteams/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "mysms",
+    "name": "MySMS",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/mysms/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/mysms/src/icon.svg"
+    }
+}, {
+    "author": "Adam Birds <adam.birds@adbtechltd.co.uk>",
+    "featured": false,
+    "id": "office365-owa",
+    "name": "Office 365 - Outlook",
+    "version": "1.0.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/office365-owa/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/office365-owa/src/icon.svg"
+    }
+}, {
+    "author": "Wouter Van Speybroeck <wouter.van.speybroeck@gmail.com>",
+    "featured": false,
+    "id": "outlook",
+    "name": "Outlook",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/outlook/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/outlook/src/icon.svg"
+    }
+}, {
+    "author": "YWJamesLin <ywjameslin.ga>",
+    "featured": false,
+    "id": "plurk",
+    "name": "Plurk",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/plurk/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/plurk/src/icon.svg"
+    }
+}, {
+    "author": "Diego bersanetti <diego.bersanetti@gmail.com>",
+    "featured": false,
+    "id": "pocket",
+    "name": "Pocket",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/pocket/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/pocket/src/icon.svg"
+    }
+}, {
+    "author": "Lukas Reineke <lukas.reineke@protonmail.com>",
+    "featured": false,
+    "id": "proton-mail",
+    "name": "proton-mail",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/proton-mail/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/proton-mail/src/icon.svg"
+    }
+}, {
+    "author": "Nico Rodriguez <nrodriguez25@github.io>",
+    "featured": false,
+    "id": "pulseSMS",
+    "name": "Pulse SMS",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/pulseSMS/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/pulseSMS/src/icon.svg"
+    }
+}, {
+    "author": "Diego bersanetti <diego.bersanetti@gmail.com>",
+    "featured": false,
+    "id": "pushbullet",
+    "name": "Pushbullet",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/pushbullet/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/pushbullet/src/icon.svg"
+    }
+}, {
+    "author": "Marcel Deglau <me@marceldeglau.de>",
+    "featured": false,
+    "id": "rainloop",
+    "name": "RainLoop",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/rainloop/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/rainloop/src/icon.svg"
+    }
+}, {
+    "author": "Sylvain Cecchetto <cecchetto.sylvain@me.com>",
+    "featured": false,
+    "id": "riot",
+    "name": "Riot",
+    "version": "1.0.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/riot/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/riot/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "rocketchat",
+    "name": "Rocket.Chat",
+    "version": "1.0.6",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/rocketchat/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/rocketchat/src/icon.svg"
+    }
+}, {
+    "author": "Jonathan Juursema <dev@jonathanj.nl>",
+    "featured": false,
+    "id": "roundcube",
+    "name": "Roundcube",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/roundcube/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/roundcube/src/icon.svg"
+    }
+}, {
+    "author": "Patrick Daniel",
+    "featured": false,
+    "id": "sendtask",
+    "name": "Sendtask",
+    "version": "1.0.2",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/sendtask/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/sendtask/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "skype",
+    "name": "Skype",
+    "version": "1.1.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/skype/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/skype/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "slack",
+    "name": "Slack",
+    "version": "1.0.9",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/slack/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/slack/src/icon.svg"
+    }
+}, {
+    "author": "Max Stoiber",
+    "featured": false,
+    "id": "withspectrum",
+    "name": "Spectrum",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/withspectrum/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/withspectrum/src/icon.svg"
+    }
+}, {
+    "author": "Kevin Oestmark <yo@kevin.am>",
+    "featured": false,
+    "id": "steamchat",
+    "name": "SteamChat",
+    "version": "1.0.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/steamchat/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/steamchat/src/icon.svg"
+    }
+}, {
+    "author": "Tobias Theobald <tobitheo@gmail.com>",
+    "featured": false,
+    "id": "stride",
+    "name": "Stride",
+    "version": "1.1.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/stride/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/stride/src/icon.svg"
+    }
+}, {
+    "author": "Brian Gilbert <brian@briangilbert.net>",
+    "featured": false,
+    "id": "tawk",
+    "name": "Tawk.to",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/tawk/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/tawk/src/icon.svg"
+    }
+}, {
+    "author": "Retzudo <https://github.com/Retzudo/>, Ported by Koma <https://github.com/koma-private/>",
+    "featured": false,
+    "id": "teamwork-projects",
+    "name": "Teamwork Projects",
+    "version": "0.1.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/teamwork-projects/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/teamwork-projects/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "telegram",
+    "name": "Telegram",
+    "version": "1.0.5",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/telegram/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/telegram/src/icon.svg"
+    }
+}, {
+    "author": "Jonathan Juursema <dev@jonathanj.nl>",
+    "featured": false,
+    "id": "thelounge",
+    "name": "The Lounge",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/thelounge/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/thelounge/src/icon.svg"
+    }
+}, {
+    "author": "Anna Damm <Arany@users.noreply.github.com>",
+    "featured": false,
+    "id": "threema",
+    "name": "Threema",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/threema/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/threema/src/icon.svg"
+    }
+}, {
+    "author": "Alex Ward <alex@alexward.me.uk>, Mike Burke <mburke@dmwtechnology.com>",
+    "featured": false,
+    "id": "todoist",
+    "name": "Todoist",
+    "version": "1.1.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/todoist/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/todoist/src/icon.svg"
+    }
+}, {
+    "author": "Franz <recipe@meetfranz.com>",
+    "featured": false,
+    "id": "toggl",
+    "name": "toggl",
+    "version": "1.0.1",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/toggl/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/toggl/src/icon.svg"
+    }
+}, {
+    "author": "Thom van Hal <thom@thvmh.nl>",
+    "featured": false,
+    "id": "trello",
+    "name": "Trello",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/trello/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/trello/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "tweetdeck",
+    "name": "Tweetdeck",
+    "version": "1.0.2",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/tweetdeck/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/tweetdeck/src/icon.svg"
+    }
+}, {
+    "author": "Stuart Clark <stuart@realityloop.com>",
+    "featured": false,
+    "id": "twist",
+    "name": "twist",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/twist/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/twist/src/icon.svg"
+    }
+}, {
+    "author": "Colin O'Dell <colinodell@gmail.com>; RedbackThomson <redbackthomson@hotmail.com>",
+    "featured": false,
+    "id": "twitch",
+    "name": "Twitch",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/twitch/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/twitch/src/icon.svg"
+    }
+}, {
+    "author": "Pieter Levels <hi@levels.io>, Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "twitter-dm",
+    "name": "Twitter DM",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/twitter-dm/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/twitter-dm/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "vk",
+    "name": "VK",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/vk/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/vk/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "voxer",
+    "name": "Voxer",
+    "version": "1.0.2",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/voxer/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/voxer/src/icon.svg"
+    }
+}, {
+    "author": "Koma",
+    "featured": false,
+    "id": "wechat",
+    "name": "WeChat",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/wechat/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/wechat/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "version": "1.0.17",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/whatsapp/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/whatsapp/src/icon.svg"
+    }
+}, {
+    "author": "Rico Herwig <rherwig4711@gmail.com>",
+    "featured": false,
+    "id": "workplace",
+    "name": "Workplace",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/workplace/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/workplace/src/icon.svg"
+    }
+}, {
+    "author": "Volker Tietz <volker.tietz@gmail.com>",
+    "featured": false,
+    "id": "xing",
+    "name": "XING",
+    "version": "1.1.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/xing/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/xing/src/icon.svg"
+    }
+}, {
+    "author": "Dave Reid <dave@davereid.net>",
+    "featured": false,
+    "id": "yammer",
+    "name": "Yammer",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/yammer/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/yammer/src/icon.svg"
+    }
+}, {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "zendesk",
+    "name": "zendesk",
+    "version": "1.0.2",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/zendesk/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/zendesk/src/icon.svg"
+    }
+}, {
+    "author": "Adam Birds <adam.birds@adbtechltd.co.uk>",
+    "featured": false,
+    "id": "zulip",
+    "name": "Zulip",
+    "version": "1.0.0",
+    "icons": {
+        "png": "https://cdn.franzinfra.com/recipes/dist/zulip/src/icon.png",
+        "svg": "https://cdn.franzinfra.com/recipes/dist/zulip/src/icon.svg"
+    }
+}]
