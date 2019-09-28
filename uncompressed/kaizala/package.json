@@ -1,0 +1,14 @@
+{
+  "id": "kaizala",
+  "name": "Microsoft Kaizala",
+  "version": "1.0.0",
+  "description": "Microsoft Kaizala",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "repository": "https://github.com/meetfranz/recipe-microsoft-kaizala",
+  "config": {
+    "serviceURL": "https://webapp.kaiza.la",
+    "hasNotificationSound": true
+  }
+}

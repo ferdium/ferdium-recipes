@@ -1,0 +1,16 @@
+{
+  "id": "chatwork",
+  "name": "ChatWork",
+  "version": "1.0.3",
+  "description": "ChatWork is a group chat app for business.",
+  "main": "index.js",
+  "author": "Koma, hideosasaki",
+  "license": "MIT",
+  "repository": "https://github.com/hideosasaki/recipe-chatwork",
+  "config": {
+    "serviceURL": "https://www.chatwork.com/login.php",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  },
+  "openDevTools": true
+}

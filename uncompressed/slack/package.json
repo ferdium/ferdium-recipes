@@ -1,0 +1,17 @@
+{
+  "id": "slack",
+  "name": "Slack",
+  "version": "1.0.9",
+  "description": "Slack",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://{teamId}.slack.com",
+    "hasNotificationSound": true,
+    "hasDirectMessages": true,
+    "hasIndirectMessages": true,
+    "hasTeamId": true,
+    "urlInputSuffix": ".slack.com"
+  }
+}

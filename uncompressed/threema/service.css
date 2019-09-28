@@ -1,0 +1,17 @@
+header, #status-bar {
+    display: none;
+}
+
+div#main-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    max-width: 100% !important;
+}
+div#main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+}

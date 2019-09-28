@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Made by gio1135 using Gravit.io -->
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='isolation:isolate' viewBox='0 0 800 800' width='800' height='800'>
+  <defs>
+    <clipPath id='_clipPath_WSMg3MB2SE1NraJ1nyjih3IvGqHIGkkg'>
+      <rect width='800' height='800' />
+    </clipPath>
+  </defs>
+  <g clip-path='url(#_clipPath_WSMg3MB2SE1NraJ1nyjih3IvGqHIGkkg)'>
+    <mask id='_mask_2BvtN9yaMg7qtna9I8S2XY65cqmsSlGm'>
+      <path d=' M 800 400 C 800 179.234 620.766 0 400 0 C 179.234 0 0 179.234 0 400 C 0 620.766 179.234 800 400 800 Q 402.471 800 724.438 800 C 766.142 800 800 766.142 800 724.438 Q 800 402.471 800 400 Z ' fill='white' stroke='none' />
+    </mask>
+    <linearGradient id='_lgradient_6' x1='0%' y1='50%' x2='6.123233995736766e-15%' y2='150%'>
+      <stop offset='0%' stop-opacity='1' style='stop-color:rgb(246,200,68)' />
+      <stop offset='22.17391304347826%' stop-opacity='1' style='stop-color:rgb(244,186,21)' />
+      <stop offset='100%' stop-opacity='1' style='stop-color:rgb(195,149,17)' />
+    </linearGradient>
+    <path d=' M 800 400 C 800 179.234 620.766 0 400 0 C 179.234 0 0 179.234 0 400 C 0 620.766 179.234 800 400 800 Q 402.471 800 724.438 800 C 766.142 800 800 766.142 800 724.438 Q 800 402.471 800 400 Z ' fill='rgb(244,186,21)' mask='url(#_mask_2BvtN9yaMg7qtna9I8S2XY65cqmsSlGm)' vector-effect='non-scaling-stroke' stroke-width='8' stroke='url(#_lgradient_6)' stroke-linejoin='round' stroke-linecap='round' stroke-miterlimit='3' />
+    <path d=' M 526 800 Q 527.511 800 724.438 800 C 766.142 800 800 766.142 800 724.438 Q 800 525.526 800 524 L 549.421 273.421 L 274.421 548.421 L 526 800 L 526 800 Z ' fill='rgb(0,0,0)' fill-opacity='0.1' />
+    <defs>
+      <filter id='AGwOQbVrNSbfUAymiSmBjNxoViV51mlH' x='-200%' y='-200%' width='400%' height='400%'>
+        <feGaussianBlur stdDeviation='8.587218125678056' />
+      </filter>
+    </defs>
+    <g filter='url(#AGwOQbVrNSbfUAymiSmBjNxoViV51mlH)'>
+      <path d=' M 600 409 C 600 298.617 510.383 209 400 209 C 289.617 209 200 298.617 200 409 C 200 519.383 289.617 609 400 609 C 452.899 609 501.029 588.418 536.812 554.833 L 582 603 Q 587.144 606.248 590 605 Q 592.782 603.785 594 598 Q 600 413.326 600 409 Z ' fill='rgb(0,0,0)' fill-opacity='0.2' />
+    </g>
+    <linearGradient id='_lgradient_7' x1='49.0990990990991%' y1='50%' x2='50.00000000000002%' y2='100%'>
+      <stop offset='0%' stop-opacity='1' style='stop-color:rgb(255,255,255)' />
+      <stop offset='100%' stop-opacity='1' style='stop-color:rgb(221,221,221)' />
+    </linearGradient>
+    <path d=' M 600 400 C 600 289.617 510.383 200 400 200 C 289.617 200 200 289.617 200 400 C 200 510.383 289.617 600 400 600 C 452.899 600 501.029 579.418 536.812 545.833 L 582 594 Q 587.144 597.248 590 596 Q 592.782 594.785 594 589 Q 600 404.326 600 400 Z ' fill='rgb(255,255,255)' vector-effect='non-scaling-stroke' stroke-width='2' stroke='url(#_lgradient_7)' stroke-linejoin='miter' stroke-linecap='square' stroke-miterlimit='3' />
+    <path d=' M 599.995 398.637 C 599.254 289.984 509.923 202 400 202 C 289.617 202 200 290.721 200 400 L 400 400 L 599.995 398.637 Z ' fill='rgb(0,0,0)' fill-opacity='0.1' />
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "id": "pulseSMS",
+  "name": "Pulse SMS",
+  "version": "1.0.0",
+  "description": "Pulse SMS",
+  "main": "index.js",
+  "author": "Nico Rodriguez <nrodriguez25@github.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://messenger.klinkerapps.com/login.html",
+    "hasNotificationSound": true
+  }
+}

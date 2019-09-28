@@ -1,0 +1,13 @@
+{
+    "id": "outlook",
+    "name": "Outlook",
+    "version": "1.0.0",
+    "description": "Outlook Web App",
+    "main": "index.js",
+    "author": "Wouter Van Speybroeck <wouter.van.speybroeck@gmail.com>",
+    "repository": "",
+    "license": "MIT",
+    "config": {
+        "serviceURL": "https://outlook.live.com/owa/"
+    }
+}

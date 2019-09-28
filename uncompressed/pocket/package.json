@@ -1,0 +1,12 @@
+{
+  "id": "pocket",
+  "name": "Pocket",
+  "version": "1.0.0",
+  "description": "Pocket",
+  "main": "index.js",
+  "author": "Diego bersanetti <diego.bersanetti@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://getpocket.com/a/queue/list/"
+  }
+}

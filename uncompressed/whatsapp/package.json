@@ -1,0 +1,13 @@
+{
+  "id": "whatsapp",
+  "name": "WhatsApp",
+  "version": "1.0.17",
+  "description": "WhatsApp",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://web.whatsapp.com",
+    "hasNotificationSound": true
+  }
+}

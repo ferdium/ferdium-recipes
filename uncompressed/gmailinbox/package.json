@@ -1,0 +1,12 @@
+{
+  "id": "gmailinbox",
+  "name": "Inbox by Gmail",
+  "version": "1.0.1",
+  "description": "Inbox by Gmail",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://inbox.google.com/"
+  }
+}

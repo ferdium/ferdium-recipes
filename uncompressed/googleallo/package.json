@@ -1,0 +1,13 @@
+{
+  "id": "googleallo",
+  "name": "Google Allo",
+  "version": "1.0.0",
+  "description": "Google Allo",
+  "main": "index.js",
+  "author": "SiloCityLabs LLC",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://allo.google.com/web",
+    "hasNotificationSound": true
+  }
+}

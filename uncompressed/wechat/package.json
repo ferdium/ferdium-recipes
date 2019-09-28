@@ -1,0 +1,15 @@
+{
+  "id": "wechat",
+  "name": "WeChat",
+  "version": "1.0.0",
+  "description": "Instant messaging",
+  "main": "index.js",
+  "author": "Koma",
+  "license": "MIT",
+  "repository": "https://github.com/koma-private/recipe-wechat",
+  "config": {
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true,
+    "serviceURL": "https://web.wechat.com/"
+  }
+}

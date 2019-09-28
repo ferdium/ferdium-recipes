@@ -1,0 +1,14 @@
+{
+  "id": "fastmail",
+  "name": "FastMail",
+  "version": "1.0.0",
+  "description": "Email, calendars and contacts done right.",
+  "main": "index.js",
+  "author": "Alan Plum <me@pluma.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.fastmail.com/mail/",
+    "message":
+      "Get private, secure, ad-free email hosting for you or your business"
+  }
+}

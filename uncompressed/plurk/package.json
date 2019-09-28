@@ -1,0 +1,12 @@
+{
+  "id": "plurk",
+  "name": "Plurk",
+  "version": "1.0.0",
+  "description": "Plurk intergration of Franz",
+  "main": "index.js",
+  "author": "YWJamesLin <ywjameslin.ga>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.plurk.com"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "facebookpages",
+  "name": "Facebook Pages",
+  "version": "1.1.0",
+  "description": "Facebook Pages",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://facebook.com/{teamId}/inbox",
+    "urlInputPrefix": "https://facebook.com/",
+    "hasNotificationSound": true,
+    "hasTeamId": true,
+    "message": "Insert your page name in team, e.g. meetfranz"
+  }
+}

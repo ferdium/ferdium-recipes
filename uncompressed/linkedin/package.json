@@ -1,0 +1,12 @@
+{
+  "id": "linkedin",
+  "name": "LinkedIn",
+  "version": "1.0.0",
+  "description": "LinkedIn",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.linkedin.com/messaging"
+  }
+}

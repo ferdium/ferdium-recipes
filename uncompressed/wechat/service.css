@@ -1,0 +1,9 @@
+.main {
+  padding-top: 0;
+  height: 100vh;
+}
+
+.main_inner {
+  margin: 0;
+  max-width: 100%;
+}

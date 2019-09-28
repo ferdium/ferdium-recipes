@@ -1,0 +1,12 @@
+{
+  "id": "googlekeep",
+  "name": "Google Keep",
+  "version": "1.0.0",
+  "description": "Google Keep",
+  "main": "index.js",
+  "author": "SiloCityLabs LLC",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://keep.google.com/"
+  }
+}

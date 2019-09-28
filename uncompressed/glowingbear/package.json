@@ -1,0 +1,14 @@
+{
+  "id": "glowingbear",
+  "name": "Glowing Bear",
+  "version": "1.0.0",
+  "description": "Glowing Bear - WeeChat web frontend",
+  "main": "index.js",
+  "author": "Jonathan Juursema <dev@jonathanj.nl>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.glowing-bear.org",
+    "hasNotificationSound": true,
+	"hasIndirectMessages": true
+  }
+}

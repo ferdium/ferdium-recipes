@@ -1,0 +1,14 @@
+{
+  "id": "todoist",
+  "name": "Todoist",
+  "version": "1.1.0",
+  "description": "todoist plugin for Franz 5",
+  "main": "index.js",
+  "author": "Alex Ward <alex@alexward.me.uk>, Mike Burke <mburke@dmwtechnology.com>",
+  "license": "MIT",
+  "repository": "https://github.com/meetfranz/recipe-todoist",
+  "config": {
+    "serviceURL": "https://todoist.com/app",
+    "hasIndirectMessages": true
+  }
+}

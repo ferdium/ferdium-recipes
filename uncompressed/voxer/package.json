@@ -1,0 +1,13 @@
+{
+  "id": "voxer",
+  "name": "Voxer",
+  "version": "1.0.2",
+  "description": "Voxer",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://web.voxer.com",
+    "hasNotificationSound": true
+  }
+}

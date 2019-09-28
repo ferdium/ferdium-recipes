@@ -1,0 +1,16 @@
+#topbar {
+    display: none;
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    height: 100%;
+}
+
+.block {
+    height: calc(100% - 65px);
+}

@@ -1,0 +1,23 @@
+{
+  "id": "gitter",
+  "name": "Gitter",
+  "version": "1.0.2",
+  "description": "Gitter",
+  "main": "index.js",
+  "author": "Brian Gilbert <brian@briangilbert.net>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://gitter.im",
+    "message": "",
+    "popup": [],
+    "hasNotificationSound": true,
+    "hasDirectMessages": true,
+    "hasIndirectMessages": false,
+    "hasTeamID": false,
+    "hasPredefinedUrl": true,
+    "hasCustomUrl": false,
+    "webviewOptions": {
+      "disablewebsecurity": ""
+    }
+  }
+}

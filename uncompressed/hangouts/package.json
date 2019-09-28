@@ -1,0 +1,13 @@
+{
+  "id": "hangouts",
+  "name": "Hangouts",
+  "version": "1.0.0",
+  "description": "Hangouts",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://hangouts.google.com",
+    "hasNotificationSound": true
+  }
+}

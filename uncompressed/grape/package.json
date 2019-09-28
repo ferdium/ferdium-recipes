@@ -1,0 +1,18 @@
+{
+  "id": "grape",
+  "name": "Grape",
+  "version": "1.0.0",
+  "description": "Grape",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://{teamId}.chatgrape.com/chat",
+    "hasNotificationSound": true,
+    "hasDirectMessages": true,
+    "hasIndirectMessages": true,
+    "hasCustomUrl": true,
+    "hasTeamId": true,
+    "urlInputSuffix": ".chatgrape.com"
+  }
+}

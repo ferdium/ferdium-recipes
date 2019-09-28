@@ -1,0 +1,15 @@
+{
+  "id": "sendtask",
+  "name": "Sendtask",
+  "version": "1.0.2",
+  "description": "Sendtask",
+  "main": "index.js",
+  "author": "Patrick Daniel",
+  "repository": "https://github.com/patrickdaniel/sendtask-franz",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.sendtask.io/",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "twist",
+  "name": "twist",
+  "version": "1.0.1",
+  "description": "twist",
+  "main": "index.js",
+  "author": "Stuart Clark <stuart@realityloop.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://twistapp.com/login",
+    "message": "",
+    "popup": [],
+    "hasNotificationSound": true,
+    "hasIndirectMessages": false,
+    "hasTeamID": false,
+    "hasPredefinedUrl": true,
+    "hostedOnly": false,
+    "webviewOptions": {
+      "disablewebsecurity": ""
+    },
+    "openDevTools": false
+  }
+}

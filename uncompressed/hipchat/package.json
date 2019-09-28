@@ -1,0 +1,18 @@
+{
+  "id": "hipchat",
+  "name": "HipChat",
+  "version": "1.0.1",
+  "description": "HipChat",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://{teamId}.hipchat.com/chat",
+    "hasNotificationSound": true,
+    "hasDirectMessages": true,
+    "hasIndirectMessages": true,
+    "hasTeamId": true,
+    "hasCustomUrl": true,
+    "urlInputSuffix": ".hipchat.com"
+  }
+}

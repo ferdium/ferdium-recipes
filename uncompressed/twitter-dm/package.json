@@ -1,0 +1,13 @@
+{
+  "id": "twitter-dm",
+  "name": "Twitter DM",
+  "version": "1.0.0",
+  "description": "Twitter DM",
+  "main": "index.js",
+  "author": "Pieter Levels <hi@levels.io>, Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://mobile.twitter.com/messages",
+    "hasNotificationSound": true
+  }
+}
