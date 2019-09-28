@@ -1,0 +1,429 @@
+/**
+ * Material Dark Theme for StandardNotes
+ *
+ * https://github.com/vantezzen/sn-theme-material
+ */
+
+:root {
+    --background-1: #263238;
+    --background-2: #263238;
+    --foreground-color: #FFFFFF;
+    --highlight-color: #009688;
+    --date-color: #EEFFFF;
+    --border-color: #37474F;
+    --pre-color: #d6dbdb;
+    --accent-1: #93A1A1;
+    --accent-2: #D6488A;
+    --accent-3: #6B71C4;
+    --accent-4: #859901;
+    --accent-5: #B58900;
+    --content-1: #AABBC3;
+    --content-2: #AABBC3;
+    --content-3: #AABBC3;
+    --content-4: #AABBC3;
+    /* Footer */
+    --footer-bar-border-top-color: 0;
+    /* Column Menus */
+    --menu-item-sep-color: rgba(0, 0, 0, 0.1);
+    --sn-component-foreground-color: var(--content-1);
+    --sn-component-background-color: var(--border-color);
+    --sn-component-foreground-highlight-color: var(--highlight-color);
+    --sn-component-outer-border-color: transparent;
+    --sn-component-inner-border-color: var(--highlight-color);
+    --sn-stylekit-info-color: var(--highlight-color);
+    --sn-stylekit-info-contrast-color: var(--foreground-color);
+    --sn-stylekit-shadow-color: var(--background-2);
+    --sn-stylekit-background-color: var(--background-1);
+    --sn-stylekit-border-color: var(--border-color);
+    --sn-stylekit-contrast-background-color: var(--background-2);
+    --sn-stylekit-contrast-foreground-color: black;
+    --sn-stylekit-contrast-border-color: var(--border-color);
+    --sn-stylekit-scrollbar-track-border-color: var(--border-color);
+    --sn-desktop-titlebar-bg-color: var(--background-1);
+    --sn-desktop-titlebar-border-color: var(--border-color);
+    --sn-desktop-titlebar-ui-color: var(--foreground-color);
+    --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
+  }
+  
+  /* General */
+  .windows-web ::-webkit-scrollbar, .windows-desktop ::-webkit-scrollbar, .linux-web ::-webkit-scrollbar, .linux-desktop ::-webkit-scrollbar {
+    border-left-color: var(--border-color) !important;
+  }
+  
+  .windows-web ::-webkit-scrollbar-thumb, .windows-desktop ::-webkit-scrollbar-thumb, .linux-web ::-webkit-scrollbar-thumb, .linux-desktop ::-webkit-scrollbar-thumb {
+    background-color: var(--highlight-color) !important;
+  }
+  
+  ::-moz-selection {
+    background: var(--highlight-color) !important;
+    /* WebKit/Blink Browsers */
+    color: var(--foreground-color) !important;
+  }
+  
+  ::selection {
+    background: var(--highlight-color) !important;
+    /* WebKit/Blink Browsers */
+    color: var(--foreground-color) !important;
+  }
+  
+  ::-moz-selection {
+    background: var(--highlight-color) !important;
+    /* Gecko Browsers */
+    color: var(--foreground-color) !important;
+  }
+  
+  panel-resizer {
+    background-color: var(--background-2) !important;
+  }
+  
+  input {
+    color: var(--content-4) !important;
+  }
+  
+  body {
+    color: var(--foreground-color) !important;
+    font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-weight: 200;
+  }
+  
+  .app .section > .content {
+    background-color: var(--background-1) !important;
+  }
+  
+  .add-button {
+    background-color: var(--background-1) !important;
+    color: var(--foreground-color) !important;
+  }
+  
+  .blue {
+    /*legacy*/
+    color: var(--highlight-color) !important;
+  }
+  
+  .tinted {
+    color: var(--highlight-color) !important;
+  }
+  
+  .tinted-selected {
+    color: var(--foreground-color) !important;
+  }
+  
+  .app-bar {
+    background-color: var(--background-1) !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  .app-bar .item.border {
+    border-color: var(--border-color) !important;
+  }
+  
+  .app-bar .item:hover > .label,
+  .app-bar .item:hover > .sublabel,
+  .app-bar .item:hover > .column > .label,
+  .app-bar .item:hover > .column > .sublabel {
+    color: var(--highlight-color) !important;
+  }
+  
+  .section-title-bar {
+    color: var(--foreground-color) !important;
+    background-color: var(--background-1) !important;
+  }
+  
+  .section-title-bar-header .title {
+    color: var(--foreground-color) !important;
+  }
+  
+  /* Tags */
+  .app .tags, .tags .content {
+    background-color: var(--background-1) !important;
+  }
+  
+  #tags-title-bar {
+    color: var(--foreground-color) !important;
+  }
+  
+  .tags .tag {
+    color: var(--foreground-color) !important;
+    padding: 12px 12px;
+  }
+  
+  .tags .tag > .info > .title {
+    color: var(--accent-1) !important;
+  }
+  
+  .tags .tag a {
+    color: var(--foreground-color) !important;
+  }
+  
+  .tags .tag.selected > .info > .title {
+    color: var(--foreground-color) !important;
+  }
+  
+  .tags .tag > .info > .count {
+    color: var(--foreground-color) !important;
+  }
+  
+  .tags .tag.selected {
+    background-color: var(--highlight-color) !important;
+    color: var(--foreground-color) !important;
+  }
+  
+  .tags .tag:hover:not(.selected) {
+    background-color: var(--highlight-color) !important;
+    color: var(--foreground-color) !important;
+  }
+  
+  .tags .tag:hover:not(.selected) .info > .title {
+    color: var(--foreground-color) !important;
+  }
+  
+  /* Notes */
+  .app .notes .content {
+    background-color: var(--background-1) !important;
+  }
+  
+  .notes {
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+  
+  #notes-title-bar {
+    color: var(--foreground-color) !important;
+    background-color: var(--background-1) !important;
+  }
+  
+  .notes .filter-section .filter-bar {
+    background-color: var(--background-1) !important;
+  }
+  
+  .notes .note.selected {
+    background-color: var(--highlight-color) !important;
+    color: var(--foreground-color) !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+  
+  #notes-column #notes-title-bar, .notes #notes-title-bar {
+    border-left: 1px solid var(--background-2) !important;
+    border-right: 1px solid var(--background-2) !important;
+  }
+  
+  .notes .note {
+    border-bottom: 1px solid var(--background-2) !important;
+    background-color: var(--background-1) !important;
+    color: var(--accent-1);
+  }
+  
+  .note .name {
+    color: var(--foreground-color);
+  }
+  
+  .note .date {
+    color: var(--date-color) !important;
+  }
+  
+  .note.selected .date {
+    color: var(--foreground-color) !important;
+  }
+  
+  .notes .scrollable {
+    border: 0 !important;
+  }
+  
+  /* Editor */
+  #editor-title-bar {
+    background-color: var(--background-1) !important;
+  }
+  
+  #editor-title-bar > .title > .input {
+    color: var(--foreground-color) !important;
+  }
+  
+  .editor, .editor-content {
+    background-color: var(--background-1) !important;
+  }
+  
+  .editor-content .editable {
+    background-color: var(--background-1);
+    color: var(--content-4);
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  
+  #editor-title-bar .editor-tags .tags-input {
+    color: var(--foreground-color) !important;
+  }
+  
+  #editor-title-bar #save-status {
+    color: #4C4C4C !important;
+  }
+  
+  #editor-pane-component-stack .component:first-child {
+    border-top: 1px solid var(--border-color) !important;
+  }
+  
+  /* Editors */
+  .CodeMirror {
+    background-color: var(--background-1) !important;
+    color: var(--content-4) !important;
+    border: 0 !important;
+  }
+  
+  .CodeMirror-cursor {
+    border-color: white;
+  }
+  
+  .CodeMirror-selected {
+    background-color: var(--highlight-color) !important;
+  }
+  
+  .CodeMirror-selectedtext {
+    color: var(--foreground-color) !important;
+  }
+  
+  .CodeMirror-gutters {
+    background-color: var(--background-1) !important;
+    color: var(--content-4) !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  .CodeMirror .cm-header {
+    font-family: arial;
+    color: var(--content-4) !important;
+  }
+  
+  .CodeMirror .cm-variable-2 {
+    font-family: arial;
+    color: var(--highlight-color) !important;
+  }
+  
+  .CodeMirror .cm-link, .cm-string, .cm-keyword {
+    font-family: arial;
+    color: var(--content-4) !important;
+  }
+  
+  .CodeMirror .CodeMirror-linenumber {
+    color: gray !important;
+  }
+  
+  /* Code Editor bottom toolbar */
+  #select-wrapper {
+    background-color: var(--background-1) !important;
+    color: var(--content-4) !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  /* Advanced Markdown top toolbar */
+  .editor-toolbar {
+    background-color: var(--background-1) !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  .editor-toolbar::before, ::after {
+    background: 0 !important;
+  }
+  
+  .editor-toolbar a {
+    color: var(--content-4) !important;
+  }
+  
+  .editor-toolbar a.active, .editor-toolbar a:hover {
+    border-color: transparent;
+    background: var(--border-color);
+  }
+  
+  .editor-toolbar.disabled-for-preview a:not(.no-disable) {
+    background: inherit;
+  }
+  
+  .editor-preview-active, .editor-preview-active-side {
+    background-color: var(--background-1) !important;
+    border: 0 !important;
+    border-left: 1px solid var(--border-color) !important;
+    color: var(--content-4) !important;
+  }
+  
+  .editor-preview-active {
+    border: 0 !important;
+  }
+  
+  #sn-advanced-markdown-editor .editor-preview.editor-preview-active pre, #sn-advanced-markdown-editor .editor-preview-side.editor-preview-active-side pre {
+    background-color: var(--border-color);
+    padding: 20px;
+  }
+  
+  /* Simple Markdown Editor */
+  #simple-markdown {
+    background-color: var(--background-1) !important;
+    color: var(--content-4) !important;
+  }
+  
+  #simple-markdown #editor {
+    background-color: var(--background-1) !important;
+    color: var(--content-4) !important;
+  }
+  
+  #simple-markdown #column-resizer {
+    background-color: var(--highlight-color) !important;
+  }
+  
+  /* Plus Editor */
+  #plus-editor .note-editor.note-frame.fullscreen .note-editable {
+    background-color: var(--background-1) !important;
+    color: var(--content-4) !important;
+  }
+  
+  #plus-editor .panel-default > .panel-heading {
+    background-color: var(--border-color) !important;
+  }
+  
+  #plus-editor .btn-default {
+    color: var(--content-4) !important;
+    background-color: var(--background-1) !important;
+    border-color: var(--background-1) !important;
+  }
+  
+  #plus-editor .panel-heading {
+    border-color: var(--border-color) !important;
+  }
+  
+  #plus-editor .dropdown-menu > li > a {
+    color: var(--content-4);
+  }
+  
+  #plus-editor pre {
+    background-color: var(--pre-color);
+  }
+  
+  .component-stack-border {
+    border-color: var(--border-color) !important;
+  }
+  
+  /*SN Components */
+  :root {
+    --body-text-color: var(--content-4);
+    --body-background-color: var(--background-1);
+    --element-text-color: var(--content-4);
+    --element-background-color: var(--background-1);
+    --tint-color: var(--highlight-color);
+  }
+  
+  .sn-component .element-background-color {
+    background-color: var(--element-background-color);
+  }
+  
+  .sn-component .body-background-color {
+    background-color: var(--body-background-color);
+  }
+  
+  .sn-component .element-text-color {
+    color: var(--element-text-color);
+  }
+  
+  .sn-component .body-text-color {
+    color: var(--body-text-color);
+  }
+  
+  .sn-component .border-color {
+    border-color: var(--border-color) !important;
+  }

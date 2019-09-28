@@ -1,2 +1,4 @@
 .DS_Store
-scripts
+scripts/node_modules
+scripts/recipe_src/*
+!scripts/recipe_src/readme.txt

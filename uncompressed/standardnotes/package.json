@@ -1,0 +1,13 @@
+{
+  "id": "standardnotes",
+  "name": "StandardNotes",
+  "version": "1.0.0",
+  "description": "StandardNotes",
+  "main": "index.js",
+  "author": "vantezzen <hello@vantezzen.io>",
+  "license": "MIT",
+  "repository": "https://github.com/vantezzen/franz-recipe-standardnotes",
+  "config": {
+    "serviceURL": "https://app.standardnotes.org/"
+  }
+}
