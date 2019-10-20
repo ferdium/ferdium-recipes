@@ -7,10 +7,12 @@
   "author": "The Ferdi Team",
   "license": "MIT",
   "dependencies": {
+    "dir-compare": "^1.7.3",
     "fs-extra": "^8.1.0",
     "targz": "^1.0.1"
   },
   "scripts": {
-    "package": "node package.js"
+    "package": "node package.js",
+    "verify": "node verify.js"
   }
 }
