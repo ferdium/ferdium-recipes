@@ -1,7 +1,7 @@
 {
   "id": "riot",
   "name": "Riot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Decentralized and encrypted discussion & collaboration, powered by [matrix]",
   "main": "index.js",
   "author": "Sylvain Cecchetto <cecchetto.sylvain@me.com>",
@@ -10,6 +10,8 @@
   "config": {
     "serviceURL": "https://riot.im/app",
     "hasTeamID": false,
+    "hasCustomUrl": true,
+    "message": "Riot's default URL is http://riot.im/app/",
     "urlInputSuffix": false,
     "hasNotificationSound": true,
     "hasIndirectMessages": true

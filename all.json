@@ -455,10 +455,10 @@
     "featured": false,
     "id": "riot",
     "name": "Riot",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/riot/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/riot/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/riot/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/riot/icon.svg"
     }
   },
   {
