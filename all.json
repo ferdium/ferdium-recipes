@@ -790,5 +790,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/standardnotes/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/standardnotes/icon.svg"
     }
+  },
+  {
+    "author": "Alex Bloom <administrator@shadowserversystems.com",
+    "featured": false,
+    "id": "redditchat",
+    "name": "Reddit Chat",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/redditchat/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/redditchat/icon.svg"
+    }
   }
 ]
