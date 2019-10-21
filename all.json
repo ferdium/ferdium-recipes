@@ -6,8 +6,8 @@
     "name": "Android Messages",
     "version": "1.2.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/android-messages/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/android-messages/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/android-messages/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/android-messages/icon.svg"
     }
   },
   {
@@ -17,8 +17,8 @@
     "name": "chatwork",
     "version": "1.0.3",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/chatwork/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/chatwork/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/chatwork/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/chatwork/icon.svg"
     }
   },
   {
@@ -28,8 +28,8 @@
     "name": "Cisco Spark",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/ciscospark/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/ciscospark/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/ciscospark/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/ciscospark/icon.svg"
     }
   },
   {
@@ -39,8 +39,8 @@
     "name": "Custom Website",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/franz-custom-website/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/franz-custom-website/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/franz-custom-website/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/franz-custom-website/icon.svg"
     }
   },
   {
@@ -50,8 +50,8 @@
     "name": "Discord",
     "version": "1.0.3",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/discord/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/discord/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/discord/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/discord/icon.svg"
     }
   },
   {
@@ -61,8 +61,8 @@
     "name": "Facebook Pages",
     "version": "1.1.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/facebookpages/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/facebookpages/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/facebookpages/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/facebookpages/icon.svg"
     }
   },
   {
@@ -72,8 +72,8 @@
     "name": "FastMail",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/fastmail/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/fastmail/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/fastmail/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/fastmail/icon.svg"
     }
   },
   {
@@ -83,8 +83,8 @@
     "name": "Flowdock",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/flowdock/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/flowdock/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/flowdock/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/flowdock/icon.svg"
     }
   },
   {
@@ -94,8 +94,8 @@
     "name": "Gadu-Gadu",
     "version": "1.0.2",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/gadugadu/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/gadugadu/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gadugadu/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gadugadu/icon.svg"
     }
   },
   {
@@ -105,8 +105,8 @@
     "name": "GitHub",
     "version": "1.0.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/github/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/github/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/github/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/github/icon.svg"
     }
   },
   {
@@ -116,8 +116,8 @@
     "name": "Gitter",
     "version": "1.0.2",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/gitter/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/gitter/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gitter/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gitter/icon.svg"
     }
   },
   {
@@ -127,8 +127,8 @@
     "name": "Glowing Bear",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/glowingbear/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/glowingbear/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/glowingbear/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/glowingbear/icon.svg"
     }
   },
   {
@@ -138,8 +138,8 @@
     "name": "Gmail",
     "version": "1.1.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/gmail/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/gmail/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmail/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmail/icon.svg"
     }
   },
   {
@@ -149,8 +149,8 @@
     "name": "Google Allo",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/googleallo/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/googleallo/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googleallo/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googleallo/icon.svg"
     }
   },
   {
@@ -160,8 +160,8 @@
     "name": "Google Calendar",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/googlecalendar/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/googlecalendar/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googlecalendar/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googlecalendar/icon.svg"
     }
   },
   {
@@ -171,8 +171,8 @@
     "name": "Google Keep",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/googlekeep/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/googlekeep/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googlekeep/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googlekeep/icon.svg"
     }
   },
   {
@@ -182,8 +182,8 @@
     "name": "Google Voice",
     "version": "0.3.2",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/ex-google-voice/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/ex-google-voice/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/ex-google-voice/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/ex-google-voice/icon.svg"
     }
   },
   {
@@ -193,8 +193,8 @@
     "name": "Grape",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/grape/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/grape/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/grape/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/grape/icon.svg"
     }
   },
   {
@@ -204,8 +204,8 @@
     "name": "GroupMe",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/groupme/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/groupme/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/groupme/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/groupme/icon.svg"
     }
   },
   {
@@ -215,8 +215,8 @@
     "name": "Hangouts",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/hangouts/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/hangouts/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hangouts/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hangouts/icon.svg"
     }
   },
   {
@@ -226,8 +226,8 @@
     "name": "Hangouts Chat",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/hangoutschat/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/hangoutschat/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hangoutschat/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hangoutschat/icon.svg"
     }
   },
   {
@@ -237,8 +237,8 @@
     "name": "HipChat",
     "version": "1.0.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/hipchat/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/hipchat/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hipchat/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hipchat/icon.svg"
     }
   },
   {
@@ -248,8 +248,8 @@
     "name": "ICQ",
     "version": "1.0.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/icq/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/icq/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/icq/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/icq/icon.svg"
     }
   },
   {
@@ -259,8 +259,8 @@
     "name": "Idobata",
     "version": "0.1.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/idobata/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/idobata/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/idobata/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/idobata/icon.svg"
     }
   },
   {
@@ -270,8 +270,8 @@
     "name": "Inbox by Gmail",
     "version": "1.0.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/gmailinbox/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/gmailinbox/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmailinbox/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmailinbox/icon.svg"
     }
   },
   {
@@ -281,8 +281,8 @@
     "name": "IRCCloud",
     "version": "1.0.2",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/irccloud/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/irccloud/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/irccloud/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/irccloud/icon.svg"
     }
   },
   {
@@ -292,8 +292,8 @@
     "name": "LinkedIn",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/linkedin/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/linkedin/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/linkedin/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/linkedin/icon.svg"
     }
   },
   {
@@ -303,8 +303,8 @@
     "name": "mailbox.org",
     "version": "1.1.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/mailbox.org/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/mailbox.org/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mailbox.org/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mailbox.org/icon.svg"
     }
   },
   {
@@ -314,8 +314,8 @@
     "name": "Mattermost",
     "version": "1.2.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/mattermost/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/mattermost/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mattermost/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mattermost/icon.svg"
     }
   },
   {
@@ -325,8 +325,8 @@
     "name": "Messenger",
     "version": "1.0.8",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/messenger/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/messenger/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/messenger/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/messenger/icon.svg"
     }
   },
   {
@@ -336,8 +336,8 @@
     "name": "Microsoft Kaizala",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/kaizala/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/kaizala/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/kaizala/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/kaizala/icon.svg"
     }
   },
   {
@@ -347,8 +347,8 @@
     "name": "Microsoft Teams",
     "version": "1.1.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/msteams/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/msteams/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/msteams/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/msteams/icon.svg"
     }
   },
   {
@@ -358,8 +358,8 @@
     "name": "MySMS",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/mysms/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/mysms/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mysms/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mysms/icon.svg"
     }
   },
   {
@@ -369,8 +369,8 @@
     "name": "Office 365 - Outlook",
     "version": "1.0.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/office365-owa/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/office365-owa/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/office365-owa/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/office365-owa/icon.svg"
     }
   },
   {
@@ -380,8 +380,8 @@
     "name": "Outlook",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/outlook/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/outlook/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/outlook/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/outlook/icon.svg"
     }
   },
   {
@@ -391,8 +391,8 @@
     "name": "Plurk",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/plurk/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/plurk/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/plurk/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/plurk/icon.svg"
     }
   },
   {
@@ -402,8 +402,8 @@
     "name": "Pocket",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/pocket/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/pocket/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pocket/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pocket/icon.svg"
     }
   },
   {
@@ -413,8 +413,8 @@
     "name": "proton-mail",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/proton-mail/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/proton-mail/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/proton-mail/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/proton-mail/icon.svg"
     }
   },
   {
@@ -424,8 +424,8 @@
     "name": "Pulse SMS",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/pulseSMS/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/pulseSMS/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pulseSMS/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pulseSMS/icon.svg"
     }
   },
   {
@@ -435,8 +435,8 @@
     "name": "Pushbullet",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/pushbullet/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/pushbullet/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pushbullet/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pushbullet/icon.svg"
     }
   },
   {
@@ -446,8 +446,8 @@
     "name": "RainLoop",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/rainloop/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/rainloop/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/rainloop/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/rainloop/icon.svg"
     }
   },
   {
@@ -468,8 +468,8 @@
     "name": "Rocket.Chat",
     "version": "1.0.6",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/rocketchat/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/rocketchat/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/rocketchat/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/rocketchat/icon.svg"
     }
   },
   {
@@ -479,8 +479,8 @@
     "name": "Roundcube",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/roundcube/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/roundcube/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/roundcube/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/roundcube/icon.svg"
     }
   },
   {
@@ -491,7 +491,7 @@
     "version": "1.0.2",
     "icons": {
       "png": "https://cdn.franzinfra.com/recipes/dist/sendtask/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/sendtask/src/icon.svg"
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/sendtask/icon.svg"
     }
   },
   {
@@ -501,8 +501,8 @@
     "name": "Skype",
     "version": "1.1.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/skype/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/skype/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/skype/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/skype/icon.svg"
     }
   },
   {
@@ -512,8 +512,8 @@
     "name": "Slack",
     "version": "1.0.9",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/slack/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/slack/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/slack/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/slack/icon.svg"
     }
   },
   {
@@ -523,8 +523,8 @@
     "name": "Spectrum",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/withspectrum/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/withspectrum/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/withspectrum/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/withspectrum/icon.svg"
     }
   },
   {
@@ -534,8 +534,8 @@
     "name": "SteamChat",
     "version": "1.0.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/steamchat/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/steamchat/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/steamchat/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/steamchat/icon.svg"
     }
   },
   {
@@ -545,8 +545,8 @@
     "name": "Stride",
     "version": "1.1.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/stride/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/stride/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/stride/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/stride/icon.svg"
     }
   },
   {
@@ -557,7 +557,7 @@
     "version": "1.0.0",
     "icons": {
       "png": "https://cdn.franzinfra.com/recipes/dist/tawk/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/tawk/src/icon.svg"
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/tawk/icon.svg"
     }
   },
   {
@@ -567,8 +567,8 @@
     "name": "Teamwork Projects",
     "version": "0.1.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/teamwork-projects/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/teamwork-projects/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/teamwork-projects/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/teamwork-projects/icon.svg"
     }
   },
   {
@@ -578,8 +578,8 @@
     "name": "Telegram",
     "version": "1.0.5",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/telegram/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/telegram/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/telegram/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/telegram/icon.svg"
     }
   },
   {
@@ -589,8 +589,8 @@
     "name": "The Lounge",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/thelounge/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/thelounge/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/thelounge/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/thelounge/icon.svg"
     }
   },
   {
@@ -600,8 +600,8 @@
     "name": "Threema",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/threema/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/threema/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/threema/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/threema/icon.svg"
     }
   },
   {
@@ -611,8 +611,8 @@
     "name": "Todoist",
     "version": "1.1.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/todoist/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/todoist/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/todoist/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/todoist/icon.svg"
     }
   },
   {
@@ -622,8 +622,8 @@
     "name": "toggl",
     "version": "1.0.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/toggl/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/toggl/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/toggl/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/toggl/icon.svg"
     }
   },
   {
@@ -633,8 +633,8 @@
     "name": "Trello",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/trello/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/trello/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/trello/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/trello/icon.svg"
     }
   },
   {
@@ -644,8 +644,8 @@
     "name": "Tweetdeck",
     "version": "1.0.2",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/tweetdeck/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/tweetdeck/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/tweetdeck/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/tweetdeck/icon.svg"
     }
   },
   {
@@ -656,7 +656,7 @@
     "version": "1.0.0",
     "icons": {
       "png": "https://cdn.franzinfra.com/recipes/dist/twist/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/twist/src/icon.svg"
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twist/icon.svg"
     }
   },
   {
@@ -666,8 +666,8 @@
     "name": "Twitch",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/twitch/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/twitch/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twitch/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twitch/icon.svg"
     }
   },
   {
@@ -677,8 +677,8 @@
     "name": "Twitter DM",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/twitter-dm/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/twitter-dm/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twitter-dm/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twitter-dm/icon.svg"
     }
   },
   {
@@ -688,8 +688,8 @@
     "name": "VK",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/vk/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/vk/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/vk/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/vk/icon.svg"
     }
   },
   {
@@ -699,8 +699,8 @@
     "name": "Voxer",
     "version": "1.0.2",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/voxer/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/voxer/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/voxer/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/voxer/icon.svg"
     }
   },
   {
@@ -710,8 +710,8 @@
     "name": "WeChat",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/wechat/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/wechat/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/wechat/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/wechat/icon.svg"
     }
   },
   {
@@ -721,8 +721,8 @@
     "name": "WhatsApp",
     "version": "1.0.17",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/whatsapp/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/whatsapp/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/whatsapp/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/whatsapp/icon.svg"
     }
   },
   {
@@ -732,8 +732,8 @@
     "name": "Workplace",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/workplace/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/workplace/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/workplace/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/workplace/icon.svg"
     }
   },
   {
@@ -743,8 +743,8 @@
     "name": "XING",
     "version": "1.1.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/xing/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/xing/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/xing/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/xing/icon.svg"
     }
   },
   {
@@ -755,7 +755,7 @@
     "version": "1.0.0",
     "icons": {
       "png": "https://cdn.franzinfra.com/recipes/dist/yammer/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/yammer/src/icon.svg"
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/yammer/icon.svg"
     }
   },
   {
@@ -765,8 +765,8 @@
     "name": "zendesk",
     "version": "1.0.2",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/zendesk/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/zendesk/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zendesk/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zendesk/icon.svg"
     }
   },
   {
@@ -776,8 +776,8 @@
     "name": "Zulip",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/zulip/src/icon.png",
-      "svg": "https://cdn.franzinfra.com/recipes/dist/zulip/src/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zulip/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zulip/icon.svg"
     }
   },
   {
