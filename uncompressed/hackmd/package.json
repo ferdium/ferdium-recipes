@@ -1,0 +1,14 @@
+{
+  "id": "hackmd",
+  "name": "HackMd",
+  "version": "1.0.0",
+  "description": "HackMd",
+  "main": "index.js",
+  "author": "Armaldio <armaldio@gmail.com>",
+  "license": "MIT",
+  "repository": "",
+  "config": {
+    "serviceURL": "https://hackmd.io",
+    "hasNotificationSound": true
+  }
+}
