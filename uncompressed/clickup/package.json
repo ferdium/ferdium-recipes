@@ -1,0 +1,15 @@
+{
+  "id": "clickup",
+  "name": "Clickup",
+  "version": "1.0.0",
+  "description": "Clickup",
+  "main": "index.js",
+  "author": "Armaldio <armaldio@gmail.com>",
+  "license": "MIT",
+  "repository": "",
+  "config": {
+    "serviceURL": "https://app.clickup.com/{teamId}",
+    "hasNotificationSound": true,
+    "hasTeamId": true
+  }
+}
