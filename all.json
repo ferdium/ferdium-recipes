@@ -805,6 +805,17 @@
   {
     "author": "Armaldio <armaldio@gmail.com>",
     "featured": false,
+    "id": "clickup",
+    "name": "Clickup",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/clickup/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/clickup/icon.svg"
+    }
+  },
+  {
+    "author": "Armaldio <armaldio@gmail.com>",
+    "featured": false,
     "id": "hackmd",
     "name": "HackMd",
     "version": "1.0.0",
