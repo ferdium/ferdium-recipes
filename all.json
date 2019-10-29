@@ -801,5 +801,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/redditchat/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/redditchat/icon.svg"
     }
+  },
+  {
+    "author": "Armaldio <armaldio@gmail.com>",
+    "featured": false,
+    "id": "hackmd",
+    "name": "HackMd",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hackmd/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hackmd/icon.svg"
+    }
   }
 ]
