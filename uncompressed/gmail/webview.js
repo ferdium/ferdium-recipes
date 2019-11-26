@@ -1,6 +1,11 @@
 import path from 'path';
 
 module.exports = (Franz) => {
+  // if the user is on gmail's landing page, go to the login page.
+  if (location.hostname == 'www.google.com') {
+    location.href = 'https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/';
+  }
+  
   const getMessages = function getMessages() {
     let count = 0;
 
