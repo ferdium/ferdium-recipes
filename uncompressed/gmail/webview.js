@@ -1,4 +1,4 @@
-import path from 'path';
+const path = require("path");
 
 module.exports = (Franz) => {
   // if the user is on gmail's landing page, go to the login page.
