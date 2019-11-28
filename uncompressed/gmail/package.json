@@ -1,7 +1,7 @@
 {
   "id": "gmail",
   "name": "Gmail",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Gmail",
   "main": "index.js",
   "author": "Stefan Malzner <stefan@adlk.io>",
