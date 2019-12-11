@@ -4,7 +4,7 @@
     "featured": false,
     "id": "android-messages",
     "name": "Android Messages",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/android-messages/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/android-messages/icon.svg"
@@ -37,7 +37,7 @@
     "featured": false,
     "id": "franz-custom-website",
     "name": "Custom Website",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/franz-custom-website/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/franz-custom-website/icon.svg"
@@ -224,7 +224,7 @@
     "featured": false,
     "id": "hangoutschat",
     "name": "Hangouts Chat",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hangoutschat/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hangoutschat/icon.svg"
@@ -499,7 +499,7 @@
     "featured": false,
     "id": "skype",
     "name": "Skype",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/skype/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/skype/icon.svg"
@@ -510,7 +510,7 @@
     "featured": false,
     "id": "slack",
     "name": "Slack",
-    "version": "1.0.9",
+    "version": "1.0.12",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/slack/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/slack/icon.svg"
@@ -653,9 +653,9 @@
     "featured": false,
     "id": "twist",
     "name": "twist",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/twist/src/icon.png",
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twist/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twist/icon.svg"
     }
   },
@@ -833,6 +833,28 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/instagram/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/instagram/icon.svg"
+    }
+  },
+  {
+    "author": "Stefan Malzner <stefan@adlk.io>",
+    "featured": false,
+    "id": "nextcloud-talk",
+    "name": "Nextcloud Talk",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/nextcloud-talk/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/nextcloud-talk/icon.svg"
+    }
+  },
+  {
+    "author": "Cliqgeek <git@cliqgeeks.com>",
+    "featured": false,
+    "id": "cliq",
+    "name": "Zoho Cliq",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/cliq/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/cliq/icon.svg"
     }
   }
 ]

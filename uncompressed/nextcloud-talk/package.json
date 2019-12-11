@@ -1,0 +1,14 @@
+{
+  "id": "nextcloud-talk",
+  "name": "Nextcloud Talk",
+  "version": "1.0.0",
+  "description": "Nextcloud Talk",
+  "main": "index.js",
+  "author": "Stefan Malzner <stefan@adlk.io>",
+  "license": "MIT",
+  "config": {
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true,
+    "hasCustomUrl": true
+  }
+}

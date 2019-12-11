@@ -1,0 +1,3 @@
+#appmenu li:not([data-id="spreed"]) {
+  display: none;
+}
