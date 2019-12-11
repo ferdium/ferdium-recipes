@@ -1,0 +1,14 @@
+{
+  "id": "zimbra",
+  "name": "Zimbra",
+  "version": "1.0.0",
+  "description": "Zimbra",
+  "main": "index.js",
+  "author": "Ferdi Team <hello@getferdi.com>",
+  "license": "MIT",
+  "config": {
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true,
+    "hasCustomUrl": true
+  }
+}

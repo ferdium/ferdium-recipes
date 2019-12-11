@@ -856,5 +856,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/cliq/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/cliq/icon.svg"
     }
+  },
+  {
+    "author": "Ferdi Team <hello@getferdi.com>",
+    "featured": false,
+    "id": "zimbra",
+    "name": "Zimbra",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zimbra/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zimbra/icon.svg"
+    }
   }
 ]
