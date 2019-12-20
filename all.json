@@ -844,6 +844,7 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mastodon/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mastodon/icon.svg"
+    }
   },
   {
     "author": "Stefan Malzner <stefan@adlk.io>",
