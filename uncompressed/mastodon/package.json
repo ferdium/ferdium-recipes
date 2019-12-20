@@ -1,0 +1,17 @@
+{
+  "id": "mastodon",
+  "name": "Mastodon",
+  "version": "1.0.1",
+  "description": "Mastodon recipe for Franz 5 or later",
+  "main": "index.js",
+  "author": "sharkpp <webmaster@sharkpp.net>",
+  "license": "MIT",
+  "repository": "https://github.com/sharkpp/franz-recipe-mastodon",
+  "config": {
+    "serviceURL": "https://{teamId}",
+    "hasTeamId": true,
+    "hasNotificationSound": true,
+    "hasIndirectMessages": false,
+    "message": "Please enter the instance address of Mastodon in the team name input box."
+  }
+}

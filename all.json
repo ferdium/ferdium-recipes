@@ -834,5 +834,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/instagram/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/instagram/icon.svg"
     }
+  },
+  {
+    "author": "sharkpp <webmaster@sharkpp.net>",
+    "featured": false,
+    "id": "mastodon",
+    "name": "Mastodon",
+    "version": "1.0.1",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mastodon/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mastodon/icon.svg"
+    }
   }
 ]
