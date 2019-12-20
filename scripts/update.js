@@ -10,7 +10,7 @@ const semver = require('semver');
 console.log("Ferdi Recipe Repository Updater v1.0.0");
 
 // Server to update from
-const server = "http://api.franzinfra.com/v1/";
+const server = "http://api.franzinfra.com/v1";
 
 // Create paths to important files
 const allJson = path.join('../', 'all.json');
@@ -48,7 +48,7 @@ const decompress = (src, dest) => {
 // Let us work in an async environment
 (async () => {
   // Get current recipes from server
-  const serverRecipes = await (await fetch(server + 'recipes')).json();
+  const serverRecipes = await (await fetch(server + '/recipes')).json();
 
   // Get current local recipes
   const localRecipes = await fs.readJson(allJson);
@@ -66,6 +66,7 @@ const decompress = (src, dest) => {
 
       // Download recipe to filesystem
       try {
+        console.log("Downloading " + server + '/recipes/download/' + recipe.id);
         await downloadFile(
             server + '/recipes/download/' + recipe.id,
             compressed

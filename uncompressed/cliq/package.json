@@ -1,0 +1,14 @@
+{
+  "id": "cliq",
+  "name": "Cliq",
+  "version": "1.0.0",
+  "description": "Cliq",
+  "main": "index.js",
+  "author": "Cliqgeek <git@cliqgeeks.com>",
+  "repository": "https://github.com/cliqgeek/recipe-cliq",
+  "config": {
+    "serviceURL": "https://www.zoho.com/cliq/login.html",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  }
+}

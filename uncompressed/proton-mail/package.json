@@ -1,7 +1,7 @@
 {
   "id": "proton-mail",
   "name": "proton-mail",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "proton-mail",
   "main": "index.js",
   "author": "Lukas Reineke <lukas.reineke@protonmail.com>",
