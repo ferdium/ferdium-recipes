@@ -1,0 +1,24 @@
+{
+  "name": "Mastodon",
+  "id": "mastodon",
+  "version": "1.1.0",
+  "description": "micro blog",
+  "main": "index.js",
+  "author": "The Ferdi Team <hello@getferdi.com> and Kan Fushihara <kan.fushihara@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "",
+    "serviceName": "Mastodon",
+    "message": "",
+    "popup": [],
+    "hasNotificationSound": true,
+    "hasIndirectMessages": false,
+    "hasTeamID": true,
+    "customURL": true,
+    "hostedOnly": true,
+    "webviewOptions": {
+      "disablewebsecurity": ""
+    },
+    "openDevTools": false
+  }
+}

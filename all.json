@@ -867,5 +867,27 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zimbra/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zimbra/icon.svg"
     }
+  },
+  {
+    "author": "The Ferdi Team <hello@getferdi.com> and Kan Fushihara <kan.fushihara@gmail.com>",
+    "featured": false,
+    "id": "mastodon",
+    "name": "Mastodon",
+    "version": "1.1.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mastodon/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/mastodon/icon.svg"
+    }
+  },
+  {
+    "author": "Yuriy Badalyantc <lmnet89@gmail.com>",
+    "featured": false,
+    "id": "habitica",
+    "name": "Habitica",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/habitica/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/habitica/icon.svg"
+    }
   }
 ]
