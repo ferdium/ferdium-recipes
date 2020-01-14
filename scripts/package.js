@@ -55,9 +55,6 @@ Please make sure it contains: id, name, config`);
     return;
   }
 
-  // Move readme.txt outside of recipe_src folder
-  await fs.move(path.join(recipeSrc, 'readme.txt'), './readme.txt');
-
   // Package to .tar.gz
   console.log(`Packaging ${config.id}...`);
   compress(recipeSrc, path.join('../', `${config.id}.tar.gz`));
@@ -93,9 +90,6 @@ Please make sure it contains: id, name, config`);
     spaces: 2,
     EOL: '\n',
   });
-
-  // Move readme.txt back into recipe_src
-  await fs.move('./readme.txt', path.join(recipeSrc, 'readme.txt'));
 
   console.log(`Successfully packaged and added new package ${config.id}`);
 })();

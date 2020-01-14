@@ -9,6 +9,7 @@
   "dependencies": {
     "dir-compare": "^1.7.3",
     "fs-extra": "^8.1.0",
+    "git-url-parse": "^11.1.2",
     "node-fetch": "^2.6.0",
     "semver": "^6.3.0",
     "targz": "^1.0.1"
@@ -16,6 +17,7 @@
   "scripts": {
     "package": "node package.js",
     "verify": "node verify.js",
-    "update": "node update.js"
+    "update": "node update.js",
+    "github": "node add_github.js"
   }
 }
