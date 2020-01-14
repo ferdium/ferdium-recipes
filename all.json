@@ -889,5 +889,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/habitica/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/habitica/icon.svg"
     }
+  },
+  {
+    "author": "Djonathan Goulart<d.goulart@outlook.com.br>",
+    "featured": false,
+    "id": "googledrive",
+    "name": "Google Drive",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googledrive/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googledrive/icon.svg"
+    }
   }
 ]
