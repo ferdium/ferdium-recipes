@@ -922,5 +922,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/airtable/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/airtable/icon.svg"
     }
+  },
+  {
+    "author": "Fabio Kuhn <mordaroso@gmail.com>",
+    "featured": false,
+    "id": "zenhub",
+    "name": "ZenHub",
+    "version": "0.1.1",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zenhub/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zenhub/icon.svg"
+    }
   }
 ]
