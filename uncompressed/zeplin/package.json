@@ -1,0 +1,12 @@
+{
+  "id": "zeplin",
+  "name": "Zeplin",
+  "version": "1.0.0",
+  "description": "Zeplin",
+  "main": "index.js",
+  "author": "Adrián Gómez - http://adgllorente.com",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.zeplin.io/login"
+  }
+}

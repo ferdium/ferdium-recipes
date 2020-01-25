@@ -900,5 +900,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googledrive/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googledrive/icon.svg"
     }
+  },
+  {
+    "author": "Adrián Gómez - http://adgllorente.com",
+    "featured": false,
+    "id": "zeplin",
+    "name": "Zeplin",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zeplin/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zeplin/icon.svg"
+    }
   }
 ]
