@@ -911,5 +911,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zeplin/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zeplin/icon.svg"
     }
+  },
+  {
+    "author": "Casey Sparks <caseyalexsparks@gmail.com>",
+    "featured": false,
+    "id": "airtable",
+    "name": "Airtable",
+    "version": "1.0.1",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/airtable/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/airtable/icon.svg"
+    }
   }
 ]
