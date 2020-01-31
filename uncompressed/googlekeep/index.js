@@ -1,4 +1,6 @@
-"use strict";
-
-module.exports = Franz => Franz;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdvb2dsZWtlZXAvaW5kZXguanMiXSwibmFtZXMiOlsibW9kdWxlIiwiZXhwb3J0cyIsIkZyYW56Il0sIm1hcHBpbmdzIjoiOztBQUFBQSxPQUFPQyxPQUFQLEdBQWlCQyxTQUFTQSxLQUExQiIsImZpbGUiOiJnb29nbGVrZWVwL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSBGcmFueiA9PiBGcmFuejsiXX0=
+module.exports = Franz =>
+  class googlekeep extends Franz {
+    overrideUserAgent() {
+      return "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36";
+    }
+  };

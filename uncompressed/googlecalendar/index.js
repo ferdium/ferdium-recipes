@@ -1,4 +1,6 @@
-"use strict";
-
-module.exports = Franz => Franz;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdvb2dsZWNhbGVuZGFyL2luZGV4LmpzIl0sIm5hbWVzIjpbIm1vZHVsZSIsImV4cG9ydHMiLCJGcmFueiJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsT0FBT0MsT0FBUCxHQUFpQkMsU0FBU0EsS0FBMUIiLCJmaWxlIjoiZ29vZ2xlY2FsZW5kYXIvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IEZyYW56ID0+IEZyYW56O1xuIl19
+module.exports = Franz =>
+  class googlecalendar extends Franz {
+    overrideUserAgent() {
+      return "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36";
+    }
+  };
