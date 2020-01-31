@@ -1,6 +1,6 @@
 module.exports = Franz =>
   class googlecalendar extends Franz {
     overrideUserAgent() {
-      return "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36";
+      return "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:72.0) Gecko/20100101 Firefox/72.0";
     }
   };

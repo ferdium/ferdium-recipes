@@ -136,7 +136,7 @@
     "featured": false,
     "id": "gmail",
     "name": "Gmail",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmail/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmail/icon.svg"
@@ -147,7 +147,7 @@
     "featured": false,
     "id": "googleallo",
     "name": "Google Allo",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googleallo/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googleallo/icon.svg"
@@ -158,7 +158,7 @@
     "featured": false,
     "id": "googlecalendar",
     "name": "Google Calendar",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googlecalendar/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googlecalendar/icon.svg"
@@ -169,7 +169,7 @@
     "featured": false,
     "id": "googlekeep",
     "name": "Google Keep",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googlekeep/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googlekeep/icon.svg"
@@ -213,7 +213,7 @@
     "featured": false,
     "id": "hangouts",
     "name": "Hangouts",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hangouts/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hangouts/icon.svg"
@@ -224,7 +224,7 @@
     "featured": false,
     "id": "hangoutschat",
     "name": "Hangouts Chat",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hangoutschat/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/hangoutschat/icon.svg"
@@ -895,7 +895,7 @@
     "featured": false,
     "id": "googledrive",
     "name": "Google Drive",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googledrive/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googledrive/icon.svg"

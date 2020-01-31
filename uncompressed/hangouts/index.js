@@ -1,5 +1,6 @@
-"use strict";
-
-// just pass through Franz
-module.exports = Franz => Franz;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhbmdvdXRzL2luZGV4LmpzIl0sIm5hbWVzIjpbIm1vZHVsZSIsImV4cG9ydHMiLCJGcmFueiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUNBQSxPQUFPQyxPQUFQLEdBQWlCQyxTQUFTQSxLQUExQiIsImZpbGUiOiJoYW5nb3V0cy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIGp1c3QgcGFzcyB0aHJvdWdoIEZyYW56XG5tb2R1bGUuZXhwb3J0cyA9IEZyYW56ID0+IEZyYW56O1xuIl19
+module.exports = Franz =>
+  class hangouts extends Franz {
+    overrideUserAgent() {
+      return "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:72.0) Gecko/20100101 Firefox/72.0";
+    }
+  };
