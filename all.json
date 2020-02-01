@@ -48,7 +48,7 @@
     "featured": false,
     "id": "discord",
     "name": "Discord",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/discord/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/discord/icon.svg"
