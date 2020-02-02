@@ -18,6 +18,7 @@
     "package": "node package.js",
     "verify": "node verify.js",
     "update": "node update.js",
-    "github": "node add_github.js"
+    "github": "node add_github.js",
+    "load": "node load.js"
   }
 }
