@@ -966,5 +966,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/monicahq/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/monicahq/icon.svg"
     }
+  },
+  {
+    "author": "Ferdi Team <hello@getferdi.com> and Jason White <jdwhite@menelos.com>",
+    "featured": false,
+    "id": "twitter",
+    "name": "Twitter",
+    "version": "1.1.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twitter/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twitter/icon.svg"
+    }
   }
 ]
