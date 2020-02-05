@@ -6,9 +6,15 @@ module.exports = Franz => {
 
     // "Notifications" and "Messages" - aria-label ending in
     // "unread items". Sum the values for direct badge.
-    direct += document.querySelector('[data-testid=AppTabBar_Notifications_Link] div div div').innerHTML;
-    direct += document.querySelector('[data-testid=AppTabBar_DirectMessage_Link] div div div').innerHTML;
-
+    const notificationsElement = document.querySelector('[data-testid=AppTabBar_Notifications_Link] div div div');
+    if (notificationsElement) {
+      direct += notificationsElement.innerHTML;
+    }
+    const DMElement = document.querySelector('[data-testid=AppTabBar_DirectMessage_Link] div div div');
+    if (DMElement) {
+      direct += DMElement.innerHTML;
+    }
+    
     Franz.setBadge(direct);
   };
 
