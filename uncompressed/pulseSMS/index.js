@@ -1,8 +1,1 @@
-"use strict";
-
-// just pass through Franz
-
-module.exports = function (Franz) {
-  return Franz;
-};
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInB1bHNlc21zL2luZGV4LmpzIl0sIm5hbWVzIjpbIm1vZHVsZSIsImV4cG9ydHMiLCJGcmFueiJdLCJtYXBwaW5ncyI6IkFBQUE7O0FBRUE7O0FBQ0FBLE9BQU9DLE9BQVAsR0FBaUIsVUFBVUMsS0FBVixFQUFpQjtBQUNoQyxTQUFPQSxLQUFQO0FBQ0QsQ0FGRCIsImZpbGUiOiJwdWxzZXNtcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIlwidXNlIHN0cmljdFwiO1xuXG4vLyBqdXN0IHBhc3MgdGhyb3VnaCBGcmFuelxubW9kdWxlLmV4cG9ydHMgPSBmdW5jdGlvbiAoRnJhbnopIHtcbiAgcmV0dXJuIEZyYW56O1xufTsiXX0=
+module.exports = Franz => Franz;

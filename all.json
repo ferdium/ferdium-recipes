@@ -418,14 +418,14 @@
     }
   },
   {
-    "author": "Nico Rodriguez <nrodriguez25@github.io>",
+    "author": "Serubin <serubin@serubin.net>",
     "featured": false,
-    "id": "pulseSMS",
-    "name": "Pulse SMS",
-    "version": "1.0.0",
+    "id": "pulsesms",
+    "name": "PulseSMS",
+    "version": "1.1.2",
     "icons": {
-      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pulseSMS/icon.png",
-      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pulseSMS/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pulsesms/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pulsesms/icon.svg"
     }
   },
   {

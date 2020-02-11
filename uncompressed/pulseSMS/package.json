@@ -1,10 +1,10 @@
 {
-  "id": "pulseSMS",
-  "name": "Pulse SMS",
-  "version": "1.0.0",
-  "description": "Pulse SMS",
+  "id": "pulsesms",
+  "name": "PulseSMS",
+  "version": "1.1.2",
+  "description": "PulseSMS Franz Recipe",
   "main": "index.js",
-  "author": "Nico Rodriguez <nrodriguez25@github.io>",
+  "author": "Serubin <serubin@serubin.net>",
   "license": "MIT",
   "config": {
     "serviceURL": "https://pulsesms.app",
