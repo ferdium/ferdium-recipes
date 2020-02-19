@@ -1,5 +1,2 @@
-"use strict";
-
 // default integration (e.g messenger.com, ...)
 module.exports = Franz => Franz;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haWxib3gub3JnL2luZGV4LmpzIl0sIm5hbWVzIjpbIm1vZHVsZSIsImV4cG9ydHMiLCJGcmFueiJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUNBQSxPQUFPQyxPQUFQLEdBQWlCQyxTQUFTQSxLQUExQiIsImZpbGUiOiJtYWlsYm94Lm9yZy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIGRlZmF1bHQgaW50ZWdyYXRpb24gKGUuZyBtZXNzZW5nZXIuY29tLCAuLi4pXHJcbm1vZHVsZS5leHBvcnRzID0gRnJhbnogPT4gRnJhbno7Il19

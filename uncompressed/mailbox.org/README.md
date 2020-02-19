@@ -14,3 +14,5 @@ This recipe only works for Franz 5.X, get it now at http://meetfranz.com
 
 ## Documentation
 * [Read the documentation](https://github.com/meetfranz/plugins/blob/master/docs/integration.md)
+
+**_All images are copyright to their respective owners_**
