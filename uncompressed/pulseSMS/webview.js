@@ -1,10 +1,8 @@
-"use strict";
+module.exports = (Franz) => {
+  function getMessages() {
+    Franz.setBadge(document.querySelector("#unread_count").innerHTML.replace(/\s/g,''));
+  }
 
-module.exports = Franz => {
-  const getMessages = function getMessages() {
-    var count = document.getElementsByClassName("conversation-title mdl-card__supporting-text bold").length;
-    Franz.setBadge(count);
-  };
+  // check for new messages every second and update Franz badge
   Franz.loop(getMessages);
 };
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInB1bHNlc21zL3dlYnZpZXcuanMiXSwibmFtZXMiOlsibW9kdWxlIiwiZXhwb3J0cyIsIkZyYW56IiwiZ2V0TWVzc2FnZXMiLCJjb3VudCIsImRvY3VtZW50IiwiZ2V0RWxlbWVudHNCeUNsYXNzTmFtZSIsImxlbmd0aCIsInNldEJhZGdlIiwibG9vcCJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsT0FBT0MsT0FBUCxHQUFrQkMsS0FBRCxJQUFXO0FBQzFCLFFBQU1DLGNBQWMsU0FBU0EsV0FBVCxHQUF1QjtBQUN6QyxRQUFJQyxRQUFRQyxTQUFTQyxzQkFBVCxDQUFnQyxtREFBaEMsRUFBcUZDLE1BQWpHO0FBQ0FMLFVBQU1NLFFBQU4sQ0FBZUosS0FBZjtBQUVELEdBSkQ7QUFLQUYsUUFBTU8sSUFBTixDQUFXTixXQUFYO0FBQ0QsQ0FQRCIsImZpbGUiOiJwdWxzZXNtcy93ZWJ2aWV3LmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSAoRnJhbnopID0+IHtcbiAgY29uc3QgZ2V0TWVzc2FnZXMgPSBmdW5jdGlvbiBnZXRNZXNzYWdlcygpIHtcbiAgICB2YXIgY291bnQgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5Q2xhc3NOYW1lKFwiY29udmVyc2F0aW9uLXRpdGxlIG1kbC1jYXJkX19zdXBwb3J0aW5nLXRleHQgYm9sZFwiKS5sZW5ndGg7XG4gICAgRnJhbnouc2V0QmFkZ2UoY291bnQpO1xuICAgIFxuICB9O1xuICBGcmFuei5sb29wKGdldE1lc3NhZ2VzKTtcbn07XG4iXX0=
