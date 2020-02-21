@@ -1,8 +1,8 @@
 {
   "name": "Mastodon",
   "id": "mastodon",
-  "version": "1.1.0",
-  "description": "micro blog",
+  "version": "1.1.1",
+  "description": "Mastodon Recipe for Ferdi",
   "main": "index.js",
   "author": "The Ferdi Team <hello@getferdi.com> and Kan Fushihara <kan.fushihara@gmail.com>",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "hasNotificationSound": true,
     "hasIndirectMessages": false,
     "hasTeamID": true,
-    "customURL": true,
+    "hasCustomUrl": true,
     "hostedOnly": true,
     "webviewOptions": {
       "disablewebsecurity": ""
