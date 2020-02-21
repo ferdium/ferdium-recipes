@@ -1,0 +1,13 @@
+{
+  "id": "Google Meet",
+  "name": "Google Meet",
+  "version": "1.0.1",
+  "description": "Google Meet",
+  "main": "index.js",
+  "author": "Patrick Thoelken <patrick.thoelken@outlook.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://meet.google.com",
+    "hasNotificationSound": true
+  }
+}
