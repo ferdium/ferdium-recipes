@@ -4,12 +4,9 @@ module.exports = Franz => class CustomWebsite extends Franz {
   async validateUrl(url) {
     try {
       const resp = await window.fetch(url, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }
+        method: 'GET'
       });
-      return resp.status.toString().startsWith('2') || resp.status.toString().startsWith('3');
+      return resp.status.toString().startsWith('2');
     } catch (err) {
       console.error(err);
     }
