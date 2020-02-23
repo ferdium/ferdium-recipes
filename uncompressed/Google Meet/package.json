@@ -1,6 +1,6 @@
 {
   "id": "Google Meet",
-  "name": "Google Meet",
+  "name": "googlemeet",
   "version": "1.0.1",
   "description": "Google Meet",
   "main": "index.js",

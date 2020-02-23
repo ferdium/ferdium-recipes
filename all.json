@@ -982,7 +982,7 @@
     "author": "Patrick Thoelken <patrick.thoelken@outlook.com>",
     "featured": false,
     "id": "Google Meet",
-    "name": "Google Meet",
+    "name": "googlemeet",
     "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/Google Meet/icon.png",
