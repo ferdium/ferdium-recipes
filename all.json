@@ -37,7 +37,7 @@
     "featured": false,
     "id": "franz-custom-website",
     "name": "Custom Website",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/franz-custom-website/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/franz-custom-website/icon.svg"
