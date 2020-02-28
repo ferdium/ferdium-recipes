@@ -143,17 +143,6 @@
     }
   },
   {
-    "author": "SiloCityLabs LLC",
-    "featured": false,
-    "id": "googleallo",
-    "name": "Google Allo",
-    "version": "1.0.2",
-    "icons": {
-      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googleallo/icon.png",
-      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googleallo/icon.svg"
-    }
-  },
-  {
     "author": "Rico Herwig <rherwig4711@gmail.com>",
     "featured": false,
     "id": "googlecalendar",
@@ -261,17 +250,6 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/idobata/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/idobata/icon.svg"
-    }
-  },
-  {
-    "author": "Stefan Malzner <stefan@adlk.io>",
-    "featured": false,
-    "id": "gmailinbox",
-    "name": "Inbox by Gmail",
-    "version": "1.0.1",
-    "icons": {
-      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmailinbox/icon.png",
-      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmailinbox/icon.svg"
     }
   },
   {
