@@ -988,5 +988,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/Google Meet/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/Google Meet/icon.svg"
     }
+  },
+  {
+    "author": "Antoine Aumjaud",
+    "featured": false,
+    "id": "github_entreprise",
+    "name": "GitHub Entreprise",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/github_entreprise/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/github_entreprise/icon.svg"
+    }
   }
 ]
