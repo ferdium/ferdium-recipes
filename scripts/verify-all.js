@@ -74,4 +74,6 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
     // Remove temporary compressed file
     await fs.remove(tempUncompressed);
   }
+
+  console.log('All recipes are valid.');
 })();
