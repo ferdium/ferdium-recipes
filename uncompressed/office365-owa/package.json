@@ -1,13 +1,17 @@
 {
-    "id": "office365-owa",
-    "name": "Office 365 Outlook Web App",
-    "version": "1.0.1",
-    "description": "Office 365 Outlook Web App",
-    "main": "index.js",
-    "author": "Adam Birds <adam.birds@adbtechltd.co.uk>",
-    "repository": "https://github.com/adambirds/recipe-office365-owa",
-    "license": "MIT",
-    "config": {
-        "serviceURL": "https://outlook.office365.com/owa"
-    }
+  "id": "office365-owa",
+  "name": "Office 365 Outlook Web App",
+  "version": "1.1.0",
+  "description": "Office 365 Outlook Web App",
+  "main": "index.js",
+  "author": "Adam Birds <adam.birds@adbtechltd.co.uk>",
+  "contributors": [
+    "nonAlgebraic <https://github.com/nonAlgebraic>"
+  ],
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://outlook.office365.com/owa",
+    "hasNotificationSound": true,
+    "hasTeamId": false
+  }
 }

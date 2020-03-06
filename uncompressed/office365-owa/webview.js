@@ -1,10 +1,33 @@
-"use strict";
+'use strict';
 
 module.exports = Franz => {
   const getMessages = function getMessages() {
-    const unreadMail = parseInt(jQuery("span[title*='Inbox'] + div > span").first().text(), 10);
+    let unreadMail = 0;
+    
+    if (location.pathname.match(/\/owa/)) {
+      // classic app
+      unreadMail = parseInt(
+        jQuery("span[title*='Inbox'] + div > span")
+          .first()
+          .text(),
+        10
+      );
+    } else {
+      // new app
+      const folders = document.querySelector('div[title="Folders"]');
+      if (!folders) {
+        return;
+      }
+
+      unreadMail = [...folders.parentNode.children].reduce((count, child) => {
+        const unread = child.querySelector('.screenReaderOnly');
+        return unread && unread.textContent === 'unread'
+          ? count + parseInt(unread.previousSibling.textContent, 10)
+          : count;
+      }, 0);
+    }
+
     Franz.setBadge(unreadMail);
   };
   Franz.loop(getMessages);
 };
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm9mZmljZTM2NS1vd2Evd2Vidmlldy5qcyJdLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwiRnJhbnoiLCJnZXRNZXNzYWdlcyIsInVucmVhZE1haWwiLCJwYXJzZUludCIsImpRdWVyeSIsImZpcnN0IiwidGV4dCIsInNldEJhZGdlIiwibG9vcCJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsT0FBT0MsT0FBUCxHQUFrQkMsS0FBRCxJQUFXO0FBQzFCLFFBQU1DLGNBQWMsU0FBU0EsV0FBVCxHQUF1QjtBQUN6QyxVQUFNQyxhQUFhQyxTQUFTQyxPQUFPLG1DQUFQLEVBQTRDQyxLQUE1QyxHQUFvREMsSUFBcEQsRUFBVCxFQUFxRSxFQUFyRSxDQUFuQjtBQUNBTixVQUFNTyxRQUFOLENBQWVMLFVBQWY7QUFDRCxHQUhEO0FBSUFGLFFBQU1RLElBQU4sQ0FBV1AsV0FBWDtBQUNELENBTkQiLCJmaWxlIjoib2ZmaWNlMzY1LW93YS93ZWJ2aWV3LmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSAoRnJhbnopID0+IHtcbiAgY29uc3QgZ2V0TWVzc2FnZXMgPSBmdW5jdGlvbiBnZXRNZXNzYWdlcygpIHtcbiAgICBjb25zdCB1bnJlYWRNYWlsID0gcGFyc2VJbnQoalF1ZXJ5KFwic3Bhblt0aXRsZSo9J0luYm94J10gKyBkaXYgPiBzcGFuXCIpLmZpcnN0KCkudGV4dCgpLCAxMCk7XG4gICAgRnJhbnouc2V0QmFkZ2UodW5yZWFkTWFpbCk7XG4gIH07XG4gIEZyYW56Lmxvb3AoZ2V0TWVzc2FnZXMpO1xufTtcbiJdfQ==
