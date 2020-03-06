@@ -17,6 +17,7 @@
   "scripts": {
     "package": "node package.js",
     "verify": "node verify.js",
+    "verify-all": "node verify-all.js",
     "update": "node update.js",
     "github": "node add_github.js",
     "load": "node load.js"
