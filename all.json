@@ -37,7 +37,7 @@
     "featured": false,
     "id": "franz-custom-website",
     "name": "Custom Website",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/franz-custom-website/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/franz-custom-website/icon.svg"
@@ -140,17 +140,6 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmail/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmail/icon.svg"
-    }
-  },
-  {
-    "author": "SiloCityLabs LLC",
-    "featured": false,
-    "id": "googleallo",
-    "name": "Google Allo",
-    "version": "1.0.2",
-    "icons": {
-      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googleallo/icon.png",
-      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googleallo/icon.svg"
     }
   },
   {
@@ -261,17 +250,6 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/idobata/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/idobata/icon.svg"
-    }
-  },
-  {
-    "author": "Stefan Malzner <stefan@adlk.io>",
-    "featured": false,
-    "id": "gmailinbox",
-    "name": "Inbox by Gmail",
-    "version": "1.0.1",
-    "icons": {
-      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmailinbox/icon.png",
-      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gmailinbox/icon.svg"
     }
   },
   {
@@ -976,6 +954,28 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twitter/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/twitter/icon.svg"
+    }
+  },
+  {
+    "author": "Patrick Thoelken <patrick.thoelken@outlook.com>",
+    "featured": false,
+    "id": "Google Meet",
+    "name": "googlemeet",
+    "version": "1.0.1",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/Google Meet/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/Google Meet/icon.svg"
+    }
+  },
+  {
+    "author": "Antoine Aumjaud",
+    "featured": false,
+    "id": "github_entreprise",
+    "name": "GitHub Entreprise",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/github_entreprise/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/github_entreprise/icon.svg"
     }
   }
 ]
