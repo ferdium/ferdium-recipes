@@ -1,6 +1,6 @@
 [
   {
-    "author": "Daniel Weinberger",
+    "author": "Daniel Weinberger, Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "android-messages",
     "name": "Android Messages",
@@ -11,10 +11,10 @@
     }
   },
   {
-    "author": "Koma",
+    "author": "Koma, hideosasaki",
     "featured": false,
     "id": "chatwork",
-    "name": "chatwork",
+    "name": "ChatWork",
     "version": "1.0.3",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/chatwork/icon.png",
@@ -534,7 +534,7 @@
     "name": "Tawk.to",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.franzinfra.com/recipes/dist/tawk/src/icon.png",
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/tawk/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/tawk/icon.svg"
     }
   },
@@ -594,7 +594,7 @@
     }
   },
   {
-    "author": "Franz <recipe@meetfranz.com>",
+    "author": "exampleman <franzplugin@example.com>",
     "featured": false,
     "id": "toggl",
     "name": "toggl",
@@ -828,7 +828,7 @@
     "author": "Cliqgeek <git@cliqgeeks.com>",
     "featured": false,
     "id": "cliq",
-    "name": "Zoho Cliq",
+    "name": "Cliq",
     "version": "1.0.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/cliq/icon.png",
@@ -959,12 +959,12 @@
   {
     "author": "Patrick Thoelken <patrick.thoelken@outlook.com>",
     "featured": false,
-    "id": "Google Meet",
-    "name": "googlemeet",
+    "id": "googlemeet",
+    "name": "Google Meet",
     "version": "1.0.1",
     "icons": {
-      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/Google Meet/icon.png",
-      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/Google Meet/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googlemeet/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/googlemeet/icon.svg"
     }
   },
   {
