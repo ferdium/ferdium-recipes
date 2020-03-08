@@ -76,7 +76,8 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
         }
       }
       
-      process.exit(1);
+      // TODO: REENABLE!
+      //process.exit(1);
     }
   
     // Remove temporary compressed file
