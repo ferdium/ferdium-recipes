@@ -61,12 +61,6 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
       compareContent: true,
       // Don't fail because of DS_Store files
       excludeFilter: '.DS_Store',
-      compareFileAsync: async (path1, stat1, path2, stat2, options) => {
-        const f1 = await fs.readFile(path1, 'utf-8');
-        const f2 = await fs.readFile(path2, 'utf-8');
-
-        return f1 === f2;
-      }
     });
   
     if (compare.same) {
