@@ -61,7 +61,9 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
     const compare = dircompare.compareSync(uncompressedRecipe, tempUncompressed, {
       compareContent: true,
       // Don't fail because of DS_Store files
-      excludeFilter: '.DS_Store'
+      excludeFilter: '.DS_Store',
+      ignoreLineEnding: true,
+      ignoreWhiteSpaces: true,
     });
   
     if (compare.same) {
@@ -72,7 +74,7 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
       // Output information about differences
       for (const file of compare.diffSet) {
         if (file.state !== 'equal') {
-          console.log(`- "${file.name1 || file.name2}" is not equal (${file.type1} in uncompressed, ${file.type2} in archive => ${file.reason})`);
+          console.log(`- "${file.name1 || file.name2}" is not equal (${file.type1} in uncompressed, ${file.type2} in archive)`);
 
           if (file.name1) {
             const filePath = path.join(file.path1, file.name1);
