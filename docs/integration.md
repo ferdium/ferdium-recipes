@@ -1,8 +1,9 @@
 # Ferdi Recipe Documentation / Overview
 
+Recipes are responsible for providing the connection between the service itself (e.g. WhatsApp) and Ferdi, providing information like the number of current notifications or handling dark mode.
+
 A Ferdi recipe is basically nothing else than a node module and is currently initialized on `dom-ready`. You access all of the [electron](http://electron.atom.io) modules as well.
 
-Recipes are responsible for providing the connection between the service itself (e.g. WhatsApp) and Ferdi, providing information like the number of current notifications or handling dark mode.
 
 ## Table of Contents
 * [Installation](#user-content-installation)
