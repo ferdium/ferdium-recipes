@@ -76,11 +76,11 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
 
           if (file.name1) {
             const filePath = path.join(file.path1, file.name1);
-            console.log('File1:', await fs.read(filePath, 'utf-8'));
+            console.log('File1:', await fs.readFile(filePath, 'utf-8'));
           }
           if (file.name2) {
             const filePath = path.join(file.path2, file.name2);
-            console.log('File2:', await fs.read(filePath, 'utf-8'));
+            console.log('File2:', await fs.readFile(filePath, 'utf-8'));
           }
         }
       }
