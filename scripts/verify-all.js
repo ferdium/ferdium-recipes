@@ -75,6 +75,8 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
           console.log(`- "${file.name1 || file.name2}" is not equal (${file.type1} in uncompressed, ${file.type2} in archive)`);
         }
       }
+
+      console.log(compare.diffSet);
       
       // TODO: REENABLE!
       //process.exit(1);
