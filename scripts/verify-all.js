@@ -54,20 +54,23 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
     await fs.mkdir(tempUncompressed);
   
     // Package to uncompressed recipe to .tar.gz
-    console.log(`Decompressing ${recipe} (${recipeNum + 1} of ${all.length})...`);
     await decompress(compressedRecipe, tempUncompressed);
   
     // Compare directories
-    const compare = dircompare.compareSync(uncompressedRecipe, tempUncompressed, {
+    const compare = await dircompare.compare(uncompressedRecipe, tempUncompressed, {
       compareContent: true,
       // Don't fail because of DS_Store files
       excludeFilter: '.DS_Store',
-      ignoreLineEnding: true,
-      ignoreWhiteSpaces: true,
+      compareFileAsync: async (path1, stat1, path2, stat2, options) => {
+        const f1 = await fs.readFile(path1, 'utf-8');
+        const f2 = await fs.readFile(path2, 'utf-8');
+
+        return f1 === f2;
+      }
     });
   
     if (compare.same) {
-      console.log(`✓ ${recipe} is valid`);
+      console.log(`✓ ${recipe} is valid (${recipeNum + 1} of ${all.length})`);
     } else {
       console.log(`❌ Compressed and uncompressed files for "${recipe}" are NOT equal:`);
 
@@ -75,22 +78,10 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
       for (const file of compare.diffSet) {
         if (file.state !== 'equal') {
           console.log(`- "${file.name1 || file.name2}" is not equal (${file.type1} in uncompressed, ${file.type2} in archive)`);
-
-          if (file.name1) {
-            const filePath = path.join(file.path1, file.name1);
-            console.log('File1:', await fs.readFile(filePath, 'utf-8'));
-          }
-          if (file.name2) {
-            const filePath = path.join(file.path2, file.name2);
-            console.log('File2:', await fs.readFile(filePath, 'utf-8'));
-          }
         }
       }
 
-      console.log(compare.diffSet);
-      
-      // TODO: REENABLE!
-      //process.exit(1);
+      process.exit(1);
     }
   
     // Remove temporary compressed file
