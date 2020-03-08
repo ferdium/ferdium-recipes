@@ -11,6 +11,12 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
   targz.decompress({
     src,
     dest,
+    tar: {
+      // Don't unpackage .DS_Store files
+      ignore: function(name) {
+          return path.basename(name) === '.DS_Store'
+      }
+    },
   }, (err) => {
     if (err) {
       reject(err);
@@ -54,6 +60,8 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
     // Compare directories
     const compare = dircompare.compareSync(uncompressedRecipe, tempUncompressed, {
       compareContent: true,
+      // Don't fail because of DS_Store files
+      excludeFilter: '.DS_Store'
     });
   
     if (compare.same) {

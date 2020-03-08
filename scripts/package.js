@@ -16,6 +16,12 @@ const compress = (src, dest) => new Promise((resolve, reject) => {
   targz.compress({
     src,
     dest,
+    tar: {
+      // Don't package .DS_Store files
+      ignore: function(name) {
+          return path.basename(name) === '.DS_Store'
+      }
+    },
   }, (err) => {
     if (err) {
       reject(err);
