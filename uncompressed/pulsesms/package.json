@@ -1,0 +1,13 @@
+{
+  "id": "pulsesms",
+  "name": "PulseSMS",
+  "version": "1.1.2",
+  "description": "PulseSMS Franz Recipe",
+  "main": "index.js",
+  "author": "Serubin <serubin@serubin.net>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://pulsesms.app",
+    "hasNotificationSound": true
+  }
+}
