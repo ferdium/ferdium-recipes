@@ -73,6 +73,15 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
       for (const file of compare.diffSet) {
         if (file.state !== 'equal') {
           console.log(`- "${file.name1 || file.name2}" is not equal (${file.type1} in uncompressed, ${file.type2} in archive)`);
+
+          if (file.name1) {
+            const filePath = path.join(file.path1, file.name1);
+            console.log('File1:', await fs.read(filePath, 'utf-8'));
+          }
+          if (file.name2) {
+            const filePath = path.join(file.path2, file.name2);
+            console.log('File2:', await fs.read(filePath, 'utf-8'));
+          }
         }
       }
 
