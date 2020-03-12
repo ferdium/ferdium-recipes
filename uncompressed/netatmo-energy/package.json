@@ -1,0 +1,15 @@
+  
+{
+  "id": "netatmo-energy",
+  "name": "Netatmo Energy",
+  "version": "1.0.1",
+  "description": "Netatmo Energy dashboard",
+  "main": "index.js",
+  "author": "Neil Tonge <me@neiltonge.co.uk>",
+  "license": "MIT",
+  "repository": "https://github.com/rctneil/franz-recipe-netatmo-energy",
+  "config": {
+    "serviceURL": "https://my.netatmo.com/app/energy",
+    "hasNotificationSound": false
+  }
+}

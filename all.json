@@ -988,5 +988,27 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/asana/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/asana/icon.svg"
     }
+  },
+  {
+    "author": "Neil Tonge <me@neiltonge.co.uk>",
+    "featured": false,
+    "id": "unraid",
+    "name": "Unraid",
+    "version": "1.0.1",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/unraid/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/unraid/icon.svg"
+    }
+  },
+  {
+    "author": "Neil Tonge <me@neiltonge.co.uk>",
+    "featured": false,
+    "id": "netatmo-energy",
+    "name": "Netatmo Energy",
+    "version": "1.0.1",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/netatmo-energy/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/netatmo-energy/icon.svg"
+    }
   }
 ]
