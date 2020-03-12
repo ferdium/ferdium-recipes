@@ -57,6 +57,8 @@ const compressed = path.join(__dirname, 'tmp.tar.gz');
   console.log("Creating temporary directory");
 
   await fs.ensureDir(tempDir);
+  await fs.ensureDir(recipeSrc);
+  await fs.ensureDir(recipeSrcTmp);
 
   console.log("Downloading " + repo);
   
@@ -71,10 +73,11 @@ const compressed = path.join(__dirname, 'tmp.tar.gz');
 
   console.log("Moving directories");
 
-  await fs.move(recipeSrc, recipeSrcTmp);
+  await fs.move(recipeSrc, recipeSrcTmp, {overwrite: true});
   await fs.move(
     path.join(tempDir, `${repoInfo.name}-master`),
-    recipeSrc
+    recipeSrc,
+    {overwrite: true}
   );
 
   console.log("Adding to repository");
