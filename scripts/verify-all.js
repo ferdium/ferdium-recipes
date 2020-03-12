@@ -26,6 +26,12 @@ const decompress = (src, dest) => new Promise((resolve, reject) => {
   });
 });
 
+// Let Promise errors crash the script
+process.on('unhandledRejection', (error) => {
+  console.log('Promise rejection:', error);
+  process.exit(1);
+});
+
 // Let us work in an async environment
 (async () => {
   // Read list of all recipes
