@@ -131,6 +131,8 @@ In order to debug your service integration, open Ferdi and use the shortcut `Cmd
 ### Publishing
 Ferdi uses its recipe repository at <https://github.com/getferdi/recipes> to publish recipes to all clients.
 
+> ℹ️ If you have any problems packaging your recipes, if you are inexperienced with the tools used or have any other problems, we are here to help! Just open a new issue at https://github.com/getferdi/recipes/issues/new and we can help you develop, test and publish your recipe and can package the recipe for you if you don't feel like you are able to.
+
 To add your own recipe to the repository:
 - If you already uploaded the recipe to GitHub:
   1. Fork https://github.com/getferdi/recipes and clone it to your computer
