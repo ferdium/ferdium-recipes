@@ -4,17 +4,20 @@ Recipes are responsible for providing the connection between the service itself 
 
 A Ferdi recipe is basically nothing else than a node module and is currently initialized on `dom-ready`. You access all of the [electron](http://electron.atom.io) modules as well.
 
+> ℹ️ If you have any problems packaging your recipes, if you are inexperienced with the tools used or have any other problems, we are here to help! Just open a new issue at https://github.com/getferdi/recipes/issues/new and we can help you develop, test and publish your recipe and can package the recipe for you if you don't feel like you are able to.
 
 ## Table of Contents
-* [Installation](#user-content-installation)
-* [Plugin structure](#user-content-recipe-structure)
-* [Configuration (package.json)](#user-content-packagejson)
-* [Backend (index.js)](#user-content-indexjs)
-* [Frontend (webview.js)](#user-content-webviewjs)
-* [Icons](#user-content-icons)
-* [Dark Mode](#user-content-dark-mode)
-* [Debugging](#user-content-debugging)
-* [Deployment](#user-content-deployment)
+- [Ferdi Recipe Documentation / Overview](#ferdi-recipe-documentation--overview)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Recipe structure](#recipe-structure)
+    - [package.json](#packagejson)
+    - [index.js](#indexjs)
+    - [webview.js](#webviewjs)
+    - [Icons](#icons)
+    - [Dark Mode](#dark-mode)
+    - [Debugging](#debugging)
+    - [Publishing](#publishing)
 
 ## Installation
 1. To install a new recipe for testing, download the recipe folder e.g `whatsapp` or simply create an empty one with the name of your new recipe (we recommend using a recipe like `whatsapp` as a template though).
@@ -131,7 +134,7 @@ In order to debug your service integration, open Ferdi and use the shortcut `Cmd
 ### Publishing
 Ferdi uses its recipe repository at <https://github.com/getferdi/recipes> to publish recipes to all clients.
 
-> ℹ️ If you have any problems packaging your recipes, if you are inexperienced with the tools used or have any other problems, we are here to help! Just open a new issue at https://github.com/getferdi/recipes/issues/new and we can help you develop, test and publish your recipe and can package the recipe for you if you don't feel like you are able to.
+> Our scripts are designed to work best on Linux and macOS systems. If you want to use these scripts on Windows, you may need to use [WSL](https://docs.microsoft.com/en-US/windows/wsl/install-win10) in order for the scripts to function correctly. If you have problems with packaging, please open a new issue at https://github.com/getferdi/recipes/issues/new and we can package your recipe for you.
 
 To add your own recipe to the repository:
 - If you already uploaded the recipe to GitHub:
