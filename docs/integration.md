@@ -14,10 +14,10 @@ A Ferdi recipe is basically nothing else than a node module and is currently ini
     - [package.json](#packagejson)
     - [index.js](#indexjs)
     - [webview.js](#webviewjs)
-    - [Icons](#icons)
-    - [Dark Mode](#dark-mode)
-    - [Debugging](#debugging)
-    - [Publishing](#publishing)
+  - [Icons](#icons)
+  - [Dark Mode](#dark-mode)
+  - [Debugging](#debugging)
+  - [Publishing](#publishing)
 
 ## Installation
 1. To install a new recipe for testing, download the recipe folder e.g `whatsapp` or simply create an empty one with the name of your new recipe (we recommend using a recipe like `whatsapp` as a template though).
@@ -120,18 +120,18 @@ module.exports = (Ferdi) => {
 
 To get more information about the provided functions, check the [API docs](frontend_api.md).
 
-### Icons
+## Icons
 In order to show every service icon crystal clear within the Ferdi UI, we require a .svg and .png in 1024x1024px.
 
-### Dark Mode
+## Dark Mode
 You can provide a custom Dark Mode Theme for your recipes just by putting the `darkmode.css` into your recipe folder. Once the `darkmode.css` exists, you can enable the Dark Mode in your service settings.
 
 Recipe Dark Mode is only supported by Ferdi 5.0.0-beta.19+
 
-### Debugging
+## Debugging
 In order to debug your service integration, open Ferdi and use the shortcut `Cmd/Ctrl+Alt+Shift+i` to open the recipes developer tools.
 
-### Publishing
+## Publishing
 Ferdi uses its recipe repository at <https://github.com/getferdi/recipes> to publish recipes to all clients.
 
 > Our scripts are designed to work best on Linux and macOS systems. If you want to use these scripts on Windows, you may need to use [WSL](https://docs.microsoft.com/en-US/windows/wsl/install-win10) in order for the scripts to function correctly. If you have problems with packaging, please open a new issue at https://github.com/getferdi/recipes/issues/new and we can package your recipe for you.
