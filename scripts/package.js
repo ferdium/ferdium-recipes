@@ -63,7 +63,7 @@ Please make sure it contains: id, name, config`);
 
   // Package to .tar.gz
   console.log(`Packaging ${config.id}...`);
-  compress(recipeSrc, path.join('../', `${config.id}.tar.gz`));
+  compress(recipeSrc, path.join('../', 'archives', `${config.id}.tar.gz`));
 
   // Copy recipe src folder to /uncompressed/:id folder
   console.log('Copying to uncompressed recipes');

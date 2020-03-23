@@ -61,7 +61,7 @@ const decompress = (src, dest) => {
       // Update is availible
       console.log(`Updating ${recipe.id} from ${localRecipe ? localRecipe.version : '-1'} to ${recipe.version}`);
 
-      const compressed = path.join('../', `${recipe.id}.tar.gz`);
+      const compressed = path.join('../archives', `${recipe.id}.tar.gz`);
       const uncompressed = path.join('../uncompressed', recipe.id);
 
       // Download recipe to filesystem

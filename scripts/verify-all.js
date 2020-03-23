@@ -45,7 +45,7 @@ process.on('unhandledRejection', (error) => {
       // Get recipe infos
       const recipe = recipeInfo.id;
       const recipeNum = all.findIndex(e => e === recipeInfo);
-      const compressedRecipe = path.join(__dirname, '../', `${recipe}.tar.gz`);
+      const compressedRecipe = path.join(__dirname, '../', 'archives', `${recipe}.tar.gz`);
       const uncompressedRecipe = path.join(__dirname, '../', 'uncompressed', recipe);
 
       // Check that recipe exists

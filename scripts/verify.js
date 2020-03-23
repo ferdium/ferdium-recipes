@@ -35,7 +35,7 @@ if (!process.argv[2]) {
 (async () => {
   const recipe = process.argv[2];
 
-  const compressedRecipe = path.join(__dirname, '../', `${recipe}.tar.gz`);
+  const compressedRecipe = path.join(__dirname, '../', 'archives', `${recipe}.tar.gz`);
   const uncompressedRecipe = path.join(__dirname, '../', 'uncompressed', recipe);
   const tempUncompressed = path.join(__dirname, `uncompressed/`);
 
