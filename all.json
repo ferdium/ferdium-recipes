@@ -1043,5 +1043,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/reddit/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/reddit/icon.svg"
     }
+  },
+  {
+    "author": "Tony Ko <tony@htko.ca> and The Ferdi Team <hello@getferdi.com>",
+    "featured": false,
+    "id": "facebook",
+    "name": "Facebook",
+    "version": "1.0.1",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/facebook/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/facebook/icon.svg"
+    }
   }
 ]
