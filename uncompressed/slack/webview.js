@@ -9,7 +9,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const getTeamIcon = function getTeamIcon(count = 0) {
   let countTeamIconCheck = count;
   let bgUrl = null;
-  const teamMenu = document.querySelector('#team-menu-trigger');
+  const teamMenu = document.querySelector('#team-menu-trigger, .p-ia__sidebar_header__team_name');
 
   if (teamMenu) {
     teamMenu.click();

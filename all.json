@@ -488,7 +488,7 @@
     "featured": false,
     "id": "slack",
     "name": "Slack",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/slack/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/slack/icon.svg"
