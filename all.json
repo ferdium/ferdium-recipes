@@ -1032,5 +1032,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/evernote/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/evernote/icon.svg"
     }
+  },
+  {
+    "author": "Alex Devero <deveroalex@gmail.com> and The Ferdi Team <hello@getferdi.com>",
+    "featured": false,
+    "id": "reddit",
+    "name": "Reddit",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/reddit/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/reddit/icon.svg"
+    }
   }
 ]

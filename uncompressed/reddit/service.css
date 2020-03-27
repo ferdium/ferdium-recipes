@@ -1,0 +1,6 @@
+[id*=google_ads_iframe],
+[data-before-content=advertisement],
+.promotedlink {
+  display: none !important;
+  visibility: hidden !important;
+}
