@@ -1054,5 +1054,16 @@
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/facebook/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/facebook/icon.svg"
     }
+  },
+  {
+    "author": "Tom Chapman <thomas_chapman84@hotmail.com> and The Ferdi Team <hello@getferdi.com>",
+    "featured": false,
+    "id": "anydo",
+    "name": "Any.do",
+    "version": "1.0.1",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/anydo/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/anydo/icon.svg"
+    }
   }
 ]
