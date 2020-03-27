@@ -92,6 +92,13 @@ Please make sure it contains: id, name, config`);
     console.log('No package with ID found - creating new.');
     all.push(packageInfo);
   }
+
+  // Sort package list alphabetically
+  all = all.sort((a, b) => {
+    var textA = a.id.toLowerCase();
+    var textB = b.id.toLowerCase();
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+  });
   await fs.writeJson(allJson, all, {
     spaces: 2,
     EOL: '\n',
