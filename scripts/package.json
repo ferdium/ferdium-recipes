@@ -20,6 +20,7 @@
     "verify-all": "node verify-all.js",
     "update": "node update.js",
     "github": "node add_github.js",
+    "gh-load": "node gh_load.js",
     "load": "node load.js"
   }
 }
