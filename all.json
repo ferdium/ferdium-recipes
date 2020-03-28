@@ -950,7 +950,7 @@
     "featured": false,
     "id": "whatsapp",
     "name": "WhatsApp",
-    "version": "1.0.17",
+    "version": "1.0.20",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/whatsapp/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/whatsapp/icon.svg"
