@@ -1,5 +1,5 @@
 ---
-name: Recipe Request
+name: A Recipe Request
 about: Suggest a service that we should add to Ferdi
 title: '[Recipe Request] SERVICE'
 labels: 'recipe request'
