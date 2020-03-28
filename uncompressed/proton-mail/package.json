@@ -1,14 +1,14 @@
 {
   "id": "proton-mail",
-  "name": "proton-mail",
-  "version": "1.1.0",
+  "name": "ProtonMail",
+  "version": "1.2.0",
   "description": "proton-mail",
   "main": "index.js",
   "author": "Lukas Reineke <lukas.reineke@protonmail.com>",
   "license": "MIT",
   "config": {
     "serviceURL": "https://mail.protonmail.com/login",
-    "serviceName": "Proton Mail",
+    "serviceName": "ProtonMail",
     "message": "",
     "popup": [],
     "hasNotificationSound": false,
