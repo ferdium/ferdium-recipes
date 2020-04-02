@@ -6,7 +6,7 @@ A Ferdi recipe is basically nothing else than a node module and is currently ini
 
 > ℹ️ If you have any problems packaging your recipes, if you are inexperienced with the tools used or have any other problems, we are here to help! Just open a new issue at https://github.com/getferdi/recipes/issues/new and we can help you develop, test and publish your recipe and can package the recipe for you if you don't feel like you are able to.
 
-> If you want to update an existing recipe, please refer to <updating.md> instead
+> If you want to update an existing recipe, please refer to [updating.md](https://github.com/getferdi/recipes/blob/master/docs/updating.md) instead
 
 ## Table of Contents
 - [Ferdi Recipe Documentation / Overview](#ferdi-recipe-documentation--overview)
