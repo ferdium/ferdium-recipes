@@ -10,7 +10,7 @@ Before you can start updating the recipe, you'll need to know its internal ID. T
 
 To find the recipe ID, you can search <https://github.com/getferdi/recipes/blob/master/all.json> for the recipe you want to edit.
 
-In the rest of this guide, always replace "<recipe id>" with the ID of the recipe you want to edit.
+In the rest of this guide, always replace "&lt;recipe id>" with the ID of the recipe you want to edit.
 
 ## 1. Implement your updates
 
