@@ -8,7 +8,7 @@
   "license": "MIT",
   "config": {
     "serviceURL": "https://nextdoor.co.uk/inbox/",
-	"hasTeamId": false,
+    "hasTeamId": false,
     "hasNotificationSound": false
   }
 }
