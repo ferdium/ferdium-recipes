@@ -550,6 +550,17 @@
     }
   },
   {
+    "author": "Jake Lee <ferdi@jakelee.co.uk>",
+    "featured": false,
+    "id": "nextdoor",
+    "name": "Nextdoor",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/nextdoor/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/nextdoor/icon.svg"
+    }
+  },
+  {
     "author": "Adam Birds <adam.birds@adbtechltd.co.uk>",
     "featured": false,
     "id": "office365-owa",
