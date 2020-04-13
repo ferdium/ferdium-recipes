@@ -1,7 +1,7 @@
 {
   "id": "nextcloud-talk",
   "name": "Nextcloud Talk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nextcloud Talk",
   "main": "index.js",
   "author": "Stefan Malzner <stefan@adlk.io>",
