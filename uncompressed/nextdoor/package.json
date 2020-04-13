@@ -1,7 +1,7 @@
 {
   "id": "nextdoor",
   "name": "Nextdoor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nextdoor",
   "main": "index.js",
   "author": "Jake Lee <ferdi@jakelee.co.uk>",

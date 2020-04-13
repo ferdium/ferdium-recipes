@@ -554,7 +554,7 @@
     "featured": false,
     "id": "nextdoor",
     "name": "Nextdoor",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/nextdoor/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/nextdoor/icon.svg"
