@@ -2,7 +2,11 @@
 
 module.exports = Franz => {
   const getMessages = function getMessages() {
-    const unread = document.getElementsByClassName('notification-badge')[0].innerText;
+    var unread = 0
+    const notificationBadge = document.getElementsByClassName('notification-badge')[0]
+    if (notificationBadge != undefined) {
+        unread = notificationBadge.innerText;
+    }
     Franz.setBadge(parseInt(unread, 10));
   };
 
