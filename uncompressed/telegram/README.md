@@ -1,5 +1,7 @@
-# Telegram for Franz
-This is the official Franz recipe for Telegram
+# Telegram for Ferdi
+
+This is the official Ferdi recipe for Telegram
 
 ### How to create your own Franz recipes:
-* [Read the documentation](https://github.com/meetfranz/plugins)
+
+- [Read the documentation](https://github.com/getferdi/recipes/tree/master/docs)

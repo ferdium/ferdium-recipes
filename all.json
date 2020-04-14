@@ -792,11 +792,11 @@
     }
   },
   {
-    "author": "Stefan Malzner <stefan@adlk.io>",
+    "author": "Amine Mouafik <amine@mouafik.fr>",
     "featured": false,
     "id": "telegram",
     "name": "Telegram",
-    "version": "1.0.5",
+    "version": "2.0.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/telegram/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/telegram/icon.svg"
