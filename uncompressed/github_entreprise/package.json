@@ -1,8 +1,8 @@
 {
   "id": "github_entreprise",
-  "name": "GitHub Entreprise",
-  "version": "1.0.0",
-  "description": "GitHub Entreprise",
+  "name": "GitHub Enterprise",
+  "version": "1.0.1",
+  "description": "GitHub Enterprise",
   "main": "index.js",
   "author": "Antoine Aumjaud",
   "license": "MIT",
