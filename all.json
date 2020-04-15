@@ -1078,11 +1078,11 @@
     }
   },
   {
-    "author": "Adam Birds <adam.birds@adbtechltd.co.uk>",
+    "author": "Adam Birds <adam.birds@adbtechltd.co.uk> and akashnimare",
     "featured": false,
     "id": "zulip",
     "name": "Zulip",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zulip/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zulip/icon.svg"
