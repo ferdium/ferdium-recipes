@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = Franz => class GitHubEntreprise extends Franz {
+module.exports = Franz => class GitHubEnterprise extends Franz {
   async validateUrl(url) {
     try {
       const resp = await window.fetch(`${url}/api/v3`, {

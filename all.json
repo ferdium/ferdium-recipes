@@ -201,8 +201,8 @@
     "author": "Antoine Aumjaud",
     "featured": false,
     "id": "github_entreprise",
-    "name": "GitHub Entreprise",
-    "version": "1.0.0",
+    "name": "GitHub Enterprise",
+    "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/github_entreprise/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/github_entreprise/icon.svg"
