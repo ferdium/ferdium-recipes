@@ -6,6 +6,7 @@ const targz = require('targz');
 const fs = require('fs-extra');
 const path = require('path');
 const GitUrlParse = require("git-url-parse");
+const packageRecipe = require('./api/package');
 
 // Helper: Download file to filesystem
 const downloadFile = (async (url, path) => {
@@ -30,7 +31,7 @@ const decompress = (src, dest) => {
           dest
       }, function (err) {
           if (err) {
-              console.log('Error while decompressing recipe:', err);
+              console.log('⚠️ Could not add your recipe: There was an error while decompressing your GitHub repository file: ', err);
           }
           resolve();
       });
@@ -40,7 +41,11 @@ const decompress = (src, dest) => {
 const repo = process.argv[2];
 
 if (!repo || !/https:\/\/github\.com\/[^\/]+\/[^\/]+\/?/gi.test(repo)) {
-  console.log("Please provide a valid repository URL");
+  console.log(`⚠️ Could not add your recipe: The GitHub URL you provided doesn't seem to be valid.
+You should use this command like "yarn github https://github.com/user/repo".
+Please make sure you provide a URL in the format "https://github.com/user/repo"
+For more information about this script visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#publishing
+If you want to package a local recipe, please use "yarn package" instead.`);
   return;
 }
 
@@ -54,24 +59,24 @@ const compressed = path.join(__dirname, 'tmp.tar.gz');
 
 // Let us work in an async environment
 (async () => {
-  console.log("Creating temporary directory");
+  console.log("[Info] Creating temporary directory");
 
   await fs.ensureDir(tempDir);
   await fs.ensureDir(recipeSrc);
   await fs.ensureDir(recipeSrcTmp);
 
-  console.log("Downloading " + repo);
+  console.log("[Info] Downloading " + repo);
   
   await downloadFile(
     `https://github.com/${repoInfo.owner}/${repoInfo.name}/archive/master.tar.gz`,
     compressed
   );
 
-  console.log("Decompressing tarball");
+  console.log("[Info] Decompressing repository");
 
   await decompress(compressed, tempDir);
 
-  console.log("Moving directories");
+  console.log("[Info] Moving 'recipe_src' to 'recipe_src_tmp'");
 
   await fs.move(recipeSrc, recipeSrcTmp, {overwrite: true});
   await fs.move(
@@ -80,18 +85,21 @@ const compressed = path.join(__dirname, 'tmp.tar.gz');
     {overwrite: true}
   );
 
-  console.log("Adding to repository");
-  require('./package.js');
-  console.log("Continuing in 1.5 seconds");
+  console.log("[Info] Packaging your recipe");
+  try {
+    await packageRecipe();
+  } catch(e) {
+    return;
+  }
 
-  setTimeout(async () => {
-    console.log("Deleting downloaded files");
+  console.log("[Info] Deleting temporarydownloaded repository");
 
-    await fs.remove(compressed);
-    await fs.remove(recipeSrc);
-  
-    console.log("Moving back recipe folder");
-  
-    await fs.move(recipeSrcTmp, recipeSrc);
-  }, 1500);
+  await fs.remove(compressed);
+  await fs.remove(recipeSrc);
+
+  console.log("[Info] Moving back 'recipe_src_tmp' to 'recipe_src'");
+
+  await fs.move(recipeSrcTmp, recipeSrc);
+
+  console.log(`✅ Successfully packaged the recipe from your GitHub repository`);
 })();
