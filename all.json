@@ -1023,6 +1023,17 @@
     }
   },
   {
+    "author": "RoiArthurB <arthurbrugiere01@gmail.com>",
+    "featured": false,
+    "id": "zalo",
+    "name": "Zalo",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zalo/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/zalo/icon.svg"
+    }
+  },
+  {
     "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "zendesk",
