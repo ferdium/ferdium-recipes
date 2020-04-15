@@ -1,0 +1,18 @@
+{
+  "id": "zalo",
+  "name": "Zalo",
+  "version": "1.0.0",
+  "description": "Zalo",
+  "main": "index.js",
+  "author": "RoiArthurB <arthurbrugiere01@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://chat.zalo.me/",
+    "hasNotificationSound": true,
+    "hasDirectMessages": true,
+    "hasIndirectMessages": false,
+    "hasTeamID": false,
+    "hasPredefinedUrl": true,
+    "hasCustomUrl": false
+  }
+}
