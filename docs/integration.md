@@ -144,8 +144,8 @@ To add your own recipe to the repository:
 - If you already uploaded the recipe to GitHub:
   1. Fork https://github.com/getferdi/recipes and clone it to your computer
   2. Open a terminal in the `scripts/` folder of that repository
-  3. Run `yarn install` to install all dependencies
-  4. Run `yarn github [GitHub URL]`, e.g. `yarn github https://github.com/vantezzen/franz-recipe-standardnotes`, to add your new recipe
+  3. Run `npm install` to install all dependencies
+  4. Run `npm run github [GitHub URL]`, e.g. `npm run github https://github.com/vantezzen/franz-recipe-standardnotes`, to add your new recipe
   5. Create a PR to <https://github.com/getferdi/recipes> with your new changes
 
 - If you don't have it uploaded it GitHub:
@@ -153,6 +153,6 @@ To add your own recipe to the repository:
   1. Fork https://github.com/getferdi/recipes and clone it to your computer
   2. Copy your recipe files into `scripts/recipe_src`
   3. Open a terminal at `scripts/`
-  4. Run `yarn install` to install all dependencies
-  5. Run `yarn package` to package your new recipe
+  4. Run `npm install` to install all dependencies
+  5. Run `npm run package` to package your new recipe
   6. Create a PR to <https://github.com/getferdi/recipes> with your new changes

@@ -27,7 +27,7 @@ After changing the files in that folder, you can reload the service inside Ferdi
 
 - Fork https://github.com/getferdi/recipes and clone it to your computer
 - Open a terminal in the `scripts/` folder of that repository
-- Run `yarn install` to install all dependencies
+- Run `npm install` to install all dependencies
 
 This will setup the repository so that you can work on updating it.
 
@@ -35,9 +35,9 @@ This will setup the repository so that you can work on updating it.
 
 Again, please **do not** edit any of the files located inside the `uncompressed` folder! Before editing, you'll need to "load" the recipe you want to edit using
 ```JavaScript
-yarn load <recipe id>
+npm run load <recipe id>
 ```
-(e.g. `yarn load gmail`)
+(e.g. `npm run load gmail`)
 
 Your recipe is now loaded into `scripts/recipe_src`. You can now make changes to the files **in that folder*.
 
@@ -47,6 +47,6 @@ In order for Ferdi to update its recipe, you'll need to bump its version number.
 
 ## 5. Re-packaging the recipe
 
-You can now run `yarn package` to repackage your updated files. Your changes will be automatically copied into the recipe source at `uncompressed` and compressed into `archives/<recipe id>.tar.gz` - no need to update anything manually!
+You can now run `npm run package` to repackage your updated files. Your changes will be automatically copied into the recipe source at `uncompressed` and compressed into `archives/<recipe id>.tar.gz` - no need to update anything manually!
 
 ## 6. Commit your changes and create a PR to <https://github.com/getferdi/recipes>

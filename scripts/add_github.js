@@ -1,6 +1,8 @@
 /**
  * Add GitHub repository as recipe
  */
+require('./api/require-depts')();
+
 const fetch = require('node-fetch');
 const targz = require('targz');
 const fs = require('fs-extra');
