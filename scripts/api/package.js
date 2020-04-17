@@ -73,23 +73,9 @@ For more information about recipe icons visit https://github.com/getferdi/recipe
   // Check that icons have the right dimensions
   const pngSize = sizeOf(pngIcon);
   const pngHasRightSize = pngSize.width === 1024 && pngSize.height === 1024;
-  const svgSize = sizeOf(svgIcon);
-  const svgHasRightSize = svgSize.width === 1024 && svgSize.height === 1024;
-  if (!pngHasRightSize && !svgHasRightSize) {
-    console.log(`⚠️ Could not add your recipe: Icons require to be 1024x1024px in size.
-Both your "icon.png" and "icon.svg" don't seem to have the right size.
-You can use software like Photoshop, GIMP or Photopea (https://www.photopea.com/) to resize your icons.
-For more information about recipe icons visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);
-    return;
-  } else if (!pngHasRightSize) {
+  if (!pngHasRightSize) {
     console.log(`⚠️ Could not add your recipe: "icon.png" should be to be 1024x1024px in size.
 Please make sure that your "icon.png" has the right size of 1024x1024px in size.
-You can use software like Photoshop, GIMP or Photopea (https://www.photopea.com/) to resize your icons.
-For more information about recipe icons visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);
-    return;
-  } else if (!svgHasRightSize) {
-    console.log(`⚠️ Could not add your recipe: "icon.svg" should be to be 1024x1024px in size.
-Please make sure that your "icon.svg" has the right size of 1024x1024px in size.
 You can use software like Photoshop, GIMP or Photopea (https://www.photopea.com/) to resize your icons.
 For more information about recipe icons visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);
     return;
