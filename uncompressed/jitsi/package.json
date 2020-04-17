@@ -1,0 +1,13 @@
+{
+  "id": "jitsi",
+  "name": "Jitsi",
+  "version": "1.0.0",
+  "description": "Jitsi",
+  "main": "index.js",
+  "author": "Sampath Kumar Krishnan <sampath3493@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/sampathBlam/ferdi-jitsi",
+  "config": {
+    "serviceURL": "https://meet.jit.si/"
+  }
+}
