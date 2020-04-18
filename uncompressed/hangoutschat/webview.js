@@ -1,29 +1,36 @@
 module.exports = (Franz) => {
 
+  // class corresponding to the mute icon
   const muteSelector = '.DQy0Rb';
-  const directMessageSelector = '.eM5l9e.FVKzAb';
-  const indirectMessageSelector = '.PL5Wwe.H7du2 .t5F5nf';
+
+  // class corresponding to the red badge that is visible for direct messages
+  const directMessageSelector = '.SaMfhe.m9MHid';
+
+  // class corresponding to the bold text that is visible for all messages
+  const allMessageSelector = '.IL9EXe.PL5Wwe.dHI9xe.H7du2';
 
   const isMuted = node => !!node.closest('[role="listitem"]').querySelector(muteSelector);
 
   const getMessages = function getMessages() {
-
-    // get unread messages
+    let allMessageCount = 0;
     let directCount = 0;
+
+    // get unread direct messages
     document.querySelectorAll(directMessageSelector).forEach((node) => {
       // Hangouts Chat overrides the muted indicator when there is a direct mention
-      if (!isMuted(node)) {
+      // Check for the width of the badge element
+      if (!isMuted(node) && node.clientWidth != 0 ) {
         directCount += 1;
       }
     });
 
     let indirectCount = 0;
-    document.querySelectorAll(indirectMessageSelector).forEach((node) => {
+    document.querySelectorAll(allMessageSelector).forEach((node) => {
       if (!isMuted(node)) {
-        indirectCount += 1;
+        allMessageCount += 1;
       }
     });
-    indirectCount -= directCount;
+    indirectCount = allMessageCount - directCount;
 
     // set Franz badge
     Franz.setBadge(directCount, indirectCount);
