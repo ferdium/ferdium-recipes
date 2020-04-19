@@ -385,11 +385,11 @@
     }
   },
   {
-    "author": "Amine Mouafik <amine@mouafik.fr>",
+    "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "instagram",
-    "name": "Instagram",
-    "version": "1.0.0",
+    "name": "instagram",
+    "version": "2.0.2",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/instagram/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/instagram/icon.svg"
@@ -411,7 +411,7 @@
     "featured": false,
     "id": "jira",
     "name": "Jira",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/jira/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/jira/icon.svg"
@@ -433,7 +433,7 @@
     "featured": false,
     "id": "kaizala",
     "name": "Microsoft Kaizala",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/kaizala/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/kaizala/icon.svg"
@@ -488,7 +488,7 @@
     "featured": false,
     "id": "messenger",
     "name": "Messenger",
-    "version": "1.0.8",
+    "version": "1.1.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/messenger/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/messenger/icon.svg"
@@ -510,7 +510,7 @@
     "featured": false,
     "id": "msteams",
     "name": "Microsoft Teams",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/msteams/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/msteams/icon.svg"
@@ -730,7 +730,7 @@
     "featured": false,
     "id": "skype",
     "name": "Skype",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/skype/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/skype/icon.svg"
@@ -763,7 +763,7 @@
     "featured": false,
     "id": "steamchat",
     "name": "SteamChat",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/steamchat/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/steamchat/icon.svg"
@@ -972,7 +972,7 @@
     "featured": false,
     "id": "whatsapp",
     "name": "WhatsApp",
-    "version": "1.0.20",
+    "version": "1.1.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/whatsapp/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/whatsapp/icon.svg"
