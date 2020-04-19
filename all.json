@@ -388,8 +388,8 @@
     "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "instagram",
-    "name": "instagram",
-    "version": "2.0.2",
+    "name": "Instagram",
+    "version": "1.0.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/instagram/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/instagram/icon.svg"
