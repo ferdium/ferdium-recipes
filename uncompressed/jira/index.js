@@ -1,8 +1,11 @@
 "use strict";
 
-module.exports = Franz => class Jira extends Franz {
-  overrideUserAgent() {
-    return window.navigator.userAgent.replace(/(Franz|Electron)([^\s]+\s)/g, '');
-  }
-
-};
+module.exports = (Franz) =>
+  class Jira extends Franz {
+    overrideUserAgent() {
+      return window.navigator.userAgent.replace(
+        /(Ferdi|Electron)\/\S+ \([^)]+\)/g,
+        ""
+      );
+    }
+  };
