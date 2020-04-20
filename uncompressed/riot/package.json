@@ -1,7 +1,7 @@
 {
   "id": "riot",
   "name": "Riot",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Decentralized and encrypted discussion & collaboration, powered by [matrix]",
   "main": "index.js",
   "author": "Sylvain Cecchetto <cecchetto.sylvain@me.com>",
