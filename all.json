@@ -686,7 +686,7 @@
     "featured": false,
     "id": "riot",
     "name": "Riot",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/riot/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/riot/icon.svg"
