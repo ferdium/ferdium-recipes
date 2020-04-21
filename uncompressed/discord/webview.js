@@ -11,23 +11,23 @@ module.exports = Franz => {
   ];
 
   const getMessages = function getMessages() {
-    // Get direct messages
-    let direct = 0;
-
-    document.querySelectorAll('[class^="numberBadge-2s8kKX"]').forEach((directElement) => {
-      direct = direct + parseInt(directElement.innerHTML);
-    });
-
-    // Get indirect messages
-    let indirect = 0;
-
-    document.querySelectorAll('link[rel="icon"]').forEach((linkElement) => {
-      if(iconValues.indexOf(linkElement.getAttribute('href')) !== -1) {
-        indirect = 1;
-      }
-    });
-
-    // Set badge
+    const direct = document.querySelector('[class*="guilds-"]').querySelectorAll('[class^="numberBadge-"]').length;
+	
+	var indirect = 0;
+	var guilds = document.querySelector("[data-ref-id=guildsnav]");
+	if(guilds != null) {
+		var channelPills = [].slice.call(guilds.querySelectorAll("[class*=item-2hkk8m]"));
+		indirect += channelPills.filter(y => y.clientHeight == 8).length;
+	
+		var activeWindow = channelPills.find(y => y.clientHeight == 40);
+		if(activeWindow != null) {
+			var unreadChannels = document.querySelector("[class*=modeUnread]");
+			
+			if(unreadChannels != null)
+				indirect++;
+		}
+	}
+	
     Franz.setBadge(direct, indirect);
   };
 
