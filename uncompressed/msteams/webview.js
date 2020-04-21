@@ -77,8 +77,9 @@ module.exports = Franz => {
         messages = value;
       }
     }
+	const indirectMessages = document.querySelectorAll("[class*=channel-anchor][class*=ts-unread-channel]").length;
 
-    Franz.setBadge(messages);
+    Franz.setBadge(messages, indirectMessages);
   };
 
   Franz.injectCSS(path.join(__dirname, 'service.css'));
