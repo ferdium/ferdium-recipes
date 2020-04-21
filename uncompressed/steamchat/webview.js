@@ -4,17 +4,15 @@ module.exports = Franz => {
   const getMessages = function getMessages() {
     // get new msg count
     let count = 0;
-    let counters = document.querySelectorAll('.unread_message_count:not([style="display: none;"])');
-    counters = Array.prototype.slice.call(counters, Math.floor(counters.length / 2));
-    [].filter.call(counters, countValues => {
-      if (countValues) {
-        const countValue = countValues.querySelector('.unread_message_count_value');
-        if (countValue.innerHTML.length > 0) {
+    let counters = document.querySelectorAll("[class*=FriendMessageCount]");
+    [].filter.call(counters, countValue => {
+      if (countValue) {
           count += parseInt(countValue.innerHTML);
-        }
       }
     });
-    Franz.setBadge(count);
+	
+	const indirectMessages = document.querySelectorAll("[class*=ChatUnreadMessageIndicator]").length;
+    Franz.setBadge(count, indirectMessages);
 
     // force scroll to bottom of chat window
     const chatBoxes = document.querySelectorAll('.chat_dialog');
