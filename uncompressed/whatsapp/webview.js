@@ -28,16 +28,22 @@ window.addEventListener('beforeunload', async () => {
 
 module.exports = Franz => {
   const getMessages = function getMessages() {
-    const elements = document.querySelectorAll('.CxUIE, .unread, ._0LqQ');
-    let count = 0;
+    const elements = document.querySelectorAll("[class=OUeyt]");
+    var count = 0;
+	var indirectCount = 0;
 
-    for (let i = 0; i < elements.length; i += 1) {
-      if (elements[i].querySelectorAll('*[data-icon="muted"]').length === 0) {
-        count += 1;
-      }
+    for (var i = 0; i < elements.length; i += 1) {
+	  var countValue = parseInt(elements[i].textContent, 10);
+	  
+      if (elements[i].parentNode.previousElementSibling === null || elements[i].parentNode.previousElementSibling.querySelectorAll("[data-icon=muted]").length === 0) {
+        count += countValue;
+      } 
+	  else {
+		indirectCount += countValue;
+	  }
     }
 
-    Franz.setBadge(count);
+    Franz.setBadge(count, indirectCount);
   };
 
   Franz.injectCSS(path.join(__dirname, 'service.css'));

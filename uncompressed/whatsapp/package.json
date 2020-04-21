@@ -1,7 +1,7 @@
 {
   "id": "whatsapp",
   "name": "WhatsApp",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "WhatsApp",
   "main": "index.js",
   "author": "Stefan Malzner <stefan@adlk.io>",
@@ -9,6 +9,8 @@
   "config": {
     "serviceURL": "https://web.whatsapp.com",
     "hasNotificationSound": true,
+    "hasDirectMessages": true,
+    "hasIndirectMessages": true,
     "disablewebsecurity": true
   }
 }
