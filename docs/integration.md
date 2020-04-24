@@ -100,17 +100,32 @@ module.exports = Ferdi => class RocketChat extends Ferdi {
 `validateServer` needs to return a [`Promise`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise), otherwise validation will fail.
 
 
-If you need to override the default user-agent in your service, you can do so like the following snippet of code
 
+By default, Ferdi's user agent looks like this:
 ```
-    overrideUserAgent() {
-      return window.navigator.userAgent.replace(
-        /(Ferdi|Electron)\/\S+ \([^)]+\)/g,
-        ""
-      );
-    }
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.141 Safari/537.36 Ferdi/5.4.4-beta.3 (Electron 8.1.1)
 ```
 
+Some services may not be compatible with Ferdi adding it's signature to the user agent.
+
+If you encounter such a service, you remove this signature with the following snippet of code
+
+```
+overrideUserAgent() {
+  return window.navigator.userAgent.replace(
+    /(Ferdi|Electron)\/\S+ \([^)]+\)/g,
+    ""
+  );
+}
+```
+
+If you want to change the user agent to a different one, you can simply return the String for the new user agent:
+
+```
+overrideUserAgent() {
+  return "Mozilla/2.02Gold (Win95; I)";
+}
+```
 
 ### webview.js
 The webview.js is the actual script that will be loaded into the webview. Here you can do whatever you want to do in order perfectly integrate the service into Ferdi. For convenience, we have provided a very simple set of functions to set unread message badges (`Ferdi.setBadge()`) and inject CSS files (`Ferdi.injectCSS()`).

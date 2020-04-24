@@ -44,27 +44,34 @@ module.exports = Ferdi => class RocketChat extends Ferdi {
 ```
 
 ### overrideUserAgent()
-Validate if the given URL is a valid service instance.  
+Override the user agent used inside the service webview.  
 
 #### Returns
-`Boolean`
+`String`
 
 #### Usage
 
 ```js
-// Discord integration
 module.exports = Ferdi => class Discord extends Ferdi {
   overrideUserAgent() {
-    const useragent = window.navigator.userAgent;
-
-    // Quick and dirty hackfix
-    const parts = useragent.split('(KHTML, like Gecko)');
-
-    return parts.join('(KHTML, like Gecko) discord/0.0.248').replace('Electron', 'Discord').replace('Ferdi', 'Discord');
+    // Remove Ferdi's signature from the user agent
+    return window.navigator.userAgent.replace(
+    /(Ferdi|Electron)\/\S+ \([^)]+\)/g,
+    ""
+  );
   }
 };
-
 ```
+
+```js
+module.exports = Ferdi => class Example extends Ferdi {
+  overrideUserAgent() {
+    // Use a completely different user agent
+    return "Mozilla/2.02Gold (Win95; I)";
+  }
+};
+```
+
 
 ### Events
 Ferdi recipes can hook into the [electron webview events](https://electron.atom.io/docs/api/webview-tag/#dom-events) to trigger custom functions.
