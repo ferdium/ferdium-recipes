@@ -1,7 +1,7 @@
 {
   "id": "zalo",
   "name": "Zalo",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Zalo",
   "main": "index.js",
   "author": "RoiArthurB <arthurbrugiere01@gmail.com>",
