@@ -88,6 +88,17 @@
     }
   },
   {
+    "author": "Daniele Lenares <daniele.lenares@gmail.com>",
+    "featured": false,
+    "id": "clubhouse",
+    "name": "Clubhouse",
+    "version": "1.0.1",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/clubhouse/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/clubhouse/icon.svg"
+    }
+  },
+  {
     "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": true,
     "id": "discord",
