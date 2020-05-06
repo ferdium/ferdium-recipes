@@ -1,7 +1,7 @@
 {
   "id": "clubhouse",
   "name": "Clubhouse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Project Management for Software Teams",
   "main": "index.js",
   "author": "Daniele Lenares <daniele.lenares@gmail.com>",
