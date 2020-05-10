@@ -598,7 +598,7 @@
     "featured": false,
     "id": "notion",
     "name": "Notion",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/notion/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/notion/icon.svg"
