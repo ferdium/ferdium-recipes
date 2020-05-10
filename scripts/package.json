@@ -12,6 +12,7 @@
     "git-url-parse": "^11.1.2",
     "image-size": "^0.8.3",
     "node-fetch": "^2.6.0",
+    "open": "^7.0.3",
     "semver": "^6.3.0",
     "targz": "^1.0.1"
   },
@@ -22,6 +23,7 @@
     "update": "node update.js",
     "github": "node add_github.js",
     "gh-load": "node gh_load.js",
-    "load": "node load.js"
+    "load": "node load.js",
+    "create": "node create.js"
   }
 }

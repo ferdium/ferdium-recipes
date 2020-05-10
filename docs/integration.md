@@ -13,7 +13,8 @@ A Ferdi recipe is basically nothing else than a node module and is currently ini
 ## Table of Contents
 - [Ferdi Recipe Documentation / Overview](#ferdi-recipe-documentation--overview)
   - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
+  - [Preparing](#preparing)
+  - [Create a recipe](#create-a-recipe)
   - [Recipe structure](#recipe-structure)
     - [package.json](#packagejson)
     - [index.js](#indexjs)
@@ -23,14 +24,26 @@ A Ferdi recipe is basically nothing else than a node module and is currently ini
   - [Debugging](#debugging)
   - [Publishing](#publishing)
 
-## Installation
-1. To install a new recipe for testing, download the recipe folder e.g `whatsapp` or simply create an empty one with the name of your new recipe (we recommend using a recipe like `whatsapp` as a template though).
-2. Open the development Ferdi Plugins folder on your machine (note that the `dev` directory may not exist yet, and you must create it):
-  * Mac: `~/Library/Application Support/Ferdi/recipes/dev/`
-  * Windows: `%appdata%/Ferdi/recipes/dev/`
-  * Linux: `~/.config/Ferdi/recipes/dev`
-3. Copy the recipe folder into this folder
-4. Reload Ferdi (`CMD/CTRL + SHIFT + R`)
+## Preparing
+Before you can begin, you should have [NodeJS](http://nodejs.org/) installed and should be familiar with using npm, specifically "npm install" and "npm run".
+
+You should also have basic knowledge of JavaScript - don't worry, you'll really only need some basic commands as we've already prepared the complicated stuff for you.
+
+## Create a recipe
+1. Clone this repository. You can do this by running `git clone https://github.com/getferdi/recipes.git` in your terminal or by downloading the repository from <https://github.com/getferdi/recipes/archive/master.zip>.
+2. Install its dependencies via the terminal:
+```Bash
+cd scripts/
+npm install
+```
+3. You can now run our automatic recipe wizard that creates and opens the new recipe for you:
+```Bash
+# Make sure you are still in the scripts/ folder
+npm run create "Service Name"
+```
+Replace `Service Name` with the name of your service, e.g. `npm run create "Google Hangouts"`.
+This command will automatically create the development recipe in the correct folder, prepares it for your service and opens the new recipe in your file explorer or Finder.
+4. Reload Ferdi (`CMD/CTRL + SHIFT + R`) in order for it to register the new recipe
 
 ## Recipe structure
 Every recipe needs a specific file structure in order to work as a Ferdi recipe
