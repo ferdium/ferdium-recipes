@@ -10,6 +10,7 @@
   ],
   "license": "MIT",
   "config": {
+    "serviceURL": "https://example.com/",
     "hasCustomUrl": true,
     "hasNotificationSound": true,
     "hasTeamId": false

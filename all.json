@@ -110,6 +110,17 @@
     }
   },
   {
+    "author": "tfehren",
+    "featured": false,
+    "id": "enterprise-owa",
+    "name": "Enterprise Outlook Web App",
+    "version": "1.1.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/enterprise-owa/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/enterprise-owa/icon.svg"
+    }
+  },
+  {
     "author": "concon",
     "featured": false,
     "id": "evernote",
