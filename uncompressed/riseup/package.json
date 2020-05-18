@@ -1,0 +1,12 @@
+{
+  "id": "riseup",
+  "name": "Riseup.net",
+  "version": "1.0.0",
+  "description": "riseup.net",
+  "main": "index.js",
+  "author": "Dan Feder <danfeder@riseup.net>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://mail.riseup.net"
+  }
+}
