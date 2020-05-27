@@ -1,7 +1,7 @@
 var os = require('os')
 
 module.exports = Franz =>
-  class Gmail extends Franz {
+  class GoogleMeet extends Franz {
     modifyRequestHeaders() {
       return [
         {
