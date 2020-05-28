@@ -737,6 +737,17 @@
     }
   },
   {
+    "author": "Dan Feder <danfeder@riseup.net>",
+    "featured": false,
+    "id": "riseup",
+    "name": "Riseup.net",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/riseup/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/riseup/icon.svg"
+    }
+  },
+  {
     "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": true,
     "id": "rocketchat",
