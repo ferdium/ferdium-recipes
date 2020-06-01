@@ -46,12 +46,12 @@
   {
     "author": "Thomas Fehrenbach",
     "featured": false,
-    "id": "bbb_enterprise",
-    "name": "BigBlueButton Enterprise",
+    "id": "bigbluebutton",
+    "name": "BigBlueButton",
     "version": "1.0.0",
     "icons": {
-      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/bbb_enterprise/icon.png",
-      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/bbb_enterprise/icon.svg"
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/bigbluebutton/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/bigbluebutton/icon.svg"
     }
   },
   {

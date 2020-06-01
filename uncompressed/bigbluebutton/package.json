@@ -1,8 +1,8 @@
 {
-  "id": "bbb_enterprise",
-  "name": "BigBlueButton Enterprise",
+  "id": "bigbluebutton",
+  "name": "BigBlueButton",
   "version": "1.0.0",
-  "description": "BigBlueButton Enterprise - Custom URL",
+  "description": "BigBlueButton",
   "main": "index.js",
   "author": "Thomas Fehrenbach",
   "license": "MIT",
