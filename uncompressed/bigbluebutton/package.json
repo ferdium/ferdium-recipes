@@ -1,0 +1,13 @@
+{
+  "id": "bigbluebutton",
+  "name": "BigBlueButton",
+  "version": "1.0.0",
+  "description": "BigBlueButton",
+  "main": "index.js",
+  "author": "Thomas Fehrenbach",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://bigbluebutton.mycompany.com/",
+    "hasCustomUrl": true
+  }
+}

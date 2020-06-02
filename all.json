@@ -44,6 +44,17 @@
     }
   },
   {
+    "author": "Thomas Fehrenbach",
+    "featured": false,
+    "id": "bigbluebutton",
+    "name": "BigBlueButton",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/bigbluebutton/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/bigbluebutton/icon.svg"
+    }
+  },
+  {
     "author": "Koma, hideosasaki",
     "featured": false,
     "id": "chatwork",
