@@ -10,7 +10,7 @@
   ],
   "license": "MIT",
   "config": {
-    "serviceURL": "https://example.com/",
+    "serviceURL": "https://owa.yourcompany.com/owa",
     "hasCustomUrl": true,
     "hasNotificationSound": true,
     "hasTeamId": false
