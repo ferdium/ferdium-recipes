@@ -155,9 +155,10 @@ For more information about the webview.js file visit https://github.com/getferdi
 
   // Add recipe to all.json
   console.log('[Info] Adding to all.json');
+  const isFeatured = packageIndex !== -1 ? all[packageIndex].featured : false;
   const packageInfo = {
     "author": config.author || '',
-    "featured": false,
+    "featured": isFeatured,
     "id": config.id,
     "name": config.name,
     "version": config.version || '1.0.0',
