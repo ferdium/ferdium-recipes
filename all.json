@@ -796,7 +796,7 @@
     "featured": false,
     "id": "skype",
     "name": "Skype",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/skype/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/skype/icon.svg"
