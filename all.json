@@ -22,6 +22,17 @@
     }
   },
   {
+    "author": "Kittywhiskers Van Gogh <63189531+kittywhiskers@users.noreply.github.com>",
+    "featured": false,
+    "id": "anonaddy",
+    "name": "AnonAddy",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/anonaddy/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/anonaddy/icon.svg"
+    }
+  },
+  {
     "author": "Tom Chapman <thomas_chapman84@hotmail.com> and The Ferdi Team <hello@getferdi.com>",
     "featured": false,
     "id": "anydo",
@@ -52,6 +63,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/bigbluebutton/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/bigbluebutton/icon.svg"
+    }
+  },
+  {
+    "author": "Kittywhiskers Van Gogh <63189531+kittywhiskers@users.noreply.github.com>",
+    "featured": false,
+    "id": "bitbucket",
+    "name": "BitBucket",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/bitbucket/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/bitbucket/icon.svg"
     }
   },
   {
@@ -129,6 +151,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/enterprise-owa/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/enterprise-owa/icon.svg"
+    }
+  },
+  {
+    "author": "Kittywhiskers Van Gogh <63189531+kittywhiskers@users.noreply.github.com>",
+    "featured": false,
+    "id": "epicgames",
+    "name": "Epic Games Store",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/epicgames/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/epicgames/icon.svg"
     }
   },
   {
@@ -239,6 +272,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/github_entreprise/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/github_entreprise/icon.svg"
+    }
+  },
+  {
+    "author": "Kittywhiskers Van Gogh <63189531+kittywhiskers@users.noreply.github.com>",
+    "featured": false,
+    "id": "gitlab",
+    "name": "GitLab",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gitlab/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/gitlab/icon.svg"
     }
   },
   {
@@ -943,6 +987,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/trello/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/trello/icon.svg"
+    }
+  },
+  {
+    "author": "Kittywhiskers Van Gogh <63189531+kittywhiskers@users.noreply.github.com>",
+    "featured": false,
+    "id": "tutanota",
+    "name": "Tutanota",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/tutanota/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/tutanota/icon.svg"
     }
   },
   {
