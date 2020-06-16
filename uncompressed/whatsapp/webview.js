@@ -28,7 +28,7 @@ window.addEventListener('beforeunload', async () => {
 
 module.exports = Franz => {
   const getMessages = function getMessages() {
-    const elements = document.querySelectorAll("[class=OUeyt]");
+    const elements = document.querySelectorAll("[class=_31gEB]");
     var count = 0;
 	var indirectCount = 0;
 
