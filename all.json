@@ -804,10 +804,10 @@
   },
   {
     "author": "Stefan Malzner <stefan@adlk.io>",
-    "featured": true,
+    "featured": false,
     "id": "rocketchat",
     "name": "Rocket.Chat",
-    "version": "1.0.6",
+    "version": "1.0.8",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/rocketchat/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/rocketchat/icon.svg"
@@ -1122,11 +1122,11 @@
     }
   },
   {
-    "author": "Rico Herwig <rherwig4711@gmail.com>",
+    "author": "Rico Herwig <rherwig4711@gmail.com>, Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "workplace",
     "name": "Workplace",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/workplace/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/workplace/icon.svg"
