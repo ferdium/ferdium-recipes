@@ -1,0 +1,12 @@
+{
+  "id": "stackexchange",
+  "name": "StackExchange",
+  "version": "1.0.0",
+  "description": "An unofficial Ferdi recipe for StackExchange",
+  "main": "index.js",
+  "author": "Kittywhiskers Van Gogh <63189531+kittywhiskers@users.noreply.github.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://stackexchange.com/"
+  }
+}
