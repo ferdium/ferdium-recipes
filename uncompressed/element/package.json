@@ -1,0 +1,18 @@
+{
+  "id": "element",
+  "name": "Element",
+  "version": "1.0.0",
+  "description": "Decentralized, encrypted chat & collaboration powered by [matrix]",
+  "main": "index.js",
+  "author": "Omove <61330514+omove@users.noreply.github.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.element.io",
+    "hasTeamID": false,
+    "hasCustomUrl": true,
+    "message": "Element's default URL is https://app.element.io/",
+    "urlInputSuffix": false,
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  }
+}
