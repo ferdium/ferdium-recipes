@@ -1,0 +1,13 @@
+{
+  "id": "noisli",
+  "name": "Noisli",
+  "version": "1.0.0",
+  "description": "An unofficial Ferdi recipe for Noisli",
+  "main": "index.js",
+  "author": "Andres Ussa <andrsussa@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.noisli.com/login",
+    "hasNotificationSound": false
+  }
+}

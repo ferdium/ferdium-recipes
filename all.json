@@ -660,6 +660,17 @@
     }
   },
   {
+    "author": "Andres Ussa <andrsussa@gmail.com>",
+    "featured": false,
+    "id": "noisli",
+    "name": "Noisli",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/noisli/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/noisli/icon.svg"
+    }
+  },
+  {
     "author": "Tania R. Zuniga <tania@tanx.dev>",
     "featured": false,
     "id": "notion",
