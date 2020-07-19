@@ -1,7 +1,7 @@
 {
   "id": "wrike",
   "name": "Wrike",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Project management SaaS",
   "main": "index.js",
   "author": "Koma",
