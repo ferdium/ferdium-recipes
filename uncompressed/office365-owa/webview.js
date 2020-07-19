@@ -3,7 +3,7 @@
 module.exports = Franz => {
   const getMessages = function getMessages() {
     let unreadMail = 0;
-    
+
     if (location.pathname.match(/\/owa/)) {
       // classic app
       unreadMail = parseInt(
@@ -19,7 +19,7 @@ module.exports = Franz => {
         return;
       }
 
-      unreadMail = [...folders.parentNode.children].reduce((count, child) => {
+      unreadMail = [...folders.parentNode.parentNode.children].reduce((count, child) => {
         const unread = child.querySelector('.screenReaderOnly');
         return unread && unread.textContent === 'unread'
           ? count + parseInt(unread.previousSibling.textContent, 10)
