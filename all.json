@@ -143,11 +143,11 @@
     }
   },
   {
-    "author": "Omove <61330514+omove@users.noreply.github.com>",
+    "author": "Sylvain Cecchetto <cecchetto.sylvain@me.com>, Omove <61330514+omove@users.noreply.github.com>, Achim Leitner <1033549+fjl5@users.noreply.github.com>",
     "featured": false,
     "id": "element",
     "name": "Element",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/element/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/element/icon.svg"
