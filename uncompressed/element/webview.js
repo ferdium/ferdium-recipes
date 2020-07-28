@@ -2,7 +2,7 @@
 
 module.exports = Franz => {
   function getMessages() {
-    const badges = document.getElementsByClassName('mx_RoomSublist2_badgeContainer');
+    const badges = document.getElementsByClassName('mx_RoomSublist_badgeContainer');
 
     // Number of messages from People
     let direct_count = 0;
