@@ -2,17 +2,20 @@
 
 module.exports = Franz => {
   function getMessages() {
-    const indirect_badge = document.getElementsByClassName('mx_RoomSubList_badge');
-    let indirect_count = 0;
-    if (indirect_badge.length !== 0) {
-      indirect_count = indirect_badge.length;
+    const badges = document.getElementsByClassName('mx_RoomSublist_badgeContainer');
+
+    // Number of messages from People
+    let direct_count = 0;
+    if (badges.length > 0 && badges[0].children.length > 0) {
+      direct_count = parseInt(badges[0].textContent)
     }
 
-    const direct_badge = document.getElementsByClassName('mx_RoomSubList_badgeHighlight');
-    let direct_count = 0;
-    if (direct_badge.length !== 0) {
-      direct_count = direct_badge.length;
+    // Number of messages from Rooms
+    let indirect_count = 0;
+    if (badges.length > 1 && badges[1].children.length > 0) {
+      indirect_count = parseInt(badges[1].textContent)
     }
+
     // set Franz badge
     Franz.setBadge(direct_count, indirect_count);
   }
