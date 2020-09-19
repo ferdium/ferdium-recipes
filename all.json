@@ -814,6 +814,17 @@
     }
   },
   {
+    "author": "Roman Dąbal <dabalroman@gmail.com>",
+    "featured": false,
+    "id": "pomodoro-tracker",
+    "name": "Pomodoro Tracker",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pomodoro-tracker/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/pomodoro-tracker/icon.svg"
+    }
+  },
+  {
     "author": "Lukas Reineke <lukas.reineke@protonmail.com>",
     "featured": false,
     "id": "proton-mail",
