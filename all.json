@@ -231,6 +231,17 @@
     }
   },
   {
+    "author": "Patrick Kastner <patrick.kastner@gmail.com>",
+    "featured": false,
+    "id": "feedly",
+    "name": "Feedly",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/feedly/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/feedly/icon.svg"
+    }
+  },
+  {
     "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "flowdock",
