@@ -796,7 +796,7 @@
     "featured": false,
     "id": "outlook",
     "name": "Outlook",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/outlook/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/uncompressed/outlook/icon.svg"
