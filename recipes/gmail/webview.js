@@ -5,13 +5,13 @@ module.exports = (Franz) => {
   if (location.hostname == 'www.google.com' && location.href.includes("gmail/about/")) {
     location.href = 'https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/';
   }
-  
+
   const getMessages = function getMessages() {
     let count = 0;
 
-    if (document.getElementsByClassName('J-Ke n0').length > 0) {
-      if (document.getElementsByClassName('J-Ke n0')[0].getAttribute('aria-label') != null) {
-        count = parseInt(document.getElementsByClassName('J-Ke n0')[0].getAttribute('aria-label').replace(/[^0-9.]/g, ''), 10);
+    if (document.getElementsByClassName('bsU').length > 0) {
+      if (document.getElementsByClassName('bsU')[0].innerHTML != null) {
+        count = parseInt(document.getElementsByClassName('bsU')[0].innerHTML.trim(), 10);
       }
     }
 
