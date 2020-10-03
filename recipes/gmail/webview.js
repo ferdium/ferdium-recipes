@@ -9,9 +9,12 @@ module.exports = (Franz) => {
   const getMessages = function getMessages() {
     let count = 0;
 
-    if (document.getElementsByClassName('bsU').length > 0) {
-      if (document.getElementsByClassName('bsU')[0].innerHTML != null) {
-        count = parseInt(document.getElementsByClassName('bsU')[0].innerHTML.trim(), 10);
+    const inboxLinks = document.getElementsByClassName('J-Ke n0');
+    if (inboxLinks.length > 0) {
+      const inboxLink = inboxLinks[0];
+      const unreadCounts = inboxLink.parentNode.parentNode.getElementsByClassName('bsU');
+      if (unreadCounts.length > 0) {
+        count = parseInt(unreadCounts[0].innerHTML.trim(), 10);
       }
     }
 
