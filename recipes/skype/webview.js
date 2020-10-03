@@ -3,6 +3,15 @@
 const {  remote: { BrowserWindow } } = require("electron");
 const path = require('path');
 
+const nameDescriptor = Object.getOwnPropertyDescriptor(Plugin.prototype, 'name');
+const getName = nameDescriptor.get;
+Object.defineProperty(Plugin.prototype, 'name', {
+  ...nameDescriptor,
+  get() {
+    return getName.call(this).replace('Chromium', 'Chrome');
+  }
+});
+
 module.exports = (Franz, settings) => {
   const getMessages = function getMessages() {
     let count = 0;
