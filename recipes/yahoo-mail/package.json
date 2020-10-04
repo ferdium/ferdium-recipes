@@ -1,6 +1,6 @@
 {
-  "id": "yahooMail",
-  "name": "yahoo-mail",
+  "id": "yahoo-mail",
+  "name": "Yahoo Mail",
   "version": "1.0.0",
   "description": "Yahoo Mail recipe for Franz",
   "main": "index.js",
