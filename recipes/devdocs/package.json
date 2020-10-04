@@ -1,0 +1,12 @@
+{
+  "id": "devdocs",
+  "name": "DevDocs",
+  "version": "1.0.0",
+  "description": "devdocs",
+  "main": "index.js",
+  "author": "Ferdi <hello@getferdi.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://devdocs.io"
+  }
+}
