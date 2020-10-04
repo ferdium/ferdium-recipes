@@ -1,0 +1,12 @@
+{
+  "id": "onenote",
+  "name": "OneNote",
+  "version": "1.0.0",
+  "description": "onenote",
+  "main": "index.js",
+  "author": "Ferdi <hello@getferdi.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://onenote.com"
+  }
+}

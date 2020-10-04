@@ -1,0 +1,12 @@
+{
+  "id": "icloud-reminders",
+  "name": "iCloud Reminders",
+  "version": "1.0.0",
+  "description": "icloud-reminders",
+  "main": "index.js",
+  "author": "Ferdi <hello@getferdi.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.icloud.com/reminders"
+  }
+}
