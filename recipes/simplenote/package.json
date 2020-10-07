@@ -1,0 +1,12 @@
+{
+  "id": "simplenote",
+  "name": "Simplenote",
+  "version": "1.0.0",
+  "description": "simplenote",
+  "main": "index.js",
+  "author": "Ferdi <hello@getferdi.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.simplenote.com/"
+  }
+}
