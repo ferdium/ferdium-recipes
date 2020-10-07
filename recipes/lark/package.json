@@ -1,0 +1,15 @@
+{
+  "id": "lark",
+  "name": "Lark",
+  "version": "0.0.1",
+  "description": "Lark",
+  "main": "index.js",
+  "author": "hongsy <hongsy2006@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://{teamId}.larksuite.com/messenger/",
+    "hasTeamId": true,
+    "urlInputSuffix": ".larksuite.com",
+    "hasNotificationSound": true
+  }
+}
