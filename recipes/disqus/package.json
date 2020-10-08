@@ -1,0 +1,12 @@
+{
+  "id": "disqus",
+  "name": "Disqus",
+  "version": "1.0.0",
+  "description": "disqus",
+  "main": "index.js",
+  "author": "Ferdi <hello@getferdi.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://disqus.com/home/"
+  }
+}
