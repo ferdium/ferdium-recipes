@@ -1,21 +1,15 @@
 "use strict";
 
-var _path = _interopRequireDefault(require("path"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+let getInnerInt = selector => {
+  const element = document.querySelector(selector);
+  return element && parseInt(element.innerText);
+}
 
 module.exports = Ferdi => {
   const getMessages = function getMessages() {
-    let direct = 0;
-
-    const notificationButton = document.querySelector(
-      "#app button[data-test-id='notificationsCount'"
+    let direct = (
+      getInnerInt("#app button[data-test-id='notificationsCount']") || 0
     );
-
-    if (notificationButton) {
-      const notificationCount = parseInt(notificationButton.innerText);
-      direct = isNaN(notificationCount) ? 0 : notificationCount;
-    }
 
     Ferdi.setBadge(direct);
   };
