@@ -1,0 +1,6 @@
+/* Insert custom styles you want to insert here */
+.app-wrapper-web .app {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+}
