@@ -8,8 +8,7 @@
   },
   "scripts": {
     "package": "node scripts/package.js",
-    "create": "node scripts/create.js",
-    "minify-images": "./minify-images.sh"
+    "create": "node scripts/create.js"
   },
   "repository": {
     "type": "git",
@@ -30,8 +29,5 @@
     "image-size": "^0.9.1",
     "open": "^7.2.1",
     "targz": "^1.0.1"
-  },
-  "devDependencies": {
-    "imagemin-cli": "^6.0.0"
   }
 }
