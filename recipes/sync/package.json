@@ -1,0 +1,12 @@
+{
+  "id": "sync",
+  "name": "sync",
+  "version": "1.0.0",
+  "description": "Sync",
+  "main": "index.js",
+  "author": "Marco Lussetti <packages@marcolussetti.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://cp.sync.com/files/"
+  }
+}
