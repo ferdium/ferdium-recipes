@@ -1,7 +1,7 @@
 ---
 name: A Recipe Request
 about: Suggest a service that we should add to Ferdi
-title: '[Recipe Request] SERVICE'
+title: '<SERVICE>'
 labels: 'recipe request'
 assignees: ''
 
