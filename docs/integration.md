@@ -49,7 +49,7 @@ This command will automatically create the development recipe in the correct fol
 ## Recipe structure
 Every recipe needs a specific file structure in order to work as a Ferdi recipe
 
-* icon.svg - Icon for the service in SVG form
+* icon.svg - Icon for the service in SVG form (must be square)
 * icon.png - Icon for the service in PNG form (1024x1024px)
 * index.js - Backend script, this script is NOT included in the service webview but only in Ferdi itself
 * package.json - Information about the recipe
@@ -167,7 +167,7 @@ module.exports = (Ferdi) => {
 To get more information about the provided functions, check the [API docs](frontend_api.md).
 
 ## Icons
-In order to show every service icon crystal clear within the Ferdi UI, we require a .svg and .png in 1024x1024px.
+In order to show every service icon crystal clear within the Ferdi UI, we require the icon in both .svg (square) and .png (square, 1024x1024px) formats.
 
 ## Dark Mode
 You can provide a custom Dark Mode Theme for your recipes just by putting the `darkmode.css` into your recipe folder. Once the `darkmode.css` exists, you can enable the Dark Mode in your service settings.
