@@ -2,9 +2,10 @@ const path = require('path');
 
 module.exports = (Franz, options) => {
   const getMessages = () => {
-    const unreadMail = $(".zm_urd").not(".hidden").length;
+    const unreadMailInCurrentFolder = $(".zmList.zmLUrd").length;
+    const unreadMailAnyware = $("#zmlTree .zmTreeNDWra .zmBold").length;
 
-    Franz.setBadge(unreadMail);
+    Franz.setBadge(unreadMailInCurrentFolder, unreadMailAnyware);
   }
 
   Franz.loop(getMessages);
