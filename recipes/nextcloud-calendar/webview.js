@@ -6,18 +6,15 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {default: obj};
 }
 
-module.exports = Franz => {
+module.exports = Ferdi => {
   const getMessages = function getMessages() {
     const direct = document.querySelectorAll(
-      '.app-navigation-entry-utils-counter.highlighted'
-    ).length;
-    const indirect = document.querySelectorAll(
-      '.app-navigation-entry-utils-counter:not(.highlighted)'
+      '.notifications .notification-wrapper .notification[object_type="dav"]'
     ).length;
 
-    Franz.setBadge(direct, indirect);
+    Ferdi.setBadge(direct);
   };
 
-  Franz.loop(getMessages);
-  Franz.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdi.loop(getMessages);
+  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
