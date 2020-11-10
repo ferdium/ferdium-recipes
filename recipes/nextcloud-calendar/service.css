@@ -15,3 +15,7 @@ settings links and disable them */
 .notifications .notification-wrapper .notification:not([object_type="dav"]) {
     display: none;
 }
+
+/* Hide "Dismiss all notifications" as this action will dismiss also hidden
+notifications */
+.notification-wrapper .dismiss-all {display: none;}
