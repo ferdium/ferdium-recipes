@@ -15,7 +15,13 @@ settings links and disable them */
   display: none !important;
 }
 
-/* Hide contacts in the top menu */
-#contactsmenu {
-  display: none;
+/* Hide notifications that are not related to calendar */
+.notifications .notification-wrapper .notification {display: none;}
+.notifications .notification-wrapper .notification[object_type="chat"],
+.notifications .notification-wrapper .notification[object_type="room"]  {
+  display: initial;
 }
+
+/* Hide "Dismiss all notifications" as this action will dismiss also hidden
+notifications */
+.notification-wrapper .dismiss-all {display: none;}

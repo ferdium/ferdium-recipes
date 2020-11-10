@@ -6,13 +6,24 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Franz => {
+module.exports = Ferdi => {
   const getMessages = function getMessages() {
-    const direct = document.querySelectorAll('.app-navigation-entry-utils-counter.highlighted').length;
-    const indirect = document.querySelectorAll('.app-navigation-entry-utils-counter:not(.highlighted)').length;
-    Franz.setBadge(direct, indirect);
+    const direct =  document.querySelector(
+      '.notifications .notification-wrapper'
+    ).querySelectorAll(
+      '.notification[object_type="chat"], .notification[object_type="room"'
+    ).length;
+
+    var indirect = 0;
+
+    document.querySelectorAll('.app-navigation-entry__counter').forEach(
+      function(counter) {
+        indirect += Number(counter.textContent)
+      }
+    );
+    Ferdi.setBadge(direct, indirect);
   };
 
-  Franz.loop(getMessages);
-  Franz.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdi.loop(getMessages);
+  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
