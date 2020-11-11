@@ -10,3 +10,12 @@ settings links and disable them */
 
 /* Hide "More" link in the top menu */
 #more-apps {display: none !important;}
+
+/* Hide notifications that are not related to calendar */
+.notifications .notification-wrapper .notification:not([object_type="dav"]) {
+    display: none;
+}
+
+/* Hide "Dismiss all notifications" as this action will dismiss also hidden
+notifications */
+.notification-wrapper .dismiss-all {display: none;}
