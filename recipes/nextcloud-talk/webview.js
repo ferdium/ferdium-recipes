@@ -8,17 +8,22 @@ function _interopRequireDefault(obj) {
 
 module.exports = Ferdi => {
   const getMessages = function getMessages() {
-    const direct =  document.querySelector(
+    let direct = 0;
+    const notificationWrapper = document.querySelector(
       '.notifications .notification-wrapper'
-    ).querySelectorAll(
-      '.notification[object_type="chat"], .notification[object_type="room"'
-    ).length;
+    );
 
-    var indirect = 0;
+    if (notificationWrapper) {
+      direct = notificationWrapper.querySelectorAll(
+        '.notification[object_type="chat"], .notification[object_type="room"'
+      ).length;
+    }
+
+    let indirect = 0;
 
     document.querySelectorAll('.app-navigation-entry__counter').forEach(
       function(counter) {
-        indirect += Number(counter.textContent)
+        indirect += Number(counter.textContent);
       }
     );
     Ferdi.setBadge(direct, indirect);
