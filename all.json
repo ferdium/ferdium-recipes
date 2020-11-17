@@ -143,6 +143,17 @@
     }
   },
   {
+    "author": "Ferdi <hello@getferdi.com>",
+    "featured": false,
+    "id": "devdocs",
+    "name": "DevDocs",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/devdocs/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/devdocs/icon.svg"
+    }
+  },
+  {
     "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": true,
     "id": "discord",
@@ -151,6 +162,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/discord/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/discord/icon.svg"
+    }
+  },
+  {
+    "author": "Ferdi <hello@getferdi.com>",
+    "featured": false,
+    "id": "disqus",
+    "name": "Disqus",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/disqus/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/disqus/icon.svg"
     }
   },
   {
@@ -253,6 +275,28 @@
     }
   },
   {
+    "author": "Ferdi <hello@getferdi.com>",
+    "featured": false,
+    "id": "figma",
+    "name": "Figma",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/figma/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/figma/icon.svg"
+    }
+  },
+  {
+    "author": "Ian Sealy <ferdi@iansealy.com>",
+    "featured": false,
+    "id": "fleep",
+    "name": "Fleep",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/fleep/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/fleep/icon.svg"
+    }
+  },
+  {
     "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "flowdock",
@@ -345,7 +389,7 @@
     "featured": true,
     "id": "gmail",
     "name": "Gmail",
-    "version": "1.3.3",
+    "version": "1.3.5",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/gmail/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/gmail/icon.svg"
@@ -360,6 +404,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlecalendar/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlecalendar/icon.svg"
+    }
+  },
+  {
+    "author": "Tania R. Zuniga <tania@tanx.dev>",
+    "featured": false,
+    "id": "googleclassroom",
+    "name": "Google Classroom",
+    "version": "1.0.2",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googleclassroom/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googleclassroom/icon.svg"
     }
   },
   {
@@ -393,6 +448,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlemeet/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlemeet/icon.svg"
+    }
+  },
+  {
+    "author": "Stephen Papierski <stephenpapierski@gmail.com>",
+    "featured": false,
+    "id": "googlepodcasts",
+    "name": "Google Podcasts",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlepodcasts/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlepodcasts/icon.svg"
     }
   },
   {
@@ -444,7 +510,7 @@
     "featured": false,
     "id": "habitica",
     "name": "Habitica",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/habitica/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/habitica/icon.svg"
@@ -477,7 +543,7 @@
     "featured": false,
     "id": "hangoutschat",
     "name": "Hangouts Chat",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/hangoutschat/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/hangoutschat/icon.svg"
@@ -492,6 +558,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/hipchat/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/hipchat/icon.svg"
+    }
+  },
+  {
+    "author": "Ferdi <hello@getferdi.com>",
+    "featured": false,
+    "id": "icloud-reminders",
+    "name": "iCloud Reminders",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/icloud-reminders/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/icloud-reminders/icon.svg"
     }
   },
   {
@@ -569,6 +646,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/kaizala/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/kaizala/icon.svg"
+    }
+  },
+  {
+    "author": "hongsy <hongsy2006@gmail.com>",
+    "featured": false,
+    "id": "lark",
+    "name": "Lark",
+    "version": "0.0.1",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/lark/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/lark/icon.svg"
     }
   },
   {
@@ -671,6 +759,17 @@
     }
   },
   {
+    "author": "Yoga Setiawan <ariokidev@gmail.com>",
+    "featured": false,
+    "id": "mstodo",
+    "name": "Microsoft To Do",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/mstodo/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/mstodo/icon.svg"
+    }
+  },
+  {
     "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "mysms",
@@ -706,9 +805,20 @@
   {
     "author": "Edgars Andersons <Edgars+github@gaitenis.id.lv>",
     "featured": false,
+    "id": "nextcloud",
+    "name": "Nextcloud",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nextcloud/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nextcloud/icon.svg"
+    }
+  },
+  {
+    "author": "Edgars Andersons <Edgars+github@gaitenis.id.lv>",
+    "featured": false,
     "id": "nextcloud-calendar",
     "name": "Nextcloud Calendar",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nextcloud-calendar/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nextcloud-calendar/icon.svg"
@@ -741,7 +851,7 @@
     "featured": false,
     "id": "nextcloud-talk",
     "name": "Nextcloud Talk",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nextcloud-talk/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nextcloud-talk/icon.svg"
@@ -803,6 +913,17 @@
     }
   },
   {
+    "author": "Ferdi <hello@getferdi.com>",
+    "featured": false,
+    "id": "onenote",
+    "name": "OneNote",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/onenote/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/onenote/icon.svg"
+    }
+  },
+  {
     "author": "Wouter Van Speybroeck <wouter.van.speybroeck@gmail.com>",
     "featured": false,
     "id": "outlook",
@@ -811,6 +932,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/outlook/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/outlook/icon.svg"
+    }
+  },
+  {
+    "author": "Ferdi <hello@getferdi.com>",
+    "featured": false,
+    "id": "pinterest",
+    "name": "Pinterest",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/pinterest/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/pinterest/icon.svg"
     }
   },
   {
@@ -939,7 +1071,7 @@
     "featured": false,
     "id": "roundcube",
     "name": "Roundcube",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/roundcube/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/roundcube/icon.svg"
@@ -957,11 +1089,22 @@
     }
   },
   {
+    "author": "Ferdi <hello@getferdi.com>",
+    "featured": false,
+    "id": "simplenote",
+    "name": "Simplenote",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/simplenote/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/simplenote/icon.svg"
+    }
+  },
+  {
     "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "skype",
     "name": "Skype",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/skype/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/skype/icon.svg"
@@ -976,6 +1119,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/slack/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/slack/icon.svg"
+    }
+  },
+  {
+    "author": "Ferdi <hello@getferdi.com>",
+    "featured": false,
+    "id": "slite",
+    "name": "Slite",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/slite/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/slite/icon.svg"
     }
   },
   {
@@ -1020,6 +1174,17 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/stride/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/stride/icon.svg"
+    }
+  },
+  {
+    "author": "Marco Lussetti <packages@marcolussetti.com>",
+    "featured": false,
+    "id": "sync",
+    "name": "sync",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/sync/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/sync/icon.svg"
     }
   },
   {
@@ -1089,11 +1254,22 @@
     }
   },
   {
+    "author": "Jonas Hilke <jonashilke@gmail.com>",
+    "featured": false,
+    "id": "TickTick",
+    "name": "TickTick",
+    "version": "1.1.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/TickTick/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/TickTick/icon.svg"
+    }
+  },
+  {
     "author": "Alex Ward <alex@alexward.me.uk>, Mike Burke <mburke@dmwtechnology.com>",
     "featured": false,
     "id": "todoist",
     "name": "Todoist",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/todoist/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/todoist/icon.svg"
@@ -1243,6 +1419,17 @@
     }
   },
   {
+    "author": "Dustin Steiner <dustin.steiner@gmail.com>",
+    "featured": false,
+    "id": "wire",
+    "name": "Wire",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/wire/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/wire/icon.svg"
+    }
+  },
+  {
     "author": "Max Stoiber",
     "featured": false,
     "id": "withspectrum",
@@ -1287,6 +1474,17 @@
     }
   },
   {
+    "author": "Vijay Raghavan Aravamudhan <avijayr@protonmail.com>",
+    "featured": false,
+    "id": "yahoo-mail",
+    "name": "Yahoo Mail",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/yahoo-mail/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/yahoo-mail/icon.svg"
+    }
+  },
+  {
     "author": "Dave Reid <dave@davereid.net>",
     "featured": false,
     "id": "yammer",
@@ -1295,6 +1493,28 @@
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/yammer/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/yammer/icon.svg"
+    }
+  },
+  {
+    "author": "Ferdi <hello@getferdi.com>",
+    "featured": false,
+    "id": "youtrack",
+    "name": "YouTrack",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/youtrack/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/youtrack/icon.svg"
+    }
+  },
+  {
+    "author": "Stephen Papierski <stephenpapierski@gmail.com>",
+    "featured": false,
+    "id": "youtubemusic",
+    "name": "YouTube Music",
+    "version": "1.0.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/youtubemusic/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/youtubemusic/icon.svg"
     }
   },
   {
@@ -1357,7 +1577,7 @@
     "featured": false,
     "id": "zoho",
     "name": "Zoho Mail",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "icons": {
       "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/zoho/icon.png",
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/zoho/icon.svg"
