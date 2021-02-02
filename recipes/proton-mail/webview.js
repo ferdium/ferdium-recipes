@@ -1,7 +1,16 @@
 module.exports = Franz => {
     function getMessages() {
-        const count = document.querySelector('.navigationItem-counter').innerText
-        Franz.setBadge(count ? Number(count.substring(1, count.length - 1)) : 0)
+        const element = document.querySelector('.navigationItem-counter')
+        if (!element) {
+            return
+        }
+        const text = element.innerText
+        const count = Number(text.substring(1, text.length - 1))
+        if (Number.isNaN(count)) {
+            return
+        }
+        Franz.setBadge(count)
     }
+
     Franz.loop(getMessages)
 }
