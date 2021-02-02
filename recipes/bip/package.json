@@ -1,0 +1,13 @@
+{
+  "id": "bip",
+  "name": "BiP",
+  "version": "1.0.0",
+  "description": "bip",
+  "main": "index.js",
+  "author": "Yoga Setiawan <yogasetiawan@arioki.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://web.bip.com/",
+    "hasNotificationSound": true
+  }
+}
