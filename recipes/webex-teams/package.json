@@ -1,0 +1,14 @@
+{
+  "id": "webex-teams",
+  "name": "Webex Teams",
+  "version": "1.0.0",
+  "description": "Cisco Webex Teams",
+  "main": "index.js",
+  "author": "Rok Bertoncelj <rok.bertoncelj@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://web.webex.com",
+    "hasNotificationSound": true,
+    "hasDirectMessages": true
+  }
+}
