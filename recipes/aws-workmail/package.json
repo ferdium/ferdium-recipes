@@ -1,7 +1,7 @@
 {
   "id": "amazon-work-mail",
   "name": "Amazon WorkMail",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Amazon WorkMail",
   "main": "index.js",
   "author": "Yoav Maman",
