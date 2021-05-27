@@ -50,6 +50,34 @@ const focusModeStyles = path.join(__dirname, 'focusmode.css');
 Ferdi.injectCSS(globalStyles, focusModeStyles);
 ```
 
+### injectJSUnsafe(pathToJsFile)
+Injects the contents of one or more JavaScript files into the current webview without context isolation
+
+Ferdi uses context isolation to prevent services from accessing Node.js APIs in the webview.
+If you want to expose objects to the service (eg. via the `window` object) or interact with the Javascript loaded by the service you must do so from a script injected with this method.
+Trying to overwrite properties of the `window` object or other objects or trying to interact with the Javascript loaded by the service from `webview.js` will fail due to context isolation.
+
+The code is executed as if part of the body of a Javascript function, ie. you should modify the `window` object explicitly to expose objects in the global scope.
+
+#### Arguments
+1. `string` jsFile
+  * JavaScript files that should be injected. This must be an absolute path to the file
+
+#### Usage
+
+```js
+const path = require('path');
+
+// inject a single css file
+Ferdi.injectJSUnsafe(path.join(__dirname, 'webview-unsafe.js'));
+
+// inject multiple css files
+const globalScripts = path.join(__dirname, 'global.js);
+const focusModeScripts = path.join(__dirname, 'focusmode.js);
+
+Ferdi.injectCSS(globalScripts, focusModeScripts);
+```
+
 ### loop(action)
 Runs an action every X milliseconds (Ferdi default is currently 1s)
 
