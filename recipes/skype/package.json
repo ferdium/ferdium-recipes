@@ -1,7 +1,7 @@
 {
   "id": "skype",
   "name": "Skype",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "Skype",
   "main": "index.js",
   "author": "Stefan Malzner <stefan@adlk.io>",
