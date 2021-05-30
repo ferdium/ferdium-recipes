@@ -1,7 +1,7 @@
 {
   "id": "pleroma",
   "name": "Pleroma",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Pleroma — a lightweight fediverse server",
   "main": "index.js",
   "author": "Ferdi <hello@getferdi.com>",
