@@ -1078,6 +1078,17 @@
     }
   },
   {
+    "author": "Ferdi <hello@getferdi.com>",
+    "featured": false,
+    "id": "pleroma",
+    "name": "Pleroma",
+    "version": "1.1.0",
+    "icons": {
+      "png": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/pleroma/icon.png",
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/pleroma/icon.svg"
+    }
+  },
+  {
     "author": "YWJamesLin <ywjameslin.ga>",
     "featured": false,
     "id": "plurk",
