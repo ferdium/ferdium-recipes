@@ -18,9 +18,9 @@ const compress = (src, dest) => new Promise((resolve, reject) => {
     src,
     dest,
     tar: {
-      // Don't package .DS_Store files
+      // Don't package .DS_Store files and .md files
       ignore: function(name) {
-          return path.basename(name) === '.DS_Store'
+          return path.basename(name) === '.DS_Store' || name.endsWith('.md')
       }
     },
   }, (err) => {
