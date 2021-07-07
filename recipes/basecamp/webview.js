@@ -4,6 +4,13 @@ module.exports = (Franz, options) => {
   let updates = 0;
   const modal = document.createElement('div');
 
+  const waitFor = (condition, callback) => {
+    if (!condition()) {
+      window.setTimeout(waitFor.bind(null, condition, callback), 100);
+    } else {
+      callback();
+    }
+  };
   function showModal (text) {
     show(modal);
     modal.querySelector('p').innerHTML = text;
@@ -47,7 +54,7 @@ module.exports = (Franz, options) => {
   modal.id = 'franz-modal';
   modal.innerHTML = '<div class="modal-content"><span class="close">&times;</span><p></p></div>';
   modal.querySelector('.close').addEventListener('click', hideModal);
-  document.body.appendChild(modal);
+  waitFor(() => document.body, () => document.body.appendChild(modal));
 
   document.addEventListener('keydown', function(e) { if (e.keyCode === 27) { hideModal(); } })
 

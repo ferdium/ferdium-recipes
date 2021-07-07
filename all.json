@@ -84,7 +84,7 @@
     "featured": false,
     "id": "basecamp",
     "name": "basecamp",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/basecamp/icon.svg"
     }
@@ -504,7 +504,7 @@
     "featured": false,
     "id": "googlecalendar",
     "name": "Google Calendar",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlecalendar/icon.svg"
     }

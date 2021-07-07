@@ -6,6 +6,14 @@ module.exports = Franz => {
   let modal;
   let updates = 0;
 
+  const waitFor = (condition, callback) => {
+    if (!condition()) {
+      window.setTimeout(waitFor.bind(null, condition, callback), 100);
+    } else {
+      callback();
+    }
+  };
+
   const createModal = () => {
     const franzModal = document.createElement('div');
     franzModal.setAttribute('id', 'franz-modal');
@@ -32,7 +40,7 @@ module.exports = Franz => {
   const getMessages = () => Franz.setBadge(updates);
 
   modal = createModal();
-  document.body.appendChild(modal);
+  waitFor(() => document.body, () => document.body.appendChild(modal));
   document.addEventListener('keydown', event => event.keyCode === 27 && hideModal());
 
   Franz.injectCSS(path.join(__dirname, 'calendar.css'));
