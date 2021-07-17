@@ -4,7 +4,7 @@
     "featured": false,
     "id": "air-droid",
     "name": "air-droid",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/air-droid/icon.svg"
     }
