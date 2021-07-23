@@ -344,7 +344,7 @@
     "featured": false,
     "id": "fastmail",
     "name": "FastMail",
-    "version": "1.0.2",
+    "version": "2.0.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/fastmail/icon.svg"
     }
@@ -504,7 +504,7 @@
     "featured": false,
     "id": "googlecalendar",
     "name": "Google Calendar",
-    "version": "1.0.7",
+    "version": "2.0.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlecalendar/icon.svg"
     }
@@ -524,7 +524,7 @@
     "featured": false,
     "id": "googledrive",
     "name": "Google Drive",
-    "version": "1.0.7",
+    "version": "2.0.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googledrive/icon.svg"
     }
@@ -914,7 +914,7 @@
     "featured": false,
     "id": "msteams",
     "name": "Microsoft Teams",
-    "version": "2.0.1",
+    "version": "3.0.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/msteams/icon.svg"
     }
@@ -1304,7 +1304,7 @@
     "featured": false,
     "id": "skype",
     "name": "Skype",
-    "version": "2.1.1",
+    "version": "3.0.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/skype/icon.svg"
     }
