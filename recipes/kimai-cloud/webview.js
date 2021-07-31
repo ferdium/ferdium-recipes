@@ -3,9 +3,9 @@ module.exports = (Franz) => {
     let count = 0;
 
     // get amount of running timesheets
-    let label = document.querySelector('.main-header .navbar .dropdown.messages-menu .ticktac span.label');
+    const label = document.querySelector('.main-header .navbar .dropdown.messages-menu .ticktac span.label');
     if (label !== undefined) {
-        count = label.textContent;
+      count = label.textContent;
     }
 
     // set Franz badge

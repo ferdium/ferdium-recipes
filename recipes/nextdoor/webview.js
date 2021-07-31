@@ -1,11 +1,9 @@
-"use strict";
-
 module.exports = Franz => {
   const getMessages = function getMessages() {
-    var unread = 0
-    const notificationBadge = document.getElementsByClassName('notification-badge')[0]
+    let unread = 0;
+    const notificationBadge = document.getElementsByClassName('notification-badge')[0];
     if (notificationBadge != undefined) {
-        unread = notificationBadge.innerText;
+      unread = notificationBadge.innerText;
     }
     Franz.setBadge(parseInt(unread, 10));
   };

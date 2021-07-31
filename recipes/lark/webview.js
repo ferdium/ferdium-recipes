@@ -1,9 +1,7 @@
 const path = require('path');
 
-
 module.exports = (Franz) => {
   const getMessages = function getMessages() {
-
     const ele = document.querySelectorAll('.larkc-badge-count.navbarMenu-badge');
     if (!ele.length) {
       Franz.setBadge(0);

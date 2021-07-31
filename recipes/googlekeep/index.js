@@ -1,3 +1,2 @@
-module.exports = Franz =>
-  class GoogleKeep extends Franz {
-  };
+module.exports = Franz => class GoogleKeep extends Franz {
+};

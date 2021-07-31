@@ -1,14 +1,12 @@
-"use strict";
-
 const {
-  remote
+  remote,
 } = require('electron');
 
 const path = require('path');
 
 const webContents = remote.getCurrentWebContents();
 const {
-  session
+  session,
 } = webContents;
 
 window.onload = () => {
@@ -22,7 +20,7 @@ window.onload = () => {
 module.exports = Franz => {
   session.flushStorageData();
   session.clearStorageData({
-    storages: ['serviceworkers']
+    storages: ['serviceworkers'],
   });
 
   const getMessages = function getMessages() {

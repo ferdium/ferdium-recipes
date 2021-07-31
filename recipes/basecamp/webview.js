@@ -11,13 +11,13 @@ module.exports = (Franz, options) => {
       callback();
     }
   };
-  function showModal (text) {
+  function showModal(text) {
     show(modal);
     modal.querySelector('p').innerHTML = text;
     updates += 1;
   }
 
-  function hideModal () {
+  function hideModal() {
     hide(modal);
     modal.querySelector('p').innerHTML = '';
     updates -= 1;
@@ -30,20 +30,20 @@ module.exports = (Franz, options) => {
     showModal.apply(oldAlert, arguments);
   };
 
-  function show (element) {
+  function show(element) {
     element.style.display = 'inherit';
   }
 
-  function hide (element) {
+  function hide(element) {
     element.style.display = 'none';
   }
 
   const getMessages = () => {
     // get unread messages
-    //const updates = document.getElementById('franz').getAttribute('data-unread');
+    // const updates = document.getElementById('franz').getAttribute('data-unread');
 
     // get conversations in 'My Inbox'
-    //const inbox = document.getElementById('franz').getAttribute('data-inbox');
+    // const inbox = document.getElementById('franz').getAttribute('data-inbox');
 
     // set Franz badge
     // updates => passive unread count
@@ -56,7 +56,7 @@ module.exports = (Franz, options) => {
   modal.querySelector('.close').addEventListener('click', hideModal);
   waitFor(() => document.body, () => document.body.appendChild(modal));
 
-  document.addEventListener('keydown', function(e) { if (e.keyCode === 27) { hideModal(); } })
+  document.addEventListener('keydown', (e) => { if (e.keyCode === 27) { hideModal(); } });
 
   // inject franz.css stylesheet
   Franz.injectCSS(path.join(__dirname, 'css', 'modal.css'));

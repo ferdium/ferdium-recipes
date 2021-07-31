@@ -1,5 +1,3 @@
-"use strict";
-
 const path = require('path');
 
 module.exports = Franz => {
@@ -32,7 +30,7 @@ module.exports = Franz => {
   Franz.loop(getMessages);
   localStorage._cs_desktopNotifsEnabled = JSON.stringify({
     __t: new Date().getTime(),
-    __v: true
+    __v: true,
   });
 
   if (typeof Franz.onNotify === 'function') {

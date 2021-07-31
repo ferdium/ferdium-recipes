@@ -1,8 +1,6 @@
-"use strict";
+const _electron = require('electron');
 
-var _electron = require("electron");
-
-var _path = _interopRequireDefault(require("path"));
+const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

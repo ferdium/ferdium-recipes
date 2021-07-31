@@ -11,4 +11,4 @@ module.exports = (Franz, options) => {
   }
 
   Franz.loop(getMessages);
-}
+};

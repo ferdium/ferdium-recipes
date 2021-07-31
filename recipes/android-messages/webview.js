@@ -1,12 +1,10 @@
-"use strict";
-
 const {
-  remote
+  remote,
 } = require('electron');
 
 const webContents = remote.getCurrentWebContents();
 const {
-  session
+  session,
 } = webContents;
 setTimeout(() => {
   const elem = document.querySelector('#af-error-container');
@@ -19,7 +17,7 @@ window.addEventListener('beforeunload', async () => {
   try {
     session.flushStorageData();
     session.clearStorageData({
-      storages: ['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb']
+      storages: ['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb'],
     });
     const registrations = await window.navigator.serviceWorker.getRegistrations();
     registrations.forEach(r => {

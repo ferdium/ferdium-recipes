@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = (Franz, options) => {
   const getMessages = function getMessages() {
     let messages = 0;

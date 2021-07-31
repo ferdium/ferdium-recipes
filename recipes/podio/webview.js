@@ -6,7 +6,7 @@ module.exports = (Franz, options) => {
     const updates = document.getElementsByClassName('counter')[0].innerHTML;
 
     // get conversations in 'My Inbox'
-    //const inbox = document.getElementById('franz').getAttribute('data-inbox');
+    // const inbox = document.getElementById('franz').getAttribute('data-inbox');
 
     // set Franz badge
     // updates => active unread count

@@ -5,7 +5,7 @@ module.exports = (Franz, options) => {
     const unreadCount = 0;
 
     Franz.setBadge(unreadCount);
-  }
+  };
 
   Franz.loop(getMessages);
 };

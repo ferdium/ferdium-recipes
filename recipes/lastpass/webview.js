@@ -1,14 +1,12 @@
-"use strict";
-
 const {
-  remote
+  remote,
 } = require('electron');
 
 const path = require('path');
 
 const webContents = remote.getCurrentWebContents();
 const {
-  session
+  session,
 } = webContents;
 setTimeout(() => {
   if (document.querySelector('body').innerHTML.includes('Google Chrome 36+')) {
@@ -19,7 +17,7 @@ window.addEventListener('beforeunload', async () => {
   try {
     session.flushStorageData();
     session.clearStorageData({
-      storages: ['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb']
+      storages: ['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb'],
     });
     const registrations = await window.navigator.serviceWorker.getRegistrations();
     registrations.forEach(r => {

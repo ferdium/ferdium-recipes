@@ -1,10 +1,8 @@
-'use strict';
-
 const path = require('path');
 
 module.exports = (Franz) => {
   const getMessages = () => {
-    const inbox = document.querySelector(".v-MailboxSource--inbox .v-MailboxSource-badge");
+    const inbox = document.querySelector('.v-MailboxSource--inbox .v-MailboxSource-badge');
     if (!inbox) {
       return;
     }

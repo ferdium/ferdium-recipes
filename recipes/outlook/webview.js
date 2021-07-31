@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = Ferdi => {
   function getMessages() {
     let unreadMail = 0;
@@ -10,7 +8,7 @@ module.exports = Ferdi => {
         jQuery("span[title*='Inbox'] + div > span")
           .first()
           .text(),
-        10
+        10,
       );
     } else {
       // new app
@@ -29,6 +27,6 @@ module.exports = Ferdi => {
     }
 
     Ferdi.setBadge(unreadMail);
-  };
+  }
   Ferdi.loop(getMessages);
 };

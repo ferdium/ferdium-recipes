@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = Franz => {
   const getMessages = function getMessages() {
     const notifications = document.querySelectorAll('.notification--number');

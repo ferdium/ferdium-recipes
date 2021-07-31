@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = Franz => {
   const getMessages = function getMessages() {
     const { title } = document;
@@ -7,7 +5,7 @@ module.exports = Franz => {
 
     if (regex.test(title)) {
       Franz.setBadge(
-        Number(regex.exec(title)[0])
+        Number(regex.exec(title)[0]),
       );
     } else {
       Franz.setBadge(0);

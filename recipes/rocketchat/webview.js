@@ -1,5 +1,3 @@
-'use strict';
-
 const { ipcRenderer } = require('electron');
 
 const getTeamIcon = function getTeamIcon() {
@@ -27,7 +25,7 @@ const getTeamIcon = function getTeamIcon() {
     if (response.icons.length >= 1) {
       ipcRenderer.sendToHost(
         'avatar',
-        `${window.location.protocol}//${window.location.host}${response.icons[0].src}`
+        `${window.location.protocol}//${window.location.host}${response.icons[0].src}`,
       );
     }
   };
@@ -47,7 +45,7 @@ module.exports = Ferdi => {
     }
 
     const indirectMessagesCount = Math.round(
-      document.querySelectorAll('.rcx-sidebar-item--highlighted').length
+      document.querySelectorAll('.rcx-sidebar-item--highlighted').length,
     );
 
     Ferdi.setBadge(directMessagesCount, indirectMessagesCount);

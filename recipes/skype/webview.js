@@ -1,6 +1,4 @@
-"use strict";
-
-const {  remote: { BrowserWindow } } = require("electron");
+const { remote: { BrowserWindow } } = require('electron');
 const path = require('path');
 
 module.exports = (Franz, settings) => {
@@ -37,13 +35,13 @@ module.exports = (Franz, settings) => {
       if (url.includes('views/imgpsh_fullsize_anim')) {
         event.preventDefault();
         event.stopPropagation();
-        let win = new BrowserWindow({
+        const win = new BrowserWindow({
           width: 800,
           height: window.innerHeight,
           minWidth: 600,
           webPreferences: {
-            partition: `persist:service-${settings.id}`
-          }
+            partition: `persist:service-${settings.id}`,
+          },
         });
         win.loadURL(url);
       }

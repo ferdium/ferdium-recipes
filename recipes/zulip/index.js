@@ -1,13 +1,13 @@
 module.exports = Franz => class Zulip extends Franz {
   async validateUrl(url) {
     const baseUrl = new window.URL(url);
-    const apiVersion = 'api/v1'
+    const apiVersion = 'api/v1';
     try {
       const resp = await window.fetch(`${baseUrl.origin}/${apiVersion}/server_settings`, {
-          method: 'GET',
-          headers: {
-              'Content-Type': 'application/json',
-          },
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
       });
       const data = await resp.json();
 

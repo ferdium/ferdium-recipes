@@ -1,1 +1,1 @@
-module.exports = Franz => Franz
+module.exports = Franz => Franz;

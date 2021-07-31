@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = Franz => {
   const getMessages = function getMessages() {
     const elements = document.querySelectorAll('.unreadCount');

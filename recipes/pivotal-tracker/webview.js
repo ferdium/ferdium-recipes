@@ -1,13 +1,11 @@
 module.exports = (Franz, options) => {
+  function getMessages() {
+    const bell = document.querySelectorAll('#view65 > span')[0];
 
-   function getMessages() {
-	var bell = document.querySelectorAll("#view65 > span")[0];
+    counter = parseInt(bell.innerText);
 
-	counter = parseInt(bell.innerText);
-
-	Franz.setBadge(counter);
-  };
+    Franz.setBadge(counter);
+  }
 
   Franz.loop(getMessages);
-
-}
+};

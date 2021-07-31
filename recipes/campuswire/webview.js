@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = Franz => {
   const getMessages = function getMessages() {
     let count = document.querySelectorAll('._5fx8:not(._569x),._1ht3:not(._569x)').length;
@@ -15,7 +13,7 @@ module.exports = Franz => {
   Franz.loop(getMessages);
   localStorage.setItem('_cs_desktopNotifsEnabled', JSON.stringify({
     __t: new Date().getTime(),
-    __v: true
+    __v: true,
   }));
 
   if (typeof Franz.onNotify === 'function') {

@@ -4,10 +4,10 @@ const titleRegex = /^\((\d+)\)/;
 
 const getJson = async (relativeUri) => {
   const req = await window.fetch(`${window.origin}${relativeUri}`, {
-    'Accept': 'application/json'
+    Accept: 'application/json',
   });
   return req.json();
-}
+};
 
 const getInstanceConfig = async () => {
   const origin = window.origin;
@@ -59,7 +59,7 @@ const unscalePixel = b => b / SCALE;
 const blend = (bgValue, bgWeight, fgValue, fgWeight) => {
   const sum = bgValue * bgWeight + fgValue * fgWeight;
   return clamp(sum / (bgWeight + fgWeight));
-}
+};
 
 class LogoUpdater {
   constructor(img, mask) {
@@ -87,12 +87,10 @@ class LogoUpdater {
         this._previousFg = fg;
         return true;
       }
-    } else {
-      if (this._previousBg !== bg) {
-        this._updateNoMask(bg);
-        this._previousBg = bg;
-        return true;
-      }
+    } else if (this._previousBg !== bg) {
+      this._updateNoMask(bg);
+      this._previousBg = bg;
+      return true;
     }
     return false;
   }
@@ -133,7 +131,7 @@ class LogoUpdater {
     this._ctx.fillStyle = str;
     this._ctx.fillRect(0, 0, 1, 1);
     return this._ctx.getImageData(0, 0, 1, 1).data;
-  };
+  }
 
   _drawImage() {
     this._ctx.drawImage(this._img, this._dx, this._dy);
@@ -141,7 +139,6 @@ class LogoUpdater {
 }
 
 module.exports = Ferdi => {
-
   const getMessages = () => {
     let directCount = 0;
     const matchArr = document.title.match(titleRegex);
@@ -162,5 +159,5 @@ module.exports = Ferdi => {
   }, (e) => {
     console.log('Failed to load instance logo', e);
     Ferdi.loop(getMessages);
-  })
+  });
 };

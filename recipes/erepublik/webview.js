@@ -1,6 +1,4 @@
-'use strict';
-
-var _path = _interopRequireDefault(require('path'));
+const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
@@ -8,7 +6,6 @@ function _interopRequireDefault(obj) {
 
 module.exports = Ferdi => {
   const getMessages = function getMessages() {
-
     const elementNotify = document.getElementsByClassName('notify');
     const elementFeed = document.getElementsByClassName('unreadCounter ng-binding ng-scope');
 
@@ -16,24 +13,23 @@ module.exports = Ferdi => {
     let countFeed = 0;
 
     for (let i = 0; i < elementNotify.length; i++) {
-      let splitText = elementNotify[i].title.split(':');
-      let badgeNumber = parseInt(splitText[1], 10);
+      const splitText = elementNotify[i].title.split(':');
+      const badgeNumber = parseInt(splitText[1], 10);
       if (badgeNumber) {
-        countNotify = countNotify + badgeNumber;
+        countNotify += badgeNumber;
       }
     }
 
     for (let i = 0; i < elementFeed.length; i++) {
-      let feedNumber = parseInt(elementFeed[i].textContent, 10);
+      const feedNumber = parseInt(elementFeed[i].textContent, 10);
       if (feedNumber) {
-        countFeed = countFeed + feedNumber;
+        countFeed += feedNumber;
       }
     }
 
     console.log(countNotify, countFeed);
     Ferdi.setBadge(countNotify, countFeed);
   };
-
 
   Ferdi.loop(getMessages);
   Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));

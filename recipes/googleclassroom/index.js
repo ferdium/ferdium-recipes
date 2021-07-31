@@ -1,3 +1,2 @@
-module.exports = Franz =>
-  class GoogleClassroom extends Franz {
-  };
+module.exports = Franz => class GoogleClassroom extends Franz {
+};

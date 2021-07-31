@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = Franz => {
   function parseQuery(query) {
     const el = document.querySelector(query);

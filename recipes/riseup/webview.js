@@ -1,15 +1,13 @@
-"use strict";
-
-var _path = _interopRequireDefault(require("path"));
+const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = Ferdi => {
   const getMessages = function getMessages() {
-    var unread = 0
-    const notificationBadge = document.getElementsByClassName('unreadcount')[0]
+    let unread = 0;
+    const notificationBadge = document.getElementsByClassName('unreadcount')[0];
     if (notificationBadge != undefined) {
-        unread = notificationBadge.innerText;
+      unread = notificationBadge.innerText;
     }
     Ferdi.setBadge(parseInt(unread, 10));
   };

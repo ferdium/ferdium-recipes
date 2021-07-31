@@ -3,7 +3,6 @@ module.exports = (Franz) => {
     const count = document.querySelectorAll('.new-item').length;
 
     Franz.setBadge(count);
-	
   };
   Franz.loop(getMessages);
 };

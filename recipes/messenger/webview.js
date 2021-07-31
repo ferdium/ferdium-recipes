@@ -1,27 +1,25 @@
-"use strict";
-
 module.exports = Franz => {
   const getMessages = function getMessages() {
-    let count = 0
+    let count = 0;
 
-    let isNotification = /^\((\d+)\)/.test(document.title);
+    const isNotification = /^\((\d+)\)/.test(document.title);
 
     /*
      * Notification case for group chats, workaround by tamas646
      * see https://github.com/getferdi/ferdi/issues/1113#issuecomment-783409154
      */
-     if (isNotification) {
+    if (isNotification) {
       count = parseInt(/^\((\d+)\)/.exec(document.title)[1]);
     } else {
-     /*
+      /*
       * Notification case for direct messages, workaround by manavortex
       * see https://github.com/getferdi/ferdi/issues/1113#issuecomment-846611765
       */
       count = document.querySelectorAll('._5fx8:not(._569x),._1ht3:not(._569x)').length;
-      if (0 === count) {
+      if (count === 0) {
         count = document.querySelectorAll('.pq6dq46d.is6700om.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.fwizqjfa').length;
       }
-      if (0 === count) { // might be obsolete, not sure - never ran into this case
+      if (count === 0) { // might be obsolete, not sure - never ran into this case
         count = document.querySelectorAll('[aria-label="Mark as read"]').length;
       }
     }
@@ -39,7 +37,7 @@ module.exports = Franz => {
   Franz.loop(getMessages);
   localStorage.setItem('_cs_desktopNotifsEnabled', JSON.stringify({
     __t: new Date().getTime(),
-    __v: true
+    __v: true,
   }));
 
   if (typeof Franz.onNotify === 'function') {

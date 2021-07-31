@@ -1,16 +1,14 @@
-'use strict';
-
 module.exports = Franz => {
   const getMessages = function getMessages() {
     let unreadMail = 0;
-    
+
     if (location.pathname.match(/\/owa/)) {
       // classic app
       unreadMail = parseInt(
         jQuery("span[title*='Inbox'] + div > span")
           .first()
           .text(),
-        10
+        10,
       );
     } else {
       // new app

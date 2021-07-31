@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = Franz => {
   const DIRECT_MESSAGES_INDIVIDUAL = '#sidebar-left .unread-title .DirectChannel__profile-picture';
   const DIRECT_MESSAGES_GROUP = '#sidebar-left .unread-title .status--group';

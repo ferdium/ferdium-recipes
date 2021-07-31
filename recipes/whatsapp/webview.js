@@ -1,20 +1,18 @@
-"use strict";
-
 const {
-  remote
+  remote,
 } = require('electron');
 
 const path = require('path');
 
 const webContents = remote.getCurrentWebContents();
 const {
-  session
+  session,
 } = webContents;
 window.addEventListener('beforeunload', async () => {
   try {
     session.flushStorageData();
     session.clearStorageData({
-      storages: ['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb']
+      storages: ['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb'],
     });
     const registrations = await window.navigator.serviceWorker.getRegistrations();
     registrations.forEach(r => {
@@ -28,18 +26,18 @@ window.addEventListener('beforeunload', async () => {
 
 module.exports = Franz => {
   const getMessages = function getMessages() {
-    var count = 0;
-  	var indirectCount = 0;
+    let count = 0;
+  	let indirectCount = 0;
 
-    var parentChatElem = document.querySelector("#pane-side").children[0].children[0].children[0];
-    var chatElems = parentChatElem.children;
-    for (var i = 0; i < chatElems.length; i++) {
-      var chatElem = chatElems[i];
-      var unreadElem = chatElem.children[0].children[0].children[1].children[1].children[1];
+    const parentChatElem = document.querySelector('#pane-side').children[0].children[0].children[0];
+    const chatElems = parentChatElem.children;
+    for (let i = 0; i < chatElems.length; i++) {
+      const chatElem = chatElems[i];
+      const unreadElem = chatElem.children[0].children[0].children[1].children[1].children[1];
 
-      var countValue = parseInt(unreadElem.textContent) || 0; // Returns 0 in case of isNaN
+      const countValue = parseInt(unreadElem.textContent) || 0; // Returns 0 in case of isNaN
 
-      if (unreadElem.querySelectorAll("[data-icon=muted]").length === 0) {
+      if (unreadElem.querySelectorAll('[data-icon=muted]').length === 0) {
         count += countValue;
       } else {
         indirectCount += countValue;
