@@ -578,7 +578,7 @@
     "featured": false,
     "id": "hangoutschat",
     "name": "Hangouts Chat",
-    "version": "1.4.5",
+    "version": "1.4.6",
     "aliases": [
       "google-chat",
       "gChat"
