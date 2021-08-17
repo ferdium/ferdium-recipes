@@ -27,7 +27,7 @@ window.addEventListener('beforeunload', async () => {
 module.exports = Franz => {
   const getMessages = function getMessages() {
     let count = 0;
-  	let indirectCount = 0;
+    let indirectCount = 0;
 
     const parentChatElem = document.querySelector('#pane-side').children[0].children[0].children[0];
     const chatElems = parentChatElem.children;
@@ -41,7 +41,7 @@ module.exports = Franz => {
         count += countValue;
       } else {
         indirectCount += countValue;
-    	}
+      }
     }
 
     Franz.setBadge(count, indirectCount);

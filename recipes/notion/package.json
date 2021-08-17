@@ -1,7 +1,7 @@
 {
   "id": "notion",
   "name": "Notion",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "repository": "https://github.com/TanZng/ferdi-notion",
   "config": {
