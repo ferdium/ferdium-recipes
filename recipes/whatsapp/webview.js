@@ -30,6 +30,8 @@ module.exports = Franz => {
     let indirectCount = 0;
 
     const parentChatElem = document.querySelector('#pane-side').children[0].children[0].children[0];
+    if (!parentChatElem) return;
+
     const chatElems = parentChatElem.children;
     for (let i = 0; i < chatElems.length; i++) {
       const chatElem = chatElems[i];
