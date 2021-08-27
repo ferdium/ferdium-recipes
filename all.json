@@ -307,7 +307,7 @@
     "featured": false,
     "id": "facebookpages",
     "name": "Facebook Pages",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/facebookpages/icon.svg"
     }
