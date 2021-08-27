@@ -21,7 +21,7 @@ const recipeName = process.argv[2];
 const recipe = recipeName.toLowerCase().replace(/\s/g, '-');
 const cleanRecipeId = recipe.replace(/[^a-z]/g, ''); // Clean recipe ID only containing a-z, for usage as the JavaScript class name
 const folderName = process.argv[3] || 'Ferdi';
-const filesThatNeedTextReplace = ['package.json', 'index.js', 'README.md'];
+const filesThatNeedTextReplace = ['package.json', 'index.js', 'webview.js', 'README.md'];
 
 (async () => {
   // Folder paths
@@ -49,7 +49,7 @@ const filesThatNeedTextReplace = ['package.json', 'index.js', 'README.md'];
   await fs.copy(sampleRecipe, newRecipeFolder);
   console.log('[Info] Copied recipe');
 
-  // Replace "SERVICE" with the service name
+  // Replace placeholders with the recipe-specific values
   for (const file of filesThatNeedTextReplace) {
     const filePath = path.join(newRecipeFolder, file);
     let contents = await fs.readFile(filePath, 'utf-8');
