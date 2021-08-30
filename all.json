@@ -1546,6 +1546,15 @@
   },
   {
     "featured": false,
+    "id": "wakatime",
+    "name": "Wakatime",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/wakatime/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "webex-teams",
     "name": "Webex Teams",
     "version": "1.1.1",

@@ -1,0 +1,9 @@
+{
+  "id": "wakatime",
+  "name": "Wakatime",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://wakatime.com/login"
+  }
+}
