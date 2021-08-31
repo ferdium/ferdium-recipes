@@ -5,10 +5,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 module.exports = Ferdi => {
   const getMessages = () => {
     let count = 0;
-    const el = document.querySelector('.dashboard-top-panel .indicators .stats-group .cell-value');
-
-    if (el) {
-      count = parseInt(el.innerHTML, 10);
+    const element = document.querySelector('.dashboard-top-panel .indicators .stats-group .cell-value');
+    if (element) {
+      count = Ferdi.safeParseInt(element.innerHTML);
     }
 
     Ferdi.setBadge(count);

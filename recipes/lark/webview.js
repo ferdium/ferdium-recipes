@@ -9,8 +9,7 @@ module.exports = (Ferdi) => {
       Ferdi.setBadge(0);
       return;
     }
-    const messages = parseInt(ele[0].innerHTML, 10);
-    Ferdi.setBadge(messages);
+    Ferdi.setBadge(ele[0].innerHTML);
   };
 
   Ferdi.loop(getMessages);

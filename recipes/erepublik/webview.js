@@ -12,20 +12,13 @@ module.exports = Ferdi => {
 
     for (let i = 0; i < elementNotify.length; i++) {
       const splitText = elementNotify[i].title.split(':');
-      const badgeNumber = parseInt(splitText[1], 10);
-      if (badgeNumber) {
-        countNotify += badgeNumber;
-      }
+      countNotify += Ferdi.safeParseInt(splitText[1]);
     }
 
     for (let i = 0; i < elementFeed.length; i++) {
-      const feedNumber = parseInt(elementFeed[i].textContent, 10);
-      if (feedNumber) {
-        countFeed += feedNumber;
-      }
+      countFeed += Ferdi.safeParseInt(elementFeed[i].textContent);
     }
 
-    console.log(countNotify, countFeed);
     Ferdi.setBadge(countNotify, countFeed);
   };
 

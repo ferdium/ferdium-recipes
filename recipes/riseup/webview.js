@@ -5,7 +5,7 @@ module.exports = Ferdi => {
     if (notificationBadge != undefined) {
       unread = notificationBadge.innerText;
     }
-    Ferdi.setBadge(parseInt(unread, 10));
+    Ferdi.setBadge(unread);
   };
 
   Ferdi.loop(getMessages);

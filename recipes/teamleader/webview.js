@@ -4,8 +4,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 module.exports = (Ferdi) => {
   const getMessages = () => {
-    const unreadNotifications = parseInt(document.getElementById('notifications_amount').innerHTML);
-    Ferdi.setBadge(unreadNotifications);
+    Ferdi.setBadge(document.getElementById('notifications_amount').innerHTML);
   };
 
   Ferdi.loop(getMessages);

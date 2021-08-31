@@ -10,8 +10,8 @@ module.exports = (Ferdi) => {
     ];
 
     elements.forEach((element) => {
-      if (element !== null && parseInt(element.innerHTML, 10)) {
-        count += parseInt(element.innerHTML, 10);
+      if (element !== null) {
+        count += Ferdi.safeParseInt(element.innerHTML);
       }
     });
 

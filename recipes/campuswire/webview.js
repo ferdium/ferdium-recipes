@@ -4,7 +4,7 @@ module.exports = Ferdi => {
     const messageRequestsElement = document.querySelector('._5nxf');
 
     if (messageRequestsElement) {
-      count += parseInt(messageRequestsElement.innerHTML, 10);
+      count += Ferdi.safeParseInt(messageRequestsElement.innerHTML);
     }
 
     Ferdi.setBadge(count);

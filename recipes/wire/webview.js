@@ -7,10 +7,7 @@ module.exports = (Ferdi) => {
     const conversationElems = document.querySelectorAll('[data-uie-name="conversation-folder-badge"]');
     if (conversationElems) {
       for (const conversationElem of conversationElems) {
-        const count = parseInt(conversationElem.innerText);
-        if (count) {
-          direct += count;
-        }
+        direct += Ferdi.safeParseInt(conversationElem.innerText);
       }
     }
 
@@ -18,8 +15,8 @@ module.exports = (Ferdi) => {
     const pendingElem = document.querySelector('[data-uie-name="item-pending-requests"]');
     if (pendingElem) {
       const matches = pendingElem.innerText.match(/^([1-9][0-9]*)/);
-      if (matches && matches.length > 0) {
-        indirect += parseInt(matches[1]);
+      if (matches && matches.length > 1) {
+        indirect += Ferdi.safeParseInt(matches[1]);
       }
     }
 

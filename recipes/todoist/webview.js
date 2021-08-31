@@ -6,11 +6,11 @@ module.exports = (Ferdi) => {
     const inboxElement = document.querySelector('#filter_inbox .item_counter');
 
     if (todayElement) {
-      todayCount = parseInt(todayElement.innerHTML, 10);
+      todayCount = Ferdi.safeParseInt(todayElement.innerHTML);
     }
 
     if (inboxElement) {
-      inboxCount = parseInt(inboxElement.innerHTML, 10);
+      inboxCount = Ferdi.safeParseInt(inboxElement.innerHTML);
     }
 
     Ferdi.setBadge(inboxCount, todayCount);

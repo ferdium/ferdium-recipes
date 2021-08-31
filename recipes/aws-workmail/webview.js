@@ -16,8 +16,7 @@ module.exports = (Ferdi) => {
     let counter = 0;
 
     for	(let i = 0; i < nodes.length; i++) {
-      const node = parseInt(nodes[i].innerText);
-      counter += (node > 0) ? node : 0;
+      counter += Ferdi.safeParseInt(nodes[i].innerText);
     }
 
     Ferdi.setBadge(counter);

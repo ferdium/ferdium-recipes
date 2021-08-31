@@ -10,7 +10,7 @@ module.exports = Ferdi => {
     const notifications = document.querySelector('#notifications span span');
 
     if (notifications) {
-      indirect = parseInt(notifications.innerText, 10);
+      indirect = Ferdi.safeParseInt(notifications.innerText);
     }
 
     if (chatsElement) {
@@ -18,7 +18,7 @@ module.exports = Ferdi => {
         const chatMessages = chatsElement.querySelector('span');
 
         if (chatMessages) {
-          direct = parseInt(chatMessages.innerText, 10);
+          direct = Ferdi.safeParseInt(chatMessages.innerText);
         }
       } else {
         direct = document.querySelectorAll('[data-pagelet="WorkGalahadChannel"] .uiList [role="gridcell"] [role="button"] .oxk9n0fw').length;

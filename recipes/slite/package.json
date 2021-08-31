@@ -1,7 +1,7 @@
 {
   "id": "slite",
   "name": "Slite",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "config": {
     "serviceURL": "https://{teamId}.slite.com",

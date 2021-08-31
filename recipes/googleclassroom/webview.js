@@ -8,7 +8,7 @@ module.exports = Ferdi => {
         homework += upcomingAssignment[i].childElementCount;
       }
     }
-    Ferdi.setBadge(parseInt(homework, 10));
+    Ferdi.setBadge(homework);
   };
 
   Ferdi.loop(getMessages);

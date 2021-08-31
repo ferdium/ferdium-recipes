@@ -11,10 +11,10 @@ module.exports = Ferdi => {
 
     const elements = document.querySelectorAll('.navigation-bar-list .listItemWrapper');
     if (elements.length > 0 && elements[1].querySelector(UNREAD_BADGE_SELECTOR)) {
-      directCount = parseInt(elements[1].querySelector(UNREAD_BADGE_SELECTOR).textContent, 10);
+      directCount = Ferdi.safeParseInt(elements[1].querySelector(UNREAD_BADGE_SELECTOR).textContent);
     }
-    if (elements.length > 0 && elements[2].querySelector(UNREAD_BADGE_SELECTOR)) {
-      indirectCount = parseInt(elements[2].querySelector(UNREAD_BADGE_SELECTOR).textContent, 10);
+    if (elements.length > 1 && elements[2].querySelector(UNREAD_BADGE_SELECTOR)) {
+      indirectCount = Ferdi.safeParseInt(elements[2].querySelector(UNREAD_BADGE_SELECTOR).textContent);
     }
 
     Ferdi.setBadge(directCount, indirectCount);

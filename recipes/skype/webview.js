@@ -17,7 +17,9 @@ module.exports = (Ferdi, settings) => {
 
         if (elementContainer) {
           const element = elementContainer.querySelector('[data-text-as-pseudo-element]');
-          count = parseInt(element.dataset.textAsPseudoElement, 10);
+          if (element && element.dataset) {
+            count = Ferdi.safeParseInt(element.dataset.textAsPseudoElement);
+          }
         }
       }
     }

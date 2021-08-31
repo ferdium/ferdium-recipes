@@ -9,11 +9,7 @@ module.exports = (Ferdi) => {
     }
 
     if (span.length > 0) {
-      count = parseInt(span[0].innerText, 10);
-    }
-
-    if (Number.isNaN(count)) {
-      count = 0;
+      count = Ferdi.safeParseInt(span[0].innerText);
     }
 
     Ferdi.setBadge(count);

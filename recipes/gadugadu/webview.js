@@ -4,16 +4,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 module.exports = Ferdi => {
   const getMessages = () => {
-    const updates = parseInt(document.querySelector('i#sr-last-counter').textContent, 10);
+    const updates = Ferdi.safeParseInt(document.querySelector('i#sr-last-counter').textContent);
     let messages = 0;
-
-    const conversations = document.querySelectorAll('.chat-counter:not(.d-none)').length;
-    if (conversations === 0) {
-      messages = 0;
-    } else {
-      for (let i = 0; i < conversations; i + 1) {
-        messages += parseInt(document.querySelectorAll('.chat-counter:not(.d-none)')[i].textContent, 10);
-      }
+    const elements = document.querySelectorAll('.chat-counter:not(.d-none)');
+    for (let i = 0; i < elements.length; i++) {
+      messages += Ferdi.safeParseInt(elements[i].textContent);
     }
 
     Ferdi.setBadge(messages, updates);

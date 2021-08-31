@@ -5,12 +5,12 @@ module.exports = Ferdi => {
     const notificationElement = document.querySelector('.yj-notifications-indicator-count');
     const newMessagesElement = document.querySelector('.yj-thread-list--new-messages-notice:not(.is-hidden) .yj-thread-list--new-message-text');
 
-    if (notificationElement && notificationElement.innerHTML.length) {
-      directMessages = parseInt(notificationElement.innerHTML, 10);
+    if (notificationElement) {
+      directMessages = Ferdi.safeParseInt(notificationElement.innerHTML);
     }
 
-    if (newMessagesElement && newMessagesElement.innerHTML.length) {
-      indirectMessages = parseInt(newMessagesElement.innerHTML.match(/\d+/)[0], 10);
+    if (newMessagesElement) {
+      indirectMessages = Ferdi.safeParseInt(newMessagesElement.innerHTML.match(/\d+/)[0]);
     }
 
     Ferdi.setBadge(directMessages, indirectMessages);

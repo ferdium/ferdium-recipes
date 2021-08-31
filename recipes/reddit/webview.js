@@ -8,10 +8,9 @@ module.exports = (Ferdi) => {
     let count = 0;
 
     if (elements[0]) {
-      count = parseInt(elements[0].innerHTML, 10);
+      count = Ferdi.safeParseInt(elements[0].innerHTML);
     }
 
-    console.log(count);
     Ferdi.setBadge(count);
   };
 

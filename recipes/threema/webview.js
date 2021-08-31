@@ -9,7 +9,7 @@ module.exports = Ferdi => {
 
     for (let i = 0; i < elements.length; i += 1) {
       try {
-        count += parseInt(elements[i].innerHTML.trim(), 10);
+        count += Ferdi.safeParseInt(elements[i].innerHTML);
       } catch (e) {
         console.error(e);
       }

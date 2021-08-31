@@ -6,9 +6,8 @@ module.exports = Ferdi => {
       count = document.querySelectorAll('.msg-conversation-card__unread-count').length;
     } else {
       const element = document.querySelector('.nav-item--messaging .nav-item__badge-count');
-
       if (element) {
-        count = parseInt(element.innerHTML, 10);
+        count = Ferdi.safeParseInt(element.innerHTML);
       }
     }
 

@@ -36,7 +36,7 @@ module.exports = Ferdi => {
       const chatElem = chatElems[i];
       const unreadElem = chatElem.children[0].children[0].children[1].children[1].children[1];
 
-      const countValue = parseInt(unreadElem.textContent) || 0; // Returns 0 in case of isNaN
+      const countValue = Ferdi.safeParseInt(unreadElem.textContent);
 
       if (unreadElem.querySelectorAll('[data-icon=muted]').length === 0) {
         count += countValue;

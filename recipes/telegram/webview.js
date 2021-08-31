@@ -12,13 +12,11 @@ module.exports = Ferdi => {
     for (let i = 0; i < elements.length; i += 1) {
       const subtitleBadge = elements[i].querySelector('.dialog-subtitle-badge');
       if (subtitleBadge) {
-        const parsedValue = parseInt(subtitleBadge.innerText);
-        if (!isNaN(parsedValue)) {
-          if (elements[i].dataset.peerId > 0) {
-            count += parsedValue;
-          } else {
-            count_sec += parsedValue;
-          }
+        const parsedValue = Ferdi.safeParseInt(subtitleBadge.innerText);
+        if (elements[i].dataset.peerId > 0) {
+          count += parsedValue;
+        } else {
+          count_sec += parsedValue;
         }
       }
     }

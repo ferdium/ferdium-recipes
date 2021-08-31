@@ -6,7 +6,7 @@ module.exports = (Ferdi) => {
 
     if (countEls.length) {
       Array.from(countEls).forEach((el) => {
-        incompleteCount += parseInt(el.innerHTML, 10);
+        incompleteCount += Ferdi.safeParseInt(el.innerHTML);
       });
     }
 

@@ -41,7 +41,7 @@ module.exports = Ferdi => {
     let directMessagesCount = 0;
 
     for (const directMessage of directMessages) {
-      directMessagesCount += parseInt(directMessage.textContent, 10);
+      directMessagesCount += Ferdi.safeParseInt(directMessage.textContent);
     }
 
     const indirectMessagesCount = Math.round(

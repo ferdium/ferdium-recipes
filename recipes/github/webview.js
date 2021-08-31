@@ -1,14 +1,17 @@
 module.exports = Ferdi => {
   const getMessages = function getMessages() {
     const directCountElement = document.querySelector('.filter-list .count');
-    const indirectCountElement = document.querySelector('[class*="mail-status unread"]');
-    let directCount;
-    let indirectCount;
+    let directCount = 0;
     if (directCountElement) {
-      directCount = parseInt(directCountElement.innerHTML, 10);
-    } else if (indirectCountElement) {
+      directCount = Ferdi.safeParseInt(directCountElement.innerHTML);
+    }
+
+    const indirectCountElement = document.querySelector('[class*="mail-status unread"]');
+    let indirectCount = 0;
+    if (indirectCountElement) {
       indirectCount = 1;
     }
+
     Ferdi.setBadge(directCount, indirectCount);
   };
 

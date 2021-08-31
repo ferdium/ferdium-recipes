@@ -6,7 +6,7 @@ module.exports = Ferdi => {
       const innerBadge = notificationBadge.getElementsByClassName('BadgeV2-count')[0];
       unread = innerBadge.innerText;
     }
-    Ferdi.setBadge(parseInt(unread, 10));
+    Ferdi.setBadge(unread);
   };
 
   Ferdi.loop(getMessages);

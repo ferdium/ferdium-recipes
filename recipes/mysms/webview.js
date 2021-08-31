@@ -4,8 +4,7 @@ module.exports = Ferdi => {
 
     let count = 0;
     for (let i = 0; i < elements.length; i++) {
-      const count_line = parseInt(elements[i].innerText.replace(/[^0-9.]/g, ''));
-      if (count_line > 0) {
+      if (Ferdi.safeParseInt(elements[i].innerText.replace(/[^0-9.]/g, '')) > 0) {
         count++; // count 1 per channel with messages
       }
     }

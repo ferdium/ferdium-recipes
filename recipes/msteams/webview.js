@@ -7,10 +7,7 @@ module.exports = Ferdi => {
     let messages = 0;
     const badge = document.querySelector('.activity-badge.dot-activity-badge .activity-badge');
     if (badge) {
-      const value = parseInt(badge.innerHTML, 10);
-      if (!isNaN(value)) {
-        messages = value;
-      }
+      messages = Ferdi.safeParseInt(badge.innerHTML);
     }
 
     const indirectMessages = document.querySelectorAll('[class*=channel-anchor][class*=ts-unread-channel]').length;

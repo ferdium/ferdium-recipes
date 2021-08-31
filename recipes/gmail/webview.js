@@ -13,10 +13,9 @@ module.exports = (Ferdi) => {
 
     const inboxLinks = document.getElementsByClassName('J-Ke n0');
     if (inboxLinks.length > 0) {
-      const inboxLink = inboxLinks[0];
-      const unreadCounts = inboxLink.parentNode.parentNode.getElementsByClassName('bsU');
+      const unreadCounts = inboxLinks[0].parentNode.parentNode.getElementsByClassName('bsU');
       if (unreadCounts.length > 0) {
-        count = parseInt(unreadCounts[0].innerHTML.trim(), 10);
+        count = Ferdi.safeParseInt(unreadCounts[0].innerHTML);
       }
     }
 

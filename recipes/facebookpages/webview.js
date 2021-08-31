@@ -4,7 +4,7 @@ module.exports = (Ferdi, options) => {
     const element = document.querySelector('[data-testid="message_count"] span');
 
     if (element) {
-      messages = parseInt(element.textContent, 10);
+      messages = Ferdi.safeParseInt(element.textContent);
     }
 
     Ferdi.setBadge(messages);

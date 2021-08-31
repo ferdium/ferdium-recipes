@@ -5,12 +5,7 @@ module.exports = Ferdi => {
 
     if (location.pathname.match(/\/owa/)) {
       // classic app
-      directUnreadCount = parseInt(
-        jQuery("span[title*='Inbox'] + div > span")
-          .first()
-          .text(),
-        10,
-      );
+      directUnreadCount = Ferdi.safeParseInt(jQuery("span[title*='Inbox'] + div > span").first().text());
     } else {
       // new app
       const foldersElement = document.querySelector('div[role=tree]:nth-child(3)');
@@ -18,7 +13,7 @@ module.exports = Ferdi => {
         const allScreenReaders = foldersElement.querySelectorAll('span.screenReaderOnly');
         for (const child of allScreenReaders) {
           if ((child.innerText === 'unread' || child.innerText === 'item') && child.previousSibling) {
-            directUnreadCount += parseInt(child.previousSibling.innerText, 10);
+            directUnreadCount += Ferdi.safeParseInt(child.previousSibling.innerText);
           }
         }
       }
@@ -28,7 +23,7 @@ module.exports = Ferdi => {
         const allScreenReaders = groupsElement.querySelectorAll('span.screenReaderOnly');
         for (const child of allScreenReaders) {
           if ((child.innerText === 'unread' || child.innerText === 'item') && child.previousSibling) {
-            indirectUnreadCount += parseInt(child.previousSibling.innerText, 10);
+            indirectUnreadCount += Ferdi.safeParseInt(child.previousSibling.innerText);
           }
         }
       }

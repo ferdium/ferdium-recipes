@@ -3,8 +3,7 @@ module.exports = Ferdi => {
     const directElements = document.querySelectorAll('.unreadcount');
     let direct = 0;
     for (let i = 0; i < directElements.length; i += 1) {
-      const n = parseInt(directElements[i].innerHTML);
-      direct += isNaN(n) ? 0 : n;
+      direct += Ferdi.safeParseInt(directElements[i].innerHTML);
     }
     Ferdi.setBadge(direct);
   };

@@ -1,7 +1,7 @@
 {
   "id": "nextdoor",
   "name": "Nextdoor",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "config": {
     "serviceURL": "https://nextdoor.co.uk/inbox/"

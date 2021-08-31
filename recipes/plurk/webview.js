@@ -5,8 +5,11 @@ module.exports = Ferdi => {
     const np = document.querySelector('#noti_np_count');
     const re = document.querySelector('#noti_re_count');
 
-    if (np || re) {
-      direct = parseInt(np.innerHTML) + parseInt(re.innerHTML);
+    if (np) {
+      direct += Ferdi.safeParseInt(np.innerHTML);
+    }
+    if (re) {
+      direct += Ferdi.safeParseInt(re.innerHTML);
     }
 
     Ferdi.setBadge(direct);

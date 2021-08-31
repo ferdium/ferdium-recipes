@@ -1,6 +1,6 @@
 const getInnerInt = selector => {
   const element = document.querySelector(selector);
-  return element && parseInt(element.innerText);
+  return element && Ferdi.safeParseInt(element.innerText);
 };
 
 module.exports = Ferdi => {

@@ -7,8 +7,7 @@ module.exports = Ferdi => {
     const elements = document.querySelectorAll('.contact-list__message__unread-badge-counter');
     let count = 0;
     for (let i = 0; i < elements.length; i++) {
-      const countValue = parseInt(elements[i].textContent || '0', 10);
-      count += countValue;
+      count += Ferdi.safeParseInt(elements[i].textContent);
     }
     Ferdi.setBadge(count, 0);
   };

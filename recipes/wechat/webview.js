@@ -13,8 +13,8 @@ module.exports = (Ferdi) => {
       const reddot = item.querySelector('i.web_wechat_reddot_middle');
       const avatarImage = item.querySelector('img.img');
 
-      if (reddot && reddot.innerText) {
-        count = parseInt(reddot.innerText);
+      if (reddot) {
+        count = Ferdi.safeParseInt(reddot.innerText);
       }
 
       if (avatarImage && avatarImage.getAttribute('src').search('webwxgeticon') != -1) {

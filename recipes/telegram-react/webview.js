@@ -5,7 +5,7 @@ module.exports = Ferdi => {
     if (elements) {
       for (let i = 0; i < elements.length; i += 1) {
         if (elements[i].querySelector('.unread') && elements[i].querySelector('.unread').innerHTML !== 0) {
-          count += parseInt(elements[i].querySelector('.unread').innerHTML);
+          count += Ferdi.safeParseInt(elements[i].querySelector('.unread').innerHTML);
         }
       }
     }

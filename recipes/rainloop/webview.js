@@ -9,10 +9,10 @@ module.exports = Ferdi => {
       if (typeof countText === 'string' && countText !== '') {
         if ($(obj).hasClass('system')) {
           if ($(obj).hasClass('i-am-inbox')) {
-            inbox += parseInt(countText);
+            inbox += Ferdi.safeParseInt(countText);
           }
         } else {
-          updates += parseInt(countText);
+          updates += Ferdi.safeParseInt(countText);
         }
       }
     });

@@ -7,7 +7,7 @@ module.exports = Ferdi => {
     const counters = document.querySelectorAll('[class*=FriendMessageCount]');
     [].filter.call(counters, countValue => {
       if (countValue) {
-        count += parseInt(countValue.innerHTML);
+        count += Ferdi.safeParseInt(countValue.innerHTML);
       }
     });
 

@@ -9,7 +9,7 @@ module.exports = Ferdi => {
      * see https://github.com/getferdi/ferdi/issues/1113#issuecomment-783409154
      */
     if (isNotification) {
-      count = parseInt(/^\((\d+)\)/.exec(document.title)[1]);
+      count = Ferdi.safeParseInt(/^\((\d+)\)/.exec(document.title)[1]);
     } else {
       /*
       * Notification case for direct messages, workaround by manavortex
@@ -28,7 +28,7 @@ module.exports = Ferdi => {
      */
     const messageRequestsElement = document.querySelector('._5nxf');
     if (messageRequestsElement) {
-      count += parseInt(messageRequestsElement.innerHTML, 10);
+      count += Ferdi.safeParseInt(messageRequestsElement.innerHTML);
     }
 
     Ferdi.setBadge(count);

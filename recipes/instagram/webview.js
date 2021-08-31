@@ -5,7 +5,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 module.exports = (Ferdi) => {
   const getMessages = function getMessages() {
     const element = document.querySelector('a[href^="/direct/inbox"]');
-    Ferdi.setBadge(element ? parseInt(element.innerText, 10) : 0);
+    Ferdi.setBadge(element ? Ferdi.safeParseInt(element.innerText) : 0);
   };
 
   Ferdi.loop(getMessages);
