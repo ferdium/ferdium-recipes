@@ -1,12 +1,14 @@
 {
   "id": "youtrack",
   "name": "YouTrack",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://{teamId}.myjetbrains.com/youtrack/",
+    "urlInputSuffix": ".myjetbrains.com",
+    "hasHostedOption": true,
     "hasTeamId": true,
-    "hasNotificationSound": true,
-    "urlInputSuffix": ".myjetbrains.com"
+    "hasCustomUrl": true,
+    "hasNotificationSound": true
   }
 }
