@@ -1,7 +1,5 @@
-const { ipcRenderer } = require('electron');
-
 // Tweetdeck redirect fix
-ipcRenderer.on('redirect-url', (event, url) => {
+Ferdi.ipcRenderer.on('redirect-url', (event, url) => {
   window.location.assign(url);
 });
 

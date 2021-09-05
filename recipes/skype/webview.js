@@ -2,8 +2,6 @@ const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const { remote: { BrowserWindow } } = require('electron');
-
 module.exports = (Ferdi, settings) => {
   const getMessages = function getMessages() {
     let count = 0;
@@ -44,7 +42,7 @@ module.exports = (Ferdi, settings) => {
         event.stopPropagation();
         // TODO: Can we send an ipc event 'open-browser-window' to open the child window? (see the slack recipe for how to send an ipc message)
         // TODO: Can we change the slack recipe to add a clickHandler for screensharing/video calls? (https://github.com/getferdi/ferdi/issues/1697)
-        const win = new BrowserWindow({
+        const win = new Ferdi.BrowserWindow({
           width: 800,
           height: window.innerHeight,
           minWidth: 600,

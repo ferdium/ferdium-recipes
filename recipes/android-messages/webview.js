@@ -1,11 +1,3 @@
-const {
-  remote,
-} = require('electron');
-
-const webContents = remote.getCurrentWebContents();
-const {
-  session,
-} = webContents;
 setTimeout(() => {
   const elem = document.querySelector('#af-error-container');
 
@@ -13,8 +5,10 @@ setTimeout(() => {
     window.location.reload();
   }
 }, 1000);
+
 window.addEventListener('beforeunload', async () => {
   try {
+    const { session } = Ferdi.getCurrentWebContents();
     session.flushStorageData();
     session.clearStorageData({
       storages: ['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb'],

@@ -1,5 +1,3 @@
-const { ipcRenderer } = require('electron');
-
 const titleRegex = /^\((\d+)\)/;
 
 const getJson = async (relativeUri) => {
@@ -153,7 +151,7 @@ module.exports = Ferdi => {
     Ferdi.loop(() => {
       getMessages();
       if (updater.update()) {
-        ipcRenderer.sendToHost('avatar', updater.toDataURL());
+        Ferdi.ipcRenderer.sendToHost('avatar', updater.toDataURL());
       }
     });
   }, (e) => {

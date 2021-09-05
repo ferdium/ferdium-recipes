@@ -1,5 +1,3 @@
-const _electron = require('electron');
-
 const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -27,7 +25,7 @@ const getTeamIcon = function getTeamIcon(count = 0) {
   countTeamIconCheck += 1;
 
   if (bgUrl) {
-    _electron.ipcRenderer.sendToHost('avatar', bgUrl);
+    Ferdi.ipcRenderer.sendToHost('avatar', bgUrl);
   } else if (countTeamIconCheck <= 5) {
     setTimeout(() => {
       getTeamIcon(countTeamIconCheck + 1);

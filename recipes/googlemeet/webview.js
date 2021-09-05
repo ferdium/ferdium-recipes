@@ -2,11 +2,6 @@ const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const { remote } = require('electron');
-
-const webContents = remote.getCurrentWebContents();
-const { session } = webContents;
-
 window.onload = () => {
   const title = document.querySelector('.window-title').innerHTML;
 
@@ -16,6 +11,7 @@ window.onload = () => {
 };
 
 module.exports = Ferdi => {
+  const { session } = Ferdi.getCurrentWebContents();
   session.flushStorageData();
   session.clearStorageData({
     storages: ['serviceworkers'],

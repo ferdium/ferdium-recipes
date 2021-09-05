@@ -2,12 +2,6 @@ const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const { remote } = require('electron');
-
-const webContents = remote.getCurrentWebContents();
-
-const { session } = webContents;
-
 setTimeout(() => {
   if (document.querySelector('body').innerHTML.includes('Google Chrome 36+')) {
     window.location.reload();
@@ -15,6 +9,7 @@ setTimeout(() => {
 }, 1000);
 window.addEventListener('beforeunload', async () => {
   try {
+    const { session } = Ferdi.getCurrentWebContents();
     session.flushStorageData();
     session.clearStorageData({
       storages: ['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb'],

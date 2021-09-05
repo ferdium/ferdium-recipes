@@ -1,7 +1,5 @@
 // TODO: Some/most of this is already present in https://github.com/getferdi/ferdi/blob/develop/src/webview/screenshare.js#L5
 
-const { desktopCapturer, remote: { BrowserWindow } } = require('electron');
-
 const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -9,7 +7,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 window.navigator.mediaDevices.getDisplayMedia = () => {
   return new Promise(async (resolve, reject) => {
     try {
-      const sources = await desktopCapturer.getSources({ types: ['screen', 'window'] });
+      const sources = await Ferdi.desktopCapturer.getSources({ types: ['screen', 'window'] });
 
       const selectionElem = document.createElement('div');
       selectionElem.classList = 'desktop-capturer-selection';
@@ -99,7 +97,7 @@ module.exports = (Ferdi, settings) => {
       event.stopPropagation();
 
       if (url.includes('views/imgpsh_fullsize_anim')) {
-        let win = new BrowserWindow({
+        let win = new Ferdi.BrowserWindow({
           width: 800,
           height: window.innerHeight,
           minWidth: 600,

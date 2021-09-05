@@ -1,5 +1,3 @@
-const { ipcRenderer } = require('electron');
-
 module.exports = Ferdi => {
   const getMessages = function getMessages() {
     // get new msg count
@@ -34,7 +32,7 @@ module.exports = Ferdi => {
       const url = link.getAttribute('href');
       event.preventDefault();
       event.stopPropagation();
-      ipcRenderer.sendToHost('new-window', url);
+      Ferdi.ipcRenderer.sendToHost('new-window', url);
     }
   }, true);
 };

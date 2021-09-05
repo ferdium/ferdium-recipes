@@ -1,7 +1,7 @@
 {
   "id": "googlemeet",
   "name": "Google Meet",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://meet.google.com",
