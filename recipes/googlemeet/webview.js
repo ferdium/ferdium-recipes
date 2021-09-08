@@ -10,13 +10,11 @@ window.onload = () => {
   }
 };
 
-module.exports = Ferdi => {
-  const { session } = Ferdi.getCurrentWebContents();
-  session.flushStorageData();
-  session.clearStorageData({
-    storages: ['serviceworkers'],
-  });
+window.addEventListener('beforeunload', async () => {
+  Ferdi.clearStorageData(['serviceworkers']);
+});
 
+module.exports = Ferdi => {
   const getMessages = function getMessages() {
     const elements = document.querySelectorAll('.CxUIE, .unread');
     let count = 0;

@@ -3,20 +3,8 @@ const _path = _interopRequireDefault(require('path'));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 window.addEventListener('beforeunload', async () => {
-  try {
-    const { session } = Ferdi.getCurrentWebContents();
-    session.flushStorageData();
-    session.clearStorageData({
-      storages: ['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb'],
-    });
-    const registrations = await window.navigator.serviceWorker.getRegistrations();
-    registrations.forEach(r => {
-      r.unregister();
-      console.log('ServiceWorker unregistered');
-    });
-  } catch (err) {
-    console.err(err);
-  }
+  Ferdi.clearStorageData(['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb']);
+  Ferdi.releaseServiceWorkers();
 });
 
 module.exports = Ferdi => {
