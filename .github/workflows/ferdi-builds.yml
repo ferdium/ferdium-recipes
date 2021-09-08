@@ -2,11 +2,11 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
 # Note: This workflow requires some secrets setup, and set on this repo with the names:
-  # 'FERDI_PUBLISH_TOKEN' (A GitHub Personal Access Token with appropriate permissions - for publishing the built artifacts)
-  # 'APPLEID' (The username of your Apple developer account - for notarizing the mac artifacts)
-  # 'APPLEID_PASSWORD' (An app-specific password - for notarizing the mac artifacts)
-  # 'CSC_LINK' (The HTTPS link or local path to certificate - for code signing of mac and windows artifacts)
-  # 'CSC_KEY_PASSWORD' (The password to decrypt the certificate given in CSC_LINK - for code signing of mac and windows artifacts)
+# 'FERDI_PUBLISH_TOKEN' (A GitHub Personal Access Token with appropriate permissions - for publishing the built artifacts)
+# 'APPLEID' (The username of your Apple developer account - for notarizing the mac artifacts)
+# 'APPLEID_PASSWORD' (An app-specific password - for notarizing the mac artifacts)
+# 'CSC_LINK' (The HTTPS link or local path to certificate - for code signing of mac and windows artifacts)
+# 'CSC_KEY_PASSWORD' (The password to decrypt the certificate given in CSC_LINK - for code signing of mac and windows artifacts)
 
 name: Ferdi Recipes Builds
 
@@ -32,7 +32,7 @@ jobs:
       - name: Print latest commit
         run: echo ${{ github.sha }}
       - name: Set env vars
-        run: echo "NPM_CACHE=$HOME/.npm" >> $GITHUB_ENV
+        run: echo "PNPM_CACHE=$HOME/.pnpm-store" >> $GITHUB_ENV
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Cache node modules
@@ -40,8 +40,8 @@ jobs:
         env:
           cache-name: cache-node-modules
         with:
-          path: ${{ env.NPM_CACHE }}
-          key: build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          path: ${{ env.PNPM_CACHE }}
+          key: build-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             build-${{ env.cache-name }}-
             build-
@@ -49,5 +49,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14.17.6
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.14.2
+          run_install: true
       - name: Install node dependencies recursively
-        run: npm i && npm run package
+        run: pnpm i && pnpm run package
