@@ -4,13 +4,14 @@ Provides a set of helper functions to integrate the recipe into [Ferdi](https://
 
 ## Ferdi Backend Class Methods
 
-* [validateUrl](#user-content-validateurl)
-* [overrideUserAgent](#user-content-overrideuseragent)
-* [modifyRequestHeaders](#user-content-modifyrequestheaders)
+* [validateUrl](#validateurl)
+* [overrideUserAgent](#overrideuseragent)
+* [modifyRequestHeaders](#modifyrequestheaders)
+* [knownCertificateHosts](#knownCertificateHosts)
 
 ## Events
 
-* [webview events](#user-content-events)
+* [webview events](#events)
 
 ### validateUrl(URL)
 
@@ -107,6 +108,45 @@ module.exports = Ferdi => class HangoutsChat extends Ferdi {
         }
       }]
     }
+};
+```
+
+### knownCertificateHosts()
+
+Specify an array of known hosts from where certificates can be issued for this service
+
+#### Returns
+
+`Array` containing hostnames from where certificates can be issued
+
+#### Usage
+
+```js
+// msteams Chat integration
+module.exports = Ferdi => class MicrosoftTeams extends Ferdi {
+  knownCertificateHosts() {
+    return [
+      'aka.ms',
+      'aspnetcdn.com',
+      'azure.net',
+      'azureedge.net',
+      'live.com',
+      'microsoft.com',
+      'microsoftonline.com',
+      'msecnd.net',
+      'msedge.net',
+      'mstea.ms',
+      'office.net',
+      'okta.com',
+      'sfbassets.com',
+      'skype.com',
+      'skypeassets.com',
+      'skypeforbusiness.com',
+      'tenor.com',
+      'windows.com',
+      'windows.net',
+    ];
+  };
 };
 ```
 

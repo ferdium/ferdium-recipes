@@ -2,6 +2,11 @@ const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+window.addEventListener('beforeunload', async () => {
+  Ferdi.clearStorageData(['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb']);
+  Ferdi.releaseServiceWorkers();
+});
+
 module.exports = Ferdi => {
   const getMessages = () => {
     let messages = 0;
