@@ -4,28 +4,14 @@ module.exports = Ferdi => class MicrosoftTeams extends Ferdi {
   }
 
   // https://docs.microsoft.com/en-us/microsoftteams/troubleshoot/teams-sign-in/sign-in-loop#resolution
-  // https://docs.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams
   knownCertificateHosts() {
     return [
-      'aka.ms',
-      'aspnetcdn.com',
-      'azure.net',
-      'azureedge.net',
-      'live.com',
       'microsoft.com',
       'microsoftonline.com',
-      'msecnd.net',
-      'msedge.net',
-      'mstea.ms',
-      'office.net',
-      'okta.com',
+      'teams.skype.com',
+      'teams.microsoft.com',
       'sfbassets.com',
-      'skype.com',
-      'skypeassets.com',
       'skypeforbusiness.com',
-      'tenor.com',
-      'windows.com',
-      'windows.net',
     ];
   };
 };
