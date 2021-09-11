@@ -12,7 +12,7 @@ module.exports = Ferdi => {
       if (foldersElement) {
         const allScreenReaders = foldersElement.querySelectorAll('span.screenReaderOnly');
         for (const child of allScreenReaders) {
-          if ((child.innerText === 'unread' || child.innerText === 'item') && child.previousSibling) {
+          if (child.previousSibling) {
             directUnreadCount += Ferdi.safeParseInt(child.previousSibling.innerText);
           }
         }
@@ -22,7 +22,7 @@ module.exports = Ferdi => {
       if (groupsElement) {
         const allScreenReaders = groupsElement.querySelectorAll('span.screenReaderOnly');
         for (const child of allScreenReaders) {
-          if ((child.innerText === 'unread' || child.innerText === 'item') && child.previousSibling) {
+          if (child.previousSibling) {
             indirectUnreadCount += Ferdi.safeParseInt(child.previousSibling.innerText);
           }
         }
