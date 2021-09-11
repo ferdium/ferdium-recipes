@@ -12,7 +12,8 @@ module.exports = Ferdi => {
     let count = 0;
     let indirectCount = 0;
 
-    const parentChatElem = document.querySelector('[aria-label="Chat list"]');
+    const parentChatElem = Array.from(document.querySelectorAll('div[aria-label]'))
+                           .sort((a, b) => (a.offsetHeight < b.offsetHeight) ? 1 : -1)[0];
     if (!parentChatElem) {
       return;
     }
