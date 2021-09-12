@@ -461,6 +461,15 @@
   },
   {
     "featured": false,
+    "id": "freshdesk",
+    "name": "Freshdesk",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/freshdesk/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "gadugadu",
     "name": "Gadu-Gadu",
     "version": "1.1.1",
