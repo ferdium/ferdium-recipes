@@ -865,6 +865,15 @@
   },
   {
     "featured": false,
+    "id": "mewe",
+    "name": "MeWe",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/mewe/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "monday",
     "name": "Monday",
     "version": "1.1.1",

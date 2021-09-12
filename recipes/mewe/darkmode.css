@@ -1,0 +1,9 @@
+.ember-application {
+  background-color: #424242;
+}
+
+.chat-window_header,
+.chats-list,
+.h-sidebar-left_search {
+  background-color: black;
+}

@@ -1,0 +1,10 @@
+{
+  "id": "mewe",
+  "name": "MeWe",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://mewe.com/chat",
+    "hasNotificationSound": true
+  }
+}
