@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>symbol</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Symbol-SVG" transform="translate(-216.000000, -122.000000)" fill="#FFFFFF">
+            <g id="symbol" transform="translate(216.000000, 122.000000)">
+                <rect id="Rectangle" x="24.5254566" y="0.569034209" width="42.2852701" height="14.4398652" rx="7.21993259"></rect>
+                <rect id="Rectangle" x="37.2110377" y="25.2017454" width="29.5996891" height="14.4398652" rx="7.21993259"></rect>
+                <rect id="Rectangle" x="50.7423241" y="48.9850528" width="16.0684026" height="14.4398652" rx="7.21993259"></rect>
+                <rect id="Rectangle" x="0" y="0.569034209" width="16.0684026" height="14.4398652" rx="7.21993259"></rect>
+                <rect id="Rectangle" x="0" y="25.2017454" width="29.5996891" height="14.4398652" rx="7.21993259"></rect>
+                <rect id="Rectangle" x="0" y="48.9850528" width="42.2852701" height="14.4398652" rx="7.21993259"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

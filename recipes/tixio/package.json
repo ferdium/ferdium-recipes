@@ -1,0 +1,14 @@
+{
+    "id": "tixio",
+    "name": "Tixio",
+    "version": "1.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/hmcclungiii/franz-recipe-tixio",
+    "config": {
+      "serviceURL": "https://{teamId}.tixio.io/app/",
+      "message": "Franz Recipe for Tixio by hmcclungiii",
+      "hasTeamId": true,
+      "hasDirectMessages": false,
+      "urlInputSuffix": ".tixio.io/app/"
+    }
+  }
