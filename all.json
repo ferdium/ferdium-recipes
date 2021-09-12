@@ -1159,6 +1159,15 @@
   },
   {
     "featured": false,
+    "id": "plek",
+    "name": "Plek",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/plek/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "pleroma",
     "name": "Pleroma",
     "version": "1.2.0",

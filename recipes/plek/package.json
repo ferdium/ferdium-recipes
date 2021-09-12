@@ -1,0 +1,14 @@
+{
+  "id": "plek",
+  "name": "Plek",
+  "version": "1.0.0",
+  "repository": "https://github.com/jsimonetti/franz-recipe-plek",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://{teamId}.plek.co",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true,
+    "hasTeamId": true,
+    "disablewebsecurity": true
+  }
+}
