@@ -1456,6 +1456,15 @@
   },
   {
     "featured": false,
+    "id": "stackoverflow",
+    "name": "Stackoverflow",
+    "version": "0.0.1",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/stackoverflow/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "standardnotes",
     "name": "StandardNotes",
     "version": "1.1.0",

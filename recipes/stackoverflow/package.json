@@ -1,0 +1,11 @@
+{
+  "id": "stackoverflow",
+  "name": "Stackoverflow",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/christianascone/franz-recipe-stackoverflow",
+  "config": {
+    "serviceURL": "https://stackoverflow.com",
+    "hasNotificationSound": true
+  }
+}
