@@ -1582,6 +1582,15 @@
   },
   {
     "featured": false,
+    "id": "whereby",
+    "name": "whereby.com",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/whereby/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "wire",
     "name": "Wire",
     "version": "1.0.3",

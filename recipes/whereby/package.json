@@ -1,0 +1,12 @@
+{
+  "id": "whereby",
+  "name": "whereby.com",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://whereby.com/{teamId}",
+    "hasNotificationSound": true,
+    "hasTeamId": true,
+    "urlInputPrefix": "https://whereby.com/"
+  }
+}
