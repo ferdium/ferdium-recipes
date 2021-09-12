@@ -1,0 +1,10 @@
+{
+  "id": "hey",
+  "name": "Hey",
+  "version": "1.0.0",
+  "repository": "https://github.com/cpwood/recipe-hey",
+  "config": {
+    "serviceURL": "https://app.hey.com",
+    "hasIndirectMessages": true
+  }
+}

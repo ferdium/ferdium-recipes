@@ -703,6 +703,15 @@
   },
   {
     "featured": false,
+    "id": "hey",
+    "name": "Hey",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/hey/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "hipchat",
     "name": "HipChat",
     "version": "1.1.0",
