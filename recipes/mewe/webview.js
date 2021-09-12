@@ -7,7 +7,7 @@ const calculateTotalDirectMessages = () =>
     .map(el => Ferdi.safeParseInt(el.querySelector('.m-indicator .number').innerHTML))
     .reduce((curr, prev) => curr + prev, 0);
 
-module.exports = Franz => {
-  Franz.loop(() => Franz.setBadge(calculateTotalDirectMessages()));
+module.exports = Ferdi => {
+  Ferdi.loop(() => Ferdi.setBadge(calculateTotalDirectMessages()));
   Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
