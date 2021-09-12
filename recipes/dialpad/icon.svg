@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Art"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
+    <style type="text/css">
+    .st0 {
+      fill: #314FFF;
+    }
+  </style>
+    <g transform="scale(4,4) translate(-43.0,-30.000000)">
+        <path class="st0" d="M132.4,70c-13.5,0-24.7,10-26.5,23.1V56.2c0-0.4-0.4-0.5-0.7-0.3L89.6,
+          72.1c-3.2-1.4-6.7-2.1-10.4-2.1c-14.8,0-26.7,12-26.7,26.7s12,26.7,26.7,26.7c13.5,0,
+          24.7-10,26.5-23.1v36.8c0,0.4,0.4,0.5,0.7,0.3l15.6-16.2c3.2,1.4,6.7,2.1,10.4,2.1c14.8,
+          0,26.7-12,26.7-26.7S147.2,70,132.4,70z" />
+    </g>
+</svg>

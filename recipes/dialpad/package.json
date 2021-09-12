@@ -1,0 +1,11 @@
+{
+  "id": "dialpad",
+  "name": "Dialpad",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/TheKevJames/franz-recipe-dialpad",
+  "config": {
+    "serviceURL": "https://dialpad.com/app",
+    "hasNotificationSound": true
+  }
+}

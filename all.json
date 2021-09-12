@@ -259,6 +259,15 @@
   },
   {
     "featured": false,
+    "id": "dialpad",
+    "name": "Dialpad",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/dialpad/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "dingtalk",
     "name": "Dingtalk",
     "version": "1.0.24",
