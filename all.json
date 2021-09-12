@@ -398,6 +398,15 @@
   },
   {
     "featured": false,
+    "id": "flock",
+    "name": "Flock",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/flock/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "flowdock",
     "name": "Flowdock",
     "version": "1.1.0",

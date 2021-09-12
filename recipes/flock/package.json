@@ -1,0 +1,11 @@
+{
+  "id": "flock",
+  "name": "Flock",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/jereddowden/franz-recipe-flock",
+  "config": {
+    "serviceURL": "https://web.flock.com",
+    "hasNotificationSound": true
+  }
+}
