@@ -1734,6 +1734,15 @@
     }
   },
   {
+    "featured": false,
+    "id": "weekplan",
+    "name": "Weekplan",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/weekplan/icon.svg"
+    }
+  },
+  {
     "featured": true,
     "id": "whatsapp",
     "name": "WhatsApp",
