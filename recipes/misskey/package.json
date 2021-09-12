@@ -1,0 +1,13 @@
+{
+  "id": "misskey",
+  "name": "Misskey",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/sharkpp/franz-recipe-misskey",
+  "config": {
+    "serviceURL": "https://{teamId}",
+    "hasTeamId": true,
+    "hasNotificationSound": true,
+    "message": "Please enter the instance address of Misskey in the team name input box."
+  }
+}

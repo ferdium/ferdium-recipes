@@ -901,6 +901,15 @@
   },
   {
     "featured": false,
+    "id": "misskey",
+    "name": "Misskey",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/misskey/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "monday",
     "name": "Monday",
     "version": "1.1.1",
