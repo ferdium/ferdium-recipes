@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="logo-loader logo-loader--small" width="1024" height="1024" viewBox="0 0 37 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <path class="line1" d="M0,0l5.935,0l7.66,23.906l-5.937,0l-7.658,-23.906Z" style="fill:#0dea9c;"></path>
+    <path class="line2" d="M11.335,12.402l3.258,-10.142l2.984,9.3l-3.267,10.125l-2.975,-9.283l0,0Z" style="fill:#0dea9c;"></path>
+    <path class="line3" d="M15.3,0l5.935,0l7.658,23.906l-5.933,0l-7.66,-23.906Z" style="fill:#0dea9c;"></path>
+    <path class="line4" d="M30.6,0l5.972,0l-6.95,21.687l-2.976,-9.285l3.954,-12.402Z" style="fill:#0dea9c;"></path>
+</svg>

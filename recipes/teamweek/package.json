@@ -1,0 +1,10 @@
+{
+	"id": "teamweek",
+	"name": "Teamweek",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "https://github.com/claudiupelmus/recipe-teamweek",
+	"config": {
+		"serviceURL": "https://app.teamweek.com/"
+	}
+}

@@ -1447,6 +1447,15 @@
   },
   {
     "featured": false,
+    "id": "teamweek",
+    "name": "Teamweek",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/teamweek/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "teamwork-projects",
     "name": "Teamwork Projects",
     "version": "0.2.1",
