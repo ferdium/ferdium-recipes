@@ -1,0 +1,11 @@
+{
+  "id": "udemy",
+  "name": "Udemy",
+  "version": "1.0.4",
+  "license": "MIT",
+  "repository": "https://github.com/gaspergrom/Franz-services/tree/master/udemy",
+  "config": {
+    "serviceURL": "https://www.udemy.com/home/my-courses/learning/",
+    "hasNotificationSound": true
+  }
+}
