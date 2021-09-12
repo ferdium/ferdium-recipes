@@ -1,0 +1,9 @@
+#layout-container {
+  justify-content: unset
+}
+
+#layout-container #layout-main {
+  width: 100%;
+  flex: 0 1 1500px;
+}
+

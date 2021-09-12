@@ -76,7 +76,7 @@ Some services have direct 1x1 messages e.g. a mention or message to every user i
 Services like Slack or HipChat have direct messages e.g. a mention or message to every user in a channel (@channel) and indirect messages e.g. general discussion in a channel. If this flag is set to `true`, the user can enable/disable if there should be a badge for indirect messages.
 * `string` **message**<br />
 Info message that will be displayed in the add/edit service preferences screen.
-* `string` **disablewebsecurity**<br />
+* `boolean` **disablewebsecurity** _default: false_<br />
 Some services like hangoutschat need the web security disabled.
 
 ## Example
