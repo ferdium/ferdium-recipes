@@ -1,0 +1,11 @@
+{
+  "id": "sococo",
+  "name": "Sococo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/klcodanr/recipe-sococo",
+  "config": {
+    "serviceURL": "https://app.sococo.com",
+    "hasNotificationSound": true
+  }
+}
