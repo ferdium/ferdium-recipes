@@ -1321,6 +1321,15 @@
   },
   {
     "featured": false,
+    "id": "ritetag",
+    "name": "Ritetag",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/ritetag/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "rocketchat",
     "name": "Rocket.Chat",
     "version": "1.2.0",

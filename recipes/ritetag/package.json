@@ -1,0 +1,10 @@
+{
+  "id": "ritetag",
+  "name": "Ritetag",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/alexdevero/franz-ritetag-recipe",
+  "config": {
+    "serviceURL": "https://ritetag.com"
+  }
+}
