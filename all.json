@@ -250,6 +250,15 @@
   },
   {
     "featured": false,
+    "id": "coinbase",
+    "name": "Coinbase",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/coinbase/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "devdocs",
     "name": "DevDocs",
     "version": "1.0.2",

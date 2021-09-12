@@ -1,0 +1,11 @@
+{
+  "id": "coinbase",
+  "name": "Coinbase",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/gaspergrom/Franz-services",
+  "config": {
+    "serviceURL": "https://www.coinbase.com/dashboard",
+    "hasNotificationSound": true
+  }
+}
