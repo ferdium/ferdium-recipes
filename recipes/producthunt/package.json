@@ -1,0 +1,11 @@
+{
+  "id": "producthunt",
+  "name": "Product Hunt",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/alexdevero/franz-producthunt-recipe",
+  "config": {
+    "serviceURL": "https://www.producthunt.com/",
+    "hasIndirectMessages": true
+  }
+}
