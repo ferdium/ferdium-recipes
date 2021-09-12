@@ -1339,6 +1339,15 @@
   },
   {
     "featured": false,
+    "id": "slowly",
+    "name": "Slowly",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/slowly/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "snapdrop",
     "name": "Snapdrop",
     "version": "1.1.0",
