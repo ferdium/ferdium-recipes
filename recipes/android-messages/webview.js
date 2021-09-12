@@ -1,6 +1,7 @@
 setTimeout(() => {
   const elem = document.querySelector('#af-error-container');
 
+  // TODO: This will not work for non-english locales
   if (elem && elem.innerText.toLowerCase().includes('the requested url was not found on this server')) {
     window.location.reload();
   }
