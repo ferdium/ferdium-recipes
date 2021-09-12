@@ -102,6 +102,9 @@ const compress = (src, dest) => new Promise((resolve, reject) => {
     } else if (!/^[a-zA-Z0-9._\-]+$/.test(config.id)) {
       configErrors.push("The recipe's package.json defines an invalid recipe ID. Please make sure the 'id' field only contains lowercase letters (a-z), numbers (0-9), hyphens (-), periods (.), and underscores (_)");
     }
+    if (config.id !== recipe) {
+      configErrors.push(`The recipe's id (${config.id}) does not match the folder name (${recipe})`);
+    }
     if (!config.name) {
       configErrors.push("The recipe's package.json contains no 'name' field. This field should contain the name of the service (e.g. 'Google Keep')");
     }
