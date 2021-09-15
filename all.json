@@ -297,7 +297,7 @@
     "featured": true,
     "id": "discord",
     "name": "Discord",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/discord/icon.svg"
     }

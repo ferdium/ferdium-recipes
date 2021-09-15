@@ -93,10 +93,10 @@ module.exports = (Ferdi, settings) => {
 
     if (link || button) {
       const url = link ? link.getAttribute('href') : button.getAttribute('title');
-      event.preventDefault();
-      event.stopPropagation();
 
       if (url.includes('views/imgpsh_fullsize_anim')) {
+        event.preventDefault();
+        event.stopPropagation();
         let win = new Ferdi.BrowserWindow({
           width: 800,
           height: window.innerHeight,
@@ -109,8 +109,6 @@ module.exports = (Ferdi, settings) => {
         win.on('closed', () => {
           win = null;
         });
-      } else {
-        window.open(url);
       }
     }
   }, true);
