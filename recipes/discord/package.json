@@ -1,7 +1,7 @@
 {
   "id": "discord",
   "name": "Discord",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "license": "MIT",
   "config": {
     "serviceURL": "https://discordapp.com/login",

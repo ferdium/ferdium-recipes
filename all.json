@@ -42,7 +42,7 @@
     "featured": false,
     "id": "android-messages",
     "name": "Android Messages",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/android-messages/icon.svg"
     }
@@ -270,7 +270,7 @@
     "featured": false,
     "id": "devRant",
     "name": "devRant",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/devRant/icon.svg"
     }
@@ -297,7 +297,7 @@
     "featured": true,
     "id": "discord",
     "name": "Discord",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/discord/icon.svg"
     }
@@ -611,7 +611,7 @@
     "featured": false,
     "id": "googlemeet",
     "name": "Google Meet",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlemeet/icon.svg"
     }
@@ -876,7 +876,7 @@
     "featured": false,
     "id": "lastpass",
     "name": "LastPass",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/lastpass/icon.svg"
     }
@@ -975,7 +975,7 @@
     "featured": false,
     "id": "msteams",
     "name": "Microsoft Teams",
-    "version": "3.1.4",
+    "version": "3.1.5",
     "aliases": [
       "teamsChat"
     ],
@@ -1350,7 +1350,7 @@
     "featured": false,
     "id": "rocketchat",
     "name": "Rocket.Chat",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/rocketchat/icon.svg"
     }
@@ -1413,7 +1413,7 @@
     "featured": true,
     "id": "slack",
     "name": "Slack",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/slack/icon.svg"
     }
@@ -1656,7 +1656,7 @@
     "featured": true,
     "id": "tweetdeck",
     "name": "Tweetdeck",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/tweetdeck/icon.svg"
     }
@@ -1773,7 +1773,7 @@
     "featured": true,
     "id": "whatsapp",
     "name": "WhatsApp",
-    "version": "3.3.2",
+    "version": "3.3.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/whatsapp/icon.svg"
     }

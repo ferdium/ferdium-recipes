@@ -7,16 +7,16 @@ setTimeout(() => {
   }
 }, 1000);
 
-window.addEventListener('beforeunload', async () => {
-  Ferdi.clearStorageData(['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb']);
-  Ferdi.releaseServiceWorkers();
-});
-
 module.exports = (Ferdi, settings) => {
   function getMessages() {
     const messages = document.querySelectorAll('.text-content.unread').length;
     Ferdi.setBadge(messages);
   }
+
+  window.addEventListener('beforeunload', async () => {
+    Ferdi.clearStorageData(['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb']);
+    Ferdi.releaseServiceWorkers();
+  });
 
   Ferdi.loop(getMessages);
 
