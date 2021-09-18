@@ -611,7 +611,7 @@
     "featured": false,
     "id": "googlemeet",
     "name": "Google Meet",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlemeet/icon.svg"
     }

@@ -10,10 +10,6 @@ window.onload = () => {
   }
 };
 
-window.addEventListener('beforeunload', async () => {
-  Ferdi.clearStorageData(['serviceworkers']);
-});
-
 module.exports = Ferdi => {
   const getMessages = function getMessages() {
     const elements = document.querySelectorAll('.CxUIE, .unread');
@@ -29,6 +25,10 @@ module.exports = Ferdi => {
   };
 
   Ferdi.loop(getMessages);
+
+  window.addEventListener('beforeunload', async () => {
+    Ferdi.clearStorageData(['serviceworkers']);
+  });
 
   Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
