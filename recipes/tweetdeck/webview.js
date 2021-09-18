@@ -1,9 +1,9 @@
-// Tweetdeck redirect fix
-Ferdi.ipcRenderer.on('redirect-url', (event, url) => {
-  window.location.assign(url);
-});
-
 module.exports = Ferdi => {
+  // Tweetdeck redirect fix
+  Ferdi.ipcRenderer.on('redirect-url', (event, url) => {
+    window.location.assign(url);
+  });
+
   const getMessages = function getMessages() {
     const elements = document.querySelectorAll('.msg-unread-count');
     let count = 0;
