@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  function getMessages() {
+  const getMessages = () => {
     let direct = 0;
 
     const np = document.querySelector('#noti_np_count');

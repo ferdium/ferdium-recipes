@@ -11,7 +11,7 @@ window.onload = () => {
 };
 
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const elements = document.querySelectorAll('.CxUIE, .unread');
     let count = 0;
 

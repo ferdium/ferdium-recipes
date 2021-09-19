@@ -4,7 +4,7 @@ module.exports = Ferdi => {
     window.location.assign(url);
   });
 
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const elements = document.querySelectorAll('.msg-unread-count');
     let count = 0;
     if (elements[0]) {

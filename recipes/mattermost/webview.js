@@ -5,7 +5,7 @@ module.exports = Ferdi => {
   const ALL_MESSAGES = '#sidebar-left .unread-title';
   const ALL_MESSAGES_LEGACY = '#sidebar-left .unread-title';
 
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const directMessagesSelector = [DIRECT_MESSAGES_LEGACY, DIRECT_MESSAGES_INDIVIDUAL, DIRECT_MESSAGES_GROUP].join(', ');
     const directMessages = document.querySelectorAll(directMessagesSelector).length;
 

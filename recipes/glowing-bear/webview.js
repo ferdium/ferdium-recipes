@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const indirectElements = document.querySelectorAll('.badge:not(.danger)');
     const direct = document.querySelectorAll('.badge.danger').length - 1;
     let indirect = -1;

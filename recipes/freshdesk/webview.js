@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     $.get('/api/_/tickets?filter=unresolved', (data) => {
       Ferdi.setBadge(data.tickets.length);
     });

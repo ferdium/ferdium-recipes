@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  function getMessages() {
+  const getMessages = () => {
     let directUnreadCount = 0;
     let indirectUnreadCount = 0;
 

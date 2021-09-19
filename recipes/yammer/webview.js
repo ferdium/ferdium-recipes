@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let directMessages = 0;
     let indirectMessages = 0;
     const notificationElement = document.querySelector('.yj-notifications-indicator-count');

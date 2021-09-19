@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     // get new msg count
     let count = 0;
     const counters = document.querySelectorAll('[class*=FriendMessageCount]');

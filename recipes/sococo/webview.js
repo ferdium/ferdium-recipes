@@ -1,5 +1,5 @@
 module.exports = (Ferdi) => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let indirect = document.querySelectorAll('.new-messages');
     let direct = 0;
     document.querySelectorAll('.people-pane .badge').forEach(function(badge){

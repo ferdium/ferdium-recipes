@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let count = document.querySelectorAll('._5fx8:not(._569x),._1ht3:not(._569x)').length;
     const messageRequestsElement = document.querySelector('._5nxf');
 

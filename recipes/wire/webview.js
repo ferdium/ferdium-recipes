@@ -1,5 +1,5 @@
 module.exports = (Ferdi) => {
-  function getMessages() {
+  const getMessages = () => {
     let direct = 0;
     let indirect = 0;
 

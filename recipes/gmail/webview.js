@@ -8,7 +8,7 @@ module.exports = (Ferdi) => {
     location.href = 'https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/';
   }
 
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let count = 0;
 
     const inboxLinks = document.getElementsByClassName('J-Ke n0');

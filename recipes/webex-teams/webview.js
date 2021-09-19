@@ -1,5 +1,5 @@
 module.exports = (Ferdi) => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let count = 0;
 
     let span = document.getElementsByClassName('navigation-list-item--badgeCount');

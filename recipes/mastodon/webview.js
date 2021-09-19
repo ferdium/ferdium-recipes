@@ -9,7 +9,7 @@ module.exports = (Ferdi) => {
     latestNotify = $($('.notification__message span').get(0)).text();
   });
 
-  function getMessages() {
+  const getMessages = () => {
     let reply = 0;
     const ln = $($('.notification__message span').get(0)).text();
     if (ln != latestNotify) {

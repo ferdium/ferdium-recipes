@@ -5,7 +5,7 @@ function _interopRequireDefault(obj) {
 }
 
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const getNotificationButton = document.querySelector(
       '#notifications_button',
     );

@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const directCountElement = document.querySelector('.filter-list .count');
     let directCount = 0;
     if (directCountElement) {

@@ -1,5 +1,5 @@
 module.exports = (Ferdi) => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     if (document.location.href == "https://app.hey.com/") {
       let screener = 0;
       let unread = 0;

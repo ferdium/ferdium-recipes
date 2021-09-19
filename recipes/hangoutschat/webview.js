@@ -5,7 +5,7 @@ module.exports = (Ferdi) => {
   // class corresponding to the bold text that is visible for room messages
   const indirectMessageSelector = 'div.V6.CL.V2.X9.Y2 span.akt span.XU';
 
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     // get unread direct messages
     const directCount = Number(document.querySelector(directMessageSelector).innerText);
 

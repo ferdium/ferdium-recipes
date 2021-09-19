@@ -1,5 +1,5 @@
 module.exports = (Ferdi) => {
-  function getMessages() {
+  const getMessages = () => {
     const count = {};
     const data = document.querySelector('#FranzMessages').dataset;
     if (data) {

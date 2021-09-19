@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let count = 0;
 
     if (window.location.pathname.includes('messaging')) {

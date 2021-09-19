@@ -3,7 +3,7 @@ const _path = _interopRequireDefault(require('path'));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = (Ferdi, settings) => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let count = 0;
     const container = document.querySelector('[role="tablist"] > [title="Chats"] > div');
 

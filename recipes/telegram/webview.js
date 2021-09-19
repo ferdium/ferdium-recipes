@@ -5,7 +5,7 @@ const _path = _interopRequireDefault(require('path'));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let count = 0;
     let count_sec = 0;
     const elements = document.querySelectorAll('.rp');

@@ -1,7 +1,7 @@
 {
   "id": "office365-owa",
   "name": "Office 365 Outlook",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "license": "MIT",
   "aliases": [
     "live.com"

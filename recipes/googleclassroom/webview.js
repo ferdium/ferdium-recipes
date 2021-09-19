@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let homework = 0;
     const upcomingAssignment = document.getElementsByClassName('hrUpcomingAssignmentGroup');
     if (upcomingAssignment.length != 0) {

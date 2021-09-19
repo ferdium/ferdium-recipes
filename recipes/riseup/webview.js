@@ -1,9 +1,9 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let unread = 0;
     const notificationBadge = document.getElementsByClassName('unreadcount')[0];
     if (notificationBadge != undefined) {
-      unread = notificationBadge.innerText;
+      unread = Ferdi.safeParseInt(notificationBadge.innerText);
     }
     Ferdi.setBadge(unread);
   };

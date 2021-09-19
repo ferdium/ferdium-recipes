@@ -3,7 +3,7 @@ module.exports = (Ferdi) => {
     let count = 0;
     const element = document.querySelector('.message-count');
     if (element) {
-      count = Number(element.innerText);
+      count = Ferdi.safeParseInt(element.innerText);
     }
     Ferdi.setBadge(count);
   };

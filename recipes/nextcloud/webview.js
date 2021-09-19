@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const direct = document.querySelectorAll(
       '.notifications .notification-container .notification-wrapper li .notification',
     ).length;

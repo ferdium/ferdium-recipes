@@ -152,7 +152,7 @@ The `webview.js` is the actual script that will be loaded into the webview. Here
 ```js
 // orat.io integration
 module.exports = (Ferdi) => {
-  function getMessages() {
+  const getMessages = () => {
     let direct = 0;
     let indirect = 0;
     const FerdiData = document.querySelector("#FerdiMessages").dataset;

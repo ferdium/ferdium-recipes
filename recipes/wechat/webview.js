@@ -3,7 +3,7 @@ const _path = _interopRequireDefault(require('path'));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = (Ferdi) => {
-  function getMessages() {
+  const getMessages = () => {
     let directCount = 0;
     let indirectCount = 0;
     const chat_item = document.querySelectorAll('div.chat_item');

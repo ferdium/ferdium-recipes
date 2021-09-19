@@ -6,11 +6,11 @@ module.exports = Ferdi => {
     // "unread items". Sum the values for direct badge.
     const notificationsElement = document.querySelector('[data-testid=AppTabBar_Notifications_Link] div div div');
     if (notificationsElement) {
-      direct += notificationsElement.innerHTML;
+      direct += Ferdi.safeParseInt(notificationsElement.innerHTML);
     }
     const DMElement = document.querySelector('[data-testid=AppTabBar_DirectMessage_Link] div div div');
     if (DMElement) {
-      direct += DMElement.innerHTML;
+      direct += Ferdi.safeParseInt(DMElement.innerHTML);
     }
 
     Ferdi.setBadge(direct);

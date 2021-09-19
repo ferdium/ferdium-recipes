@@ -3,7 +3,7 @@ const _path = _interopRequireDefault(require('path'));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = (Ferdi) => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let notifications = 0;
     let indirectNotifications = 0;
 

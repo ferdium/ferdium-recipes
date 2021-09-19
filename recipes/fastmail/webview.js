@@ -8,7 +8,7 @@ module.exports = (Ferdi) => {
     if (!inbox) {
       return;
     }
-    const messages = Number(inbox.innerText);
+    const messages = Ferdi.safeParseInt(inbox.innerText);
     Ferdi.setBadge(messages);
   };
 

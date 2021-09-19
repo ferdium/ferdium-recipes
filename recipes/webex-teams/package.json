@@ -1,7 +1,7 @@
 {
   "id": "webex-teams",
   "name": "Webex Teams",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "config": {
     "serviceURL": "https://web.webex.com",

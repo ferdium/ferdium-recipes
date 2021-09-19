@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let count = 0;
     const elements = document.querySelectorAll('.chatlist > li:not(.is-muted)');
     if (elements) {

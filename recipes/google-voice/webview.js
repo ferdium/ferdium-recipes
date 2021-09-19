@@ -4,7 +4,7 @@ module.exports = Ferdi => {
     return el && Ferdi.safeParseInt(el.innerHTML);
   }
 
-  function getMessages() {
+  const getMessages = () => {
     const el = document.querySelector('.msgCount');
     let count;
 

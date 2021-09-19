@@ -1,5 +1,5 @@
 module.exports = (Ferdi) => {
-  function getMessages() {
+  const getMessages = () => {
     Ferdi.setBadge(document.querySelector('#unread_count').innerHTML.replace(/\s/g, ''));
   }
 

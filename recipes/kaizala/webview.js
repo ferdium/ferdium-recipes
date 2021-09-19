@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const count = document.querySelectorAll('.unseen-msg-count').length;
     Ferdi.setBadge(count);
   };

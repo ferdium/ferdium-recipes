@@ -3,7 +3,7 @@ const _path = _interopRequireDefault(require('path'));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = (Ferdi) => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const element = document.querySelector('a[href^="/direct/inbox"]');
     Ferdi.setBadge(element ? Ferdi.safeParseInt(element.innerText) : 0);
   };

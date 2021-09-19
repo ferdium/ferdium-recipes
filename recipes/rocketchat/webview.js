@@ -1,6 +1,6 @@
 
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const directMessages = document.querySelectorAll('.rcx-badge');
 
     let directMessagesCount = 0;

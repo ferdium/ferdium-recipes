@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  getMessages = () => {
+  const getMessages = () => {
     const newsDOM = document.querySelectorAll("div[title='All'] > .LeftnavListRow__count")[0].innerHTML;
     let counter = Ferdi.safeParseInt(newsDOM);
 

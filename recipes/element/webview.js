@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  function getMessages() {
+  const getMessages = () => {
     const badges = document.querySelectorAll('.mx_RoomSublist:not(.mx_RoomSublist_hidden) .mx_RoomSublist_badgeContainer');
 
     // Number of messages from People

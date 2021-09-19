@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  function getMessages() {
+  const getMessages = () => {
     const title = document.querySelector('title').innerHTML.match(/\d+/);
     const count = title !== null ? title[0] : 0;
 

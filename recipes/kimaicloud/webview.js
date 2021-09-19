@@ -1,11 +1,11 @@
 module.exports = (Ferdi) => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let count = 0;
 
     // get amount of running timesheets
     const label = document.querySelector('.main-header .navbar .dropdown.messages-menu .ticktac span.label');
     if (label !== undefined) {
-      count = label.textContent;
+      count = Ferdi.safeParseInt(label.textContent);
     }
 
     // set Ferdi badge

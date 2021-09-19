@@ -4,7 +4,7 @@ module.exports = Ferdi => {
 
     const MessageElement = document.querySelector('[id=global_nav_conversations_link]');
     if (MessageElement) {
-      direct += MessageElement.innerHTML;
+      direct += Ferdi.safeParseInt(MessageElement.innerHTML);
     }
 
     Ferdi.setBadge(direct);

@@ -1,7 +1,7 @@
 {
   "id": "android-messages",
   "name": "Android Messages",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "license": "MIT",
   "config": {
     "serviceURL": "https://messages.google.com/web",

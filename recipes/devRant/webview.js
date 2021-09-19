@@ -10,7 +10,7 @@ setTimeout(() => {
 }, 1000);
 
 module.exports = (Ferdi) => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const elements = document.querySelectorAll('.CxUIE, .unread, ._0LqQ');
     let count = 0;
     for (let i = 0; i < elements.length; i += 1) {

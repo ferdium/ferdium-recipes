@@ -1,7 +1,7 @@
 {
   "id": "kaizala",
   "name": "Microsoft Kaizala",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "repository": "https://github.com/meetfranz/recipe-microsoft-kaizala",
   "config": {

@@ -1,5 +1,5 @@
 module.exports = (Ferdi, options) => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let messages = 0;
     const element = document.querySelector('[data-testid="message_count"] span');
 
@@ -19,7 +19,7 @@ module.exports = (Ferdi, options) => {
         localStorage.removeItem('franz-needsRedirect');
       }
     } else {
-      localStorage.setItem('franz-needsRedirect', true);
+      localStorage.setItem('franz-needsRedirect', 'true');
     }
   }, 500);
 };

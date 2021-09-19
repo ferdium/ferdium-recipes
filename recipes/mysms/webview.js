@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const elements = document.getElementsByClassName('unread');
 
     let count = 0;

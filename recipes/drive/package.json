@@ -1,7 +1,7 @@
 {
   "id": "drive",
   "name": "Drive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": "https://github.com/gaspergrom/Franz-services",
   "config": {

@@ -1,5 +1,5 @@
 module.exports = (Ferdi) => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     // all overdue items are being counted
     const count = document.querySelectorAll('.duedate-overdue').length;
 

@@ -1,7 +1,7 @@
 {
   "id": "tweetdeck",
   "name": "Tweetdeck",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "MIT",
   "config": {
     "serviceURL": "https://tweetdeck.twitter.com/",

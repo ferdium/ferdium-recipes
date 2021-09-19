@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let directs = 0;
     const element = document.getElementsByClassName('left_count');
     if (element.length > 0) {

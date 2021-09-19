@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 module.exports = (Ferdi) => {
   let checkIsRun = false;
-  checkHeightAction = () => {
+  const checkHeightAction = () => {
     checkIsRun = true;
     let checkHeight = setInterval(() => {
       let menuPanel = document.getElementById('menu-pannel')
@@ -25,7 +25,7 @@ module.exports = (Ferdi) => {
     }
   });
 
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     const x = document.querySelectorAll('.unread-num em.ng-binding')
     Ferdi.setBadge(x.length > 0 ? x[0].innerHTML : 0);
   };

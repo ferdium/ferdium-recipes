@@ -8,7 +8,7 @@ setTimeout(() => {
 }, 1000);
 
 module.exports = (Ferdi, settings) => {
-  function getMessages() {
+  const getMessages = () => {
     const messages = document.querySelectorAll('.text-content.unread').length;
     Ferdi.setBadge(messages);
   }

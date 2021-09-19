@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 module.exports = Ferdi => {
   // TODO: If your bitwarden service has unread messages, uncomment these lines to implement the logic for updating the badges
-  // const getMessages = function getMessages() {
+  // const getMessages = () => {
   //   // TODO: Insert your notification-finding code here
   //   Ferdi.setBadge(0, 0);
   // };

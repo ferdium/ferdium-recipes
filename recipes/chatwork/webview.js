@@ -1,5 +1,5 @@
 module.exports = (Ferdi) => {
-  function getMessages() {
+  const getMessages = () => {
     let directCount = 0;
     let indirectCount = 0;
     const roomInfoContainer = document.querySelectorAll('li.sc-dnqmqq');

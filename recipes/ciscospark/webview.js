@@ -5,7 +5,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 module.exports = Ferdi => {
   const UNREAD_BADGE_SELECTOR = '.navigation-item--badgeCount';
 
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     let directCount = 0;
     let indirectCount = 0;
 

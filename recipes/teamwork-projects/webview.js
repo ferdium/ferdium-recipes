@@ -1,5 +1,5 @@
 module.exports = (Ferdi) => {
-  function getMessages() {
+  const getMessages = () => {
     let indirectCount = 0;
     const badge = document.getElementById('numNotifs2');
 

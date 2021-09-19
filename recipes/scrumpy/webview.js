@@ -1,5 +1,5 @@
 module.exports = Ferdi => {
-	const getMessages = function getMessages() {
+  const getMessages = () => {
 		const notifications = document.querySelector('.c-notifications-dropdown__count')
 		Ferdi.setBadge(notifications.innerText);
 	};
