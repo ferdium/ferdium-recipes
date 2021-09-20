@@ -1,11 +1,11 @@
 {
   "id": "github",
   "name": "GitHub",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://github.com/notifications",
-    "hasCustomUrl": true,
+    "hasHostedOption": true,
     "hasIndirectMessages": true
   }
 }
