@@ -858,7 +858,7 @@
     "featured": false,
     "id": "kimaicloud",
     "name": "Kimai Cloud",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/kimaicloud/icon.svg"
     }
