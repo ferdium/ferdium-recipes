@@ -16,7 +16,6 @@ module.exports = Ferdi => {
   };
 
   window.addEventListener('beforeunload', async () => {
-    Ferdi.clearStorageData(['appcache', 'serviceworkers', 'cachestorage', 'websql', 'indexdb']);
     Ferdi.releaseServiceWorkers();
   });
 
