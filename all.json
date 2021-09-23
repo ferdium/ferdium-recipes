@@ -1122,7 +1122,7 @@
     "featured": false,
     "id": "office365-owa",
     "name": "Office 365 Outlook",
-    "version": "1.4.6",
+    "version": "1.5.0",
     "aliases": [
       "live.com"
     ],

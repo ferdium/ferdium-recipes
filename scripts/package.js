@@ -133,7 +133,7 @@ const compress = (src, dest) => new Promise((resolve, reject) => {
     }
     if (config.config && typeof config.config === "object") {
       const configKeys = Object.keys(config.config);
-      const knownConfigKeys = ['serviceURL', 'hasTeamId', 'urlInputPrefix', 'urlInputSuffix', 'hasHostedOption', 'hasCustomUrl', 'hasNotificationSound', 'hasDirectMessages', 'hasIndirectMessages', 'message', 'disablewebsecurity'];
+      const knownConfigKeys = ['serviceURL', 'hasTeamId', 'urlInputPrefix', 'urlInputSuffix', 'hasHostedOption', 'hasCustomUrl', 'hasNotificationSound', 'hasDirectMessages', 'hasIndirectMessages', 'allowFavoritesDelineationInUnreadCount', 'message', 'disablewebsecurity'];
       const unrecognizedConfigKeys = configKeys.filter(x => !knownConfigKeys.includes(x));
       if (unrecognizedConfigKeys.length > 0) {
         configErrors.push(`The recipe's package.json contains the following keys that are not recognized: ${unrecognizedConfigKeys}`);

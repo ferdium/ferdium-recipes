@@ -1,4 +1,18 @@
-module.exports = Ferdi => {
+module.exports = (Ferdi, settings) => {
+  const collectCounts = (selector) => {
+    let unreadCount = 0;
+    const foldersElement = document.querySelector(selector);
+    if (foldersElement) {
+      const allScreenReaders = foldersElement.querySelectorAll('span.screenReaderOnly');
+      for (const child of allScreenReaders) {
+        if (child.previousSibling) {
+          unreadCount += Ferdi.safeParseInt(child.previousSibling.innerText);
+        }
+      }
+    }
+    return unreadCount;
+  };
+
   const getMessages = () => {
     let directUnreadCount = 0;
     let indirectUnreadCount = 0;
@@ -8,25 +22,13 @@ module.exports = Ferdi => {
       directUnreadCount = Ferdi.safeParseInt(jQuery("span[title*='Inbox'] + div > span").first().text());
     } else {
       // new app
-      const foldersElement = document.querySelector('div[role=tree]:nth-child(3)');
-      if (foldersElement) {
-        const allScreenReaders = foldersElement.querySelectorAll('span.screenReaderOnly');
-        for (const child of allScreenReaders) {
-          if (child.previousSibling) {
-            directUnreadCount += Ferdi.safeParseInt(child.previousSibling.innerText);
-          }
-        }
+      if (settings.onlyShowFavoritesInUnreadCount === true) {
+        directUnreadCount = collectCounts('div[role=tree]:nth-child(2)'); // favorites
+      } else {
+        directUnreadCount = collectCounts('div[role=tree]:nth-child(3)'); // folders
       }
 
-      const groupsElement = document.querySelector('div[role=tree]:nth-child(4)');
-      if (groupsElement) {
-        const allScreenReaders = groupsElement.querySelectorAll('span.screenReaderOnly');
-        for (const child of allScreenReaders) {
-          if (child.previousSibling) {
-            indirectUnreadCount += Ferdi.safeParseInt(child.previousSibling.innerText);
-          }
-        }
-      }
+      indirectUnreadCount = collectCounts('div[role=tree]:nth-child(4)'); // groups
     }
 
     Ferdi.setBadge(directUnreadCount, indirectUnreadCount);

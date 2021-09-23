@@ -78,6 +78,8 @@ Services like Slack or HipChat have direct messages e.g. a mention or message to
 Info message that will be displayed in the add/edit service preferences screen.
 * `boolean` **disablewebsecurity** _default: false_<br />
 Some services like hangoutschat need the web security disabled.
+* `boolean` **allowFavoritesDelineationInUnreadCount** _default: false_<br />
+Services like Outlook differentiate between favorites vs other folders. Setting this to `true` will allow the exclusion of the message counts from those non-favorite folders.
 
 ## Example
 
