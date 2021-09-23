@@ -297,7 +297,7 @@
     "featured": true,
     "id": "discord",
     "name": "Discord",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/discord/icon.svg"
     }
@@ -1404,7 +1404,7 @@
     "featured": false,
     "id": "skype",
     "name": "Skype",
-    "version": "3.2.1",
+    "version": "3.2.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/skype/icon.svg"
     }
