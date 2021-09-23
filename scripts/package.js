@@ -117,8 +117,12 @@ const compress = (src, dest) => new Promise((resolve, reject) => {
 
     const topLevelKeys = Object.keys(config);
     topLevelKeys.forEach(key => {
-      if (typeof(config[key]) === 'string' && config[key] === '') {
-        configErrors.push(`The recipe's package.json contains empty value for key: ${key}`);
+      if (typeof(config[key]) === 'string') {
+        if (config[key] === '') {
+          configErrors.push(`The recipe's package.json contains empty value for key: ${key}`);
+        }
+      } else if ((key === 'config' || key === 'aliases') && typeof(config[key]) !== 'object') {
+        configErrors.push(`The recipe's package.json contains unexpected value for key: ${key}`);
       }
     });
 
@@ -134,6 +138,10 @@ const compress = (src, dest) => new Promise((resolve, reject) => {
       if (unrecognizedConfigKeys.length > 0) {
         configErrors.push(`The recipe's package.json contains the following keys that are not recognized: ${unrecognizedConfigKeys}`);
       }
+
+      // if (config.config.hasCustomUrl !== undefined && config.config.hasHostedOption !== undefined) {
+      //   configErrors.push("The recipe's package.json contains both 'hasCustomUrl' and 'hasHostedOption'. Please remove 'hasCustomUrl' since it is overridden by 'hasHostedOption'");
+      // }
 
       configKeys.forEach(key => {
         if (typeof(config.config[key]) === 'string' && config.config[key] === '') {
