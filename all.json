@@ -1476,7 +1476,7 @@
     "featured": false,
     "id": "stackoverflow-chat",
     "name": "Stackoverflow chat",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/stackoverflow-chat/icon.svg"
     }
