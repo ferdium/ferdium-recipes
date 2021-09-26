@@ -5,7 +5,6 @@
   "license": "MIT",
   "config": {
     "serviceURL": "https://{teamID}.awsapps.com/mail",
-    "hasIndirectMessages": false,
     "hasTeamId": true
   }
 }

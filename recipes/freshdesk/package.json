@@ -7,7 +7,7 @@
   "config": {
     "serviceURL": "https://{teamId}.freshdesk.com/a/tickets/filters/unresolved",
     "urlInputSuffix": ".freshdesk.com/a/tickets/filters/unresolved",
-    "hasTeamId": "true",
+    "hasTeamId": true,
     "hasNotificationSound": true
   }
 }

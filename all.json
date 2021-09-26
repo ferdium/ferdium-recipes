@@ -42,7 +42,7 @@
     "featured": false,
     "id": "android-messages",
     "name": "Android Messages",
-    "version": "2.2.3",
+    "version": "2.2.4",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/android-messages/icon.svg"
     }
@@ -270,7 +270,7 @@
     "featured": false,
     "id": "devRant",
     "name": "devRant",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/devRant/icon.svg"
     }
@@ -611,7 +611,7 @@
     "featured": false,
     "id": "googlemeet",
     "name": "Google Meet",
-    "version": "2.2.3",
+    "version": "2.2.4",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlemeet/icon.svg"
     }
@@ -876,7 +876,7 @@
     "featured": false,
     "id": "lastpass",
     "name": "LastPass",
-    "version": "2.2.3",
+    "version": "2.2.4",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/lastpass/icon.svg"
     }
@@ -1782,7 +1782,7 @@
     "featured": true,
     "id": "whatsapp",
     "name": "WhatsApp",
-    "version": "3.3.4",
+    "version": "3.3.5",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/whatsapp/icon.svg"
     }
