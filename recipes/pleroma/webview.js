@@ -151,7 +151,7 @@ module.exports = Ferdi => {
     Ferdi.loop(() => {
       getMessages();
       if (updater.update()) {
-        Ferdi.ipcRenderer.sendToHost('avatar', updater.toDataURL());
+        Ferdi.setAvatarImage(updater.toDataURL());
       }
     });
   }, (e) => {

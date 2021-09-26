@@ -36,7 +36,7 @@ module.exports = Ferdi => {
     countTeamIconCheck += 1;
 
     if (bgUrl) {
-      Ferdi.ipcRenderer.sendToHost('avatar', bgUrl);
+      Ferdi.setAvatarImage(bgUrl);
     } else if (countTeamIconCheck <= 5) {
       setTimeout(() => {
         getTeamIcon(countTeamIconCheck + 1);

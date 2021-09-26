@@ -1,7 +1,7 @@
 {
   "id": "rocketchat",
   "name": "Rocket.Chat",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "license": "MIT",
   "config": {
     "serviceURL": "https://{teamId}.rocket.chat",
