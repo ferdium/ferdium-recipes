@@ -29,10 +29,9 @@ module.exports = Ferdi => {
     const link = event.target.closest('a[href^="http"]');
 
     if (link && link.getAttribute('target') === '_top') {
-      const url = link.getAttribute('href');
       event.preventDefault();
       event.stopPropagation();
-      Ferdi.ipcRenderer.sendToHost('new-window', url);
+      Ferdi.openNewWindow(link.getAttribute('href'));
     }
   }, true);
 };
