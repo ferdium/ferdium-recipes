@@ -1,7 +1,7 @@
 {
   "id": "github",
   "name": "GitHub",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "license": "MIT",
   "config": {
     "serviceURL": "https://github.com/notifications",

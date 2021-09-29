@@ -490,7 +490,7 @@
     "featured": false,
     "id": "github",
     "name": "GitHub",
-    "version": "2.3.0",
+    "version": "2.3.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/github/icon.svg"
     }
