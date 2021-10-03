@@ -61,7 +61,6 @@ const compress = (src, dest) => new Promise((resolve, reject) => {
   for(let recipe of availableRecipes) {
     const recipeSrc = path.join(recipesFolder, recipe);
     const packageJson = path.join(recipeSrc, 'package.json');
-    const svgIcon = path.join(recipeSrc, 'icon.svg');
 
     // Check that package.json exists
     if (!await fs.pathExists(packageJson)) {
@@ -71,6 +70,7 @@ const compress = (src, dest) => new Promise((resolve, reject) => {
     }
 
     // Check that icons exist
+    const svgIcon = path.join(recipeSrc, 'icon.svg');
     const hasSvg = await fs.pathExists(svgIcon);
     if (!hasSvg) {
       console.log(`⚠️ Couldn't package "${recipe}": Recipe doesn't contain an icon SVG`);
@@ -83,6 +83,14 @@ const compress = (src, dest) => new Promise((resolve, reject) => {
     const svgHasRightSize = svgSize.width === svgSize.height;
     if (!svgHasRightSize) {
       console.log(`⚠️ Couldn't package "${recipe}": Recipe SVG icon isn't a square`);
+      unsuccessful++;
+      continue;
+    }
+
+    // Check that user.js does not exist
+    const userJs = path.join(recipeSrc, 'user.js');
+    if (await fs.pathExists(userJs)) {
+      console.log(`⚠️ Couldn't package "${recipe}": Folder contains a "user.js".`);
       unsuccessful++;
       continue;
     }
