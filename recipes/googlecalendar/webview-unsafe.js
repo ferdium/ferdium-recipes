@@ -26,7 +26,8 @@ const hideModal = () => {
 const createModal = () => {
   const modalDialog = document.createElement('div');
   modalDialog.setAttribute('id', 'franz-modal');
-  modalDialog.innerHTML = '<div class="modal-content"><span class="close">&times;</span><p></p></div>';
+  modalDialog.innerHTML =
+    '<div class="modal-content"><span class="close">&times;</span><p></p></div>';
   modalDialog.querySelector('.close').addEventListener('click', hideModal);
 
   return modalDialog;
@@ -35,5 +36,11 @@ const createModal = () => {
 window.alert = showModal;
 
 modal = createModal();
-waitFor(() => document.body, () => document.body.appendChild(modal));
-document.addEventListener('keydown', event => event.keyCode === 27 && hideModal());
+waitFor(
+  () => document.body,
+  () => document.body.appendChild(modal),
+);
+document.addEventListener(
+  'keydown',
+  event => event.key === 'Escape' && hideModal(),
+);

@@ -9,16 +9,23 @@ module.exports = Ferdi => {
     let count;
 
     if (el) {
+      // eslint-disable-next-line no-useless-escape
       count = Ferdi.safeParseInt(el.innerHTML.replace(/[\(\) ]/gi, ''));
     } else {
-      const count_messages = parseQuery('gv-nav-tab[tooltip="Messages"] div[aria-label="Unread count"]');
-      const count_calls = parseQuery('gv-nav-tab[tooltip="Calls"] div[aria-label="Unread count"]');
-      const count_voicemails = parseQuery('gv-nav-tab[tooltip="Voicemail"] div[aria-label="Unread count"]');
+      const count_messages = parseQuery(
+        'gv-nav-tab[tooltip="Messages"] div[aria-label="Unread count"]',
+      );
+      const count_calls = parseQuery(
+        'gv-nav-tab[tooltip="Calls"] div[aria-label="Unread count"]',
+      );
+      const count_voicemails = parseQuery(
+        'gv-nav-tab[tooltip="Voicemail"] div[aria-label="Unread count"]',
+      );
       count = count_messages + count_calls + count_voicemails;
     }
 
     Ferdi.setBadge(count);
-  }
+  };
 
   Ferdi.loop(getMessages);
 };

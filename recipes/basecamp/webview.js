@@ -1,9 +1,10 @@
 const _path = _interopRequireDefault(require('path'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-module.exports = (Ferdi) => {
-  let updates = 0;
+module.exports = Ferdi => {
   const modal = document.createElement('div');
 
   const waitFor = (condition, callback) => {
@@ -16,13 +17,11 @@ module.exports = (Ferdi) => {
   function showModal(text) {
     show(modal);
     modal.querySelector('p').innerHTML = text;
-    updates += 1;
   }
 
   function hideModal() {
     hide(modal);
     modal.querySelector('p').innerHTML = '';
-    updates -= 1;
   }
 
   // Replace window.alert to hide alerts in Ferdi
@@ -41,11 +40,19 @@ module.exports = (Ferdi) => {
   }
 
   modal.id = 'franz-modal';
-  modal.innerHTML = '<div class="modal-content"><span class="close">&times;</span><p></p></div>';
+  modal.innerHTML =
+    '<div class="modal-content"><span class="close">&times;</span><p></p></div>';
   modal.querySelector('.close').addEventListener('click', hideModal);
-  waitFor(() => document.body, () => document.body.appendChild(modal));
+  waitFor(
+    () => document.body,
+    () => document.body.appendChild(modal),
+  );
 
-  document.addEventListener('keydown', (e) => { if (e.keyCode === 27) { hideModal(); } });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      hideModal();
+    }
+  });
 
   Ferdi.injectCSS(_path.default.join(__dirname, 'css', 'modal.css'));
 };

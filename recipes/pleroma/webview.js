@@ -1,6 +1,6 @@
 const titleRegex = /^\((\d+)\)/;
 
-const getJson = async (relativeUri) => {
+const getJson = async relativeUri => {
   const req = await window.fetch(`${window.origin}${relativeUri}`, {
     Accept: 'application/json',
   });
@@ -8,10 +8,11 @@ const getJson = async (relativeUri) => {
 };
 
 const getInstanceConfig = async () => {
-  const origin = window.origin;
   const staticConfig = await getJson('/static/config.json');
   try {
-    const frontendConfig = await getJson('/api/pleroma/frontend_configurations');
+    const frontendConfig = await getJson(
+      '/api/pleroma/frontend_configurations',
+    );
     const pleromaFeConfig = frontendConfig.pleroma_fe || {};
     return { ...staticConfig, ...pleromaFeConfig };
   } catch (e) {
@@ -33,8 +34,12 @@ const getInstanceLogo = async () => {
         logoMask: config.logoMask,
       });
     });
-    img.addEventListener('error', (event) => {
-      reject(new Error(`${event.type} error loading ${config.logo}: ${event.message}`));
+    img.addEventListener('error', event => {
+      reject(
+        new Error(
+          `${event.type} error loading ${config.logo}: ${event.message}`,
+        ),
+      );
     });
     img.src = `${origin}${config.logo}`;
   });
@@ -146,16 +151,19 @@ module.exports = Ferdi => {
     Ferdi.setBadge(directCount);
   };
 
-  getInstanceLogo().then(({ logo, logoMask }) => {
-    const updater = new LogoUpdater(logo, logoMask);
-    Ferdi.loop(() => {
-      getMessages();
-      if (updater.update()) {
-        Ferdi.setAvatarImage(updater.toDataURL());
-      }
-    });
-  }, (e) => {
-    console.log('Failed to load instance logo', e);
-    Ferdi.loop(getMessages);
-  });
+  getInstanceLogo().then(
+    ({ logo, logoMask }) => {
+      const updater = new LogoUpdater(logo, logoMask);
+      Ferdi.loop(() => {
+        getMessages();
+        if (updater.update()) {
+          Ferdi.setAvatarImage(updater.toDataURL());
+        }
+      });
+    },
+    e => {
+      console.log('Failed to load instance logo', e);
+      Ferdi.loop(getMessages);
+    },
+  );
 };

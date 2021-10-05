@@ -14,14 +14,19 @@ You can set "Folder name" to "FerdiDev" to use Ferdi's development instance inst
 
 pnpm run create WhatsApp FerdiDev
 `);
-  return;
+  throw new Error('Please provide the correct number of args!');
 }
 
 const recipeName = process.argv[2];
 const recipe = recipeName.toLowerCase().replace(/\s/g, '-');
 const cleanRecipeId = recipe.replace(/[^a-z]/g, ''); // Clean recipe ID only containing a-z, for usage as the JavaScript class name
 const folderName = process.argv[3] || 'Ferdi';
-const filesThatNeedTextReplace = ['package.json', 'index.js', 'webview.js', 'README.md'];
+const filesThatNeedTextReplace = [
+  'package.json',
+  'index.js',
+  'webview.js',
+  'README.md',
+];
 
 (async () => {
   // Folder paths
@@ -36,7 +41,7 @@ const filesThatNeedTextReplace = ['package.json', 'index.js', 'webview.js', 'REA
   const sampleRecipe = path.join(__dirname, 'sample_recipe');
 
   // Make sure dev recipe folder exists
-  if (!(await fs.exists(recipesFolder))) {
+  if (!fs.existsSync(recipesFolder)) {
     console.log(
       `Couldn't find your recipe folder (${recipesFolder}). Is Ferdi installed?`,
     );
@@ -44,7 +49,7 @@ const filesThatNeedTextReplace = ['package.json', 'index.js', 'webview.js', 'REA
   }
   await fs.ensureDir(devRecipeFolder);
 
-  if (await fs.exists(newRecipeFolder)) {
+  if (fs.existsSync(newRecipeFolder)) {
     console.log('⚠️ Recipe already exists');
     return;
   }

@@ -1,10 +1,14 @@
 const _path = _interopRequireDefault(require('path'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-module.exports = (Ferdi) => {
+module.exports = Ferdi => {
   const getMessages = () => {
-    const elements = document.querySelectorAll('#HeaderUserActions--Messages > a > span');
+    const elements = document.querySelectorAll(
+      '#HeaderUserActions--Messages > a > span',
+    );
     let count = 0;
 
     if (elements[0]) {
@@ -15,7 +19,7 @@ module.exports = (Ferdi) => {
   };
 
   if (document.querySelectorAll('.promotedlink').length > 0) {
-    document.querySelectorAll('.promotedlink').forEach((sponsoredLink) => {
+    document.querySelectorAll('.promotedlink').forEach(sponsoredLink => {
       sponsoredLink.parentElement.parentElement.style.display = 'none';
     });
   }
@@ -25,17 +29,17 @@ module.exports = (Ferdi) => {
   // Use CSS to hide Google Ads
   Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
 
-  Ferdi.handleDarkMode((isEnabled, config) => {
+  Ferdi.handleDarkMode(isEnabled => {
     // Open dropdown menu if not already open
     const menu = document.querySelector('#USER_DROPDOWN_ID');
-    if (menu.getAttribute('aria-expanded') === 'false') {
+    if (menu && menu.getAttribute('aria-expanded') === 'false') {
       menu.click();
     }
 
     setTimeout(() => {
       // Check if service is already in right mode
       const btn = document.querySelector('[role=menu] button button');
-      const checked = btn.getAttribute('aria-checked') === 'true';
+      const checked = btn && btn.getAttribute('aria-checked') === 'true';
 
       if ((checked && !isEnabled) || (!checked && isEnabled)) {
         // Click the button to switch between modes

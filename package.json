@@ -8,7 +8,7 @@
     "prepare": "npx husky install",
     "package": "node scripts/package.js",
     "create": "node scripts/create.js",
-    "lint": "eslint --quiet --fix recipes",
+    "lint": "eslint . --fix",
     "reformat-files": "./node_modules/.bin/prettier --ignore-path .eslintignore --write --require-pragma \"**/*.{js,json,scss}\""
   },
   "repository": {
@@ -27,14 +27,13 @@
   "homepage": "https://github.com/getferdi/recipes#readme",
   "devDependencies": {
     "@types/targz": "1.0.1",
-    "babel-eslint": "10.0.3",
-    "eslint": "5.10.0",
+    "eslint": "7.32.0",
     "fs-extra": "10.0.0",
-    "husky": "7.0.1",
+    "husky": "7.0.2",
     "image-size": "1.0.0",
-    "open": "8.2.0",
-    "prettier": "2.3.2",
-    "simple-git": "2.39.0",
+    "open": "8.2.1",
+    "prettier": "2.4.1",
+    "simple-git": "2.46.0",
     "targz": "1.0.1"
   }
 }

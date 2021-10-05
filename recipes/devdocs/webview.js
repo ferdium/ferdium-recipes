@@ -1,2 +1,1 @@
-module.exports = Ferdi => {
-};
+module.exports = Ferdi => Ferdi;
