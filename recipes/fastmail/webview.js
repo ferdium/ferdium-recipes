@@ -1,14 +1,18 @@
 const _path = _interopRequireDefault(require('path'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-module.exports = (Ferdi) => {
+module.exports = Ferdi => {
   const getMessages = () => {
-    const inbox = document.querySelector('.v-MailboxSource--inbox .v-MailboxSource-badge');
+    const inbox = document.querySelector(
+      '.v-MailboxSource--inbox .v-MailboxSource-badge',
+    );
     if (!inbox) {
       return;
     }
-    const messages = Ferdi.safeParseInt(inbox.innerText);
+    const messages = Ferdi.safeParseInt(inbox.textContent);
     Ferdi.setBadge(messages);
   };
 

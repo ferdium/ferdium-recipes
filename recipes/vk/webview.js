@@ -1,9 +1,9 @@
 module.exports = Ferdi => {
   const getMessages = () => {
     let directs = 0;
-    const element = document.getElementsByClassName('left_count');
+    const element = document.querySelectorAll('.left_count');
     if (element.length > 0) {
-      directs = Ferdi.safeParseInt(element[0].innerText);
+      directs = Ferdi.safeParseInt(element[0].textContent);
     }
 
     Ferdi.setBadge(directs);

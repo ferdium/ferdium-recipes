@@ -6,9 +6,9 @@ module.exports = Ferdi => class Pleroma extends Ferdi {
       });
       const data = await resp.json();
       const version = data.version;
-      return typeof (version) === 'string' && version.indexOf('Pleroma') >= 0;
-    } catch (err) {
-      console.log('Pleroma server validation error', err);
+      return typeof (version) === 'string' && version.includes('Pleroma');
+    } catch (error) {
+      console.log('Pleroma server validation error', error);
     }
     return false;
   }

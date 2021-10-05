@@ -1,2 +1,1 @@
-module.exports = Ferdi => class SCLEAN extends Ferdi {
-};
+module.exports = Ferdi => class SCLEAN extends Ferdi {};

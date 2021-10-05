@@ -10,14 +10,14 @@ const waitFor = (condition, callback) => {
 };
 
 const showModal = text => {
-  modal.querySelector('p').innerHTML = text;
+  modal.querySelector('p').textContent = text;
   updates += 1;
   window.ferdi.setBadge(updates);
   modal.classList.add('open');
 };
 
 const hideModal = () => {
-  modal.querySelector('p').innerHTML = '';
+  modal.querySelector('p').textContent = '';
   updates -= 1;
   window.ferdi.setBadge(updates);
   modal.classList.remove('open');
@@ -26,7 +26,7 @@ const hideModal = () => {
 const createModal = () => {
   const modalDialog = document.createElement('div');
   modalDialog.setAttribute('id', 'franz-modal');
-  modalDialog.innerHTML =
+  modalDialog.textContent =
     '<div class="modal-content"><span class="close">&times;</span><p></p></div>';
   modalDialog.querySelector('.close').addEventListener('click', hideModal);
 
@@ -38,7 +38,7 @@ window.alert = showModal;
 modal = createModal();
 waitFor(
   () => document.body,
-  () => document.body.appendChild(modal),
+  () => document.body.append(modal),
 );
 document.addEventListener(
   'keydown',

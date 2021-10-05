@@ -4,6 +4,14 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
+function show(element) {
+  element.style.display = 'inherit';
+}
+
+function hide(element) {
+  element.style.display = 'none';
+}
+
 module.exports = Ferdi => {
   const modal = document.createElement('div');
 
@@ -16,12 +24,21 @@ module.exports = Ferdi => {
   };
   function showModal(text) {
     show(modal);
-    modal.querySelector('p').innerHTML = text;
+
+    let p = modal.querySelector('p');
+
+    if (p) {
+      p.textContent = text;
+    }
   }
 
   function hideModal() {
     hide(modal);
-    modal.querySelector('p').innerHTML = '';
+    let p = modal.querySelector('p');
+
+    if (p) {
+      p.textContent = '';
+    }
   }
 
   // Replace window.alert to hide alerts in Ferdi
@@ -31,21 +48,17 @@ module.exports = Ferdi => {
     showModal.apply(oldAlert, arguments);
   };
 
-  function show(element) {
-    element.style.display = 'inherit';
-  }
-
-  function hide(element) {
-    element.style.display = 'none';
-  }
-
   modal.id = 'franz-modal';
-  modal.innerHTML =
+  modal.textContent =
     '<div class="modal-content"><span class="close">&times;</span><p></p></div>';
-  modal.querySelector('.close').addEventListener('click', hideModal);
+
+  let close = modal.querySelector('.close');
+  if (close) {
+    close.addEventListener('click', hideModal);
+  }
   waitFor(
     () => document.body,
-    () => document.body.appendChild(modal),
+    () => document.body.append(modal),
   );
 
   document.addEventListener('keydown', e => {

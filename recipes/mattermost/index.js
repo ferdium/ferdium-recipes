@@ -8,8 +8,8 @@ module.exports = Ferdi => class Mattermost extends Ferdi {
         },
       });
       return resp.status.toString().startsWith('2');
-    } catch (err) {
-      console.error(err);
+    } catch (error) {
+      console.error(error);
     }
 
     return false;

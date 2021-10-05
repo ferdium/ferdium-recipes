@@ -1,13 +1,17 @@
 const _path = _interopRequireDefault(require('path'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 module.exports = Ferdi => {
   const getMessages = () => {
     let count = 0;
-    const element = document.querySelector('.dashboard-top-panel .indicators .stats-group .cell-value');
+    const element = document.querySelector(
+      '.dashboard-top-panel .indicators .stats-group .cell-value',
+    );
     if (element) {
-      count = Ferdi.safeParseInt(element.innerHTML);
+      count = Ferdi.safeParseInt(element.textContent);
     }
 
     Ferdi.setBadge(count);

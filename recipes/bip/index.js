@@ -1,3 +1,1 @@
-module.exports = Ferdi => class bip extends Ferdi {
-
-};
+module.exports = Ferdi => class bip extends Ferdi {};

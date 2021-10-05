@@ -1,16 +1,22 @@
 const _path = _interopRequireDefault(require('path'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 module.exports = Ferdi => {
   const getMessages = () => {
     let messages = 0;
-    const badge = document.querySelector('.activity-badge.dot-activity-badge .activity-badge');
+    const badge = document.querySelector(
+      '.activity-badge.dot-activity-badge .activity-badge',
+    );
     if (badge) {
-      messages = Ferdi.safeParseInt(badge.innerHTML);
+      messages = Ferdi.safeParseInt(badge.textContent);
     }
 
-    const indirectMessages = document.querySelectorAll('[class*=channel-anchor][class*=ts-unread-channel]').length;
+    const indirectMessages = document.querySelectorAll(
+      '[class*=channel-anchor][class*=ts-unread-channel]',
+    ).length;
 
     Ferdi.setBadge(messages, indirectMessages);
   };

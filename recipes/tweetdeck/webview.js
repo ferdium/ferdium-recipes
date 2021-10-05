@@ -8,7 +8,7 @@ module.exports = Ferdi => {
     const elements = document.querySelectorAll('.msg-unread-count');
     let count = 0;
     if (elements[0]) {
-      count = Ferdi.safeParseInt(elements[0].innerHTML);
+      count = Ferdi.safeParseInt(elements[0].textContent);
     }
 
     Ferdi.setBadge(count);

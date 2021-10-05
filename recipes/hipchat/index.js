@@ -1,4 +1,4 @@
-function _asyncToGenerator(fn) { return function () { const gen = fn.apply(this, arguments); return new Promise((resolve, reject) => { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then((value) => { step('next', value); }, (err) => { step('throw', err); }); } } return step('next'); }); }; }
+function _asyncToGenerator(fn) { return function () { const gen = Reflect.apply(fn, this, arguments); return new Promise((resolve, reject) => { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then((value) => { step('next', value); }, (error) => { step('throw', error); }); } } return step('next'); }); }; }
 
 module.exports = Ferdi => class HipChat extends Ferdi {
   validateUrl(url) {
@@ -13,8 +13,8 @@ module.exports = Ferdi => class HipChat extends Ferdi {
         const data = yield resp.json();
 
         return Object.hasOwnProperty.call(data, 'features');
-      } catch (err) {
-        console.error(err);
+      } catch (error) {
+        console.error(error);
       }
 
       return false;

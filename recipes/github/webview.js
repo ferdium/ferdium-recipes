@@ -5,7 +5,7 @@ module.exports = Ferdi => {
     );
     let directCount = 0;
     if (directCountElement) {
-      directCount = Ferdi.safeParseInt(directCountElement.innerHTML);
+      directCount = Ferdi.safeParseInt(directCountElement.textContent);
     }
 
     const indirectCountElement = document.querySelector(

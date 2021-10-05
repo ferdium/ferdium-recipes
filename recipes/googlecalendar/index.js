@@ -1,2 +1,1 @@
-module.exports = Ferdi => class GoogleCalendar extends Ferdi {
-};
+module.exports = Ferdi => class GoogleCalendar extends Ferdi {};

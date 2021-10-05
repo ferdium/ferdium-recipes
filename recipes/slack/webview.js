@@ -24,7 +24,7 @@ module.exports = Ferdi => {
 
       if (icon) {
         bgUrl = window.getComputedStyle(icon, null).getPropertyValue('background-image');
-        bgUrl = /^url\((['"]?)(.*)\1\)$/.exec(bgUrl);
+        bgUrl = /^url\((["']?)(.*)\1\)$/.exec(bgUrl);
         bgUrl = bgUrl ? bgUrl[2] : '';
       }
 

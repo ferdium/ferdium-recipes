@@ -8,8 +8,8 @@ module.exports = Ferdi => {
 
     const counters = document.querySelectorAll('.surface-control-component .item-counter, .surface-control-component .view-item-counter');
 
-    for (let i = 0; i < counters.length; i++) {
-      count += Ferdi.safeParseInt(counters[i].textContent);
+    for (const counter of counters) {
+      count += Ferdi.safeParseInt(counter.textContent);
     }
 
     Ferdi.setBadge(count);

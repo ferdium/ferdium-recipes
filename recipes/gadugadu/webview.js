@@ -7,8 +7,8 @@ module.exports = Ferdi => {
     const updates = Ferdi.safeParseInt(document.querySelector('i#sr-last-counter').textContent);
     let messages = 0;
     const elements = document.querySelectorAll('.chat-counter:not(.d-none)');
-    for (let i = 0; i < elements.length; i++) {
-      messages += Ferdi.safeParseInt(elements[i].textContent);
+    for (const element of elements) {
+      messages += Ferdi.safeParseInt(element.textContent);
     }
 
     Ferdi.setBadge(messages, updates);

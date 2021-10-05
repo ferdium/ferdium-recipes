@@ -15,8 +15,8 @@ const getInstanceConfig = async () => {
     );
     const pleromaFeConfig = frontendConfig.pleroma_fe || {};
     return { ...staticConfig, ...pleromaFeConfig };
-  } catch (e) {
-    console.log('Failed to load dynamic frontend configuration', e);
+  } catch (error) {
+    console.log('Failed to load dynamic frontend configuration', error);
     return staticConfig;
   }
 };
@@ -161,8 +161,8 @@ module.exports = Ferdi => {
         }
       });
     },
-    e => {
-      console.log('Failed to load instance logo', e);
+    error => {
+      console.log('Failed to load instance logo', error);
       Ferdi.loop(getMessages);
     },
   );

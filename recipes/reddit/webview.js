@@ -12,16 +12,21 @@ module.exports = Ferdi => {
     let count = 0;
 
     if (elements[0]) {
-      count = Ferdi.safeParseInt(elements[0].innerHTML);
+      count = Ferdi.safeParseInt(elements[0].textContent);
     }
 
     Ferdi.setBadge(count);
   };
 
   if (document.querySelectorAll('.promotedlink').length > 0) {
-    document.querySelectorAll('.promotedlink').forEach(sponsoredLink => {
-      sponsoredLink.parentElement.parentElement.style.display = 'none';
-    });
+    for (const sponsoredLink of document.querySelectorAll('.promotedlink')) {
+      if (
+        sponsoredLink.parentElement &&
+        sponsoredLink.parentElement.parentElement
+      ) {
+        sponsoredLink.parentElement.parentElement.style.display = 'none';
+      }
+    }
   }
 
   Ferdi.loop(getMessages);
@@ -41,8 +46,10 @@ module.exports = Ferdi => {
       const btn = document.querySelector('[role=menu] button button');
       const checked = btn && btn.getAttribute('aria-checked') === 'true';
 
-      if ((checked && !isEnabled) || (!checked && isEnabled)) {
-        // Click the button to switch between modes
+      if (
+        ((checked && !isEnabled) || (!checked && isEnabled)) && // Click the button to switch between modes
+        btn
+      ) {
         btn.click();
       }
     }, 50);

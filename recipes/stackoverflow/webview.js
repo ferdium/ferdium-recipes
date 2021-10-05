@@ -6,8 +6,8 @@ module.exports = (Ferdi) => {
   const getMessages = () => {
     const elements = document.querySelectorAll('.CxUIE, .unread');
     let count = 0;
-    for (let i = 0; i < elements.length; i += 1) {
-      if (elements[i].querySelectorAll('*[data-icon="muted"]').length === 0) {
+    for (const element of elements) {
+      if (element.querySelectorAll('*[data-icon="muted"]').length === 0) {
         count += 1;
       }
     }

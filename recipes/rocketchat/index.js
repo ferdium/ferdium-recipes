@@ -9,8 +9,8 @@ module.exports = Ferdi => class RocketChat extends Ferdi {
       });
       const status = resp.status.toString();
       return status.startsWith('2') || status.startsWith('3');
-    } catch (err) {
-      console.error(err);
+    } catch (error) {
+      console.error(error);
     }
 
     return false;

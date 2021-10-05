@@ -3,9 +3,14 @@ module.exports = Ferdi => {
     let count = 0;
     const elements = document.querySelectorAll('.chatlist > li:not(.is-muted)');
     if (elements) {
-      for (let i = 0; i < elements.length; i += 1) {
-        if (elements[i].querySelector('.unread') && elements[i].querySelector('.unread').innerHTML !== 0) {
-          count += Ferdi.safeParseInt(elements[i].querySelector('.unread').innerHTML);
+      for (const element of elements) {
+        if (
+          element.querySelector('.unread') &&
+          element.querySelector('.unread').textContent !== 0
+        ) {
+          count += Ferdi.safeParseInt(
+            element.querySelector('.unread').textContent,
+          );
         }
       }
     }

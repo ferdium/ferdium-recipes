@@ -1,4 +1,4 @@
-module.exports = (Ferdi) => {
+module.exports = Ferdi => {
   // class corresponding to the red badge that is visible for direct messages
   const directMessageSelector = 'div.V6.CL.su.ahD.X9.Y2 span.akt span.XU';
 
@@ -7,10 +7,21 @@ module.exports = (Ferdi) => {
 
   const getMessages = () => {
     // get unread direct messages
-    const directCount = Number(document.querySelector(directMessageSelector).innerText);
+    let directCount;
+    let indirectCount;
+
+    const directCountSelector = document.querySelector(directMessageSelector);
+    if (directCountSelector) {
+      directCount = Number(directCountSelector.textContent);
+    }
 
     // get unread indirect messages
-    const indirectCount = Number(document.querySelector(indirectMessageSelector).innerText);
+    const indirectCountSelector = document.querySelector(
+      indirectMessageSelector,
+    );
+    if (indirectCountSelector) {
+      indirectCount = Number(indirectCountSelector.textContent);
+    }
 
     // set Ferdi badge
     Ferdi.setBadge(directCount, indirectCount);
@@ -18,7 +29,8 @@ module.exports = (Ferdi) => {
 
   Ferdi.loop(getMessages);
 
-  document.addEventListener('click', (e) => {
+  document.addEventListener('click', e => {
+    // @ts-ignore
     const { tagName, target, href } = e.target;
 
     if (tagName === 'A' && target === '_blank') {

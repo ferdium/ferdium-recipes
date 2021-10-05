@@ -12,8 +12,8 @@ module.exports = Ferdi => class Zulip extends Ferdi {
       const data = await resp.json();
 
       return Object.hasOwnProperty.call(data, 'realm_uri');
-    } catch (err) {
-      console.error(err);
+    } catch (error) {
+      console.error(error);
     }
 
     return false;

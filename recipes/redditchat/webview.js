@@ -1,7 +1,6 @@
 module.exports = Ferdi => {
   // Regular expression for (*) or (1), will extract the asterisk or the number
-  // eslint-disable-next-line no-useless-escape
-  const titleRegEx = /^\(([\*\d])\)/;
+  const titleRegEx = /^\(([\d*])\)/;
   const getMessages = function unreadCount() {
     let directCount = 0;
     let indirectCount = 0;

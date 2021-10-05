@@ -4,10 +4,13 @@ module.exports = Ferdi => {
     if (!element) {
       return;
     }
-    const text = element.innerText;
-    const count = Ferdi.safeParseInt(text.substring(1, text.length - 1));
-    Ferdi.setBadge(count);
-  }
+    const text = element.textContent;
+    if (text) {
+      // eslint-disable-next-line unicorn/prefer-string-slice
+      const count = Ferdi.safeParseInt(text.substring(1, text.length - 1));
+      Ferdi.setBadge(count);
+    }
+  };
 
   Ferdi.loop(getMessages);
 };

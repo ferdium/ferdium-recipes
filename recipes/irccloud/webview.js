@@ -1,7 +1,7 @@
 module.exports = Ferdi => {
   const getMessages = () => {
-    const directMessages = document.getElementsByClassName('buffer conversation active unread activeBadge').length;
-    const indirectMessages = document.getElementsByClassName('buffer channel active unread').length;
+    const directMessages = document.querySelectorAll('.buffer.conversation.active.unread.activeBadge').length;
+    const indirectMessages = document.querySelectorAll('.buffer.channel.active.unread').length;
 
     Ferdi.setBadge(directMessages, indirectMessages);
   };

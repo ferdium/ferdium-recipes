@@ -1,11 +1,13 @@
 const _path = _interopRequireDefault(require('path'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-module.exports = (Ferdi) => {
+module.exports = Ferdi => {
   const getMessages = () => {
     const element = document.querySelector('a[href^="/direct/inbox"]');
-    Ferdi.setBadge(element ? Ferdi.safeParseInt(element.innerText) : 0);
+    Ferdi.setBadge(element ? Ferdi.safeParseInt(element.textContent) : 0);
   };
 
   Ferdi.loop(getMessages);

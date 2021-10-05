@@ -3,20 +3,26 @@
 Provides a set of helper functions to integrate the service into [Ferdi](https://getferdi.com).
 
 ## Ferdi Class Methods
-* [setBadge](#user-content-setbadge)
-* [injectCSS](#user-content-injectcss)
-* [loop](#user-content-loop)
-* [onNotify](#user-content-onnotify)
-* [handleDarkMode](#user-content-handleDarkMode)
+
+- [setBadge](#user-content-setbadge)
+- [injectCSS](#user-content-injectcss)
+- [loop](#user-content-loop)
+- [onNotify](#user-content-onnotify)
+- [handleDarkMode](#user-content-handleDarkMode)
 
 ### setBadge(directMessages, [indirectMessages])
+
 Sets the unread message badge
 
 #### Arguments
+
 1. `int` directMessages
-  * sets the count of direct messages eg. Slack direct mentions, or a message to @channel
+
+- sets the count of direct messages eg. Slack direct mentions, or a message to @channel
+
 2. `int` indirectMessages (optional)
-  * Set a badge that defines there are new messages but they do not involve me directly to me eg. in a channel
+
+- Set a badge that defines there are new messages but they do not involve me directly to me eg. in a channel
 
 #### Usage
 
@@ -29,11 +35,14 @@ Ferdi.setBadge(3);
 ```
 
 ### injectCSS(pathToCssFile)
+
 Injects the contents of one or more CSS files into the current webview
 
 #### Arguments
+
 1. `string` cssFile
-  * CSS files that should be injected. This must be an absolute path to the file
+
+- CSS files that should be injected. This must be an absolute path to the file
 
 #### Usage
 
@@ -51,6 +60,7 @@ Ferdi.injectCSS(globalStyles, focusModeStyles);
 ```
 
 ### injectJSUnsafe(pathToJsFile)
+
 Injects the contents of one or more JavaScript files into the current webview without context isolation
 
 Ferdi uses context isolation to prevent services from accessing Node.js APIs in the webview.
@@ -60,8 +70,10 @@ Trying to overwrite properties of the `window` object or other objects or trying
 The code is executed as if part of the body of a Javascript function, ie. you should modify the `window` object explicitly to expose objects in the global scope.
 
 #### Arguments
+
 1. `string` jsFile
-  * JavaScript files that should be injected. This must be an absolute path to the file
+
+- JavaScript files that should be injected. This must be an absolute path to the file
 
 #### Usage
 
@@ -79,9 +91,11 @@ Ferdi.injectCSS(globalScripts, focusModeScripts);
 ```
 
 ### loop(action)
+
 Runs an action every X milliseconds (Ferdi default is currently 1s)
 
 #### Arguments
+
 1. `function` action
 
 #### Usage
@@ -90,36 +104,42 @@ Runs an action every X milliseconds (Ferdi default is currently 1s)
 // slack integration
 const path = require('path');
 
-module.exports = (Ferdi) => {
+module.exports = Ferdi => {
   const getMessages = () => {
-    const directMessages = $('.unread_highlights, .unread_highlight').not('.hidden').length;
+    const directMessages = $('.unread_highlights, .unread_highlight').not(
+      '.hidden',
+    ).length;
     const indirectMessages = $('.unread').length - directMessages;
 
     Ferdi.setBadge(directMessages, indirectMessages);
-  }
+  };
 
   Ferdi.loop(getMessages);
 
   Ferdi.injectCSS(path.join(__dirname, 'style.css'));
-}
+};
 ```
 
 ### onNotify(fn)
+
 Runs `fn` on every notification created by the service before sending them to the host (Useful if you want to update information of the notification before showing it to the user)
 
 #### Arguments
+
 1. `function` fn
 
 #### Usage
 
 ```js
 // messenger integration
-module.exports = (Ferdi) => {
+module.exports = Ferdi => {
   const getMessages = () => {
-    let count = document.querySelectorAll('._5fx8:not(._569x),._1ht3:not(._569x)').length;
+    let count = document.querySelectorAll(
+      '._5fx8:not(._569x),._1ht3:not(._569x)',
+    ).length;
     const messageRequestsElement = document.querySelector('._5nxf');
     if (messageRequestsElement) {
-      count += parseInt(messageRequestsElement.innerHTML, 10);
+      count += parseInt(messageRequestsElement.textContent, 10);
     }
 
     Ferdi.setBadge(count);
@@ -129,7 +149,8 @@ module.exports = (Ferdi) => {
 
   Ferdi.onNotify(notification => {
     if (typeof notification.title !== 'string') {
-      notification.title = ((notification.title.props || {}).content || [])[0] || 'Messenger';
+      notification.title =
+        ((notification.title.props || {}).content || [])[0] || 'Messenger';
     }
 
     return notification;
@@ -138,6 +159,7 @@ module.exports = (Ferdi) => {
 ```
 
 ### handleDarkMode(callback)
+
 You can use a `darkmode.css` to automatically get the service into a dark theme. If your service already supports its own dark mode (e.g. Reddit and YouTube have built-in dark modes), then you can use a custom dark mode handler instead.
 
 This handler should take the necessary steps to (de-)activate dark mode on the page, e.g. by clicking a button or flipping a switch.
@@ -145,18 +167,21 @@ This handler should take the necessary steps to (de-)activate dark mode on the p
 Ferdi won't activate DarkReader or inject `darkmode.css` if the recipe has defined a custom handler. If you still need to do this, you can use the `injectDarkModeStyle` or `enableDarkMode` function provided as the second argument.
 
 #### Arguments
+
 1. `function` callback
 
 #### Callback function arguments
+
 1. `boolean` isEnabled: Is Dark Mode currently enabled?
 2. `object` helpers: Helper functions that you can use in your function:
-  `enableDarkMode` - Enable DarkReader
-  `disableDarkMode` - Disable DarkReader
-  `injectDarkModeStyle` - Inject darkmode.css
-  `removeDarkModeStyle` - Remove service's darkmode.css
-  `isDarkModeStyleInjected` - Function that returns true if darkmode.css is injected into the page
+   `enableDarkMode` - Enable DarkReader
+   `disableDarkMode` - Disable DarkReader
+   `injectDarkModeStyle` - Inject darkmode.css
+   `removeDarkModeStyle` - Remove service's darkmode.css
+   `isDarkModeStyleInjected` - Function that returns true if darkmode.css is injected into the page
 
 #### Usage
+
 ```JavaScript
 // Handler that works for Reddit
 Ferdi.handleDarkMode((isEnabled, helpers) => {

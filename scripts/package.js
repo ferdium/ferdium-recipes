@@ -125,7 +125,7 @@ const compress = (src, dest) =>
         "The recipe's package.json contains no 'id' field. This field should contain a unique ID made of lowercase letters (a-z), numbers (0-9), hyphens (-), periods (.), and underscores (_)",
       );
       // eslint-disable-next-line no-useless-escape
-    } else if (!/^[a-zA-Z0-9._\-]+$/.test(config.id)) {
+    } else if (!/^[\w.\-]+$/.test(config.id)) {
       configErrors.push(
         "The recipe's package.json defines an invalid recipe ID. Please make sure the 'id' field only contains lowercase letters (a-z), numbers (0-9), hyphens (-), periods (.), and underscores (_)",
       );
@@ -152,7 +152,7 @@ const compress = (src, dest) =>
     }
 
     const topLevelKeys = Object.keys(config);
-    topLevelKeys.forEach(key => {
+    for (const key of topLevelKeys) {
       if (typeof config[key] === 'string') {
         if (config[key] === '') {
           configErrors.push(
@@ -167,9 +167,9 @@ const compress = (src, dest) =>
           `The recipe's package.json contains unexpected value for key: ${key}`,
         );
       }
-    });
+    }
 
-    const knownTopLevelKeys = [
+    const knownTopLevelKeys = new Set([
       'id',
       'name',
       'version',
@@ -177,9 +177,9 @@ const compress = (src, dest) =>
       'repository',
       'aliases',
       'config',
-    ];
+    ]);
     const unrecognizedKeys = topLevelKeys.filter(
-      x => !knownTopLevelKeys.includes(x),
+      x => !knownTopLevelKeys.has(x),
     );
     if (unrecognizedKeys.length > 0) {
       configErrors.push(
@@ -188,7 +188,7 @@ const compress = (src, dest) =>
     }
     if (config.config && typeof config.config === 'object') {
       const configKeys = Object.keys(config.config);
-      const knownConfigKeys = [
+      const knownConfigKeys = new Set([
         'serviceURL',
         'hasTeamId',
         'urlInputPrefix',
@@ -201,9 +201,9 @@ const compress = (src, dest) =>
         'allowFavoritesDelineationInUnreadCount',
         'message',
         'disablewebsecurity',
-      ];
+      ]);
       const unrecognizedConfigKeys = configKeys.filter(
-        x => !knownConfigKeys.includes(x),
+        x => !knownConfigKeys.has(x),
       );
       if (unrecognizedConfigKeys.length > 0) {
         configErrors.push(
@@ -215,7 +215,7 @@ const compress = (src, dest) =>
       //   configErrors.push("The recipe's package.json contains both 'hasCustomUrl' and 'hasHostedOption'. Please remove 'hasCustomUrl' since it is overridden by 'hasHostedOption'");
       // }
 
-      configKeys.forEach(key => {
+      for (const key of configKeys) {
         if (
           typeof config.config[key] === 'string' &&
           config.config[key] === ''
@@ -224,7 +224,7 @@ const compress = (src, dest) =>
             `The recipe's package.json contains empty value for key: ${key}`,
           );
         }
-      });
+      }
     }
 
     if (isGitRepo) {
@@ -243,7 +243,7 @@ const compress = (src, dest) =>
             result.deletions !== 0)
         ) {
           const pkgJsonRelative = path.relative(repoRoot, packageJson);
-          if (!result.files.find(({ file }) => file === pkgJsonRelative)) {
+          if (!result.files.some(({ file }) => file === pkgJsonRelative)) {
             configErrors.push(
               `Found changes in '${relativeRepoSrc}' without the corresponding version bump in '${pkgJsonRelative}'`,
             );
@@ -313,6 +313,6 @@ const compress = (src, dest) =>
   );
 
   if (unsuccessful > 0) {
-    process.exit(1);
+    throw new Error(`One or more recipes couldn't be packaged.`);
   }
 })();

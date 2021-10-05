@@ -1,17 +1,21 @@
 const _path = _interopRequireDefault(require('path'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 module.exports = Ferdi => {
   const getMessages = () => {
-    const elements = document.querySelectorAll('.badge.unread-count:not(.ng-hide)');
+    const elements = document.querySelectorAll(
+      '.badge.unread-count:not(.ng-hide)',
+    );
     let count = 0;
 
-    for (let i = 0; i < elements.length; i += 1) {
+    for (const element of elements) {
       try {
-        count += Ferdi.safeParseInt(elements[i].innerHTML);
-      } catch (e) {
-        console.error(e);
+        count += Ferdi.safeParseInt(element.textContent);
+      } catch (error) {
+        console.error(error);
       }
     }
 

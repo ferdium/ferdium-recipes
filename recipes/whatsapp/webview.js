@@ -7,15 +7,14 @@ module.exports = (Ferdi, settings) => {
     let count = 0;
     let indirectCount = 0;
 
-    const parentChatElem = Array.from(document.querySelectorAll('div[aria-label]'))
+    const parentChatElem = [...document.querySelectorAll('div[aria-label]')]
                            .sort((a, b) => (a.offsetHeight < b.offsetHeight) ? 1 : -1)[0];
     if (!parentChatElem) {
       return;
     }
 
     const unreadSpans = parentChatElem.querySelectorAll('span[aria-label]');
-    for (let i = 0; i < unreadSpans.length; i++) {
-      const unreadElem = unreadSpans[i];
+    for (const unreadElem of unreadSpans) {
       const countValue = Ferdi.safeParseInt(unreadElem.textContent);
       if (countValue > 0) {
         if (!unreadElem.parentNode.previousSibling || unreadElem.parentNode.previousSibling.querySelectorAll('[data-icon=muted]').length === 0) {

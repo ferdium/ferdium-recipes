@@ -1,2 +1,1 @@
-module.exports = Ferdi => class bitbucket extends Ferdi {
-};
+module.exports = Ferdi => class bitbucket extends Ferdi {};

@@ -22,8 +22,8 @@ module.exports = Ferdi =>
           'notesCount',
           'originalNotesCount',
         ].reduce(r => r && Object.hasOwnProperty.call(data, 'uri'), true);
-      } catch (err) {
-        console.error(err);
+      } catch (error) {
+        console.error(error);
       }
       return false;
     }

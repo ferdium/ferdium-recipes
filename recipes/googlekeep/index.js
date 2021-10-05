@@ -1,2 +1,1 @@
-module.exports = Ferdi => class GoogleKeep extends Ferdi {
-};
+module.exports = Ferdi => class GoogleKeep extends Ferdi {};

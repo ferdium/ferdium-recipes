@@ -33,17 +33,17 @@ module.exports = Ferdi => {
 
     const xmlhttp = new XMLHttpRequest();
 
-    xmlhttp.onreadystatechange = function () {
+    xmlhttp.addEventListener('readystatechange', function () {
       if (this.readyState != 4 || this.status != 200) {
         return;
       }
 
       const response = JSON.parse(this.responseText);
 
-      if (response.icons.length >= 1) {
+      if (response.icons.length > 0) {
         Ferdi.setAvatarImage(`${window.location.protocol}//${window.location.host}${response.icons[0].src}`);
       }
-    };
+    });
 
     xmlhttp.open('GET', manifestUrl, true);
     xmlhttp.send();

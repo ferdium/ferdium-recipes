@@ -33,7 +33,7 @@ module.exports = Ferdi => {
      */
     const messageRequestsElement = document.querySelector('._5nxf');
     if (messageRequestsElement) {
-      count += Ferdi.safeParseInt(messageRequestsElement.innerHTML);
+      count += Ferdi.safeParseInt(messageRequestsElement.textContent);
     }
 
     Ferdi.setBadge(count);
@@ -44,7 +44,7 @@ module.exports = Ferdi => {
   localStorage.setItem(
     '_cs_desktopNotifsEnabled',
     JSON.stringify({
-      __t: new Date().getTime(),
+      __t: Date.now(),
       __v: true,
     }),
   );

@@ -17,11 +17,10 @@ module.exports = Ferdi => {
 
     let indirect = 0;
 
-    document.querySelectorAll('.app-navigation-entry__counter').forEach(
-      (counter) => {
+    for (const counter of document.querySelectorAll('.app-navigation-entry__counter')) {
         indirect += Number(counter.textContent);
-      },
-    );
+      }
+    
     Ferdi.setBadge(direct, indirect);
   };
 

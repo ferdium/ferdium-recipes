@@ -2,8 +2,8 @@ module.exports = Ferdi => {
   const getMessages = () => {
     const directElements = document.querySelectorAll('.unreadcount');
     let direct = 0;
-    for (let i = 0; i < directElements.length; i += 1) {
-      direct += Ferdi.safeParseInt(directElements[i].innerHTML);
+    for (const directElement of directElements) {
+      direct += Ferdi.safeParseInt(directElement.textContent);
     }
     Ferdi.setBadge(direct);
   };

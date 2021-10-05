@@ -1,4 +1,4 @@
-module.exports = (Ferdi) => {
+module.exports = Ferdi => {
   function getTasks() {
     let todayCount = 0;
     let inboxCount = 0;
@@ -6,11 +6,11 @@ module.exports = (Ferdi) => {
     const inboxElement = document.querySelector('#filter_inbox .item_counter');
 
     if (todayElement) {
-      todayCount = Ferdi.safeParseInt(todayElement.innerHTML);
+      todayCount = Ferdi.safeParseInt(todayElement.textContent);
     }
 
     if (inboxElement) {
-      inboxCount = Ferdi.safeParseInt(inboxElement.innerHTML);
+      inboxCount = Ferdi.safeParseInt(inboxElement.textContent);
     }
 
     Ferdi.setBadge(inboxCount, todayCount);

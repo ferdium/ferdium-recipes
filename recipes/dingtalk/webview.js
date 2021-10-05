@@ -1,21 +1,28 @@
 const _path = _interopRequireDefault(require('path'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-module.exports = (Ferdi) => {
+module.exports = Ferdi => {
   let checkIsRun = false;
   const checkHeightAction = () => {
     checkIsRun = true;
     let checkHeight = setInterval(() => {
-      let menuPanel = document.getElementById('menu-pannel')
+      let menuPanel = document.querySelector('#menu-pannel');
       if (!menuPanel) {
-        return
+        return;
       }
-      menuPanel.parentElement.setAttribute('style', 'height:' + (window.outerHeight - 60) + 'px');
+      if (menuPanel.parentElement) {
+        menuPanel.parentElement.setAttribute(
+          'style',
+          'height:' + (window.outerHeight - 60) + 'px',
+        );
+      }
       clearInterval(checkHeight);
-      checkIsRun = false
-    }, 1000)
-  }
+      checkIsRun = false;
+    }, 1000);
+  };
 
   checkHeightAction();
 
@@ -26,8 +33,8 @@ module.exports = (Ferdi) => {
   });
 
   const getMessages = () => {
-    const x = document.querySelectorAll('.unread-num em.ng-binding')
-    Ferdi.setBadge(x.length > 0 ? x[0].innerHTML : 0);
+    const x = document.querySelectorAll('.unread-num em.ng-binding');
+    Ferdi.setBadge(x.length > 0 ? x[0].textContent : 0);
   };
 
   Ferdi.loop(getMessages);
