@@ -927,6 +927,15 @@
     }
   },
   {
+    "featured": false,
+    "id": "meetup",
+    "name": "Meetup",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/meetup/icon.svg"
+    }
+  },
+  {
     "featured": true,
     "id": "messenger",
     "name": "Messenger",
