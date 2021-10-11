@@ -322,15 +322,6 @@
   },
   {
     "featured": false,
-    "id": "drive",
-    "name": "Drive",
-    "version": "1.0.1",
-    "icons": {
-      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/drive/icon.svg"
-    }
-  },
-  {
-    "featured": false,
     "id": "easy-redmine",
     "name": "easy-redmine",
     "version": "1.1.0",
@@ -593,7 +584,7 @@
     "featured": false,
     "id": "googledrive",
     "name": "Google Drive",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googledrive/icon.svg"
     }
