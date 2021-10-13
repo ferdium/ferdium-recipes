@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="1024" height="1024">
+	<title>Dropbox-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #0061ff } 
+	</style>
+	<path id="Layer" class="shp0" d="M39.6 20L20.8 32L39.6 44L20.8 56L2 43.9L20.8 31.9L2 20L20.8 8L39.6 20ZM20.7 59.8L39.5 47.8L58.3 59.8L39.5 71.8L20.7 59.8ZM39.6 43.9L58.4 31.9L39.6 20L58.3 8L77.1 20L58.3 32L77.1 44L58.3 56L39.6 43.9Z" />
+</svg>

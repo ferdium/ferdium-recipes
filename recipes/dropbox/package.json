@@ -1,0 +1,10 @@
+{
+  "id": "dropbox",
+  "name": "Dropbox",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.dropbox.com/home",
+    "hasIndirectMessages": true
+  }
+}
