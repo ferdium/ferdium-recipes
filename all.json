@@ -533,6 +533,15 @@
   },
   {
     "featured": false,
+    "id": "good-reads",
+    "name": "Good Reads",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/good-reads/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "google-contacts",
     "name": "Google Contacts",
     "version": "1.1.0",
