@@ -1030,6 +1030,15 @@
   },
   {
     "featured": false,
+    "id": "netlify",
+    "name": "Netlify",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/netlify/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "NewsBlur",
     "name": "NewsBlur",
     "version": "1.1.0",

@@ -1,0 +1,10 @@
+{
+  "id": "netlify",
+  "name": "Netlify",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.netlify.com",
+    "hasIndirectMessages": true
+  }
+}
