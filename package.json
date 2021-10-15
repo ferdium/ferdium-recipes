@@ -5,7 +5,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "prepare": "npx husky install",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "pnpm dlx husky install",
     "package": "node scripts/package.js",
     "create": "node scripts/create.js",
     "lint": "eslint . --fix",
