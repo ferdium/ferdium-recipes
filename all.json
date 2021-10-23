@@ -1593,7 +1593,7 @@
     "featured": true,
     "id": "telegram",
     "name": "Telegram",
-    "version": "3.2.2",
+    "version": "3.2.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/telegram/icon.svg"
     }
@@ -1809,7 +1809,7 @@
     "featured": true,
     "id": "whatsapp",
     "name": "WhatsApp",
-    "version": "3.3.5",
+    "version": "3.3.6",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/whatsapp/icon.svg"
     }

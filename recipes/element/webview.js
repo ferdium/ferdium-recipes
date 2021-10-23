@@ -9,7 +9,7 @@ module.exports = Ferdi => {
     let indirectCount = 0;
     // Count Badges depending on Element Settings
     if (avatarBadges.length > 0) {
-      avatarBadges.forEach(function(badge) {
+      for (const badge of avatarBadges) {
         if (badge.parentElement.getAttribute('class').includes('mx_NotificationBadge_highlighted')) {
           directCount = directCount + Ferdi.safeParseInt(badge.textContent);
         } else if (badge.parentElement.previousSibling != null && badge.parentElement.previousSibling.getAttribute('class').includes('mx_DecoratedRoomAvatar_icon_online')) {
@@ -19,9 +19,9 @@ module.exports = Ferdi => {
         } else {
           indirectCount = indirectCount + Ferdi.safeParseInt(badge.textContent);
         }
-      });
+      }
     } else {
-      spaceBadges.forEach(function(badge) {
+      for (const badge of spaceBadges) {
         if (badge.parentElement.getAttribute('class').includes('mx_NotificationBadge_highlighted')) {
           directCount = directCount + Ferdi.safeParseInt(badge.textContent);
         } else if (badge.parentElement.getAttribute('class').includes('mx_NotificationBadge_dot')) {
@@ -29,7 +29,7 @@ module.exports = Ferdi => {
         } else {
           indirectCount = indirectCount + Ferdi.safeParseInt(badge.textContent);
         }
-      });
+      }
     }
     // set Ferdi badge
     Ferdi.setBadge(directCount, indirectCount);

@@ -34,6 +34,22 @@ Ferdi.setBadge(4, 2);
 Ferdi.setBadge(3);
 ```
 
+### setDialogTitle(title)
+
+Sets the active dialog title to the app title
+
+#### Arguments
+
+1. `string` title
+
+- sets the active dialog title eg. WhatsApp contact name
+
+#### Usage
+
+```js
+Ferdi.setDialogTitle('Dialog title');
+```
+
 ### injectCSS(pathToCssFile)
 
 Injects the contents of one or more CSS files into the current webview

@@ -87,26 +87,26 @@ Please note that the fields `id`, `name`, `version` and `config` are mandatory.
 This is your "backend" code. Right now the options are very limited and most of the services don't need a custom handling here. If your service is relatively straight forward and has a static URL eg. _messenger.com_, _`[TEAMID]`.slack.com_ or _web.skype.com_ all you need to do to return the Ferdi Class:
 
 ```js
-module.exports = (Ferdi) => Ferdi;
+module.exports = Ferdi => Ferdi;
 ```
 
 If your service can be hosted on custom servers, you can validate the given URL to detect if it's your server and not e.g. google.com. To enable validation you can override the function `validateServer`
 
 ```js
 // RocketChat integration
-module.exports = (Ferdi) =>
+module.exports = Ferdi =>
   class RocketChat extends Ferdi {
     async validateUrl(url) {
       try {
         const resp = await window.fetch(`${url}/api/info`, {
-          method: "GET",
+          method: 'GET',
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
         });
         const data = await resp.json();
 
-        return Object.hasOwnProperty.call(data, "version");
+        return Object.hasOwnProperty.call(data, 'version');
       } catch (err) {
         console.error(err);
       }
@@ -147,24 +147,44 @@ overrideUserAgent() {
 
 ### webview.js
 
-The `webview.js` is the actual script that will be loaded into the webview. Here you can do whatever you want to do in order perfectly integrate the service into Ferdi. For convenience, we have provided a very simple set of functions to set unread message badges (`Ferdi.setBadge()`) and inject CSS files (`Ferdi.injectCSS()`).
+The `webview.js` is the actual script that will be loaded into the webview. Here you can do whatever you want to do in order perfectly integrate the service into Ferdi. For convenience, we have provided a very simple set of functions to set unread message badges (`Ferdi.setBadge()`), set active dialog title (`Ferdi.setDialogTitle()`) and inject CSS files (`Ferdi.injectCSS()`).
 
 ```js
-// orat.io integration
-module.exports = (Ferdi) => {
+// telegram integration
+module.exports = Ferdi => {
   const getMessages = () => {
     let direct = 0;
     let indirect = 0;
-    const FerdiData = document.querySelector("#FerdiMessages").dataset;
-    if (FerdiData) {
-      direct = FerdiData.direct;
-      indirect = FerdiData.indirect;
+    const elements = document.querySelectorAll('.rp');
+    for (const element of elements) {
+      const subtitleBadge = element.querySelector('.dialog-subtitle-badge');
+      if (subtitleBadge) {
+        const parsedValue = Ferdi.safeParseInt(subtitleBadge.textContent);
+        if (element.dataset.peerId > 0) {
+          direct += parsedValue;
+        } else {
+          indirect += parsedValue;
+        }
+      }
     }
 
     Ferdi.setBadge(direct, indirect);
-  }
+  };
 
-  Ferdi.loop(getMessages);
+  const getActiveDialogTitle = () => {
+    const element = document.querySelector('.top .peer-title');
+
+    Ferdi.setDialogTitle(element ? element.textContent : '');
+  };
+
+  const loopFunc = () => {
+    getMessages();
+    getActiveDialogTitle();
+  };
+
+  Ferdi.loop(loopFunc);
+
+  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
 ```
 
