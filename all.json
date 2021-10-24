@@ -1593,18 +1593,9 @@
     "featured": true,
     "id": "telegram",
     "name": "Telegram",
-    "version": "3.2.3",
+    "version": "3.2.4",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/telegram/icon.svg"
-    }
-  },
-  {
-    "featured": false,
-    "id": "telegram-react",
-    "name": "Telegram React",
-    "version": "1.2.2",
-    "icons": {
-      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/telegram-react/icon.svg"
     }
   },
   {
