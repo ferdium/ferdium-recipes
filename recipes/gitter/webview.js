@@ -7,13 +7,16 @@ function _interopRequireDefault(obj) {
 module.exports = Ferdi => {
   const getMessages = () => {
     // get unread messages
-    let count = 0;
+    let directCount = 0;
     for (const node of document.querySelectorAll('div.unread-indicator')) {
-      count += Ferdi.safeParseInt(node.textContent);
+      directCount += Ferdi.safeParseInt(node.textContent);
     }
 
+    const channelMentionCount =
+      document.querySelectorAll('.mention-indicator').length;
+
     // set Ferdi badge
-    Ferdi.setBadge(count);
+    Ferdi.setBadge(directCount, channelMentionCount);
   };
 
   Ferdi.loop(getMessages);
