@@ -9,5 +9,21 @@ module.exports = Ferdi => {
     Ferdi.setBadge(directs);
   };
 
-  Ferdi.loop(getMessages);
+  const getActiveDialogTitle = () => {
+    const element = [
+      document.querySelector(
+        '.FCWindow--active .FCWindow__title .ConvoTitle__title',
+      ),
+      document.querySelector('.im-page_history-show ._im_page_peer_name'),
+    ].find(Boolean);
+
+    Ferdi.setDialogTitle(element ? element.textContent : null);
+  };
+
+  const loopFunc = () => {
+    getMessages();
+    getActiveDialogTitle();
+  };
+
+  Ferdi.loop(loopFunc);
 };
