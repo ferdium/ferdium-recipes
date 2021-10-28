@@ -12,5 +12,19 @@ module.exports = Ferdi => {
 
   Ferdi.loop(getMessages);
 
+  // https://github.com/getferdi/recipes/blob/9d715597a600710c20f75412d3dcd8cdb7b3c39e/docs/frontend_api.md#usage-4
+  // Helper that activates DarkReader and injects your darkmode.css at the same time
+  Ferdi.handleDarkMode((isEnabled, helpers) => {
+    if (isEnabled) {
+      helpers.enableDarkMode();
+      if (!helpers.isDarkModeStyleInjected()) {
+        helpers.injectDarkModeStyle();
+      }
+    } else {
+      helpers.disableDarkMode();
+      helpers.removeDarkModeStyle();
+    }
+  });
+
   Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
