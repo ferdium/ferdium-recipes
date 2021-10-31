@@ -991,6 +991,15 @@
   },
   {
     "featured": false,
+    "id": "moodle",
+    "name": "Moodle",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/moodle/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "msteams",
     "name": "Microsoft Teams",
     "version": "3.1.6",
