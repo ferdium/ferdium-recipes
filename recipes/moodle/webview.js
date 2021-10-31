@@ -4,13 +4,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 module.exports = Ferdi => {
   const getMessages = () => {
-    const elements = [...document.querySelectorAll('[data-region="count-container"]')];
-    const messages = elements.reduce(
+    const directCountSelector = [...document.querySelectorAll('[data-region="count-container"]')];
+    const totalMessageCount = directCountSelector.reduce(
       ((count, item) => count + Number(item.textContent)),
       0
     );
 
-    Ferdi.setBadge(messages, 0);
+    Ferdi.setBadge(totalMessageCount, 0);
   };
   Ferdi.loop(getMessages);
 
