@@ -19,7 +19,6 @@ pnpm run create WhatsApp FerdiDev
 
 const recipeName = process.argv[2];
 const recipe = recipeName.toLowerCase().replace(/\s/g, '-');
-const cleanRecipeId = recipe.replace(/[^a-z]/g, ''); // Clean recipe ID only containing a-z, for usage as the JavaScript class name
 const folderName = process.argv[3] || 'Ferdi';
 const filesThatNeedTextReplace = [
   'package.json',
@@ -27,6 +26,21 @@ const filesThatNeedTextReplace = [
   'webview.js',
   'README.md',
 ];
+
+const toPascalCase = (str) => {
+  const words = str
+    .replace(/[^a-z]/g, '')
+    .split(/\W/)
+    .map((word) => {
+      if (word.length === 0) {
+        return word;
+      }
+      // Capitalize the first letter, lowercase the rest
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    });
+  return words.join('');
+}
+const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only containing a-z, for usage as the JavaScript class name
 
 (async () => {
   // Folder paths
@@ -66,7 +80,7 @@ const filesThatNeedTextReplace = [
     let contents = await fs.readFile(filePath, 'utf-8');
     contents = contents.replace(/SERVICE/g, recipe);
     contents = contents.replace(/SNAME/g, recipeName);
-    contents = contents.replace(/SCLEAN/g, cleanRecipeId);
+    contents = contents.replace(/SPASCAL/g, pascalCasedName);
     await fs.writeFile(filePath, contents);
   }
   console.log('[Info] Prepared new recipe');
