@@ -1,0 +1,9 @@
+{
+  "id": "confluence",
+  "name": "Confluence",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "hasCustomUrl": true
+  }
+}

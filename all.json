@@ -259,6 +259,15 @@
   },
   {
     "featured": false,
+    "id": "confluence",
+    "name": "Confluence",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/confluence/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "devdocs",
     "name": "DevDocs",
     "version": "1.0.2",
