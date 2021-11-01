@@ -24,7 +24,6 @@ const filesThatNeedTextReplace = [
   'package.json',
   'index.js',
   'webview.js',
-  'README.md',
 ];
 
 const toPascalCase = (str) => {
