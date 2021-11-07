@@ -28,23 +28,6 @@ jobs:
         run: echo "PNPM_CACHE=$HOME/.pnpm-store" >> $GITHUB_ENV
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Cache node modules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: ${{ env.PNPM_CACHE }}
-          key: build-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            build-${{ env.cache-name }}-
-            build-
-      - name: Cache pnpm modules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-pnpm-store
-        with:
-          path: ${{ env.PNPM_CACHE }}
-          key: ${{ runner.os }}-16.13-build-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
       - name: Use Node.js 16.13.0
         uses: actions/setup-node@v2
         with:
