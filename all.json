@@ -813,7 +813,7 @@
     "featured": false,
     "id": "instagram",
     "name": "Instagram",
-    "version": "2.2.3",
+    "version": "2.2.4",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/instagram/icon.svg"
     }
