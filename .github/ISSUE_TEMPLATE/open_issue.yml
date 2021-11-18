@@ -1,0 +1,11 @@
+name: Open issue
+description: For everything that's neither a new service request, nor a bug
+body:
+- type: markdown
+  attributes:
+    value: |
+      1. Please remember to read the [self-help documentation](https://github.com/getferdi/ferdi#troubleshooting-recipes-self-help) - in case it helps you unblock yourself for issues related to old recipes.
+      2. Please fill our form below, this way we can analyse and fix the problem as fast as possible.
+      3. Please consider supporting Ferdi!
+        👉  https://github.com/sponsors/getferdi
+        👉  https://opencollective.com/getferdi/donate
