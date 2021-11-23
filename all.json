@@ -1683,7 +1683,7 @@
     "featured": false,
     "id": "toggl",
     "name": "toggl",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/toggl/icon.svg"
     }
