@@ -1,0 +1,365 @@
+/* ==UserStyle==
+@name         Converse Dark
+@description  A dark theme for the full screen version of Converse, a web-based XMPP client.
+@namespace    gitlab.com/maxigaz/converse-dark
+@author       maxigaz
+@homepageURL  https://gitlab.com/maxigaz/converse-dark
+@version      1.0.2
+==/UserStyle== */
+
+@-moz-document domain("inverse.chat"), url-prefix("https://conversejs.org/fullscreen")
+{
+	:root {
+		--main-background: #383c4a;
+		--lighter-background-1: #3f4353;
+		--darker-background-1: #323542;
+
+		--main-text-color: #e4e4e4;
+		--lighter-text-color-1: #e7e7e7;
+		--lighter-text-color-2: #eee;
+		--lighter-text-color-3: #f4f4f4;
+		--lighter-text-color-4: #f7f7f7;
+		--lighter-text-color-5: #fff;
+		--darker-text-color-1: #eee;
+		--darker-text-color-3: #ddd;
+		--darker-text-color-2: #d4d4d4;
+		--darker-text-color-4: #c7c7c7;
+		--darker-text-color-5: #bababa;
+
+		--selected-text-background: #595e70;
+
+		--light-divider: #404555;
+		--main-border: #292c36;
+		--btn-border: #1b1b1b;
+
+		--border-green: #1d5534;
+		--border-orange: #924633;
+
+		--btn-background: #474b5d;
+		--btn-disabled-background: #464a5c;
+		--btn-disabled-color: #878787;
+
+		--a-text-color: #2596ff;
+		--a-text-color-hover: #23baff;
+	}
+
+	#conversejs ::selection {
+		background-color: var(--selected-text-background);
+	}
+
+	/* ===== Sidebar ===== */
+
+	#conversejs #controlbox .controlbox-pane {
+		background-color: var(--main-background);
+	}
+
+	#conversejs #controlbox .controlbox-panes {
+		background-color: var(--main-background);
+	}
+
+	#converse-embedded-chat, #conversejs {
+		color: var(--main-text-color);
+	}
+
+	/* Conferences */
+
+	#conversejs .list-container .list-toggle {
+		color: var(--main-text-color);
+	}
+
+	#conversejs .list-container .list-toggle:hover {
+		color: var(--lighter-text-color-5);
+	}
+
+	#conversejs .items-list .list-item:hover {
+		background-color: var(--lighter-background-1);
+	}
+
+	#conversejs .items-list .list-item .list-item-link {
+		color: var(--a-text-color);
+	}
+
+	#conversejs .items-list .list-item .list-item-link:hover {
+		color: var(--a-text-color-hover);
+	}
+
+	#conversejs .items-list .list-item .list-item-action.button-on {
+		color: var(--a-text-color);
+	}
+
+	#conversejs .items-list .list-item .list-item-action.button-on:hover {
+		color: var(--a-text-color-hover);
+	}
+
+	#conversejs .items-list .list-item.open {
+		background-color: #0f4071 !important;
+	}
+
+	#conversejs .items-list .list-item.open:hover {
+		background-color: #0f4071 !important;
+	}
+
+	#conversejs .message.chat-msg .chat-msg__content--me .chat-msg__body--groupchat.chat-msg__body--delayed .chat-msg__text, #conversejs .message.chat-msg .chat-msg__content--me .chat-msg__body--groupchat.chat-msg__body--received .chat-msg__text {
+		color: var(--main-text-color);
+	}
+
+	/* Contacts */
+
+	#conversejs #converse-roster .roster-contacts .roster-group .group-toggle {
+		color: var(--main-text-color);
+	}
+
+	#conversejs #converse-roster .roster-contacts .roster-group .group-toggle:hover {
+		color: var(--lighter-text-color-5);
+	}
+
+	#conversejs #converse-roster .roster-contacts .roster-group li:hover {
+		background-color: var(--lighter-background-1) !important;
+	}
+
+	/* ===== Chat window ===== */
+
+	#converse-embedded-chat .chatbox .chat-content, #conversejs .chatbox .chat-content {
+		background-color: var(--main-background);
+		color: var(--lighter-text-color-2);
+	}
+
+	#conversejs .message.chat-msg .chat-msg__text {
+		color: var(--darker-text-color-2);
+	}
+
+	#conversejs .message.chat-msg .chat-msg__heading .chat-msg__time {
+		color: var(--darker-text-color-5);
+	}
+
+	#conversejs .message.chat-msg.correcting:not(.groupchat) {
+		background-color: #464b5d;
+	}
+
+	#conversejs .message.chat-msg.correcting.groupchat {
+		background-color: #464b5d;
+	}
+
+	#conversejs.converse-fullscreen .flyout {
+		border-color: var(--border-green);
+	}
+
+	#conversejs.converse-fullscreen .chatbox .box-flyout {
+		background-color: var(--border-green);
+	}
+
+	#conversejs .chat-head.chat-head-chatbox {
+		background-color: var(--border-green);
+	}
+
+	#conversejs.converse-fullscreen .chatroom .box-flyout, #conversejs.converse-mobile .chatroom .box-flyout {
+		background-color: var(--border-orange);
+		border-color: var(--border-orange);
+	}
+
+	#conversejs .chat-head-chatroom, #conversejs.converse-embedded .chat-head-chatroom {
+		background-color: var(--border-orange);
+	}
+
+	#conversejs .chat-head a.chatbox-btn.fa.button-on::before, #conversejs .chat-head a.chatbox-btn.far.button-on::before, #conversejs .chat-head a.chatbox-btn.fas.button-on::before, #conversejs .chat-head a:hover.chatbox-btn.fa.button-on::before, #conversejs .chat-head a:hover.chatbox-btn.far.button-on::before, #conversejs .chat-head a:hover.chatbox-btn.fas.button-on::before, #conversejs .chat-head a:not([href]):not([tabindex]).chatbox-btn.fa.button-on::before, #conversejs .chat-head a:not([href]):not([tabindex]).chatbox-btn.far.button-on::before, #conversejs .chat-head a:not([href]):not([tabindex]).chatbox-btn.fas.button-on::before, #conversejs .chat-head a:visited.chatbox-btn.fa.button-on::before, #conversejs .chat-head a:visited.chatbox-btn.far.button-on::before, #conversejs .chat-head a:visited.chatbox-btn.fas.button-on::before {
+		background-color: var(--border-orange);
+	}
+
+	#conversejs .message.date-separator .separator-text {
+		background-color: var(--main-background);
+		color: var(--darker-text-color-3);
+	}
+
+	#conversejs .avatar {
+		background-color: var(--main-background);
+		border-color: var(--main-border);
+	}
+
+	/* Occupants */
+
+	#conversejs .chatbox .chat-body p {
+		color: var(--lighter-text-color-2);
+	}
+
+	#converse-embedded-chat .chatroom .box-flyout .chatroom-body .occupants, #conversejs .chatroom .box-flyout .chatroom-body .occupants {
+		background-color: var(--main-background);
+		color: var(--main-text-color);
+	}
+
+	#conversejs .chatroom .box-flyout .chatroom-body .occupants ul.occupant-list, #conversejs.converse-embedded .chatroom .box-flyout .chatroom-body .occupants ul.occupant-list {
+		border-color: var(--light-divider);
+	}
+
+	#conversejs .chatroom .room-invite .invited-contact, #conversejs.converse-embedded .chatroom .room-invite .invited-contact {
+		border-color: var(--btn-border);
+	}
+
+	#conversejs .form-control:focus {
+		box-shadow: 0 0 0 .2rem rgba(37, 150, 255,.3);
+	}
+
+	/* Occupant invitation autocomplete */
+
+	#conversejs .awesomplete .suggestion-box__results::before, #conversejs .awesomplete > ul::before, #conversejs .suggestion-box .suggestion-box__results::before, #conversejs .suggestion-box > ul::before {
+		background-color: var(--lighter-background-1);
+	}
+
+	#conversejs .awesomplete .suggestion-box__results, #conversejs .awesomplete > ul, #conversejs .suggestion-box .suggestion-box__results, #conversejs .suggestion-box > ul {
+		background: var(--lighter-background-1);
+		border-color: var(--main-border);
+	}
+
+	/* Chatroom features */
+
+	#conversejs .chatroom-features .features-list .feature .fa, #conversejs.converse-embedded .chatroom-features .features-list .feature .fa {
+		color: var(--main-text-color);
+	}
+
+	/* Input field */
+
+	#conversejs .chatbox .sendXMPPMessage .chat-textarea {
+		background-color: var(--main-background);
+		color: var(--lighter-text-color-2);
+	}
+
+	#conversejs .chatbox .sendXMPPMessage .chat-textarea.correcting {
+		background-color: #464b5d;
+	}
+
+	#conversejs .chatbox .sendXMPPMessage .chat-toolbar {
+		background-color: var(--main-background);
+		border-color: var(--border-green);
+	}
+
+	#conversejs .chatroom .sendXMPPMessage .chat-toolbar, #conversejs.converse-embedded .chatroom .sendXMPPMessage .chat-toolbar {
+		border-color: var(--border-orange);
+	}
+
+	/* Emoji picker */
+
+	#conversejs .chatbox .sendXMPPMessage .chat-toolbar li .toolbar-menu {
+		background-color: var(--main-background);
+	}
+
+	#conversejs .chatbox .sendXMPPMessage .chat-toolbar li .toolbar-menu .emoji-picker-container {
+		background-color: var(--main-background);
+	}
+
+	#conversejs .chatbox .sendXMPPMessage .chat-toolbar li .toolbar-menu a {
+		color: var(--darker-text-color-2);
+	}
+
+	#conversejs .chatbox .sendXMPPMessage .chat-toolbar li .toolbar-menu ul li.insert-emoji a:hover {
+		color: var(--lighter-text-color-5);
+	}
+
+	#conversejs .chatbox .sendXMPPMessage .chat-toolbar li .toolbar-menu ul li.insert-emoji:hover {
+		background-color: var(--selected-text-background);
+	}
+
+	/* ===== Modal ===== */
+
+	/* Conference room info */
+
+	#conversejs .modal-content {
+		background-color: var(--main-background);
+	}
+
+	#conversejs .modal-header {
+		border-color: var(--light-divider);
+	}
+
+	#conversejs .modal-footer {
+		border-color: var(--light-divider);
+	}
+
+	#conversejs a, #conversejs a:not([href]):not([tabindex]), #conversejs a:visited {
+		color: var(--a-text-color);
+	}
+
+	#conversejs a:hover, #conversejs a:not([href]):not([tabindex]):hover, #conversejs a:visited:hover {
+		color: var(--a-text-color-hover);
+	}
+
+	#conversejs .close {
+		color: var(--darker-text-color-1);
+	}
+
+	#conversejs .close:hover {
+		color: var(--lighter-text-color-2);
+	}
+
+	#conversejs .nav-pills .nav-link.active, #conversejs .nav-pills .show > .nav-link {
+		background-color: #1f78d1;
+	}
+
+	/* Profile */
+
+	#conversejs form.converse-form {
+		background-color: var(--main-background);
+	}
+
+	#conversejs .form-control {
+		background-color: var(--darker-background-1);
+		border-color: var(--btn-border);
+		color: var(--main-text-color);
+	}
+
+	#conversejs .form-control:focus {
+		background-color: var(--darker-background-1);
+		border-color: #1f78d1;
+		color: var(--main-text-color);
+	}
+
+	#conversejs .btn-primary {
+		background-color: #1f78d1;
+	}
+
+	#conversejs .btn-primary:hover {
+		background-color: #2288ed;
+	}
+
+	#conversejs .btn-primary:not(:disabled):not(.disabled).active, #conversejs .btn-primary:not(:disabled):not(.disabled):active, .show > #conversejs .btn-primary.dropdown-toggle {
+		background-color: #1962ac;
+		border-color: #1965b0;
+	}
+
+	/* OMEMO */
+
+	#conversejs .list-group-item {
+		background-color: var(--main-background);
+		border-color: var(--main-border);
+	}
+
+	#conversejs .list-group-item.active {
+		background-color: #1f78d1;
+		border-color: #1f78d1;
+	}
+
+	/* ===== Login page ===== */
+
+	#conversejs form#converse-login, #conversejs form#converse-register {
+		background-color: var(--main-background);
+	}
+
+	.reset {
+		background-color: #0f4071;
+	}
+
+	#conversejs.converse-fullscreen #controlbox .brand-heading-container .brand-heading, #conversejs.converse-mobile #controlbox .brand-heading-container .brand-heading {
+		color: var(--a-text-color);
+	}
+
+	#conversejs .popover {
+		background-color: var(--lighter-background-1);
+	}
+
+	#conversejs .popover-header {
+		background-color: var(--lighter-background-1);
+		border-color: var(--light-divider);
+	}
+
+	#conversejs .popover-body {
+		color: var(--main-text-color);
+	}
+}

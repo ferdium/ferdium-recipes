@@ -1,0 +1,11 @@
+{
+  "id": "xmpp",
+  "name": "xmpp",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/Aman9das/ferdi-xmpp-recipe",
+  "config": {
+    "serviceURL": "https://inverse.chat",
+    "hasNotificationSound": true
+  }
+}

@@ -1887,6 +1887,15 @@
     }
   },
   {
+    "featured": false,
+    "id": "xmpp",
+    "name": "xmpp",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/xmpp/icon.svg"
+    }
+  },
+  {
     "featured": true,
     "id": "yahoo-mail",
     "name": "Yahoo Mail",
