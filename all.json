@@ -553,7 +553,7 @@
     "featured": false,
     "id": "good-reads",
     "name": "Good Reads",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/good-reads/icon.svg"
     }
