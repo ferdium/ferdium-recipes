@@ -1,14 +1,43 @@
+- [Frontend API](#frontend-api)
+  - [Ferdi Class Methods](#ferdi-class-methods)
+    - [setBadge(directMessages, [indirectMessages])](#setbadgedirectmessages-indirectmessages)
+      - [Arguments](#arguments)
+      - [Usage](#usage)
+    - [setDialogTitle(title)](#setdialogtitletitle)
+      - [Arguments](#arguments-1)
+      - [Usage](#usage-1)
+    - [injectCSS(pathToCssFile)](#injectcsspathtocssfile)
+      - [Arguments](#arguments-2)
+      - [Usage](#usage-2)
+    - [injectJSUnsafe(pathToJsFile)](#injectjsunsafepathtojsfile)
+      - [Arguments](#arguments-3)
+      - [Usage](#usage-3)
+    - [loop(action)](#loopaction)
+      - [Arguments](#arguments-4)
+      - [Usage](#usage-4)
+    - [onNotify(fn)](#onnotifyfn)
+      - [Arguments](#arguments-5)
+      - [Usage](#usage-5)
+    - [handleDarkMode(callback)](#handledarkmodecallback)
+      - [Arguments](#arguments-6)
+      - [Callback function arguments](#callback-function-arguments)
+      - [Usage](#usage-6)
+    - [clearStorageData](#clearstoragedata)
+      - [Arguments](#arguments-7)
+      - [Usage](#usage-7)
+    - [releaseServiceWorkers](#releaseserviceworkers)
+    - [safeParseInt(stringText)](#safeparseintstringtext)
+      - [Arguments](#arguments-8)
+      - [Usage](#usage-8)
+    - [setDialogTitle(title)](#setdialogtitletitle-1)
+      - [Arguments](#arguments-9)
+      - [Usage](#usage-9)
+
 # Frontend API
 
 Provides a set of helper functions to integrate the service into [Ferdi](https://getferdi.com).
 
 ## Ferdi Class Methods
-
-- [setBadge](#user-content-setbadge)
-- [injectCSS](#user-content-injectcss)
-- [loop](#user-content-loop)
-- [onNotify](#user-content-onnotify)
-- [handleDarkMode](#user-content-handleDarkMode)
 
 ### setBadge(directMessages, [indirectMessages])
 
@@ -22,7 +51,7 @@ Sets the unread message badge
 
 2. `int` indirectMessages (optional)
 
-- Set a badge that defines there are new messages but they do not involve me directly to me eg. in a channel
+- Set a badge that defines there are new messages but they do not involve me directly to me eg. in a channel (default value: 0)
 
 #### Usage
 
@@ -155,7 +184,7 @@ module.exports = Ferdi => {
     ).length;
     const messageRequestsElement = document.querySelector('._5nxf');
     if (messageRequestsElement) {
-      count += parseInt(messageRequestsElement.textContent, 10);
+      count += Ferdi.safeParseInt(messageRequestsElement.textContent);
     }
 
     Ferdi.setBadge(count);
@@ -233,4 +262,59 @@ Ferdi.handleDarkMode((isEnabled, helpers) => {
     helpers.removeDarkModeStyle();
   }
 })
+```
+
+### clearStorageData
+
+While exiting/closing/disabling the service, if you want to clear the local storage, you can use this method to effect the same.
+
+#### Arguments
+
+1. `id` of the recipe
+2. struct of `storages`
+
+#### Usage
+
+```JavaScript
+  Ferdi.clearStorageData(settings.id, {
+      storages: [
+        'appcache',
+        'serviceworkers',
+        'cachestorage',
+        'websql',
+        'indexdb',
+      ],
+    });
+```
+
+### releaseServiceWorkers
+
+While exiting/closing/disabling the service, if you want to release any service workers, you can use this method to effect the same.
+
+### safeParseInt(stringText)
+
+A utility method that can be used to safely parse the text content (handles nulls, undefined, etc). Basically a wrapper around `parseInt` - but handles the safety checks.
+
+#### Arguments
+
+1. `stringText` String to be parsed into a number. (Could be `null` or `undefined`) Defaults to `0`
+
+#### Usage
+
+```JavaScript
+Ferdi.safeParseInt(mySelector.innerText)
+```
+
+### setDialogTitle(title)
+
+When you want to set the title of the Ferdi window (while this service is active or in focus), you can use this function
+
+#### Arguments
+
+1. `title`: The title to be set (for eg: the chat message person/group name in whatsapp)
+
+#### Usage
+
+```JavaScript
+Ferdi.setDialogTitle(element ? element.textContent : null);
 ```
