@@ -41,7 +41,7 @@ We have also created a nice script that already does 50% of the work for you - y
 pnpm install
 ```
 
-4. You can now run our automatic recipe wizard that creates and opens the new recipe for you:
+4. (Optional - contd) You can now run our automatic recipe wizard that creates and opens the new recipe for you:
 
 ```Bash
 # Make sure you are still in the repository's folder
@@ -50,6 +50,12 @@ pnpm run create "Service Name"
 
 Replace `Service Name` with the name of your service, e.g. `pnpm run create "Google Hangouts"`.
 This command will automatically create the development recipe in the correct folder, prepares it for your service and opens the new recipe in your file explorer or Finder. 5. Reload Ferdi (`CMD/CTRL + SHIFT + R`) in order for it to register the new recipe 6. You can now develop your recipe as described below. Please continue down below with "[Publishing](#Publishing)" after you are done creating your recipe.
+
+5. (Mandatory) Please run the following step before raising a PR:
+```Bash
+pnpm run package
+```
+Fix any issues that are reported.
 
 ## Recipe structure
 
