@@ -1,6 +1,18 @@
 /* Copied from: https://github.com/ducfilan/Dark-mode-Franz-Ferdi */
 
-body {
+body,
+.c-message_kit__background,
+.p-workspace__input,
+.p-view_header,
+.p-bookmarks_bar,
+.p-drafts_page,
+.p-threads_view__default_background,
+.p-threads_view_load_older_message,
+.c-basic_container__body,
+.c-pillow_file__snippet__content .CodeMirror,
+.p-flexpane--iap1 .p-flexpane_header,
+.p-message_input__input_container_unstyled,
+.p-drafts_page__draft {
   background: #222;
   color: #e6e6e6;
 }
