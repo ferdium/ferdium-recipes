@@ -25,8 +25,12 @@ Simply add your changes to the recipe inside this repository.
 
 ## 4. Updating the version number
 
-This might be the __most important step__ of this guide. You'll need to increase the version number inside recipe's `package.json`.
+You'll need to increase the version number inside recipe's `package.json`.
 
 Ferdi uses this version to determine if it should update the local copy of the recipe. If you do not increase the version number, no Ferdi user will get your updated recipe 😔
 
-## 5. Commit your changes and create a PR to <https://github.com/getferdi/recipes>
+## 5. Running the validation checks
+
+This might be the __most important step__ of this guide. You'll need to run the `pnpm run package` command to ensure that all validation checks are run.
+
+## 6. Commit your changes and create a PR to <https://github.com/getferdi/recipes>
