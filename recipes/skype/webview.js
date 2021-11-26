@@ -5,7 +5,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 module.exports = (Ferdi, settings) => {
   const getMessages = () => {
     let count = 0;
-    const container = document.querySelector('[role="tablist"] > [title="Chats"] > div');
+    const container = document.querySelector('[role="tablist"] > button > div');
 
     if (container) {
       const children = container.children;

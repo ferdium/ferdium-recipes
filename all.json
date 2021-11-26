@@ -1467,7 +1467,7 @@
     "featured": false,
     "id": "skype",
     "name": "Skype",
-    "version": "3.2.2",
+    "version": "3.2.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/skype/icon.svg"
     }
