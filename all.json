@@ -1393,6 +1393,18 @@
   },
   {
     "featured": false,
+    "id": "ringcentral",
+    "name": "RingCentral",
+    "version": "1.0.0",
+    "aliases": [
+      "Glip"
+    ],
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/ringcentral/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "riseup",
     "name": "Riseup.net",
     "version": "1.1.3",

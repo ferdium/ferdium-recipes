@@ -1,0 +1,15 @@
+{
+  "id": "ringcentral",
+  "name": "RingCentral",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/deadmeu/ferdi-ringcentral",
+  "aliases": [
+    "Glip"
+  ],
+  "config": {
+    "serviceURL": "https://app.ringcentral.com/",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  }
+}
