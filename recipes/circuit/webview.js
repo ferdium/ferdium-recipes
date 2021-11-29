@@ -8,8 +8,10 @@ module.exports = Ferdi => {
     const titleValue = document.querySelector('title').text;
     // Extract the number from the tag
     match = titleValue.match(/\d+/);
+    unread = match != null && match.length > 0 ? match[0] : 0;
     // Set unread msgs badge
-    Ferdi.setBadge(Ferdi.safeParseInt(match[0]));
+
+    Ferdi.setBadge(Ferdi.safeParseInt(unread));
   };
 
   const loopFunc = () => {
