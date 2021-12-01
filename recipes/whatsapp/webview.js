@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = (Ferdi, settings) => {
+module.exports = Ferdi => {
   const getMessages = () => {
     let count = 0;
     let indirectCount = 0;
@@ -48,15 +48,6 @@ module.exports = (Ferdi, settings) => {
   };
 
   window.addEventListener('beforeunload', async () => {
-    Ferdi.clearStorageData(settings.id, {
-      storages: [
-        'appcache',
-        'serviceworkers',
-        'cachestorage',
-        'websql',
-        'indexdb',
-      ],
-    });
     Ferdi.releaseServiceWorkers();
   });
 

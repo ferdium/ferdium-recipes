@@ -1848,7 +1848,7 @@
     "featured": true,
     "id": "whatsapp",
     "name": "WhatsApp",
-    "version": "3.3.6",
+    "version": "3.3.7",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/whatsapp/icon.svg"
     }
