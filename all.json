@@ -207,7 +207,7 @@
     "featured": false,
     "id": "circuit",
     "name": "Circuit",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/circuit/icon.svg"
     }
