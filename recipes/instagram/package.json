@@ -1,10 +1,10 @@
 {
   "id": "instagram",
   "name": "Instagram",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://instagram.com",
+    "serviceURL": "https://instagram.com/direct/inbox",
     "hasNotificationSound": true
   }
 }
