@@ -12,7 +12,7 @@
     "featured": false,
     "id": "airtable",
     "name": "Airtable",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/airtable/icon.svg"
     }
@@ -21,7 +21,7 @@
     "featured": false,
     "id": "amazon-web-services",
     "name": "Amazon Web Services",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "aliases": [
       "aws"
     ],
@@ -51,7 +51,7 @@
     "featured": false,
     "id": "anonaddy",
     "name": "AnonAddy",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/anonaddy/icon.svg"
     }
@@ -78,7 +78,7 @@
     "featured": false,
     "id": "azure-devops",
     "name": "Azure DevOps",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "aliases": [
       "azdo"
     ],
@@ -99,7 +99,7 @@
     "featured": false,
     "id": "bigbluebutton",
     "name": "BigBlueButton",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/bigbluebutton/icon.svg"
     }
@@ -108,7 +108,7 @@
     "featured": false,
     "id": "binance",
     "name": "Binance",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/binance/icon.svg"
     }
@@ -126,7 +126,7 @@
     "featured": false,
     "id": "bitbucket",
     "name": "BitBucket",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/bitbucket/icon.svg"
     }
@@ -135,7 +135,7 @@
     "featured": false,
     "id": "bitwarden",
     "name": "Bitwarden",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/bitwarden/icon.svg"
     }
@@ -144,7 +144,7 @@
     "featured": false,
     "id": "box",
     "name": "box",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/box/icon.svg"
     }
@@ -207,7 +207,7 @@
     "featured": false,
     "id": "circuit",
     "name": "Circuit",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/circuit/icon.svg"
     }
@@ -234,7 +234,7 @@
     "featured": false,
     "id": "cliq",
     "name": "Cliq",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/cliq/icon.svg"
     }
@@ -252,7 +252,7 @@
     "featured": false,
     "id": "clockwise",
     "name": "Clockwise",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/clockwise/icon.svg"
     }
@@ -288,7 +288,7 @@
     "featured": false,
     "id": "devdocs",
     "name": "DevDocs",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/devdocs/icon.svg"
     }
@@ -342,7 +342,7 @@
     "featured": false,
     "id": "dockerhub",
     "name": "Docker Hub",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/dockerhub/icon.svg"
     }
@@ -360,7 +360,7 @@
     "featured": false,
     "id": "easy-redmine",
     "name": "easy-redmine",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/easy-redmine/icon.svg"
     }
@@ -382,7 +382,7 @@
     "featured": false,
     "id": "epicgames",
     "name": "Epic Games Store",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/epicgames/icon.svg"
     }
@@ -454,7 +454,7 @@
     "featured": false,
     "id": "figma",
     "name": "Figma",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/figma/icon.svg"
     }
@@ -526,7 +526,7 @@
     "featured": false,
     "id": "gitlab",
     "name": "GitLab",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/gitlab/icon.svg"
     }
@@ -571,7 +571,7 @@
     "featured": false,
     "id": "google-contacts",
     "name": "Google Contacts",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/google-contacts/icon.svg"
     }
@@ -580,7 +580,7 @@
     "featured": false,
     "id": "google-news",
     "name": "Google News",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/google-news/icon.svg"
     }
@@ -589,7 +589,7 @@
     "featured": false,
     "id": "google-translate",
     "name": "Google Translate",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/google-translate/icon.svg"
     }
@@ -638,7 +638,7 @@
     "featured": false,
     "id": "googlekeep",
     "name": "Google Keep",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlekeep/icon.svg"
     }
@@ -656,7 +656,7 @@
     "featured": false,
     "id": "googlepodcasts",
     "name": "Google Podcasts",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/googlepodcasts/icon.svg"
     }
@@ -741,7 +741,7 @@
     "featured": false,
     "id": "harvest",
     "name": "Harvest",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/harvest/icon.svg"
     }
@@ -768,7 +768,7 @@
     "featured": false,
     "id": "iCloud",
     "name": "iCloud",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/iCloud/icon.svg"
     }
@@ -777,7 +777,7 @@
     "featured": false,
     "id": "icloud-reminders",
     "name": "iCloud Reminders",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/icloud-reminders/icon.svg"
     }
@@ -885,7 +885,7 @@
     "featured": false,
     "id": "keybase.io",
     "name": "Keybase",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/keybase.io/icon.svg"
     }
@@ -921,7 +921,7 @@
     "featured": false,
     "id": "line-me",
     "name": "Line.me",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/line-me/icon.svg"
     }
@@ -1011,7 +1011,7 @@
     "featured": false,
     "id": "monicahq",
     "name": "Monica HQ",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/monicahq/icon.svg"
     }
@@ -1059,7 +1059,7 @@
     "featured": false,
     "id": "netatmo-energy",
     "name": "Netatmo Energy",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/netatmo-energy/icon.svg"
     }
@@ -1077,7 +1077,7 @@
     "featured": false,
     "id": "NewsBlur",
     "name": "NewsBlur",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/NewsBlur/icon.svg"
     }
@@ -1122,7 +1122,7 @@
     "featured": false,
     "id": "nextcloud-news",
     "name": "Nextcloud News",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nextcloud-news/icon.svg"
     }
@@ -1158,7 +1158,7 @@
     "featured": false,
     "id": "noisli",
     "name": "Noisli",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/noisli/icon.svg"
     }
@@ -1185,7 +1185,7 @@
     "featured": false,
     "id": "odoo",
     "name": "Odoo",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/odoo/icon.svg"
     }
@@ -1206,7 +1206,7 @@
     "featured": false,
     "id": "onenote",
     "name": "OneNote",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/onenote/icon.svg"
     }
@@ -1215,7 +1215,7 @@
     "featured": false,
     "id": "OVHCloud",
     "name": "OVH Cloud",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/OVHCloud/icon.svg"
     }
@@ -1224,7 +1224,7 @@
     "featured": false,
     "id": "paymo",
     "name": "paymo",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/paymo/icon.svg"
     }
@@ -1233,7 +1233,7 @@
     "featured": false,
     "id": "pinterest",
     "name": "Pinterest",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/pinterest/icon.svg"
     }
@@ -1260,7 +1260,7 @@
     "featured": false,
     "id": "plan",
     "name": "plan",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/plan/icon.svg"
     }
@@ -1296,7 +1296,7 @@
     "featured": false,
     "id": "pocket",
     "name": "Pocket",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/pocket/icon.svg"
     }
@@ -1314,7 +1314,7 @@
     "featured": false,
     "id": "pomodoro-tracker",
     "name": "Pomodoro Tracker",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/pomodoro-tracker/icon.svg"
     }
@@ -1341,7 +1341,7 @@
     "featured": false,
     "id": "protoncalendar",
     "name": "ProtonCalendar",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/protoncalendar/icon.svg"
     }
@@ -1368,7 +1368,7 @@
     "featured": false,
     "id": "pushbullet",
     "name": "Pushbullet",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/pushbullet/icon.svg"
     }
@@ -1452,7 +1452,7 @@
     "featured": false,
     "id": "scribens",
     "name": "Scribens",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/scribens/icon.svg"
     }
@@ -1515,7 +1515,7 @@
     "featured": false,
     "id": "slowly",
     "name": "Slowly",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/slowly/icon.svg"
     }
@@ -1524,7 +1524,7 @@
     "featured": false,
     "id": "snapdrop",
     "name": "Snapdrop",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/snapdrop/icon.svg"
     }
@@ -1542,7 +1542,7 @@
     "featured": false,
     "id": "stackexchange",
     "name": "StackExchange",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/stackexchange/icon.svg"
     }
@@ -1569,7 +1569,7 @@
     "featured": false,
     "id": "standardnotes",
     "name": "StandardNotes",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/standardnotes/icon.svg"
     }
@@ -1605,7 +1605,7 @@
     "featured": false,
     "id": "sync",
     "name": "sync",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/sync/icon.svg"
     }
@@ -1614,7 +1614,7 @@
     "featured": false,
     "id": "tawk",
     "name": "Tawk.to",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/tawk/icon.svg"
     }
@@ -1632,7 +1632,7 @@
     "featured": false,
     "id": "teamweek",
     "name": "Teamweek",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/teamweek/icon.svg"
     }
@@ -1686,7 +1686,7 @@
     "featured": false,
     "id": "tinder",
     "name": "Tinder",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/tinder/icon.svg"
     }
@@ -1695,7 +1695,7 @@
     "featured": false,
     "id": "tixio",
     "name": "Tixio",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/tixio/icon.svg"
     }
@@ -1731,7 +1731,7 @@
     "featured": false,
     "id": "tutanota",
     "name": "Tutanota",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/tutanota/icon.svg"
     }
@@ -1821,7 +1821,7 @@
     "featured": false,
     "id": "wakatime",
     "name": "Wakatime",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/wakatime/icon.svg"
     }
@@ -1965,7 +1965,7 @@
     "featured": false,
     "id": "youtubemusic",
     "name": "YouTube Music",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/youtubemusic/icon.svg"
     }
@@ -1992,7 +1992,7 @@
     "featured": false,
     "id": "zenhub",
     "name": "ZenHub",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/zenhub/icon.svg"
     }

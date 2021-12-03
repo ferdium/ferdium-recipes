@@ -1,7 +1,7 @@
 {
   "id": "odoo",
   "name": "Odoo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "config": {
     "serviceURL": "https://www.odoo.com/web/login",

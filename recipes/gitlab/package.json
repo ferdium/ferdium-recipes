@@ -1,7 +1,7 @@
 {
   "id": "gitlab",
   "name": "GitLab",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "MIT",
   "config": {
     "serviceURL": "https://gitlab.com/users/sign_in",

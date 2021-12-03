@@ -1,7 +1,7 @@
 {
   "id": "google-translate",
   "name": "Google Translate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "config": {
     "serviceURL": "https://translate.google.com"

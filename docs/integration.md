@@ -64,7 +64,7 @@ Every recipe needs a specific file structure in order to work as a Ferdi recipe
 - icon.svg - Icon for the service in SVG form (must be square)
 - index.js - Backend script, this script is NOT included in the service webview but only in Ferdi itself
 - package.json - Information about the recipe
-- webview.js - Frontend script, this script is injected into the service itself but still has access to all NodeJS APIs
+- webview.js - Optional frontend script, this script is injected into the service itself but still has access to all NodeJS APIs
 - darkmode.css - CSS File that gets included when dark mode is activated
 
 ### package.json
@@ -153,7 +153,7 @@ overrideUserAgent() {
 
 ### webview.js
 
-The `webview.js` is the actual script that will be loaded into the webview. Here you can do whatever you want to do in order perfectly integrate the service into Ferdi. For convenience, we have provided a very simple set of functions to set unread message badges (`Ferdi.setBadge()`), set active dialog title (`Ferdi.setDialogTitle()`) and inject CSS files (`Ferdi.injectCSS()`).
+The optional `webview.js` is the actual script that will be loaded into the webview. Here you can do whatever you want to do in order perfectly integrate the service into Ferdi. For convenience, we have provided a very simple set of functions to set unread message badges (`Ferdi.setBadge()`), set active dialog title (`Ferdi.setDialogTitle()`) and inject CSS files (`Ferdi.injectCSS()`).
 
 ```js
 // telegram integration

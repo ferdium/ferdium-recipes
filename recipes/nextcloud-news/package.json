@@ -1,7 +1,7 @@
 {
   "id": "nextcloud-news",
   "name": "Nextcloud News",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": "https://github.com/csolisr/recipes/tree/master/recipes/nextcloud-news/",
   "config": {
