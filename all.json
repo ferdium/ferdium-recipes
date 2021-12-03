@@ -1120,6 +1120,15 @@
   },
   {
     "featured": false,
+    "id": "nextcloud-news",
+    "name": "Nextcloud News",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nextcloud-news/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "nextcloud-talk",
     "name": "Nextcloud Talk",
     "version": "1.1.1",

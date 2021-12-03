@@ -1,11 +1,16 @@
 module.exports = Ferdi => {
-  const getMessages = function getMessages() {
+  const getMessages = () => {
     // Get value of <title> tag where in case of new messages the number of messages appear
-    const titleValue = document.querySelector('title').text;
-    const match = titleValue.match(/\d+/);
-    const unread = match != null && match.length > 0 ? match[0] : 0;
+    const title = document.querySelector('title');
+    if (title) {
+      const titleValue = title.text;
+      // Extract the number from the tag
+      const match = titleValue.match(/\d+/);
+      const unread = match != null && match.length > 0 ? match[0] : 0;
 
-    Ferdi.setBadge(Ferdi.safeParseInt(unread));
+      // Set unread msgs badge
+      Ferdi.setBadge(Ferdi.safeParseInt(unread));
+    }
   };
 
   Ferdi.loop(getMessages);

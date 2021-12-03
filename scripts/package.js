@@ -266,12 +266,6 @@ const compress = (src, dest) =>
       unsuccessful++;
     }
 
-    if (!fs.existsSync(path.join(recipeSrc, 'webview.js'))) {
-      console.log(
-        `⚠️ Couldn't package "${recipe}": The recipe doesn't contain a "webview.js"`,
-      );
-      unsuccessful++;
-    }
     if (!fs.existsSync(path.join(recipeSrc, 'index.js'))) {
       console.log(
         `⚠️ Couldn't package "${recipe}": The recipe doesn't contain a "index.js"`,
