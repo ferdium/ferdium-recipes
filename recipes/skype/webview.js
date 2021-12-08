@@ -48,7 +48,8 @@ module.exports = (Ferdi, settings) => {
           height: window.innerHeight,
           minWidth: 600,
           webPreferences: {
-            partition: `persist:service-${settings.id}`
+            partition: `persist:service-${settings.id}`,
+            nativeWindowOpen: true,
             // TODO: Aren't these needed here?
             // contextIsolation: false,
             // enableRemoteModule: true,
