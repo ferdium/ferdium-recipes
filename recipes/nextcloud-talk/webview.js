@@ -21,6 +21,10 @@ module.exports = Ferdi => {
         indirect += Number(counter.textContent);
       }
     
+    if (document.title.startsWith("*")) {
+      indirect++;
+    }
+    
     Ferdi.setBadge(direct, indirect);
   };
 
