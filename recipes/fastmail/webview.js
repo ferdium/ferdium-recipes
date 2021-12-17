@@ -9,10 +9,8 @@ module.exports = Ferdi => {
     const inbox = document.querySelector(
       '.v-MailboxSource--inbox .v-MailboxSource-badge',
     );
-    if (!inbox) {
-      return;
-    }
-    const messages = Ferdi.safeParseInt(inbox.textContent);
+
+    const messages = inbox ? Ferdi.safeParseInt(inbox.textContent) : 0;
     Ferdi.setBadge(messages);
   };
 
