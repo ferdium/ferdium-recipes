@@ -427,7 +427,7 @@
     "featured": false,
     "id": "fastmail",
     "name": "FastMail",
-    "version": "2.1.1",
+    "version": "2.2.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/fastmail/icon.svg"
     }
