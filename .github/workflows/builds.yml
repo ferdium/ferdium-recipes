@@ -28,10 +28,10 @@ jobs:
         run: echo "PNPM_CACHE=$HOME/.pnpm-store" >> $GITHUB_ENV
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Use Node.js 16.13.1
+      - name: Use Node.js specified in the '.nvmrc' file
         uses: actions/setup-node@v2
         with:
-          node-version: 16.13.1
+          node-version-file: '.nvmrc'
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
