@@ -33,6 +33,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/bejonwe"><img src="https://avatars.githubusercontent.com/u/1766000?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathan Weber</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=bejonwe" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.nathanaelhoun.fr"><img src="https://avatars.githubusercontent.com/u/45119518?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nathanaël Houn</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=nathanaelhoun" title="Code">💻</a></td>
     <td align="center"><a href="https://gitlab.com/dpeukert"><img src="https://avatars.githubusercontent.com/u/3451904?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel Peukert</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=dpeukert" title="Code">💻</a></td>
   </tr>
 </table>
