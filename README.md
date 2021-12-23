@@ -1,6 +1,6 @@
 <p align="center">
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
     <a href="https://getferdi.com/services">
       <img src="./logo.svg" alt="" width="250"/>
@@ -46,6 +46,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://blog.simonszu.de"><img src="https://avatars.githubusercontent.com/u/700707?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Simon Szustkowski</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=simonszu" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/jpmschuler"><img src="https://avatars.githubusercontent.com/u/12411176?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jpmschuler</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=jpmschuler" title="Code">💻</a></td>
     <td align="center"><a href="http://panz3r.dev"><img src="https://avatars.githubusercontent.com/u/1754457?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mattia Panzeri</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=panz3r" title="Code">💻</a></td>
+    <td align="center"><a href="http://briankendall.net"><img src="https://avatars.githubusercontent.com/u/7917884?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brian Kendall</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=briankendall" title="Code">💻</a></td>
   </tr>
 </table>
 
