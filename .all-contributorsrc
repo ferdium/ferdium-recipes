@@ -121,6 +121,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "maximeMD",
+      "name": "Maxime Marty-Dessus",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25101871?v=4",
+      "profile": "http://maxmd.xyz",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
