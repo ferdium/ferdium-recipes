@@ -40,6 +40,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "csolisr",
+      "name": "Carlos Solís",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1644021?v=4",
+      "profile": "http://azkware.net",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
