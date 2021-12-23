@@ -1,6 +1,6 @@
 <p align="center">
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
     <a href="https://getferdi.com/services">
       <img src="./logo.svg" alt="" width="250"/>
@@ -39,6 +39,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://azkware.net"><img src="https://avatars.githubusercontent.com/u/1644021?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Carlos Solís</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=csolisr" title="Code">💻</a></td>
     <td align="center"><a href="http://www.ruippeixotog.net"><img src="https://avatars.githubusercontent.com/u/613493?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rui Gonçalves</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=ruippeixotog" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/deadmeu"><img src="https://avatars.githubusercontent.com/u/12111013?v=4?s=100" width="100px;" alt=""/><br /><sub><b>deadmeu</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=deadmeu" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/ZwS"><img src="https://avatars.githubusercontent.com/u/2487205?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anton Sudak</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=ZwS" title="Code">💻</a></td>
   </tr>
 </table>
 
