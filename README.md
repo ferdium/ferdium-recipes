@@ -1,13 +1,19 @@
 <p align="center">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
     <a href="https://getferdi.com/services">
       <img src="./logo.svg" alt="" width="250"/>
     </a>
 </p>
 
 # Recipes
+
+<p>
+  <a href="https://github.com/getferdi/recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/getferdi/recipes/actions/workflows/builds.yml/badge.svg?branch=master&event=push"></a>
+  <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+  <a href='#contributors-'><img src='https://img.shields.io/badge/contributors-16-default.svg?logo=github' alt='Contributors'/></a>
+  <!-- ALL-CONTRIBUTORS-BADGE:END -->
+  <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
+  <a href="https://gitter.im/getferdi/community"><img alt="Gitter Chat Room" src="https://img.shields.io/gitter/room/getferdi/community"></a>
+</p>
 
 Official Recipe repository for Ferdi with over 100 recipes.
 
