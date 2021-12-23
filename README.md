@@ -1,6 +1,6 @@
 <p align="center">
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
     <a href="https://getferdi.com/services">
       <img src="./logo.svg" alt="" width="250"/>
@@ -33,6 +33,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/bejonwe"><img src="https://avatars.githubusercontent.com/u/1766000?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathan Weber</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=bejonwe" title="Code">💻</a></td>
+    <td align="center"><a href="https://gitlab.com/dpeukert"><img src="https://avatars.githubusercontent.com/u/3451904?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel Peukert</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=dpeukert" title="Code">💻</a></td>
   </tr>
 </table>
 
