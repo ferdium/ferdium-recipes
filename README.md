@@ -15,19 +15,13 @@
   <a href="https://gitter.im/getferdi/community"><img alt="Gitter Chat Room" src="https://img.shields.io/gitter/room/getferdi/community"></a>
 </p>
 
-Official Recipe repository for Ferdi with over 100 recipes.
+> 🍰 Recipes encapsulate your favourite apps into Ferdi for unified notifications handling and more
 
-Copyright on these recipes is on their original creators - please look at `recipes/<id>/package.json` for information about the original creator and license. This is simply a curation of those recipes so we can include them into Ferdi.
-
-## What are "Recipes"?
-
-Recipes are small scripts that are responsible for providing the connection between your services (e.g. WhatsApp, GMail or Slack) and Ferdi. It provides Ferdi information like the number of current notifications, handles enabling dark mode and may otherwise improve your experience with the service.
-
-Each time you create a new service inside Ferdi, Ferdi will automatically install and execute the recipe associated with that service.
+Recipes are small scripts that are responsible for providing the connection between your services (e.g. WhatsApp, Gmail or Slack) and Ferdi. It provides Ferdi information like the number of current notifications, handles enabling dark mode and may otherwise improve your experience with the service.
 
 ## Creating and adding your own recipes
 
-Please refer to our [documentation](docs/integration.md)
+Please refer to our [documentation](docs/integration.md).
 
 ## Contributors ✨
 
