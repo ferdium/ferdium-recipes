@@ -76,6 +76,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "n-st",
+      "name": "Nils Steinger",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2692085?v=4",
+      "profile": "https://voidptr.de",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
