@@ -9,8 +9,8 @@
 <p>
   <a href="https://github.com/getferdi/recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/getferdi/recipes/actions/workflows/builds.yml/badge.svg?branch=master&event=push"></a>
   <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-  <a href='#contributors-'><img src='https://img.shields.io/badge/contributors-16-default.svg?logo=github' alt='Contributors'/></a>
-  <!-- ALL-CONTRIBUTORS-BADGE:END -->
+  <a href='#contributors-'><img src='https://img.shields.io/badge/contributors-17-default.svg?logo=github' alt='Contributors'/></a>
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
   <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
   <a href="https://gitter.im/getferdi/community"><img alt="Gitter Chat Room" src="https://img.shields.io/gitter/room/getferdi/community"></a>
 </p>
@@ -58,6 +58,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://crtweb.ru/"><img src="https://avatars.githubusercontent.com/u/5560310?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Iaroslav</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=RainGrid" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/TanZng"><img src="https://avatars.githubusercontent.com/u/25267490?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tania R. Zúñiga</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=TanZng" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/bpwned"><img src="https://avatars.githubusercontent.com/u/446744?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=bpwned" title="Code">💻</a></td>
   </tr>
 </table>
 

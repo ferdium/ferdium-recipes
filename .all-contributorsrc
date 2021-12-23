@@ -148,6 +148,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "bpwned",
+      "name": "Alex",
+      "avatar_url": "https://avatars.githubusercontent.com/u/446744?v=4",
+      "profile": "https://github.com/bpwned",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
