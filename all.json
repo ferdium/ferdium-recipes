@@ -927,15 +927,7 @@
     }
   },
   {
-    "featured": false,
-    "id": "line-me",
-    "name": "Line.me",
-    "version": "1.1.1",
-    "icons": {
-      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/line-me/icon.svg"
-    }
-  },
-  {
+    "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "linkedin",
     "name": "LinkedIn",
