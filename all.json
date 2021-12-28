@@ -1168,7 +1168,7 @@
     "featured": false,
     "id": "nomadlist",
     "name": "nomadlist",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nomadlist/icon.svg"
     }
