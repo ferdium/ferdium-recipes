@@ -1930,7 +1930,7 @@
     "featured": true,
     "id": "yahoo-mail",
     "name": "Yahoo Mail",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/yahoo-mail/icon.svg"
     }
