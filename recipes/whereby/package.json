@@ -1,7 +1,7 @@
 {
   "id": "whereby",
-  "name": "whereby.com",
-  "version": "1.0.1",
+  "name": "Whereby",
+  "version": "1.0.2",
   "license": "MIT",
   "config": {
     "serviceURL": "https://whereby.com/{teamId}",

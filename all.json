@@ -2,8 +2,8 @@
   {
     "featured": false,
     "id": "air-droid",
-    "name": "air-droid",
-    "version": "1.1.1",
+    "name": "AirDroid",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/air-droid/icon.svg"
     }
@@ -89,8 +89,8 @@
   {
     "featured": false,
     "id": "basecamp",
-    "name": "basecamp",
-    "version": "1.1.0",
+    "name": "Basecamp",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/basecamp/icon.svg"
     }
@@ -143,8 +143,8 @@
   {
     "featured": false,
     "id": "box",
-    "name": "box",
-    "version": "1.1.1",
+    "name": "Box",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/box/icon.svg"
     }
@@ -152,8 +152,8 @@
   {
     "featured": false,
     "id": "buffer",
-    "name": "buffer",
-    "version": "1.1.0",
+    "name": "Buffer",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/buffer/icon.svg"
     }
@@ -179,8 +179,8 @@
   {
     "featured": false,
     "id": "chatra",
-    "name": "chatra",
-    "version": "1.1.1",
+    "name": "Chatra",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/chatra/icon.svg"
     }
@@ -197,8 +197,8 @@
   {
     "featured": false,
     "id": "chatwork",
-    "name": "ChatWork",
-    "version": "1.1.2",
+    "name": "Chatwork",
+    "version": "1.1.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/chatwork/icon.svg"
     }
@@ -359,8 +359,8 @@
   {
     "featured": false,
     "id": "easy-redmine",
-    "name": "easy-redmine",
-    "version": "1.1.2",
+    "name": "Easy Redmine",
+    "version": "1.1.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/easy-redmine/icon.svg"
     }
@@ -435,8 +435,8 @@
   {
     "featured": false,
     "id": "feedbin",
-    "name": "feedbin",
-    "version": "1.1.1",
+    "name": "Feedbin",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/feedbin/icon.svg"
     }
@@ -543,8 +543,8 @@
   {
     "featured": false,
     "id": "glowing-bear",
-    "name": "glowing-bear",
-    "version": "1.1.2",
+    "name": "Glowing Bear",
+    "version": "1.1.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/glowing-bear/icon.svg"
     }
@@ -597,8 +597,8 @@
   {
     "featured": false,
     "id": "google-voice",
-    "name": "google-voice",
-    "version": "0.4.2",
+    "name": "Google Voice",
+    "version": "0.4.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/google-voice/icon.svg"
     }
@@ -927,7 +927,6 @@
     }
   },
   {
-    "author": "Stefan Malzner <stefan@adlk.io>",
     "featured": false,
     "id": "linkedin",
     "name": "LinkedIn",
@@ -939,8 +938,8 @@
   {
     "featured": false,
     "id": "mailbox.org",
-    "name": "mailbox.org",
-    "version": "1.3.1",
+    "name": "Mailbox.org",
+    "version": "1.3.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/mailbox.org/icon.svg"
     }
@@ -1167,8 +1166,8 @@
   {
     "featured": false,
     "id": "nomadlist",
-    "name": "nomadlist",
-    "version": "1.1.1",
+    "name": "NomadList",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nomadlist/icon.svg"
     }
@@ -1224,8 +1223,8 @@
   {
     "featured": false,
     "id": "paymo",
-    "name": "paymo",
-    "version": "1.1.1",
+    "name": "Paymo",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/paymo/icon.svg"
     }
@@ -1260,8 +1259,8 @@
   {
     "featured": false,
     "id": "plan",
-    "name": "plan",
-    "version": "1.1.1",
+    "name": "Plan",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/plan/icon.svg"
     }
@@ -1305,8 +1304,8 @@
   {
     "featured": false,
     "id": "podio",
-    "name": "podio",
-    "version": "1.1.0",
+    "name": "Podio",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/podio/icon.svg"
     }
@@ -1551,8 +1550,8 @@
   {
     "featured": false,
     "id": "stackoverflow",
-    "name": "Stackoverflow",
-    "version": "0.0.2",
+    "name": "Stack Overflow",
+    "version": "0.0.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/stackoverflow/icon.svg"
     }
@@ -1560,8 +1559,8 @@
   {
     "featured": false,
     "id": "stackoverflow-chat",
-    "name": "Stackoverflow chat",
-    "version": "1.0.2",
+    "name": "Stack Overflow Chat",
+    "version": "1.0.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/stackoverflow-chat/icon.svg"
     }
@@ -1596,8 +1595,8 @@
   {
     "featured": false,
     "id": "superhuman",
-    "name": "superhuman",
-    "version": "1.1.0",
+    "name": "Superhuman",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/superhuman/icon.svg"
     }
@@ -1605,8 +1604,8 @@
   {
     "featured": false,
     "id": "sync",
-    "name": "sync",
-    "version": "1.1.2",
+    "name": "Sync",
+    "version": "1.1.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/sync/icon.svg"
     }
@@ -1713,8 +1712,8 @@
   {
     "featured": false,
     "id": "toggl",
-    "name": "toggl",
-    "version": "1.2.1",
+    "name": "Toggl",
+    "version": "1.2.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/toggl/icon.svg"
     }
@@ -1749,8 +1748,8 @@
   {
     "featured": false,
     "id": "twist",
-    "name": "twist",
-    "version": "1.1.1",
+    "name": "Twist",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/twist/icon.svg"
     }
@@ -1866,8 +1865,8 @@
   {
     "featured": false,
     "id": "whereby",
-    "name": "whereby.com",
-    "version": "1.0.1",
+    "name": "Whereby",
+    "version": "1.0.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/whereby/icon.svg"
     }
@@ -1920,8 +1919,8 @@
   {
     "featured": false,
     "id": "xmpp",
-    "name": "xmpp",
-    "version": "1.0.0",
+    "name": "XMPP",
+    "version": "1.0.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/xmpp/icon.svg"
     }
@@ -1983,8 +1982,8 @@
   {
     "featured": false,
     "id": "zendesk",
-    "name": "zendesk",
-    "version": "1.1.1",
+    "name": "Zendesk",
+    "version": "1.1.2",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/zendesk/icon.svg"
     }

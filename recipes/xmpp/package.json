@@ -1,7 +1,7 @@
 {
   "id": "xmpp",
-  "name": "xmpp",
-  "version": "1.0.0",
+  "name": "XMPP",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": "https://github.com/Aman9das/ferdi-xmpp-recipe",
   "config": {
