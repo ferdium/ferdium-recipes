@@ -1,0 +1,9 @@
+{
+  "id": "airmessage",
+  "name": "AirMessage",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://web.airmessage.org/"
+  }
+}
