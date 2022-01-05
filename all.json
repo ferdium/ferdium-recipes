@@ -1668,7 +1668,7 @@
     "featured": false,
     "id": "thelounge",
     "name": "The Lounge",
-    "version": "1.1.2",
+    "version": "1.2.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/thelounge/icon.svg"
     }
