@@ -2,12 +2,17 @@
   "discord",
   "gitter",
   "gmail",
+  "googlecalendar",
   "hangouts",
   "mattermost",
   "messenger",
+  "msteams",
+  "proton-mail",
   "slack",
+  "skype",
   "telegram",
   "tweetdeck",
-  "yahoo-mail",
-  "whatsapp"
+  "trello",
+  "whatsapp",
+  "wechat"
 ]
