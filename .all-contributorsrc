@@ -158,6 +158,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "baukevdw",
+      "name": "Bauke van der Woude",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6784391?v=4",
+      "profile": "https://github.com/baukevdw",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
