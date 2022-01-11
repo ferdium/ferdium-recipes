@@ -12,7 +12,6 @@
   <a href='#contributors-'><img src='https://img.shields.io/badge/contributors-17-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
   <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
-  <a href="https://gitter.im/getferdi/community"><img alt="Gitter Chat Room" src="https://img.shields.io/gitter/room/getferdi/community"></a>
 </p>
 
 > 🍰 Recipes encapsulate your favourite apps into Ferdi for unified notifications handling and more
@@ -21,7 +20,11 @@ Recipes are small scripts that are responsible for providing the connection betw
 
 ## Creating and adding your own recipes
 
-Please refer to our [documentation](docs/integration.md).
+* [Overview / How to create a Ferdi integration](docs/integration.md)
+* [How to update/change recipes](docs/updating.md)
+* [Configuration (package.json)](docs/configuration.md)
+* [Frontend API (webview.js)](docs/frontend_api.md)
+* [Backend API (index.js)](docs/backend_api.md)
 
 ## Contributors ✨
 
