@@ -1,0 +1,9 @@
+{
+  "id": "freshrss",
+  "name": "FreshRSS",
+  "version": "1.0.1",
+  "license": "MIT",
+  "config": {
+    "hasCustomUrl": true  
+  }
+}
