@@ -1,0 +1,9 @@
+{
+  "id": "zoho-projects",
+  "name": "Zoho Projects",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://projects.zoho.eu/"
+  }
+}
