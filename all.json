@@ -1900,6 +1900,15 @@
   },
   {
     "featured": false,
+    "id": "workflowy",
+    "name": "WorkFlowy",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/workflowy/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "workplace",
     "name": "Workplace",
     "version": "1.3.1",
