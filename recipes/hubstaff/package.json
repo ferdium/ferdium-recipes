@@ -1,0 +1,10 @@
+{
+  "id": "hubstaff",
+  "name": "HubStaff",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.hubstaff.com/login_now",
+    "hasNotificationSound": true
+  }
+}
