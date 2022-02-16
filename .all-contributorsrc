@@ -203,6 +203,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "wajda",
+      "name": "Alex Vayda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/795479?v=4",
+      "profile": "https://github.com/wajda",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
