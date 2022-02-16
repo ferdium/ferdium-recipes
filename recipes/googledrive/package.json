@@ -5,7 +5,7 @@
   "repository": "https://github.com/BrianGilbert/franz-recipe-tawk",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://drive.google.com/",
+    "serviceURL": "https://drive.google.com/drive/my-drive",
     "hasNotificationSound": true
   }
 }
