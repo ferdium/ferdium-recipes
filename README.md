@@ -9,7 +9,7 @@
 <p>
   <a href="https://github.com/getferdi/recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/getferdi/recipes/actions/workflows/builds.yml/badge.svg?branch=master&event=push"></a>
   <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-21-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-22-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
   <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
 </p>
@@ -60,6 +60,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/pesader"><img src="https://avatars.githubusercontent.com/u/65264536?v=4?s=100" width="100px;" alt=""/><br /><sub><b>pesader</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=pesader" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/tukiplus"><img src="https://avatars.githubusercontent.com/u/98679174?v=4?s=100" width="100px;" alt=""/><br /><sub><b>tukiplus</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=tukiplus" title="Code">💻</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/link2ravig/"><img src="https://avatars.githubusercontent.com/u/3313079?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ravindra Gullapalli</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=ravindragullapalli" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/brunoccr"><img src="https://avatars.githubusercontent.com/u/5890352?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bruno Rossetto</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=brunoccr" title="Code">💻</a></td>
   </tr>
 </table>
 
