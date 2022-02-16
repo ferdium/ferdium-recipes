@@ -1,0 +1,10 @@
+{
+  "id": "zoom",
+  "name": "Zoom",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://zoom.us/join",
+    "hasNotificationSound": true
+  }
+}
