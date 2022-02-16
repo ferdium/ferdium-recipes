@@ -9,7 +9,7 @@
 <p>
   <a href="https://github.com/getferdi/recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/getferdi/recipes/actions/workflows/builds.yml/badge.svg?branch=master&event=push"></a>
   <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-23-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-24-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
   <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
 </p>
@@ -64,6 +64,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/brunoccr"><img src="https://avatars.githubusercontent.com/u/5890352?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bruno Rossetto</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=brunoccr" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/wajda"><img src="https://avatars.githubusercontent.com/u/795479?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Vayda</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=wajda" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/nurse-the-code"><img src="https://avatars.githubusercontent.com/u/68450431?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Malachi Gruenhagen</b></sub></a><br /><a href="https://github.com/getferdi/recipes/commits?author=nurse-the-code" title="Code">💻</a></td>
   </tr>
 </table>
 
