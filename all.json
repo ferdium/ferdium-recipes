@@ -515,6 +515,15 @@
   },
   {
     "featured": false,
+    "id": "freshrss",
+    "name": "FreshRSS",
+    "version": "1.0.1",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/freshrss/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "gadugadu",
     "name": "Gadu-Gadu",
     "version": "1.1.1",
@@ -2049,6 +2058,15 @@
     "version": "1.2.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/zoho/icon.svg"
+    }
+  },
+  {
+    "featured": false,
+    "id": "zoho-projects",
+    "name": "Zoho Projects",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/zoho-projects/icon.svg"
     }
   },
   {
