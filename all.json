@@ -571,7 +571,7 @@
     "featured": true,
     "id": "gmail",
     "name": "Gmail",
-    "version": "1.4.2",
+    "version": "1.4.3",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/gmail/icon.svg"
     }
