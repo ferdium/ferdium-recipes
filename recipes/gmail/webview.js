@@ -25,7 +25,7 @@ module.exports = Ferdi => {
         if (parentNodeOfParentNode) {
           const unreadCounts = parentNodeOfParentNode.querySelectorAll('.bsU');
           if (unreadCounts.length > 0) {
-            count = Ferdi.safeParseInt(unreadCounts[0].textContent);
+            count = Ferdi.safeParseInt(unreadCounts[0].textContent.replace(/[^\p{N}]/gu, ''));
           }
         }
       }
