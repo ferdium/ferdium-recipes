@@ -1,0 +1,9 @@
+{
+  "id": "hostnet",
+  "name": "Hostnet",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://appsuite.hostnet.nl/appsuite/"
+  }
+}
