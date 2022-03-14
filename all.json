@@ -784,6 +784,15 @@
   },
   {
     "featured": false,
+    "id": "hostnet",
+    "name": "Hostnet",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/hostnet/icon.svg"
+    }
+  },
+  {
+    "featured": false,
     "id": "hubstaff",
     "name": "HubStaff",
     "version": "1.0.0",
