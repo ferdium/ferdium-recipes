@@ -9053,3 +9053,49 @@ comments {
 .para_menu a.trigger.pilcrow.active {
   filter: grayscale(2) brightness(2);
 }
+.p-workspace__primary_view_footer--float {
+  position: relative;
+  z-index: 200;
+  margin-top: -8px;
+  background: linear-gradient(
+    180deg, rgba(var(--sk_primary_background, 34, 34, 34), 0), rgba(var(--sk_primary_background, 34, 34, 34), 1) 8px);
+}
+.c-wysiwyg_container--composer_ia .c-wysiwyg_container__formatting {
+  background: rgba(var(--sk_foreground_min_solid, 50, 50, 50), 1);
+  cursor: text;
+}
+.p-composer__button--sticky.c-icon_button {
+  color: rgba(var(--sk_primary_foreground, 120, 120, 120), 1);
+  background-color: rgba(var(--sk_foreground_low, 80, 80, 80), .13);
+}
+.p-composer__button--sticky.c-icon_button[aria-pressed=true] {
+  color: rgba(var(--sk_primary_foreground, 180, 180, 180), 1);
+  background-color: rgba(var(--sk_foreground_low, 100, 100, 100), .13);
+}
+.c-basic_container__body {
+  background-color: rgb(25, 25, 25);
+}
+.p-view_header__actions {
+  background: rgba(var(--sk_primary_background, 25, 25, 25), 1);
+}
+.p-avatar_stack--details {
+  color: rgba(var(--sk_foreground_max, 80, 80, 80), .7);
+}
+.p-avatar_stack__avatar {
+  background-color: rgba(var(--sk_primary_background, 34, 34, 34), 1);
+  --saf-0: rgba(var(--sk_primary_background, 34, 34, 34), 1);
+}
+.p-activity_page,
+.p-saved_page {
+  background: rgba(var(--sk_foreground_min_solid, 34, 34, 34), 1);
+}
+.p-activity_page__item_background,
+.p-saved_page__item {
+  background: rgba(var(--sk_primary_background, 25, 25, 25), 1);
+}
+.p-message_pane_input__preview {
+  background-color: rgba(var(--sk_foreground_min_solid,25,25,25),1);
+}
+.p-message_pane_input__preview_subtitle {
+  color: rgba(var(--sk_foreground_max,230,230,230),.7);
+}
