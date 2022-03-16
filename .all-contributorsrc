@@ -258,6 +258,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "alecive",
+      "name": "Alessandro Roncone",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4378663?v=4",
+      "profile": "https://hiro-group.ronc.one",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
