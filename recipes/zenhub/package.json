@@ -6,6 +6,6 @@
   "repository": "https://github.com/mordaroso/recipe-franz-zenhub",
   "config": {
     "hasTeamId": true,
-    "serviceURL": "https://app.zenhub.com/workspace/o/{teamId}/boards"
+    "serviceURL": "https://app.zenhub.com/workspaces/{teamId}/board"
   }
 }
