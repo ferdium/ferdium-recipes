@@ -1,33 +1,16 @@
 module.exports = Ferdi => {
   const getMessages = () => {
-    let count = 0;
-
-    const isNotification = /^\((\d+)\)/.test(document.title);
-
-    /*
-     * Notification case for group chats, workaround by tamas646
-     * see https://github.com/getferdi/ferdi/issues/1113#issuecomment-783409154
-     */
-    if (isNotification) {
-      count = Ferdi.safeParseInt(/^\((\d+)\)/.exec(document.title)[1]);
-    } else {
-      /*
-       * Notification case for direct messages, workaround by manavortex
-       * see https://github.com/getferdi/ferdi/issues/1113#issuecomment-846611765
-       */
-      count = document.querySelectorAll(
-        '._5fx8:not(._569x),._1ht3:not(._569x)',
-      ).length;
-      if (count === 0) {
-        count = document.querySelectorAll(
-          '.pq6dq46d.is6700om.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.fwizqjfa',
-        ).length;
-      }
-      if (count === 0) {
-        // might be obsolete, not sure - never ran into this case
-        count = document.querySelectorAll('[aria-label="Mark as read"]').length;
-      }
-    }
+    let count = Array.from(document.querySelectorAll('.bp9cbjyn.j83agx80.owycx6da:not(.btwxx1t3)'))
+      .map(elem => {
+        if (elem.querySelector('.oajrlxb2.gs1a9yip.g5ia77u1.mtkw9kbi.tlpljxtp.qensuy8j.ppp5ayq2.goun2846.ccm00jje.s44p3ltw.mk2mc5f4.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.rq0escxv.nhd2j8a9.mg4g778l.pfnyh3mw.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.tgvbjcpo.hpfvmrgz.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.l9j0dhe7.i1ao9s8h.esuyzwwr.f1sip0of.du4w35lb.n00je7tq.arfg74bv.qs9ysxi8.k77z8yql.btwxx1t3.abiwlrkh.p8dawk7l.j83agx80.lzcic4wl')) {
+          return 0;
+        }
+        const hasPing = Boolean(elem.querySelector('.pq6dq46d.is6700om.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.fwizqjfa'))
+        const isMuted = Boolean(elem.querySelector('.a8c37x1j.ms05siws.l3qrxjdp.b7h9ocf4.trssfv1o'))
+        return hasPing - isMuted >= 0 ? hasPing - isMuted : 0;
+      })
+      .reduce((prev, curr) => prev + curr);
+    
     /*
      * add count of message requests on top of notification counter
      */
