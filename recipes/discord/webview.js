@@ -42,7 +42,7 @@ module.exports = (Ferdi, settings) => {
           event.preventDefault();
           event.stopPropagation();
           // TODO: Can we send an ipc event 'open-browser-window' to open the child window? (see the slack recipe for how to send an ipc message)
-          // TODO: Can we change the slack recipe to add a clickHandler for screensharing/video calls? (https://github.com/getferdi/ferdi/issues/1697)
+          // TODO: Can we change the slack recipe to add a clickHandler for screensharing/video calls? (https://github.com/ferdium/ferdium-app/issues/1697)
           let win = new Ferdi.BrowserWindow({
             width: 800,
             height: window.innerHeight,

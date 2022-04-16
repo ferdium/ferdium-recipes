@@ -12,7 +12,7 @@ module.exports = Ferdi => {
 
   Ferdi.loop(getMessages);
 
-  // https://github.com/getferdi/recipes/blob/9d715597a600710c20f75412d3dcd8cdb7b3c39e/docs/frontend_api.md#usage-4
+  // https://github.com/ferdium/ferdium-recipes/blob/9d715597a600710c20f75412d3dcd8cdb7b3c39e/docs/frontend_api.md#usage-4
   // Helper that activates DarkReader and injects your darkmode.css at the same time
   Ferdi.handleDarkMode((isEnabled, helpers) => {
     if (isEnabled) {

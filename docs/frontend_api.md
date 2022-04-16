@@ -35,7 +35,7 @@
 
 # Frontend API
 
-Provides a set of helper functions to integrate the service into [Ferdi](https://getferdi.com).
+Provides a set of helper functions to integrate the service into [Ferdi](https://ferdium.org).
 
 ## Ferdi Class Methods
 

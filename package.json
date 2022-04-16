@@ -14,18 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/getferdi/recipes.git"
+    "url": "git+https://github.com/ferdium/ferdium-recipes.git"
   },
   "keywords": [
     "ferdi",
     "recipes"
   ],
-  "author": "The Ferdi Team <hello@getferdi.com>",
+  "author": "Ferdium Contributors",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/getferdi/recipes/issues"
+    "url": "https://github.com/ferdium/ferdium-recipes/issues"
   },
-  "homepage": "https://github.com/getferdi/recipes#readme",
+  "homepage": "https://github.com/ferdium/ferdium-recipes#readme",
   "devDependencies": {
     "@types/targz": "1.0.1",
     "eslint": "8.3.0",

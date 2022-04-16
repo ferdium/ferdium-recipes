@@ -1,6 +1,6 @@
 # Integration Config
 
-A [Ferdi](https://getferdi.com) recipe is a node module. In order to learn more about node modules and their configuration check the official [Node.js documentation](https://nodejs.org/api/modules.html) / [npm package.json documentation](https://docs.npmjs.com/files/package.json).
+A [Ferdi](https://ferdium.org) recipe is a node module. In order to learn more about node modules and their configuration check the official [Node.js documentation](https://nodejs.org/api/modules.html) / [npm package.json documentation](https://docs.npmjs.com/files/package.json).
 
 ## Table of Contents
 
@@ -83,4 +83,4 @@ Services like Outlook differentiate between favorites vs other folders. Setting 
 
 ## Example
 
-The [mattermost configuration](https://github.com/getferdi/recipes/blob/master/recipes/mattermost/package.json) is a typical example.
+The [mattermost configuration](https://github.com/ferdium/ferdium-recipes/blob/master/recipes/mattermost/package.json) is a typical example.

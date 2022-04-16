@@ -1,6 +1,6 @@
 # Backend API
 
-Provides a set of helper functions to integrate the recipe into [Ferdi](https://getferdi.com).
+Provides a set of helper functions to integrate the recipe into [Ferdi](https://ferdium.org).
 
 ## Ferdi Backend Class Methods
 
