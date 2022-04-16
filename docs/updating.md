@@ -7,9 +7,9 @@ If you want to improve or update an existing recipe, please follow this guide.
 We highly suggest that you implement and test your updates to the recipe inside Ferdi before implementing them into the recipe repository. This will save you time on debugging and repackaging the recipe later.
 
 You can find the recipe source Ferdi uses at:
-  * Mac: `~/Library/Application Support/Ferdi/recipes/<recipe id>/`
-  * Windows: `%appdata%/Ferdi/recipes/<recipe id>/`
-  * Linux: `~/.config/Ferdi/recipes/<recipe id>`
+  * Mac: `~/Library/Application Support/Ferdium/recipes/<recipe id>/`
+  * Windows: `%appdata%/Ferdium/recipes/<recipe id>/`
+  * Linux: `~/.config/Ferdium/recipes/<recipe id>`
 
 > If you can't find the recipe's folder, please make sure that you have created a service inside Ferdi with that recipe - otherwise Ferdi will not load it into the folder
 
@@ -17,7 +17,7 @@ After changing the files in that folder, you can reload the service inside Ferdi
 
 ## 2. Setting up the recipe repository
 
-Simply fork https://github.com/getferdi/recipes. You may also want to clone the repository to your computer to edit it locally.
+Simply fork https://github.com/ferdium/ferdium-recipes. You may also want to clone the repository to your computer to edit it locally.
 
 ## 3. Updating the recipe inside the repository
 
@@ -33,4 +33,4 @@ Ferdi uses this version to determine if it should update the local copy of the r
 
 This might be the __most important step__ of this guide. You'll need to run the `pnpm run package` command to ensure that all validation checks are run.
 
-## 6. Commit your changes and create a PR to <https://github.com/getferdi/recipes>
+## 6. Commit your changes and create a PR to <https://github.com/ferdium/ferdium-recipes>

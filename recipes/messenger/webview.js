@@ -6,14 +6,14 @@ module.exports = Ferdi => {
 
     /*
      * Notification case for group chats, workaround by tamas646
-     * see https://github.com/getferdi/ferdi/issues/1113#issuecomment-783409154
+     * see https://github.com/ferdium/ferdium-app/issues/1113#issuecomment-783409154
      */
     if (isNotification) {
       count = Ferdi.safeParseInt(/^\((\d+)\)/.exec(document.title)[1]);
     } else {
       /*
        * Notification case for direct messages, workaround by manavortex
-       * see https://github.com/getferdi/ferdi/issues/1113#issuecomment-846611765
+       * see https://github.com/ferdium/ferdium-app/issues/1113#issuecomment-846611765
        */
       count = document.querySelectorAll(
         '._5fx8:not(._569x),._1ht3:not(._569x)',

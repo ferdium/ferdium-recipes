@@ -6,9 +6,9 @@ A Ferdi recipe is basically nothing else than a node module and is currently ini
 
 > ℹ️ New to Ferdi recipes and Electron? Then we recommend you read Jake Lee's ["Super simple guide to adding a new Ferdi service recipe"](https://blog.jakelee.co.uk/super-simple-guide-to-adding-a-new-ferdi-service-recipe/) which gives you an easy step-by-step guide on how to create and publish your recipe!
 
-> ℹ️ If you have any problems packaging your recipes, if you are inexperienced with the tools used or have any other problems, we are here to help! Just open a new issue at https://github.com/getferdi/recipes/issues/new and we can help you develop, test and publish your recipe
+> ℹ️ If you have any problems packaging your recipes, if you are inexperienced with the tools used or have any other problems, we are here to help! Just open a new issue at https://github.com/ferdium/ferdium-recipes/issues/new and we can help you develop, test and publish your recipe
 
-> If you want to update an existing recipe, please refer to [updating.md](https://github.com/getferdi/recipes/blob/master/docs/updating.md) instead
+> If you want to update an existing recipe, please refer to [updating.md](https://github.com/ferdium/ferdium-recipes/blob/master/docs/updating.md) instead
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@ We have also created a nice script that already does 50% of the work for you - y
 ## Create a recipe
 
 1. Fork this repository on GitHub. You can do this by clicking the "Fork" button in the top right corner
-2. Clone your forked repository. Normally, you can do this by running `git clone https://github.com/<Your GitHub Username>/recipes.git` in your terminal. You may also use a Git GUI or the GitHub Website for this.
+2. Clone your forked repository. Normally, you can do this by running `git clone https://github.com/<Your GitHub Username>/ferdium-recipes.git` in your terminal. You may also use a Git GUI or the GitHub Website for this.
 3. (Optional, if you want to use our creation script) Install its dependencies via the terminal:
 
 ```Bash
@@ -212,7 +212,7 @@ In order to debug your service integration, open Ferdi and use the shortcut `Cmd
 
 ## Publishing
 
-Ferdi uses its recipe repository at <https://github.com/getferdi/recipes> to publish recipes to all clients.
+Ferdi uses its recipe repository at <https://github.com/ferdium/ferdium-recipes> to publish recipes to all clients.
 
 Publishing your recipes to Ferdi is super easy! When you used our recipe creation script, we have created a folder for your recipe inside Ferdi's internal folders (the one that got automatically opened after you ran our script).
 

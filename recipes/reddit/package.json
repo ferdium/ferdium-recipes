@@ -3,7 +3,7 @@
   "name": "Reddit",
   "version": "1.1.2",
   "license": "MIT",
-  "repository": "https://github.com/getferdi/recipes",
+  "repository": "https://github.com/ferdium/ferdium-recipes",
   "config": {
     "hasIndirectMessages": true,
     "serviceURL": "https://www.reddit.com/"

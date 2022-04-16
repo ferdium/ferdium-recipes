@@ -89,6 +89,6 @@ const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only cont
 
 What's next?
 - Make sure you restart Ferdi in order for the recipe to show up
-- Customise "webview.js", "package.json" and "icon.svg" (see https://github.com/getferdi/recipes/blob/master/docs/integration.md#recipe-structure)
-- Publish your recipe (see https://github.com/getferdi/recipes/blob/master/docs/integration.md#publishing)`);
+- Customise "webview.js", "package.json" and "icon.svg" (see https://github.com/ferdium/ferdium-recipes/blob/master/docs/integration.md#recipe-structure)
+- Publish your recipe (see https://github.com/ferdium/ferdium-recipes/blob/master/docs/integration.md#publishing)`);
 })();

@@ -14,8 +14,8 @@ Icons were sourced from <https://github.com/nextcloud/tasks/news/master/img> (`f
 
 Ferdi:
 
-- [Ferdi](https://getferdi.com/)
-- [Ferdi recipes](https://github.com/getferdi/recipes)
+- [Ferdi](https://ferdium.org/)
+- [Ferdi recipes](https://github.com/ferdium/ferdium-recipes)
 
 Nextcloud:
 

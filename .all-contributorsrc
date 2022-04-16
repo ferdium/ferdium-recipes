@@ -279,8 +279,8 @@
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "recipes",
-  "projectOwner": "getferdi",
+  "projectName": "ferdium-recipes",
+  "projectOwner": "ferdium",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true

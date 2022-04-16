@@ -3,7 +3,7 @@
   "name": "Twitter",
   "version": "1.2.1",
   "license": "MIT",
-  "repository": "https://github.com/getferdi/recipes",
+  "repository": "https://github.com/ferdium/ferdium-recipes",
   "config": {
     "serviceURL": "https://twitter.com",
     "hasNotificationSound": true

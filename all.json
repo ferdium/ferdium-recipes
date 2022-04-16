@@ -333,7 +333,7 @@
     "featured": true,
     "id": "discord",
     "name": "Discord",
-    "version": "1.4.6",
+    "version": "1.5.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/discord/icon.svg"
     }
@@ -786,7 +786,7 @@
     "featured": false,
     "id": "hostnet",
     "name": "Hostnet",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/hostnet/icon.svg"
     }
@@ -858,7 +858,7 @@
     "featured": false,
     "id": "instagram",
     "name": "Instagram",
-    "version": "2.2.5",
+    "version": "2.3.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/instagram/icon.svg"
     }
@@ -1011,7 +1011,7 @@
     "featured": true,
     "id": "messenger",
     "name": "Messenger",
-    "version": "1.3.3",
+    "version": "1.4.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/messenger/icon.svg"
     }
@@ -1158,7 +1158,7 @@
     "featured": false,
     "id": "nextcloud-news",
     "name": "Nextcloud News",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/nextcloud-news/icon.svg"
     }
@@ -1524,7 +1524,7 @@
     "featured": true,
     "id": "skype",
     "name": "Skype",
-    "version": "3.2.4",
+    "version": "3.3.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/skype/icon.svg"
     }
@@ -1761,6 +1761,15 @@
     "version": "1.2.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/trello/icon.svg"
+    }
+  },
+  {
+    "featured": false,
+    "id": "tt-rss",
+    "name": "Tiny Tiny RSS",
+    "version": "1.0.0",
+    "icons": {
+      "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/tt-rss/icon.svg"
     }
   },
   {
@@ -2046,7 +2055,7 @@
     "featured": false,
     "id": "zenhub",
     "name": "ZenHub",
-    "version": "0.2.1",
+    "version": "1.0.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/zenhub/icon.svg"
     }
@@ -2091,7 +2100,7 @@
     "featured": false,
     "id": "zoom",
     "name": "Zoom",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/zoom/icon.svg"
     }
