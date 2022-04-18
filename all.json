@@ -333,7 +333,7 @@
     "featured": true,
     "id": "discord",
     "name": "Discord",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/discord/icon.svg"
     }
@@ -1524,7 +1524,7 @@
     "featured": true,
     "id": "skype",
     "name": "Skype",
-    "version": "3.3.0",
+    "version": "3.3.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/skype/icon.svg"
     }
@@ -2100,7 +2100,7 @@
     "featured": false,
     "id": "zoom",
     "name": "Zoom",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "icons": {
       "svg": "https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/zoom/icon.svg"
     }

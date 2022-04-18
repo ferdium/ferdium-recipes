@@ -52,7 +52,6 @@ module.exports = (Ferdi, settings) => {
               nativeWindowOpen: true,
               // TODO: Aren't these needed here?
               // contextIsolation: false,
-              // enableRemoteModule: true,
             },
           });
           win.loadURL(url);
