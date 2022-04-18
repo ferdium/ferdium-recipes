@@ -1,9 +1,9 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
-    Ferdi.setBadge(
+    Ferdium.setBadge(
       document.querySelector('#unread_count').textContent.replace(/\s/g, ''),
     );
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

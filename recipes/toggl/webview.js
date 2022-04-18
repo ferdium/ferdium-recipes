@@ -2,10 +2,10 @@ const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
     const updateBadge = function updateBadge() {
-        Ferdi.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
+        Ferdium.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
     };
 
-    Ferdi.loop(updateBadge);
+    Ferdium.loop(updateBadge);
 };

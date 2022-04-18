@@ -4,17 +4,17 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const inbox = document.querySelector(
       '.v-MailboxSource--inbox .v-MailboxSource-badge',
     );
 
-    const messages = inbox ? Ferdi.safeParseInt(inbox.textContent) : 0;
-    Ferdi.setBadge(messages);
+    const messages = inbox ? Ferdium.safeParseInt(inbox.textContent) : 0;
+    Ferdium.setBadge(messages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
+  Ferdium.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
 };

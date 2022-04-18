@@ -1,7 +1,7 @@
 {
   "id": "nextcloud-calendar",
   "name": "Nextcloud Calendar",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "license": "MIT",
   "repository": "https://github.com/eandersons/ferdi-recipe-nextcloud-calendar",
   "config": {

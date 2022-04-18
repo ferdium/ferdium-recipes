@@ -1,13 +1,13 @@
-module.exports = (Ferdi) => class Messenger extends Ferdi {
+module.exports = (Ferdium) => class Messenger extends Ferdium {
   overrideUserAgent() {
-    return window.navigator.userAgent.replace(/(Ferdi|Electron)\/\S+ \([^)]+\)/g, '').trim();
+    return window.navigator.userAgent.replace(/(Ferdium|Electron)\/\S+ \([^)]+\)/g, '').trim();
   }
 
   modifyRequestHeaders() {
     return [
       {
         headers: {
-          'user-agent': window.navigator.userAgent.replace(/(Ferdi|Electron)\/\S+ \([^)]+\)/g, '').trim(),
+          'user-agent': window.navigator.userAgent.replace(/(Ferdium|Electron)\/\S+ \([^)]+\)/g, '').trim(),
         },
         requestFilters: {
           urls: ['*://*/*'],

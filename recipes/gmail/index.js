@@ -1,1 +1,1 @@
-module.exports = Ferdi => class Gmail extends Ferdi {};
+module.exports = Ferdium => Ferdium;

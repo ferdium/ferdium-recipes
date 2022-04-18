@@ -1,5 +1,5 @@
-module.exports = Ferdi => class Outlook extends Ferdi {
+module.exports = Ferdium => class Outlook extends Ferdium {
   overrideUserAgent() {
-    return window.navigator.userAgent.replace(/(Ferdi|Electron)\/\S+ \([^)]+\)/g, '').trim();
+    return window.navigator.userAgent.replace(/(Ferdium|Electron)\/\S+ \([^)]+\)/g, '').trim();
   }
 };

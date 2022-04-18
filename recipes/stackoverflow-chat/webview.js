@@ -1,13 +1,13 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const unreadSpan = document.querySelector(
       'span.flag-count.message-count.unread-count',
     );
     let directCount = 0;
     if (unreadSpan) {
-      directCount = Ferdi.safeParseInt(unreadSpan.textContent);
+      directCount = Ferdium.safeParseInt(unreadSpan.textContent);
     }
-    Ferdi.setBadge(directCount);
+    Ferdium.setBadge(directCount);
   };
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

@@ -1,5 +1,5 @@
-module.exports = Ferdi => class Instagram extends Ferdi {
+module.exports = Ferdium => class Instagram extends Ferdium {
   overrideUserAgent() {
-    return window.navigator.userAgent.replace(/(Ferdi|Electron)\/\S+ \([^)]+\)/g, '').trim();
+    return window.navigator.userAgent.replace(/(Ferdium|Electron)\/\S+ \([^)]+\)/g, '').trim();
   }
 };

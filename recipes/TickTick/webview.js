@@ -1,10 +1,10 @@
-module.exports = (Ferdi) => {
+module.exports = (Ferdium) => {
   const getMessages = () => {
     // all overdue items are being counted
     const count = document.querySelectorAll('.duedate-overdue').length;
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

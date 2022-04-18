@@ -1,1 +1,1 @@
-module.exports = Ferdi => class AmazonWebServices extends Ferdi {};
+module.exports = Ferdium => Ferdium;

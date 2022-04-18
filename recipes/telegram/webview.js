@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const telegramVersion = document
     .querySelector('meta[name="application-name"]')
     ?.getAttribute('content');
@@ -26,14 +26,14 @@ module.exports = Ferdi => {
     );
 
     for (const badge of directCountSelector) {
-      directCount += Ferdi.safeParseInt(badge.textContent);
+      directCount += Ferdium.safeParseInt(badge.textContent);
     }
 
     for (const badge of groupCountSelector) {
-      groupCount += Ferdi.safeParseInt(badge.textContent);
+      groupCount += Ferdium.safeParseInt(badge.textContent);
     }
 
-    Ferdi.setBadge(directCount, groupCount);
+    Ferdium.setBadge(directCount, groupCount);
   };
 
   const webKCount = () => {
@@ -46,7 +46,7 @@ module.exports = Ferdi => {
       const subtitleBadge = element.querySelector('.dialog-subtitle-badge');
 
       if (subtitleBadge) {
-        const parsedValue = Ferdi.safeParseInt(subtitleBadge.textContent);
+        const parsedValue = Ferdium.safeParseInt(subtitleBadge.textContent);
 
         if (element.dataset.peerId > 0) {
           directCount += parsedValue;
@@ -56,7 +56,7 @@ module.exports = Ferdi => {
       }
     }
 
-    Ferdi.setBadge(directCount, groupCount);
+    Ferdium.setBadge(directCount, groupCount);
   };
 
   const getMessages = () => {
@@ -76,7 +76,7 @@ module.exports = Ferdi => {
       element = document.querySelector('.top .peer-title');
     }
 
-    Ferdi.setDialogTitle(element ? element.textContent : '');
+    Ferdium.setDialogTitle(element ? element.textContent : '');
   };
 
   const loopFunc = () => {
@@ -84,7 +84,7 @@ module.exports = Ferdi => {
     getActiveDialogTitle();
   };
 
-  Ferdi.loop(loopFunc);
+  Ferdium.loop(loopFunc);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

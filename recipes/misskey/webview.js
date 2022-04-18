@@ -1,11 +1,11 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
-    // check notification badge for Ferdi badge
+    // check notification badge for Ferdium badge
     let hasNotification = !!document.querySelector(
       '#app div.notifications > button > i.circle',
     );
-    Ferdi.setBadge(0, hasNotification ? 1 : 0);
+    Ferdium.setBadge(0, hasNotification ? 1 : 0);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

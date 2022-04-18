@@ -1,7 +1,7 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   function parseQuery(query) {
     const el = document.querySelector(query);
-    return el && Ferdi.safeParseInt(el.textContent);
+    return el && Ferdium.safeParseInt(el.textContent);
   }
 
   const getMessages = () => {
@@ -9,7 +9,7 @@ module.exports = Ferdi => {
     let count;
 
     if (el && el.textContent) {
-      count = Ferdi.safeParseInt(el.textContent.replace(/[ ()]/gi, ''));
+      count = Ferdium.safeParseInt(el.textContent.replace(/[ ()]/gi, ''));
     } else {
       const count_messages = parseQuery(
         'gv-nav-tab[tooltip="Messages"] div[aria-label="Unread count"]',
@@ -23,8 +23,8 @@ module.exports = Ferdi => {
       count = count_messages + count_calls + count_voicemails;
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

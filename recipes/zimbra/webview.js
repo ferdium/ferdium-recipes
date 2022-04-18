@@ -1,9 +1,9 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const { title } = document;
     const regex = /\d+/;
-    Ferdi.setBadge(regex.test(title) ? Number(regex.exec(title)[0]) : 0);
+    Ferdium.setBadge(regex.test(title) ? Number(regex.exec(title)[0]) : 0);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

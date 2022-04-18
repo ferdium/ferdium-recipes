@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getNotifications = function getNotifications() {
     let count = 0;
 
@@ -13,11 +13,11 @@ module.exports = Ferdi => {
 
     for (const element of elements) {
       if (element !== null) {
-        count += Ferdi.safeParseInt(element.textContent);
+        count += Ferdium.safeParseInt(element.textContent);
       }
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
   const getActiveDialogTitle = () => {
@@ -30,7 +30,7 @@ module.exports = Ferdi => {
       ),
     ].find(Boolean);
 
-    Ferdi.setDialogTitle(element ? element.textContent : null);
+    Ferdium.setDialogTitle(element ? element.textContent : null);
   };
 
   const loopFunc = () => {
@@ -38,5 +38,5 @@ module.exports = Ferdi => {
     getActiveDialogTitle();
   };
 
-  Ferdi.loop(loopFunc);
+  Ferdium.loop(loopFunc);
 };

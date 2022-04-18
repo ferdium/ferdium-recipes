@@ -1,3 +1,3 @@
-# FreshRSS for Ferdi
+# FreshRSS for Ferdium
 
-Unofficial Ferdi recipe for [FeshRSS](https://freshrss.org/)
+Unofficial Ferdium recipe for [FeshRSS](https://freshrss.org/)

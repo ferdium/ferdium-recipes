@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   // Regular expression for (*) or (1), will extract the asterisk or the number
   const titleRegEx = /^\(([\d*])\)/;
   const getMessages = function unreadCount() {
@@ -14,8 +14,8 @@ module.exports = Ferdi => {
       }
     }
 
-    Ferdi.setBadge(directCount, indirectCount);
+    Ferdium.setBadge(directCount, indirectCount);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

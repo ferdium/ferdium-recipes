@@ -1,9 +1,9 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const count = document.querySelector('.ws-tree-node-badge');
     const countText = count ? count.textContent : null;
-    Ferdi.setBadge(count && countText ? Number(countText) : 0);
+    Ferdium.setBadge(count && countText ? Number(countText) : 0);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

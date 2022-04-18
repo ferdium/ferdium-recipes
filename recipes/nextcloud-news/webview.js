@@ -4,17 +4,17 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const selector = document.querySelector(
       '.subscriptions-feed .app-navigation-entry-utils-counter',
     );
-    const direct = selector ? Ferdi.safeParseInt(selector.textContent) : 0;
+    const direct = selector ? Ferdium.safeParseInt(selector.textContent) : 0;
 
-    Ferdi.setBadge(direct);
+    Ferdium.setBadge(direct);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

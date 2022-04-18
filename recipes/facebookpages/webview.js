@@ -1,16 +1,16 @@
-module.exports = (Ferdi, options) => {
+module.exports = (Ferdium, options) => {
   const getMessages = () => {
     let messages = 0;
     const element = document.querySelector('[data-testid="message_count"] span');
 
     if (element) {
-      messages = Ferdi.safeParseInt(element.textContent);
+      messages = Ferdium.safeParseInt(element.textContent);
     }
 
-    Ferdi.setBadge(messages);
+    Ferdium.setBadge(messages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   setTimeout(() => {
     if (document.body && !document.body.classList.contains('UIPage_LoggedOut')) {

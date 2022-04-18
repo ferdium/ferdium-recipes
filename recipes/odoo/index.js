@@ -1,1 +1,1 @@
-module.exports = Ferdi => class Odoo extends Ferdi {};
+module.exports = Ferdium => Ferdium;

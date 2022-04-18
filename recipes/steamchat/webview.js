@@ -1,18 +1,18 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     // get new msg count
     let count = 0;
     const counters = document.querySelectorAll('[class*=FriendMessageCount]');
     Array.prototype.filter.call(counters, countValue => {
       if (countValue) {
-        count += Ferdi.safeParseInt(countValue.textContent);
+        count += Ferdium.safeParseInt(countValue.textContent);
       }
     });
 
     const indirectMessages = document.querySelectorAll(
       '[class*=ChatUnreadMessageIndicator]',
     ).length;
-    Ferdi.setBadge(count, indirectMessages);
+    Ferdium.setBadge(count, indirectMessages);
 
     // force scroll to bottom of chat window
     const chatBoxes = document.querySelectorAll('.chat_dialog');
@@ -28,7 +28,7 @@ module.exports = Ferdi => {
     }
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   document.addEventListener(
     'click',
@@ -38,7 +38,7 @@ module.exports = Ferdi => {
       if (link && link.getAttribute('target') === '_top') {
         event.preventDefault();
         event.stopPropagation();
-        Ferdi.openNewWindow(link.getAttribute('href'));
+        Ferdium.openNewWindow(link.getAttribute('href'));
       }
     },
     true,

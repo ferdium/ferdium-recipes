@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let homework = 0;
     const upcomingAssignment = document.querySelectorAll('.hrUpcomingAssignmentGroup');
@@ -8,8 +8,8 @@ module.exports = Ferdi => {
         homework += upcomingAssignment[i].childElementCount;
       }
     }
-    Ferdi.setBadge(homework);
+    Ferdium.setBadge(homework);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

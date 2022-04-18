@@ -4,19 +4,19 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const ele = document.querySelectorAll(
       '.larkc-badge-count.navbarMenu-badge',
     );
     if (ele.length === 0) {
-      Ferdi.setBadge(0);
+      Ferdium.setBadge(0);
       return;
     }
-    Ferdi.setBadge(ele[0].textContent);
+    Ferdium.setBadge(ele[0].textContent);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

@@ -1,10 +1,10 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const getNotificationButton = document.querySelector(
       '#notifications_button',
     );
     let hasNotification = getNotificationButton.classList.contains('pp-active');
-    Ferdi.setBadge(0, hasNotification ? 1 : 0);
+    Ferdium.setBadge(0, hasNotification ? 1 : 0);
   };
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

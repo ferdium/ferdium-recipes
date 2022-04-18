@@ -1,12 +1,12 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const notifications = document.querySelector(
       '.c-notifications-dropdown__count',
     );
     if (notifications) {
-      Ferdi.setBadge(notifications.textContent);
+      Ferdium.setBadge(notifications.textContent);
     }
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

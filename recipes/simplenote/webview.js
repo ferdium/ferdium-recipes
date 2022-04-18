@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let count = 0;
 
@@ -11,12 +11,12 @@ module.exports = Ferdi => {
         '.nav-item--messaging .nav-item__badge-count',
       );
       if (element) {
-        count = Ferdi.safeParseInt(element.textContent);
+        count = Ferdium.safeParseInt(element.textContent);
       }
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

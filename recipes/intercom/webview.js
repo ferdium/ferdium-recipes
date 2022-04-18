@@ -1,12 +1,12 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
-    const numMessages = Ferdi.safeParseInt(
+    const numMessages = Ferdium.safeParseInt(
       document.querySelector(
         '.left-nav [data-content="Inbox"] .unread__container .unread',
       ).textContent,
     );
-    Ferdi.setBadge(numMessages);
+    Ferdium.setBadge(numMessages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

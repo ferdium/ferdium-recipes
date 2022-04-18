@@ -4,29 +4,29 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let messages = 0;
     const badge = document.querySelector(
       '.activity-badge.dot-activity-badge .activity-badge',
     );
     if (badge) {
-      messages = Ferdi.safeParseInt(badge.textContent);
+      messages = Ferdium.safeParseInt(badge.textContent);
     }
 
     const indirectMessages = document.querySelectorAll(
       '[class*=channel-anchor][class*=ts-unread-channel]',
     ).length;
 
-    Ferdi.setBadge(messages, indirectMessages);
+    Ferdium.setBadge(messages, indirectMessages);
   };
 
   window.addEventListener('beforeunload', async () => {
-    Ferdi.releaseServiceWorkers();
+    Ferdium.releaseServiceWorkers();
   });
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
-  Ferdi.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
 };

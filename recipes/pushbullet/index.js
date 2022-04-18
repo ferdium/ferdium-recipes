@@ -1,5 +1,5 @@
-module.exports = Ferdi =>
-  class PushBullet extends Ferdi {
+module.exports = Ferdium =>
+  class PushBullet extends Ferdium {
     constructor(...args) {
       let _temp;
 

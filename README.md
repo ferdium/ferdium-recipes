@@ -16,13 +16,13 @@
  -->
 </p>
 
-> 🍰 Recipes encapsulate your favourite apps into Ferdi for unified notifications handling and more
+> 🍰 Recipes encapsulate your favourite apps into Ferdium for unified notifications handling and more
 
-Recipes are small scripts that are responsible for providing the connection between your services (e.g. WhatsApp, Gmail or Slack) and Ferdi. It provides Ferdi information like the number of current notifications, handles enabling dark mode and may otherwise improve your experience with the service.
+Recipes are small scripts that are responsible for providing the connection between your services (e.g. WhatsApp, Gmail or Slack) and Ferdium. It provides Ferdium information like the number of current notifications, handles enabling dark mode and may otherwise improve your experience with the service.
 
 ## Creating and adding your own recipes
 
-* [Overview / How to create a Ferdi integration](docs/integration.md)
+* [Overview / How to create a Ferdium integration](docs/integration.md)
 * [How to update/change recipes](docs/updating.md)
 * [Configuration (package.json)](docs/configuration.md)
 * [Frontend API (webview.js)](docs/frontend_api.md)

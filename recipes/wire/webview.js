@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let direct = 0;
     let indirect = 0;
@@ -9,7 +9,7 @@ module.exports = Ferdi => {
     );
     if (conversationElems) {
       for (const conversationElem of conversationElems) {
-        direct += Ferdi.safeParseInt(conversationElem.textContent);
+        direct += Ferdium.safeParseInt(conversationElem.textContent);
       }
     }
 
@@ -21,7 +21,7 @@ module.exports = Ferdi => {
       const matches =
         pendingElem.textContent && pendingElem.textContent.match(/^([1-9]\d*)/);
       if (matches && matches.length > 1) {
-        indirect += Ferdi.safeParseInt(matches[1]);
+        indirect += Ferdium.safeParseInt(matches[1]);
       }
     }
 
@@ -32,8 +32,8 @@ module.exports = Ferdi => {
     // 	direct = matches[1];
     // }
 
-    Ferdi.setBadge(direct, indirect);
+    Ferdium.setBadge(direct, indirect);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = (Ferdi, settings) => {
+module.exports = (Ferdium, settings) => {
   const getMessages = () => {
     let directCount = 0;
     const directCountPerServer = document.querySelectorAll(
@@ -12,19 +12,19 @@ module.exports = (Ferdi, settings) => {
     );
 
     for (const directCountBadge of directCountPerServer) {
-      directCount += Ferdi.safeParseInt(directCountBadge.textContent);
+      directCount += Ferdium.safeParseInt(directCountBadge.textContent);
     }
 
     const indirectCountPerServer = document.querySelectorAll(
       '[class*="modeUnread-"]',
     ).length;
 
-    Ferdi.setBadge(directCount, indirectCountPerServer);
+    Ferdium.setBadge(directCount, indirectCountPerServer);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 
   // TODO: This whole block is duplicated between the 'discord' and 'skype' recipes - reuse
   document.addEventListener(
@@ -43,7 +43,7 @@ module.exports = (Ferdi, settings) => {
           event.stopPropagation();
           // TODO: Can we send an ipc event 'open-browser-window' to open the child window? (see the slack recipe for how to send an ipc message)
           // TODO: Can we change the slack recipe to add a clickHandler for screensharing/video calls? (https://github.com/ferdium/ferdium-app/issues/1697)
-          let win = new Ferdi.BrowserWindow({
+          let win = new Ferdium.BrowserWindow({
             width: 800,
             height: window.innerHeight,
             minWidth: 600,

@@ -1,13 +1,13 @@
-module.exports = (Ferdi) => {
+module.exports = (Ferdium) => {
   const getMessages = () => {
     const notificationBadge = document.querySelector(
       ".siteHeader__topLevelItem--profileIcon .headerPersonalNav .modalTrigger .headerPersonalNav__icon .headerPersonalNav__flag"
     );
     let notification = notificationBadge
-      ? Ferdi.safeParseInt(notificationBadge.textContent)
+      ? Ferdium.safeParseInt(notificationBadge.textContent)
       : 0;
 
-    Ferdi.setBadge(notification);
+    Ferdium.setBadge(notification);
   };
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

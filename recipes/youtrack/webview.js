@@ -1,8 +1,8 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const unread = document.querySelectorAll('.header__bell-wrapper_unread');
-    Ferdi.setBadge(unread.length > 0 ? 1 : 0);
+    Ferdium.setBadge(unread.length > 0 ? 1 : 0);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

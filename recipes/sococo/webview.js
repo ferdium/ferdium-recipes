@@ -1,12 +1,12 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let indirect = document.querySelectorAll('.new-messages');
     let direct = 0;
     for (const badge of document.querySelectorAll('.people-pane .badge')) {
-      direct += Ferdi.safeParseInt(badge.textContent);
+      direct += Ferdium.safeParseInt(badge.textContent);
     }
-    Ferdi.setBadge(direct, indirect);
+    Ferdium.setBadge(direct, indirect);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

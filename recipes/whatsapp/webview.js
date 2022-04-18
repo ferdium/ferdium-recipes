@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let count = 0;
     let indirectCount = 0;
@@ -18,7 +18,7 @@ module.exports = Ferdi => {
 
     const unreadSpans = parentChatElem.querySelectorAll('span[aria-label]');
     for (const unreadElem of unreadSpans) {
-      const countValue = Ferdi.safeParseInt(unreadElem.textContent);
+      const countValue = Ferdium.safeParseInt(unreadElem.textContent);
       if (countValue > 0) {
         if (
           !unreadElem.parentNode.previousSibling ||
@@ -33,13 +33,13 @@ module.exports = Ferdi => {
       }
     }
 
-    Ferdi.setBadge(count, indirectCount);
+    Ferdium.setBadge(count, indirectCount);
   };
 
   const getActiveDialogTitle = () => {
     const element = document.querySelector('header .emoji-texttt');
 
-    Ferdi.setDialogTitle(element ? element.textContent : '');
+    Ferdium.setDialogTitle(element ? element.textContent : '');
   };
 
   const loopFunc = () => {
@@ -48,10 +48,10 @@ module.exports = Ferdi => {
   };
 
   window.addEventListener('beforeunload', async () => {
-    Ferdi.releaseServiceWorkers();
+    Ferdium.releaseServiceWorkers();
   });
 
-  Ferdi.loop(loopFunc);
+  Ferdium.loop(loopFunc);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

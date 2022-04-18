@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let direct = 0;
 
@@ -8,17 +8,17 @@ module.exports = Ferdi => {
       '[data-testid=AppTabBar_Notifications_Link] div div div',
     );
     if (notificationsElement) {
-      direct += Ferdi.safeParseInt(notificationsElement.textContent);
+      direct += Ferdium.safeParseInt(notificationsElement.textContent);
     }
     const DMElement = document.querySelector(
       '[data-testid=AppTabBar_DirectMessage_Link] div div div',
     );
     if (DMElement) {
-      direct += Ferdi.safeParseInt(DMElement.textContent);
+      direct += Ferdium.safeParseInt(DMElement.textContent);
     }
 
-    Ferdi.setBadge(direct);
+    Ferdium.setBadge(direct);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

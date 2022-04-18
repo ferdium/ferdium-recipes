@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let count = 0;
 
@@ -9,7 +9,7 @@ module.exports = Ferdi => {
      * see https://github.com/ferdium/ferdium-app/issues/1113#issuecomment-783409154
      */
     if (isNotification) {
-      count = Ferdi.safeParseInt(/^\((\d+)\)/.exec(document.title)[1]);
+      count = Ferdium.safeParseInt(/^\((\d+)\)/.exec(document.title)[1]);
     } else {
       /*
        * Notification case for direct messages, workaround by manavortex
@@ -33,13 +33,13 @@ module.exports = Ferdi => {
      */
     const messageRequestsElement = document.querySelector('._5nxf');
     if (messageRequestsElement) {
-      count += Ferdi.safeParseInt(messageRequestsElement.textContent);
+      count += Ferdium.safeParseInt(messageRequestsElement.textContent);
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   localStorage.setItem(
     '_cs_desktopNotifsEnabled',
@@ -49,8 +49,8 @@ module.exports = Ferdi => {
     }),
   );
 
-  if (typeof Ferdi.onNotify === 'function') {
-    Ferdi.onNotify(notification => {
+  if (typeof Ferdium.onNotify === 'function') {
+    Ferdium.onNotify(notification => {
       if (typeof notification.title !== 'string') {
         notification.title =
           ((notification.title.props || {}).content || [])[0] || 'Messenger';

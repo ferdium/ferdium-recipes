@@ -1,1 +1,1 @@
-module.exports = Ferdi => class gitlab extends Ferdi {};
+module.exports = Ferdium => Ferdium;

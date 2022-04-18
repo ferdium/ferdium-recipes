@@ -11,20 +11,20 @@ const reload = EventType =>
     }
   });
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getUnread = () => {
     const nodes = document.querySelectorAll('.giraffe-hierarchy-node-counter');
     let counter = 0;
 
     for (const node of nodes) {
-      counter += Ferdi.safeParseInt(node.textContent);
+      counter += Ferdium.safeParseInt(node.textContent);
     }
 
-    Ferdi.setBadge(counter);
+    Ferdium.setBadge(counter);
   };
 
   if (!window.location.pathname.includes('auth')) {
-    Ferdi.loop(getUnread);
+    Ferdium.loop(getUnread);
 
     window.setInterval(() => {
       reload('click');

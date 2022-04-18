@@ -1,7 +1,7 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
-    const allMessages = Ferdi.safeParseInt(document.querySelector('.team-counter').textContent);
-    Ferdi.setBadge(allMessages);
+    const allMessages = Ferdium.safeParseInt(document.querySelector('.team-counter').textContent);
+    Ferdium.setBadge(allMessages);
   };
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

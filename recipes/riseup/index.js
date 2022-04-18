@@ -1,1 +1,1 @@
-module.exports = Ferdi => class riseupnet extends Ferdi {};
+module.exports = Ferdium => Ferdium;

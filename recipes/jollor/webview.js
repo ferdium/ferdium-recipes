@@ -4,15 +4,15 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const count = document.querySelector(
       '.user-menu-message-item-count',
     ).textContent;
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'css', 'franz.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'css', 'franz.css'));
 };

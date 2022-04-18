@@ -1,1 +1,1 @@
-module.exports = Ferdi => class azuredevops extends Ferdi {};
+module.exports = Ferdium => Ferdium;

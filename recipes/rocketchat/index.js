@@ -1,4 +1,4 @@
-module.exports = Ferdi => class RocketChat extends Ferdi {
+module.exports = Ferdium => class RocketChat extends Ferdium {
   async validateUrl(url) {
     try {
       const resp = await window.fetch(url, {

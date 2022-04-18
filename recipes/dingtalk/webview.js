@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   let checkIsRun = false;
   const checkHeightAction = () => {
     checkIsRun = true;
@@ -34,10 +34,10 @@ module.exports = Ferdi => {
 
   const getMessages = () => {
     const x = document.querySelectorAll('.unread-num em.ng-binding');
-    Ferdi.setBadge(x.length > 0 ? x[0].textContent : 0);
+    Ferdium.setBadge(x.length > 0 ? x[0].textContent : 0);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'style.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'style.css'));
 };

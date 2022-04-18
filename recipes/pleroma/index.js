@@ -1,4 +1,4 @@
-module.exports = Ferdi => class Pleroma extends Ferdi {
+module.exports = Ferdium => class Pleroma extends Ferdium {
   async validateUrl(url) {
     try {
       const resp = await window.fetch(`${url}/api/v1/instance`, {

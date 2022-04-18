@@ -1,11 +1,11 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const element = document.querySelector('[href="/notifications"] > div');
     const content = window.getComputedStyle(element, ':after').getPropertyValue('content').match(/\d+/);
     const notifications = Number(content);
 
-    Ferdi.setBadge(notifications);
+    Ferdium.setBadge(notifications);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

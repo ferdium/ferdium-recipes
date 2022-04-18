@@ -1,8 +1,8 @@
 # Backend API
 
-Provides a set of helper functions to integrate the recipe into [Ferdi](https://ferdium.org).
+Provides a set of helper functions to integrate the recipe into [Ferdium](https://ferdium.org).
 
-## Ferdi Backend Class Methods
+## Ferdium Backend Class Methods
 
 * [validateUrl](#validateurl)
 * [overrideUserAgent](#overrideuseragent)
@@ -29,7 +29,7 @@ Validate if the given URL is a valid service instance.
 
 ```js
 // RocketChat integration
-module.exports = Ferdi => class RocketChat extends Ferdi {
+module.exports = Ferdium => class RocketChat extends Ferdium {
   async validateUrl(url) {
     try {
       const resp = await window.fetch(`${url}/api/info`, {
@@ -61,11 +61,11 @@ Override the user agent used inside the service webview.
 #### Usage
 
 ```js
-module.exports = Ferdi => class Discord extends Ferdi {
+module.exports = Ferdium => class Discord extends Ferdium {
   overrideUserAgent() {
-    // Remove Ferdi's signature from the user agent
+    // Remove Ferdium's signature from the user agent
     return window.navigator.userAgent.replace(
-    /(Ferdi|Electron)\/\S+ \([^)]+\)/g,
+    /(Ferdium|Electron)\/\S+ \([^)]+\)/g,
     ""
   );
   }
@@ -73,7 +73,7 @@ module.exports = Ferdi => class Discord extends Ferdi {
 ```
 
 ```js
-module.exports = Ferdi => class Example extends Ferdi {
+module.exports = Ferdium => class Example extends Ferdium {
   overrideUserAgent() {
     // Use a completely different user agent
     return "Mozilla/2.02Gold (Win95; I)";
@@ -98,7 +98,7 @@ Valid URL patterns can be referred from [here](https://www.electronjs.org/docs/a
 
 ```js
 // Hangouts Chat integration
-module.exports = Ferdi => class HangoutsChat extends Ferdi {
+module.exports = Ferdium => class HangoutsChat extends Ferdium {
     modifyRequestHeaders() {
       return [{
         // Adding an origin header for all http requests from this recipe
@@ -123,7 +123,7 @@ Specify an array of known hosts from where certificates can be issued for this s
 
 ```js
 // msteams Chat integration
-module.exports = Ferdi => class MicrosoftTeams extends Ferdi {
+module.exports = Ferdium => class MicrosoftTeams extends Ferdium {
   knownCertificateHosts() {
     return [
       'aka.ms',
@@ -152,14 +152,14 @@ module.exports = Ferdi => class MicrosoftTeams extends Ferdi {
 
 ### Events
 
-Ferdi recipes can hook into the [electron webview events](https://electron.atom.io/docs/api/webview-tag/#dom-events) to trigger custom functions.
+Ferdium recipes can hook into the [electron webview events](https://electron.atom.io/docs/api/webview-tag/#dom-events) to trigger custom functions.
 
 This is necessary for services like TweetDeck where custom URL forwarding is needed during login.
 
 #### Usage
 
 ```js
-module.exports = Ferdi => class Tweetdeck extends Ferdi {
+module.exports = Ferdium => class Tweetdeck extends Ferdium {
   events = {
     'did-get-redirect-request': '_redirectFix',
   }

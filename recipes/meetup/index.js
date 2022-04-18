@@ -1,1 +1,1 @@
-module.exports = Ferdi => class Meetup extends Ferdi {};
+module.exports = Ferdium => Ferdium;

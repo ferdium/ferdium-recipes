@@ -1,7 +1,7 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   function getUnreadConversations() {
-    Ferdi.setBadge(document.querySelector('#unread-conversations').textContent);
+    Ferdium.setBadge(document.querySelector('#unread-conversations').textContent);
   }
 
-  Ferdi.loop(getUnreadConversations);
+  Ferdium.loop(getUnreadConversations);
 };

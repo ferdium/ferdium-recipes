@@ -1,1 +1,1 @@
-module.exports = Ferdi => class icloudreminders extends Ferdi {};
+module.exports = Ferdium => Ferdium;

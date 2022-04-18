@@ -19,7 +19,7 @@ on:
 
 jobs:
   build:
-    name: Ferdi Recipes Build
+    name: Ferdium Recipes Build
     runs-on: ubuntu-latest
     steps:
       - name: Print latest commit

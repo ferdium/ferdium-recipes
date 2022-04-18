@@ -1,2 +1,2 @@
 "use strict";
-module.exports = Ferdi => Ferdi
+module.exports = Ferdium => Ferdium

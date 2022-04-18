@@ -1,5 +1,5 @@
 {
-  "name": "ferdi-recipes",
+  "name": "ferdium-recipes",
   "version": "1.0.0",
   "directories": {
     "doc": "docs"
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/ferdium/ferdium-recipes.git"
   },
   "keywords": [
-    "ferdi",
+    "ferdium",
     "recipes"
   ],
   "author": "Ferdium Contributors",

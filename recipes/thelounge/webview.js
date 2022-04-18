@@ -25,7 +25,7 @@ function countsOfUnreadMessagesAfterMarker(unreadMarker) {
   return [unread, unreadHighlighted];
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   var unreadMessagesAtLastActivity = 0;
   var unreadHighlightedMessagesAtLastActivity = 0;
 
@@ -41,7 +41,7 @@ module.exports = Ferdi => {
 
     for (const directElement of directElements) {
       if (directElement.textContent.length > 0) {
-        direct += Ferdi.safeParseInt(directElement.textContent);
+        direct += Ferdium.safeParseInt(directElement.textContent);
       }
     }
 
@@ -79,13 +79,13 @@ module.exports = Ferdi => {
       unreadHighlightedMessagesAtLastActivity = 0;
     }
 
-    Ferdi.setBadge(direct, indirect);
+    Ferdium.setBadge(direct, indirect);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   // We need to monkey patch ServierWorker.postMessage so that notifications
   // will work, and that needs to be done without context isolation:
   const path = require('path');
-  Ferdi.injectJSUnsafe(path.join(__dirname, 'webview-unsafe.js'));
+  Ferdium.injectJSUnsafe(path.join(__dirname, 'webview-unsafe.js'));
 };

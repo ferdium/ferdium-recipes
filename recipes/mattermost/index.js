@@ -1,4 +1,4 @@
-module.exports = Ferdi => class Mattermost extends Ferdi {
+module.exports = Ferdium => class Mattermost extends Ferdium {
   async validateUrl(url) {
     try {
       const resp = await window.fetch(url, {

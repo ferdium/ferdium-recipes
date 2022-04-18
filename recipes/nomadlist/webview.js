@@ -1,7 +1,7 @@
-module.exports = (Ferdi) => {
+module.exports = (Ferdium) => {
   const getMessages = () => {
-    Ferdi.setBadge($('.unread').length);
+    Ferdium.setBadge($('.unread').length);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

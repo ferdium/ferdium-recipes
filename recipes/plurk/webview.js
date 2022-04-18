@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let direct = 0;
 
@@ -6,14 +6,14 @@ module.exports = Ferdi => {
     const re = document.querySelector('#noti_re_count');
 
     if (np) {
-      direct += Ferdi.safeParseInt(np.textContent);
+      direct += Ferdium.safeParseInt(np.textContent);
     }
     if (re) {
-      direct += Ferdi.safeParseInt(re.textContent);
+      direct += Ferdium.safeParseInt(re.textContent);
     }
 
-    Ferdi.setBadge(direct);
+    Ferdium.setBadge(direct);
   };
 
-  Ferdi.loop(getMessages, 10_000);
+  Ferdium.loop(getMessages, 10_000);
 };

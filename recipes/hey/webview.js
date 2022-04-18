@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     if (document.location.href == 'https://app.hey.com/') {
       let screener = 0;
@@ -8,7 +8,7 @@ module.exports = Ferdi => {
         let text = document.querySelectorAll('.btn--icon-screener')[0]
           .textContent;
         if (text) {
-          const parsedText = Ferdi.safeParseInt(/\d+/.exec(text));
+          const parsedText = Ferdium.safeParseInt(/\d+/.exec(text));
           screener = parsedText[0];
         }
       }
@@ -26,9 +26,9 @@ module.exports = Ferdi => {
         }
       }
 
-      Ferdi.setBadge(unread, screener);
+      Ferdium.setBadge(unread, screener);
     }
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

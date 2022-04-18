@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let directCount = 0;
     let indirectCount = 0;
@@ -16,7 +16,7 @@ module.exports = Ferdi => {
       const avatarImage = item.querySelector('img.img');
 
       if (reddot) {
-        count = Ferdi.safeParseInt(reddot.textContent);
+        count = Ferdium.safeParseInt(reddot.textContent);
       }
 
       if (
@@ -29,10 +29,10 @@ module.exports = Ferdi => {
       }
     });
 
-    Ferdi.setBadge(directCount, indirectCount);
+    Ferdium.setBadge(directCount, indirectCount);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
