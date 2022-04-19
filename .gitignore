@@ -10,3 +10,4 @@ server*.log
 *.jpg
 *.jpeg
 *.bmp
+/all.json
