@@ -35,6 +35,6 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.24.1
+          version: 6.32.8
       - name: Install node dependencies recursively
         run: pnpm i && pnpm run package
