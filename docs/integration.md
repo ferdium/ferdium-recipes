@@ -4,7 +4,7 @@ Recipes are responsible for providing the connection between the service itself 
 
 A Ferdium recipe is basically nothing else than a node module and is currently initialized on `dom-ready`. You access all of the [electron](http://electron.atom.io) modules as well.
 
-> ℹ️ New to Ferdium recipes and Electron? Then we recommend you read Jake Lee's ["Super simple guide to adding a new Ferdium service recipe"](https://blog.jakelee.co.uk/super-simple-guide-to-adding-a-new-ferdium-service-recipe/) which gives you an easy step-by-step guide on how to create and publish your recipe!
+> ℹ️ New to Ferdium recipes and Electron? Then we recommend you read Jake Lee's ["Super simple guide to adding a new Ferdi service recipe"](https://blog.jakelee.co.uk/super-simple-guide-to-adding-a-new-ferdi-service-recipe/) which gives you an easy step-by-step guide on how to create and publish your recipe!
 
 > ℹ️ If you have any problems packaging your recipes, if you are inexperienced with the tools used or have any other problems, we are here to help! Just open a new issue at https://github.com/ferdium/ferdium-recipes/issues/new and we can help you develop, test and publish your recipe
 
