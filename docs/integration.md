@@ -38,7 +38,7 @@ We have also created a nice script that already does 50% of the work for you - y
 3. (Optional, if you want to use our creation script) Install its dependencies via the terminal:
 
 ```Bash
-pnpm install
+pnpm i
 ```
 
 4. (Optional - contd) You can now run our automatic recipe wizard that creates and opens the new recipe for you:
