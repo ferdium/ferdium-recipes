@@ -33,8 +33,8 @@ jobs:
         with:
           node-version-file: '.nvmrc'
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.32.8
+        run: npm i -gf "pnpm@$(jq --raw-output .engines.pnpm ./package.json)" && pnpm -v
       - name: Install node dependencies recursively
-        run: pnpm i && pnpm run package
+        run: pnpm i
+      - name: Package recipes
+        run: pnpm run package
