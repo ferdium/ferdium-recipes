@@ -4,6 +4,9 @@
   "directories": {
     "doc": "docs"
   },
+  "engines": {
+    "pnpm": "6.32.8"
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "pnpm dlx husky install",
