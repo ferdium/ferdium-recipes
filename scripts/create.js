@@ -6,13 +6,13 @@ const path = require('path');
 const open = require('open');
 
 if (process.argv.length < 3) {
-  console.log(`Usage: pnpm run create <Recipe name> [Folder name]
+  console.log(`Usage: pnpm create <Recipe name> [Folder name]
 For example:
-pnpm run create WhatsApp
-pnpm run create "Google Hangouts"
+pnpm create WhatsApp
+pnpm create "Google Hangouts"
 You can set "Folder name" to "FerdiDev" to use Ferdium's development instance instead:
 
-pnpm run create WhatsApp FerdiDev
+pnpm create WhatsApp FerdiDev
 `);
   throw new Error('Please provide the correct number of args!');
 }

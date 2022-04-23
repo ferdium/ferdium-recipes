@@ -37,4 +37,4 @@ jobs:
         with:
           version: 6.32.8
       - name: Install node dependencies recursively
-        run: pnpm i && pnpm run package
+        run: pnpm i && pnpm package
