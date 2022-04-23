@@ -26,6 +26,705 @@ importers:
       simple-git: 2.48.0
       targz: 1.0.1
 
+  recipes/NewsBlur:
+    specifiers: {}
+
+  recipes/OVHCloud:
+    specifiers: {}
+
+  recipes/TickTick:
+    specifiers: {}
+
+  recipes/air-droid:
+    specifiers: {}
+
+  recipes/airmessage:
+    specifiers: {}
+
+  recipes/airtable:
+    specifiers: {}
+
+  recipes/amazon-web-services:
+    specifiers: {}
+
+  recipes/amazon-work-mail:
+    specifiers: {}
+
+  recipes/android-messages:
+    specifiers: {}
+
+  recipes/anonaddy:
+    specifiers: {}
+
+  recipes/anydo:
+    specifiers: {}
+
+  recipes/asana:
+    specifiers: {}
+
+  recipes/azure-devops:
+    specifiers: {}
+
+  recipes/basecamp:
+    specifiers: {}
+
+  recipes/bigbluebutton:
+    specifiers: {}
+
+  recipes/binance:
+    specifiers: {}
+
+  recipes/bip:
+    specifiers: {}
+
+  recipes/bitbucket:
+    specifiers: {}
+
+  recipes/bitwarden:
+    specifiers: {}
+
+  recipes/box:
+    specifiers: {}
+
+  recipes/buffer:
+    specifiers: {}
+
+  recipes/campuswire:
+    specifiers: {}
+
+  recipes/canvas:
+    specifiers: {}
+
+  recipes/chatra:
+    specifiers: {}
+
+  recipes/chatwoot:
+    specifiers: {}
+
+  recipes/chatwork:
+    specifiers: {}
+
+  recipes/circuit:
+    specifiers: {}
+
+  recipes/ciscospark:
+    specifiers: {}
+
+  recipes/clickup:
+    specifiers: {}
+
+  recipes/cliq:
+    specifiers: {}
+
+  recipes/clockify:
+    specifiers: {}
+
+  recipes/clockwise:
+    specifiers: {}
+
+  recipes/clubhouse:
+    specifiers: {}
+
+  recipes/coinbase:
+    specifiers: {}
+
+  recipes/confluence:
+    specifiers: {}
+
+  recipes/devRant:
+    specifiers: {}
+
+  recipes/devdocs:
+    specifiers: {}
+
+  recipes/dialpad:
+    specifiers: {}
+
+  recipes/dingtalk:
+    specifiers: {}
+
+  recipes/discord:
+    specifiers: {}
+
+  recipes/disqus:
+    specifiers: {}
+
+  recipes/dockerhub:
+    specifiers: {}
+
+  recipes/dropbox:
+    specifiers: {}
+
+  recipes/easy-redmine:
+    specifiers: {}
+
+  recipes/element:
+    specifiers: {}
+
+  recipes/epicgames:
+    specifiers: {}
+
+  recipes/erepublik:
+    specifiers: {}
+
+  recipes/evernote:
+    specifiers: {}
+
+  recipes/facebook:
+    specifiers: {}
+
+  recipes/facebookpages:
+    specifiers: {}
+
+  recipes/fastmail:
+    specifiers: {}
+
+  recipes/feedbin:
+    specifiers: {}
+
+  recipes/feedly:
+    specifiers: {}
+
+  recipes/figma:
+    specifiers: {}
+
+  recipes/fleep:
+    specifiers: {}
+
+  recipes/flock:
+    specifiers: {}
+
+  recipes/flowdock:
+    specifiers: {}
+
+  recipes/franz-custom-website:
+    specifiers: {}
+
+  recipes/freshdesk:
+    specifiers: {}
+
+  recipes/freshrss:
+    specifiers: {}
+
+  recipes/gadugadu:
+    specifiers: {}
+
+  recipes/github:
+    specifiers: {}
+
+  recipes/gitlab:
+    specifiers: {}
+
+  recipes/gitter:
+    specifiers: {}
+
+  recipes/glowing-bear:
+    specifiers: {}
+
+  recipes/gmail:
+    specifiers: {}
+
+  recipes/good-reads:
+    specifiers: {}
+
+  recipes/google-contacts:
+    specifiers: {}
+
+  recipes/google-news:
+    specifiers: {}
+
+  recipes/google-translate:
+    specifiers: {}
+
+  recipes/google-voice:
+    specifiers: {}
+
+  recipes/googlecalendar:
+    specifiers: {}
+
+  recipes/googleclassroom:
+    specifiers: {}
+
+  recipes/googledrive:
+    specifiers: {}
+
+  recipes/googlekeep:
+    specifiers: {}
+
+  recipes/googlemeet:
+    specifiers: {}
+
+  recipes/googlepodcasts:
+    specifiers: {}
+
+  recipes/gotomeeting:
+    specifiers: {}
+
+  recipes/grape:
+    specifiers: {}
+
+  recipes/groupme:
+    specifiers: {}
+
+  recipes/guilded:
+    specifiers: {}
+
+  recipes/habitica:
+    specifiers: {}
+
+  recipes/hackmd:
+    specifiers: {}
+
+  recipes/hangouts:
+    specifiers: {}
+
+  recipes/hangoutschat:
+    specifiers: {}
+
+  recipes/harvest:
+    specifiers: {}
+
+  recipes/hey:
+    specifiers: {}
+
+  recipes/hipchat:
+    specifiers: {}
+
+  recipes/hostnet:
+    specifiers: {}
+
+  recipes/hubstaff:
+    specifiers: {}
+
+  recipes/iCloud:
+    specifiers: {}
+
+  recipes/icloud-reminders:
+    specifiers: {}
+
+  recipes/icq:
+    specifiers: {}
+
+  recipes/idobata:
+    specifiers: {}
+
+  recipes/infomaniak-mail:
+    specifiers: {}
+
+  recipes/inoreader:
+    specifiers: {}
+
+  recipes/instagram:
+    specifiers: {}
+
+  recipes/intercom:
+    specifiers: {}
+
+  recipes/irccloud:
+    specifiers: {}
+
+  recipes/iris-messenger:
+    specifiers: {}
+
+  recipes/jira:
+    specifiers: {}
+
+  recipes/jitsi:
+    specifiers: {}
+
+  recipes/jollor:
+    specifiers: {}
+
+  recipes/kaizala:
+    specifiers: {}
+
+  recipes/keybase.io:
+    specifiers: {}
+
+  recipes/kimaicloud:
+    specifiers: {}
+
+  recipes/lark:
+    specifiers: {}
+
+  recipes/lastpass:
+    specifiers: {}
+
+  recipes/linkedin:
+    specifiers: {}
+
+  recipes/mailbox.org:
+    specifiers: {}
+
+  recipes/mastodon:
+    specifiers: {}
+
+  recipes/mattermost:
+    specifiers: {}
+
+  recipes/meetup:
+    specifiers: {}
+
+  recipes/messenger:
+    specifiers: {}
+
+  recipes/mewe:
+    specifiers: {}
+
+  recipes/misskey:
+    specifiers: {}
+
+  recipes/monday:
+    specifiers: {}
+
+  recipes/monicahq:
+    specifiers: {}
+
+  recipes/moodle:
+    specifiers: {}
+
+  recipes/msteams:
+    specifiers: {}
+
+  recipes/mstodo:
+    specifiers: {}
+
+  recipes/mysms:
+    specifiers: {}
+
+  recipes/netatmo-energy:
+    specifiers: {}
+
+  recipes/netlify:
+    specifiers: {}
+
+  recipes/nextcloud:
+    specifiers: {}
+
+  recipes/nextcloud-calendar:
+    specifiers: {}
+
+  recipes/nextcloud-carnet:
+    specifiers: {}
+
+  recipes/nextcloud-cospend:
+    specifiers: {}
+
+  recipes/nextcloud-news:
+    specifiers: {}
+
+  recipes/nextcloud-talk:
+    specifiers: {}
+
+  recipes/nextcloud-tasks:
+    specifiers: {}
+
+  recipes/nextdoor:
+    specifiers: {}
+
+  recipes/noisli:
+    specifiers: {}
+
+  recipes/nomadlist:
+    specifiers: {}
+
+  recipes/notion:
+    specifiers: {}
+
+  recipes/odoo:
+    specifiers: {}
+
+  recipes/office365-owa:
+    specifiers: {}
+
+  recipes/onenote:
+    specifiers: {}
+
+  recipes/paymo:
+    specifiers: {}
+
+  recipes/pinterest:
+    specifiers: {}
+
+  recipes/pipefy:
+    specifiers: {}
+
+  recipes/pivotal-tracker:
+    specifiers: {}
+
+  recipes/plan:
+    specifiers: {}
+
+  recipes/plek:
+    specifiers: {}
+
+  recipes/pleroma:
+    specifiers: {}
+
+  recipes/plurk:
+    specifiers: {}
+
+  recipes/pocket:
+    specifiers: {}
+
+  recipes/podio:
+    specifiers: {}
+
+  recipes/pomodoro-tracker:
+    specifiers: {}
+
+  recipes/producthunt:
+    specifiers: {}
+
+  recipes/proton-mail:
+    specifiers: {}
+
+  recipes/protoncalendar:
+    specifiers: {}
+
+  recipes/protonet:
+    specifiers: {}
+
+  recipes/pulsesms:
+    specifiers: {}
+
+  recipes/pushbullet:
+    specifiers: {}
+
+  recipes/rainloop:
+    specifiers: {}
+
+  recipes/reddit:
+    specifiers: {}
+
+  recipes/redditchat:
+    specifiers: {}
+
+  recipes/ringcentral:
+    specifiers: {}
+
+  recipes/riseup:
+    specifiers: {}
+
+  recipes/ritetag:
+    specifiers: {}
+
+  recipes/rocketchat:
+    specifiers: {}
+
+  recipes/roundcube:
+    specifiers: {}
+
+  recipes/scribens:
+    specifiers: {}
+
+  recipes/scrumpy:
+    specifiers: {}
+
+  recipes/sendtask:
+    specifiers: {}
+
+  recipes/simplenote:
+    specifiers: {}
+
+  recipes/skype:
+    specifiers: {}
+
+  recipes/slack:
+    specifiers: {}
+
+  recipes/slite:
+    specifiers: {}
+
+  recipes/slowly:
+    specifiers: {}
+
+  recipes/snapdrop:
+    specifiers: {}
+
+  recipes/sococo:
+    specifiers: {}
+
+  recipes/stackexchange:
+    specifiers: {}
+
+  recipes/stackoverflow:
+    specifiers: {}
+
+  recipes/stackoverflow-chat:
+    specifiers: {}
+
+  recipes/standardnotes:
+    specifiers: {}
+
+  recipes/steamchat:
+    specifiers: {}
+
+  recipes/stride:
+    specifiers: {}
+
+  recipes/superhuman:
+    specifiers: {}
+
+  recipes/sync:
+    specifiers: {}
+
+  recipes/tawk:
+    specifiers: {}
+
+  recipes/teamleader:
+    specifiers: {}
+
+  recipes/teamweek:
+    specifiers: {}
+
+  recipes/teamwork-projects:
+    specifiers: {}
+
+  recipes/telegram:
+    specifiers: {}
+
+  recipes/thelounge:
+    specifiers: {}
+
+  recipes/threema:
+    specifiers: {}
+
+  recipes/tinder:
+    specifiers: {}
+
+  recipes/tixio:
+    specifiers: {}
+
+  recipes/todoist:
+    specifiers: {}
+
+  recipes/toggl:
+    specifiers: {}
+
+  recipes/trello:
+    specifiers: {}
+
+  recipes/tt-rss:
+    specifiers: {}
+
+  recipes/tutanota:
+    specifiers: {}
+
+  recipes/tweetdeck:
+    specifiers: {}
+
+  recipes/twist:
+    specifiers: {}
+
+  recipes/twitch:
+    specifiers: {}
+
+  recipes/twitter:
+    specifiers: {}
+
+  recipes/twitter-dm:
+    specifiers: {}
+
+  recipes/udemy:
+    specifiers: {}
+
+  recipes/unraid:
+    specifiers: {}
+
+  recipes/vk:
+    specifiers: {}
+
+  recipes/voxer:
+    specifiers: {}
+
+  recipes/wakatime:
+    specifiers: {}
+
+  recipes/webex-teams:
+    specifiers: {}
+
+  recipes/wechat:
+    specifiers: {}
+
+  recipes/weekplan:
+    specifiers: {}
+
+  recipes/whatsapp:
+    specifiers: {}
+
+  recipes/whereby:
+    specifiers: {}
+
+  recipes/wire:
+    specifiers: {}
+
+  recipes/withspectrum:
+    specifiers: {}
+
+  recipes/workflowy:
+    specifiers: {}
+
+  recipes/workplace:
+    specifiers: {}
+
+  recipes/wrike:
+    specifiers: {}
+
+  recipes/xing:
+    specifiers: {}
+
+  recipes/xmpp:
+    specifiers: {}
+
+  recipes/yahoo-mail:
+    specifiers: {}
+
+  recipes/yammer:
+    specifiers: {}
+
+  recipes/yandex-mail:
+    specifiers: {}
+
+  recipes/youtrack:
+    specifiers: {}
+
+  recipes/youtube:
+    specifiers: {}
+
+  recipes/youtubemusic:
+    specifiers: {}
+
+  recipes/zalo:
+    specifiers: {}
+
+  recipes/zendesk:
+    specifiers: {}
+
+  recipes/zenhub:
+    specifiers: {}
+
+  recipes/zeplin:
+    specifiers: {}
+
+  recipes/zimbra:
+    specifiers: {}
+
+  recipes/zoho:
+    specifiers: {}
+
+  recipes/zoho-projects:
+    specifiers: {}
+
+  recipes/zoom:
+    specifiers: {}
+
+  recipes/zulip:
+    specifiers: {}
+
+  scripts/sample_recipe:
+    specifiers: {}
+
 packages:
 
   /@babel/code-frame/7.16.0:
