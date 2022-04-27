@@ -20,7 +20,7 @@ on:
 jobs:
   build:
     name: Ferdium Recipes Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Print latest commit
         run: echo ${{ github.sha }}
