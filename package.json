@@ -13,7 +13,8 @@
     "package": "node scripts/package.js",
     "create": "node scripts/create.js",
     "lint": "eslint . --fix --report-unused-disable-directives",
-    "reformat-files": "./node_modules/.bin/prettier --ignore-path .eslintignore --write --require-pragma \"**/*.{js,json,scss}\""
+    "reformat-files": "./node_modules/.bin/prettier --ignore-path .eslintignore --write --require-pragma \"**/*.{js,json,scss}\"",
+    "contributors": "all-contributors"
   },
   "repository": {
     "type": "git",
@@ -28,9 +29,10 @@
   "bugs": {
     "url": "https://github.com/ferdium/ferdium-recipes/issues"
   },
-  "homepage": "https://github.com/ferdium/ferdium-recipes#readme",
+  "homepage": "https://github.com/ferdium/ferdium-recipes",
   "devDependencies": {
     "@types/targz": "1.0.1",
+    "all-contributors-cli": "^6.20.0",
     "eslint": "8.3.0",
     "eslint-plugin-unicorn": "39.0.0",
     "fs-extra": "10.0.0",
