@@ -6,15 +6,13 @@
 
 # Recipes
 
-<p>
-  <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=master&event=push"></a>
-  <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-30-default.svg?logo=github' alt='Contributors'/></a>
+<a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=master&event=push"></a>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-74-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
-  <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
- -->
-</p>
+<a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
+-->
 
 > 🍰 Recipes encapsulate your favourite apps into Ferdium for unified notifications handling and more
 
@@ -75,6 +73,62 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href='https://hiro-group.ronc.one' title='Alessandro Roncone: code'><img src='https://avatars.githubusercontent.com/u/4378663?v=4' alt='alecive' style='width:100px;'/></a></td>
     <td align="center"><a href='http://www.ielf.org' title='Celedhrim: code'><img src='https://avatars.githubusercontent.com/u/1573484?v=4' alt='Celedhrim' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/xthursdayx' title='thursday: infra'><img src='https://avatars.githubusercontent.com/u/18044308?v=4' alt='xthursdayx' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://vantezzen.io/' title='Bennett: code'><img src='https://avatars.githubusercontent.com/u/10333196?v=4' alt='vantezzen' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/vraravam' title='Vijay Aravamudhan: code'><img src='https://avatars.githubusercontent.com/u/69629?v=4' alt='vraravam' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://marussy.com/' title='Kristóf Marussy: code'><img src='https://avatars.githubusercontent.com/u/38888?v=4' alt='kris7t' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/oda-alexandre' title='Maitre_Oda: code'><img src='https://avatars.githubusercontent.com/u/43296168?v=4' alt='oda-alexandre' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/mcmxcdev' title='MCMXC: code'><img src='https://avatars.githubusercontent.com/u/16797721?v=4' alt='mcmxcdev' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://gaitenis.id.lv/' title='Edgars: code'><img src='https://avatars.githubusercontent.com/u/9976861?v=4' alt='eandersons' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://arthurbrugiere.fr/' title='Arthur Brugière: code'><img src='https://avatars.githubusercontent.com/u/16764085?v=4' alt='RoiArthurB' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/iansealy' title='Ian Sealy: code'><img src='https://avatars.githubusercontent.com/u/92045?v=4' alt='iansealy' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/sampathBlam' title='Sampath Kumar Krishnan: code'><img src='https://avatars.githubusercontent.com/u/17728976?v=4' alt='sampathBlam' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://tofran.com/' title='Francisco Marques: design'><img src='https://avatars.githubusercontent.com/u/5692603?v=4' alt='tofran' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://www.magitekai.com/' title='cybermoloch: code'><img src='https://avatars.githubusercontent.com/u/57740572?v=4' alt='cybermoloch' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/jhwinter' title='Jonathan Winter: code'><img src='https://avatars.githubusercontent.com/u/14960780?v=4' alt='jhwinter' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://kittywhiskers.eu/' title='Kittywhiskers Van Gogh: code'><img src='https://avatars.githubusercontent.com/u/63189531?v=4' alt='kittywhiskers' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://www.marcolussetti.com/' title='Marco Lussetti: code'><img src='https://avatars.githubusercontent.com/u/15794684?v=4' alt='marcolussetti' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/stephenpapierski' title='Stephen Papierski: code'><img src='https://avatars.githubusercontent.com/u/5900005?v=4' alt='stephenpapierski' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/halms' title='Daniel Halmschlager: design'><img src='https://avatars.githubusercontent.com/u/7513146?v=4' alt='halms' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://www.linkedin.com/in/gautamsi' title='Gautam Singh: code'><img src='https://avatars.githubusercontent.com/u/5769869?v=4' alt='gautamsi' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/Serubin' title='Solomon: code'><img src='https://avatars.githubusercontent.com/u/1234465?v=4' alt='Serubin' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/cereum' title='cereum: code'><img src='https://avatars.githubusercontent.com/u/49958069?v=4' alt='cereum' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/djshadowxm82' title='Alex Bloom: code'><img src='https://avatars.githubusercontent.com/u/10658965?v=4' alt='djshadowxm82' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://mvandergun.nl/' title='Mauro van der Gun: code'><img src='https://avatars.githubusercontent.com/u/51729581?v=4' alt='mvdgun' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/Aman9das' title='Aman9das: code'><img src='https://avatars.githubusercontent.com/u/39594914?v=4' alt='Aman9das' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/andrsussa' title='Andrés Ussa Caycedo: code'><img src='https://avatars.githubusercontent.com/u/1239353?v=4' alt='andrsussa' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/BilelJegham' title='Bilel Jegham: code'><img src='https://avatars.githubusercontent.com/u/20130405?v=4' alt='BilelJegham' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://bo.ro/' title='Boro Vukovic: code'><img src='https://avatars.githubusercontent.com/u/5162876?v=4' alt='TheBoroer' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='http://www.fr3nd.net/' title='Carles Amigó: code'><img src='https://avatars.githubusercontent.com/u/493065?v=4' alt='fr3nd' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/conny3496' title='Cornelius: code'><img src='https://avatars.githubusercontent.com/u/70640137?v=4' alt='conny3496' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://www.stormpoopersmith.com/' title='Daniel Smith: code'><img src='https://avatars.githubusercontent.com/u/1657182?v=4' alt='StormPooper' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/jobo90' title='Joel: design'><img src='https://avatars.githubusercontent.com/u/34029589?v=4' alt='jobo90' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/kevinpapst' title='Kevin Papst: code'><img src='https://avatars.githubusercontent.com/u/533162?v=4' alt='kevinpapst' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://kemenaran.winosx.com/' title='Pierre de La Morinerie: code'><img src='https://avatars.githubusercontent.com/u/179923?v=4' alt='kemenaran' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://prasanna.dev/' title='Prasanna: code'><img src='https://avatars.githubusercontent.com/u/380340?v=4' alt='prasann' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/rvisharma' title='Ravi Sharma: code'><img src='https://avatars.githubusercontent.com/u/5556114?v=4' alt='rvisharma' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/dabalroman' title='Roman Dąbal: code'><img src='https://avatars.githubusercontent.com/u/13556759?v=4' alt='dabalroman' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/Sagir-mo' title='Sagir Mo: code'><img src='https://avatars.githubusercontent.com/u/78988840?v=4' alt='Sagir-mo' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/dqos' title='Tamer: design'><img src='https://avatars.githubusercontent.com/u/8611981?v=4' alt='dqos' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/n-xlkt' title='aj: code'><img src='https://avatars.githubusercontent.com/u/1295659?v=4' alt='n-xlkt' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/beppe9000' title='beppe9000: code'><img src='https://avatars.githubusercontent.com/u/6625123?v=4' alt='beppe9000' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://blog.geekitude.be/' title='bidouilles: code'><img src='https://avatars.githubusercontent.com/u/1132382?v=4' alt='bidouilles' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/cm-schl' title='cm-schl: code'><img src='https://avatars.githubusercontent.com/u/63400209?v=4' alt='cm-schl' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/mmso' title='mmso: code'><img src='https://avatars.githubusercontent.com/u/352607?v=4' alt='mmso' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/omove' title='omove: code'><img src='https://avatars.githubusercontent.com/u/61330514?v=4' alt='omove' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/tristanplouz' title='tristanplouz: code'><img src='https://avatars.githubusercontent.com/u/6893466?v=4' alt='tristanplouz' style='width:100px;'/></a></td>
   </tr>
 </table>
 
