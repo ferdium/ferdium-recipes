@@ -10,8 +10,7 @@ const pkgVersionChangedMatcher = new RegExp(/\n\+.*version.*/);
 
 // Publicly availible link to this repository's recipe folder
 // Used for generating public icon URLs
-// TODO: Need to get this setup for ferdium
-const repo = 'https://cdn.jsdelivr.net/gh/getferdi/recipes/recipes/';
+const repo = 'https://cdn.jsdelivr.net/gh/ferdium/ferdium-recipes/recipes/';
 
 // Helper: Compress src folder into dest file
 const compress = (src, dest) =>
