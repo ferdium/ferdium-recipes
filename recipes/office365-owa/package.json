@@ -7,7 +7,7 @@
     "live.com"
   ],
   "config": {
-    "serviceURL": "https://outlook.office365.com/mail/",
+    "serviceURL": "https://outlook.live.com/mail/",
     "hasNotificationSound": true,
     "hasHostedOption": true,
     "hasCustomUrl": true,
