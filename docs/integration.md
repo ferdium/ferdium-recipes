@@ -8,7 +8,7 @@ A Ferdium recipe is basically nothing else than a node module and is currently i
 
 > ℹ️ If you have any problems packaging your recipes, if you are inexperienced with the tools used or have any other problems, we are here to help! Just open a new issue at https://github.com/ferdium/ferdium-recipes/issues/new and we can help you develop, test and publish your recipe
 
-> If you want to update an existing recipe, please refer to [updating.md](https://github.com/ferdium/ferdium-recipes/blob/master/docs/updating.md) instead
+> If you want to update an existing recipe, please refer to [updating.md](https://github.com/ferdium/ferdium-recipes/blob/main/docs/updating.md) instead
 
 ## Table of Contents
 

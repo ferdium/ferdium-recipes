@@ -6,10 +6,10 @@ name: Builds
 on:
   # Push to any tracked branches
   push:
-    branches: [master]
-  # PRs only on master branch
+    branches: [main]
+  # PRs only on main branch
   pull_request:
-    branches: [master]
+    branches: [main]
   # Manual trigger from the UI
   workflow_dispatch:
     inputs:
