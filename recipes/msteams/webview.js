@@ -7,16 +7,14 @@ function _interopRequireDefault(obj) {
 module.exports = Ferdium => {
   const getMessages = () => {
     let messages = 0;
-    const badge = document.querySelector(
-      '.activity-badge.dot-activity-badge .activity-badge',
-    );
-    if (badge) {
-      messages = Ferdium.safeParseInt(badge.textContent);
+    const badges = document.querySelectorAll('.activity-badge.dot-activity-badge .activity-badge');
+    if (badges) {
+      Array.prototype.forEach.call(badges, badge => {
+        messages += Ferdium.safeParseInt(badge.textContent);
+      });
     }
 
-    const indirectMessages = document.querySelectorAll(
-      '[class*=channel-anchor][class*=ts-unread-channel]',
-    ).length;
+    const indirectMessages = document.querySelectorAll('.app-bar-mention').length;
 
     Ferdium.setBadge(messages, indirectMessages);
   };
