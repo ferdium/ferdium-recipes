@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   // if the user is on gmail's landing page, go to the login page.
   if (
     location.hostname == 'www.google.com' &&
@@ -25,17 +25,17 @@ module.exports = Ferdi => {
         if (parentNodeOfParentNode) {
           const unreadCounts = parentNodeOfParentNode.querySelectorAll('.bsU');
           if (unreadCounts.length > 0) {
-            count = Ferdi.safeParseInt(unreadCounts[0].textContent.replace(/[^\p{N}]/gu, ''));
+            count = Ferdium.safeParseInt(unreadCounts[0].textContent.replace(/[^\p{N}]/gu, ''));
           }
         }
       }
     }
 
-    // set Ferdi badge
-    Ferdi.setBadge(count);
+    // set Ferdium badge
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

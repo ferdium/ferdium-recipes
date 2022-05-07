@@ -1,11 +1,11 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const directCountElement = document.querySelector(
       '.filter-list.js-notification-inboxes .count',
     );
     let directCount = 0;
     if (directCountElement) {
-      directCount = Ferdi.safeParseInt(directCountElement.textContent);
+      directCount = Ferdium.safeParseInt(directCountElement.textContent);
     }
 
     const indirectCountElement = document.querySelector(
@@ -16,8 +16,8 @@ module.exports = Ferdi => {
       indirectCount = 1;
     }
 
-    Ferdi.setBadge(directCount, indirectCount);
+    Ferdium.setBadge(directCount, indirectCount);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

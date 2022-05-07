@@ -1,7 +1,7 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
-    Ferdi.setBadge(Number.parseInt(document.querySelectorAll('.badge.topbar-launcherbadge')[0].firstChild.data));
+    Ferdium.setBadge(Number.parseInt(document.querySelectorAll('.badge.topbar-launcherbadge')[0].firstChild.data));
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

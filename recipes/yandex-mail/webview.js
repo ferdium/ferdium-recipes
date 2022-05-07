@@ -1,13 +1,13 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let count = 0;
 
     if (document.querySelectorAll('.mail-LabelList-Item_count').length > 1) {
-      count = Ferdi.safeParseInt(document.querySelectorAll('.mail-LabelList-Item_count')[1].textContent);
+      count = Ferdium.safeParseInt(document.querySelectorAll('.mail-LabelList-Item_count')[1].textContent);
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

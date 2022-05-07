@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const DIRECT_MESSAGES_INDIVIDUAL = '#sidebar-left .unread-title .DirectChannel__profile-picture';
   const DIRECT_MESSAGES_GROUP = '#sidebar-left .unread-title .status--group';
   const DIRECT_MESSAGES_LEGACY = '.sidebar--left .has-badge .badge';
@@ -15,8 +15,8 @@ module.exports = Ferdi => {
     const teamDirectMessages = document.querySelectorAll('.team-wrapper .team-container .badge').length;
     const teamMessages = document.querySelectorAll('.team-wrapper .unread').length - teamDirectMessages;
 
-    Ferdi.setBadge(directMessages + teamDirectMessages, allMessages + teamMessages);
+    Ferdium.setBadge(directMessages + teamDirectMessages, allMessages + teamMessages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

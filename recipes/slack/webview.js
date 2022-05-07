@@ -7,7 +7,7 @@ function _interopRequireDefault(obj) {
 const SELECTOR_CHANNELS_UNREAD =
   '.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted)';
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const directMessages = document.querySelectorAll(
       `${SELECTOR_CHANNELS_UNREAD} .p-channel_sidebar__badge, .p-channel_sidebar__link--unread:not([data-sidebar-link-id="Punreads"]):not([data-sidebar-link-id="Pdrafts"]):not([data-sidebar-link-id="Pdms"])`,
@@ -15,7 +15,7 @@ module.exports = Ferdi => {
     const allMessages =
       document.querySelectorAll(SELECTOR_CHANNELS_UNREAD).length -
       directMessages;
-    Ferdi.setBadge(directMessages, allMessages);
+    Ferdium.setBadge(directMessages, allMessages);
   };
 
   const getActiveDialogTitle = () => {
@@ -23,7 +23,7 @@ module.exports = Ferdi => {
       '.p-channel_sidebar__channel--selected .p-channel_sidebar__name',
     );
 
-    Ferdi.setDialogTitle(
+    Ferdium.setDialogTitle(
       element && element.firstChild ? element.firstChild.textContent : null,
     );
   };
@@ -33,7 +33,7 @@ module.exports = Ferdi => {
     getActiveDialogTitle();
   };
 
-  Ferdi.loop(loopFunc);
+  Ferdium.loop(loopFunc);
 
   const getTeamIcon = function getTeamIcon(count = 0) {
     let countTeamIconCheck = count;
@@ -62,7 +62,7 @@ module.exports = Ferdi => {
     countTeamIconCheck += 1;
 
     if (bgUrl) {
-      Ferdi.setAvatarImage(bgUrl);
+      Ferdium.setAvatarImage(bgUrl);
     } else if (countTeamIconCheck <= 5) {
       setTimeout(() => {
         getTeamIcon(countTeamIconCheck + 1);
@@ -74,5 +74,5 @@ module.exports = Ferdi => {
     getTeamIcon();
   }, 4000);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

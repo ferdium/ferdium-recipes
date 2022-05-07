@@ -1,6 +1,6 @@
 # Integration Config
 
-A [Ferdi](https://ferdium.org) recipe is a node module. In order to learn more about node modules and their configuration check the official [Node.js documentation](https://nodejs.org/api/modules.html) / [npm package.json documentation](https://docs.npmjs.com/files/package.json).
+A [Ferdium](https://ferdium.org) recipe is a node module. In order to learn more about node modules and their configuration check the official [Node.js documentation](https://nodejs.org/api/modules.html) / [npm package.json documentation](https://docs.npmjs.com/files/package.json).
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ Display name of the service.
 
 `string` **version** _mandatory_<br />
 Version number. Will be used for auto updating the integrations. The version number must be in a semver compatible format: eg `1.0.0`.
-**important:** the version will be used to figure out if a new recipe update should be deployed to the user. If you make changes to a recipe, **always** increase the version number or Ferdi won't update your recipe.
+**important:** the version will be used to figure out if a new recipe update should be deployed to the user. If you make changes to a recipe, **always** increase the version number or Ferdium won't update your recipe.
 
 `string` **license**<br />
 The license of the integration. We prefer MIT, but here is a list of all the available SPDX licenses http://spdx.org/licenses/
@@ -33,10 +33,10 @@ Link to your Github, Gitlab or Bitbucket public repository. Not used in the appl
 The list of alternate names that this recipe can be called
 
 `object` **config** _mandatory_<br />
-This is the Ferdi-specific integration config.
+This is the Ferdium-specific integration config.
 
 * `string` **serviceURL**<br/>
-Defines the URL that should be loaded into the Ferdi webview.
+Defines the URL that should be loaded into the Ferdium webview.
 <br /><br />
 If you want to load a simple URL like `https://www.messenger.com`, you can simply define it via the `serviceURL` parameter. If your service URL is team based, e.g. Slack or HipChat you can use `https://{teamId}.slack.com`.
 <br /><br />

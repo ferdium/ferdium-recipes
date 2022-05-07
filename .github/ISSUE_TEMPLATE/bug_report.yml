@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report an Ferdi bug
+description: Report an Ferdium bug
 title: "[Bug]: "
 labels: ["bug :beetle:"]
 body:
@@ -7,7 +7,7 @@ body:
   attributes:
     value: |
       1. Please remember that if you are logging a bug for some service that has *stopped working*, please log the bug [here](https://github.com/ferdium/ferdium-recipes/issues)
-      2. If you are requesting support for a new service in Ferdi, please log it [here](https://github.com/ferdium/ferdium-recipes/issues/new/choose)
+      2. If you are requesting support for a new service in Ferdium, please log it [here](https://github.com/ferdium/ferdium-recipes/issues/new/choose)
       3. Please remember to read the [self-help documentation](https://github.com/ferdium/ferdium-app#troubleshooting-recipes-self-help) - in case it helps you unblock yourself for issues related to old recipes.
       4. Please fill our form below, this way we can analyse and fix the problem as fast as possible.
 - type: checkboxes
@@ -23,8 +23,8 @@ body:
         required: true
 - type: input
   attributes:
-    label: Ferdi Version
-    description: What version of Ferdi are you using?
+    label: Ferdium Version
+    description: What version of Ferdium are you using?
     placeholder: 5.6.3
   validations:
     required: true

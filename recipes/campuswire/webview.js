@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let count = document.querySelectorAll(
       '._5fx8:not(._569x),._1ht3:not(._569x)',
@@ -6,13 +6,13 @@ module.exports = Ferdi => {
     const messageRequestsElement = document.querySelector('._5nxf');
 
     if (messageRequestsElement) {
-      count += Ferdi.safeParseInt(messageRequestsElement.textContent);
+      count += Ferdium.safeParseInt(messageRequestsElement.textContent);
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   localStorage.setItem(
     '_cs_desktopNotifsEnabled',
@@ -22,8 +22,8 @@ module.exports = Ferdi => {
     }),
   );
 
-  if (typeof Ferdi.onNotify === 'function') {
-    Ferdi.onNotify(notification => {
+  if (typeof Ferdium.onNotify === 'function') {
+    Ferdium.onNotify(notification => {
       if (typeof notification.title !== 'string') {
         notification.title =
           ((notification.title.props || {}).content || [])[0] || 'Campuswire';

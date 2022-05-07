@@ -1,6 +1,6 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   // Tweetdeck redirect fix
-  Ferdi.ipcRenderer.on('redirect-url', (event, url) => {
+  Ferdium.ipcRenderer.on('redirect-url', (event, url) => {
     window.location.assign(url);
   });
 
@@ -8,11 +8,11 @@ module.exports = Ferdi => {
     const elements = document.querySelectorAll('.msg-unread-count');
     let count = 0;
     if (elements[0]) {
-      count = Ferdi.safeParseInt(elements[0].textContent);
+      count = Ferdium.safeParseInt(elements[0].textContent);
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

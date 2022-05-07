@@ -1,8 +1,8 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const unread = document.querySelector('.cu-notification-alert__dot');
-    Ferdi.setBadge(unread ? 1 : 0);
+    Ferdium.setBadge(unread ? 1 : 0);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

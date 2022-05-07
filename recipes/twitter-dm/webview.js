@@ -1,13 +1,13 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let count = 0;
     const elem = document.querySelector('a[href="/messages"] div div');
     if (elem) {
-      count = Ferdi.safeParseInt(elem.textContent);
+      count = Ferdium.safeParseInt(elem.textContent);
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

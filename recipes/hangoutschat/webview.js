@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   // class corresponding to the red badge that is visible for direct messages
   const directMessageSelector = 'div.V6.CL.su.ahD.X9.Y2 span.akt span.XU';
 
@@ -23,11 +23,11 @@ module.exports = Ferdi => {
       indirectCount = Number(indirectCountSelector.textContent);
     }
 
-    // set Ferdi badge
-    Ferdi.setBadge(directCount, indirectCount);
+    // set Ferdium badge
+    Ferdium.setBadge(directCount, indirectCount);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   document.addEventListener('click', e => {
     // @ts-ignore

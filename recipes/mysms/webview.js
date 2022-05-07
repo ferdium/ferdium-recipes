@@ -1,11 +1,11 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const elements = document.querySelectorAll('.unread');
 
     let count = 0;
     for (const element of elements) {
       if (
-        Ferdi.safeParseInt(
+        Ferdium.safeParseInt(
           element.textContent && element.textContent.replace(/[^\d.]/g, ''),
         ) > 0
       ) {
@@ -13,8 +13,8 @@ module.exports = Ferdi => {
       }
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

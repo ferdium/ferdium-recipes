@@ -13,14 +13,14 @@ setTimeout(() => {
   }
 }, 1000);
 
-module.exports = (Ferdi, settings) => {
+module.exports = (Ferdium, settings) => {
   const getMessages = () => {
     const messages = document.querySelectorAll('.text-content.unread').length;
-    Ferdi.setBadge(messages);
+    Ferdium.setBadge(messages);
   };
 
   window.addEventListener('beforeunload', async () => {
-    Ferdi.clearStorageData(settings.id, {
+    Ferdium.clearStorageData(settings.id, {
       storages: [
         'appcache',
         'serviceworkers',
@@ -29,10 +29,10 @@ module.exports = (Ferdi, settings) => {
         'indexdb',
       ],
     });
-    Ferdi.releaseServiceWorkers();
+    Ferdium.releaseServiceWorkers();
   });
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   if (settings.isDarkModeEnabled) {
     localStorage.setItem('dark_mode_enabled', 'true');

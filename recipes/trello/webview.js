@@ -1,8 +1,8 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const notifications = document.querySelectorAll('[class*=_3W-zkl4-bnVKzJ]');
-    Ferdi.setBadge(0, notifications.length > 0 ? 1 : 0);
+    Ferdium.setBadge(0, notifications.length > 0 ? 1 : 0);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

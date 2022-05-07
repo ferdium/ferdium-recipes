@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let directCount = 0;
     let indirectCount = 0;
@@ -11,7 +11,7 @@ module.exports = Ferdi => {
       );
 
       if (unreadBadge && unreadBadge.textContent) {
-        count = Ferdi.safeParseInt(unreadBadge.textContent);
+        count = Ferdium.safeParseInt(unreadBadge.textContent);
       }
 
       if (count > 0) {
@@ -31,8 +31,8 @@ module.exports = Ferdi => {
         }
       }
     });
-    Ferdi.setBadge(directCount, indirectCount);
+    Ferdium.setBadge(directCount, indirectCount);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

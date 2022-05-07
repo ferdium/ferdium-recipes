@@ -2,7 +2,7 @@ var _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const elements = document.querySelectorAll('.CxUIE, .unread');
     let count = 0;
@@ -13,13 +13,13 @@ module.exports = Ferdi => {
       }
     }
 
-    // set Ferdi badge
-    Ferdi.setBadge(count);
+    // set Ferdium badge
+    Ferdium.setBadge(count);
   };
 
-  // check for new messages every second and update Ferdi badge
-  Ferdi.loop(getMessages);
+  // check for new messages every second and update Ferdium badge
+  Ferdium.loop(getMessages);
 
-  // inject Ferdi.css stylesheet
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  // inject Ferdium.css stylesheet
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

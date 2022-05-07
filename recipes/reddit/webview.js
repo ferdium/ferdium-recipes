@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const elements = document.querySelectorAll(
       '#HeaderUserActions--Messages > a > span',
@@ -12,10 +12,10 @@ module.exports = Ferdi => {
     let count = 0;
 
     if (elements[0]) {
-      count = Ferdi.safeParseInt(elements[0].textContent);
+      count = Ferdium.safeParseInt(elements[0].textContent);
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
   if (document.querySelectorAll('.promotedlink').length > 0) {
@@ -29,12 +29,12 @@ module.exports = Ferdi => {
     }
   }
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   // Use CSS to hide Google Ads
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 
-  Ferdi.handleDarkMode(isEnabled => {
+  Ferdium.handleDarkMode(isEnabled => {
     // Open dropdown menu if not already open
     const menu = document.querySelector('#USER_DROPDOWN_ID');
     if (menu && menu.getAttribute('aria-expanded') === 'false') {

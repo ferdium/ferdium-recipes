@@ -1,14 +1,14 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let unreadCount = 0;
     // Loop over all displayed counters and take the highest one (from the "All Mail" folder)
     for (const counterElement of document.querySelectorAll('.navigation-counter-item')) {
-      const unreadCounter = Ferdi.safeParseInt(counterElement.textContent);
+      const unreadCounter = Ferdium.safeParseInt(counterElement.textContent);
       unreadCount = Math.max(unreadCount, unreadCounter);
     }
 
-    Ferdi.setBadge(unreadCount);
+    Ferdium.setBadge(unreadCount);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

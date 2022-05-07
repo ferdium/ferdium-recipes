@@ -1,9 +1,9 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     // eslint-disable-next-line no-undef
     const count = feedbin.count_data.unread_entries.length > 0 || 0;
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

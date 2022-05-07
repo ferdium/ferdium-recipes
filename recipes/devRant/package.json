@@ -1,7 +1,7 @@
 {
   "id": "devRant",
   "name": "devRant",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "license": "MIT",
   "repository": "https://github.com/emamut/recipe-devrant",
   "config": {

@@ -1,10 +1,10 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const bell = document.querySelectorAll('#view65 > span')[0];
     if (bell) {
-      Ferdi.setBadge(bell.textContent);
+      Ferdium.setBadge(bell.textContent);
     }
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

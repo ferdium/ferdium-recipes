@@ -1,7 +1,7 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getInnerInt = selector => {
     const element = document.querySelector(selector);
-    return element && Ferdi.safeParseInt(element.textContent);
+    return element && Ferdium.safeParseInt(element.textContent);
   };
 
   const getMessages = () => {
@@ -10,8 +10,8 @@ module.exports = Ferdi => {
       getInnerInt('a.has-notifs div.notif-count') ||
       0;
 
-    Ferdi.setBadge(direct);
+    Ferdium.setBadge(direct);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const indirectElements = document.querySelectorAll('.badge:not(.danger)');
     const direct = document.querySelectorAll('.badge.danger').length - 1;
@@ -11,8 +11,8 @@ module.exports = Ferdi => {
         indirect++;
       }
     }
-    Ferdi.setBadge(direct, indirect);
+    Ferdium.setBadge(direct, indirect);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

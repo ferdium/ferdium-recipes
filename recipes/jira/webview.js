@@ -1,11 +1,11 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     // get unread messages
     const element = document.querySelector(
       '#atlassian-navigation-notification-count span',
     );
-    Ferdi.setBadge(element ? element.textContent : 0);
+    Ferdium.setBadge(element ? element.textContent : 0);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

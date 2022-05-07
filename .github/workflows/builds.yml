@@ -6,10 +6,10 @@ name: Builds
 on:
   # Push to any tracked branches
   push:
-    branches: [master]
-  # PRs only on master branch
+    branches: [main]
+  # PRs only on main branch
   pull_request:
-    branches: [master]
+    branches: [main]
   # Manual trigger from the UI
   workflow_dispatch:
     inputs:
@@ -19,22 +19,20 @@ on:
 
 jobs:
   build:
-    name: Ferdi Recipes Build
-    runs-on: ubuntu-latest
+    name: Ferdium Recipes Build
+    runs-on: ubuntu-20.04
     steps:
       - name: Print latest commit
         run: echo ${{ github.sha }}
       - name: Set env vars
         run: echo "PNPM_CACHE=$HOME/.pnpm-store" >> $GITHUB_ENV
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Use Node.js specified in the '.nvmrc' file
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.24.1
+        run: npm i -gf "pnpm@$(node -p 'require("./package.json").engines.pnpm')" && pnpm -v
       - name: Install node dependencies recursively
-        run: pnpm i && pnpm run package
+        run: pnpm i && pnpm package

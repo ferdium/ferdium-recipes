@@ -1,4 +1,4 @@
-module.exports = (Ferdi) => {
+module.exports = (Ferdium) => {
   const getMessages = () => {
     const count = {};
     const data = document.querySelector('#FranzMessages').dataset;
@@ -7,8 +7,8 @@ module.exports = (Ferdi) => {
       count.count_indirect = data.indirect;
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   }
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

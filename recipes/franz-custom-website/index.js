@@ -1,5 +1,5 @@
-module.exports = Ferdi =>
-  class CustomWebsite extends Ferdi {
+module.exports = Ferdium =>
+  class CustomWebsite extends Ferdium {
     async validateUrl() {
       return true;
     }

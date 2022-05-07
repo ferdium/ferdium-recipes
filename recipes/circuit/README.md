@@ -1,3 +1,3 @@
-# Circuit EU for Ferdi
+# Circuit EU for Ferdium
 
-Unofficial Ferdi recipe for [Circuit by Atos Unify](https://eu.yourcircuit.com/)
+Unofficial Ferdium recipe for [Circuit by Atos Unify](https://eu.yourcircuit.com/)

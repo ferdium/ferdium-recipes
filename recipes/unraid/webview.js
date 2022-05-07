@@ -1,9 +1,9 @@
-module.exports = (Ferdi) => {
+module.exports = (Ferdium) => {
   const getMessages = () => {
     const messages = $('#jGrowl .jGrowl-notify').length;
 
-    Ferdi.setBadge(messages - 1);
+    Ferdium.setBadge(messages - 1);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

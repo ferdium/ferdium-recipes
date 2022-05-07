@@ -1,14 +1,14 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let indirectCount = 0;
     const badge = document.querySelector('#numNotifs2');
 
     if (badge && badge.textContent) {
-      indirectCount = Ferdi.safeParseInt(badge.textContent);
+      indirectCount = Ferdium.safeParseInt(badge.textContent);
     }
 
-    Ferdi.setBadge(0, indirectCount);
+    Ferdium.setBadge(0, indirectCount);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

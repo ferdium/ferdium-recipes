@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   let latestStatement = $('.status time').attr('datetime');
   let latestNotify = $($('.notification__message span').get(0)).text();
 
@@ -21,8 +21,8 @@ module.exports = Ferdi => {
       unread = 1;
     }
 
-    Ferdi.setBadge(reply, unread);
+    Ferdium.setBadge(reply, unread);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

@@ -1,6 +1,6 @@
 const NOTIFICATION_BADGE_CLASS = '.badge-round';
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const badges = [...document.querySelectorAll(NOTIFICATION_BADGE_CLASS)];
     const messages = badges.reduce(
@@ -8,8 +8,8 @@ module.exports = Ferdi => {
       0,
     );
 
-    Ferdi.setBadge(messages);
+    Ferdium.setBadge(messages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

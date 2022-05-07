@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let direct = 0;
     let indirect = 0;
@@ -12,7 +12,7 @@ module.exports = Ferdi => {
     const notifications = document.querySelector('#notifications span span');
 
     if (notifications) {
-      indirect = Ferdi.safeParseInt(notifications.textContent);
+      indirect = Ferdium.safeParseInt(notifications.textContent);
     }
 
     if (chatsElement) {
@@ -20,7 +20,7 @@ module.exports = Ferdi => {
         const chatMessages = chatsElement.querySelector('span');
 
         if (chatMessages) {
-          direct = Ferdi.safeParseInt(chatMessages.textContent);
+          direct = Ferdium.safeParseInt(chatMessages.textContent);
         }
       } else {
         direct = document.querySelectorAll(
@@ -29,20 +29,20 @@ module.exports = Ferdi => {
       }
     }
 
-    Ferdi.setBadge(direct, indirect);
+    Ferdium.setBadge(direct, indirect);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'workplace.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'workplace.css'));
 
   localStorage._cs_desktopNotifsEnabled = JSON.stringify({
     __t: Date.now(),
     __v: true,
   });
 
-  if (typeof Ferdi.onNotify === 'function') {
-    Ferdi.onNotify(notification => {
+  if (typeof Ferdium.onNotify === 'function') {
+    Ferdium.onNotify(notification => {
       if (typeof notification.title !== 'string') {
         notification.title =
           ((notification.title.props || {}).content || [])[0] || 'Work Chat';

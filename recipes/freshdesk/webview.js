@@ -1,11 +1,11 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     $.get('/api/_/tickets?filter=unresolved', (data) => {
-      Ferdi.setBadge(data.tickets.length);
+      Ferdium.setBadge(data.tickets.length);
     });
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
 /* block popups (prevents freshconnect from opening in a new window) */
   window.open = (function(url, name) {

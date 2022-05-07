@@ -1,13 +1,13 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const notificationsSelector = document.querySelector(
     '[class*=header_] [class*=content_] [class*=actions_] [class*=notificationsButton_]',
   );
 
   const getMessages = () => {
     if (notificationsSelector) {
-      Ferdi.setBadge(notificationsSelector.textContent);
+      Ferdium.setBadge(notificationsSelector.textContent);
     }
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

@@ -1,10 +1,10 @@
-module.exports = (Ferdi) => {
+module.exports = (Ferdium) => {
   const getMessages = () => {
-    const unreadPrivateMessages = Ferdi.safeParseInt($('.messages .unread-meeps').text());
-    const unreadGroupMessages = Ferdi.safeParseInt($('.today .unread-meeps').text());
+    const unreadPrivateMessages = Ferdium.safeParseInt($('.messages .unread-meeps').text());
+    const unreadGroupMessages = Ferdium.safeParseInt($('.today .unread-meeps').text());
 
-    Ferdi.setBadge(unreadPrivateMessages + unreadGroupMessages);
+    Ferdium.setBadge(unreadPrivateMessages + unreadGroupMessages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

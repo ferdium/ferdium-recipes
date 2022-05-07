@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   function getTasks() {
     let todayCount = 0;
     let inboxCount = 0;
@@ -6,15 +6,15 @@ module.exports = Ferdi => {
     const inboxElement = document.querySelector('#filter_inbox .item_counter');
 
     if (todayElement) {
-      todayCount = Ferdi.safeParseInt(todayElement.textContent);
+      todayCount = Ferdium.safeParseInt(todayElement.textContent);
     }
 
     if (inboxElement) {
-      inboxCount = Ferdi.safeParseInt(inboxElement.textContent);
+      inboxCount = Ferdium.safeParseInt(inboxElement.textContent);
     }
 
-    Ferdi.setBadge(inboxCount, todayCount);
+    Ferdium.setBadge(inboxCount, todayCount);
   }
 
-  Ferdi.loop(getTasks);
+  Ferdium.loop(getTasks);
 };

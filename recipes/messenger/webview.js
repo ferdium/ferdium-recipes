@@ -7,7 +7,6 @@ module.exports = Ferdium => {
         return hasPing - isMuted >= 0 ? hasPing - isMuted : 0;
       })
       .reduce((prev, curr) => prev + curr);
-    
     /*
      * add count of message requests on top of notification counter
      */

@@ -1,15 +1,15 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let directCount = 0;
     const element = document.querySelector(
       '.ws-navigation-button__indicator.ws-navigation-button-indicator',
     );
     if (element) {
-      directCount = Ferdi.safeParseInt(element.textContent);
+      directCount = Ferdium.safeParseInt(element.textContent);
     }
 
-    Ferdi.setBadge(directCount);
+    Ferdium.setBadge(directCount);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

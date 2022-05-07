@@ -1,5 +1,5 @@
 "use strict";
 
-// just pass through ferdi
+// just pass through ferdium
 
-module.exports = Ferdi => Ferdi;
+module.exports = Ferdium => Ferdium;

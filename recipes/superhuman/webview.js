@@ -1,8 +1,8 @@
-module.exports = (Ferdi) => {
+module.exports = (Ferdium) => {
   const getMessages = () => {
     const mentions = document.querySelectorAll('.chat-line .mentioned').length;
-    Ferdi.setBadge(mentions, 0);
+    Ferdium.setBadge(mentions, 0);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

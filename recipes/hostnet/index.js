@@ -1,1 +1,1 @@
-module.exports = Ferdi => class Bitwarden extends Ferdi {};
+module.exports = Ferdium => Ferdium;

@@ -1,1 +1,1 @@
-module.exports = Ferdi => class Airmessage extends Ferdi {};
+module.exports = Ferdium => Ferdium;

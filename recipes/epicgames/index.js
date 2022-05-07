@@ -1,1 +1,1 @@
-module.exports = Ferdi => class epicgames extends Ferdi {};
+module.exports = Ferdium => Ferdium;

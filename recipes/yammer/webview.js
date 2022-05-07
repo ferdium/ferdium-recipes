@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let directMessages = 0;
     let indirectMessages = 0;
@@ -10,17 +10,17 @@ module.exports = Ferdi => {
     );
 
     if (notificationElement) {
-      directMessages = Ferdi.safeParseInt(notificationElement.textContent);
+      directMessages = Ferdium.safeParseInt(notificationElement.textContent);
     }
 
     if (newMessagesElement) {
-      indirectMessages = Ferdi.safeParseInt(
+      indirectMessages = Ferdium.safeParseInt(
         newMessagesElement.textContent.match(/\d+/)[0],
       );
     }
 
-    Ferdi.setBadge(directMessages, indirectMessages);
+    Ferdium.setBadge(directMessages, indirectMessages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

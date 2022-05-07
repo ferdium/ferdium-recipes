@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let direct = 0;
 
@@ -6,11 +6,11 @@ module.exports = Ferdi => {
       '[id=global_nav_conversations_link]',
     );
     if (MessageElement) {
-      direct += Ferdi.safeParseInt(MessageElement.textContent);
+      direct += Ferdium.safeParseInt(MessageElement.textContent);
     }
 
-    Ferdi.setBadge(direct);
+    Ferdium.setBadge(direct);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

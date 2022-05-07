@@ -1,4 +1,4 @@
-module.exports = Ferdi => class Zulip extends Ferdi {
+module.exports = Ferdium => class Zulip extends Ferdium {
   async validateUrl(url) {
     const baseUrl = new window.URL(url);
     const apiVersion = 'api/v1';

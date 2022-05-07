@@ -1,1 +1,1 @@
-module.exports = Ferdi => class stackexchange extends Ferdi {};
+module.exports = Ferdium => Ferdium;

@@ -1,10 +1,10 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const element = document.querySelector(
       "#app button[data-test-id='notificationsCount']",
     );
-    Ferdi.setBadge(element ? Ferdi.safeParseInt(element.textContent) : 0);
+    Ferdium.setBadge(element ? Ferdium.safeParseInt(element.textContent) : 0);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

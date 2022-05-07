@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
   }
 });
 
-module.exports = (Ferdi, settings) => {
+module.exports = (Ferdium, settings) => {
   const getMessages = () => {
     const elements = document.querySelectorAll('.CxUIE, .unread');
     let count = 0;
@@ -23,14 +23,14 @@ module.exports = (Ferdi, settings) => {
       }
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   window.addEventListener('beforeunload', async () => {
-    Ferdi.clearStorageData(settings.id, { storages: ['serviceworkers'] });
+    Ferdium.clearStorageData(settings.id, { storages: ['serviceworkers'] });
   });
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

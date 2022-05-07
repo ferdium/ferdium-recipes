@@ -1,5 +1,5 @@
-module.exports = Ferdi => class Gotomeeting extends Ferdi {
+module.exports = Ferdium => class Gotomeeting extends Ferdium {
   overrideUserAgent() {
-    return window.navigator.userAgent.replace(/(Ferdi|Electron)\/\S+ \([^)]+\)/g, '');
+    return window.navigator.userAgent.replace(/(Ferdium|Electron)\/\S+ \([^)]+\)/g, '');
   }
 };

@@ -1,8 +1,8 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const unreadMessageCountElement = document.querySelector('#notifications-anchor .badge');
-    const unreadMessagesCount = Ferdi.safeParseInt(unreadMessageCountElement.textContent);
-    Ferdi.setBadge(unreadMessagesCount, 0);
+    const unreadMessagesCount = Ferdium.safeParseInt(unreadMessageCountElement.textContent);
+    Ferdium.setBadge(unreadMessagesCount, 0);
   };
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

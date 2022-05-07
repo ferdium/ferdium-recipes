@@ -2,19 +2,19 @@ const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
-    const updates = Ferdi.safeParseInt(document.querySelector('i#sr-last-counter').textContent);
+    const updates = Ferdium.safeParseInt(document.querySelector('i#sr-last-counter').textContent);
     let messages = 0;
     const elements = document.querySelectorAll('.chat-counter:not(.d-none)');
     for (const element of elements) {
-      messages += Ferdi.safeParseInt(element.textContent);
+      messages += Ferdium.safeParseInt(element.textContent);
     }
 
-    Ferdi.setBadge(messages, updates);
+    Ferdium.setBadge(messages, updates);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

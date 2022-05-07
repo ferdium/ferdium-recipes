@@ -1,1 +1,1 @@
-module.exports = Ferdi => class sync extends Ferdi {};
+module.exports = Ferdium => Ferdium;

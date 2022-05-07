@@ -1,8 +1,8 @@
-module.exports = (Ferdi) => {
+module.exports = (Ferdium) => {
   const getMessages = () => {
     const count = document.querySelector('a[data-test-folder-name="Inbox"]').getAttribute('data-test-unread-count');
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

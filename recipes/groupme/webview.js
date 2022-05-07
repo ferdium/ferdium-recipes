@@ -1,10 +1,10 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const directMessages = document.querySelectorAll('.badge-count:not(.ng-hide)').length;
 
-    // set Ferdi badge
-    Ferdi.setBadge(directMessages);
+    // set Ferdium badge
+    Ferdium.setBadge(directMessages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

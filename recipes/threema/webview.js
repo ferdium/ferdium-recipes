@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const elements = document.querySelectorAll(
       '.badge.unread-count:not(.ng-hide)',
@@ -13,17 +13,17 @@ module.exports = Ferdi => {
 
     for (const element of elements) {
       try {
-        count += Ferdi.safeParseInt(element.textContent);
+        count += Ferdium.safeParseInt(element.textContent);
       } catch (error) {
         console.error(error);
       }
     }
 
-    // set Ferdi badge
-    Ferdi.setBadge(count);
+    // set Ferdium badge
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

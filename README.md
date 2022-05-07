@@ -6,23 +6,21 @@
 
 # Recipes
 
-<p>
-  <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=master&event=push"></a>
-  <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-30-default.svg?logo=github' alt='Contributors'/></a>
+<a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-74-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
-  <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
- -->
-</p>
+<a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
+-->
 
-> 🍰 Recipes encapsulate your favourite apps into Ferdi for unified notifications handling and more
+> 🍰 Recipes encapsulate your favourite apps into Ferdium for unified notifications handling and more
 
-Recipes are small scripts that are responsible for providing the connection between your services (e.g. WhatsApp, Gmail or Slack) and Ferdi. It provides Ferdi information like the number of current notifications, handles enabling dark mode and may otherwise improve your experience with the service.
+Recipes are small scripts that are responsible for providing the connection between your services (e.g. WhatsApp, Gmail or Slack) and Ferdium. It provides Ferdium information like the number of current notifications, handles enabling dark mode and may otherwise improve your experience with the service.
 
 ## Creating and adding your own recipes
 
-* [Overview / How to create a Ferdi integration](docs/integration.md)
+* [Overview / How to create a Ferdium integration](docs/integration.md)
 * [How to update/change recipes](docs/updating.md)
 * [Configuration (package.json)](docs/configuration.md)
 * [Frontend API (webview.js)](docs/frontend_api.md)
@@ -37,44 +35,100 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/bejonwe"><img src="https://avatars.githubusercontent.com/u/1766000?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jonathan Weber</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=bejonwe" title="Code">💻</a></td>
-    <td align="center"><a href="https://gitlab.com/dpeukert"><img src="https://avatars.githubusercontent.com/u/3451904?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel Peukert</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=dpeukert" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.nathanaelhoun.fr"><img src="https://avatars.githubusercontent.com/u/45119518?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nathanaël Houn</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=nathanaelhoun" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/vbuzzano"><img src="https://avatars.githubusercontent.com/u/280143?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Vincent Buzzano</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=vbuzzano" title="Code">💻</a></td>
-    <td align="center"><a href="http://azkware.net"><img src="https://avatars.githubusercontent.com/u/1644021?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Carlos Solís</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=csolisr" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.ruippeixotog.net"><img src="https://avatars.githubusercontent.com/u/613493?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rui Gonçalves</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=ruippeixotog" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/deadmeu"><img src="https://avatars.githubusercontent.com/u/12111013?v=4?s=100" width="100px;" alt=""/><br /><sub><b>deadmeu</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=deadmeu" title="Code">💻</a></td>
+    <td align="center"><a href='https://github.com/bejonwe' title='Jonathan Weber: code'><img src='https://avatars.githubusercontent.com/u/1766000?v=4' alt='bejonwe' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://gitlab.com/dpeukert' title='Daniel Peukert: code'><img src='https://avatars.githubusercontent.com/u/3451904?v=4' alt='dpeukert' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://www.nathanaelhoun.fr' title='Nathanaël Houn: code'><img src='https://avatars.githubusercontent.com/u/45119518?v=4' alt='nathanaelhoun' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/vbuzzano' title='Vincent Buzzano: code'><img src='https://avatars.githubusercontent.com/u/280143?v=4' alt='vbuzzano' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://azkware.net' title='Carlos Solís: code'><img src='https://avatars.githubusercontent.com/u/1644021?v=4' alt='csolisr' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://www.ruippeixotog.net' title='Rui Gonçalves: code'><img src='https://avatars.githubusercontent.com/u/613493?v=4' alt='ruippeixotog' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/deadmeu' title='deadmeu: code'><img src='https://avatars.githubusercontent.com/u/12111013?v=4' alt='deadmeu' style='width:100px;'/></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/ZwS"><img src="https://avatars.githubusercontent.com/u/2487205?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anton Sudak</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=ZwS" title="Code">💻</a></td>
-    <td align="center"><a href="https://voidptr.de"><img src="https://avatars.githubusercontent.com/u/2692085?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nils Steinger</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=n-st" title="Code">💻</a></td>
-    <td align="center"><a href="http://blog.simonszu.de"><img src="https://avatars.githubusercontent.com/u/700707?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Simon Szustkowski</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=simonszu" title="Code">💻</a> <a href="https://github.com/ferdium/ferdium-recipes/pulls?q=is%3Apr+reviewed-by%3Asimonszu" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://github.com/jpmschuler"><img src="https://avatars.githubusercontent.com/u/12411176?v=4?s=100" width="100px;" alt=""/><br /><sub><b>jpmschuler</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=jpmschuler" title="Code">💻</a></td>
-    <td align="center"><a href="http://panz3r.dev"><img src="https://avatars.githubusercontent.com/u/1754457?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mattia Panzeri</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=panz3r" title="Code">💻</a></td>
-    <td align="center"><a href="http://briankendall.net"><img src="https://avatars.githubusercontent.com/u/7917884?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Brian Kendall</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=briankendall" title="Code">💻</a></td>
-    <td align="center"><a href="http://maxmd.xyz"><img src="https://avatars.githubusercontent.com/u/25101871?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Maxime Marty-Dessus</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=maximeMD" title="Code">💻</a></td>
+    <td align="center"><a href='https://github.com/ZwS' title='Anton Sudak: code'><img src='https://avatars.githubusercontent.com/u/2487205?v=4' alt='ZwS' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://voidptr.de' title='Nils Steinger: code'><img src='https://avatars.githubusercontent.com/u/2692085?v=4' alt='n-st' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://blog.simonszu.de' title='Simon Szustkowski: code, review'><img src='https://avatars.githubusercontent.com/u/700707?v=4' alt='simonszu' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/jpmschuler' title='jpmschuler: code'><img src='https://avatars.githubusercontent.com/u/12411176?v=4' alt='jpmschuler' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://panz3r.dev' title='Mattia Panzeri: code'><img src='https://avatars.githubusercontent.com/u/1754457?v=4' alt='panz3r' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://briankendall.net' title='Brian Kendall: code'><img src='https://avatars.githubusercontent.com/u/7917884?v=4' alt='briankendall' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://maxmd.xyz' title='Maxime Marty-Dessus: code'><img src='https://avatars.githubusercontent.com/u/25101871?v=4' alt='maximeMD' style='width:100px;'/></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://crtweb.ru/"><img src="https://avatars.githubusercontent.com/u/5560310?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Iaroslav</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=RainGrid" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/TanZng"><img src="https://avatars.githubusercontent.com/u/25267490?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tania R. Zúñiga</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=TanZng" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/bpwned"><img src="https://avatars.githubusercontent.com/u/446744?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=bpwned" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/baukevdw"><img src="https://avatars.githubusercontent.com/u/6784391?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bauke van der Woude</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=baukevdw" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/pesader"><img src="https://avatars.githubusercontent.com/u/65264536?v=4?s=100" width="100px;" alt=""/><br /><sub><b>pesader</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=pesader" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/tukiplus"><img src="https://avatars.githubusercontent.com/u/98679174?v=4?s=100" width="100px;" alt=""/><br /><sub><b>tukiplus</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=tukiplus" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/link2ravig/"><img src="https://avatars.githubusercontent.com/u/3313079?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ravindra Gullapalli</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=ravindragullapalli" title="Code">💻</a></td>
+    <td align="center"><a href='https://crtweb.ru/' title='Iaroslav: code'><img src='https://avatars.githubusercontent.com/u/5560310?v=4' alt='RainGrid' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/TanZng' title='Tania R. Zúñiga: code'><img src='https://avatars.githubusercontent.com/u/25267490?v=4' alt='TanZng' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/bpwned' title='Alex: code'><img src='https://avatars.githubusercontent.com/u/446744?v=4' alt='bpwned' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/baukevdw' title='Bauke van der Woude: code'><img src='https://avatars.githubusercontent.com/u/6784391?v=4' alt='baukevdw' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/pesader' title='pesader: code'><img src='https://avatars.githubusercontent.com/u/65264536?v=4' alt='pesader' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/tukiplus' title='tukiplus: code'><img src='https://avatars.githubusercontent.com/u/98679174?v=4' alt='tukiplus' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://www.linkedin.com/in/link2ravig/' title='Ravindra Gullapalli: code'><img src='https://avatars.githubusercontent.com/u/3313079?v=4' alt='ravindragullapalli' style='width:100px;'/></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/brunoccr"><img src="https://avatars.githubusercontent.com/u/5890352?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bruno Rossetto</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=brunoccr" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/wajda"><img src="https://avatars.githubusercontent.com/u/795479?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Vayda</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=wajda" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/nurse-the-code"><img src="https://avatars.githubusercontent.com/u/68450431?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Malachi Gruenhagen</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=nurse-the-code" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/jamesandariese"><img src="https://avatars.githubusercontent.com/u/2583421?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Andariese</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=jamesandariese" title="Code">💻</a></td>
-    <td align="center"><a href="http://linkedin.com/in/arun-woosaree"><img src="https://avatars.githubusercontent.com/u/8227297?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Arun Woosaree</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=Arunscape" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Lawrence-ux"><img src="https://avatars.githubusercontent.com/u/39221871?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Carter Poe</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/pulls?q=is%3Apr+reviewed-by%3ALawrence-ux" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://github.com/BramManuel"><img src="https://avatars.githubusercontent.com/u/27723033?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Bram Janssen</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=BramManuel" title="Code">💻</a></td>
+    <td align="center"><a href='https://github.com/brunoccr' title='Bruno Rossetto: code'><img src='https://avatars.githubusercontent.com/u/5890352?v=4' alt='brunoccr' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/wajda' title='Alex Vayda: code'><img src='https://avatars.githubusercontent.com/u/795479?v=4' alt='wajda' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/nurse-the-code' title='Malachi Gruenhagen: code'><img src='https://avatars.githubusercontent.com/u/68450431?v=4' alt='nurse-the-code' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/jamesandariese' title='James Andariese: code'><img src='https://avatars.githubusercontent.com/u/2583421?v=4' alt='jamesandariese' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://linkedin.com/in/arun-woosaree' title='Arun Woosaree: code'><img src='https://avatars.githubusercontent.com/u/8227297?v=4' alt='Arunscape' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/Lawrence-ux' title='Carter Poe: review'><img src='https://avatars.githubusercontent.com/u/39221871?v=4' alt='Lawrence-ux' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/BramManuel' title='Bram Janssen: code'><img src='https://avatars.githubusercontent.com/u/27723033?v=4' alt='BramManuel' style='width:100px;'/></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://hiro-group.ronc.one"><img src="https://avatars.githubusercontent.com/u/4378663?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alessandro Roncone</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=alecive" title="Code">💻</a></td>
-    <td align="center"><a href="http://www.ielf.org"><img src="https://avatars.githubusercontent.com/u/1573484?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Celedhrim</b></sub></a><br /><a href="https://github.com/ferdium/ferdium-recipes/commits?author=Celedhrim" title="Code">💻</a></td>
+    <td align="center"><a href='https://hiro-group.ronc.one' title='Alessandro Roncone: code'><img src='https://avatars.githubusercontent.com/u/4378663?v=4' alt='alecive' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://www.ielf.org' title='Celedhrim: code'><img src='https://avatars.githubusercontent.com/u/1573484?v=4' alt='Celedhrim' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/xthursdayx' title='thursday: infra'><img src='https://avatars.githubusercontent.com/u/18044308?v=4' alt='xthursdayx' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://vantezzen.io/' title='Bennett: code'><img src='https://avatars.githubusercontent.com/u/10333196?v=4' alt='vantezzen' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/vraravam' title='Vijay Aravamudhan: code'><img src='https://avatars.githubusercontent.com/u/69629?v=4' alt='vraravam' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://marussy.com/' title='Kristóf Marussy: code'><img src='https://avatars.githubusercontent.com/u/38888?v=4' alt='kris7t' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/oda-alexandre' title='Maitre_Oda: code'><img src='https://avatars.githubusercontent.com/u/43296168?v=4' alt='oda-alexandre' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/mcmxcdev' title='MCMXC: code'><img src='https://avatars.githubusercontent.com/u/16797721?v=4' alt='mcmxcdev' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://gaitenis.id.lv/' title='Edgars: code'><img src='https://avatars.githubusercontent.com/u/9976861?v=4' alt='eandersons' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://arthurbrugiere.fr/' title='Arthur Brugière: code'><img src='https://avatars.githubusercontent.com/u/16764085?v=4' alt='RoiArthurB' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/iansealy' title='Ian Sealy: code'><img src='https://avatars.githubusercontent.com/u/92045?v=4' alt='iansealy' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/sampathBlam' title='Sampath Kumar Krishnan: code'><img src='https://avatars.githubusercontent.com/u/17728976?v=4' alt='sampathBlam' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://tofran.com/' title='Francisco Marques: design'><img src='https://avatars.githubusercontent.com/u/5692603?v=4' alt='tofran' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://www.magitekai.com/' title='cybermoloch: code'><img src='https://avatars.githubusercontent.com/u/57740572?v=4' alt='cybermoloch' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/jhwinter' title='Jonathan Winter: code'><img src='https://avatars.githubusercontent.com/u/14960780?v=4' alt='jhwinter' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://kittywhiskers.eu/' title='Kittywhiskers Van Gogh: code'><img src='https://avatars.githubusercontent.com/u/63189531?v=4' alt='kittywhiskers' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://www.marcolussetti.com/' title='Marco Lussetti: code'><img src='https://avatars.githubusercontent.com/u/15794684?v=4' alt='marcolussetti' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/stephenpapierski' title='Stephen Papierski: code'><img src='https://avatars.githubusercontent.com/u/5900005?v=4' alt='stephenpapierski' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/halms' title='Daniel Halmschlager: design'><img src='https://avatars.githubusercontent.com/u/7513146?v=4' alt='halms' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://www.linkedin.com/in/gautamsi' title='Gautam Singh: code'><img src='https://avatars.githubusercontent.com/u/5769869?v=4' alt='gautamsi' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/Serubin' title='Solomon: code'><img src='https://avatars.githubusercontent.com/u/1234465?v=4' alt='Serubin' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/cereum' title='cereum: code'><img src='https://avatars.githubusercontent.com/u/49958069?v=4' alt='cereum' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/djshadowxm82' title='Alex Bloom: code'><img src='https://avatars.githubusercontent.com/u/10658965?v=4' alt='djshadowxm82' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://mvandergun.nl/' title='Mauro van der Gun: code'><img src='https://avatars.githubusercontent.com/u/51729581?v=4' alt='mvdgun' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/Aman9das' title='Aman9das: code'><img src='https://avatars.githubusercontent.com/u/39594914?v=4' alt='Aman9das' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/andrsussa' title='Andrés Ussa Caycedo: code'><img src='https://avatars.githubusercontent.com/u/1239353?v=4' alt='andrsussa' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/BilelJegham' title='Bilel Jegham: code'><img src='https://avatars.githubusercontent.com/u/20130405?v=4' alt='BilelJegham' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://bo.ro/' title='Boro Vukovic: code'><img src='https://avatars.githubusercontent.com/u/5162876?v=4' alt='TheBoroer' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='http://www.fr3nd.net/' title='Carles Amigó: code'><img src='https://avatars.githubusercontent.com/u/493065?v=4' alt='fr3nd' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/conny3496' title='Cornelius: code'><img src='https://avatars.githubusercontent.com/u/70640137?v=4' alt='conny3496' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://www.stormpoopersmith.com/' title='Daniel Smith: code'><img src='https://avatars.githubusercontent.com/u/1657182?v=4' alt='StormPooper' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/jobo90' title='Joel: design'><img src='https://avatars.githubusercontent.com/u/34029589?v=4' alt='jobo90' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/kevinpapst' title='Kevin Papst: code'><img src='https://avatars.githubusercontent.com/u/533162?v=4' alt='kevinpapst' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://kemenaran.winosx.com/' title='Pierre de La Morinerie: code'><img src='https://avatars.githubusercontent.com/u/179923?v=4' alt='kemenaran' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://prasanna.dev/' title='Prasanna: code'><img src='https://avatars.githubusercontent.com/u/380340?v=4' alt='prasann' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/rvisharma' title='Ravi Sharma: code'><img src='https://avatars.githubusercontent.com/u/5556114?v=4' alt='rvisharma' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/dabalroman' title='Roman Dąbal: code'><img src='https://avatars.githubusercontent.com/u/13556759?v=4' alt='dabalroman' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/Sagir-mo' title='Sagir Mo: code'><img src='https://avatars.githubusercontent.com/u/78988840?v=4' alt='Sagir-mo' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/dqos' title='Tamer: design'><img src='https://avatars.githubusercontent.com/u/8611981?v=4' alt='dqos' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/n-xlkt' title='aj: code'><img src='https://avatars.githubusercontent.com/u/1295659?v=4' alt='n-xlkt' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/beppe9000' title='beppe9000: code'><img src='https://avatars.githubusercontent.com/u/6625123?v=4' alt='beppe9000' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://blog.geekitude.be/' title='bidouilles: code'><img src='https://avatars.githubusercontent.com/u/1132382?v=4' alt='bidouilles' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/cm-schl' title='cm-schl: code'><img src='https://avatars.githubusercontent.com/u/63400209?v=4' alt='cm-schl' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/mmso' title='mmso: code'><img src='https://avatars.githubusercontent.com/u/352607?v=4' alt='mmso' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/omove' title='omove: code'><img src='https://avatars.githubusercontent.com/u/61330514?v=4' alt='omove' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/tristanplouz' title='tristanplouz: code'><img src='https://avatars.githubusercontent.com/u/6893466?v=4' alt='tristanplouz' style='width:100px;'/></a></td>
   </tr>
 </table>
 

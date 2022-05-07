@@ -1,12 +1,12 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let unread = 0;
     const notificationBadge = document.querySelectorAll('.unreadcount')[0];
     if (notificationBadge != undefined) {
-      unread = Ferdi.safeParseInt(notificationBadge.textContent);
+      unread = Ferdium.safeParseInt(notificationBadge.textContent);
     }
-    Ferdi.setBadge(unread);
+    Ferdium.setBadge(unread);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

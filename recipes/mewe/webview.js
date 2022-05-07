@@ -4,16 +4,16 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const calculateTotalDirectMessages = () =>
     [...document.querySelectorAll('.chats-list-element')]
       .map(el =>
-        Ferdi.safeParseInt(
+        Ferdium.safeParseInt(
           el.querySelector('.m-indicator .number').textContent,
         ),
       )
       .reduce((curr, prev) => curr + prev, 0);
 
-  Ferdi.loop(() => Ferdi.setBadge(calculateTotalDirectMessages()));
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.loop(() => Ferdium.setBadge(calculateTotalDirectMessages()));
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

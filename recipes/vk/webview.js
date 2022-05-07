@@ -1,12 +1,12 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let directs = 0;
     const element = document.querySelectorAll('.left_count');
     if (element.length > 0) {
-      directs = Ferdi.safeParseInt(element[0].textContent);
+      directs = Ferdium.safeParseInt(element[0].textContent);
     }
 
-    Ferdi.setBadge(directs);
+    Ferdium.setBadge(directs);
   };
 
   const getActiveDialogTitle = () => {
@@ -17,7 +17,7 @@ module.exports = Ferdi => {
       document.querySelector('.im-page_history-show ._im_page_peer_name'),
     ].find(Boolean);
 
-    Ferdi.setDialogTitle(element ? element.textContent : null);
+    Ferdium.setDialogTitle(element ? element.textContent : null);
   };
 
   const loopFunc = () => {
@@ -25,5 +25,5 @@ module.exports = Ferdi => {
     getActiveDialogTitle();
   };
 
-  Ferdi.loop(loopFunc);
+  Ferdium.loop(loopFunc);
 };

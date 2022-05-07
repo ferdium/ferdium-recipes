@@ -15,7 +15,7 @@ setTimeout(() => {
   }
 }, 1000);
 
-module.exports = (Ferdi, settings) => {
+module.exports = (Ferdium, settings) => {
   const getMessages = () => {
     const elements = document.querySelectorAll('.CxUIE, .unread, ._0LqQ');
     let count = 0;
@@ -28,11 +28,11 @@ module.exports = (Ferdi, settings) => {
       }
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
   window.addEventListener('beforeunload', async () => {
-    Ferdi.clearStorageData(settings.id, {
+    Ferdium.clearStorageData(settings.id, {
       storages: [
         'appcache',
         'serviceworkers',
@@ -41,9 +41,9 @@ module.exports = (Ferdi, settings) => {
         'indexdb',
       ],
     });
-    Ferdi.releaseServiceWorkers();
+    Ferdium.releaseServiceWorkers();
   });
 
-  Ferdi.loop(getMessages);
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.loop(getMessages);
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

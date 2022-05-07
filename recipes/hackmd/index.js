@@ -1,2 +1,2 @@
 // todo allow custom url
-module.exports = Ferdi => class HackMd extends Ferdi {};
+module.exports = Ferdium => Ferdium;

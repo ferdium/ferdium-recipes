@@ -1,10 +1,10 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const directMessages = document.querySelectorAll('.buffer.conversation.active.unread.activeBadge').length;
     const indirectMessages = document.querySelectorAll('.buffer.channel.active.unread').length;
 
-    Ferdi.setBadge(directMessages, indirectMessages);
+    Ferdium.setBadge(directMessages, indirectMessages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

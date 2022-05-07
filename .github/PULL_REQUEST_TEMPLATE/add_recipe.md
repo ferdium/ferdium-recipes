@@ -1,5 +1,5 @@
 <!--
-  Thank you for taking the time to create a recipe for Ferdi.
+  Thank you for taking the time to create a recipe for Ferdium.
   Please complete the following form so we can add your new recipe
  -->
 
@@ -22,7 +22,7 @@ Service ID: [What ID does your recipe use?]
 <!-- Please also accept the following checkboxes -->
 
 - [ ] I am the original creator of this package
-- [ ] I have run the `pnpm run package` and verified that there are no validation errors reported for this package
-- [ ] My recipe has been tested to work inside Ferdi
+- [ ] I have run the `pnpm package` and verified that there are no validation errors reported for this package
+- [ ] My recipe has been tested to work inside Ferdium
 
 <!-- Here you can write anything else you want to tell us. -->

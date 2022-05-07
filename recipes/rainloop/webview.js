@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let messages = 0;
 
@@ -11,16 +11,16 @@ module.exports = Ferdi => {
         if (obj.classList.contains('system')) {
           // Only count the Inbox system folder and ignore Archive, Trash, Drafts, Spam, Sent
           if (obj.classList.contains('i-am-inbox')) {
-            messages += Ferdi.safeParseInt(countText);
+            messages += Ferdium.safeParseInt(countText);
           }
         } else {
-          messages += Ferdi.safeParseInt(countText);
+          messages += Ferdium.safeParseInt(countText);
         }
       }
     }
 
-    Ferdi.setBadge(messages);
+    Ferdium.setBadge(messages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

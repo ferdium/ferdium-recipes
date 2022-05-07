@@ -1,4 +1,4 @@
-module.exports = (Ferdi, settings) => {
+module.exports = (Ferdium, settings) => {
   const collectCounts = selector => {
     let unreadCount = 0;
     const foldersElement = document.querySelector(selector);
@@ -8,7 +8,7 @@ module.exports = (Ferdi, settings) => {
       );
       for (const child of allScreenReaders) {
         if (child.previousSibling) {
-          unreadCount += Ferdi.safeParseInt(child.previousSibling.textContent);
+          unreadCount += Ferdium.safeParseInt(child.previousSibling.textContent);
         }
       }
     }
@@ -21,7 +21,7 @@ module.exports = (Ferdi, settings) => {
 
     if (/\/owa/.test(location.pathname)) {
       // classic app
-      directUnreadCount = Ferdi.safeParseInt(
+      directUnreadCount = Ferdium.safeParseInt(
         document.querySelectorAll("span[title*='Inbox'] + div > span")[0]
           .textContent,
       );
@@ -35,8 +35,8 @@ module.exports = (Ferdi, settings) => {
       indirectUnreadCount = collectCounts('div[role=tree]:nth-child(4)'); // groups
     }
 
-    Ferdi.setBadge(directUnreadCount, indirectUnreadCount);
+    Ferdium.setBadge(directUnreadCount, indirectUnreadCount);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

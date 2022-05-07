@@ -1,1 +1,1 @@
-module.exports = (Ferdi) => class Dropbox extends Ferdi {};
+module.exports = Ferdium => Ferdium;

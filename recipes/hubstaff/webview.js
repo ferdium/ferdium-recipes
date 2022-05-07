@@ -1,4 +1,4 @@
-module.exports = (Ferdi) => {
+module.exports = (Ferdium) => {
   // TODO: If your hubstaff service has unread messages, uncomment these lines to implement the logic for updating the badges
   const getMessages = () => {
     // TODO: Insert your notification-finding code here
@@ -6,10 +6,10 @@ module.exports = (Ferdi) => {
     let indirectMessages = 0;
     const notificationContainers = document.querySelectorAll('.notifications-number');
     if (notificationContainers){
-      directMessages = Ferdi.safeParseInt(notificationContainers[0].textContent);
-      indirectMessages = Ferdi.safeParseInt(notificationContainers[1].textContent);
+      directMessages = Ferdium.safeParseInt(notificationContainers[0].textContent);
+      indirectMessages = Ferdium.safeParseInt(notificationContainers[1].textContent);
     }
-    Ferdi.setBadge(directMessages, indirectMessages);
+    Ferdium.setBadge(directMessages, indirectMessages);
   };
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let notifications = 0;
     let indirectNotifications = 0;
@@ -18,24 +18,24 @@ module.exports = Ferdi => {
     const call_element = document.querySelector('#queue_amount');
 
     if (notification_element) {
-      notifications = Ferdi.safeParseInt(
+      notifications = Ferdium.safeParseInt(
         notification_element.getAttribute('datacount'),
       );
     }
 
     if (ticket_element != null) {
-      indirectNotifications = Ferdi.safeParseInt(ticket_element.textContent);
+      indirectNotifications = Ferdium.safeParseInt(ticket_element.textContent);
     }
 
     if (call_element) {
-      indirectNotifications += Ferdi.safeParseInt(
+      indirectNotifications += Ferdium.safeParseInt(
         call_element.getAttribute('datacount'),
       );
     }
 
-    Ferdi.setBadge(notifications, indirectNotifications);
+    Ferdium.setBadge(notifications, indirectNotifications);
   };
 
-  Ferdi.loop(getMessages);
-  Ferdi.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.loop(getMessages);
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

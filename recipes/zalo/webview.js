@@ -1,8 +1,8 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const notificationBadge = document.querySelectorAll('.tab-red-dot').length;
-    Ferdi.setBadge(notificationBadge);
+    Ferdium.setBadge(notificationBadge);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 };

@@ -1,22 +1,22 @@
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const directMessages = document.querySelectorAll('.rcx-badge');
 
     let directMessagesCount = 0;
 
     for (const directMessage of directMessages) {
-      directMessagesCount += Ferdi.safeParseInt(directMessage.textContent);
+      directMessagesCount += Ferdium.safeParseInt(directMessage.textContent);
     }
 
     const indirectMessagesCount = Math.round(
       document.querySelectorAll('.rcx-sidebar-item--highlighted').length,
     );
 
-    Ferdi.setBadge(directMessagesCount, indirectMessagesCount);
+    Ferdium.setBadge(directMessagesCount, indirectMessagesCount);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   const getTeamIcon = function getTeamIcon() {
     const manifestElement = document.querySelector('link[rel="manifest"]');
@@ -41,7 +41,7 @@ module.exports = Ferdi => {
       const response = JSON.parse(this.responseText);
 
       if (response.icons.length > 0) {
-        Ferdi.setAvatarImage(`${window.location.protocol}//${window.location.host}${response.icons[0].src}`);
+        Ferdium.setAvatarImage(`${window.location.protocol}//${window.location.host}${response.icons[0].src}`);
       }
     });
 

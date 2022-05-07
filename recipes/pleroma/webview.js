@@ -141,29 +141,29 @@ class LogoUpdater {
   }
 }
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let directCount = 0;
     const matchArr = document.title.match(titleRegex);
     if (matchArr) {
-      directCount = Ferdi.safeParseInt(matchArr[1]);
+      directCount = Ferdium.safeParseInt(matchArr[1]);
     }
-    Ferdi.setBadge(directCount);
+    Ferdium.setBadge(directCount);
   };
 
   getInstanceLogo().then(
     ({ logo, logoMask }) => {
       const updater = new LogoUpdater(logo, logoMask);
-      Ferdi.loop(() => {
+      Ferdium.loop(() => {
         getMessages();
         if (updater.update()) {
-          Ferdi.setAvatarImage(updater.toDataURL());
+          Ferdium.setAvatarImage(updater.toDataURL());
         }
       });
     },
     error => {
       console.log('Failed to load instance logo', error);
-      Ferdi.loop(getMessages);
+      Ferdium.loop(getMessages);
     },
   );
 };

@@ -1,9 +1,9 @@
-module.exports = (Ferdi) => {
+module.exports = (Ferdium) => {
   const getMessages = () => {
     let direct = 0;
     let indirect = 0;
-    Ferdi.setBadge(direct, indirect);
+    Ferdium.setBadge(direct, indirect);
   }
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 }

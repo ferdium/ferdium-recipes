@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   function getTasks() {
     let incompleteCount = 0;
 
@@ -8,12 +8,12 @@ module.exports = Ferdi => {
 
     if (countEls.length > 0) {
       for (const el of countEls) {
-        incompleteCount += Ferdi.safeParseInt(el.textContent);
+        incompleteCount += Ferdium.safeParseInt(el.textContent);
       }
     }
 
-    Ferdi.setBadge(incompleteCount);
+    Ferdium.setBadge(incompleteCount);
   }
 
-  Ferdi.loop(getTasks);
+  Ferdium.loop(getTasks);
 };

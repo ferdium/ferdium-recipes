@@ -1,7 +1,7 @@
 {
   "id": "stackoverflow",
   "name": "Stack Overflow",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "license": "MIT",
   "repository": "https://github.com/christianascone/franz-recipe-stackoverflow",
   "config": {

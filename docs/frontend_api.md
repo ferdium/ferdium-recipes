@@ -1,5 +1,5 @@
 - [Frontend API](#frontend-api)
-  - [Ferdi Class Methods](#ferdi-class-methods)
+  - [Ferdium Class Methods](#ferdium-class-methods)
     - [setBadge(directMessages, [indirectMessages])](#setbadgedirectmessages-indirectmessages)
       - [Arguments](#arguments)
       - [Usage](#usage)
@@ -35,9 +35,9 @@
 
 # Frontend API
 
-Provides a set of helper functions to integrate the service into [Ferdi](https://ferdium.org).
+Provides a set of helper functions to integrate the service into [Ferdium](https://ferdium.org).
 
-## Ferdi Class Methods
+## Ferdium Class Methods
 
 ### setBadge(directMessages, [indirectMessages])
 
@@ -56,11 +56,11 @@ Sets the unread message badge
 #### Usage
 
 ```js
-Ferdi.setBadge(4, 2);
+Ferdium.setBadge(4, 2);
 
 // or
 
-Ferdi.setBadge(3);
+Ferdium.setBadge(3);
 ```
 
 ### setDialogTitle(title)
@@ -76,7 +76,7 @@ Sets the active dialog title to the app title
 #### Usage
 
 ```js
-Ferdi.setDialogTitle('Dialog title');
+Ferdium.setDialogTitle('Dialog title');
 ```
 
 ### injectCSS(pathToCssFile)
@@ -95,20 +95,20 @@ Injects the contents of one or more CSS files into the current webview
 const path = require('path');
 
 // inject a single css file
-Ferdi.injectCSS(path.join(__dirname, 'style.css'));
+Ferdium.injectCSS(path.join(__dirname, 'style.css'));
 
 // inject multiple css files
 const globalStyles = path.join(__dirname, 'global.css');
 const focusModeStyles = path.join(__dirname, 'focusmode.css');
 
-Ferdi.injectCSS(globalStyles, focusModeStyles);
+Ferdium.injectCSS(globalStyles, focusModeStyles);
 ```
 
 ### injectJSUnsafe(pathToJsFile)
 
 Injects the contents of one or more JavaScript files into the current webview without context isolation
 
-Ferdi uses context isolation to prevent services from accessing Node.js APIs in the webview.
+Ferdium uses context isolation to prevent services from accessing Node.js APIs in the webview.
 If you want to expose objects to the service (eg. via the `window` object) or interact with the Javascript loaded by the service you must do so from a script injected with this method.
 Trying to overwrite properties of the `window` object or other objects or trying to interact with the Javascript loaded by the service from `webview.js` will fail due to context isolation.
 
@@ -126,18 +126,18 @@ The code is executed as if part of the body of a Javascript function, ie. you sh
 const path = require('path');
 
 // inject a single css file
-Ferdi.injectJSUnsafe(path.join(__dirname, 'webview-unsafe.js'));
+Ferdium.injectJSUnsafe(path.join(__dirname, 'webview-unsafe.js'));
 
 // inject multiple css files
 const globalScripts = path.join(__dirname, 'global.js);
 const focusModeScripts = path.join(__dirname, 'focusmode.js);
 
-Ferdi.injectCSS(globalScripts, focusModeScripts);
+Ferdium.injectCSS(globalScripts, focusModeScripts);
 ```
 
 ### loop(action)
 
-Runs an action every X milliseconds (Ferdi default is currently 1s)
+Runs an action every X milliseconds (Ferdium default is currently 1s)
 
 #### Arguments
 
@@ -149,19 +149,19 @@ Runs an action every X milliseconds (Ferdi default is currently 1s)
 // slack integration
 const path = require('path');
 
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     const directMessages = $('.unread_highlights, .unread_highlight').not(
       '.hidden',
     ).length;
     const indirectMessages = $('.unread').length - directMessages;
 
-    Ferdi.setBadge(directMessages, indirectMessages);
+    Ferdium.setBadge(directMessages, indirectMessages);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.injectCSS(path.join(__dirname, 'style.css'));
+  Ferdium.injectCSS(path.join(__dirname, 'style.css'));
 };
 ```
 
@@ -177,22 +177,22 @@ Runs `fn` on every notification created by the service before sending them to th
 
 ```js
 // messenger integration
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let count = document.querySelectorAll(
       '._5fx8:not(._569x),._1ht3:not(._569x)',
     ).length;
     const messageRequestsElement = document.querySelector('._5nxf');
     if (messageRequestsElement) {
-      count += Ferdi.safeParseInt(messageRequestsElement.textContent);
+      count += Ferdium.safeParseInt(messageRequestsElement.textContent);
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
-  Ferdi.onNotify(notification => {
+  Ferdium.onNotify(notification => {
     if (typeof notification.title !== 'string') {
       notification.title =
         ((notification.title.props || {}).content || [])[0] || 'Messenger';
@@ -209,7 +209,7 @@ You can use a `darkmode.css` to automatically get the service into a dark theme.
 
 This handler should take the necessary steps to (de-)activate dark mode on the page, e.g. by clicking a button or flipping a switch.
 
-Ferdi won't activate DarkReader or inject `darkmode.css` if the recipe has defined a custom handler. If you still need to do this, you can use the `injectDarkModeStyle` or `enableDarkMode` function provided as the second argument.
+Ferdium won't activate DarkReader or inject `darkmode.css` if the recipe has defined a custom handler. If you still need to do this, you can use the `injectDarkModeStyle` or `enableDarkMode` function provided as the second argument.
 
 #### Arguments
 
@@ -229,7 +229,7 @@ Ferdi won't activate DarkReader or inject `darkmode.css` if the recipe has defin
 
 ```JavaScript
 // Handler that works for Reddit
-Ferdi.handleDarkMode((isEnabled, helpers) => {
+Ferdium.handleDarkMode((isEnabled, helpers) => {
   // Open dropdown menu if not already open
   const menu = document.querySelector('#USER_DROPDOWN_ID');
   if (menu.getAttribute('aria-expanded') === 'false') {
@@ -251,7 +251,7 @@ Ferdi.handleDarkMode((isEnabled, helpers) => {
 // --- or ---
 
 // Helper that activates DarkReader and injects your darkmode.css at the same time
-Ferdi.handleDarkMode((isEnabled, helpers) => {
+Ferdium.handleDarkMode((isEnabled, helpers) => {
   if (isEnabled) {
     helpers.enableDarkMode();
     if (!helpers.isDarkModeStyleInjected()) {
@@ -276,7 +276,7 @@ While exiting/closing/disabling the service, if you want to clear the local stor
 #### Usage
 
 ```JavaScript
-  Ferdi.clearStorageData(settings.id, {
+  Ferdium.clearStorageData(settings.id, {
       storages: [
         'appcache',
         'serviceworkers',
@@ -302,12 +302,12 @@ A utility method that can be used to safely parse the text content (handles null
 #### Usage
 
 ```JavaScript
-Ferdi.safeParseInt(mySelector.innerText)
+Ferdium.safeParseInt(mySelector.innerText)
 ```
 
 ### setDialogTitle(title)
 
-When you want to set the title of the Ferdi window (while this service is active or in focus), you can use this function
+When you want to set the title of the Ferdium window (while this service is active or in focus), you can use this function
 
 #### Arguments
 
@@ -316,5 +316,5 @@ When you want to set the title of the Ferdi window (while this service is active
 #### Usage
 
 ```JavaScript
-Ferdi.setDialogTitle(element ? element.textContent : null);
+Ferdium.setDialogTitle(element ? element.textContent : null);
 ```
