@@ -1,4 +1,4 @@
-module.exports = Ferdi => {
+module.exports = Ferdium => {
   const getMessages = () => {
     let count = Array.from(document.querySelectorAll('.bp9cbjyn.j83agx80.owycx6da:not(.btwxx1t3)'))
       .map(elem => {
@@ -13,13 +13,13 @@ module.exports = Ferdi => {
      */
     const messageRequestsElement = document.querySelector('._5nxf');
     if (messageRequestsElement) {
-      count += Ferdi.safeParseInt(messageRequestsElement.textContent);
+      count += Ferdium.safeParseInt(messageRequestsElement.textContent);
     }
 
-    Ferdi.setBadge(count);
+    Ferdium.setBadge(count);
   };
 
-  Ferdi.loop(getMessages);
+  Ferdium.loop(getMessages);
 
   localStorage.setItem(
     '_cs_desktopNotifsEnabled',
@@ -29,8 +29,8 @@ module.exports = Ferdi => {
     }),
   );
 
-  if (typeof Ferdi.onNotify === 'function') {
-    Ferdi.onNotify(notification => {
+  if (typeof Ferdium.onNotify === 'function') {
+    Ferdium.onNotify(notification => {
       if (typeof notification.title !== 'string') {
         notification.title =
           ((notification.title.props || {}).content || [])[0] || 'Messenger';
