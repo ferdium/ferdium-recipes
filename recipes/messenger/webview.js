@@ -6,7 +6,7 @@ module.exports = Ferdium => {
         const isMuted = Boolean(elem.querySelector('.a8c37x1j.ms05siws.l3qrxjdp.b7h9ocf4.trssfv1o'))
         return hasPing - isMuted >= 0 ? hasPing - isMuted : 0;
       })
-      .reduce((prev, curr) => prev + curr);
+      .reduce((prev, curr) => prev + curr, 0);
     /*
      * add count of message requests on top of notification counter
      */
