@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-75-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-77-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -131,6 +131,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href='https://github.com/tristanplouz' title='tristanplouz: code'><img src='https://avatars.githubusercontent.com/u/6893466?v=4' alt='tristanplouz' style='width:100px;'/></a></td>
     <td align="center"><a href='https://mydarkstar.net' title='mydarkstar: review'><img src='https://avatars.githubusercontent.com/u/17343993?v=4' alt='mydarkstar' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/Karrq' title='Karrq: code'><img src='https://avatars.githubusercontent.com/u/3997923?v=4' alt='Karrq' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/ferrazpedro' title='Pedro Ferraz: code'><img src='https://avatars.githubusercontent.com/u/37643357?v=4' alt='ferrazpedro' style='width:100px;'/></a></td>
   </tr>
 </table>
 
