@@ -129,7 +129,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href='https://github.com/mmso' title='mmso: code'><img src='https://avatars.githubusercontent.com/u/352607?v=4' alt='mmso' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/omove' title='omove: code'><img src='https://avatars.githubusercontent.com/u/61330514?v=4' alt='omove' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/tristanplouz' title='tristanplouz: code'><img src='https://avatars.githubusercontent.com/u/6893466?v=4' alt='tristanplouz' style='width:100px;'/></a></td>
-    <td align="center"><a href='https://mydarkstar.net' title='mydarkstar: review'><img src='https://avatars.githubusercontent.com/u/17343993?v=4' alt='mydarkstar' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://mydarkstar.net' title='mydarkstar: review, code'><img src='https://avatars.githubusercontent.com/u/17343993?v=4' alt='mydarkstar' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/Karrq' title='Karrq: code'><img src='https://avatars.githubusercontent.com/u/3997923?v=4' alt='Karrq' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/ferrazpedro' title='Pedro Ferraz: code'><img src='https://avatars.githubusercontent.com/u/37643357?v=4' alt='ferrazpedro' style='width:100px;'/></a></td>
   </tr>
