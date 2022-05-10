@@ -1,11 +1,11 @@
 {
   "name": "ferdium-recipes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "directories": {
     "doc": "docs"
   },
   "engines": {
-    "pnpm": "6.32.11"
+    "pnpm": "7.0.1"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",

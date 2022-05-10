@@ -149,3 +149,8 @@ body.darkTheme,
     background-color: #4d4d4d !important;
     border-color: #5d5d5d;
 }
+
+/* fix for 'K' version regarding view width on screens larger than 1080p */
+#page-chats {
+  max-width: 100vw !important;
+}
