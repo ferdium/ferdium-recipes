@@ -1,0 +1,12 @@
+{
+  "id": "gitea",
+  "name": "Gitea",
+  "version": "1.0.0",
+  "description": "Gitea",
+  "main": "index.js",
+  "author": "Marcel van der Heide @ unicorn-tech.de",
+  "license": "MIT",
+  "config": {
+    "hasCustomUrl": true
+  }
+}
