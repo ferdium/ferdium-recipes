@@ -1,0 +1,9 @@
+{
+  "id": "gitea",
+  "name": "Gitea",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "hasCustomUrl": true
+  }
+}
