@@ -69,11 +69,7 @@ module.exports = Ferdium => {
   const getActiveDialogTitle = () => {
     let element;
 
-    if (isWebK) {
-      element = document.querySelector('.top .peer-title');
-    } else {
-      element = document.querySelector('.chat-list .ListItem .title > h3');
-    }
+    element = isWebK ? document.querySelector('.top .peer-title') : document.querySelector('.chat-list .ListItem .title > h3');
 
     Ferdium.setDialogTitle(element ? element.textContent : '');
   };
