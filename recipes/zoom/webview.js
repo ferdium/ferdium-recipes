@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-module.exports = Ferdium => {
+module.exports = (Ferdium, settings) => {
   const getMessages = () => {
     let directCount = 0;
     const directCountPerServer = document.querySelectorAll(
@@ -34,9 +34,12 @@ module.exports = Ferdium => {
     if (link || button) {
       const url = link ? link.getAttribute('href') : button.getAttribute('title');
 
-      if (url.includes('views/imgpsh_fullsize_anim')) {
-        event.preventDefault();
-        event.stopPropagation();
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (settings.trapLinkClicks === true) {
+        window.location.href = url;
+      } else {
         Ferdium.openNewWindow(url);
       }
     }

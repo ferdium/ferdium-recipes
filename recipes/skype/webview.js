@@ -2,7 +2,7 @@ const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = Ferdium => {
+module.exports = (Ferdium, settings) => {
   const getMessages = () => {
     let count = 0;
     const container = document.querySelector('[role="tablist"] > button > div');
@@ -41,7 +41,12 @@ module.exports = Ferdium => {
       if (url.includes('views/imgpsh_fullsize_anim')) {
         event.preventDefault();
         event.stopPropagation();
-        Ferdium.openNewWindow(url);
+
+        if (settings.trapLinkClicks === true) {
+          window.location.href = url;
+        } else {
+          Ferdium.openNewWindow(url);
+        }
       }
     }
   }, true);
