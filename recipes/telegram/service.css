@@ -154,3 +154,13 @@ body.darkTheme,
 #page-chats {
   max-width: 100vw !important;
 }
+
+:root {
+  --messages-container-width: unset;
+}
+
+@media only screen and (min-width: 1276px) {
+  .bubbles-inner, .chat-input {
+    width: 75%; 
+  }
+}
