@@ -9,7 +9,6 @@ module.exports = Ferdium => {
     .querySelector('meta[name="application-name"]')
     ?.getAttribute('content');
 
-  const isWebZ = telegramVersion?.includes('WebZ');
   const isWebK = telegramVersion?.includes('WebK');
 
   // There are two different Telegram versions for internal competition
@@ -60,21 +59,17 @@ module.exports = Ferdium => {
   };
 
   const getMessages = () => {
-    if (isWebZ) {
-      webZCount();
-    } else if (isWebK) {
+    if (isWebK) {
       webKCount();
+    } else {
+      webZCount();
     }
   };
 
   const getActiveDialogTitle = () => {
     let element;
 
-    if (isWebZ) {
-      element = document.querySelector('.chat-list .ListItem .title > h3');
-    } else if (isWebK) {
-      element = document.querySelector('.top .peer-title');
-    }
+    element = isWebK ? document.querySelector('.top .peer-title') : document.querySelector('.chat-list .ListItem .title > h3');
 
     Ferdium.setDialogTitle(element ? element.textContent : '');
   };

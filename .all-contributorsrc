@@ -680,6 +680,52 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "mydarkstar",
+      "name": "mydarkstar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17343993?v=4",
+      "profile": "https://mydarkstar.net",
+      "contributions": [
+        "review",
+        "code"
+      ]
+    },
+    {
+      "login": "Karrq",
+      "name": "Karrq",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3997923?v=4",
+      "profile": "https://github.com/Karrq",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ferrazpedro",
+      "name": "Pedro Ferraz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37643357?v=4",
+      "profile": "https://github.com/ferrazpedro",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "beerpiss",
+      "name": "beerpsi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92439990?v=4",
+      "profile": "https://copypastas.beerpsi.me",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Flying--Dutchman",
+      "name": "Flying--Dutchman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9158539?v=4",
+      "profile": "https://github.com/Flying--Dutchman",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
