@@ -1,4 +1,4 @@
-module.exports = Ferdium => {
+module.exports = (Ferdium, settings) => {
   const getMessages = () => {
     // get new msg count
     let count = 0;
@@ -37,7 +37,13 @@ module.exports = Ferdium => {
     if (link && link.getAttribute('target') === '_top') {
       event.preventDefault();
       event.stopPropagation();
-      Ferdium.openNewWindow(link.getAttribute('href'));
+      const url = link.getAttribute('href');
+
+      if (settings.trapLinkClicks === true) {
+        window.location.href = url;
+      } else {
+        Ferdium.openNewWindow(url);
+      }
     }
   }, true);
 };
