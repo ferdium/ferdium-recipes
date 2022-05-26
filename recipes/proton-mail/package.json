@@ -4,6 +4,6 @@
   "version": "1.4.0",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://mail.protonmail.com/login"
+    "serviceURL": "https://mail.proton.me//login"
   }
 }
