@@ -1,9 +1,9 @@
 {
   "id": "proton-mail",
   "name": "ProtonMail",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://mail.protonmail.com/login"
+    "serviceURL": "https://mail.proton.me/login"
   }
 }
