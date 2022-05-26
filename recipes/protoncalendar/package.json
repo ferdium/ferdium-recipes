@@ -4,6 +4,6 @@
   "version": "1.2.0",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://calendar.protonmail.com/"
+    "serviceURL": "https://calendar.proton.me/"
   }
 }
