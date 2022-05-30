@@ -4,8 +4,11 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
+function isImage(url) {
+  return /\.(jpg|jpeg|png|webp|avif|gif|svg)$/.test(url);
+}
+
 module.exports = (Ferdium, settings) => {
-  console.log('settings', settings);
   const getMessages = () => {
     let directCount = 0;
     const directCountPerServer = document.querySelectorAll(
@@ -34,14 +37,16 @@ module.exports = (Ferdium, settings) => {
 
     if (link || button) {
       const url = link ? link.getAttribute('href') : button.getAttribute('title');
+      
+      if (!isImage(url)) {
+        event.preventDefault();
+        event.stopPropagation();
 
-      event.preventDefault();
-      event.stopPropagation();
-
-      if (settings.trapLinkClicks === true) {
-        window.location.href = url;
-      } else {
-        Ferdium.openNewWindow(url);
+        if (settings.trapLinkClicks === true) {
+          window.location.href = url;
+        } else {
+          Ferdium.openNewWindow(url);
+        }
       }
     }
   }, true);
