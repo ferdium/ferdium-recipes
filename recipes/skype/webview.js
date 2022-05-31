@@ -38,7 +38,7 @@ module.exports = (Ferdium, settings) => {
     if (link || button) {
       const url = link ? link.getAttribute('href') : button.getAttribute('title');
 
-      if (url.includes('views/imgpsh_fullsize_anim')) {
+      if (!Ferdium.isImage(url)) {
         event.preventDefault();
         event.stopPropagation();
 

@@ -35,14 +35,17 @@ module.exports = (Ferdium, settings) => {
     const link = event.target.closest('a[href^="http"]');
 
     if (link && link.getAttribute('target') === '_top') {
-      event.preventDefault();
-      event.stopPropagation();
       const url = link.getAttribute('href');
 
-      if (settings.trapLinkClicks === true) {
-        window.location.href = url;
-      } else {
-        Ferdium.openNewWindow(url);
+      if (!Ferdium.isImage(url)) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (settings.trapLinkClicks === true) {
+          window.location.href = url;
+        } else {
+          Ferdium.openNewWindow(url);
+        }
       }
     }
   }, true);
