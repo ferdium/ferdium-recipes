@@ -310,7 +310,7 @@ Ferdium.safeParseInt(mySelector.innerText)
 
 ### isImage(url)
 
-A utility method that can be used to verify if a url is an image. Returns `1` if is image and `0` if it is not an image.
+A utility method that can be used to verify if a url is an image. Returns `true` if is image and `false` if it is not an image.
 
 #### Arguments
 
