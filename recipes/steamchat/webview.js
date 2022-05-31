@@ -33,17 +33,19 @@ module.exports = (Ferdium, settings) => {
   // TODO: See how this can be moved into the main ferdium app and sent as an ipc message for opening with a new window or same Ferdium recipe's webview based on user's preferences
   document.addEventListener('click', event => {
     const link = event.target.closest('a[href^="http"]');
+    const button = event.target.closest('button[title^="http"]');
 
-    if (link && link.getAttribute('target') === '_top') {
-      event.preventDefault();
-      event.stopPropagation();
-      const url = link.getAttribute('href');
+    if (link || button) {
+      const url = link ? link.getAttribute('href') : button.getAttribute('title');
 
-      if (settings.trapLinkClicks === true) {
-        window.location.href = url;
-      } else {
-        Ferdium.openNewWindow(url);
-      }
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (settings.trapLinkClicks === true) {
+          window.location.href = url;
+        } else {
+          Ferdium.openNewWindow(url);
+        }
     }
   }, true);
 };

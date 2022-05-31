@@ -38,15 +38,13 @@ module.exports = (Ferdium, settings) => {
     if (link || button) {
       const url = link ? link.getAttribute('href') : button.getAttribute('title');
 
-      if (url.includes('views/imgpsh_fullsize_anim')) {
-        event.preventDefault();
-        event.stopPropagation();
+      event.preventDefault();
+      event.stopPropagation();
 
-        if (settings.trapLinkClicks === true) {
-          window.location.href = url;
-        } else {
-          Ferdium.openNewWindow(url);
-        }
+      if (settings.trapLinkClicks === true) {
+        window.location.href = url;
+      } else {
+        Ferdium.openNewWindow(url);
       }
     }
   }, true);
