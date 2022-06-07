@@ -10,9 +10,9 @@ if (process.argv.length < 3) {
 For example:
 pnpm create WhatsApp
 pnpm create "Google Hangouts"
-You can set "Folder name" to "FerdiDev" to use Ferdium's development instance instead:
+You can set "Folder name" to "FerdiumDev" to use Ferdium's development instance instead:
 
-pnpm create WhatsApp FerdiDev
+pnpm create WhatsApp FerdiumDev
 `);
   throw new Error('Please provide the correct number of args!');
 }
