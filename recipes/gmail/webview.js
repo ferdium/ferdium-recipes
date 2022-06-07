@@ -13,11 +13,10 @@ module.exports = Ferdium => {
     location.href =
       'https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/';
   }
-  
-  
+
   const getMessages = () => {
-	let count = 0;
-	let count2 = 0;
+    let count = 0;
+    let count2 = 0;
     const inboxLinks = document.querySelectorAll('.J-Ke.n0');
     if (inboxLinks.length > 0) {
       let parentNode = inboxLinks[0].parentNode;
@@ -26,19 +25,23 @@ module.exports = Ferdium => {
         if (parentNodeOfParentNode) {
           const unreadCounts = parentNodeOfParentNode.querySelectorAll('.bsU');
           if (unreadCounts.length > 0) {
-			let unreadCount = unreadCounts[0].textContent
-			if (unreadCount.includes(":")){
-				let counts = unreadCount.split(":").map((s) => Ferdium.safeParseInt(s.replace(/[^\p{N}]/gu, '')))
-				count = counts[0];
-				count2 = counts[1] - counts[0];
-			} else {
-				count = Ferdium.safeParseInt(unreadCount.replace(/[^\p{N}]/gu, ''));
-			}
+            let unreadCount = unreadCounts[0].textContent;
+            if (unreadCount.includes(':')) {
+              let counts = unreadCount
+                .split(':')
+                .map(s => Ferdium.safeParseInt(s.replace(/[^\p{N}]/gu, '')));
+              count = counts[0];
+              count2 = counts[1] - counts[0];
+            } else {
+              count = Ferdium.safeParseInt(
+                unreadCount.replace(/[^\p{N}]/gu, ''),
+              );
+            }
           }
         }
       }
     }
-	Ferdium.setBadge(count, count2);
+    Ferdium.setBadge(count, count2);
   };
 
   Ferdium.loop(getMessages);
