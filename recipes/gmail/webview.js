@@ -15,8 +15,8 @@ module.exports = Ferdium => {
   }
 
   const getMessages = () => {
-    let count = 0;
-    let count2 = 0;
+    let countImportant = 0;
+    let countNonImportant = 0;
     const inboxLinks = document.querySelectorAll('.J-Ke.n0');
     if (inboxLinks.length > 0) {
       let parentNode = inboxLinks[0].parentNode;
@@ -30,10 +30,10 @@ module.exports = Ferdium => {
               let counts = unreadCount
                 .split(':')
                 .map(s => Ferdium.safeParseInt(s.replace(/[^\p{N}]/gu, '')));
-              count = counts[0];
-              count2 = counts[1] - counts[0];
+              countImportant = counts[0];
+              countNonImportant = counts[1] - counts[0];
             } else {
-              count = Ferdium.safeParseInt(
+              countImportant = Ferdium.safeParseInt(
                 unreadCount.replace(/[^\p{N}]/gu, ''),
               );
             }
@@ -41,7 +41,7 @@ module.exports = Ferdium => {
         }
       }
     }
-    Ferdium.setBadge(count, count2);
+    Ferdium.setBadge(countImportant, countNonImportant);
   };
 
   Ferdium.loop(getMessages);
