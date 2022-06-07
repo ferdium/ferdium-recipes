@@ -11,3 +11,8 @@
 ._1Wk6A ._3YewW._31v_P._2Ptrm {
   display: none;
 }
+
+/* fix for blank spaces regarding view width on screens larger than 1080p */
+.app-wrapper-web ._1XkO3 {
+  max-width: none !important;
+}
