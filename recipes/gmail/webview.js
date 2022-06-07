@@ -15,8 +15,6 @@ module.exports = Ferdium => {
   }
 
   const getMessages = () => {
-    let count = 0;
-
     const inboxLinks = document.querySelectorAll('.J-Ke.n0');
     if (inboxLinks.length > 0) {
       let parentNode = inboxLinks[0].parentNode;
@@ -25,14 +23,18 @@ module.exports = Ferdium => {
         if (parentNodeOfParentNode) {
           const unreadCounts = parentNodeOfParentNode.querySelectorAll('.bsU');
           if (unreadCounts.length > 0) {
-            count = Ferdium.safeParseInt(unreadCounts[0].textContent.replace(/[^\p{N}]/gu, ''));
+			let unreadCount = unreadCounts[0].textContent
+			if (unreadCount.includes(":")){
+				let counts = unreadCount.split(":").map((s) => Ferdium.safeParseInt(s.replace(/[^\p{N}]/gu, '')))
+				Ferdium.setBadge(counts[0], counts[1] - counts[0]);
+			} else {
+				let count = Ferdium.safeParseInt(unreadCount.replace(/[^\p{N}]/gu, ''));
+				Ferdium.setBadge(count);
+			}
           }
         }
       }
     }
-
-    // set Ferdium badge
-    Ferdium.setBadge(count);
   };
 
   Ferdium.loop(getMessages);
