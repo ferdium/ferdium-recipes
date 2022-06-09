@@ -14,16 +14,35 @@ module.exports = Ferdium => {
 
   // https://github.com/ferdium/ferdium-recipes/blob/9d715597a600710c20f75412d3dcd8cdb7b3c39e/docs/frontend_api.md#usage-4
   // Helper that activates DarkReader and injects your darkmode.css at the same time
-  Ferdium.handleDarkMode((isEnabled, helpers) => {
+  Ferdium.handleDarkMode((isEnabled) => {
+
+    var url = new URL(window.location.href);
+    var searchParams = url.searchParams;
+    var isDarkModeParam = searchParams.get('theme');
+    var changedParams = false;
+
     if (isEnabled) {
-      helpers.enableDarkMode();
-      if (!helpers.isDarkModeStyleInjected()) {
-        helpers.injectDarkModeStyle();
-      }
+      isDarkModeParam ? null :
+        (
+          searchParams.set('theme', 'dark'),
+          changedParams = true
+        );
     } else {
-      helpers.disableDarkMode();
-      helpers.removeDarkModeStyle();
+      isDarkModeParam ?
+        (
+          searchParams.delete('theme', 'dark'),
+          changedParams = true
+        )
+      : null;
     }
+
+    changedParams ?
+      (
+        url.search = searchParams.toString(),
+        window.location.href = url.toString()
+      )
+    : null;
+
   });
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
