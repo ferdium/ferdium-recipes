@@ -17,20 +17,20 @@ module.exports = Ferdium => {
   Ferdium.handleDarkMode((isEnabled) => {
 
     var url = new URL(window.location.href);
-    var search_params = url.searchParams;
-    var isDarkModeParam = search_params.get('theme');
+    var searchParams = url.searchParams;
+    var isDarkModeParam = searchParams.get('theme');
     var changedParams = false;
 
     if (isEnabled) {
       isDarkModeParam ? null :
         (
-          search_params.set('theme', 'dark'),
+          searchParams.set('theme', 'dark'),
           changedParams = true
         );
     } else {
       isDarkModeParam ? 
         (
-          search_params.delete('theme', 'dark'),
+          searchParams.delete('theme', 'dark'),
           changedParams = true
         )
       : null;
@@ -38,7 +38,7 @@ module.exports = Ferdium => {
 
     changedParams ? 
       (
-        url.search = search_params.toString(),
+        url.search = searchParams.toString(),
         window.location.href = url.toString()
       )
     : null;
