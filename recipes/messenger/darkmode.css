@@ -8,7 +8,7 @@
   --card-background-flat: #292929;
   --disabled-button-background: #373737;
   --divider: #4d4d4d;
-  --hosted-view-selected-state: #1d2731;
+  --hosted-view-selected-state: #1D2731;
   --hover-overlay: rgba(255, 255, 255, 0.05);
   --media-inner-border: rgba(255, 255, 255, 0.1);
   --messenger-card-background: #1e1e1e;
@@ -47,24 +47,23 @@ body {
 }
 
 /* Delivered icon on left*/
-.rq0escxv.l9j0dhe7.du4w35lb.j83agx80.cbu4d94t.pfnyh3mw.d2edcug0.hpfvmrgz.aovydwv3.p8cu3f6v.kb5gq1qc.taijpn5t.b0upgy8r
-  path,
+.rq0escxv.l9j0dhe7.du4w35lb.j83agx80.cbu4d94t.pfnyh3mw.d2edcug0.hpfvmrgz.aovydwv3.p8cu3f6v.kb5gq1qc.taijpn5t.b0upgy8r path,
 .l9j0dhe7.swg4t2nn path,
 .a8c37x1j.ms05siws.hwsy1cff.b7h9ocf4 path {
   fill: var(--primary-text);
 }
 
-path[d='M0 36h36V0H0z'] {
+path[d="M0 36h36V0H0z"] {
   fill: none !important;
 }
 
 /* Icons */
-path[d='M18 30c-6.627 0-12-5.372-12-12 0-6.627 5.373-12 12-12 6.628 0 12 5.373 12 12 0 6.628-5.372 12-12 12zm5.294-16.707l-7.296 7.295-3.254-3.252c-.352-.353-.919-.439-1.323-.148a1 1 0 00-.128 1.522l3.998 3.997a1 1 0 001.414 0l8.002-8.001a1 1 0 10-1.413-1.413z'] {
+path[d="M18 30c-6.627 0-12-5.372-12-12 0-6.627 5.373-12 12-12 6.628 0 12 5.373 12 12 0 6.628-5.372 12-12 12zm5.294-16.707l-7.296 7.295-3.254-3.252c-.352-.353-.919-.439-1.323-.148a1 1 0 00-.128 1.522l3.998 3.997a1 1 0 001.414 0l8.002-8.001a1 1 0 10-1.413-1.413z"] {
   fill: var(--secondary-text);
 }
 
 .sp_o5t_XtHjhxN_1_5x {
-  filter: invert(0.8);
+  filter: invert(.8);
 }
 
 /* App download */
@@ -83,11 +82,11 @@ path[d='M18 30c-6.627 0-12-5.372-12-12 0-6.627 5.373-12 12-12 6.628 0 12 5.373 1
 
 /* Pop-up close icon */
 .sp_GOPGoqMu6Pq_1_5x {
-  filter: invert(0.8);
+  filter: invert(.8);
 }
 
 /* Feedback icons */
 .sp_BQbKIpOzOAx_1_5x,
 .sp_a51jIvPl6dA_1_5x {
-  filter: invert(0.8);
+  filter: invert(.8);
 }
