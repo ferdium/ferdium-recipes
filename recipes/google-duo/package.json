@@ -1,0 +1,11 @@
+{
+  "id": "google-duo",
+  "name": "Google Duo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/AnalogCyan/recipe-franz-googleduo",
+  "config": {
+    "serviceURL": "https://duo.google.com/?web",
+    "hasNotificationSound": true
+  }
+}
