@@ -11,7 +11,7 @@ module.exports = Ferdium => {
 
     if (notificationWrapper) {
       direct = notificationWrapper.querySelectorAll(
-        '.notification[object_type="chat"], .notification[object_type="room"',
+        '.notification[object_type="chat"], .notification[object_type="room"]',
       ).length;
     }
 
