@@ -726,6 +726,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jurgenhaas",
+      "name": "Jürgen Haas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1475675?v=4",
+      "profile": "http://gitlab.lakedrops.com",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
