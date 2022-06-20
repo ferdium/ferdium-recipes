@@ -3,11 +3,23 @@
   display: none;
 }
 
-/* Change cursor to the default pointer for top menu Nextcloud home, Talk and
-settings links and disable them */
-#nextcloud, #appmenu li[data-id="spreed"] a, #settings {
+/* Change cursor to the default pointer for top menu Nextcloud home and Talk
+links and disable them */
+#nextcloud,
+#appmenu li[data-id="spreed"] a {
   cursor: default;
   pointer-events: none;
+}
+
+/* Hide all settings options, except the option to log out */
+#settings #expanddiv li:not([data-id='logout']) {
+  display: none;
+}
+
+/* Fix the margin of the dropdown */
+#settings #expanddiv,
+#settings #expanddiv > ul {
+  min-height: 0;
 }
 
 /* Hide "More" link in the top menu */
@@ -15,8 +27,10 @@ settings links and disable them */
   display: none !important;
 }
 
-/* Hide notifications that are not related to calendar */
-.notifications .notification-wrapper .notification {display: none;}
+/* Hide notifications that are not related to Talk */
+.notifications .notification-wrapper .notification {
+  display: none;
+}
 .notifications .notification-wrapper .notification[object_type="chat"],
 .notifications .notification-wrapper .notification[object_type="room"]  {
   display: initial;
@@ -24,4 +38,6 @@ settings links and disable them */
 
 /* Hide "Dismiss all notifications" as this action will dismiss also hidden
 notifications */
-.notification-wrapper .dismiss-all {display: none;}
+.notification-wrapper .dismiss-all {
+  display: none;
+}

@@ -1,13 +1,15 @@
 {
   "id": "nextcloud-carnet",
   "name": "Carnet (Nextcloud)",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "license": "MIT",
-  "repository": "https://github.com/eandersons/ferdi-recipe-nextcloud-carnet",
+  "repository": "https://github.com/csolisr/ferdium-recipes/tree/master/recipes/nextcloud-carnet/",
   "config": {
     "hasNotificationSound": true,
     "hasIndirectMessages": true,
-    "hasCustomUrl": true,
-    "serviceURL": "https://{nextcloud}/apps/carnet/"
+    "hasTeamId": true,
+    "urlInputPrefix": "https://",
+    "urlInputSuffix": "/apps/carnet/",
+    "serviceURL": "https://{teamId}/apps/carnet/"
   }
 }
