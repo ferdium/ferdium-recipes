@@ -119,7 +119,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href='https://github.com/rvisharma' title='Ravi Sharma: code'><img src='https://avatars.githubusercontent.com/u/5556114?v=4' alt='rvisharma' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/dabalroman' title='Roman Dąbal: code'><img src='https://avatars.githubusercontent.com/u/13556759?v=4' alt='dabalroman' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/Sagir-mo' title='Sagir Mo: code'><img src='https://avatars.githubusercontent.com/u/78988840?v=4' alt='Sagir-mo' style='width:100px;'/></a></td>
-    <td align="center"><a href='https://github.com/dqos' title='Tamer: design'><img src='https://avatars.githubusercontent.com/u/8611981?v=4' alt='dqos' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/dqos' title='Tamer: design, code'><img src='https://avatars.githubusercontent.com/u/8611981?v=4' alt='dqos' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/n-xlkt' title='aj: code'><img src='https://avatars.githubusercontent.com/u/1295659?v=4' alt='n-xlkt' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/beppe9000' title='beppe9000: code'><img src='https://avatars.githubusercontent.com/u/6625123?v=4' alt='beppe9000' style='width:100px;'/></a></td>
     <td align="center"><a href='http://blog.geekitude.be/' title='bidouilles: code'><img src='https://avatars.githubusercontent.com/u/1132382?v=4' alt='bidouilles' style='width:100px;'/></a></td>
