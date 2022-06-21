@@ -5,21 +5,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 module.exports = Ferdium => {
   const getMessages = () => {
     let direct = 0;
+
     const notificationWrapper = document.querySelector(
       '.notifications .notification-wrapper',
     );
 
     if (notificationWrapper) {
-      direct = notificationWrapper.querySelectorAll(
+      const directSelector = notificationWrapper.querySelectorAll(
         '.notification[object_type="chat"], .notification[object_type="room"]',
-      ).length;
+      );
+      direct = directSelector ? Ferdium.safeParseInt(directSelector.length) : 0;
     }
 
     let indirect = 0;
 
     for (const counter of document.querySelectorAll('.app-navigation-entry__counter')) {
-        indirect += Number(counter.textContent);
-      }
+      const entryCounter = Ferdium.safeParseInt(counter.textContent) : 0;
+      indirect += entryCounter;
+    }
 
     if (document.title.startsWith("*")) {
       indirect++;

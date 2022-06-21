@@ -1,13 +1,15 @@
 {
   "id": "nextcloud-tasks",
   "name": "Nextcloud Tasks",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
-  "repository": "https://github.com/eandersons/ferdi-recipe-nextcloud-tasks",
+  "repository": "https://github.com/csolisr/ferdium-recipes/tree/master/recipes/nextcloud-tasks/",
   "config": {
     "hasNotificationSound": true,
     "hasIndirectMessages": true,
-    "hasCustomUrl": true,
-    "serviceURL": "https://{nextcloud}/apps/tasks/"
+    "hasTeamId": true,
+    "urlInputPrefix": "https://",
+    "urlInputSuffix": "/apps/tasks/",
+    "serviceURL": "https://{teamId}/apps/tasks/"
   }
 }

@@ -6,10 +6,10 @@ function _interopRequireDefault(obj) {
 
 module.exports = Ferdium => {
   const getMessages = () => {
-    const selector = document.querySelector(
+    const directSelector = document.querySelector(
       '.subscriptions-feed .app-navigation-entry-utils-counter',
     );
-    const direct = selector ? Ferdium.safeParseInt(selector.textContent) : 0;
+    const direct = directSelector ? Ferdium.safeParseInt(directSelector.textContent) : 0;
 
     Ferdium.setBadge(direct);
   };

@@ -1,12 +1,15 @@
 const _path = _interopRequireDefault(require('path'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 module.exports = Ferdium => {
   const getMessages = () => {
-    const direct = document.querySelectorAll(
+    const directSelector = document.querySelectorAll(
       '.notifications .notification-wrapper .notification[object_type="dav"]',
-    ).length;
+    );
+    const direct = directSelector ? Ferdium.safeParseInt(selector.length) : 0;
 
     Ferdium.setBadge(direct);
   };

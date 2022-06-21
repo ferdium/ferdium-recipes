@@ -1,12 +1,41 @@
 /* Hide all app links and contacts menu link in the top menu except for
 Cospend */
-#appmenu li:not([data-id="cospend"]), #contactsmenu {display: none;}
+#appmenu li:not([data-id='cospend']),
+#contactsmenu {
+  display: none;
+}
 
-/* Change the cursor to the default for Nextcloud home, Cospend and settings
+/* Change the cursor to the default for Nextcloud home and Cospend
 links in the top menu and disable them */
-#nextcloud, #appmenu li[data-id="cospend"] a, #settings {
-    cursor:default; pointer-events: none;
+#nextcloud,
+#appmenu li[data-id='cospend'] a {
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Hide all settings options, except the option to log out */
+#settings #expanddiv li:not([data-id='logout']) {
+  display: none;
+}
+
+/* Fix the margin of the dropdown */
+#settings #expanddiv,
+#settings #expanddiv > ul {
+  min-height: 0;
 }
 
 /* Hide "More" link in the top menu */
-#more-apps {display: none !important;}
+#more-apps {
+  display: none !important;
+}
+
+/* Hide notifications that are not related to Cospend */
+.notifications .notification-wrapper .notification:not([object_type="cospend"]) {
+  display: none;
+}
+
+/* Hide "Dismiss all notifications" as this action will dismiss also hidden
+notifications */
+.notification-wrapper .dismiss-all {
+  display: none;
+}

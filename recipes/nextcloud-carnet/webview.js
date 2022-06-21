@@ -4,12 +4,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 module.exports = Ferdium => {
   const getMessages = () => {
-    const direct = document.querySelectorAll(
+    const directSelector = document.querySelectorAll(
       '.app-navigation-entry-utils-counter.highlighted',
-    ).length;
-    const indirect = document.querySelectorAll(
+    );
+    const direct = directSelector ? Ferdium.safeParseInt(directSelector.length) : 0;
+
+    const indirectSelector = document.querySelectorAll(
       '.app-navigation-entry-utils-counter:not(.highlighted)',
-    ).length;
+    );
+    const indirect = indirectSelector ? Ferdium.safeParseInt(indirectSelector.length) : 0;
 
     Ferdium.setBadge(direct, indirect);
   };
