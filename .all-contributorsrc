@@ -744,6 +744,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Sykursen",
+      "name": "Guillaume Assier",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18405490?v=4",
+      "profile": "https://hello.guillaume.engineer/",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
