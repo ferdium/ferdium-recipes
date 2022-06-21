@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-83-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-84-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -140,6 +140,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href='http://bernhard.kralofsky.com' title='Bernhard: code'><img src='https://avatars.githubusercontent.com/u/6146026?v=4' alt='bernikr' style='width:100px;'/></a></td>
     <td align="center"><a href='https://hello.guillaume.engineer/' title='Guillaume Assier: code'><img src='https://avatars.githubusercontent.com/u/18405490?v=4' alt='Sykursen' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/Latschenharry' title='Latschenharry: code'><img src='https://avatars.githubusercontent.com/u/12736979?v=4' alt='Latschenharry' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://posix.dev.br' title='Daniel Souza: code'><img src='https://avatars.githubusercontent.com/u/13279154?v=4' alt='danisztls' style='width:100px;'/></a></td>
   </tr>
 </table>
 
