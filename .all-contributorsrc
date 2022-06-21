@@ -615,7 +615,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/8611981?v=4",
       "profile": "https://github.com/dqos",
       "contributions": [
-        "design"
+        "design",
+        "code"
       ]
     },
     {
@@ -723,6 +724,51 @@
       "name": "Flying--Dutchman",
       "avatar_url": "https://avatars.githubusercontent.com/u/9158539?v=4",
       "profile": "https://github.com/Flying--Dutchman",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jurgenhaas",
+      "name": "Jürgen Haas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1475675?v=4",
+      "profile": "http://gitlab.lakedrops.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bernikr",
+      "name": "Bernhard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6146026?v=4",
+      "profile": "http://bernhard.kralofsky.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Sykursen",
+      "name": "Guillaume Assier",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18405490?v=4",
+      "profile": "https://hello.guillaume.engineer/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Latschenharry",
+      "name": "Latschenharry",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12736979?v=4",
+      "profile": "https://github.com/Latschenharry",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "danisztls",
+      "name": "Daniel Souza",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13279154?v=4",
+      "profile": "https://posix.dev.br",
       "contributions": [
         "code"
       ]

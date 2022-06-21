@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-79-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-84-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -119,7 +119,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href='https://github.com/rvisharma' title='Ravi Sharma: code'><img src='https://avatars.githubusercontent.com/u/5556114?v=4' alt='rvisharma' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/dabalroman' title='Roman Dąbal: code'><img src='https://avatars.githubusercontent.com/u/13556759?v=4' alt='dabalroman' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/Sagir-mo' title='Sagir Mo: code'><img src='https://avatars.githubusercontent.com/u/78988840?v=4' alt='Sagir-mo' style='width:100px;'/></a></td>
-    <td align="center"><a href='https://github.com/dqos' title='Tamer: design'><img src='https://avatars.githubusercontent.com/u/8611981?v=4' alt='dqos' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/dqos' title='Tamer: design, code'><img src='https://avatars.githubusercontent.com/u/8611981?v=4' alt='dqos' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/n-xlkt' title='aj: code'><img src='https://avatars.githubusercontent.com/u/1295659?v=4' alt='n-xlkt' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/beppe9000' title='beppe9000: code'><img src='https://avatars.githubusercontent.com/u/6625123?v=4' alt='beppe9000' style='width:100px;'/></a></td>
     <td align="center"><a href='http://blog.geekitude.be/' title='bidouilles: code'><img src='https://avatars.githubusercontent.com/u/1132382?v=4' alt='bidouilles' style='width:100px;'/></a></td>
@@ -136,6 +136,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href='https://copypastas.beerpsi.me' title='beerpsi: code'><img src='https://avatars.githubusercontent.com/u/92439990?v=4' alt='beerpiss' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/Flying--Dutchman' title='Flying--Dutchman: code'><img src='https://avatars.githubusercontent.com/u/9158539?v=4' alt='Flying--Dutchman' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://gitlab.lakedrops.com' title='Jürgen Haas: code'><img src='https://avatars.githubusercontent.com/u/1475675?v=4' alt='jurgenhaas' style='width:100px;'/></a></td>
+    <td align="center"><a href='http://bernhard.kralofsky.com' title='Bernhard: code'><img src='https://avatars.githubusercontent.com/u/6146026?v=4' alt='bernikr' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://hello.guillaume.engineer/' title='Guillaume Assier: code'><img src='https://avatars.githubusercontent.com/u/18405490?v=4' alt='Sykursen' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/Latschenharry' title='Latschenharry: code'><img src='https://avatars.githubusercontent.com/u/12736979?v=4' alt='Latschenharry' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://posix.dev.br' title='Daniel Souza: code'><img src='https://avatars.githubusercontent.com/u/13279154?v=4' alt='danisztls' style='width:100px;'/></a></td>
   </tr>
 </table>
 
