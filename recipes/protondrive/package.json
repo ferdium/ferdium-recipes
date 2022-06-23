@@ -4,6 +4,6 @@
   "version": "1.0.0",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://drive.proton.me",
+    "serviceURL": "https://drive.proton.me"
   }
 }
