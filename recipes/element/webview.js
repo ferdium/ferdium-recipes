@@ -1,38 +1,28 @@
 module.exports = Ferdium => {
   function getMessages() {
-    // const badges = document.querySelectorAll('.mx_RoomSublist:not(.mx_RoomSublist_hidden) .mx_RoomSublist_badgeContainer');
-    const spaceBadges = document.querySelectorAll('.mx_SpacePanel_badgeContainer .mx_NotificationBadge .mx_NotificationBadge_count');
-    const avatarBadges = document.querySelectorAll('.mx_DecoratedRoomAvatar .mx_NotificationBadge .mx_NotificationBadge_count');
-    // Number of messages from People / Number of messages appearing Red in the Room List
+    const badges = document.querySelectorAll('.mx_RoomList .mx_RoomSublist_tiles .mx_NotificationBadge');
+    // Number of messages from rooms which has "All Messages" notifications enabled.
+    // Always incremented for private rooms by default, incremented for group chats if
+    // "All Messages" is selected for them in notifications settings.
     let directCount = 0;
-    // Number of messages from Rooms / Number of messages appearing Grey in the Room List
+    // Number of messages for rooms which has "Only Highlights" notifications level set.
+    // Appears in rooms list with dots on left.
     let indirectCount = 0;
-    // Count Badges depending on Element Settings
-    if (avatarBadges.length > 0) {
-      for (const badge of avatarBadges) {
-        if (badge.parentElement.getAttribute('class').includes('mx_NotificationBadge_highlighted')) {
-          directCount = directCount + Ferdium.safeParseInt(badge.textContent);
-        } else if (badge.parentElement.previousSibling != null && badge.parentElement.previousSibling.getAttribute('class').includes('mx_DecoratedRoomAvatar_icon_online')) {
-          directCount = directCount + Ferdium.safeParseInt(badge.textContent);
-        } else if (badge.parentElement.getAttribute('class').includes('mx_NotificationBadge_dot')) {
-          indirectCount = indirectCount + 1; // there might be dragons: incrementing does not work here?
-        } else {
-          indirectCount = indirectCount + Ferdium.safeParseInt(badge.textContent);
-        }
-      }
-    } else {
-      for (const badge of spaceBadges) {
-        if (badge.parentElement.getAttribute('class').includes('mx_NotificationBadge_highlighted')) {
-          directCount = directCount + Ferdium.safeParseInt(badge.textContent);
-        } else if (badge.parentElement.getAttribute('class').includes('mx_NotificationBadge_dot')) {
-          indirectCount = indirectCount + Ferdium.safeParseInt(1); // there might be dragons: incrementing does not work here?
-        } else {
-          indirectCount = indirectCount + Ferdium.safeParseInt(badge.textContent);
-        }
+    
+    for (const badge of badges) {
+      console.log(badge.classList);
+      if (badge.classList.contains('mx_NotificationBadge_dot')) {
+        indirectCount++;
+      } else {
+        directCount += Ferdium.safeParseInt(badge.childNodes[0].textContent);
       }
     }
+    
+    console.log(directCount, indirectCount);
+    
     // set Ferdium badge
     Ferdium.setBadge(directCount, indirectCount);
   }
   Ferdium.loop(getMessages);
 };
+
