@@ -6,7 +6,7 @@ module.exports = Ferdium => {
     // "All Messages" is selected for them in notifications settings.
     let directCount = 0;
     // Number of messages for rooms which has "Only Highlights" notifications level set.
-    // Appears in rooms list with dots on left.
+    // Appears in rooms list with dots on right.
     let indirectCount = 0;
     
     for (const badge of badges) {
