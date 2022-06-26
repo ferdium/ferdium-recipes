@@ -10,16 +10,13 @@ module.exports = Ferdium => {
     let indirectCount = 0;
     
     for (const badge of badges) {
-      console.log(badge.classList);
       if (badge.classList.contains('mx_NotificationBadge_dot')) {
         indirectCount++;
       } else {
         directCount += Ferdium.safeParseInt(badge.childNodes[0].textContent);
       }
     }
-    
-    console.log(directCount, indirectCount);
-    
+
     // set Ferdium badge
     Ferdium.setBadge(directCount, indirectCount);
   }
