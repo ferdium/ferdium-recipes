@@ -20,7 +20,7 @@ module.exports = Ferdium => {
     let indirect = 0;
 
     for (const counter of document.querySelectorAll('.app-navigation-entry__counter')) {
-      const entryCounter = Ferdium.safeParseInt(counter.textContent) : 0;
+      const entryCounter = counter ? Ferdium.safeParseInt(counter.textContent) : 0;
       indirect += entryCounter;
     }
 

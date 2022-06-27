@@ -9,7 +9,7 @@ module.exports = Ferdium => {
     const directSelector = document.querySelectorAll(
       '.notifications .notification-wrapper .notification[object_type="dav"]',
     );
-    const direct = directSelector ? Ferdium.safeParseInt(selector.length) : 0;
+    const direct = directSelector ? Ferdium.safeParseInt(directSelector.length) : 0;
 
     Ferdium.setBadge(direct);
   };
