@@ -20,7 +20,16 @@ module.exports = Ferdium => {
     Ferdium.setBadge(count);
   };
 
+  const hideInstallMessage = () => {
+    const installMessage = document.querySelector('.usczdcwk');
+    if (installMessage.style.display != 'none') {
+      installMessage.style.display = 'none'
+    }
+  }
+
   Ferdium.loop(getMessages);
+
+  Ferdium.loop(hideInstallMessage);
 
   localStorage.setItem(
     '_cs_desktopNotifsEnabled',
