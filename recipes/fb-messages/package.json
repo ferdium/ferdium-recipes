@@ -1,0 +1,10 @@
+{
+  "id": "fb-messages",
+  "name": "FB Messages",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.facebook.com/messages",
+    "hasNotificationSound": true
+  }
+}

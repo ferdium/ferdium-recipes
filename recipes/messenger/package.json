@@ -1,10 +1,10 @@
 {
   "id": "messenger",
   "name": "Messenger",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://www.facebook.com/messages",
+    "serviceURL": "https://messenger.com",
     "hasNotificationSound": true
   }
 }
