@@ -1,3 +1,10 @@
+function hideInstallMessage() {
+  const installMessage = document.querySelector('.usczdcwk');
+  if (installMessage.style.display != 'none') {
+    installMessage.style.display = 'none'
+  }
+}
+
 module.exports = Ferdium => {
   const getMessages = () => {
     let count = [...document.querySelectorAll('.bp9cbjyn.j83agx80.owycx6da:not(.btwxx1t3)')]
@@ -19,13 +26,6 @@ module.exports = Ferdium => {
 
     Ferdium.setBadge(count);
   };
-
-  const hideInstallMessage = () => {
-    const installMessage = document.querySelector('.usczdcwk');
-    if (installMessage.style.display != 'none') {
-      installMessage.style.display = 'none'
-    }
-  }
 
   Ferdium.loop(getMessages);
 
