@@ -1,8 +1,5 @@
 module.exports = Ferdium => class Discord extends Ferdium {
   overrideUserAgent() {
-    const useragent = window.navigator.userAgent;
-    const parts = useragent.split('(KHTML, like Gecko)');
-
-    return parts.join('(KHTML, like Gecko) discord/0.0.250').replace('Electron', 'Discord').replace('Ferdium', 'Discord');
+    return 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36';
   }
 };
