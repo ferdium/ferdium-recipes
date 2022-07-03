@@ -36,6 +36,9 @@ module.exports = Ferdium => {
     Ferdium.setBadge(count, indirectCount);
   };
 
+  // inject webview hacking script
+  Ferdium.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
+
   const getActiveDialogTitle = () => {
     const element = document.querySelector('header .emoji-texttt');
 
