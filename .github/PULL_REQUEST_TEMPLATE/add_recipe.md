@@ -14,7 +14,7 @@ Service ID: [What ID does your recipe use?]
 ### Terminal output
 
 ```bash
-[Output of your terminal when you ran yarn package]
+[Output of your terminal when you ran pnpm package]
 ```
 
 ### Additional information
