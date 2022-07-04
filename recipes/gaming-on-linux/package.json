@@ -1,0 +1,9 @@
+{
+  "id": "gaming-on-linux",
+  "name": "GamingOnLinux",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.gamingonlinux.com"
+  }
+}
