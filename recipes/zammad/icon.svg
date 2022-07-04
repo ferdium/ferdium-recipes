@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" enable-background="new 0 0 841.9 595.3" version="1.1" viewBox="0 0 1024 1024" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(-89.7,-174.8)">
+	
+	<g transform="matrix(5.5974 0 0 5.5974 -505.46 -847.44)">
+		<polygon points="247.5 252.9 230.5 250 272.2 237.2" fill="#ca2317"/>
+		<polygon points="264.8 262.6 255.9 281.2 247.5 252.9 272.2 237.2" fill="#e84f83"/>
+		<polygon points="272.2 237.2 284.4 229.5 279.8 237.2 264.8 262.6" fill="#ca2317"/>
+		<polygon points="279.8 237.2 285.9 234.5 274.3 246.4" fill="#e54011"/>
+		<polygon points="243.4 246 233 242.1 267.1 238.7" fill="#e54011"/>
+		<polygon points="251.5 290.2 234.3 261.4 247.5 252.9 255.9 281.2" fill="#ca2317"/>
+		<polygon points="251.5 290.2 214.6 295 208.3 218" fill="#b7dff2"/>
+		<polygon points="251.5 290.2 196.7 314.7 214.6 295" fill="#e54011"/>
+		<polygon points="186.2 292.1 109.7 353.4 196.7 314.7 214.6 295" fill="#ffce33"/>
+		<polygon points="164.8 300.8 113 321.8 157.7 315 171.6 303.8" fill="#d6b12d"/>
+		<polygon points="186.2 292.1 129.1 285.3 171.6 303.8" fill="#ffde85"/>
+		<polygon points="200.8 282.9 205.1 245.9 199.7 246.8 186.2 292.1" fill="#009ec6"/>
+		<polygon points="208.3 218 213 275.1 200.8 282.9" fill="#5eafce"/>
+		<polygon points="206.8 230.8 166.9 252 205.1 245.9" fill="#045972"/>
+		<polygon points="207.1 228.7 162.8 216.6 196 236.6 206.8 230.8" fill="#5a8591"/>
+		<polygon points="208.3 218 169.3 194.8 199.5 226.6 207.1 228.7" fill="#009ec6"/>
+		<polygon points="214.6 295 186.2 292.1 213 275.1" fill="#f39804"/>
+	</g>
+</g>
+</svg>
