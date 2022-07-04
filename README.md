@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-89-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-90-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -148,6 +148,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href='https://github.com/fernandofig' title='Fernando Figueiredo: code'><img src='https://avatars.githubusercontent.com/u/1110864?v=4' alt='fernandofig' style='width:100px;'/></a></td>
     <td align="center"><a href='https://fschaupp.me' title='fschaupp: code'><img src='https://avatars.githubusercontent.com/u/26521758?v=4' alt='fschaupp' style='width:100px;'/></a></td>
     <td align="center"><a href='https://www.bouma.tech' title='Anne Douwe Bouma: code'><img src='https://avatars.githubusercontent.com/u/6921250?v=4' alt='anned20' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://kishaningithub.github.io/' title='Kishan B: code'><img src='https://avatars.githubusercontent.com/u/763760?v=4' alt='kishaningithub' style='width:100px;'/></a></td>
   </tr>
 </table>
 
