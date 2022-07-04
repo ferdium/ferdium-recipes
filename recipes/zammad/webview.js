@@ -1,10 +1,8 @@
 module.exports = Ferdium => {
-    const getMessages = function getMessages() {
-        const notificationsCounter = document.querySelector('.js-notificationsCounter');
-        const count = Number.parseInt(notificationsCounter.textContent, 10);
+  const getMessages = function getMessages() {
+    const notificationsCounter = document.querySelector('.js-notificationsCounter');
+    Ferdium.setBadge(Ferdium.safeParseInt(notificationsCounter.textContent));
+  };
 
-        Ferdium.setBadge(count);
-    };
-
-    Ferdium.loop(getMessages);
+  Ferdium.loop(getMessages);
 };
