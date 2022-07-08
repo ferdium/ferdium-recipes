@@ -33,8 +33,9 @@ module.exports = (Ferdium, settings) => {
 
     if (link || button) {
       const url = link ? link.getAttribute('href') : button.getAttribute('title');
-      
-      if (!Ferdium.isImage(url)) {
+      const stayInsideDiscord = url.includes('https://discordapp.com/channels/');
+
+      if (!Ferdium.isImage(url) && !stayInsideDiscord) {
         event.preventDefault();
         event.stopPropagation();
 
