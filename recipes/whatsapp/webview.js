@@ -54,6 +54,16 @@ module.exports = Ferdium => {
     Ferdium.releaseServiceWorkers();
   });
 
+  Ferdium.handleDarkMode((isEnabled) => {
+
+    if (isEnabled) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+
+  });
+
   Ferdium.loop(loopFunc);
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
