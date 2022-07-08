@@ -12,7 +12,7 @@ module.exports = Ferdium => {
       '[class*="mail-status unread"]',
     );
     let indirectCount = 0;
-    if (indirectCountElement) {
+    if (indirectCountElement && indirectCountElement.textContent.trim().length > 0) {
       indirectCount = 1;
     }
 
