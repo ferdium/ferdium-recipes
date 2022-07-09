@@ -6,10 +6,10 @@ function _interopRequireDefault(obj) {
 
 module.exports = Ferdium => {
   const telegramVersion = document
-    .querySelector('meta[name="application-name"]')
+    .querySelector('meta[property="og:url"]')
     ?.getAttribute('content');
 
-  const isWebK = telegramVersion?.includes('WebK');
+  const isWebK = telegramVersion?.includes('/k/');
 
   // There are two different Telegram versions for internal competition
   // Read more: https://bugs.telegram.org/c/4002/public
