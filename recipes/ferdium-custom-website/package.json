@@ -1,0 +1,9 @@
+{
+  "id": "ferdium-custom-website",
+  "name": "Custom Website",
+  "version": "1.3.0",
+  "license": "MIT",
+  "config": {
+    "hasCustomUrl": true
+  }
+}
