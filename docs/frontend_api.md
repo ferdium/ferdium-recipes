@@ -29,7 +29,7 @@
     - [safeParseInt(stringText)](#safeparseintstringtext)
       - [Arguments](#arguments-8)
       - [Usage](#usage-8)
-    - [isImage(url)](#isimageurl)
+    - [isImage(link)](#isimagelink)
       - [Arguments](#arguments-9)
       - [Usage](#usage-9)
     - [setDialogTitle(title)](#setdialogtitletitle-1)
@@ -308,9 +308,9 @@ A utility method that can be used to safely parse the text content (handles null
 Ferdium.safeParseInt(mySelector.innerText)
 ```
 
-### isImage(url)
+### isImage(link)
 
-A utility method that can be used to verify if a url is an image. Returns `true` if is image and `false` if it is not an image.
+A utility method that can be used to verify if a link is an image. Returns `true` if is image and `false` if it is not an image.
 
 #### Arguments
 
@@ -319,7 +319,7 @@ A utility method that can be used to verify if a url is an image. Returns `true`
 #### Usage
 
 ```JavaScript
-Ferdium.isImage(url)
+Ferdium.isImage(link)
 ```
 
 ### setDialogTitle(title)

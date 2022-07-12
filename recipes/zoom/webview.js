@@ -33,8 +33,8 @@ module.exports = (Ferdium, settings) => {
 
     if (link || button) {
       const url = link ? link.getAttribute('href') : button.getAttribute('title');
-      
-      if (!Ferdium.isImage(url)) {
+
+      if (!Ferdium.isImage(link)) {
         event.preventDefault();
         event.stopPropagation();
 
