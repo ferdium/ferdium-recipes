@@ -33,9 +33,12 @@ module.exports = (Ferdium, settings) => {
 
     if (link || button) {
       const url = link ? link.getAttribute('href') : button.getAttribute('title');
-      const stayInsideDiscord =
-        url.includes('https://discordapp.com/channels/') ||
-        url.includes('https://discord.com/channels/');
+      const skipDomains = [/^https:\/\/discordapp\.com\/channels\//i, /^https:\/\/discord\.com\/channels\//i];
+
+      skipDomains.every(skipDomain => {
+        stayInsideDiscord = skipDomain.test(url);
+        return !stayInsideDiscord;
+      });
 
       if (!Ferdium.isImage(link) && !stayInsideDiscord) {
         event.preventDefault();
