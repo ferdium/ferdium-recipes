@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       message:
-        description: 'Message for build'
+        description: "Message for build"
         required: true
 
 jobs:
@@ -31,8 +31,13 @@ jobs:
       - name: Use Node.js specified in the '.nvmrc' file
         uses: actions/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
       - name: Install pnpm
         run: npm i -gf "pnpm@$(node -p 'require("./package.json").engines.pnpm')" && pnpm -v
       - name: Install node dependencies recursively
-        run: pnpm i && pnpm lint && pnpm reformat-files && pnpm package
+        run: pnpm i
+      - name: Check code style and formatting
+        if: ${{ github.event_name == 'pull_request' }}
+        run: pnpm lint && pnpm reformat-files
+      - name: Package recipes
+        run: pnpm package

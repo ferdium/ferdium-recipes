@@ -12,7 +12,8 @@
     "prepare": "pnpm dlx husky install",
     "package": "node scripts/package.js",
     "create": "node scripts/create.js",
-    "lint": "eslint . --fix --report-unused-disable-directives",
+    "lint": "eslint \"{recipes,scripts}/**/*.{js,jsx,ts,tsx}\" --quiet",
+    "lint:fix": "npm run lint -- --fix",
     "reformat-files": "prettier --ignore-path .eslintignore --write --require-pragma \"**/*.{js,json,scss}\"",
     "contributors": "all-contributors"
   },

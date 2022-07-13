@@ -1,4 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm i && pnpm lint && pnpm reformat-files && pnpm package
+pnpm i || exit 1
+pnpm lint:fix --quiet || exit 1
+pnpm reformat-files || exit 1
+pnpm package || exit 1
