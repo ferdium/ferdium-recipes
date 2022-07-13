@@ -35,4 +35,4 @@ jobs:
       - name: Install pnpm
         run: npm i -gf "pnpm@$(node -p 'require("./package.json").engines.pnpm')" && pnpm -v
       - name: Install node dependencies recursively
-        run: pnpm i && pnpm package
+        run: pnpm i && pnpm lint && pnpm reformat-files && pnpm package
