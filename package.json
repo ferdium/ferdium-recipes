@@ -13,7 +13,7 @@
     "package": "node scripts/package.js",
     "create": "node scripts/create.js",
     "lint": "eslint . --fix --report-unused-disable-directives",
-    "reformat-files": "./node_modules/.bin/prettier --ignore-path .eslintignore --write --require-pragma \"**/*.{js,json,scss}\"",
+    "reformat-files": "prettier --ignore-path .eslintignore --write --require-pragma \"**/*.{js,json,scss}\"",
     "contributors": "all-contributors"
   },
   "repository": {
