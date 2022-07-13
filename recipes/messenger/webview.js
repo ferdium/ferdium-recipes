@@ -1,7 +1,7 @@
 function hideInstallMessage() {
   const installMessage = document.querySelector('.usczdcwk');
-  if (installMessage.style.display != 'none') {
-    installMessage.style.display = 'none'
+  if (installMessage) {
+    installMessage.style.display = installMessage.style.display != 'none' ? 'none': installMessage.style.display;
   }
 }
 
@@ -27,9 +27,12 @@ module.exports = Ferdium => {
     Ferdium.setBadge(count);
   };
 
-  Ferdium.loop(getMessages);
+  const loopRoutine = () => {
+    getMessages()
+    hideInstallMessage()
+  };
 
-  Ferdium.loop(hideInstallMessage);
+  Ferdium.loop(loopRoutine);
 
   localStorage.setItem(
     '_cs_desktopNotifsEnabled',
