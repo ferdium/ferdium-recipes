@@ -18,12 +18,10 @@ module.exports = (Ferdium, settings) => {
   const getMessages = () => {
     let directUnreadCount = 0;
     let indirectUnreadCount = 0;
-
     if (/\/owa/.test(location.pathname)) {
       // classic app
       directUnreadCount = Ferdium.safeParseInt(
-        document.querySelectorAll("span[title*='Inbox'] + div > span")[0]
-          .textContent,
+        document.querySelectorAll("span[title*='Inbox'] + div > span")[0]?.textContent
       );
     } else {
       // new app
@@ -37,6 +35,5 @@ module.exports = (Ferdium, settings) => {
 
     Ferdium.setBadge(directUnreadCount, indirectUnreadCount);
   };
-
   Ferdium.loop(getMessages);
 };
