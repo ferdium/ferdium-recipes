@@ -45,10 +45,10 @@ pnpm i
 
 ```Bash
 # Make sure you are still in the repository's folder
-pnpm create "Service Name"
+pnpm run create "Service Name"
 ```
 
-Replace `Service Name` with the name of your service, e.g. `pnpm create "Google Hangouts"`.
+Replace `Service Name` with the name of your service, e.g. `pnpm run create "Google Hangouts"`.
 This command will automatically create the development recipe in the correct folder, prepares it for your service and opens the new recipe in your file explorer or Finder. 5. Reload Ferdium (`CMD/CTRL + SHIFT + R`) in order for it to register the new recipe 6. You can now develop your recipe as described below. Please continue down below with "[Publishing](#Publishing)" after you are done creating your recipe.
 
 5. (Mandatory) Please run the following step before raising a PR:
