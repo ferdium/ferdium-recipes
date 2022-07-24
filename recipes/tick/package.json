@@ -1,7 +1,7 @@
 {
   "id": "tick",
   "name": "tick",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "config": {
     "serviceURL": "http://app.tickspot.com/"
