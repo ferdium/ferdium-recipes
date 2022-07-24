@@ -149,7 +149,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href='https://fschaupp.me' title='fschaupp: code'><img src='https://avatars.githubusercontent.com/u/26521758?v=4' alt='fschaupp' style='width:100px;'/></a></td>
     <td align="center"><a href='https://www.bouma.tech' title='Anne Douwe Bouma: code'><img src='https://avatars.githubusercontent.com/u/6921250?v=4' alt='anned20' style='width:100px;'/></a></td>
     <td align="center"><a href='https://kishaningithub.github.io/' title='Kishan B: code'><img src='https://avatars.githubusercontent.com/u/763760?v=4' alt='kishaningithub' style='width:100px;'/></a></td>
-    <td align="center"><a href='https://github.com/langdon' title='langdon: doc'><img src='https://avatars.githubusercontent.com/u/1832177?v=4' alt='langdon' style='width:100px;'/></a></td>
+    <td align="center"><a href='https://github.com/langdon' title='langdon: doc, code'><img src='https://avatars.githubusercontent.com/u/1832177?v=4' alt='langdon' style='width:100px;'/></a></td>
   </tr>
 </table>
 
