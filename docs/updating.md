@@ -31,6 +31,6 @@ Ferdium uses this version to determine if it should update the local copy of the
 
 ## 5. Running the validation checks
 
-This might be the __most important step__ of this guide. You'll need to run the `pnpm lint && pnpm reformat-files && pnpm package` command to ensure that all validation checks are run.
+This might be the __most important step__ of this guide. You'll need to run the `pnpm lint:fix && pnpm reformat-files && pnpm package` command to ensure that all validation checks are run.
 
 ## 6. Commit your changes and create a PR to <https://github.com/ferdium/ferdium-recipes>

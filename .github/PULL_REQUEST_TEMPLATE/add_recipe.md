@@ -22,7 +22,7 @@ Service ID: [What ID does your recipe use?]
 <!-- Please also accept the following checkboxes -->
 
 - [ ] I am the original creator of this package
-- [ ] I have run the `pnpm lint && pnpm reformat-files && pnpm package` and verified that there are no validation errors reported for this package
+- [ ] I have run the `pnpm lint:fix && pnpm reformat-files && pnpm package` and verified that there are no validation errors reported for this package
 - [ ] My recipe has been tested to work inside Ferdium
 
 <!-- Here you can write anything else you want to tell us. -->

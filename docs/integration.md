@@ -53,7 +53,7 @@ This command will automatically create the development recipe in the correct fol
 
 5. (Mandatory) Please run the following step before raising a PR:
 ```Bash
-pnpm i && pnpm lint && pnpm reformat-files && pnpm package
+pnpm i && pnpm lint:fix && pnpm reformat-files && pnpm package
 ```
 Fix any issues that are reported.
 
