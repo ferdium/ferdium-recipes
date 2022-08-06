@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-91-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-92-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -150,6 +150,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href='https://www.bouma.tech' title='Anne Douwe Bouma: code'><img src='https://avatars.githubusercontent.com/u/6921250?v=4' alt='anned20' style='width:100px;'/></a></td>
     <td align="center"><a href='https://kishaningithub.github.io/' title='Kishan B: code'><img src='https://avatars.githubusercontent.com/u/763760?v=4' alt='kishaningithub' style='width:100px;'/></a></td>
     <td align="center"><a href='https://github.com/langdon' title='langdon: doc, code'><img src='https://avatars.githubusercontent.com/u/1832177?v=4' alt='langdon' style='width:100px;'/></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href='https://www.linkedin.com/in/davidengenheiro/?locale=en_US' title='David Kennedy Souza Araújo: code'><img src='https://avatars.githubusercontent.com/u/6628028?v=4' alt='DavidUser' style='width:100px;'/></a></td>
   </tr>
 </table>
 
