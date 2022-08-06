@@ -836,6 +836,15 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "DavidUser",
+      "name": "David Kennedy Souza Araújo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6628028?v=4",
+      "profile": "https://www.linkedin.com/in/davidengenheiro/?locale=en_US",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
