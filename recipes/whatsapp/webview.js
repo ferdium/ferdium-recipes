@@ -26,7 +26,7 @@ function addThemeMessage() {
     const messageTitleString = 'FERDIUM WARNING!';
     const messageTitleElement = createElement(messageTitleString, idStringTitle);
 
-    // Create Ferdium Waring message element
+    // Create Ferdium Warning message element
     const messageBody1 = 'To change your Whatsapp Theme, please use the native settings on Ferdium.';
     const messageBody2 = 'For that, right-click on the Whatsapp Service and click on Enable/Disable Dark mode.';
     const message1 = createElement(messageBody1, idString);
