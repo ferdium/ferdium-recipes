@@ -1,0 +1,14 @@
+{
+  "id": "bugzilla",
+  "name": "Bugzilla",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [],
+  "config": {
+    "serviceURL": "",
+    "hasCustomUrl": true,
+    "message": "",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  }
+}
