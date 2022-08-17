@@ -1,0 +1,14 @@
+{
+  "id": "discourse",
+  "name": "Discourse",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [],
+  "config": {
+    "serviceURL": "https://meta.discourse.org/",
+    "hasCustomUrl": true,
+    "message": "Discourse's default URL is https://meta.discourse.org/",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  }
+}
