@@ -1,0 +1,14 @@
+{
+  "id": "lemmy",
+  "name": "Lemmy",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [],
+  "config": {
+    "serviceURL": "https://lemmy.ml/",
+    "hasCustomUrl": true,
+    "message": "Lemmy's default URL is https://lemmy.ml/",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  }
+}
