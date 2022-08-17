@@ -7,7 +7,7 @@
   "config": {
     "serviceURL": "",
     "hasCustomUrl": true,
-    "message": "",
+    "message": "Bugzilla does not have a default URL",
     "hasNotificationSound": true,
     "hasIndirectMessages": true
   }
