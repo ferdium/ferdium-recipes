@@ -1,0 +1,9 @@
+{
+  "id": "magic-level",
+  "name": "Magic Level",
+  "version": "1.25.111",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://magiclevel.ml"
+  }
+}
