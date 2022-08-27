@@ -5,9 +5,9 @@
   "license": "MIT",
   "aliases": [],
   "config": {
-    "serviceURL": "",
+    "serviceURL": "https://bugzilla.mozilla.org/",
     "hasCustomUrl": true,
-    "message": "Bugzilla does not have a default URL",
+    "message": "Bugzilla's default URL is https://bugzilla.mozilla.org/",
     "hasNotificationSound": true,
     "hasIndirectMessages": true
   }
