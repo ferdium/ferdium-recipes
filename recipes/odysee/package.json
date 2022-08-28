@@ -1,0 +1,11 @@
+{
+  "id": "odysee",
+  "name": "Odysee",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/hafiz-muhammad/ferdium-recipes",
+  "hasNotificationSound": "false",
+  "config": {
+    "serviceURL": "https://odysee.com"
+  }
+}
