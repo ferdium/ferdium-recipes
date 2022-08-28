@@ -6,6 +6,5 @@
   "repository": "https://github.com/hafiz-muhammad/ferdium-recipes",
   "config": {
     "serviceURL": "https://odysee.com"
-    "hasNotificationSound": false
   }
 }
