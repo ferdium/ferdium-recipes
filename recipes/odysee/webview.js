@@ -9,7 +9,6 @@ module.exports = (Ferdium) => {
               Ferdium.safeParseInt(notificationCounterElement.textContent);
       }
 
-      unreadNotifications = unreadNotifications / 1;
       Ferdium.setBadge(unreadNotifications);
   }
   Ferdium.loop(getNotifications);
