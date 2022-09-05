@@ -16,18 +16,3 @@
 .app-wrapper-web ._1XkO3 {
   max-width: none !important;
 }
-
-/* Warning for trying to change theme on whatsapp */
-.ferdium-theme-message {
-  padding-top: 15px;
-  color: red;
-  line-height: 20px;
-}
-
-.ferdium-theme-title {
-  padding-top: 15px;
-  color: red;
-  line-height: 20px;
-  font-weight: bold;
-  text-align: center;
-}
