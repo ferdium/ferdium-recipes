@@ -1,1 +1,93 @@
-<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><g fill="#336" fill-rule="nonzero"><path d="M511.603 1.032S210.169-8.87 148 325.503v227.74s2.571 24.373 71.122 73.881S465.142 816.02 511.603 816.02s223.931-139.386 292.481-188.895 71.122-73.882 71.122-73.882V325.503C813.036-8.87 511.603 1.032 511.603 1.032zm206.413 448.623H305.19V325.503c41.892-166.044 206.413-168.329 206.413-168.329s164.52 2.285 206.413 168.33z"/><path d="M511.603 867.305s-46.716-4.572-83.276-29.96S148 637.788 148 637.788V982.57s2.064 40.115 46.241 40.115h634.724c44.177 0 46.241-40.115 46.241-40.115V637.788s-243.768 174.17-280.328 199.557-83.275 29.96-83.275 29.96z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 36.054688 36"
+   width="142"
+   height="141.78462"
+   fill="none"
+   class="logo with-wordmark"
+   aria-labelledby="logo-14-title"
+   version="1.1"
+   id="svg53"
+   sodipodi:docname="svgexport-23.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview55"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false" />
+  <g
+     fill="none"
+     id="g6">
+    <path
+       class="logo-mark-background"
+       d="M 1,9 A 8,8 0 0 1 9,1 h 18 a 8,8 0 0 1 8,8 v 18 a 8,8 0 0 1 -8,8 H 9 A 8,8 0 0 1 1,27 Z"
+       fill="#ffffff"
+       id="path2" />
+  </g>
+  <g
+     fill="none"
+     id="g14">
+    <path
+       fill="#6d4aff"
+       d="M 7.28,10.18 A 0.5,0.5 0 0 1 8.09,9.8 l 8.5,7.05 a 2.22,2.22 0 0 0 2.83,0 L 27.9,9.8 a 0.5,0.5 0 0 1 0.8,0.38 v 14.47 a 2.22,2.22 0 0 1 -2.2,2.22 H 9.5 A 2.22,2.22 0 0 1 7.27,24.65 V 10.18 Z"
+       id="path8" />
+    <path
+       fill="url(#logo-14-a)"
+       fill-rule="evenodd"
+       d="m 20.9,15.63 -4.28,3.77 a 1.97,1.97 0 0 1 -2.57,0.04 L 7.28,13.81 V 10.18 A 0.5,0.5 0 0 1 8.09,9.8 l 8.5,7.05 a 2.22,2.22 0 0 0 2.83,0 l 1.47,-1.22 z"
+       clip-rule="evenodd"
+       id="path10"
+       style="fill:url(#logo-14-a)" />
+    <path
+       fill="url(#logo-14-b)"
+       fill-rule="evenodd"
+       d="m 24.16,12.92 v 13.95 h 2.34 a 2.22,2.22 0 0 0 2.22,-2.22 V 10.18 A 0.5,0.5 0 0 0 27.92,9.8 Z"
+       clip-rule="evenodd"
+       id="path12"
+       style="fill:url(#logo-14-b)" />
+  </g>
+  <defs
+     id="defs50">
+    <linearGradient
+       id="logo-14-a"
+       x1="23.450001"
+       x2="18.57"
+       y1="18.09"
+       y2="-2.77"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#E2DBFF"
+         id="stop16" />
+      <stop
+         offset="1"
+         stop-color="#6D4AFF"
+         id="stop18" />
+    </linearGradient>
+    <linearGradient
+       id="logo-14-b"
+       x1="35.25"
+       x2="18.57"
+       y1="38.169998"
+       y2="2.55"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset=".27"
+         stop-color="#E2DBFF"
+         id="stop21" />
+      <stop
+         offset="1"
+         stop-color="#6D4AFF"
+         id="stop23" />
+    </linearGradient>
+  </defs>
+  <title
+     id="logo-14-title">Proton Mail</title>
+</svg>
