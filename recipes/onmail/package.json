@@ -1,0 +1,9 @@
+{
+  "id": "onmail",
+  "name": "onMail",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://mail.onmail.com"
+  }
+}
