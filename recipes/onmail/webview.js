@@ -10,7 +10,7 @@ module.exports = Ferdium => {
     const inboxLinks = document.querySelectorAll('p.truncate');
     for (const label of inboxLinks){
       if (label.textContent) {
-        countImportant = label.nextSibling.textContent;
+        countImportant = Ferdium.safeParseInt(label.nextSibling.textContent);
         break;
       }
     }
