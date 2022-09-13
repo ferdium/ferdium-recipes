@@ -5,7 +5,6 @@ function _interopRequireDefault(obj) {
 }
 
 module.exports = Ferdium => {
-  // TODO: If your onMail service has unread messages, uncomment these lines to implement the logic for updating the badges
   const getMessages = () => {
     let countImportant = 0;
     const inboxLinks = document.querySelectorAll('p.truncate');
