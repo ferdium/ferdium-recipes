@@ -1,7 +1,10 @@
 function hideInstallMessage() {
   const installMessage = document.querySelector('.usczdcwk');
   if (installMessage) {
-    installMessage.style.display = installMessage.style.display != 'none' ? 'none': installMessage.style.display;
+    installMessage.style.display =
+      installMessage.style.display != 'none'
+        ? 'none'
+        : installMessage.style.display;
   }
 }
 
@@ -16,9 +19,11 @@ module.exports = Ferdium => {
       })
       .reduce((prev, curr) => prev + curr, 0);*/
     let count = 0;
-    document.querySelectorAll('[data-testid="mwthreadlist-item"]').forEach((node) => {
+    for (const node of document.querySelectorAll(
+      '[data-testid="mwthreadlist-item"]',
+    )) {
       if (node.querySelector('.lrazzd5p, .is6700om, .o48pnaf2')) count += 1;
-    });
+    }
 
     /*
      * add count of message requests on top of notification counter
@@ -32,8 +37,8 @@ module.exports = Ferdium => {
   };
 
   const loopRoutine = () => {
-    getMessages()
-    hideInstallMessage()
+    getMessages();
+    hideInstallMessage();
   };
 
   Ferdium.loop(loopRoutine);
