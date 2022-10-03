@@ -1,0 +1,17 @@
+{
+  "id": "cinny",
+  "name": "Cinny",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "Matrix"
+  ],
+  "config": {
+    "serviceURL": "https://app.cinny.in/",
+    "hasCustomUrl": true,
+    "message": "Cinny's default URL is https://app.cinny.in/",
+    "hasNotificationSound": true,
+    "hasDirectMessages": true,
+    "hasIndirectMessages": true
+  }
+}
