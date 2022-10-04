@@ -1,0 +1,14 @@
+{
+  "id": "bugzilla",
+  "name": "Bugzilla",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [],
+  "config": {
+    "serviceURL": "https://bugzilla.mozilla.org/",
+    "hasCustomUrl": true,
+    "message": "Bugzilla's default URL is https://bugzilla.mozilla.org/",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  }
+}
