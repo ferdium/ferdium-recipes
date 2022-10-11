@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-97-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-99-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -159,11 +159,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href='http://miokimia.com' title='Edmundo Sanchez: code'><img src='https://avatars.githubusercontent.com/u/10700343?v=4' alt='Bass-03' style='width:100px;'/></a></td>
       <td align="center"><a href='https://blog.userctl.xyz/' title='JP Roemer: code'><img src='https://avatars.githubusercontent.com/u/2822534?v=4' alt='0rax' style='width:100px;'/></a></td>
       <td align="center"><a href='https://xgqt.gitlab.io' title='Maciej Barć: code'><img src='https://avatars.githubusercontent.com/u/47485207?v=4' alt='xgqt' style='width:100px;'/></a></td>
+      <td align="center"><a href='http://calvinyoung.org' title='Calvin Young: code'><img src='https://avatars.githubusercontent.com/u/1173768?v=4' alt='calvinwyoung' style='width:100px;'/></a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href='http://www.datlicht.de' title='Jan Kischel: code'><img src='https://avatars.githubusercontent.com/u/11940089?v=4' alt='jkischel' style='width:100px;'/></a></td>
     </tr>
   </tbody>
-  <tfoot>
-    
-  </tfoot>
 </table>
 
 <!-- markdownlint-restore -->
