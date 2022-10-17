@@ -12,7 +12,7 @@ module.exports = Ferdium => {
       if (label.textContent) {
         let inbox_count = label.nextSibling
         countImportant = inbox_count == null ? 0 : Ferdium.safeParseInt(inbox_count.textContent);
-          
+
         break;
       }
     }
