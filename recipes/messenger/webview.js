@@ -30,7 +30,7 @@ module.exports = Ferdium => {
     /*
      * do the old counting if the interface is not the last one
      */
-    if (newMessengerUI) {
+    if (!newMessengerUI) {
       count = [...document.querySelectorAll('.bp9cbjyn.j83agx80.owycx6da:not(.btwxx1t3)')]
         .map(elem => {
           const hasPing = !!elem.querySelector('.pq6dq46d.is6700om.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.cyypbtt7.fwizqjfa');
