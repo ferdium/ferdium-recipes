@@ -4,14 +4,9 @@ module.exports = Ferdium => {
   const getMessages = () => {
     let countImportant = 0;
     console.info(countImportant);
-    const conversationLinks = document.querySelectorAll('div[aria-label="Conversations"]');
-    if (conversationLinks.length > 0) {
-      let conversationCountNode = conversationLinks[0].nextSibling;
-      if (conversationCountNode) {
-        countImportant = Ferdium.safeParseInt(
-          conversationCountNode.textContent.replace(/[^\p{N}]/gu, ''),
-        );
-      }
+    const unReadConversationCount = document.querySelectorAll('.NHlkZc');
+    if (unReadConversationCount.length > 0) {
+      countImportant = Ferdium.safeParseInt(unReadConversationCount[0].textContent);
     }
     Ferdium.setBadge(countImportant, 0);
   };
