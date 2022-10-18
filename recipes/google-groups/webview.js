@@ -3,7 +3,6 @@ module.exports = Ferdium => {
 
   const getMessages = () => {
     let countImportant = 0;
-    console.info(countImportant);
     const unReadConversationCount = document.querySelectorAll('.NHlkZc');
     if (unReadConversationCount.length > 0) {
       countImportant = Ferdium.safeParseInt(unReadConversationCount[0].textContent);
