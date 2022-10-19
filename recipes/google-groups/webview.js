@@ -7,14 +7,9 @@ function _interopRequireDefault(obj) {
 module.exports = Ferdium => {
   const getMessages = () => {
     let countImportant = 0;
-    const inboxLinks = document.querySelectorAll('p.truncate');
-    for (const label of inboxLinks){
-      if (label.textContent) {
-        let inbox_count = label.nextSibling
-        countImportant = inbox_count == null ? 0 : Ferdium.safeParseInt(inbox_count.textContent);
-
-        break;
-      }
+    const unReadConversationCount = document.querySelectorAll('.NHlkZc');
+    if (unReadConversationCount.length > 0) {
+      countImportant = Ferdium.safeParseInt(unReadConversationCount[0].textContent);
     }
     Ferdium.setBadge(countImportant, 0);
   };
