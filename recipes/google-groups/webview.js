@@ -1,6 +1,10 @@
-module.exports = Ferdium => {
-  // if the user is on gmail's landing page, go to the login page.
+const _path = _interopRequireDefault(require('path'));
 
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+module.exports = Ferdium => {
   const getMessages = () => {
     let countImportant = 0;
     const unReadConversationCount = document.querySelectorAll('.NHlkZc');
@@ -9,8 +13,7 @@ module.exports = Ferdium => {
     }
     Ferdium.setBadge(countImportant, 0);
   };
-
   Ferdium.loop(getMessages);
-};
 
-  
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
+};

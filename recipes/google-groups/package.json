@@ -1,10 +1,9 @@
 {
-    "id": "google-groups",
-    "name": "Google Groups",
-    "version": "1.0.0",
-    "license": "MIT",
-    "config": {
-      "serviceURL": "https://groups.google.com/"
-    }
+  "id": "google-groups",
+  "name": "Google Groups",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://groups.google.com"
   }
-  
+}
