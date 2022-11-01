@@ -899,6 +899,24 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jkischel",
+      "name": "Jan Kischel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11940089?v=4",
+      "profile": "http://www.datlicht.de",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "vijay94",
+      "name": "vijay sundharapandiyan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8709375?v=4",
+      "profile": "https://github.com/vijay94",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
