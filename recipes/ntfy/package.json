@@ -1,0 +1,17 @@
+{
+  "id": "ntfy",
+  "name": "ntfy",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "Notify"
+  ],
+  "config": {
+    "serviceURL": "https://ntfy.sh/app",
+    "hasCustomUrl": true,
+    "message": "ntfy lets you send push notifications to your phone or desktop via scripts from any computer, using simple HTTP PUT or POST requests.",
+    "hasNotificationSound": true,
+    "hasDirectMessages": true,
+    "hasIndirectMessages": false
+  }
+}
