@@ -65,7 +65,7 @@ const compress = (src, dest) =>
 
   for (let recipe of availableRecipes) {
     const recipeSrc = path.join(recipesFolder, recipe);
-    const mandatoryFiles = ['package.json', 'icon.svg'];
+    const mandatoryFiles = ['package.json', 'icon.svg', 'webview.js'];
 
     // Check that each mandatory file exists
     for (let file of mandatoryFiles) {
