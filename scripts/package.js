@@ -65,29 +65,24 @@ const compress = (src, dest) =>
 
   for (let recipe of availableRecipes) {
     const recipeSrc = path.join(recipesFolder, recipe);
-    const packageJson = path.join(recipeSrc, 'package.json');
+    const mandatoryFiles = ['package.json', 'icon.svg'];
 
-    // Check that package.json exists
-    if (!(await fs.pathExists(packageJson))) {
-      console.log(
-        `⚠️ Couldn't package "${recipe}": Folder doesn't contain a "package.json".`,
-      );
-      unsuccessful++;
-      continue;
+    // Check that each mandatory file exists
+    for (let file of mandatoryFiles) {
+      const filePath = path.join(recipeSrc, file);
+      if (!(await fs.pathExists(filePath))) {
+        console.log(
+          `⚠️ Couldn't package "${recipe}": Folder doesn't contain a "${file}".`,
+        );
+        unsuccessful++;
+      }
     }
-
-    // Check that icons exist
-    const svgIcon = path.join(recipeSrc, 'icon.svg');
-    const hasSvg = await fs.pathExists(svgIcon);
-    if (!hasSvg) {
-      console.log(
-        `⚠️ Couldn't package "${recipe}": Recipe doesn't contain an icon SVG`,
-      );
-      unsuccessful++;
+    if (unsuccessful > 0) {
       continue;
     }
 
     // Check icons sizes
+    const svgIcon = path.join(recipeSrc, 'icon.svg');
     const svgSize = sizeOf(svgIcon);
     const svgHasRightSize = svgSize.width === svgSize.height;
     if (!svgHasRightSize) {
@@ -109,6 +104,7 @@ const compress = (src, dest) =>
     }
 
     // Read package.json
+    const packageJson = path.join(recipeSrc, 'package.json');
     const config = await fs.readJson(packageJson);
 
     // Make sure it contains all required fields
@@ -293,9 +289,9 @@ const compress = (src, dest) =>
 
   // Sort package list alphabetically
   recipeList = recipeList.sort((a, b) => {
-    var textA = a.id.toLowerCase();
-    var textB = b.id.toLowerCase();
-    return textA < textB ? -1 : textA > textB ? 1 : 0;
+    let textA = a.id.toLowerCase();
+    let textB = b.id.toLowerCase();
+    return textA < textB ? -1 : (textA > textB ? 1 : 0);
   });
   await fs.writeJson(allJson, recipeList, {
     spaces: 2,
