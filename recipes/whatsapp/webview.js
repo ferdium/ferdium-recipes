@@ -16,7 +16,7 @@ module.exports = Ferdium => {
       return;
     }
 
-    const unreadSpans = parentChatElem.querySelectorAll('span[aria-label]');
+    const unreadSpans = parentChatElem.querySelectorAll('div[role="gridcell"] > span > div > span[aria-label]');
     for (const unreadElem of unreadSpans) {
       const countValue = Ferdium.safeParseInt(unreadElem.textContent);
       if (countValue > 0) {
