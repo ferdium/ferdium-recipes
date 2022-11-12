@@ -1,0 +1,9 @@
+{
+  "id": "this-is-a-new-recipe",
+  "name": "This is a new recipe",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://this-is-a-new-recipe.com"
+  }
+}
