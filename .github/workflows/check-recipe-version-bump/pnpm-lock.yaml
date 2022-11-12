@@ -1,0 +1,57 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers:
+      '@actions/core': ^1.10.0
+      '@actions/exec': ^1.1.1
+      '@vercel/ncc': ^0.34.0
+    dependencies:
+      '@actions/core': 1.10.0
+      '@actions/exec': 1.1.1
+    devDependencies:
+      '@vercel/ncc': 0.34.0
+
+  dist:
+    specifiers: {}
+
+packages:
+
+  /@actions/core/1.10.0:
+    resolution: {integrity: sha512-2aZDDa3zrrZbP5ZYg159sNoLRb61nQ7awl5pSvIq5Qpj81vwDzdMRKzkWJGJuwVvWpvZKx7vspJALyvaaIQyug==}
+    dependencies:
+      '@actions/http-client': 2.0.1
+      uuid: 8.3.2
+    dev: false
+
+  /@actions/exec/1.1.1:
+    resolution: {integrity: sha512-+sCcHHbVdk93a0XT19ECtO/gIXoxvdsgQLzb2fE2/5sIZmWQuluYyjPQtrtTHdU1YzTZ7bAPN4sITq2xi1679w==}
+    dependencies:
+      '@actions/io': 1.1.2
+    dev: false
+
+  /@actions/http-client/2.0.1:
+    resolution: {integrity: sha512-PIXiMVtz6VvyaRsGY268qvj57hXQEpsYogYOu2nrQhlf+XCGmZstmuZBbAybUl1nQGnvS1k1eEsQ69ZoD7xlSw==}
+    dependencies:
+      tunnel: 0.0.6
+    dev: false
+
+  /@actions/io/1.1.2:
+    resolution: {integrity: sha512-d+RwPlMp+2qmBfeLYPLXuSRykDIFEwdTA0MMxzS9kh4kvP1ftrc/9fzy6pX6qAjthdXruHQ6/6kjT/DNo5ALuw==}
+    dev: false
+
+  /@vercel/ncc/0.34.0:
+    resolution: {integrity: sha512-G9h5ZLBJ/V57Ou9vz5hI8pda/YQX5HQszCs3AmIus3XzsmRn/0Ptic5otD3xVST8QLKk7AMk7AqpsyQGN7MZ9A==}
+    hasBin: true
+    dev: true
+
+  /tunnel/0.0.6:
+    resolution: {integrity: sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==}
+    engines: {node: '>=0.6.11 <=0.7.0 || >=0.7.3'}
+    dev: false
+
+  /uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
+    dev: false
