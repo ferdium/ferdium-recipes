@@ -6,33 +6,37 @@ function _interopRequireDefault(obj) {
 
 module.exports = Ferdium => {
   const getMessages = () => {
+  
+    // first find the css selector for the unread count text
+    [...document.styleSheets].every(sheet => {
+      matchedRule = Array.from(sheet.cssRules).find(
+          rule => (
+            rule.type === CSSRule.STYLE_RULE && 
+            rule.style['color'] === 'var(--unread-marker-text)'
+          )
+      );
+      return (unreadSelector = matchedRule !== undefined ? matchedRule.selectorText : '') === '';
+    });
+
     let count = 0;
     let indirectCount = 0;
 
-    const parentChatElem = [
-      ...document.querySelectorAll('div[aria-label]'),
-    ].sort((a, b) => (a.offsetHeight < b.offsetHeight ? 1 : -1))[0];
-    if (!parentChatElem) {
-      return;
-    }
-
-    const unreadSpans = parentChatElem.querySelectorAll('span[aria-label]');
-    for (const unreadElem of unreadSpans) {
-      const countValue = Ferdium.safeParseInt(unreadElem.textContent);
-      if (countValue > 0) {
+    [...document.querySelectorAll(unreadSelector)].forEach(
+      unreadElem => {
+        const countValue = Ferdium.safeParseInt(unreadElem.innerText);
         if (
           !unreadElem.parentNode.previousSibling ||
-          unreadElem.parentNode.previousSibling.querySelectorAll(
-            '[data-icon=muted]',
-          ).length === 0
+          unreadElem.parentNode.previousSibling.querySelector(
+            '[data-icon=muted]'
+          ) === null
         ) {
           count += countValue;
         } else {
           indirectCount += countValue;
         }
       }
-    }
-
+    );
+          
     Ferdium.setBadge(count, indirectCount);
   };
 
