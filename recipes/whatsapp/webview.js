@@ -8,10 +8,11 @@ module.exports = Ferdium => {
   const getMessages = () => {
   
     // first find the css selector for the unread count text
+    var unreadSelector;
     [...document.styleSheets].every(sheet => {
-      matchedRule = Array.from(sheet.cssRules).find(
+      const matchedRule = [...sheet.cssRules].find(
           rule => (
-            rule.type === CSSRule.STYLE_RULE && 
+            rule.constructor.name === "CSSStyleRule" && 
             rule.style['color'] === 'var(--unread-marker-text)'
           )
       );
@@ -21,9 +22,8 @@ module.exports = Ferdium => {
     let count = 0;
     let indirectCount = 0;
 
-    [...document.querySelectorAll(unreadSelector)].forEach(
-      unreadElem => {
-        const countValue = Ferdium.safeParseInt(unreadElem.innerText);
+    for (const unreadElem of document.querySelectorAll(unreadSelector)) {
+        const countValue = Ferdium.safeParseInt(unreadElem.textContent);
         if (
           !unreadElem.parentNode.previousSibling ||
           unreadElem.parentNode.previousSibling.querySelector(
@@ -35,7 +35,6 @@ module.exports = Ferdium => {
           indirectCount += countValue;
         }
       }
-    );
           
     Ferdium.setBadge(count, indirectCount);
   };
