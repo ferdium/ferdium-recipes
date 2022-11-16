@@ -26,7 +26,7 @@ module.exports = Ferdium => {
         const countValue = Ferdium.safeParseInt(unreadElem.textContent);
         if (
           !unreadElem.parentNode.previousSibling ||
-          unreadElem.parentNode.previousSibling.querySelector(
+          unreadElem.parentNode.parentNode.querySelector(
             '[data-icon=muted]'
           ) === null
         ) {
