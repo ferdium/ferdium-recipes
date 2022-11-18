@@ -1,40 +1,51 @@
 const _path = _interopRequireDefault(require('path'));
 
 function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
+  return obj && obj.__esModule ? obj : {default: obj};
 }
 
 module.exports = Ferdium => {
-  const getMessages = () => {
-    let count = 0;
-    let indirectCount = 0;
+  let getMessages = () => {
+    /* stub until db is connected*/
+  }
 
-    const parentChatElem = [
-      ...document.querySelectorAll('div[aria-label]'),
-    ].sort((a, b) => (a.offsetHeight < b.offsetHeight ? 1 : -1))[0];
-    if (!parentChatElem) {
-      return;
-    }
+  const request = window.indexedDB.open("model-storage");
+  request.onsuccess = () => {
+    const db = request.result;
 
-    const unreadSpans = parentChatElem.querySelectorAll('span[aria-label]');
-    for (const unreadElem of unreadSpans) {
-      const countValue = Ferdium.safeParseInt(unreadElem.textContent);
-      if (countValue > 0) {
-        if (
-          !unreadElem.parentNode.previousSibling ||
-          unreadElem.parentNode.previousSibling.querySelectorAll(
-            '[data-icon=muted]',
-          ).length === 0
-        ) {
-          count += countValue;
-        } else {
-          indirectCount += countValue;
+    getMessages = () => {
+      let unreadCount = 0;
+      let unreadMutedCount = 0;
+
+      const txn = db.transaction('chat', 'readonly');
+      const store = txn.objectStore('chat');
+
+      const query = store.getAll();
+
+      query.onsuccess = (event) => {
+        console.log(event)
+        for (const chat of event.target.result) {
+          if (chat.unreadCount > 0) {
+            if (chat.muteExpiration > 0) {
+              unreadMutedCount += chat.unreadCount;
+            } else {
+              unreadCount += chat.unreadCount;
+            }
+          }
         }
+
+        Ferdium.setBadge(unreadCount, unreadMutedCount);
+      };
+
+      query.onerror = (event) => {
+        console.error("Loading data from database failed: ", event);
       }
     }
-
-    Ferdium.setBadge(count, indirectCount);
   };
+
+  request.onerror = (event) => {
+    console.error("Opening model-storage database failed: ", event);
+  }
 
   // inject webview hacking script
   Ferdium.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
