@@ -26,10 +26,10 @@ module.exports = Ferdium => {
         console.log(event)
         for (const chat of event.target.result) {
           if (chat.unreadCount > 0) {
-            if (chat.muteExpiration > 0) {
-              unreadMutedCount += chat.unreadCount;
-            } else {
+            if (chat.muteExpiration == 0) {
               unreadCount += chat.unreadCount;
+            } else {
+              unreadMutedCount += chat.unreadCount;
             }
           }
         }
