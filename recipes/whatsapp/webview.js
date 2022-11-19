@@ -4,11 +4,11 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {default: obj};
 }
 
-module.exports = Ferdium => {
-  let getMessages = () => {
-    /* stub until db is connected*/
-  }
+let getMessages = () => {
+  /* stub until db is connected*/
+}
 
+module.exports = Ferdium => {
   const request = window.indexedDB.open("model-storage");
   request.onsuccess = () => {
     const db = request.result;
@@ -23,7 +23,6 @@ module.exports = Ferdium => {
       const query = store.getAll();
 
       query.onsuccess = (event) => {
-        console.log(event)
         for (const chat of event.target.result) {
           if (chat.unreadCount > 0) {
             if (chat.muteExpiration == 0) {
@@ -37,15 +36,15 @@ module.exports = Ferdium => {
         Ferdium.setBadge(unreadCount, unreadMutedCount);
       };
 
-      query.onerror = (event) => {
-        console.error("Loading data from database failed: ", event);
-      }
+      query.addEventListener('error', (event) => {
+        console.error("Loading data from database failed:", event);
+      })
     }
   };
 
-  request.onerror = (event) => {
-    console.error("Opening model-storage database failed: ", event);
-  }
+  request.addEventListener('error', (event) => {
+    console.error("Opening model-storage database failed:", event);
+  })
 
   // inject webview hacking script
   Ferdium.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
