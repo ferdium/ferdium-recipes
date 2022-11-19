@@ -25,7 +25,7 @@ module.exports = Ferdium => {
       query.onsuccess = (event) => {
         for (const chat of event.target.result) {
           if (chat.unreadCount > 0) {
-            if (chat.muteExpiration == 0) {
+            if (chat.muteExpiration === 0) {
               unreadCount += chat.unreadCount;
             } else {
               unreadMutedCount += chat.unreadCount;
