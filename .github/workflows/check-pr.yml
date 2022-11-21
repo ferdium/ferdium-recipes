@@ -1,0 +1,24 @@
+name: Checks
+
+on:
+  # PRs only on main branch
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    name: Check Recipe Version Bump
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Fetch main branch
+        run: git fetch origin main --depth 1
+      - uses: lots0logs/gh-action-get-changed-files@2.1.4
+        id: changed-files
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checking recipe version bump
+        uses: ./.github/workflows/check-recipe-version-bump
+        with:
+          changed-files: ${{ steps.changed-files.outputs.modified }}

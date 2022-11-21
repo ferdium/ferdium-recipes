@@ -1,0 +1,12 @@
+name: Check recipe version bump
+description: Check that modified recipes has their version bumped up
+inputs:
+  changed-files:
+    description: 'List of modified files in the PR'
+    required: true
+# outputs:
+#   time: # id of output
+#     description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
