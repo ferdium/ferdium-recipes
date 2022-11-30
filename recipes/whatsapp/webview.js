@@ -4,24 +4,38 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {default: obj};
 }
 
-let getMessages = () => {
-  /* stub until db is connected*/
-}
-
 module.exports = Ferdium => {
-  const request = window.indexedDB.open("model-storage");
-  request.onsuccess = () => {
-    const db = request.result;
+  let dbCache
 
-    getMessages = () => {
+  const getMessages = () => {
+    if(!dbCache) {
+      const dbsPromise = indexedDB.databases()
+      dbsPromise.then((databases) => {
+        for(let index in databases) {
+          //Wait for model-storage db to be available before calling indexedDB.open(). This is to make sure whatsapp created the model-storage DB
+          if(databases[index].name === "model-storage") {
+            const request = window.indexedDB.open("model-storage");
+            request.onsuccess = () => {
+              dbCache = request.result;
+              //This will be called when db.delete is triggered, we need to close and set dbCache to null to trigger lookup again
+              dbCache.onversionchange = () => {
+                dbCache.close()
+                dbCache = null
+              };
+            }
+            request.addEventListener('error', () => {
+              console.error("Opening model-storage database failed:", event);
+            })
+          }
+        }
+      })
+    } else {
       let unreadCount = 0;
       let unreadMutedCount = 0;
 
-      const txn = db.transaction('chat', 'readonly');
+      const txn = dbCache.transaction('chat', 'readonly');
       const store = txn.objectStore('chat');
-
       const query = store.getAll();
-
       query.onsuccess = (event) => {
         for (const chat of event.target.result) {
           if (chat.unreadCount > 0) {
@@ -40,11 +54,7 @@ module.exports = Ferdium => {
         console.error("Loading data from database failed:", event);
       })
     }
-  };
-
-  request.addEventListener('error', (event) => {
-    console.error("Opening model-storage database failed:", event);
-  })
+  }
 
   // inject webview hacking script
   Ferdium.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
