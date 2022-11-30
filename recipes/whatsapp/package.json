@@ -1,7 +1,7 @@
 {
   "id": "whatsapp",
   "name": "WhatsApp",
-  "version": "3.4.8",
+  "version": "3.4.9",
   "license": "MIT",
   "config": {
     "serviceURL": "https://web.whatsapp.com",
