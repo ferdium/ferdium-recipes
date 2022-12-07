@@ -3,7 +3,7 @@ module.exports = Ferdium => {
     let incompleteCount = 0;
 
     const countEls = document.querySelectorAll(
-      '.AppSidebarListsItems__itemContainer__sizeContainer:not([hidden]) > .AppSidebarListsItems__itemContainer__size',
+      '.AppSidebarGroupsItems__item__link[href^="/tasks/lists/"] .AppSidebarGroupsItems__item__badge > .AppSidebarGroupsItems__item__badge__count > div',
     );
 
     if (countEls.length > 0) {
