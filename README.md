@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-103-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-104-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -167,6 +167,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href='https://devmuslim.id' title='Adinda Praditya: code'><img src='https://avatars.githubusercontent.com/u/70412?v=4' alt='apraditya' style='width:100px;'/></a></td>
       <td align="center"><a href='https://rjenni.ch' title='Raphael Jenni: code'><img src='https://avatars.githubusercontent.com/u/14369284?v=4' alt='RaphaelJenni' style='width:100px;'/></a></td>
       <td align="center"><a href='https://www.choroman.ski' title='Brian Choromanski: code'><img src='https://avatars.githubusercontent.com/u/3665694?v=4' alt='Choromanski' style='width:100px;'/></a></td>
+      <td align="center"><a href='https://github.com/chappy84' title='Tom Chapman: code'><img src='https://avatars.githubusercontent.com/u/912440?v=4' alt='chappy84' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
