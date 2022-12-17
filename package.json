@@ -34,7 +34,7 @@
   "devDependencies": {
     "@types/targz": "1.0.1",
     "all-contributors-cli": "6.24.0",
-    "eslint": "8.29.0",
+    "eslint": "8.30.0",
     "eslint-plugin-unicorn": "39.0.0",
     "fs-extra": "10.0.0",
     "husky": "7.0.4",
