@@ -35,7 +35,12 @@ jobs:
       - name: Install pnpm
         run: npm i -gf "pnpm@$(node -p 'require("./package.json").engines.pnpm')" && pnpm -v
       - name: Install node dependencies recursively
-        run: pnpm i
+        uses: nick-fields/retry@v2.8.2
+        with:
+          command: pnpm i
+          timeout_minutes: 15
+          max_attempts: 3
+          retry_on: error
       - name: Check code style and formatting
         if: ${{ github.event_name == 'pull_request' }}
         run: pnpm lint:fix && pnpm reformat-files
