@@ -1,0 +1,9 @@
+{
+  "id": "google-presentation",
+  "name": "Google Presentation",
+  "version": "2.2.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://docs.google.com/presentation/u/0/"
+  }
+}
