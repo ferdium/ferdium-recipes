@@ -1,0 +1,9 @@
+{
+  "id": "gettr",
+  "name": "Gettr",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://gettr.com"
+  }
+}

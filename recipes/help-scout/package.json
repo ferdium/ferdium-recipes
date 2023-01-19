@@ -1,0 +1,9 @@
+{
+  "id": "help-scout",
+  "name": "Help Scout",
+  "version": "1.2.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.helpscout.com"
+  }
+}

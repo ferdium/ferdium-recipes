@@ -1,0 +1,13 @@
+{
+  "id": "posteo",
+  "name": "Posteo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "mail",
+    "e-mail"
+  ],
+  "config": {
+    "serviceURL": "https://posteo.de/"
+  }
+}

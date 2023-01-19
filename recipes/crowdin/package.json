@@ -1,0 +1,9 @@
+{
+  "id": "crowdin",
+  "name": "Crowdin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://crowdin.com/profile"
+  }
+}
