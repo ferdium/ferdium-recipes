@@ -5,7 +5,7 @@
     "doc": "docs"
   },
   "engines": {
-    "pnpm": "7.21.0"
+    "pnpm": "7.25.1"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
