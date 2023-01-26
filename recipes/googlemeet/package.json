@@ -1,10 +1,10 @@
 {
   "id": "googlemeet",
   "name": "Google Meet",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://meet.google.com",
+    "serviceURL": "https://meet.google.com/u/0/",
     "hasNotificationSound": true
   }
 }

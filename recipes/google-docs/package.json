@@ -1,0 +1,9 @@
+{
+  "id": "google-docs",
+  "name": "Google Docs",
+  "version": "2.2.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://docs.google.com/document/u/0/"
+  }
+}

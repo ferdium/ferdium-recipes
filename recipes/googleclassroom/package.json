@@ -1,10 +1,10 @@
 {
   "id": "googleclassroom",
   "name": "Google Classroom",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "repository": "https://github.com/TanZng/ferdi-googleclassroom",
   "config": {
-    "serviceURL": "https://accounts.google.com/ServiceLogin/signinchooser?service=classroom&passive=1209600&continue=https%3A%2F%2Fclassroom.google.com%2F%3Fsafe%3Dactive&followup=https%3A%2F%2Fclassroom.google.com%2F%3Fsafe%3Dactive&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+    "serviceURL": "https://classroom.google.com/u/0/"
   }
 }
