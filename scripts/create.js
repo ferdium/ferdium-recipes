@@ -76,7 +76,7 @@ const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only cont
   // Replace placeholders with the recipe-specific values
   for (const file of filesThatNeedTextReplace) {
     const filePath = path.join(newRecipeFolder, file);
-    let contents = await fs.readFile(filePath, 'utf-8');
+    let contents = await fs.readFile(filePath, 'utf8');
     contents = contents.replace(/SERVICE/g, recipe);
     contents = contents.replace(/SNAME/g, recipeName);
     contents = contents.replace(/SPASCAL/g, pascalCasedName);

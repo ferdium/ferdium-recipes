@@ -19,7 +19,7 @@ module.exports = Ferdium => {
         for (const p of postings) {
           if (
             p.nodeName == 'ARTICLE' &&
-            p.getAttribute('data-seen') !== 'true'
+            p.dataset.seen !== 'true'
           ) {
             unread++;
           }
