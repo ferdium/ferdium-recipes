@@ -3,6 +3,6 @@ contact_links:
   - name: Frequently Asked Questions
     url: https://ferdium.org/faq
     about: The FAQ answers the most frequently asked questions on Ferdium
-  - name: Main issue tracker
+  - name: "Bug or Recipe request: Main issue tracker"
     url: https://github.com/ferdium/ferdium-app/issues
-    about: Please log any issue in the main issue tracker, by selecting the relevant category
+    about: Please log any bug report or recipe request in the `ferdium-app` issue tracker, by selecting the category relevant to Recipes.
