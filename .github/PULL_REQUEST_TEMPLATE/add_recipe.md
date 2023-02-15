@@ -11,6 +11,8 @@ URL: [URL to your service]
 
 Service ID: [What ID does your recipe use?]
 
+Recipe request issue in the main issue tracker : [If applicable, link to the recipe request from https://github.com/ferdium/ferdium-app/issues]
+
 ### Terminal output
 
 ```bash
