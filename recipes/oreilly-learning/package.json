@@ -1,0 +1,9 @@
+{
+  "id": "oreilly-learning",
+  "name": "O'Reilly Learning",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://learning.oreilly.com/home-new/"
+  }
+}
