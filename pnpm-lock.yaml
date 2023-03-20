@@ -28,6 +28,9 @@ importers:
       simple-git: 3.16.0
       targz: 1.0.1
 
+  recipes/BlueBubbles:
+    specifiers: {}
+
   recipes/NewsBlur:
     specifiers: {}
 
