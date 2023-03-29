@@ -11,9 +11,9 @@ module.exports = Ferdium => {
 
     // get unread direct messages by tring to read the badge values
     for (const item of allBadges) {
-      if (item.hasAttribute('data-count')) {
+      if (item.dataset.count) {
         // Count for DMs should be in the data-count attribute
-        directCount += Math.max(1, +item.getAttribute('data-count'));
+        directCount += Math.max(1, +item.dataset.count);
       } else {
         // this will be the case for indirect messages
         indirectCount++;
