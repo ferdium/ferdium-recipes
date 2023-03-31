@@ -1,7 +1,8 @@
 module.exports = Ferdium => {
   const getMessages = () => {
     // get unread messages
-    const count = document.querySelector('#hangout-landing-chat iframe').contentWindow.document.querySelectorAll('.ee').length;
+    let count = 0;
+    for (const span of document.querySelectorAll('span[jsname=DW2nlb]'))  count += Ferdium.safeParseInt(span.textContent);
 
     // set Ferdium badge
     Ferdium.setBadge(count);

@@ -5,7 +5,7 @@
     "doc": "docs"
   },
   "engines": {
-    "pnpm": "7.6.0"
+    "pnpm": "7.30.0"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -33,15 +33,15 @@
   "homepage": "https://github.com/ferdium/ferdium-recipes",
   "devDependencies": {
     "@types/targz": "1.0.1",
-    "all-contributors-cli": "^6.20.0",
-    "eslint": "8.3.0",
-    "eslint-plugin-unicorn": "39.0.0",
-    "fs-extra": "10.0.0",
-    "husky": "7.0.4",
-    "image-size": "1.0.0",
-    "open": "8.4.0",
-    "prettier": "2.5.0",
-    "simple-git": "2.48.0",
+    "all-contributors-cli": "6.24.0",
+    "eslint": "8.34.0",
+    "eslint-plugin-unicorn": "42.0.0",
+    "fs-extra": "11.1.0",
+    "husky": "8.0.3",
+    "image-size": "1.0.2",
+    "open": "8.4.1",
+    "prettier": "2.8.4",
+    "simple-git": "3.16.0",
     "targz": "1.0.1"
   }
 }

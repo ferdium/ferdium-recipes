@@ -1,0 +1,9 @@
+{
+  "id": "linear",
+  "name": "Linear",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://linear.app"
+  }
+}

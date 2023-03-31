@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo/Red Roundel</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Logo/Red-Roundel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pocket-Casts-Roundel---Red">
+            <g id="Group">
+                <path d="M54,27 C54,41.912 41.912,54 27,54 C12.088,54 0,41.912 0,27 C0,12.088 12.088,0 27,0 C41.912,0 54,12.088 54,27" id="Fill-23" fill="#F43E37"></path>
+                <g id="Glyph" transform="translate(6.000000, 6.000000)" fill="#FFFFFF">
+                    <path d="M0,21 C0,9.40202025 9.40202025,0 21,0 C32.5979797,0 42,9.40202025 42,21 L36.75,21 C36.75,12.3015152 29.6984848,5.25 21,5.25 C12.3015152,5.25 5.25,12.3015152 5.25,21 C5.25,29.6984848 12.3015152,36.75 21,36.75 L21,42 C9.40202025,42 0,32.5979797 0,21 Z M21,33.6 C14.0412122,33.6 8.4,27.9587878 8.4,21 C8.4,14.0412122 14.0412122,8.4 21,8.4 C27.9587878,8.4 33.6,14.0412122 33.6,21 L29.0181818,21 C29.0181818,16.5716805 25.4283195,12.9818182 21,12.9818182 C16.5716805,12.9818182 12.9818182,16.5716805 12.9818182,21 C12.9818182,25.4283195 16.5716805,29.0181818 21,29.0181818 L21,33.6 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

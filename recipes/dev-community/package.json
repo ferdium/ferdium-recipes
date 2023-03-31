@@ -1,0 +1,9 @@
+{
+  "id": "dev-community",
+  "name": "Dev Community",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://dev.to"
+  }
+}

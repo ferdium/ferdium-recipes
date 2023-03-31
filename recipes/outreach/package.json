@@ -1,0 +1,9 @@
+{
+  "id": "outreach",
+  "name": "Outreach",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://accounts.outreach.io/users/sign_in"
+  }
+}

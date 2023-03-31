@@ -1,5 +1,8 @@
-# blank_issues_enabled: false
+blank_issues_enabled: false
 contact_links:
-  - name: Ferdium Community Support
+  - name: Frequently Asked Questions
     url: https://ferdium.org/faq
-    about: Please see some basic questions here. If your question is not answered, please continue with raising an issue in github.
+    about: The FAQ answers the most frequently asked questions on Ferdium
+  - name: "Bug or Recipe request: Main issue tracker"
+    url: https://github.com/ferdium/ferdium-app/issues
+    about: Please log any bug report or recipe request in the `ferdium-app` issue tracker, by selecting the category relevant to Recipes.
