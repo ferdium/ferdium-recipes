@@ -1,0 +1,12 @@
+{
+  "id": "citrix-workspace",
+  "name": "Citrix Workspace",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://{teamId}.cloud.com",
+    "hasNotificationSound": true,
+    "hasTeamId": true,
+    "urlInputSuffix": ".cloud.com"
+  }
+}
