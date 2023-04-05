@@ -5,6 +5,7 @@
   "license": "MIT",
   "config": {
     "serviceURL": "https://www.planitpoker.com/board/#/room/{teamId}",
+    "urlInputPrefix": "planitpoker.com/board/#/room/",
     "hasTeamId": true
   }
 }
