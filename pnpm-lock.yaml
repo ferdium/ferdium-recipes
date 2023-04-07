@@ -568,6 +568,9 @@ importers:
   recipes/plan:
     specifiers: {}
 
+  recipes/planitpoker:
+    specifiers: {}
+
   recipes/plek:
     specifiers: {}
 
