@@ -1,0 +1,41 @@
+<svg
+  viewBox="0 0 24 24"
+  width="24"
+  height="24"
+  xmlns="http://www.w3.org/2000/svg">
+  <rect
+    style="fill:#222222"
+    width="24"
+    height="24"
+    x="0"
+    y="0"
+    ry="2.6431646" />
+  <circle
+    cx="11.952789"
+    cy="11.9999"
+    r="2.05"
+    fill="#61dafb" />
+  <g
+    stroke="#61dafb"
+    stroke-width="1"
+    fill="none"
+    transform="matrix(0.90136184,0,0,0.90136184,11.952789,11.9999)">
+    <ellipse
+      rx="11"
+      ry="4.1999998"
+      cx="0"
+      cy="1.5713599e-09" />
+    <ellipse
+      rx="11"
+      ry="4.1999998"
+      transform="rotate(60)"
+      cx="-4.5361268e-10"
+      cy="7.8567997e-10" />
+    <ellipse
+      rx="11"
+      ry="4.1999998"
+      transform="rotate(120)"
+      cx="-4.5361262e-10"
+      cy="-7.8567997e-10" />
+  </g>
+</svg>
