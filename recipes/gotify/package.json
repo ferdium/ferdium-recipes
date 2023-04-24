@@ -1,0 +1,12 @@
+{
+  "id": "gotify",
+  "name": "Gotify",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "hasNotificationSound": true,
+    "hasDirectMessages": false,
+    "hasIndirectMessages": true,
+    "hasCustomUrl": true
+  }
+}
