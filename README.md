@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-111-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-112-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -177,6 +177,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/ravager-dk' title='Martin Nygaard Jensen: code'><img src='https://avatars.githubusercontent.com/u/69148218?v=4' alt='ravager-dk' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/emdfonseca' title='Emanuel Fonseca: code'><img src='https://avatars.githubusercontent.com/u/12010090?v=4' alt='emdfonseca' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='http://victorbnl.github.io' title='Victor B.: code'><img src='https://avatars.githubusercontent.com/u/39555268?v=4' alt='victorbnl' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/magnouvean' title='magnouvean: code'><img src='https://avatars.githubusercontent.com/u/85435692?v=4' alt='magnouvean' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
