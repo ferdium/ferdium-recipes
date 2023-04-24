@@ -1,0 +1,9 @@
+{
+  "id": "deepl",
+  "name": "DeepL",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.deepl.com/translator"
+  }
+}
