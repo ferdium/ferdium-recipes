@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://pixelfed.social"
+    "serviceURL": "https://pixelfed.social",
+    "hasHostedOption": true,
+    "hasCustomUrl": true
   }
 }
