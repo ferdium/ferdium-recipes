@@ -14,12 +14,8 @@ setInterval(() => {
 
 module.exports = (Ferdium) => {
   const getMessages = () => {
-    let count = 0;
-    const elements = document.querySelectorAll('.rBNOH.soMvl');
-    if (elements.length > 0) {
-      count += 1;
-    }
-    Ferdium.setBadge(count);
+    const element = document.querySelector('a[href^="/direct/inbox"]');
+    Ferdium.setBadge(element ? Ferdium.safeParseInt(element.textContent.match(/Direct([0-9]*)/)[1]) : 0);
   };
 
   Ferdium.loop(getMessages);
