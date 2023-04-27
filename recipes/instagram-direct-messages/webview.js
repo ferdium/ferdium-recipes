@@ -15,7 +15,7 @@ setInterval(() => {
 module.exports = (Ferdium) => {
   const getMessages = () => {
     const element = document.querySelector('a[href^="/direct/inbox"]');
-    Ferdium.setBadge(element ? Ferdium.safeParseInt(element.textContent.match(/Direct([0-9]*)/)[1]) : 0);
+    Ferdium.setBadge(element ? Ferdium.safeParseInt(element.textContent.match(/[0-9]+/)[0]) : 0);
   };
 
   Ferdium.loop(getMessages);
