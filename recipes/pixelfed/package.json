@@ -1,9 +1,11 @@
 {
   "id": "pixelfed",
   "name": "Pixelfed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://pixelfed.social"
+    "serviceURL": "https://pixelfed.social",
+    "hasHostedOption": true,
+    "hasCustomUrl": true
   }
 }
