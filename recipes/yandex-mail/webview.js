@@ -1,10 +1,7 @@
 module.exports = Ferdium => {
   const getMessages = () => {
-    let count = 0;
-
-    if (document.querySelectorAll('.mail-LabelList-Item_count').length > 1) {
-      count = Ferdium.safeParseInt(document.querySelectorAll('.mail-LabelList-Item_count')[1].textContent);
-    }
+    const button = document.querySelectorAll('[href="#unread"]')[0] ?? {};
+    const count = Ferdium.safeParseInt(button.textContent);
 
     Ferdium.setBadge(count);
   };
