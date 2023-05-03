@@ -1,14 +1,15 @@
 {
   "id": "office365-owa",
   "name": "Office 365 Outlook",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "license": "MIT",
   "aliases": [
+    "office.com"
     "live.com",
     "outlook"
   ],
   "config": {
-    "serviceURL": "https://outlook.live.com/mail/",
+    "serviceURL": "https://outlook.office.com/mail/",
     "hasNotificationSound": true,
     "hasHostedOption": true,
     "hasCustomUrl": true,
