@@ -33,15 +33,15 @@
   "homepage": "https://github.com/ferdium/ferdium-recipes",
   "devDependencies": {
     "@types/targz": "1.0.1",
-    "all-contributors-cli": "6.24.0",
-    "eslint": "8.34.0",
+    "all-contributors-cli": "6.25.0",
+    "eslint": "8.39.0",
     "eslint-plugin-unicorn": "42.0.0",
-    "fs-extra": "11.1.0",
+    "fs-extra": "11.1.1",
     "husky": "8.0.3",
     "image-size": "1.0.2",
     "open": "8.4.1",
-    "prettier": "2.8.4",
-    "simple-git": "3.16.0",
+    "prettier": "2.8.8",
+    "simple-git": "3.18.0",
     "targz": "1.0.1"
   }
 }
