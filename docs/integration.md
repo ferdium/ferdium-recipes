@@ -6,7 +6,7 @@ A Ferdium recipe is basically nothing else than a node module and is currently i
 
 > ℹ️ New to Ferdium recipes and Electron? Then we recommend you read Jake Lee's ["Super simple guide to adding a new Ferdi service recipe"](https://blog.jakelee.co.uk/super-simple-guide-to-adding-a-new-ferdi-service-recipe/) which gives you an easy step-by-step guide on how to create and publish your recipe!
 
-> ℹ️ If you have any problems packaging your recipes, if you are inexperienced with the tools used or have any other problems, we are here to help! Just open a new issue at https://github.com/ferdium/ferdium-recipes/issues/new and we can help you develop, test and publish your recipe
+> ℹ️ If you have any problems packaging your recipes, if you are inexperienced with the tools used or have any other problems, we are here to help! Just open a new issue at https://github.com/ferdium/ferdium-app/issues/new/choose and we can help you develop, test and publish your recipe
 
 > If you want to update an existing recipe, please refer to [updating.md](https://github.com/ferdium/ferdium-recipes/blob/main/docs/updating.md) instead
 
