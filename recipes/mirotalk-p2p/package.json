@@ -1,0 +1,11 @@
+{
+	"id": "mirotalk-p2p",
+	"name": "MiroTalk P2P",
+	"version": "1.0.0",
+	"license": "MIT",
+	"config": {
+		"serviceURL": "https://p2p.mirotalk.com",
+		"hasTeamId": false,
+		"hasNotificationSound": true
+	}
+}
