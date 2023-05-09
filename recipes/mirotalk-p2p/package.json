@@ -1,10 +1,11 @@
 {
 	"id": "mirotalk-p2p",
 	"name": "MiroTalk P2P",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"config": {
 		"serviceURL": "https://p2p.mirotalk.com",
+    "hasCustomUrl": true,
 		"hasTeamId": false,
 		"hasNotificationSound": true
 	}
