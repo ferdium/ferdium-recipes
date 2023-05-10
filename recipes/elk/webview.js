@@ -1,9 +1,19 @@
 module.exports = (Ferdium) => {
-    Ferdium.loop(() => {
-        // FIXME: Don't assume 0th element exists
-        const notifications = document.querySelectorAll("[href$=notifications]")[0].outerText;
-        let parsedValue = Ferdium.safeParseInt(notifications);
+  const path = require('path');
 
-        Ferdium.setBadge(parsedValue);
-    });
+  // Inject css
+  Ferdium.injectCSS(path.default.join(__dirname, 'service.css'));
+
+  // Get notifications
+  Ferdium.loop(() => {
+    const notifications = document.querySelectorAll("[href$=notifications]").item(0);
+    // Null if not present
+    if (!notifications) {
+      return;
+    }
+    // Assume first element contains the number of notifications
+    let parsedValue = Ferdium.safeParseInt(notifications.outerText);
+    // Set to parsed value
+    Ferdium.setBadge(parsedValue);
+  });
 }
