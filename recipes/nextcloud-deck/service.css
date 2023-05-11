@@ -1,0 +1,41 @@
+/* Hide all app links and contacts menu link in the top menu except for
+Deck */
+#appmenu li:not([data-id='deck']),
+#contactsmenu {
+  display: none;
+}
+
+/* Change the cursor to the default for Nextcloud home and Deck
+links in the top menu and disable them */
+#nextcloud,
+#appmenu li[data-id='deck'] a {
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Hide all settings options, except the option to log out */
+#settings #expanddiv li:not([data-id='logout']) {
+  display: none;
+}
+
+/* Fix the margin of the dropdown */
+#settings #expanddiv,
+#settings #expanddiv > ul {
+  min-height: 0;
+}
+
+/* Hide "More" link in the top menu */
+#more-apps {
+  display: none !important;
+}
+
+/* Hide notifications that are not related to Deck */
+.notifications .notification-wrapper .notification:not([object_type="deck"]) {
+  display: none;
+}
+
+/* Hide "Dismiss all notifications" as this action will dismiss also hidden
+notifications */
+.notification-wrapper .dismiss-all {
+  display: none;
+}
