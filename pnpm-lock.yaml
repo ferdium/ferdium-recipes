@@ -487,6 +487,18 @@ importers:
   recipes/mewe:
     specifiers: {}
 
+  recipes/mirotalk-c2c:
+    specifiers: {}
+
+  recipes/mirotalk-p2p:
+    specifiers: {}
+
+  recipes/mirotalk-sfu:
+    specifiers: {}
+
+  recipes/mirotalk-webrtc:
+    specifiers: {}
+
   recipes/misskey:
     specifiers: {}
 
