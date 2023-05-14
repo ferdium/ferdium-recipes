@@ -4063,7 +4063,7 @@ async function readFileFromGitBranch(branch, filename) {
 
 try {
   const changedFilesString = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('changed-files');
-  const changedFiles = JSON.parse(changedFilesString);
+  const changedFiles = changedFilesString.split(' ');
 
   const changedFilesInRecipes = changedFiles
     .filter(filename => filename.startsWith('recipes/'))

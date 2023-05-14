@@ -32,7 +32,7 @@ async function readFileFromGitBranch(branch, filename) {
 
 try {
   const changedFilesString = core.getInput('changed-files');
-  const changedFiles = JSON.parse(changedFilesString);
+  const changedFiles = changedFilesString.split(' ');
 
   const changedFilesInRecipes = changedFiles
     .filter(filename => filename.startsWith('recipes/'))
