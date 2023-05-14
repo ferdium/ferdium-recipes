@@ -5,7 +5,7 @@
     "doc": "docs"
   },
   "engines": {
-    "pnpm": "7.30.0"
+    "pnpm": "8.5.0"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -33,7 +33,7 @@
   "homepage": "https://github.com/ferdium/ferdium-recipes",
   "devDependencies": {
     "@types/targz": "1.0.1",
-    "all-contributors-cli": "6.25.0",
+    "all-contributors-cli": "6.25.1",
     "eslint": "8.39.0",
     "eslint-plugin-unicorn": "42.0.0",
     "fs-extra": "11.1.1",
