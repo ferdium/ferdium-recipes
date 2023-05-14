@@ -8,7 +8,7 @@
     "hasNotificationSound": true,
     "hasTeamId": true,
     "urlInputPrefix": "https://",
-    "urlInputSuffix": "/apps/news/",
+    "urlInputSuffix": "/apps/deck/",
     "serviceURL": "https://{teamId}/apps/deck/"
   }
 }
