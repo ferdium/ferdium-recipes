@@ -16,8 +16,6 @@ jobs:
         run: git fetch origin main --depth 1
       - uses: tj-actions/changed-files@v35
         id: changed-files
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Checking recipe version bump
         uses: ./.github/workflows/check-recipe-version-bump
         with:
