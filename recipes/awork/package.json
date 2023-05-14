@@ -5,7 +5,7 @@
   "license": "MIT",
   "config": {
     "serviceURL": "https://{teamId}.awork.io",
-	"hasTeamId": true,
-	"urlInputSuffix": ".awork.io"
+    "hasTeamId": true,
+    "urlInputSuffix": ".awork.io"
   }
 }
