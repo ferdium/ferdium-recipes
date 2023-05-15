@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-118-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-119-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -186,6 +186,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://www.linkedin.com/in/miroslav-pejic-976a07101/' title='Miroslav Pejic: code'><img src='https://avatars.githubusercontent.com/u/70838434?v=4' alt='miroslavpejic85' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://jalil-salame.github.io' title='Jalil Salamé: code'><img src='https://avatars.githubusercontent.com/u/60845989?v=4' alt='jalil-salame' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/mindcombatant' title='mindcombatant: code'><img src='https://avatars.githubusercontent.com/u/9550058?v=4' alt='mindcombatant' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://area-thinking.net' title='S Wulf: code'><img src='https://avatars.githubusercontent.com/u/656360?v=4' alt='DustRaven' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
