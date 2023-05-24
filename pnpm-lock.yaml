@@ -25,6 +25,9 @@ importers:
       image-size:
         specifier: 1.0.2
         version: 1.0.2
+      is-ci:
+        specifier: 3.0.1
+        version: 3.0.1
       open:
         specifier: 8.4.1
         version: 8.4.1
@@ -63,6 +66,8 @@ importers:
   recipes/anydo: {}
 
   recipes/asana: {}
+
+  recipes/awork: {}
 
   recipes/azure-devops: {}
 
@@ -379,6 +384,8 @@ importers:
   recipes/nextcloud-carnet: {}
 
   recipes/nextcloud-cospend: {}
+
+  recipes/nextcloud-deck: {}
 
   recipes/nextcloud-news: {}
 
@@ -1432,6 +1439,13 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       builtin-modules: 3.3.0
+    dev: true
+
+  /is-ci@3.0.1:
+    resolution: {integrity: sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ==}
+    hasBin: true
+    dependencies:
+      ci-info: 3.3.2
     dev: true
 
   /is-core-module@2.9.0:
