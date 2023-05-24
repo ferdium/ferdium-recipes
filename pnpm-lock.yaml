@@ -481,6 +481,8 @@ importers:
 
   recipes/roundcube: {}
 
+  recipes/schildichat: {}
+
   recipes/scribens: {}
 
   recipes/scrumpy: {}
