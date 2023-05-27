@@ -1,0 +1,18 @@
+{
+  "id": "schildichat",
+  "name": "SchildiChat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "Element",
+    "Riot.im",
+    "Matrix"
+  ],
+  "config": {
+    "serviceURL": "https://app.schildi.chat/",
+    "hasCustomUrl": true,
+    "message": "SchildiChat's default URL is https://app.schildi.chat/",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  }
+}
