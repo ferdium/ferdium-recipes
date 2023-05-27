@@ -331,6 +331,8 @@ importers:
 
   recipes/linkedin: {}
 
+  recipes/localazy: {}
+
   recipes/magic-level: {}
 
   recipes/mailbox.org: {}
