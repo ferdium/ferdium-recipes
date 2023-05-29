@@ -1,0 +1,10 @@
+{
+  "id": "lineworks",
+  "name": "Line Works",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "hasIndirectMessages": true,
+    "serviceURL": "https://talk.worksmobile.com/"
+  }
+}

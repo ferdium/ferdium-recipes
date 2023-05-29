@@ -329,6 +329,8 @@ importers:
 
   recipes/linear: {}
 
+  recipes/lineworks: {}
+
   recipes/linkedin: {}
 
   recipes/localazy: {}
