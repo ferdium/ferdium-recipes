@@ -67,7 +67,6 @@ try {
       notBumpedUpRecipes[
         recipe
       ] = `${packageCurrent.version} is not greater than ${packageMain.version}`;
-      continue;
     }
   }
 
