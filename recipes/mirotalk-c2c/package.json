@@ -1,12 +1,12 @@
 {
-  "id": "mirotalk-c2c",
-  "name": "MiroTalk C2C",
-  "version": "1.0.0",
-  "license": "MIT",
-  "config": {
-    "serviceURL": "https://c2c.mirotalk.com",
+	"id": "mirotalk-c2c",
+	"name": "MiroTalk C2C",
+	"version": "1.0.0",
+	"license": "MIT",
+	"config": {
+		"serviceURL": "https://c2c.mirotalk.com",
     "hasCustomUrl": true,
     "hasHostedOption": true,
-    "hasNotificationSound": true
- }
+		"hasNotificationSound": true
+	}
 }
