@@ -359,6 +359,8 @@ importers:
 
   recipes/mewe: {}
 
+  recipes/mirotalk-bro: {}
+
   recipes/mirotalk-c2c: {}
 
   recipes/mirotalk-p2p: {}
