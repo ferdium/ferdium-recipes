@@ -5,8 +5,8 @@
 	"license": "MIT",
 	"config": {
 		"serviceURL": "https://bro.mirotalk.com",
-    "hasCustomUrl": true,
-    "hasHostedOption": true,
+		"hasCustomUrl": true,
+		"hasHostedOption": true,
 		"hasNotificationSound": true
 	}
 }
