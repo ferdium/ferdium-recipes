@@ -1,0 +1,9 @@
+{
+  "id": "pixieset",
+  "name": "Pixieset",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://accounts.pixieset.com/dashboard/"
+  }
+}
