@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -12,8 +12,8 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
       all-contributors-cli:
-        specifier: 6.25.1
-        version: 6.25.1
+        specifier: 6.26.0
+        version: 6.26.0
       eslint:
         specifier: 8.39.0
         version: 8.39.0
@@ -39,8 +39,8 @@ importers:
         specifier: 2.8.8
         version: 2.8.8
       simple-git:
-        specifier: 3.18.0
-        version: 3.18.0
+        specifier: 3.19.0
+        version: 3.19.0
       targz:
         specifier: 1.0.1
         version: 1.0.1
@@ -821,8 +821,8 @@ packages:
       uri-js: 4.4.1
     dev: true
 
-  /all-contributors-cli@6.25.1:
-    resolution: {integrity: sha512-Q9MfsO6FH09h71IG6OobfESA7lbooB3/bnO2wnuXbLPye1lFsYsa/jpNZP0YBx6zbhwXqqm6CXRZ9HO/tmD4NQ==}
+  /all-contributors-cli@6.26.0:
+    resolution: {integrity: sha512-HOMfawD0XyNbOvLUn7rOAP5N9RLnbH+Y/9/IoxwPzCmy6srHSFyRMwbpD0H7Tw+1QzdJT8RH7bTe1IZkPhF+NQ==}
     engines: {node: '>=4'}
     hasBin: true
     dependencies:
@@ -836,6 +836,8 @@ packages:
       node-fetch: 2.6.9
       pify: 5.0.0
       yargs: 15.4.1
+    optionalDependencies:
+      prettier: 2.8.8
     transitivePeerDependencies:
       - encoding
     dev: true
@@ -1967,8 +1969,8 @@ packages:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
     dev: true
 
-  /simple-git@3.18.0:
-    resolution: {integrity: sha512-Yt0GJ5aYrpPci3JyrYcsPz8Xc05Hi4JPSOb+Sgn/BmPX35fn/6Fp9Mef8eMBCrL2siY5w4j49TA5Q+bxPpri1Q==}
+  /simple-git@3.19.0:
+    resolution: {integrity: sha512-hyH2p9Ptxjf/xPuL7HfXbpYt9gKhC1yWDh3KYIAYJJePAKV7AEjLN4xhp7lozOdNiaJ9jlVvAbBymVlcS2jRiA==}
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
