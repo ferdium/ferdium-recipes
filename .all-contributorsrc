@@ -1106,6 +1106,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "survfate",
+      "name": "survfate",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10634948?v=4",
+      "profile": "https://github.com/survfate",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
