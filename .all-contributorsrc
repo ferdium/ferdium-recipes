@@ -1115,6 +1115,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "cloudmaker97",
+      "name": "Dennis Heinrich",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4189795?v=4",
+      "profile": "https://dennis-heinri.ch",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
