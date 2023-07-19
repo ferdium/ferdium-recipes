@@ -1,0 +1,9 @@
+{
+    "id": "miro",
+    "name": "Miro",
+    "version": "1.0.0",
+    "license": "MIT",
+    "config": {
+        "serviceURL": "https://miro.com/app/dashboard/"
+    }
+}
