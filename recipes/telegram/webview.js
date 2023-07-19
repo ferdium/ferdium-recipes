@@ -95,7 +95,11 @@ module.exports = (Ferdium, settings) => {
         event.preventDefault();
         event.stopPropagation();
 
-        if (settings.trapLinkClicks === true) {
+        if (
+          settings.trapLinkClicks === true
+          || url.includes('t.me')
+          || url.includes('web.telegram.org')
+        ) {
           window.location.href = url;
         } else {
           Ferdium.openNewWindow(url);
