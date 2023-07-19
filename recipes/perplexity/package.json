@@ -1,0 +1,9 @@
+{
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "version": "1.0.0",
+    "license": "MIT",
+    "config": {
+        "serviceURL": "https://www.perplexity.ai/"
+    }
+}
