@@ -7,7 +7,7 @@ function _interopRequireDefault(obj) {
 module.exports = Ferdium => {
   const getMessages = () => {
     const element = document.querySelector('a[href^="/direct/inbox"]');
-    Ferdium.setBadge(element ? Ferdium.safeParseInt(element.textContent) : 0);
+    Ferdium.setBadge(element.textContent ? Ferdium.safeParseInt(element.textContent) : 0);
   };
 
   Ferdium.loop(getMessages);
