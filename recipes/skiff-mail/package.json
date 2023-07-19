@@ -1,0 +1,9 @@
+{
+    "id": "skiff-mail",
+    "name": "Skiff Mail",
+    "version": "1.0.0",
+    "license": "MIT",
+    "config": {
+        "serviceURL": "https://app.skiff.com/mail/inbox"
+    }
+}
