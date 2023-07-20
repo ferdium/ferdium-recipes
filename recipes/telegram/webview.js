@@ -18,10 +18,10 @@ module.exports = (Ferdium, settings) => {
     let groupCount = 0;
 
     const directCountSelector = document.querySelectorAll(
-      '.chat-list .ListItem.private .Badge.unread:not(.muted)',
+      '.chat-list .ListItem.private .ChatBadge.unread:not(.muted)',
     );
     const groupCountSelector = document.querySelectorAll(
-      '.chat-list .ListItem.group .Badge.unread:not(.muted)',
+      '.chat-list .ListItem.group .ChatBadge.unread:not(.muted)',
     );
 
     for (const badge of directCountSelector) {
