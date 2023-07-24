@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * Package all recipes
  */
@@ -70,6 +71,7 @@ const compress = (src, dest) =>
     // Check that each mandatory file exists
     for (let file of mandatoryFiles) {
       const filePath = path.join(recipeSrc, file);
+      // eslint-disable-next-line no-await-in-loop
       if (!(await fs.pathExists(filePath))) {
         console.log(
           `⚠️ Couldn't package "${recipe}": Folder doesn't contain a "${file}".`,
@@ -95,6 +97,7 @@ const compress = (src, dest) =>
 
     // Check that user.js does not exist
     const userJs = path.join(recipeSrc, 'user.js');
+    // eslint-disable-next-line no-await-in-loop
     if (await fs.pathExists(userJs)) {
       console.log(
         `⚠️ Couldn't package "${recipe}": Folder contains a "user.js".`,
@@ -105,6 +108,7 @@ const compress = (src, dest) =>
 
     // Read package.json
     const packageJson = path.join(recipeSrc, 'package.json');
+    // eslint-disable-next-line no-await-in-loop
     const config = await fs.readJson(packageJson);
 
     // Make sure it contains all required fields
@@ -227,6 +231,7 @@ const compress = (src, dest) =>
       const relativeRepoSrc = path.relative(repoRoot, recipeSrc);
 
       // Check for changes in recipe's directory, and if changes are present, then the changes should contain a version bump
+      // eslint-disable-next-line no-await-in-loop
       await git.diffSummary(relativeRepoSrc, (err, result) => {
         if (err) {
           configErrors.push(
@@ -239,11 +244,7 @@ const compress = (src, dest) =>
             result.deletions !== 0)
         ) {
           const pkgJsonRelative = path.relative(repoRoot, packageJson);
-          if (!result.files.some(({ file }) => file === pkgJsonRelative)) {
-            configErrors.push(
-              `Found changes in '${relativeRepoSrc}' without the corresponding version bump in '${pkgJsonRelative}'`,
-            );
-          } else {
+          if (result.files.some(({ file }) => file === pkgJsonRelative)) {
             git.diff(pkgJsonRelative, (_diffErr, diffResult) => {
               if (diffResult && !pkgVersionChangedMatcher.test(diffResult)) {
                 configErrors.push(
@@ -251,6 +252,10 @@ const compress = (src, dest) =>
                 );
               }
             });
+          } else {
+            configErrors.push(
+              `Found changes in '${relativeRepoSrc}' without the corresponding version bump in '${pkgJsonRelative}'`,
+            );
           }
         }
       });
@@ -291,7 +296,7 @@ const compress = (src, dest) =>
   recipeList = recipeList.sort((a, b) => {
     let textA = a.id.toLowerCase();
     let textB = b.id.toLowerCase();
-    return textA < textB ? -1 : (textA > textB ? 1 : 0);
+    return textA < textB ? -1 : textA > textB ? 1 : 0;
   });
   await fs.writeJson(allJson, recipeList, {
     spaces: 2,

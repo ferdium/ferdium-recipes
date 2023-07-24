@@ -5,6 +5,11 @@
     "doc": "docs"
   },
   "engines": {
+    "node": "18.15.0",
+    "pnpm": "8.6.2"
+  },
+  "volta": {
+    "node": "18.15.0",
     "pnpm": "8.6.2"
   },
   "scripts": {
@@ -13,7 +18,7 @@
     "package": "node scripts/package.js",
     "create": "node scripts/create.js",
     "lint": "eslint \"{recipes,scripts}/**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint --fix \"{recipes,scripts}/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "pnpm lint --fix",
     "reformat-files": "prettier --ignore-path .eslintignore --write --require-pragma \"**/*.{js,json,scss}\"",
     "contributors": "all-contributors"
   },
@@ -34,14 +39,14 @@
   "devDependencies": {
     "@types/targz": "1.0.1",
     "all-contributors-cli": "6.26.0",
-    "eslint": "8.39.0",
-    "eslint-plugin-unicorn": "42.0.0",
+    "eslint": "8.45.0",
+    "eslint-plugin-unicorn": "48.0.0",
     "fs-extra": "11.1.1",
     "husky": "8.0.3",
     "image-size": "1.0.2",
     "is-ci": "3.0.1",
     "open": "8.4.1",
-    "prettier": "2.8.8",
+    "prettier": "3.0.0",
     "simple-git": "3.19.0",
     "targz": "1.0.1"
   }

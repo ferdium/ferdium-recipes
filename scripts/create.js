@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * Create a new recipe for your service
  */
@@ -20,17 +21,13 @@ pnpm create WhatsApp FerdiumDev
 const recipeName = process.argv[2];
 const recipe = recipeName.toLowerCase().replace(/\s/g, '-');
 const folderName = process.argv[3] || 'Ferdium';
-const filesThatNeedTextReplace = [
-  'package.json',
-  'index.js',
-  'webview.js',
-];
+const filesThatNeedTextReplace = ['package.json', 'index.js', 'webview.js'];
 
-const toPascalCase = (str) => {
+const toPascalCase = str => {
   const words = str
     .replace(/[^a-z]/g, '')
     .split(/\W/)
-    .map((word) => {
+    .map(word => {
       if (word.length === 0) {
         return word;
       }
@@ -38,7 +35,7 @@ const toPascalCase = (str) => {
       return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     });
   return words.join('');
-}
+};
 const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only containing a-z, for usage as the JavaScript class name
 
 (async () => {
@@ -76,10 +73,12 @@ const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only cont
   // Replace placeholders with the recipe-specific values
   for (const file of filesThatNeedTextReplace) {
     const filePath = path.join(newRecipeFolder, file);
+    // eslint-disable-next-line no-await-in-loop
     let contents = await fs.readFile(filePath, 'utf8');
     contents = contents.replace(/SERVICE/g, recipe);
     contents = contents.replace(/SNAME/g, recipeName);
     contents = contents.replace(/SPASCAL/g, pascalCasedName);
+    // eslint-disable-next-line no-await-in-loop
     await fs.writeFile(filePath, contents);
   }
   console.log('[Info] Prepared new recipe');

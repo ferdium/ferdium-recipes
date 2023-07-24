@@ -2,10 +2,10 @@ let modal;
 let updates = 0;
 
 const waitFor = (condition, callback) => {
-  if (!condition()) {
-    window.setTimeout(waitFor.bind(null, condition, callback), 100);
-  } else {
+  if (condition()) {
     callback();
+  } else {
+    window.setTimeout(waitFor.bind(null, condition, callback), 100);
   }
 };
 
