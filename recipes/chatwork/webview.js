@@ -16,18 +16,18 @@ module.exports = Ferdium => {
 
       if (count > 0) {
         if (
-          !room
+          room
             .querySelector('img.sc-gqjmRU')
             .getAttribute('src')
             .includes('avatar')
         ) {
+          directCount++;
+        } else {
           if (unreadBadgeHasMention) {
             directCount++;
           } else {
             indirectCount++;
           }
-        } else {
-          directCount++;
         }
       }
     });

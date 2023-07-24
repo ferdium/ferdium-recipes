@@ -16,16 +16,16 @@ module.exports = Ferdium => {
     }
 
     if (chatsElement) {
-      if (!chatsElement.hasAttribute('aria-current')) {
+      if (chatsElement.hasAttribute('aria-current')) {
+        direct = document.querySelectorAll(
+          '[data-pagelet="WorkGalahadChannel"] .uiList [role="gridcell"] [role="button"] .oxk9n0fw',
+        ).length;
+      } else {
         const chatMessages = chatsElement.querySelector('span');
 
         if (chatMessages) {
           direct = Ferdium.safeParseInt(chatMessages.textContent);
         }
-      } else {
-        direct = document.querySelectorAll(
-          '[data-pagelet="WorkGalahadChannel"] .uiList [role="gridcell"] [role="button"] .oxk9n0fw',
-        ).length;
       }
     }
 

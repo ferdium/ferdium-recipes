@@ -16,6 +16,7 @@ const getInstanceConfig = async () => {
     const pleromaFeConfig = frontendConfig.pleroma_fe || {};
     return { ...staticConfig, ...pleromaFeConfig };
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.log('Failed to load dynamic frontend configuration', error);
     return staticConfig;
   }
@@ -162,6 +163,7 @@ module.exports = Ferdium => {
       });
     },
     error => {
+      // eslint-disable-next-line no-console
       console.log('Failed to load instance logo', error);
       Ferdium.loop(getMessages);
     },
