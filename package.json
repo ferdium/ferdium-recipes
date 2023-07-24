@@ -13,6 +13,7 @@
     "pnpm": "8.6.2"
   },
   "engine-strict": true,
+  "packageManager": "pnpm@8.6.2",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
