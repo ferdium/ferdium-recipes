@@ -1,7 +1,7 @@
 {
   "id": "teamwork-projects",
   "name": "Teamwork Projects",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://{teamId}.teamwork.com/",

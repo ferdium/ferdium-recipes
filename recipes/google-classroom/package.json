@@ -1,0 +1,10 @@
+{
+  "id": "google-classroom",
+  "name": "Google Classroom",
+  "version": "1.3.0",
+  "license": "MIT",
+  "repository": "https://github.com/TanZng/ferdi-googleclassroom",
+  "config": {
+    "serviceURL": "https://classroom.google.com/u/0/"
+  }
+}

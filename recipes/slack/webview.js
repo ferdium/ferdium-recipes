@@ -1,8 +1,8 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 const SELECTOR_CHANNELS_UNREAD =
   '.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted)';
