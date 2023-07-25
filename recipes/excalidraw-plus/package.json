@@ -1,9 +1,0 @@
-{
-    "id": "excalidraw-plus",
-    "name": "Excalidraw+",
-    "version": "1.0.0",
-    "license": "MIT",
-    "config": {
-        "serviceURL": "https://app.excalidraw.com/"
-    }
-}
