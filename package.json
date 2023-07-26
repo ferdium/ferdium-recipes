@@ -12,6 +12,7 @@
     "node": "18.15.0",
     "pnpm": "8.6.2"
   },
+  "engine-strict": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
