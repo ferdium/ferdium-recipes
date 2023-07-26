@@ -1,3 +1,9 @@
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+const _path = _interopRequireDefault(require('path'));
+
 module.exports = Ferdium => {
   const getMessages = () => {
     const elements = document.querySelectorAll('.unread');
@@ -6,10 +12,10 @@ module.exports = Ferdium => {
     for (const element of elements) {
       if (
         Ferdium.safeParseInt(
-          element.textContent && element.textContent.replace(/[^\d.]/g, ''),
+          element.textContent && element.textContent.replaceAll(/[^\d.]/g, ''),
         ) > 0
       ) {
-        count++; // count 1 per channel with messages
+        count += 1; // count 1 per channel with messages
       }
     }
 
@@ -17,4 +23,6 @@ module.exports = Ferdium => {
   };
 
   Ferdium.loop(getMessages);
+
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

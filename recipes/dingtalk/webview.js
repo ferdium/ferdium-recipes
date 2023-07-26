@@ -1,22 +1,22 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   let checkIsRun = false;
   const checkHeightAction = () => {
     checkIsRun = true;
-    let checkHeight = setInterval(() => {
-      let menuPanel = document.querySelector('#menu-pannel');
+    const checkHeight = setInterval(() => {
+      const menuPanel = document.querySelector('#menu-pannel');
       if (!menuPanel) {
         return;
       }
       if (menuPanel.parentElement) {
         menuPanel.parentElement.setAttribute(
           'style',
-          'height:' + (window.outerHeight - 60) + 'px',
+          `height:${window.outerHeight - 60}px`,
         );
       }
       clearInterval(checkHeight);

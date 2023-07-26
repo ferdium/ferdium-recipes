@@ -1,6 +1,8 @@
-const _path = _interopRequireDefault(require('path'));
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = (Ferdium, settings) => {
   const getMessages = () => {
@@ -8,13 +10,16 @@ module.exports = (Ferdium, settings) => {
     const container = document.querySelector('[role="tablist"] > button > div');
 
     if (container) {
-      const children = container.children;
+      const { children } = container;
 
       if (children.length === 3) {
+        // eslint-disable-next-line unicorn/prefer-at
         const elementContainer = children[children.length - 1];
 
         if (elementContainer) {
-          const element = elementContainer.querySelector('[data-text-as-pseudo-element]');
+          const element = elementContainer.querySelector(
+            '[data-text-as-pseudo-element]',
+          );
           if (element && element.dataset) {
             count = Ferdium.safeParseInt(element.dataset.textAsPseudoElement);
           }
@@ -31,21 +36,27 @@ module.exports = (Ferdium, settings) => {
   Ferdium.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
 
   // TODO: See how this can be moved into the main ferdium app and sent as an ipc message for opening with a new window or same Ferdium recipe's webview based on user's preferences
-  document.addEventListener('click', event => {
-    const link = event.target.closest('a[href^="http"]');
-    const button = event.target.closest('button[title^="http"]');
+  document.addEventListener(
+    'click',
+    event => {
+      const link = event.target.closest('a[href^="http"]');
+      const button = event.target.closest('button[title^="http"]');
 
-    if (link || button) {
-      const url = link ? link.getAttribute('href') : button.getAttribute('title');
+      if (link || button) {
+        const url = link
+          ? link.getAttribute('href')
+          : button.getAttribute('title');
 
-      event.preventDefault();
-      event.stopPropagation();
+        event.preventDefault();
+        event.stopPropagation();
 
-      if (settings.trapLinkClicks === true) {
-        window.location.href = url;
-      } else {
-        Ferdium.openNewWindow(url);
+        if (settings.trapLinkClicks === true) {
+          window.location.href = url;
+        } else {
+          Ferdium.openNewWindow(url);
+        }
       }
-    }
-  }, true);
+    },
+    true,
+  );
 };

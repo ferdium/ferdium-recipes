@@ -1,8 +1,8 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 setTimeout(() => {
   const elem = document.querySelector('.landing-title.version-title');
@@ -45,5 +45,6 @@ module.exports = (Ferdium, settings) => {
   });
 
   Ferdium.loop(getMessages);
+
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

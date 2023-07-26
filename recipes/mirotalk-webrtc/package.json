@@ -1,7 +1,7 @@
 {
 	"id": "mirotalk-webrtc",
 	"name": "MiroTalk WebRTC",
-	"version": "1.0.0",
+	"version": "1.2.0",
 	"license": "MIT",
 	"config": {
 		"serviceURL": "https://webrtc.mirotalk.com",

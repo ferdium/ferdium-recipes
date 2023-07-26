@@ -1,7 +1,7 @@
 {
   "id": "flock",
   "name": "Flock",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "repository": "https://github.com/jereddowden/franz-recipe-flock",
   "config": {

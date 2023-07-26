@@ -1,15 +1,17 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
     const directSelector = document.querySelector(
       '.subscriptions-feed .app-navigation-entry-utils-counter',
     );
-    const direct = directSelector ? Ferdium.safeParseInt(directSelector.textContent) : 0;
+    const direct = directSelector
+      ? Ferdium.safeParseInt(directSelector.textContent)
+      : 0;
 
     Ferdium.setBadge(direct);
   };
