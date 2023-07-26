@@ -1,11 +1,17 @@
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+const _path = _interopRequireDefault(require('path'));
+
 module.exports = Ferdium => {
   const getMessages = () => {
-    if (document.location.href == 'https://app.hey.com/') {
+    if (document.location.href === 'https://app.hey.com/') {
       let screener = 0;
       let unread = 0;
 
       if (document.querySelectorAll('.btn--icon-screener').length > 0) {
-        let text = document.querySelectorAll('.btn--icon-screener')[0]
+        const text = document.querySelectorAll('.btn--icon-screener')[0]
           .textContent;
         if (text) {
           const parsedText = Ferdium.safeParseInt(/\d+/.exec(text));
@@ -13,15 +19,12 @@ module.exports = Ferdium => {
         }
       }
 
-      let postings = document.querySelectorAll('.posting');
+      const postings = document.querySelectorAll('.posting');
 
       if (postings.length > 0) {
         for (const p of postings) {
-          if (
-            p.nodeName == 'ARTICLE' &&
-            p.dataset.seen !== 'true'
-          ) {
-            unread++;
+          if (p.nodeName === 'ARTICLE' && p.dataset.seen !== 'true') {
+            unread += 1;
           }
         }
       }
@@ -31,4 +34,6 @@ module.exports = Ferdium => {
   };
 
   Ferdium.loop(getMessages);
+
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

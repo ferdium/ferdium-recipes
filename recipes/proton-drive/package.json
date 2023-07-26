@@ -1,0 +1,9 @@
+{
+  "id": "proton-drive",
+  "name": "Proton Drive",
+  "version": "1.1.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://drive.proton.me"
+  }
+}

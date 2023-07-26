@@ -1,12 +1,12 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
+const _path = _interopRequireDefault(require('path'));
+
 module.exports = Ferdium => {
   const getMessages = () => {
-    var unreadCount = 0;
+    let unreadCount = 0;
     $.each(
       $('[data-qa-has-unreads]'),
       (idx, item) =>

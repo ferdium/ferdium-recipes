@@ -1,9 +1,0 @@
-{
-  "id": "redditchat",
-  "name": "Reddit Chat",
-  "version": "1.2.0",
-  "license": "MIT",
-  "config": {
-    "serviceURL": "https://www.reddit.com/chat/"
-  }
-}

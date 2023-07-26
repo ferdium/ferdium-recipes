@@ -1,7 +1,7 @@
 {
   "id": "scrumpy",
   "name": "Scrumpy",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "repository": "https://github.com/scrumpy/franz-recipe-scrumpy",
   "config": {

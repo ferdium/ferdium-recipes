@@ -1,7 +1,7 @@
 {
   "id": "lineworks",
   "name": "Line Works",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "config": {
     "hasIndirectMessages": true,

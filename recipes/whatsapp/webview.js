@@ -1,8 +1,8 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   let dbCache;
@@ -41,7 +41,7 @@ module.exports = Ferdium => {
             const request = window.indexedDB.open('model-storage');
             request.onsuccess = () => {
               dbCache = request.result;
-              //This will be called when db.delete is triggered, we need to close and set dbCache to null to trigger lookup again
+              // This will be called when db.delete is triggered, we need to close and set dbCache to null to trigger lookup again
               dbCache.onversionchange = () => {
                 dbCache.close();
                 dbCache = null;

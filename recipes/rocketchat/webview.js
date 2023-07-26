@@ -1,3 +1,8 @@
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
@@ -18,30 +23,34 @@ module.exports = Ferdium => {
 
   Ferdium.loop(getMessages);
 
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
+
   const getTeamIcon = function getTeamIcon() {
     const manifestElement = document.querySelector('link[rel="manifest"]');
 
-    if (manifestElement == null) {
+    if (manifestElement === null) {
       return;
     }
 
     const manifestUrl = manifestElement.getAttribute('href');
 
-    if (manifestUrl == null) {
+    if (manifestUrl === null) {
       return;
     }
 
     const xmlhttp = new XMLHttpRequest();
 
     xmlhttp.addEventListener('readystatechange', function () {
-      if (this.readyState != 4 || this.status != 200) {
+      if (this.readyState !== 4 || this.status !== 200) {
         return;
       }
 
       const response = JSON.parse(this.responseText);
 
       if (response.icons.length > 0) {
-        Ferdium.setAvatarImage(`${window.location.protocol}//${window.location.host}${response.icons[0].src}`);
+        Ferdium.setAvatarImage(
+          `${window.location.protocol}//${window.location.host}${response.icons[0].src}`,
+        );
       }
     });
 

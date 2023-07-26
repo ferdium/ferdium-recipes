@@ -175,6 +175,8 @@ importers:
 
   recipes/evernote: {}
 
+  recipes/excalidraw: {}
+
   recipes/facebook: {}
 
   recipes/facebookpages: {}
@@ -223,15 +225,27 @@ importers:
 
   recipes/good-reads: {}
 
+  recipes/google-calendar: {}
+
+  recipes/google-classroom: {}
+
   recipes/google-contacts: {}
 
   recipes/google-docs: {}
+
+  recipes/google-drive: {}
 
   recipes/google-duo: {}
 
   recipes/google-groups: {}
 
+  recipes/google-keep: {}
+
+  recipes/google-meet: {}
+
   recipes/google-news: {}
+
+  recipes/google-podcasts: {}
 
   recipes/google-presentation: {}
 
@@ -240,18 +254,6 @@ importers:
   recipes/google-translate: {}
 
   recipes/google-voice: {}
-
-  recipes/googlecalendar: {}
-
-  recipes/googleclassroom: {}
-
-  recipes/googledrive: {}
-
-  recipes/googlekeep: {}
-
-  recipes/googlemeet: {}
-
-  recipes/googlepodcasts: {}
 
   recipes/gotify: {}
 
@@ -469,15 +471,15 @@ importers:
 
   recipes/producthunt: {}
 
+  recipes/proton-calendar: {}
+
+  recipes/proton-drive: {}
+
   recipes/proton-mail: {}
-
-  recipes/protoncalendar: {}
-
-  recipes/protondrive: {}
 
   recipes/protonet: {}
 
-  recipes/pulsesms: {}
+  recipes/pulse-sms: {}
 
   recipes/pushbullet: {}
 
@@ -489,9 +491,9 @@ importers:
 
   recipes/reddit: {}
 
-  recipes/redditchat: {}
+  recipes/reddit-chat: {}
 
-  recipes/ringcentral: {}
+  recipes/ring-central: {}
 
   recipes/riseup: {}
 

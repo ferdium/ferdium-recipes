@@ -1,7 +1,7 @@
 {
   "id": "steamchat",
   "name": "SteamChat",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://steamcommunity.com/chat",

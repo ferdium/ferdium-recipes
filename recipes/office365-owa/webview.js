@@ -1,3 +1,9 @@
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+const _path = _interopRequireDefault(require('path'));
+
 module.exports = (Ferdium, settings) => {
   const collectCounts = selector => {
     let unreadCount = 0;
@@ -36,4 +42,6 @@ module.exports = (Ferdium, settings) => {
     Ferdium.setBadge(directUnreadCount, indirectUnreadCount);
   };
   Ferdium.loop(getMessages);
+
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

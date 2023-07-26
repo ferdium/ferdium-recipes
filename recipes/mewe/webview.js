@@ -1,8 +1,8 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const calculateTotalDirectMessages = () =>
@@ -15,5 +15,6 @@ module.exports = Ferdium => {
       .reduce((curr, prev) => curr + prev, 0);
 
   Ferdium.loop(() => Ferdium.setBadge(calculateTotalDirectMessages()));
+
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

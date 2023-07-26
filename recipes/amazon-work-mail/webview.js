@@ -1,3 +1,9 @@
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+const _path = _interopRequireDefault(require('path'));
+
 const reload = EventType =>
   new Promise((resolve, reject) => {
     const btn = document.querySelectorAll('.giraffe-hierarchy-node-refresh')[0];
@@ -30,4 +36,6 @@ module.exports = Ferdium => {
       reload('click');
     }, 60_000);
   }
+
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

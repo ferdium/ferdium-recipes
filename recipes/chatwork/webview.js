@@ -1,3 +1,9 @@
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+const _path = _interopRequireDefault(require('path'));
+
 module.exports = Ferdium => {
   const getMessages = () => {
     let directCount = 0;
@@ -21,13 +27,11 @@ module.exports = Ferdium => {
             .getAttribute('src')
             .includes('avatar')
         ) {
-          directCount++;
+          directCount += 1;
+        } else if (unreadBadgeHasMention) {
+          directCount += 1;
         } else {
-          if (unreadBadgeHasMention) {
-            directCount++;
-          } else {
-            indirectCount++;
-          }
+          indirectCount += 1;
         }
       }
     });
@@ -35,4 +39,6 @@ module.exports = Ferdium => {
   };
 
   Ferdium.loop(getMessages);
+
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

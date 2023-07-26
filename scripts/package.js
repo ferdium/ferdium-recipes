@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+
 /**
  * Package all recipes
  */
@@ -7,7 +8,8 @@ const fs = require('fs-extra');
 const path = require('path');
 const sizeOf = require('image-size');
 const simpleGit = require('simple-git');
-const pkgVersionChangedMatcher = new RegExp(/\n\+.*version.*/);
+
+const pkgVersionChangedMatcher = /\n\+.*version.*/;
 
 // Publicly availible link to this repository's recipe folder
 // Used for generating public icon URLs
@@ -22,7 +24,7 @@ const compress = (src, dest) =>
         dest,
         tar: {
           // Don't package .DS_Store files and .md files
-          ignore: function (name) {
+          ignore(name) {
             return path.basename(name) === '.DS_Store' || name.endsWith('.md');
           },
         },
@@ -64,19 +66,19 @@ const compress = (src, dest) =>
     .filter(dir => dir.isDirectory())
     .map(dir => dir.name);
 
-  for (let recipe of availableRecipes) {
+  for (const recipe of availableRecipes) {
     const recipeSrc = path.join(recipesFolder, recipe);
     const mandatoryFiles = ['package.json', 'icon.svg', 'webview.js'];
 
     // Check that each mandatory file exists
-    for (let file of mandatoryFiles) {
+    for (const file of mandatoryFiles) {
       const filePath = path.join(recipeSrc, file);
       // eslint-disable-next-line no-await-in-loop
       if (!(await fs.pathExists(filePath))) {
         console.log(
           `⚠️ Couldn't package "${recipe}": Folder doesn't contain a "${file}".`,
         );
-        unsuccessful++;
+        unsuccessful += 1;
       }
     }
     if (unsuccessful > 0) {
@@ -91,7 +93,7 @@ const compress = (src, dest) =>
       console.log(
         `⚠️ Couldn't package "${recipe}": Recipe SVG icon isn't a square`,
       );
-      unsuccessful++;
+      unsuccessful += 1;
       continue;
     }
 
@@ -102,7 +104,7 @@ const compress = (src, dest) =>
       console.log(
         `⚠️ Couldn't package "${recipe}": Folder contains a "user.js".`,
       );
-      unsuccessful++;
+      unsuccessful += 1;
       continue;
     }
 
@@ -116,10 +118,10 @@ const compress = (src, dest) =>
       console.log(
         `⚠️ Couldn't package "${recipe}": Could not read or parse "package.json"`,
       );
-      unsuccessful++;
+      unsuccessful += 1;
       continue;
     }
-    let configErrors = [];
+    const configErrors = [];
     if (!config.id) {
       configErrors.push(
         "The recipe's package.json contains no 'id' field. This field should contain a unique ID made of lowercase letters (a-z), numbers (0-9), hyphens (-), periods (.), and underscores (_)",
@@ -264,14 +266,14 @@ const compress = (src, dest) =>
     if (configErrors.length > 0) {
       console.log(`⚠️ Couldn't package "${recipe}": There were errors in the recipe's package.json:
   ${configErrors.reduce((str, err) => `${str}\n${err}`)}`);
-      unsuccessful++;
+      unsuccessful += 1;
     }
 
     if (!fs.existsSync(path.join(recipeSrc, 'index.js'))) {
       console.log(
         `⚠️ Couldn't package "${recipe}": The recipe doesn't contain a "index.js"`,
       );
-      unsuccessful++;
+      unsuccessful += 1;
     }
 
     // Package to .tar.gz
@@ -294,8 +296,8 @@ const compress = (src, dest) =>
 
   // Sort package list alphabetically
   recipeList = recipeList.sort((a, b) => {
-    let textA = a.id.toLowerCase();
-    let textB = b.id.toLowerCase();
+    const textA = a.id.toLowerCase();
+    const textB = b.id.toLowerCase();
     return textA < textB ? -1 : textA > textB ? 1 : 0;
   });
   await fs.writeJson(allJson, recipeList, {

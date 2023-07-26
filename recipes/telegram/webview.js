@@ -1,13 +1,11 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
+  const _path = _interopRequireDefault(require('path'));
+
 module.exports = (Ferdium, settings) => {
-  const telegramVersion = document
-    .querySelector('meta[property="og:url"]')
-    ?.getAttribute('content');
+  const telegramVersion = document.querySelector('meta[property="og:url"]')?.getAttribute('content');
 
   const isWebK = telegramVersion?.includes('/k/');
 
