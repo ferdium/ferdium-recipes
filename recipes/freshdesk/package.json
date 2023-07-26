@@ -1,7 +1,7 @@
 {
   "id": "freshdesk",
   "name": "Freshdesk",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "repository": "https://github.com/fisknils/recipe-freshdesk",
   "config": {

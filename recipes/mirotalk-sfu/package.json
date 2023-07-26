@@ -1,12 +1,12 @@
 {
-	"id": "mirotalk-sfu",
-	"name": "MiroTalk SFU",
-	"version": "1.1.0",
-	"license": "MIT",
-	"config": {
-		"serviceURL": "https://sfu.mirotalk.com",
+  "id": "mirotalk-sfu",
+  "name": "MiroTalk SFU",
+  "version": "1.1.1",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://sfu.mirotalk.com",
     "hasCustomUrl": true,
     "hasHostedOption": true,
-		"hasNotificationSound": true
-	}
+    "hasNotificationSound": true
+  }
 }
