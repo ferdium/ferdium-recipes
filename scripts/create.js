@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+
 /**
  * Create a new recipe for your service
  */
@@ -74,9 +75,9 @@ const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only cont
   for (const file of filesThatNeedTextReplace) {
     const filePath = path.join(newRecipeFolder, file);
     let contents = fs.readFileSync(filePath, 'utf8');
-    contents = contents.replace(/SERVICE/g, recipe);
-    contents = contents.replace(/SNAME/g, recipeName);
-    contents = contents.replace(/SPASCAL/g, pascalCasedName);
+    contents = contents.replaceAll('SERVICE', recipe);
+    contents = contents.replaceAll('SNAME', recipeName);
+    contents = contents.replaceAll('SPASCAL', pascalCasedName);
     fs.writeFileSync(filePath, contents);
   }
   console.log('[Info] Prepared new recipe');

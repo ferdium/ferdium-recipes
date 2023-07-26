@@ -1,9 +1,9 @@
 {
-    "id": "bard",
-    "name": "Bard",
-    "version": "1.1.0",
-    "license": "MIT",
-    "config": {
-        "serviceURL": "https://bard.google.com/"
-    }
+  "id": "bard",
+  "name": "Bard",
+  "version": "1.1.1",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://bard.google.com/"
+  }
 }

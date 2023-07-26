@@ -14,7 +14,9 @@ module.exports = (Ferdium, settings) => {
       );
       for (const child of allScreenReaders) {
         if (child.previousSibling) {
-          unreadCount += Ferdium.safeParseInt(child.previousSibling.textContent);
+          unreadCount += Ferdium.safeParseInt(
+            child.previousSibling.textContent,
+          );
         }
       }
     }
@@ -27,7 +29,8 @@ module.exports = (Ferdium, settings) => {
     if (/\/owa/.test(location.pathname)) {
       // classic app
       directUnreadCount = Ferdium.safeParseInt(
-        document.querySelectorAll("span[title*='Inbox'] + div > span")[0]?.textContent
+        document.querySelectorAll("span[title*='Inbox'] + div > span")[0]
+          ?.textContent,
       );
     } else {
       // new app

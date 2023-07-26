@@ -1,10 +1,10 @@
 {
-    "id": "tchap",
-    "name": "Tchap",
-    "version": "1.1.0",
-    "license": "MIT",
-    "repository": "https://github.com/Sykursen/recipe-tchap/",
-    "config": {
-      "serviceURL": "https://www.tchap.gouv.fr/"
-    }
+  "id": "tchap",
+  "name": "Tchap",
+  "version": "1.1.1",
+  "license": "MIT",
+  "repository": "https://github.com/Sykursen/recipe-tchap/",
+  "config": {
+    "serviceURL": "https://www.tchap.gouv.fr/"
   }
+}
