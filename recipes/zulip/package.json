@@ -1,7 +1,7 @@
 {
   "id": "zulip",
   "name": "Zulip",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "license": "MIT",
   "config": {
     "hasNotificationSound": true,

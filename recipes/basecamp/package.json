@@ -1,7 +1,7 @@
 {
   "id": "basecamp",
   "name": "Basecamp",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://launchpad.37signals.com/"

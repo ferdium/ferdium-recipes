@@ -1,8 +1,8 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = (Ferdium, settings) => {
   const getMessages = () => {
@@ -10,7 +10,7 @@ module.exports = (Ferdium, settings) => {
     const container = document.querySelector('[role="tablist"] > button > div');
 
     if (container) {
-      const children = container.children;
+      const { children } = container;
 
       if (children.length === 3) {
         // eslint-disable-next-line unicorn/prefer-at

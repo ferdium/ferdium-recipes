@@ -5,7 +5,7 @@ const PUSHSTATE_THROTTLE = 1;
 const PUSHSTATE_THROTTLE_THRESHOLD = 1;
 
 window.shPushState = window.history.pushState;
-//window.pushStateBehavior = PUSHSTATE_NORMAL;
+// window.pushStateBehavior = PUSHSTATE_NORMAL;
 window.pushStateBehavior = PUSHSTATE_THROTTLE;
 window.pushStateCount = 0;
 

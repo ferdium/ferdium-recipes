@@ -1,7 +1,7 @@
 {
   "id": "anonaddy",
   "name": "AnonAddy",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://app.anonaddy.com/"

@@ -1,35 +1,33 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
     let notifications = 0;
     let indirectNotifications = 0;
 
-    const notification_element = document.querySelector(
-      '#notifications_amount',
-    );
-    const ticket_element = document.querySelector(
+    const notificationElement = document.querySelector('#notifications_amount');
+    const ticketElement = document.querySelector(
       "a[href='tickets.php'] > span",
     );
-    const call_element = document.querySelector('#queue_amount');
+    const callElement = document.querySelector('#queue_amount');
 
-    if (notification_element) {
+    if (notificationElement) {
       notifications = Ferdium.safeParseInt(
-        notification_element.getAttribute('datacount'),
+        notificationElement.getAttribute('datacount'),
       );
     }
 
-    if (ticket_element != null) {
-      indirectNotifications = Ferdium.safeParseInt(ticket_element.textContent);
+    if (ticketElement !== null) {
+      indirectNotifications = Ferdium.safeParseInt(ticketElement.textContent);
     }
 
-    if (call_element) {
+    if (callElement) {
       indirectNotifications += Ferdium.safeParseInt(
-        call_element.getAttribute('datacount'),
+        callElement.getAttribute('datacount'),
       );
     }
 

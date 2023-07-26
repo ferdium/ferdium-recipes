@@ -1,3 +1,9 @@
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+const _path = _interopRequireDefault(require('path'));
+
 function hideInstallMessage() {
   const installMessage = document.querySelector('.usczdcwk');
   if (installMessage) {
@@ -68,6 +74,8 @@ module.exports = Ferdium => {
   };
 
   Ferdium.loop(loopRoutine);
+
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 
   localStorage.setItem(
     '_cs_desktopNotifsEnabled',

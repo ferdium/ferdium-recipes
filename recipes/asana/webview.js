@@ -1,10 +1,14 @@
-const _path = _interopRequireDefault(require('path'));
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
-    const hasNotification = document.querySelectorAll('.SidebarTopNavLinks-notificationsButton--hasNewNotifications');
+    const hasNotification = document.querySelectorAll(
+      '.SidebarTopNavLinks-notificationsButton--hasNewNotifications',
+    );
     Ferdium.setBadge(hasNotification.length > 0 ? 1 : 0);
   };
 

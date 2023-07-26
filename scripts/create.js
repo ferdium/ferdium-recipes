@@ -19,13 +19,13 @@ pnpm create WhatsApp FerdiumDev
 }
 
 const recipeName = process.argv[2];
-const recipe = recipeName.toLowerCase().replace(/\s/g, '-');
+const recipe = recipeName.toLowerCase().replaceAll(/\s/g, '-');
 const folderName = process.argv[3] || 'Ferdium';
 const filesThatNeedTextReplace = ['package.json', 'index.js', 'webview.js'];
 
 const toPascalCase = str => {
   const words = str
-    .replace(/[^a-z]/g, '')
+    .replaceAll(/[^a-z]/g, '')
     .split(/\W/)
     .map(word => {
       if (word.length === 0) {
@@ -42,9 +42,9 @@ const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only cont
   // Folder paths
   const userData =
     process.env.APPDATA ||
-    (process.platform == 'darwin'
-      ? process.env.HOME + '/Library/Application Support'
-      : process.env.HOME + '/.config');
+    (process.platform === 'darwin'
+      ? `${process.env.HOME}/Library/Application Support`
+      : `${process.env.HOME}/.config`);
   const recipesFolder = path.join(userData, folderName, 'recipes');
   const devRecipeFolder = path.join(recipesFolder, 'dev');
   const newRecipeFolder = path.join(devRecipeFolder, recipe);
@@ -57,7 +57,7 @@ const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only cont
     );
     return;
   }
-  await fs.ensureDir(devRecipeFolder);
+  fs.ensureDirSync(devRecipeFolder);
 
   if (fs.existsSync(newRecipeFolder)) {
     console.log('⚠️ Recipe already exists');
@@ -67,19 +67,17 @@ const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only cont
   console.log('[Info] Passed pre-checks');
 
   // Copy sample recipe to recipe folder
-  await fs.copy(sampleRecipe, newRecipeFolder);
+  fs.copySync(sampleRecipe, newRecipeFolder);
   console.log('[Info] Copied recipe');
 
   // Replace placeholders with the recipe-specific values
   for (const file of filesThatNeedTextReplace) {
     const filePath = path.join(newRecipeFolder, file);
-    // eslint-disable-next-line no-await-in-loop
-    let contents = await fs.readFile(filePath, 'utf8');
+    let contents = fs.readFileSync(filePath, 'utf8');
     contents = contents.replace(/SERVICE/g, recipe);
     contents = contents.replace(/SNAME/g, recipeName);
     contents = contents.replace(/SPASCAL/g, pascalCasedName);
-    // eslint-disable-next-line no-await-in-loop
-    await fs.writeFile(filePath, contents);
+    fs.writeFileSync(filePath, contents);
   }
   console.log('[Info] Prepared new recipe');
 

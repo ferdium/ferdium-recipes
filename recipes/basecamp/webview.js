@@ -1,8 +1,8 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 function show(element) {
   element.style.display = 'inherit';
@@ -25,7 +25,7 @@ module.exports = Ferdium => {
   function showModal(text) {
     show(modal);
 
-    let p = modal.querySelector('p');
+    const p = modal.querySelector('p');
 
     if (p) {
       p.textContent = text;
@@ -34,7 +34,7 @@ module.exports = Ferdium => {
 
   function hideModal() {
     hide(modal);
-    let p = modal.querySelector('p');
+    const p = modal.querySelector('p');
 
     if (p) {
       p.textContent = '';
@@ -52,7 +52,7 @@ module.exports = Ferdium => {
   modal.textContent =
     '<div class="modal-content"><span class="close">&times;</span><p></p></div>';
 
-  let close = modal.querySelector('.close');
+  const close = modal.querySelector('.close');
   if (close) {
     close.addEventListener('click', hideModal);
   }
