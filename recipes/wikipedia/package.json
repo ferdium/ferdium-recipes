@@ -1,0 +1,9 @@
+{
+  "id": "wikipedia",
+  "name": "Wikipedia The Free Encyclopedia",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.wikipedia.org/"
+  }
+}
