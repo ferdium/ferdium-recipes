@@ -1,9 +1,11 @@
 {
   "id": "wikipedia",
-  "name": "Wikipedia The Free Encyclopedia",
-  "version": "1.0.0",
+  "name": "Wikipedia",
+  "version": "1.2.2",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://www.wikipedia.org/"
+    "serviceURL": "https://www.wikipedia.org/",
+    "hasHostedOption": true,
+    "hasCustomUrl": true
   }
 }
