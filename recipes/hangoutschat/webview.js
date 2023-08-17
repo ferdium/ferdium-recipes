@@ -5,6 +5,15 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
+  // if the user is on googlechat landing page, go to the login page.
+  if (
+    location.hostname === 'workspace.google.com' &&
+    location.href.includes('products/chat/')
+  ) {
+    location.href =
+      'https://accounts.google.com/AccountChooser?continue=https://chat.google.com/?referrer=2';
+  }
+  
   // class corresponding to the red badge that is visible for direct messages
   const directMessageSelector = 'div.V6.CL.su.ahD.X9.Y2 span.akt span.XU';
 
