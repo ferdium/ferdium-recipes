@@ -85,6 +85,9 @@ module.exports = (Ferdium, settings) => {
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 
+  // This is a hack to get the telegram web app to open links in Ferdium (otherwise it asks to deeplink and open with any tg:// protocol handler)
+  window.onload(() => {});
+
   // TODO: See how this can be moved into the main ferdium app and sent as an ipc message for opening with a new window or same Ferdium recipe's webview based on user's preferences
   document.addEventListener(
     'click',
