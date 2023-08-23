@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-125-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-126-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -195,6 +195,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://dennis-heinri.ch' title='Dennis Heinrich: code'><img src='https://avatars.githubusercontent.com/u/4189795?v=4' alt='cloudmaker97' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/bradreeve' title='bradreeve: code'><img src='https://avatars.githubusercontent.com/u/5202911?v=4' alt='bradreeve' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/CiteopehtEripmav' title='Citeopeht Eripmav: code'><img src='https://avatars.githubusercontent.com/u/93918529?v=4' alt='CiteopehtEripmav' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/iconeb' title='iconeb: code'><img src='https://avatars.githubusercontent.com/u/5909391?v=4' alt='iconeb' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
