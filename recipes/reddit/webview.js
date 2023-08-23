@@ -18,17 +18,6 @@ module.exports = Ferdium => {
     Ferdium.setBadge(count);
   };
 
-  if (document.querySelectorAll('.promotedlink').length > 0) {
-    for (const sponsoredLink of document.querySelectorAll('.promotedlink')) {
-      if (
-        sponsoredLink.parentElement &&
-        sponsoredLink.parentElement.parentElement
-      ) {
-        sponsoredLink.parentElement.parentElement.style.display = 'none';
-      }
-    }
-  }
-
   Ferdium.loop(getMessages);
 
   // Use CSS to hide Google Ads
