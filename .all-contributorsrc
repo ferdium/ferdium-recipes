@@ -1151,6 +1151,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "gmurdocca",
+      "name": "George Murdocca",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3752765?v=4",
+      "profile": "http://linuxdojo.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
