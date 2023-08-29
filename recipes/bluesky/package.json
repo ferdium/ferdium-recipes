@@ -1,0 +1,9 @@
+{
+  "id": "bluesky",
+  "name": "Bluesky",
+  "version": "1.1.1",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://staging.bsky.app/"
+  }
+}

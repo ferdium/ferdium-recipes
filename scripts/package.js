@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 /**
  * Package all recipes
  */
@@ -6,7 +8,8 @@ const fs = require('fs-extra');
 const path = require('path');
 const sizeOf = require('image-size');
 const simpleGit = require('simple-git');
-const pkgVersionChangedMatcher = new RegExp(/\n\+.*version.*/);
+
+const pkgVersionChangedMatcher = /\n\+.*version.*/;
 
 // Publicly availible link to this repository's recipe folder
 // Used for generating public icon URLs
@@ -21,7 +24,7 @@ const compress = (src, dest) =>
         dest,
         tar: {
           // Don't package .DS_Store files and .md files
-          ignore: function (name) {
+          ignore(name) {
             return path.basename(name) === '.DS_Store' || name.endsWith('.md');
           },
         },
@@ -63,18 +66,19 @@ const compress = (src, dest) =>
     .filter(dir => dir.isDirectory())
     .map(dir => dir.name);
 
-  for (let recipe of availableRecipes) {
+  for (const recipe of availableRecipes) {
     const recipeSrc = path.join(recipesFolder, recipe);
     const mandatoryFiles = ['package.json', 'icon.svg', 'webview.js'];
 
     // Check that each mandatory file exists
-    for (let file of mandatoryFiles) {
+    for (const file of mandatoryFiles) {
       const filePath = path.join(recipeSrc, file);
+      // eslint-disable-next-line no-await-in-loop
       if (!(await fs.pathExists(filePath))) {
         console.log(
           `⚠️ Couldn't package "${recipe}": Folder doesn't contain a "${file}".`,
         );
-        unsuccessful++;
+        unsuccessful += 1;
       }
     }
     if (unsuccessful > 0) {
@@ -89,22 +93,24 @@ const compress = (src, dest) =>
       console.log(
         `⚠️ Couldn't package "${recipe}": Recipe SVG icon isn't a square`,
       );
-      unsuccessful++;
+      unsuccessful += 1;
       continue;
     }
 
     // Check that user.js does not exist
     const userJs = path.join(recipeSrc, 'user.js');
+    // eslint-disable-next-line no-await-in-loop
     if (await fs.pathExists(userJs)) {
       console.log(
         `⚠️ Couldn't package "${recipe}": Folder contains a "user.js".`,
       );
-      unsuccessful++;
+      unsuccessful += 1;
       continue;
     }
 
     // Read package.json
     const packageJson = path.join(recipeSrc, 'package.json');
+    // eslint-disable-next-line no-await-in-loop
     const config = await fs.readJson(packageJson);
 
     // Make sure it contains all required fields
@@ -112,10 +118,10 @@ const compress = (src, dest) =>
       console.log(
         `⚠️ Couldn't package "${recipe}": Could not read or parse "package.json"`,
       );
-      unsuccessful++;
+      unsuccessful += 1;
       continue;
     }
-    let configErrors = [];
+    const configErrors = [];
     if (!config.id) {
       configErrors.push(
         "The recipe's package.json contains no 'id' field. This field should contain a unique ID made of lowercase letters (a-z), numbers (0-9), hyphens (-), periods (.), and underscores (_)",
@@ -227,6 +233,7 @@ const compress = (src, dest) =>
       const relativeRepoSrc = path.relative(repoRoot, recipeSrc);
 
       // Check for changes in recipe's directory, and if changes are present, then the changes should contain a version bump
+      // eslint-disable-next-line no-await-in-loop
       await git.diffSummary(relativeRepoSrc, (err, result) => {
         if (err) {
           configErrors.push(
@@ -239,11 +246,7 @@ const compress = (src, dest) =>
             result.deletions !== 0)
         ) {
           const pkgJsonRelative = path.relative(repoRoot, packageJson);
-          if (!result.files.some(({ file }) => file === pkgJsonRelative)) {
-            configErrors.push(
-              `Found changes in '${relativeRepoSrc}' without the corresponding version bump in '${pkgJsonRelative}'`,
-            );
-          } else {
+          if (result.files.some(({ file }) => file === pkgJsonRelative)) {
             git.diff(pkgJsonRelative, (_diffErr, diffResult) => {
               if (diffResult && !pkgVersionChangedMatcher.test(diffResult)) {
                 configErrors.push(
@@ -251,6 +254,10 @@ const compress = (src, dest) =>
                 );
               }
             });
+          } else {
+            configErrors.push(
+              `Found changes in '${relativeRepoSrc}' without the corresponding version bump in '${pkgJsonRelative}'`,
+            );
           }
         }
       });
@@ -259,14 +266,14 @@ const compress = (src, dest) =>
     if (configErrors.length > 0) {
       console.log(`⚠️ Couldn't package "${recipe}": There were errors in the recipe's package.json:
   ${configErrors.reduce((str, err) => `${str}\n${err}`)}`);
-      unsuccessful++;
+      unsuccessful += 1;
     }
 
     if (!fs.existsSync(path.join(recipeSrc, 'index.js'))) {
       console.log(
         `⚠️ Couldn't package "${recipe}": The recipe doesn't contain a "index.js"`,
       );
-      unsuccessful++;
+      unsuccessful += 1;
     }
 
     // Package to .tar.gz
@@ -289,9 +296,9 @@ const compress = (src, dest) =>
 
   // Sort package list alphabetically
   recipeList = recipeList.sort((a, b) => {
-    let textA = a.id.toLowerCase();
-    let textB = b.id.toLowerCase();
-    return textA < textB ? -1 : (textA > textB ? 1 : 0);
+    const textA = a.id.toLowerCase();
+    const textB = b.id.toLowerCase();
+    return textA < textB ? -1 : textA > textB ? 1 : 0;
   });
   await fs.writeJson(allJson, recipeList, {
     spaces: 2,

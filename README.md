@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-107-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-127-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -173,6 +173,32 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/dobaniashish' title='Ashish Dobani: code'><img src='https://avatars.githubusercontent.com/u/20734580?v=4' alt='dobaniashish' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/tamas646' title='tamas646: code'><img src='https://avatars.githubusercontent.com/u/37243375?v=4' alt='tamas646' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/lukassr' title='Lukas Svicarovic: code'><img src='https://avatars.githubusercontent.com/u/10482758?v=4' alt='lukassr' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/ravager-dk' title='Martin Nygaard Jensen: code'><img src='https://avatars.githubusercontent.com/u/69148218?v=4' alt='ravager-dk' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/emdfonseca' title='Emanuel Fonseca: code'><img src='https://avatars.githubusercontent.com/u/12010090?v=4' alt='emdfonseca' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='http://victorbnl.github.io' title='Victor B.: code'><img src='https://avatars.githubusercontent.com/u/39555268?v=4' alt='victorbnl' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/magnouvean' title='magnouvean: code'><img src='https://avatars.githubusercontent.com/u/85435692?v=4' alt='magnouvean' style='width:100px;'/></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/kromonos' title='Kromonos: code'><img src='https://avatars.githubusercontent.com/u/1553902?v=4' alt='kromonos' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/Chemrat' title='Valerii Malov: code'><img src='https://avatars.githubusercontent.com/u/2371572?v=4' alt='Chemrat' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/Arthur-Huan' title='Arthur H: code'><img src='https://avatars.githubusercontent.com/u/106561822?v=4' alt='Arthur-Huan' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://www.linkedin.com/in/miroslav-pejic-976a07101/' title='Miroslav Pejic: code'><img src='https://avatars.githubusercontent.com/u/70838434?v=4' alt='miroslavpejic85' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://jalil-salame.github.io' title='Jalil Salamé: code'><img src='https://avatars.githubusercontent.com/u/60845989?v=4' alt='jalil-salame' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/mindcombatant' title='mindcombatant: code'><img src='https://avatars.githubusercontent.com/u/9550058?v=4' alt='mindcombatant' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://area-thinking.net' title='S Wulf: code'><img src='https://avatars.githubusercontent.com/u/656360?v=4' alt='DustRaven' style='width:100px;'/></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href='http://jhale.dev' title='Joseph Hale: code'><img src='https://avatars.githubusercontent.com/u/47901316?v=4' alt='thehale' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/vaclavhodek' title='vaclavhodek: code'><img src='https://avatars.githubusercontent.com/u/15908007?v=4' alt='vaclavhodek' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/survfate' title='survfate: code'><img src='https://avatars.githubusercontent.com/u/10634948?v=4' alt='survfate' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://dennis-heinri.ch' title='Dennis Heinrich: code'><img src='https://avatars.githubusercontent.com/u/4189795?v=4' alt='cloudmaker97' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/bradreeve' title='bradreeve: code'><img src='https://avatars.githubusercontent.com/u/5202911?v=4' alt='bradreeve' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/CiteopehtEripmav' title='Citeopeht Eripmav: code'><img src='https://avatars.githubusercontent.com/u/93918529?v=4' alt='CiteopehtEripmav' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/iconeb' title='iconeb: code'><img src='https://avatars.githubusercontent.com/u/5909391?v=4' alt='iconeb' style='width:100px;'/></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href='http://linuxdojo.com' title='George Murdocca: code'><img src='https://avatars.githubusercontent.com/u/3752765?v=4' alt='gmurdocca' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>

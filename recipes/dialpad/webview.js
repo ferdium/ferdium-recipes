@@ -1,14 +1,22 @@
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
 const _path = _interopRequireDefault(require('path'));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = (Ferdium) => {
+module.exports = Ferdium => {
   const getMessages = () => {
-    var unreadCount = 0;
-    $.each($('[data-qa-has-unreads]'), (idx, item) => unreadCount += Ferdium.safeParseInt(item.attributes["data-qa-has-unreads"].value));
+    let unreadCount = 0;
+    $.each(
+      $('[data-qa-has-unreads]'),
+      (idx, item) =>
+        (unreadCount += Ferdium.safeParseInt(
+          item.attributes['data-qa-has-unreads'].value,
+        )),
+    );
 
     Ferdium.setBadge(unreadCount);
-  }
+  };
 
   Ferdium.loop(getMessages);
 

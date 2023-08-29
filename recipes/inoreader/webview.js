@@ -1,4 +1,10 @@
-module.exports = (Ferdium) => {
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+const _path = _interopRequireDefault(require('path'));
+
+module.exports = Ferdium => {
   const getMessages = () => {
     const all_articles = document.querySelector('#unread_cnt_all_items');
     if (!all_articles) return;
@@ -8,4 +14,6 @@ module.exports = (Ferdium) => {
   };
 
   Ferdium.loop(getMessages);
+
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };

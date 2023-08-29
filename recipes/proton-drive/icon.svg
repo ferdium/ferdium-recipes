@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 36.054688 36"
+   width="142"
+   height="141.78462"
+   fill="none"
+   class="logo with-wordmark"
+   aria-labelledby="logo-14-title"
+   version="1.1"
+   id="svg53"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview55"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="4.3737652"
+     inkscape:cx="67.561926"
+     inkscape:cy="69.048059"
+     inkscape:window-width="1856"
+     inkscape:window-height="1043"
+     inkscape:window-x="64"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg53" />
+  <defs
+     id="defs50">
+    <linearGradient
+       id="logo-14-a"
+       x1="23.450001"
+       x2="18.57"
+       y1="18.09"
+       y2="-2.77"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#E2DBFF"
+         id="stop16" />
+      <stop
+         offset="1"
+         stop-color="#6D4AFF"
+         id="stop18" />
+    </linearGradient>
+    <linearGradient
+       id="logo-14-b"
+       x1="35.25"
+       x2="18.57"
+       y1="38.169998"
+       y2="2.55"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset=".27"
+         stop-color="#E2DBFF"
+         id="stop21" />
+      <stop
+         offset="1"
+         stop-color="#6D4AFF"
+         id="stop23" />
+    </linearGradient>
+    <linearGradient
+       id="paint1_linear_213_165"
+       x1="394.34399"
+       y1="328.811"
+       x2="176.76601"
+       y2="28.745399"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.0977312,0,0,0.0977312,-8.9763659,-9.0135482)">
+      <stop
+         stop-color="#BFE8FF"
+         id="stop886" />
+      <stop
+         offset="0.3075"
+         stop-color="#BFACFF"
+         id="stop888" />
+      <stop
+         offset="1"
+         stop-color="#7348FF"
+         id="stop890" />
+    </linearGradient>
+    <radialGradient
+       id="paint0_radial_213_165"
+       cx="0"
+       cy="0"
+       r="1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-16.956227,45.542823,-60.688746,-22.595265,24.156758,-10.482047)">
+      <stop
+         offset="0.5561"
+         stop-color="#07B9FF"
+         stop-opacity="0"
+         id="stop881" />
+      <stop
+         offset="0.9944"
+         stop-color="#07B9FF"
+         id="stop883" />
+    </radialGradient>
+    <linearGradient
+       id="paint2_linear_5497_105462"
+       x1="-15"
+       y1="84"
+       x2="420"
+       y2="562"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.09905857,0,0,0.09905857,-9.1379282,-9.3117002)">
+      <stop
+         stop-color="#6D4AFF"
+         id="stop1557" />
+      <stop
+         offset="0.35934"
+         stop-color="#AE8CFF"
+         id="stop1559" />
+      <stop
+         offset="1"
+         stop-color="#F8CCFF"
+         id="stop1561" />
+    </linearGradient>
+    <radialGradient
+       id="paint1_radial_5497_105462"
+       cx="0"
+       cy="0"
+       r="1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-21.850878,44.650525,-69.466344,-33.995137,29.256085,-8.7418043)">
+      <stop
+         offset="0.556057"
+         stop-color="#FF62C0"
+         stop-opacity="0"
+         id="stop1552" />
+      <stop
+         offset="0.994421"
+         stop-color="#FF62C0"
+         id="stop1554" />
+    </radialGradient>
+    <linearGradient
+       id="paint0_linear_5497_105462"
+       x1="276.25"
+       y1="-13.7704"
+       x2="303.22"
+       y2="365.77499"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.09905857,0,0,0.09905857,-9.1379282,-9.3117002)">
+      <stop
+         offset="0.988738"
+         stop-color="#6D4AFF"
+         id="stop1549" />
+    </linearGradient>
+  </defs>
+  <title
+     id="logo-14-title">Proton Mail</title>
+  <path
+     d="M 0.96604661,28.726792 V 7.3301402 c 0,-1.9694833 1.59662609,-3.5661092 3.56610869,-3.5661092 h 6.6878407 c 0.674887,0 1.332041,0.2153534 1.875972,0.6146581 l 2.238327,1.643382 c 0.543931,0.3993056 1.201085,0.6146581 1.875971,0.6146581 h 14.662056 c 1.969482,0 3.566109,1.5966265 3.566109,3.5661088 v 18.523954 c 0,1.969482 -1.596627,3.566109 -3.566109,3.566109 H 4.5321553 c -1.9694826,0 -3.56610869,-1.596627 -3.56610869,-3.566109 z"
+     fill="url(#paint0_linear_5497_105462)"
+     id="path1543"
+     style="fill:url(#paint0_linear_5497_105462);stroke-width:0.0990582" />
+  <path
+     d="M 0.96604661,28.726792 V 7.3301402 c 0,-1.9694833 1.59662609,-3.5661092 3.56610869,-3.5661092 h 6.6878407 c 0.674887,0 1.332041,0.2153534 1.875972,0.6146581 l 2.238327,1.643382 c 0.543931,0.3993056 1.201085,0.6146581 1.875971,0.6146581 h 14.662056 c 1.969482,0 3.566109,1.5966265 3.566109,3.5661088 v 18.523954 c 0,1.969482 -1.596627,3.566109 -3.566109,3.566109 H 4.5321553 c -1.9694826,0 -3.56610869,-1.596627 -3.56610869,-3.566109 z"
+     fill="url(#paint1_radial_5497_105462)"
+     id="path1545"
+     style="fill:url(#paint1_radial_5497_105462);stroke-width:0.0990582" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 17.210266,6.6367292 h 14.662056 c 1.969482,0 3.566109,1.5965272 3.566109,3.5661088 v 18.523954 c 0,1.969581 -1.596627,3.566109 -3.566109,3.566109 H 28.108096 V 13.685936 c 0,-1.538083 -1.251605,-2.782457 -2.789589,-2.77364 l -13.502674,0.07776 c -0.581474,0.0034 -1.149376,-0.176027 -1.623372,-0.513023 L 7.1855383,8.3387545 C 6.7160996,8.0048275 6.1542394,7.8254323 5.5781147,7.8254323 H 0.96604661 V 7.3301402 c 0,-1.969582 1.59662609,-3.5661092 3.56610869,-3.5661092 h 6.6878407 c 0.674887,0 1.332041,0.2153534 1.875972,0.6146581 l 2.238327,1.643382 c 0.543931,0.3993056 1.201085,0.6146581 1.875971,0.6146581 z"
+     fill="url(#paint2_linear_5497_105462)"
+     id="path1547"
+     style="fill:url(#paint2_linear_5497_105462);stroke-width:0.0990582" />
+</svg>

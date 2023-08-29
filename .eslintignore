@@ -1,0 +1,4 @@
+.devcontainer
+.github
+.husky
+node_modules

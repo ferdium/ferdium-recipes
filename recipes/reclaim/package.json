@@ -1,9 +1,9 @@
 {
-    "id": "reclaim",
-    "name": "Reclaim",
-    "version": "1.0.0",
-    "license": "MIT",
-    "config": {
-      "serviceURL": "https://app.reclaim.ai/"
-    }
+  "id": "reclaim",
+  "name": "Reclaim",
+  "version": "1.1.1",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.reclaim.ai/"
   }
+}

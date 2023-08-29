@@ -1,0 +1,12 @@
+{
+  "id": "mirotalk-bro",
+  "name": "MiroTalk Live Broadcast",
+  "version": "1.1.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://bro.mirotalk.com",
+    "hasCustomUrl": true,
+    "hasHostedOption": true,
+    "hasNotificationSound": true
+  }
+}

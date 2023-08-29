@@ -1,10 +1,15 @@
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+const _path = _interopRequireDefault(require('path'));
 
 function countsOfUnreadMessagesAfterMarker(unreadMarker) {
-  var children = unreadMarker.parentElement.childNodes;
-  var unread = 0;
-  var unreadHighlighted = 0;
+  const children = unreadMarker.parentElement.childNodes;
+  let unread = 0;
+  let unreadHighlighted = 0;
 
-  for(var i = children.length-1; i >= 0; --i) {
+  for (let i = children.length - 1; i >= 0; i -= 1) {
     if (children[i] === unreadMarker) {
       break;
     }
@@ -14,10 +19,10 @@ function countsOfUnreadMessagesAfterMarker(unreadMarker) {
     }
 
     if (children[i].classList.contains('msg')) {
-      unread++;
+      unread += 1;
 
       if (children[i].classList.contains('highlight')) {
-        unreadHighlighted++;
+        unreadHighlighted += 1;
       }
     }
   }
@@ -26,8 +31,8 @@ function countsOfUnreadMessagesAfterMarker(unreadMarker) {
 }
 
 module.exports = Ferdium => {
-  var unreadMessagesAtLastActivity = 0;
-  var unreadHighlightedMessagesAtLastActivity = 0;
+  let unreadMessagesAtLastActivity = 0;
+  let unreadHighlightedMessagesAtLastActivity = 0;
 
   const getMessages = () => {
     // In order to get a correct tally of unread messages, we must
@@ -37,7 +42,7 @@ module.exports = Ferdium => {
     // messages that arrived before or while the app has focus.
 
     let direct = 0;
-    var directElements = document.querySelectorAll('.badge.highlight');
+    const directElements = document.querySelectorAll('.badge.highlight');
 
     for (const directElement of directElements) {
       if (directElement.textContent.length > 0) {
@@ -51,16 +56,16 @@ module.exports = Ferdium => {
     );
     for (const indirectElement of indirectElements) {
       if (indirectElement.textContent.length > 0) {
-        indirect++;
+        indirect += 1;
       }
     }
 
     const unreadMarkers = document.querySelectorAll('div.unread-marker');
 
     if (unreadMarkers.length > 0) {
-      var counts = countsOfUnreadMessagesAfterMarker(unreadMarkers[0]);
-      var unread = counts[0];
-      var unreadHighlighted = counts[1];
+      const counts = countsOfUnreadMessagesAfterMarker(unreadMarkers[0]);
+      const unread = counts[0];
+      const unreadHighlighted = counts[1];
 
       if (document.hasFocus()) {
         unreadMessagesAtLastActivity = unread;
@@ -68,10 +73,13 @@ module.exports = Ferdium => {
       }
 
       if (unread > unreadMessagesAtLastActivity) {
-        if (unreadHighlighted > 0 && unreadHighlighted > unreadHighlightedMessagesAtLastActivity) {
-          direct += (unreadHighlighted - unreadHighlightedMessagesAtLastActivity);
+        if (
+          unreadHighlighted > 0 &&
+          unreadHighlighted > unreadHighlightedMessagesAtLastActivity
+        ) {
+          direct += unreadHighlighted - unreadHighlightedMessagesAtLastActivity;
         } else {
-          indirect++;
+          indirect += 1;
         }
       }
     } else {
@@ -84,8 +92,9 @@ module.exports = Ferdium => {
 
   Ferdium.loop(getMessages);
 
+  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
+
   // We need to monkey patch ServierWorker.postMessage so that notifications
   // will work, and that needs to be done without context isolation:
-  const path = require('path');
-  Ferdium.injectJSUnsafe(path.join(__dirname, 'webview-unsafe.js'));
+  Ferdium.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
 };

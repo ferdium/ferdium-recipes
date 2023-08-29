@@ -1,8 +1,8 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
@@ -17,17 +17,6 @@ module.exports = Ferdium => {
 
     Ferdium.setBadge(count);
   };
-
-  if (document.querySelectorAll('.promotedlink').length > 0) {
-    for (const sponsoredLink of document.querySelectorAll('.promotedlink')) {
-      if (
-        sponsoredLink.parentElement &&
-        sponsoredLink.parentElement.parentElement
-      ) {
-        sponsoredLink.parentElement.parentElement.style.display = 'none';
-      }
-    }
-  }
 
   Ferdium.loop(getMessages);
 

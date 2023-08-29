@@ -1,8 +1,8 @@
-const _path = _interopRequireDefault(require('path'));
-
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
+
+const _path = _interopRequireDefault(require('path'));
 
 module.exports = (Ferdium, settings) => {
   const telegramVersion = document
@@ -18,10 +18,10 @@ module.exports = (Ferdium, settings) => {
     let groupCount = 0;
 
     const directCountSelector = document.querySelectorAll(
-      '.chat-list .ListItem.private .Badge.unread:not(.muted)',
+      '.chat-list .ListItem.private .ChatBadge.unread:not(.muted)',
     );
     const groupCountSelector = document.querySelectorAll(
-      '.chat-list .ListItem.group .Badge.unread:not(.muted)',
+      '.chat-list .ListItem.group .ChatBadge.unread:not(.muted)',
     );
 
     for (const badge of directCountSelector) {
@@ -69,7 +69,9 @@ module.exports = (Ferdium, settings) => {
   const getActiveDialogTitle = () => {
     let element;
 
-    element = isWebK ? document.querySelector('.top .peer-title') : document.querySelector('.chat-list .ListItem .title > h3');
+    element = isWebK
+      ? document.querySelector('.top .peer-title')
+      : document.querySelector('.chat-list .ListItem .title > h3');
 
     Ferdium.setDialogTitle(element ? element.textContent : '');
   };
@@ -83,24 +85,37 @@ module.exports = (Ferdium, settings) => {
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 
+  // This is a hack to get the telegram web app to open links in Ferdium (otherwise it asks to deeplink and open with any tg:// protocol handler)
+  window.onload(() => {});
+
   // TODO: See how this can be moved into the main ferdium app and sent as an ipc message for opening with a new window or same Ferdium recipe's webview based on user's preferences
-  document.addEventListener('click', event => {
-    const link = event.target.closest('a[href^="http"]');
-    const button = event.target.closest('button[title^="http"]');
+  document.addEventListener(
+    'click',
+    event => {
+      const link = event.target.closest('a[href^="http"]');
+      const button = event.target.closest('button[title^="http"]');
 
-    if (link || button) {
-      const url = link ? link.getAttribute('href') : button.getAttribute('title');
+      if (link || button) {
+        const url = link
+          ? link.getAttribute('href')
+          : button.getAttribute('title');
 
-      if (!Ferdium.isImage(link)) {
-        event.preventDefault();
-        event.stopPropagation();
+        if (!Ferdium.isImage(link)) {
+          event.preventDefault();
+          event.stopPropagation();
 
-        if (settings.trapLinkClicks === true) {
-          window.location.href = url;
-        } else {
-          Ferdium.openNewWindow(url);
+          if (
+            settings.trapLinkClicks === true ||
+            url.includes('t.me') ||
+            url.includes('web.telegram.org')
+          ) {
+            window.location.href = url;
+          } else {
+            Ferdium.openNewWindow(url);
+          }
         }
       }
-    }
-  }, true);
+    },
+    true,
+  );
 };

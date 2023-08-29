@@ -1,10 +1,10 @@
 {
   "id": "instagram-direct-messages",
   "name": "Instagram Direct Messages",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "license": "MIT",
   "config": {
-      "serviceURL": "https://www.instagram.com/direct/inbox/",
-      "hasNotificationSound": true
+    "serviceURL": "https://www.instagram.com/direct/inbox/",
+    "hasNotificationSound": true
   }
 }

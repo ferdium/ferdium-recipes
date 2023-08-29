@@ -8,17 +8,15 @@ on:
 jobs:
   check:
     name: Check Recipe Version Bump
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Fetch main branch
         run: git fetch origin main --depth 1
-      - uses: lots0logs/gh-action-get-changed-files@2.1.4
+      - uses: tj-actions/changed-files@v37
         id: changed-files
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Checking recipe version bump
         uses: ./.github/workflows/check-recipe-version-bump
         with:
-          changed-files: ${{ steps.changed-files.outputs.modified }}
+          changed-files: ${{ steps.changed-files.outputs.modified_files }}
