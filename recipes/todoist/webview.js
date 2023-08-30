@@ -8,8 +8,12 @@ module.exports = Ferdium => {
   function getTasks() {
     let todayCount = 0;
     let inboxCount = 0;
-    const todayElement = document.querySelector('#filter_today .item_counter');
-    const inboxElement = document.querySelector('#filter_inbox .item_counter');
+    const todayElement = document.querySelector(
+      '#filter_today div div a + span div span',
+    );
+    const inboxElement = document.querySelector(
+      '#filter_inbox div div a + span div span',
+    );
 
     if (todayElement) {
       todayCount = Ferdium.safeParseInt(todayElement.textContent);
