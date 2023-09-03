@@ -5,6 +5,6 @@
   "license": "MIT",
   "config": {
     "serviceURL": "https://www.textnow.com/login",
-    "hasNotificationSound": true,
+    "hasNotificationSound": true
   }
 }
