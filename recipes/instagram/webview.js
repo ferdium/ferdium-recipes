@@ -4,12 +4,43 @@ function _interopRequireDefault(obj) {
 
 const _path = _interopRequireDefault(require('path'));
 
-module.exports = Ferdium => {
+module.exports = (Ferdium,settings) => {
+  // adapted from the franz-custom-website recipe, for opening
+  // links according to  the user's preference (Ferdium/ext.browser)
+  document.addEventListener(
+    'click',
+    event => {
+      const link = event.target.closest('a');
+      const button = event.target.closest('button');
+
+      if (link || button) {
+        const url = link
+          ? link.getAttribute('href')
+          : button.getAttribute('title');
+
+        // check if we have a valid URL that is not a script nor an image:
+        if (url && url !== '#' && !Ferdium.isImage(link)) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          if (settings.trapLinkClicks === true) {
+            window.location.href = url;
+          } else {
+            Ferdium.openNewWindow(url);
+          }
+        }
+      }
+    },
+    true,
+  );
+
   const getMessages = () => {
     const element = document.querySelector('a[href^="/direct/inbox"]');
-    Ferdium.setBadge(
-      element.textContent ? Ferdium.safeParseInt(element.textContent) : 0,
-    );
+    if (element) {
+      Ferdium.setBadge(
+        element.textContent ? Ferdium.safeParseInt(element.textContent) : 0,
+      );
+    }
   };
 
   Ferdium.loop(getMessages);
