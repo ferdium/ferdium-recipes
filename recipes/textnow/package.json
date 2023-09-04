@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://www.textnow.com/login",
+    "serviceURL": "https://www.textnow.com/messaging",
     "hasNotificationSound": true
   }
 }
