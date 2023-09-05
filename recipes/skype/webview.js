@@ -53,7 +53,10 @@ module.exports = (Ferdium, settings) => {
         if (url.includes('api.asm.skype.com')) {
           // Always open file downloads in Ferdium, rather than the external browser
           window.location.href = url;
-        } else if (settings.trapLinkClicks === true) {
+          return;
+        }
+
+        if (settings.trapLinkClicks === true) {
           window.location.href = url;
         } else {
           Ferdium.openNewWindow(url);
