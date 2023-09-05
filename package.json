@@ -51,5 +51,8 @@
     "prettier": "3.0.3",
     "simple-git": "3.19.1",
     "targz": "1.0.1"
+  },
+  "dependencies": {
+    "pnpm": "8.7.1"
   }
 }
