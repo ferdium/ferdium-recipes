@@ -1,0 +1,10 @@
+{
+  "id": "google-chat",
+  "name": "Google Chat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://mail.google.com/chat/",
+    "hasNotificationSound": true
+  }
+}
