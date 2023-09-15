@@ -1160,6 +1160,24 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "meiphoo7-Mae",
+      "name": "meiphoo7-Mae",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95827976?v=4",
+      "profile": "https://github.com/meiphoo7-Mae",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "dictcp",
+      "name": "Dick Tang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1752436?v=4",
+      "profile": "https://dictcp.men",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"

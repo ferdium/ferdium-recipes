@@ -38,7 +38,7 @@ This is the Ferdium-specific integration config.
 * `string` **serviceURL**<br/>
 Defines the URL that should be loaded into the Ferdium webview.
 <br /><br />
-If you want to load a simple URL like `https://www.messenger.com`, you can simply define it via the `serviceURL` parameter. If your service URL is team based, e.g. Slack or HipChat you can use `https://{teamId}.slack.com`.
+If you want to load a simple URL like `https://www.messenger.com`, you can simply define it via the `serviceURL` parameter. If your service URL is team based, e.g. Slack you can use `https://{teamId}.slack.com`.
 <br /><br />
 If your service works with custom URLs, just leave this empty.
 <br /><br />
@@ -61,19 +61,19 @@ If your service works with custom URLs, just leave this empty.
 * `boolean` **hasTeamId** _default: false_<br />
 Is this a team based service? If true, the interface to add the service will require a team identifier. e.g. `[teamId]`.slack.com
 * `string` **urlInputPrefix**<br />
-This option is only used in combination with `hasTeamId: true` in order to display the value of `urlInputPrefix` before the input for TeamId to make it obvious to the user what input is required from them. Eg. _&lt;TeamID&gt;.hipchat.com_
+This option is only used in combination with `hasTeamId: true` in order to display the value of `urlInputPrefix` before the input for TeamId to make it obvious to the user what input is required from them. Eg. _&lt;TeamID&gt;.slack.com_
 * `string` **urlInputSuffix**<br />
-This option is only used in combination with `hasTeamId: true` in order to display the value of `urlInputSuffix` after the input for TeamId to make it obvious to the user what input is required from them. Eg. _&lt;TeamID&gt;.hipchat.com_
+This option is only used in combination with `hasTeamId: true` in order to display the value of `urlInputSuffix` after the input for TeamId to make it obvious to the user what input is required from them. Eg. _&lt;TeamID&gt;.slack.com_
 * `boolean` **hasHostedOption** _default: false_<br />
 If a service can be hosted and has a teamId or customUrl
 * `boolean` **hasCustomUrl** _default: false_<br />
-On-premise services like HipChat, Mattermost, ... require a custom URL. This option enables the user to enter a custom URL when adding the service.
+On-premise services like Mattermost, ... require a custom URL. This option enables the user to enter a custom URL when adding the service.
 * `boolean` **hasNotificationSound** _default: false_<br />
 Some services provide their own notification sound. In order to avoid multiple sounds when the user receives a message set this to `true`. If the service has no built in notification sound set this to `false`.
 * `boolean` **hasDirectMessages** _default: true_<br />
 Some services have direct 1x1 messages e.g. a mention or message to every user in a channel (@channel). If this flag is set to `true`, the user can enable/disable if there should be a badge for direct messages.
 * `boolean` **hasIndirectMessages** _default: false_<br />
-Services like Slack or HipChat have direct messages e.g. a mention or message to every user in a channel (@channel) and indirect messages e.g. general discussion in a channel. If this flag is set to `true`, the user can enable/disable if there should be a badge for indirect messages.
+Services like Slack have direct messages e.g. a mention or message to every user in a channel (@channel) and indirect messages e.g. general discussion in a channel. If this flag is set to `true`, the user can enable/disable if there should be a badge for indirect messages.
 * `string` **message**<br />
 Info message that will be displayed in the add/edit service preferences screen.
 * `boolean` **disablewebsecurity** _default: false_<br />
