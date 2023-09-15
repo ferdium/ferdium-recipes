@@ -1,11 +1,11 @@
 {
-  "id": "twitter",
-  "name": "Twitter",
-  "version": "1.4.0",
+  "id": "x",
+  "name": "X",
+  "version": "1.4.1",
   "license": "MIT",
   "repository": "https://github.com/ferdium/ferdium-recipes",
   "config": {
-    "serviceURL": "https://twitter.com",
+    "serviceURL": "https://x.com",
     "hasNotificationSound": true
   }
 }
