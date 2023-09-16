@@ -7,7 +7,7 @@ const _path = _interopRequireDefault(require('path'));
 module.exports = Ferdium => {
   const getMessages = () => {
     const hasNotification = document.querySelectorAll(
-      '.SidebarTopNavLinks-notificationsButton--hasNewNotifications',
+      '.SidebarTopNavLinks-notificationsButtonIndicator',
     );
     Ferdium.setBadge(hasNotification.length > 0 ? 1 : 0);
   };
