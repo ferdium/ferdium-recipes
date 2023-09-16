@@ -283,8 +283,6 @@ importers:
 
   recipes/hey: {}
 
-  recipes/hipchat: {}
-
   recipes/home-assistant: {}
 
   recipes/hostnet: {}
@@ -465,6 +463,8 @@ importers:
 
   recipes/podio: {}
 
+  recipes/poe: {}
+
   recipes/pomodoro-tracker: {}
 
   recipes/posteo: {}
@@ -616,6 +616,8 @@ importers:
   recipes/whereby: {}
 
   recipes/whimsical: {}
+
+  recipes/wikipedia: {}
 
   recipes/wire: {}
 
