@@ -1,10 +1,10 @@
 {
   "id": "hangouts",
-  "name": "Hangouts",
-  "version": "1.4.0",
+  "name": "Google Chat",
+  "version": "1.5.0",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://hangouts.google.com",
+    "serviceURL": "https://mail.google.com/chat/",
     "hasNotificationSound": true
   }
 }
