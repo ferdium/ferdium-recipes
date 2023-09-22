@@ -139,6 +139,8 @@ importers:
 
   recipes/crowdin: {}
 
+  recipes/deckblue: {}
+
   recipes/deepl: {}
 
   recipes/dev-community: {}
