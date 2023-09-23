@@ -38,12 +38,23 @@ module.exports = Ferdium => {
   const getTeamIcon = function getTeamIcon(count = 0) {
     let countTeamIconCheck = count;
     let bgUrl = null;
-    const teamMenu = document.querySelector(
+    // INFO: A new Slack UI was introduced in August 2023 and will be rolled out gradually,
+    // therefore we need to support both old and new UI for the time being
+    // See more: https://slack.com/blog/productivity/a-redesigned-slack-built-for-focus
+    const oldSlackUiTeamMenu = document.querySelector(
       '#team-menu-trigger, .p-ia__sidebar_header__team_name',
     );
+    const newSlackUiTeamMenu = document.querySelector(
+      '.p-ia4_home_header_menu__button',
+    );
 
-    if (teamMenu) {
-      teamMenu.click();
+    if (oldSlackUiTeamMenu || newSlackUiTeamMenu) {
+      if (oldSlackUiTeamMenu) {
+        oldSlackUiTeamMenu.click();
+      } else if (newSlackUiTeamMenu) {
+        newSlackUiTeamMenu.click();
+      }
+
       const icon = document.querySelector('.c-team_icon');
 
       if (icon) {
