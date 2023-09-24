@@ -3,9 +3,11 @@
   "name": "X",
   "version": "1.4.1",
   "license": "MIT",
-  "repository": "https://github.com/ferdium/ferdium-recipes",
+  "aliases": [
+    "Twitter"
+  ],
   "config": {
-    "serviceURL": "https://twitter.com",
+    "serviceURL": "https://x.com",
     "hasNotificationSound": true
   }
 }
