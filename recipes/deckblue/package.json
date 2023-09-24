@@ -1,0 +1,9 @@
+{
+  "id": "deckblue",
+  "name": "DeckBlue",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://deck.blue/"
+  }
+}
