@@ -6,10 +6,8 @@ const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
-    const totalMessages = document.querySelector(
-      '#app_0 > div.app_counter',
-    ).innerHTML;
-    Ferdium.setBadge(totalMessages);
+    const totalMessages = document.getElementsByClassName("message_row").length;
+    Ferdium.setBadge(totalMessages)
   };
 
   Ferdium.loop(getMessages);
