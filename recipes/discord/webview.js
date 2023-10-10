@@ -53,9 +53,9 @@ module.exports = (Ferdium, settings) => {
           event.stopPropagation();
 
           if (url.includes('discordapp.com/attachments/')) {
-          // Always open file downloads in Ferdium, rather than the external browser
-          window.location.href = url;
-          return;
+            // Always open file downloads in Ferdium, rather than the external browser
+            window.location.href = url;
+            return;
           }
           if (settings.trapLinkClicks === true) {
             window.location.href = url;
