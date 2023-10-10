@@ -18,7 +18,9 @@
 
 Recipes are small scripts that are responsible for providing the connection between your services (e.g. WhatsApp, Gmail or Slack) and Ferdium. It provides Ferdium information like the number of current notifications, handles enabling dark mode and may otherwise improve your experience with the service.
 
-## Creating and adding your own recipes
+## Creating, adding, and editing recipes
+
+**Important:** Please make sure to run `pnpm lint:fix && pnpm reformat-files && pnpm package` before submitting.
 
 * [Overview / How to create a Ferdium integration](docs/integration.md)
 * [How to update/change recipes](docs/updating.md)
