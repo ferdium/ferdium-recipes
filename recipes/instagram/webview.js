@@ -4,7 +4,7 @@ function _interopRequireDefault(obj) {
 
 const _path = _interopRequireDefault(require('path'));
 
-module.exports = (Ferdium,settings) => {
+module.exports = (Ferdium, settings) => {
   // adapted from the franz-custom-website recipe, for opening
   // links according to  the user's preference (Ferdium/ext.browser)
   document.addEventListener(
