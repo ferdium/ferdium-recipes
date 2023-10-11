@@ -32,7 +32,9 @@ function countsOfUnreadMessagesAfterMarker(unreadMarker) {
 
 function isBadgeInMutedChannel(badgeElement) {
   const channelListItem = badgeElement.closest('.channel-list-item');
-  return (channelListItem === null || channelListItem.classList.contains('is-muted'));
+  return (
+    channelListItem === null || channelListItem.classList.contains('is-muted')
+  );
 }
 
 module.exports = Ferdium => {
@@ -55,7 +57,7 @@ module.exports = Ferdium => {
       if (isBadgeInMutedChannel(directElement)) {
         continue;
       }
-      
+
       if (directElement.textContent.length > 0) {
         direct += Ferdium.safeParseInt(directElement.textContent);
       }
@@ -77,7 +79,10 @@ module.exports = Ferdium => {
     }
 
     // Only want to count unread messages if the active channel is unmuted
-    if (document.querySelectorAll('.channel-list-item.active:not(.is-muted)').length !== 0) {
+    if (
+      document.querySelectorAll('.channel-list-item.active:not(.is-muted)')
+        .length > 0
+    ) {
       const unreadMarkers = document.querySelectorAll('div.unread-marker');
 
       if (unreadMarkers.length > 0) {
@@ -95,7 +100,8 @@ module.exports = Ferdium => {
             unreadHighlighted > 0 &&
             unreadHighlighted > unreadHighlightedMessagesAtLastActivity
           ) {
-            direct += unreadHighlighted - unreadHighlightedMessagesAtLastActivity;
+            direct +=
+              unreadHighlighted - unreadHighlightedMessagesAtLastActivity;
           } else {
             indirect += 1;
           }
