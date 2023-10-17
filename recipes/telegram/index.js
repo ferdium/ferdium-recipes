@@ -9,8 +9,8 @@ function instrumenEnvironment(webview) {
     })();
   `);
 }
-module.exports = (Franz) =>
-  class Telegram extends Franz {
+module.exports = (Ferdium) =>
+  class Telegram extends Ferdium {
     // https://www.electronjs.org/docs/latest/api/webview-tag/#dom-events
     events = {
       "load-commit": "loadCommit",
