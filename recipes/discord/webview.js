@@ -52,12 +52,11 @@ module.exports = (Ferdium, settings) => {
           event.preventDefault();
           event.stopPropagation();
 
-          if (url.includes('discordapp.com/attachments/')) {
+          if (
             // Always open file downloads in Ferdium, rather than the external browser
-            window.location.href = url;
-            return;
-          }
-          if (settings.trapLinkClicks === true) {
+            url.includes('discordapp.com/attachments/') ||
+            settings.trapLinkClicks === true
+          ) {
             window.location.href = url;
           } else {
             Ferdium.openNewWindow(url);
