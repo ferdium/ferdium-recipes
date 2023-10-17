@@ -20,7 +20,7 @@ Recipes are small scripts that are responsible for providing the connection betw
 
 ## Creating, adding, and editing recipes
 
-**Important:** Please make sure to run `pnpm lint:fix && pnpm reformat-files && pnpm package` before submitting.
+**Important:** Please make sure to run `pnpm validate` before submitting.
 
 * [Overview / How to create a Ferdium integration](docs/integration.md)
 * [How to update/change recipes](docs/updating.md)
