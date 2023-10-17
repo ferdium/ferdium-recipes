@@ -17,6 +17,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
+    "validate": "pnpm lint:fix && pnpm reformat-files && pnpm package",
     "package": "node scripts/package.js",
     "create": "node scripts/create.js",
     "lint": "eslint \"{recipes,scripts}/**/*.{js,jsx,ts,tsx}\"",
