@@ -1196,6 +1196,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "nikolaykhodov",
+      "name": "Nikolay Khodov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101510?v=4",
+      "profile": "https://github.com/nikolaykhodov",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
