@@ -1,0 +1,9 @@
+{
+  "id": "badoo",
+  "name": "Badoo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://badoo.com"
+  }
+}
