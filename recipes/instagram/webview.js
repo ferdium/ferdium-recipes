@@ -18,6 +18,11 @@ module.exports = (Ferdium, settings) => {
           ? link.getAttribute('href')
           : button.getAttribute('title');
 
+        // check if the URL is relative or absolute
+        if (url.startsWith('/')) {
+          return;
+        }
+
         // check if we have a valid URL that is not a script nor an image:
         if (url && url !== '#' && !Ferdium.isImage(link)) {
           event.preventDefault();
