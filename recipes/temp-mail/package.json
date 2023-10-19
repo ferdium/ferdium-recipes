@@ -1,0 +1,9 @@
+{
+  "id": "temp-mail",
+  "name": "Temp Mail",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://temp-mail.org/"
+  }
+}

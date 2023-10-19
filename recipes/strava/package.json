@@ -1,0 +1,9 @@
+{
+  "id": "strava",
+  "name": "Strava",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.strava.com/"
+  }
+}

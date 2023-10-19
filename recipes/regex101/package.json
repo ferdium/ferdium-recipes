@@ -1,0 +1,9 @@
+{
+  "id": "regex101",
+  "name": "Regex101",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://regex101.com/"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "sympatia",
+  "name": "Sympatia",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://sympatia.onet.pl/"
+  }
+}
