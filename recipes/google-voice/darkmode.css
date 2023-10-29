@@ -1,0 +1,132 @@
+:root {
+  --dark-grey: rgb(24, 26, 27);
+  --dark-medium-grey: rgb(27, 30, 31);
+  --medium-grey: rgb(31, 34, 35);
+  --dark-green: rgb(23, 55, 53);
+  --grey: grey;
+  --light-medium-grey: rgb(140, 130, 115);
+  --light-grey: rgb(208, 204, 197);
+  --near-medium-white: rgb(192, 186, 178);
+  --near-white: rgb(232, 230, 227);
+}
+
+* {
+  transition: none !important;
+  animation: none !important;
+  filter: none !important;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+}
+
+::placeholder /* placeholder text */
+{
+  color: var(--grey)!important;
+}
+
+::-webkit-scrollbar {
+  width: 8px!important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--medium-grey)!important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-green)!important;
+}
+
+html,
+body,
+input,
+button,
+label,
+header, /* header bar */
+.mat-drawer-container, /* side icons */
+.gvMessagingView-thread-list, /* List of calls */
+.gvMessagingView-conversationListWrap, /* list of messages */
+.gvThreadDetails-messageListHeader, /* header when viewing a message */
+.gvMessageListHeader-subtitle, /* subtitle in message header */
+.gvThreadDetails-root, /* message view */
+.gvVoicemailPlayer-content, /* visual voicemail view */
+.gvCallSidebar-root, /* calling sidebar */
+#contact-list, /* calling sidebar contacts */
+.button, /* calling sidebar */
+.caption, /* calling sidebar */
+.dialpad-button-container, /* calling sidebar */
+md-menu-content, 
+gv-availability-view,
+.gvRecipientPicker-chipsWrap, /* selecting to: when sending new msg */
+.gb_te /* search box dropdown */
+{
+  background-color: var(--dark-grey)!important;
+  border-color: var(--light-medium-grey)!important;
+  color: var(--light-grey)!important;
+}
+
+input,
+textarea,
+.mat-icon /* general icon override */
+{
+  color: var(--near-white)!important;
+}
+
+.gvThreadItem-selected, /* messages list item */
+.container, /* calls list items and also message text container */
+.mat-mdc-menu-panel /* context menus */
+{
+  background-color: var(--dark-grey)!important;
+}
+
+/* Main search bar */
+header form, 
+header form input, 
+header form button
+{
+  background-color: var(--medium-grey)!important;
+}
+
+.mdc-list-item--activated,
+.container.active, /* calls list items and also message text container */
+.gvThreadItem-selected /* message list selected item */
+{
+  background-color: var(--dark-green)!important;
+}
+
+.gvThreadItem-root:hover, /* messages list item */
+.gvThreadItem-root:focus, /* messages list item */
+.gvMessagingView-thread-list .container:hover /* calls list items */
+{
+  background-color: var(--dark-medium-grey)!important;
+}
+
+.bubble /* message bubble */
+{
+  background-color: var(--dark-grey)!important;
+  color: var(--light-grey)!important;
+  border: 1px solid var(--light-medium-grey)!important;
+}
+
+.grey-900, /* various bolded items */
+.gvThreadItem-contacts, /* message list contact name */
+.phone-number-details, /* calling sidebar label */
+#contact-list ul li .info-container .name, /* calling sidebar contact list */
+.gvThreadItem-contacts, /* contact name in message list */
+.gvThreadItem-unread, /* unread message */
+.primary-text, /* call header name */
+.title /* receiving calls button */
+{
+  color: var(--near-white)!important;
+}
+
+.status, /* various label text (message sender, timestamp etc) */
+.gvThreadItem-root, /* message list text */
+.container .thread-info,
+.call-as-label, /* calling sidebar label */
+#contact-list ul li .info-container .details,
+.latest-item-details, /* call timestamp */
+.secondary-text /* call header subtext */
+{
+  color: var(--near-medium-white)!important;
+}
