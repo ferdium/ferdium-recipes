@@ -101,6 +101,10 @@ header form button
   background-color: var(--dark-medium-grey)!important;
 }
 
+.mat-divider {
+  border-color: var(--light-medium-grey)!important;
+}
+
 .bubble /* message bubble */
 {
   background-color: var(--dark-grey)!important;
