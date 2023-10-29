@@ -8,6 +8,7 @@
   --light-grey: rgb(208, 204, 197);
   --near-medium-white: rgb(192, 186, 178);
   --near-white: rgb(232, 230, 227);
+  --basically-white: #EEE;
 }
 
 * {
@@ -117,7 +118,7 @@ header form button
 .phone-number-details, /* calling sidebar label */
 #contact-list ul li .info-container .name, /* calling sidebar contact list */
 .gvThreadItem-contacts, /* contact name in message list */
-.gvThreadItem-unread, /* unread message */
+
 .primary-text, /* call header name */
 .title /* receiving calls button */
 {
@@ -133,4 +134,10 @@ header form button
 .secondary-text /* call header subtext */
 {
   color: var(--near-medium-white)!important;
+}
+
+.gvThreadItem-unread /* unread message */
+{
+  color: var(--basically-white)!important;
+  font-weight: 900!important
 }
