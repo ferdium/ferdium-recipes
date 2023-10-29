@@ -68,7 +68,8 @@ gv-availability-view,
 
 input,
 textarea,
-.mat-icon /* general icon override */
+.mat-icon, /* general icon override */
+.navItemLabel /* main nav labels */
 {
   color: var(--near-white)!important;
 }
