@@ -1,0 +1,15 @@
+{
+  "id": "memos",
+  "name": "memos",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usememos/memos"
+  },
+  "config": {
+    "message": "A self-hosted privacy-first, lightweight note-taking service. Easily capture and share your great thoughts.",
+    "hasCustomUrl": true,
+    "hasDirectMessages": false
+  }
+}
