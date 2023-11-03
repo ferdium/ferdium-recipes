@@ -18,13 +18,13 @@ module.exports = Ferdium => {
       count = Ferdium.safeParseInt(el.textContent.replaceAll(/[ ()]/gi, ''));
     } else {
       const countMessages = parseQuery(
-        'gv-nav-tab[tooltip="Messages"] div[aria-label="Unread count"]',
+        'mat-nav-list a[gv-test-id="sidenav-messages"] span.navItemBadge',
       );
       const countCalls = parseQuery(
-        'gv-nav-tab[tooltip="Calls"] div[aria-label="Unread count"]',
+        'mat-nav-list a[gv-test-id="sidenav-calls"] span.navItemBadge',
       );
       const countVoicemails = parseQuery(
-        'gv-nav-tab[tooltip="Voicemail"] div[aria-label="Unread count"]',
+        'mat-nav-list a[gv-test-id="sidenav-voicemail"] span.navItemBadge',
       );
       count = countMessages + countCalls + countVoicemails;
     }
