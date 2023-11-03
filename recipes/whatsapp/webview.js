@@ -17,7 +17,7 @@ module.exports = Ferdium => {
       const query = store.getAll();
       query.onsuccess = event => {
         for (const chat of event.target.result) {
-          if (chat.unreadCount > 0) {
+          if (chat.unreadCount > 0 && !chat.archive) {
             if (chat.muteExpiration != 0 || chat.isAutoMuted) {
               unreadMutedCount += chat.unreadCount;
             } else {
