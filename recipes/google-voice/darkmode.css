@@ -52,6 +52,8 @@ header, /* header bar */
 .gvThreadDetails-root, /* message view */
 .gvVoicemailPlayer-content, /* visual voicemail view */
 .gvCallSidebar-root, /* calling sidebar */
+.gvSettingsView-settingsNavBar, /* settings sidebar */
+.gvSettingsView-sections, /* settings body */
 #contact-list, /* calling sidebar contacts */
 .button, /* calling sidebar */
 .caption, /* calling sidebar */
@@ -59,19 +61,13 @@ header, /* header bar */
 md-menu-content, 
 gv-availability-view,
 .gvRecipientPicker-chipsWrap, /* selecting to: when sending new msg */
-.gb_te /* search box dropdown */
+.gb_te, /* search box dropdown */
+div.mat-mdc-select-panel, /* settings recharge notification amount */
+.gvBillingView-header /* billing header */
 {
   background-color: var(--dark-grey)!important;
   border-color: var(--light-medium-grey)!important;
   color: var(--light-grey)!important;
-}
-
-input,
-textarea,
-.mat-icon, /* general icon override */
-.navItemLabel /* main nav labels */
-{
-  color: var(--near-white)!important;
 }
 
 .gvThreadItem-selected, /* messages list item */
@@ -81,10 +77,11 @@ textarea,
   background-color: var(--dark-grey)!important;
 }
 
-/* Main search bar */
-header form, 
-header form input, 
-header form button
+iframe,
+header form, /* Main search bar */
+header form input, /* Main search bar */
+header form button, /* Main search bar */
+.icon /* settings page icons */
 {
   background-color: var(--medium-grey)!important;
 }
@@ -114,13 +111,26 @@ header form button
   border: 1px solid var(--light-medium-grey)!important;
 }
 
+input,
+textarea,
+header span[role="heading"],
+.mat-icon, /* general icon override */
+.navItemLabel, /* main nav labels */
+.mdc-list-item__primary-text, /* settings nav items */
+.mat-mdc-select, /* settings autorecharge text */
 .grey-900, /* various bolded items */
 .gvThreadItem-contacts, /* message list contact name */
 .phone-number-details, /* calling sidebar label */
 #contact-list ul li .info-container .name, /* calling sidebar contact list */
 .gvThreadItem-contacts, /* contact name in message list */
 .primary-text, /* call header name */
-.title /* receiving calls button */
+.title, /* receiving calls button */
+.sectionTitle, /* settings title */
+.internalHeader, /* settings sub title */
+.header, /* settings sub title */
+.device-label, /* settings devices */
+.deviceLabel, /* settings devices */
+.details .name  /* settings greeting label */
 {
   color: var(--near-white)!important;
 }
@@ -131,7 +141,13 @@ header form button
 .call-as-label, /* calling sidebar label */
 #contact-list ul li .info-container .details,
 .latest-item-details, /* call timestamp */
-.secondary-text /* call header subtext */
+.secondary-text, /* call header subtext */
+.subheader, /* settings sub sub title */
+.internalSubheader, /* settings sub sub title */
+.device-details, /* settings device number */
+.deviceDetails, /* settings device number */
+.no-devices, /* settings devices */
+.notificationText  /* settings web notifications */
 {
   color: var(--near-medium-white)!important;
 }
