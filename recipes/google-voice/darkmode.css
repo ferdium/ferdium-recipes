@@ -58,7 +58,7 @@ header, /* header bar */
 .button, /* calling sidebar */
 .caption, /* calling sidebar */
 .dialpad-button-container, /* calling sidebar */
-md-menu-content, 
+md-menu-content,
 gv-availability-view,
 .gvRecipientPicker-chipsWrap, /* selecting to: when sending new msg */
 .gb_te, /* search box dropdown */
@@ -152,6 +152,8 @@ header span[role="heading"],
   color: var(--near-medium-white)!important;
 }
 
+div[aria-label^="Unread"] .thread-info, /* unread missed calls */
+div[aria-label^="Unread"] .latest-item-details, /* unread missed calls */
 .gvThreadItem-unread /* unread message */
 {
   color: var(--basically-white)!important;
