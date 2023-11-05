@@ -1261,6 +1261,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "arnostpleskot",
+      "name": "Arnost Pleskot",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7094061?v=4",
+      "profile": "http://pleskot.net",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
