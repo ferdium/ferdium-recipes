@@ -83,7 +83,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/oda-alexandre' title='Maitre_Oda: code'><img src='https://avatars.githubusercontent.com/u/43296168?v=4' alt='oda-alexandre' style='width:100px;'/></a></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href='https://github.com/mcmxcdev' title='MCMXC: code'><img src='https://avatars.githubusercontent.com/u/16797721?v=4' alt='mcmxcdev' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/mcmxcdev' title='MCMXC: code, review'><img src='https://avatars.githubusercontent.com/u/16797721?v=4' alt='mcmxcdev' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://gaitenis.id.lv/' title='Edgars: code'><img src='https://avatars.githubusercontent.com/u/9976861?v=4' alt='eandersons' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://arthurbrugiere.fr/' title='Arthur Brugière: code'><img src='https://avatars.githubusercontent.com/u/16764085?v=4' alt='RoiArthurB' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/iansealy' title='Ian Sealy: code'><img src='https://avatars.githubusercontent.com/u/92045?v=4' alt='iansealy' style='width:100px;'/></a></td>
