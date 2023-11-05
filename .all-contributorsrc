@@ -1243,6 +1243,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "HugLifeTiZ",
+      "name": "Trent McPheron",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4130673?v=4",
+      "profile": "https://linktr.ee/tiz_huglife",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
