@@ -212,6 +212,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/SpecialAro' title='André Oliveira: code, infra'><img src='https://avatars.githubusercontent.com/u/37463445?v=4' alt='SpecialAro' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/oc013' title='oc013: code'><img src='https://avatars.githubusercontent.com/u/101832295?v=4' alt='oc013' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/ahmed-zhran' title='ahmed-zhran: code'><img src='https://avatars.githubusercontent.com/u/29282428?v=4' alt='ahmed-zhran' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://linktr.ee/tiz_huglife' title='Trent McPheron: code'><img src='https://avatars.githubusercontent.com/u/4130673?v=4' alt='HugLifeTiZ' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
