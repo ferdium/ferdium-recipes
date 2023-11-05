@@ -1252,6 +1252,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "lincolnthalles",
+      "name": "Lincoln Nogueira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7476810?v=4",
+      "profile": "https://github.com/lincolnthalles",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
