@@ -7,10 +7,10 @@ const _path = _interopRequireDefault(require('path'));
 module.exports = Ferdium => {
   const getMessages = () => {
     const selNotifications = document.querySelector(
-      'div.tiktok-1b4xcc5-DivHeaderInboxContainer.e18kkhh40 > sup',
+      'div.tiktok-1deszxq-DivHeaderInboxContainer.e18kkhh40 > sup',
     );
     const selDM = document.querySelector(
-      'div.tiktok-1ibfxbr-DivMessageIconContainer.e1nx07zo0 > sup',
+      'div.tiktok-9j9jz0-DivMessageIconContainer.e1nx07zo0 > sup',
     );
 
     const countNotifications =
