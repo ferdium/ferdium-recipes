@@ -14,7 +14,7 @@ function hideInstallMessage() {
   }
 }
 
-module.exports = Ferdium => {
+module.exports = (Ferdium, settings) => {
   const getMessages = () => {
     let count = 0;
     let newMessengerUI = false;
@@ -101,4 +101,29 @@ module.exports = Ferdium => {
       return notification;
     });
   }
+
+  document.addEventListener(
+    'click',
+    event => {
+      const link = event.target.closest('a[href^="http"]');
+      const button = event.target.closest('button[title^="http"]');
+
+      if (link || button) {
+        const url = link
+          ? link.getAttribute('href')
+          : button.getAttribute('title');
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (url.includes('fbsbx.com') || settings.trapLinkClicks === true) {
+          // 'fbsbx.com is Facebook file hosting service. Always open file downloads in Ferdium.
+          window.location.href = url;
+        } else {
+          Ferdium.openNewWindow(url);
+        }
+      }
+    },
+    true,
+  );
 };

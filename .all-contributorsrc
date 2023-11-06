@@ -336,7 +336,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/16797721?v=4",
       "profile": "https://github.com/mcmxcdev",
       "contributions": [
-        "code"
+        "code",
+        "review"
       ]
     },
     {
@@ -1223,6 +1224,51 @@
       "contributions": [
         "code",
         "infra"
+      ]
+    },
+    {
+      "login": "oc013",
+      "name": "oc013",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101832295?v=4",
+      "profile": "https://github.com/oc013",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ahmed-zhran",
+      "name": "ahmed-zhran",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29282428?v=4",
+      "profile": "https://github.com/ahmed-zhran",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "HugLifeTiZ",
+      "name": "Trent McPheron",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4130673?v=4",
+      "profile": "https://linktr.ee/tiz_huglife",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "lincolnthalles",
+      "name": "Lincoln Nogueira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7476810?v=4",
+      "profile": "https://github.com/lincolnthalles",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "arnostpleskot",
+      "name": "Arnost Pleskot",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7094061?v=4",
+      "profile": "http://pleskot.net",
+      "contributions": [
+        "code"
       ]
     }
   ],
