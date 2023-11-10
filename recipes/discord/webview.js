@@ -8,16 +8,14 @@ module.exports = (Ferdium, settings) => {
   const getMessages = () => {
     let directCount = 0;
     const directCountPerServer = document.querySelectorAll(
-      '[class*="lowerBadge-"] [class*="numberBadge-"]',
+      '[class*="lowerBadge_"] [class*="numberBadge_"]',
     );
 
     for (const directCountBadge of directCountPerServer) {
       directCount += Ferdium.safeParseInt(directCountBadge.textContent);
     }
 
-    const indirectCountPerServer = document.querySelectorAll(
-      '[class*="modeUnread-"]',
-    ).length;
+    const indirectCountPerServer = document.title.search('• Discord') === -1 ? 0 : 1;
 
     Ferdium.setBadge(directCount, indirectCountPerServer);
   };
