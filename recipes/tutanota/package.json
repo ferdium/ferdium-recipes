@@ -1,9 +1,13 @@
 {
   "id": "tutanota",
-  "name": "Tutanota",
-  "version": "1.3.0",
+  "name": "Tuta",
+  "version": "1.4.0",
+  "description": "Tuta Mail",
+  "aliases": [
+    "Tutanota"
+  ],
   "license": "MIT",
   "config": {
-    "serviceURL": "https://mail.tutanota.com/"
+    "serviceURL": "https://app.tuta.com/"
   }
 }
