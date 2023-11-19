@@ -15,7 +15,8 @@ module.exports = (Ferdium, settings) => {
       directCount += Ferdium.safeParseInt(directCountBadge.textContent);
     }
 
-    const indirectCountPerServer = document.title.search('• Discord') === -1 ? 0 : 1;
+    const indirectCountPerServer =
+      document.title.search('• Discord') === -1 ? 0 : 1;
 
     Ferdium.setBadge(directCount, indirectCountPerServer);
   };
