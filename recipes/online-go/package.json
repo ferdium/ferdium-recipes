@@ -1,0 +1,15 @@
+{
+  "id": "online-go",
+  "name": "Online Go",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "OGS"
+  ],
+  "config": {
+    "hasDirectMessages": true,
+    "hasIndirectMessages": true,
+    "hasNotificationSound": true,
+    "serviceURL": "https://online-go.com"
+  }
+}
