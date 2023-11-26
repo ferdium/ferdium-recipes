@@ -14,7 +14,9 @@ module.exports = Ferdium => {
   const getMessages = () => {
     const element = document.querySelector('a[href^="/direct/inbox"] span');
     Ferdium.setBadge(
-      element && element.textContent ? Ferdium.safeParseInt(element.textContent) : 0,
+      element && element.textContent
+        ? Ferdium.safeParseInt(element.textContent)
+        : 0,
     );
   };
 
