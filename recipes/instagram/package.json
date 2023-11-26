@@ -1,7 +1,7 @@
 {
   "id": "instagram",
   "name": "Instagram",
-  "version": "2.5.4",
+  "version": "2.5.3",
   "license": "MIT",
   "config": {
     "serviceURL": "https://instagram.com/",
