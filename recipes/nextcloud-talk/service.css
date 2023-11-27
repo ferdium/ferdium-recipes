@@ -1,25 +1,43 @@
-/* Hide all app links in the top menu except for Talk */
-#appmenu li:not([data-id="spreed"]) {
+/*
+With `/* Legacy [asterisk]/` are marked those selectors that were working for
+some Nextcloud version before 27 (24 or 25).
+*/
+
+/*Hide all interactive elements that are not related to the Talk. */
+/* App links and contacts menu link in the top menu except for Talk. */
+#appmenu li:not([data-id="spreed"]),  /* Legacy */
+.app-menu .app-menu-main > .app-menu-entry:not([data-app-id="spreed"]),
+#unified-search,
+#contactsmenu,
+/* All settings options, except the option to log out */
+#settings #expanddiv li:not([data-id='logout']),  /* Legacy */
+#header-menu-user-menu li:not([id='logout']),  /* Nextcloud 27 */
+/* Hide notifications that are not related to Talk */
+.notification-container .notification-wrapper .notification:not([data-app="spreed"]),
+/* "Dismiss all notifications" as this action will dismiss also hidden
+notifications as this behaviour might not be desirable. */
+.notification-wrapper .dismiss-all, /* Legacy */
+#header-menu-notifications .notification-container .dismiss-all  /* Nextcloud 27 */ {
   display: none;
 }
 
 /* Change cursor to the default pointer for top menu Nextcloud home and Talk
 links and disable them */
 #nextcloud,
-#appmenu li[data-id="spreed"] a {
+#appmenu li[data-id="spreed"] a,  /* Legacy */
+.app-menu-main li[data-app-id="spreed"] a  /* Nextcloud 27 */ {
   cursor: default;
   pointer-events: none;
 }
 
-/* Hide all settings options, except the option to log out */
-#settings #expanddiv li:not([data-id='logout']) {
-  display: none;
-}
-
 /* Fix the margin of the dropdown */
-#settings #expanddiv,
-#settings #expanddiv > ul {
-  min-height: 0;
+#settings #expanddiv,  /* Legacy */
+#settings #expanddiv > ul,  /* Legacy */
+#header-menu-user-menu,  /* Nextcloud 27 */
+#header-menu-user-menu > .header-menu__content,  /* Nextcloud 27 */
+#header-menu-notifications,  /* Nextcloud 27 */
+#header-menu-notifications > .header-menu__content  /* Nextcloud 27 */ {
+  min-height: auto;
 }
 
 /* Hide "More" link in the top menu */
@@ -28,16 +46,10 @@ links and disable them */
 }
 
 /* Hide notifications that are not related to Talk */
-.notifications .notification-wrapper .notification {
+.notifications .notification-wrapper .notification  /* Legacy */ {
   display: none;
 }
-.notifications .notification-wrapper .notification[object_type="chat"],
-.notifications .notification-wrapper .notification[object_type="room"]  {
+.notifications .notification-wrapper .notification[object_type="chat"],  /* Legacy */
+.notifications .notification-wrapper .notification[object_type="room"]  /* Legacy */  {
   display: initial;
-}
-
-/* Hide "Dismiss all notifications" as this action will dismiss also hidden
-notifications */
-.notification-wrapper .dismiss-all {
-  display: none;
 }
