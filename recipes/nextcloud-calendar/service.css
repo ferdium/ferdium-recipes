@@ -1,41 +1,47 @@
-/* Hide all app links and contacts menu link in the top menu except for
-Calendar */
-#appmenu li:not([data-id="calendar"]),
-#contactsmenu {
+/*
+With `/* Legacy [asterisk]/` are marked those selectors that were working for
+some Nextcloud version before 27 (24 or 25).
+*/
+
+/*Hide all interactive elements that are not related to the Calendar. */
+/* App links and contacts menu link in the top menu except for Calendar */
+#appmenu li:not([data-id="calendar"]),  /* Legacy */
+.app-menu-main > .app-menu-entry:not([data-app-id="calendar"]), /* Nextcloud 27 */
+#unified-search,
+#contactsmenu,
+/* All settings options, except the option to log out */
+#settings #expanddiv li:not([data-id='logout']),  /* Legacy */
+#header-menu-user-menu li:not([id='logout']),  /* Nextcloud 27 */
+/* Notifications that are not related to Calendar */
+.notifications .notification-wrapper .notification:not([object_type="dav"]),  /* Legacy */
+.notification-container .notification-wrapper .notification:not([data-app="dav"]),  /* Nextcloud 27 */
+/* "Dismiss all notifications" as this action will dismiss also hidden
+notifications as this behaviour might not be desirable. */
+.notification-wrapper .dismiss-all, /* Legacy */
+.notification-container .dismiss-all  /* Nextcloud 27 */ {
   display: none;
 }
 
 /* Change the cursor to default for top menu Nextcloud home and Calendar
 links and disable them */
 #nextcloud,
-#appmenu li[data-id="calendar"] a {
-    cursor:default;
+#appmenu li[data-id="calendar"] a,  /* Legacy */
+.app-menu-main li[data-app-id="calendar"] a  /* Nextcloud 27 */ {
+    cursor: default;
     pointer-events: none;
 }
 
-/* Hide all settings options, except the option to log out */
-#settings #expanddiv li:not([data-id='logout']) {
-  display: none;
-}
-
 /* Fix the margin of the dropdown */
-#settings #expanddiv,
-#settings #expanddiv > ul {
-  min-height: 0;
+#settings #expanddiv,  /* Legacy */
+#settings #expanddiv > ul,  /* Legacy */
+#header-menu-notifications,  /* Nextcloud 27 */
+#header-menu-notifications > .header-menu__content,  /* Nextcloud 27 */
+#header-menu-user-menu,  /* Nextcloud 27 */
+#header-menu-user-menu > .header-menu__content  /* Nextcloud 27 */ {
+  min-height: auto;
 }
 
 /* Hide "More" link in the top menu */
 #more-apps {
   display: none !important;
-}
-
-/* Hide notifications that are not related to calendar */
-.notifications .notification-wrapper .notification:not([object_type="dav"]) {
-    display: none;
-}
-
-/* Hide "Dismiss all notifications" as this action will dismiss also hidden
-notifications */
-.notification-wrapper .dismiss-all {
-  display: none;
 }
