@@ -7,8 +7,9 @@
 
 Please ensure you've completed all of the following.
 
-- [ ] I have read the [Contributing Guidelines](https://github.com/ferdium/ferdium-recipes/blob/HEAD/CONTRIBUTING.md) for this project.
-- [ ] I agree to follow the [Code of Conduct](https://github.com/ferdium/ferdium-recipes/blob/HEAD/CODE_OF_CONDUCT.md) that this project adheres to.
+- [ ] I have read the [Contributing Guidelines](https://github.com/ferdium/ferdium-app/blob/HEAD/CONTRIBUTING.md) for this project.
+- [ ] I agree to follow the [Code of Conduct](https://github.com/ferdium/ferdium-app/blob/HEAD/CODE_OF_CONDUCT.md) that this project adheres to.
 
 #### Description of Change
+
 <!-- Describe your changes in detail. -->
