@@ -1,0 +1,11 @@
+{
+  "id": "wakapi",
+  "name": "Wakapi",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://wakapi.dev",
+    "hasHostedOption": true,
+    "hasCustomUrl": true
+  }
+}
