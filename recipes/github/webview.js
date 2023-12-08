@@ -5,36 +5,20 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
-  const _parseNewCount = text => {
-    const match = text.match(/\d+/);
-    return match ? Ferdium.safeParseInt(match[0]) : 0;
-  };
-
+  const newCountMatch = document
+    .querySelector('a.h6[href="/notifications?query="]')
+    ?.textContent?.match(/\d+/);
   const getMessages = () => {
-    const directCountElement = document.querySelector(
-      '.filter-list.js-notification-inboxes .count',
+    Ferdium.setBadge(
+      Ferdium.safeParseInt(
+        document.querySelector('.filter-list.js-notification-inboxes .count')
+          ?.textContent,
+      ) + Ferdium.safeParseInt(newCountMatch ? newCountMatch[0] : 0),
+      document.querySelectorAll(
+        '#AppHeader-notifications-button.AppHeader-button--hasIndicator',
+      ).length,
     );
-    let directCount = directCountElement
-      ? Ferdium.safeParseInt(directCountElement.textContent)
-      : 0;
-
-    const newCountElement = document.querySelector(
-      'a.h6[href="/notifications?query="]',
-    );
-    const newCount = newCountElement
-      ? _parseNewCount(newCountElement.textContent)
-      : 0;
-    directCount += newCount;
-
-    const indirectCount = document.querySelector(
-      '[class*="mail-status unread"]:not([hidden])',
-    )
-      ? 1
-      : 0;
-    Ferdium.setBadge(directCount, indirectCount);
   };
-
   Ferdium.loop(getMessages);
-
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
