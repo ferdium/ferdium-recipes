@@ -1,0 +1,9 @@
+{
+  "id": "diagrams",
+  "name": "Diagrams",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.diagrams.net/"
+  }
+}
