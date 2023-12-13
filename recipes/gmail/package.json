@@ -1,7 +1,7 @@
 {
   "id": "gmail",
   "name": "Gmail",
-  "version": "1.7.0",
+  "version": "1.6.1",
   "license": "MIT",
   "config": {
     "serviceURL": "https://mail.google.com"

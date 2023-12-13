@@ -19,7 +19,7 @@ module.exports = Ferdium => {
     let countNonImportant = 0;
     const inboxLinks = document.querySelectorAll('.J-Ke.n0');
     const spaceAndChatBadges = document.querySelectorAll('span.XU.aH6');
-    
+
     if (inboxLinks.length > 0) {
       const { parentNode } = inboxLinks[0];
       if (parentNode) {
@@ -44,9 +44,12 @@ module.exports = Ferdium => {
       }
     }
 
-    if(spaceAndChatBadges.length > 0) {
-      const arr = Array.from(spaceAndChatBadges);
-      const spaceAndChatCount = arr.reduce((acc, e) => Ferdium.safeParseInt(e.getInnerHTML())+acc, 0)
+    if (spaceAndChatBadges.length > 0) {
+      const arr = [...spaceAndChatBadges];
+      const spaceAndChatCount = arr.reduce(
+        (acc, e) => Ferdium.safeParseInt(e.getInnerHTML()) + acc,
+        0,
+      );
       countImportant += spaceAndChatCount;
     }
 
