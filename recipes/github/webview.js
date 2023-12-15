@@ -15,7 +15,8 @@ module.exports = Ferdium => {
           ?.textContent,
       ) + Ferdium.safeParseInt(newCountMatch ? newCountMatch[0] : 0),
       document.querySelectorAll(
-        '#AppHeader-notifications-button.AppHeader-button--hasIndicator',
+        '#AppHeader-notifications-button.AppHeader-button--hasIndicator, ' +
+          '[data-target="notification-indicator.badge"]:not([hidden])',
       ).length,
     );
   };
