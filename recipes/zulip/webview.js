@@ -5,27 +5,46 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
-  function getUnreadCount(eltClassName) {
-    const elt = document.querySelectorAll(
-      `#global_filters .${eltClassName} .unread_count`,
-    )[0];
-    return elt === null ? 0 : Ferdium.safeParseInt(elt.textContent);
+  function getUnreadMentions() {
+    const anchorWithMentionHref = document.querySelector(
+      'a[href*="is/mentioned"]',
+    );
+    const unreadCountElement =
+      anchorWithMentionHref.querySelector('.unread_count');
+
+    return unreadCountElement == null
+      ? 0
+      : Ferdium.safeParseInt(unreadCountElement.textContent);
   }
 
+  function getUnreadCount(eltId) {
+    const elt = document.querySelectorAll(`#${eltId} + .unread_count`)[0];
+    return elt == null ? 0 : Ferdium.safeParseInt(elt.textContent);
+  }
+
+  function getStreamsUnread() {
+    const streamsHeader = document.querySelector('#streams_header');
+    const unreadCountElement = streamsHeader.querySelector('.unread_count');
+
+    return unreadCountElement == null
+      ? 0
+      : Ferdium.safeParseInt(unreadCountElement.textContent);
+  }
+
+  //document.querySelector('#show_all_private_messages + .unread_count')
   const getMessages = () => {
     // All unread messages
-    const unreadAll = getUnreadCount('top_left_all_messages');
+    const streamUnread = getStreamsUnread();
 
     // Private messages
-    const unreadPrivate = getUnreadCount('top_left_private_messages');
+    const unreadPrivate = getUnreadCount('show_all_private_messages');
 
     // @ Mentions messages
-    const unreadMentions = getUnreadCount('top_left_mentions');
+    const unreadMentions = getUnreadMentions();
 
     const directMessages = unreadPrivate + unreadMentions;
-    const indirectMessages = unreadAll - directMessages;
 
-    Ferdium.setBadge(directMessages, indirectMessages);
+    Ferdium.setBadge(directMessages, streamUnread);
   };
 
   Ferdium.loop(getMessages);
