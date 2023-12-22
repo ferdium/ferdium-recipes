@@ -1,0 +1,10 @@
+{
+  "id": "threads",
+  "name": "Threads",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://threads.net/",
+    "hasNotificationSound": true
+  }
+}
