@@ -64,7 +64,7 @@ gv-availability-view,
 .gb_te, /* search box dropdown */
 div.mat-mdc-select-panel, /* settings recharge notification amount */
 .gvBillingView-header, /* billing header */
-.full-panel
+.full-panel /* audio settings menu */
 {
   background-color: var(--dark-grey)!important;
   border-color: var(--light-medium-grey)!important;
