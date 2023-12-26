@@ -63,7 +63,8 @@ gv-availability-view,
 .gvRecipientPicker-chipsWrap, /* selecting to: when sending new msg */
 .gb_te, /* search box dropdown */
 div.mat-mdc-select-panel, /* settings recharge notification amount */
-.gvBillingView-header /* billing header */
+.gvBillingView-header, /* billing header */
+.full-panel /* audio settings menu */
 {
   background-color: var(--dark-grey)!important;
   border-color: var(--light-medium-grey)!important;
@@ -72,7 +73,9 @@ div.mat-mdc-select-panel, /* settings recharge notification amount */
 
 .gvThreadItem-selected, /* messages list item */
 .container, /* calls list items and also message text container */
-.mat-mdc-menu-panel /* context menus */
+.mat-mdc-menu-panel, /* context menus */
+.gvMessagingView-sidenav, /* sidenav when people list is expanded */
+.gvPeopleAndOptions-people /* sidenav when people list is expanded */
 {
   background-color: var(--dark-grey)!important;
 }
@@ -114,6 +117,7 @@ header form button, /* Main search bar */
 input,
 textarea,
 header span[role="heading"],
+.greeting, /* no message selected greeting */
 .mat-icon, /* general icon override */
 .navItemLabel, /* main nav labels */
 .mdc-list-item__primary-text, /* settings nav items */
@@ -147,7 +151,8 @@ header span[role="heading"],
 .device-details, /* settings device number */
 .deviceDetails, /* settings device number */
 .no-devices, /* settings devices */
-.notificationText  /* settings web notifications */
+.notificationText,  /* settings web notifications */
+.gvPeopleAndOptions-phoneType /* sidenav when people list is expanded */
 {
   color: var(--near-medium-white)!important;
 }
@@ -158,4 +163,18 @@ div[aria-label^="Unread"] .latest-item-details, /* unread missed calls */
 {
   color: var(--basically-white)!important;
   font-weight: 900!important
+}
+
+.gvMessageItem-bubble /* spam incoming text */
+{
+  background-color: var(--dark-grey)!important;
+  color: var(--light-grey)!important;
+  border: 1px solid var(--light-medium-grey)!important;
+}
+
+.bubble a, /* text message hyperlinks */
+.gvMessageItem-bubble a /* spam text message hyperlinks */
+{
+  background-color: var(--dark-grey)!important;
+  color: var(--near-white)!important;
 }
