@@ -5,10 +5,10 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
-  const newCountMatch = document
-    .querySelector('a.h6[href="/notifications?query="]')
-    ?.textContent?.match(/\d+/);
   const getMessages = () => {
+    const newCountMatch = document
+      .querySelector('a.h6[href^="/notifications?query="]')
+      ?.textContent?.match(/\d+/);
     Ferdium.setBadge(
       Ferdium.safeParseInt(
         document.querySelector('.filter-list.js-notification-inboxes .count')
