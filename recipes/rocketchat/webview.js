@@ -6,19 +6,19 @@ const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
-    const directMessages = document.querySelectorAll('.rcx-badge');
+    const title = document.querySelector('title');
+    const matches = title.textContent.match(/^\((\S*?)\)/);
 
-    let directMessagesCount = 0;
-
-    for (const directMessage of directMessages) {
-      directMessagesCount += Ferdium.safeParseInt(directMessage.textContent);
+    if (matches) {
+      const count = Ferdium.safeParseInt(matches[1], 10);
+      if (count) {
+        Ferdium.setBadge(count);
+      } else {
+        Ferdium.setBadge(0, 1);
+      }
+    } else {
+      Ferdium.setBadge(0);
     }
-
-    const indirectMessagesCount = Math.round(
-      document.querySelectorAll('.rcx-sidebar-item--highlighted').length,
-    );
-
-    Ferdium.setBadge(directMessagesCount, indirectMessagesCount);
   };
 
   Ferdium.loop(getMessages);
