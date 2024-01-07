@@ -9,7 +9,7 @@ Please ensure you've completed all of the following.
 
 - [ ] I have read the [Contributing Guidelines](https://github.com/ferdium/ferdium-app/blob/develop/CONTRIBUTING.md) for this project.
 - [ ] I agree to follow the [Code of Conduct](https://github.com/ferdium/ferdium-app/blob/develop/CODE_OF_CONDUCT.md) that this project adheres to.
-- [ ] I update the version package [Updating](https://github.com/ferdium/ferdium-recipes/blob/main/docs/updating.md#4-updating-the-version-number) 
+- [ ] I updated the version package [Updating](https://github.com/ferdium/ferdium-recipes/blob/main/docs/updating.md#4-updating-the-version-number) 
 
 #### Description of Change
 
