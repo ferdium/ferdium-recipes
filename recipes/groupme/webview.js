@@ -13,9 +13,7 @@ module.exports = Ferdium => {
     // for each conversation on the list...
     const filteredConversations = unreadConversations.filter(e => {
       // keep it on the list if it isn't muted (not .muted)
-      return (
-        !e.innerHTML.includes('muted')
-      );
+      return !e.innerHTML.includes('muted');
     });
     const unreadUnmutedConversations = filteredConversations.length;
 
