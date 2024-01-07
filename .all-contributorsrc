@@ -1297,6 +1297,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "cloopadoop",
+      "name": "Clayton",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1791012?v=4",
+      "profile": "http://claytonbelcher.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
