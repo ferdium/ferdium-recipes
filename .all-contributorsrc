@@ -1279,6 +1279,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Mralexandresys",
+      "name": "Alexandre",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32882826?v=4",
+      "profile": "https://github.com/Mralexandresys",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "commitType": "docs"
