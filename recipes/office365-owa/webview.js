@@ -37,7 +37,7 @@ module.exports = (Ferdium, settings) => {
       directUnreadCount =
         settings.onlyShowFavoritesInUnreadCount === true
           ? collectCounts('div[role=tree]:nth-child(2)')
-          : collectCounts('div[role=tree]:nth-child(3)');
+          : collectCounts('div[role=tree]:nth-child(1)');
 
       indirectUnreadCount = collectCounts('div[role=tree]:nth-child(4)'); // groups
     }
