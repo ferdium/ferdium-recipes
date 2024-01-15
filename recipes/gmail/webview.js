@@ -18,7 +18,9 @@ module.exports = Ferdium => {
     let countImportant = 0;
     let countNonImportant = 0;
     const inboxLinks = document.querySelectorAll('.J-Ke.n0');
-    const spaceAndChatBadges = document.querySelectorAll('span.XU.aH6');
+    const spaceAndChatBadges = document.querySelectorAll(
+      'div.Xa.bSyoAf span.XU',
+    );
 
     if (inboxLinks.length > 0) {
       const { parentNode } = inboxLinks[0];
