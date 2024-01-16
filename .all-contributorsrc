@@ -1306,6 +1306,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "martin-braun",
+      "name": "Martin Braun",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24259245?v=4",
+      "profile": "https://martin-braun.net/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
