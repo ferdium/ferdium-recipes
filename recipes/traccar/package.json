@@ -1,0 +1,11 @@
+{
+  "id": "traccar",
+  "name": "Traccar",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "hasHostedOption": true,
+    "hasCustomUrl": true,
+    "hasNotificationSound": true
+  }
+}
