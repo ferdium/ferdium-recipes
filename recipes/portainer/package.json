@@ -1,0 +1,11 @@
+{
+    "id": "portainer",
+    "name": "Portainer",
+    "version": "1.0.0",
+    "license": "MIT",
+    "config": {
+      "hasHostedOption": true,
+      "hasCustomUrl": true,
+      "hasNotificationSound": false
+    }
+  }
