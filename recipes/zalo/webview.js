@@ -36,7 +36,8 @@ module.exports = Ferdium => {
           const convUnread = document.querySelectorAll(
             '.conv-unread:not(.func-unread__muted)',
           );
-          if (convUnread.length === 0) count = 6; // 5+
+          if (convUnread.length === 0)
+            count = 6; // 5+
           else
             for (const convUnreadItem of convUnread) {
               switch (convUnreadItem.classList[1]) {
