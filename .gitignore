@@ -9,4 +9,5 @@ server*.log
 *.jpg
 *.jpeg
 *.bmp
+*.zwc*
 /all.json
