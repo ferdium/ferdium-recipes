@@ -10,7 +10,7 @@ const SELECTOR_CHANNELS_UNREAD =
 module.exports = Ferdium => {
   const getMessages = () => {
     const directMessages = document.querySelectorAll(
-      `${SELECTOR_CHANNELS_UNREAD} .p-channel_sidebar__badge, .p-channel_sidebar__link--unread:not([data-sidebar-link-id="Punreads"]):not([data-sidebar-link-id="Pdrafts"]):not([data-sidebar-link-id="Pdms"])`,
+      `${SELECTOR_CHANNELS_UNREAD} .p-channel_sidebar__badge, .p-channel_sidebar__link--unread:not([data-sidebar-link-id="Punreads"]):not([data-sidebar-link-id="Pdrafts"]):not([data-sidebar-link-id="Pdms"]):not([data-sidebar-link-id="Ppaid-benefits"])`,
     ).length;
     const allMessages =
       document.querySelectorAll(SELECTOR_CHANNELS_UNREAD).length -
