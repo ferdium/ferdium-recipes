@@ -1324,6 +1324,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "pwsimon",
+      "name": "Peter Simon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7318288?v=4",
+      "profile": "https://github.com/pwsimon",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
