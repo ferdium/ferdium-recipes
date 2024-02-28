@@ -3,9 +3,10 @@
 /**
  * Create a new recipe for your service
  */
-const fs = require('fs-extra');
-const path = require('path');
-const open = require('open');
+import fs from 'fs-extra';
+
+import path from 'path';
+import open from 'open';
 
 if (process.argv.length < 3) {
   console.log(`Usage: pnpm create <Recipe name> [Folder name]
@@ -49,7 +50,7 @@ const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only cont
   const recipesFolder = path.join(userData, folderName, 'recipes');
   const devRecipeFolder = path.join(recipesFolder, 'dev');
   const newRecipeFolder = path.join(devRecipeFolder, recipe);
-  const sampleRecipe = path.join(__dirname, 'sample_recipe');
+  const sampleRecipe = path.join(import.meta.dirname, 'sample_recipe'); // Starting with Node.js 20.11 / 21.2, you can use import.meta.dirname
 
   // Make sure dev recipe folder exists
   if (!fs.existsSync(recipesFolder)) {
