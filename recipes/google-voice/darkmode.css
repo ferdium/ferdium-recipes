@@ -66,7 +66,8 @@ div.mat-mdc-select-panel, /* settings recharge notification amount */
 .gvBillingView-header, /* billing header */
 .full-panel, /* audio settings menu */
 .gb_se, /* top search results */
-.message-input /* text input for sms */
+.message-input, /* text input for sms */
+md-dialog /* add contact dialog */
 {
   background-color: var(--dark-grey)!important;
   border-color: var(--light-medium-grey)!important;
@@ -80,6 +81,17 @@ div.mat-mdc-select-panel, /* settings recharge notification amount */
 .gvPeopleAndOptions-people /* sidenav when people list is expanded */
 {
   background-color: var(--dark-grey)!important;
+}
+
+.gvAddContactDialog-autoCompleteMenu > li /* add contact dialog */
+{
+  background-color: var(--medium-grey)!important;
+  color: var(--light-grey)!important;
+}
+
+.gvAddContactDialog-autoCompleteMenu > li:hover
+{
+  background-color: var(--dark-medium-grey)!important;
 }
 
 iframe,
@@ -155,6 +167,8 @@ header span[role="heading"],
 .no-devices, /* settings devices */
 .notificationText,  /* settings web notifications */
 .gvPeopleAndOptions-phoneType /* sidenav when people list is expanded */
+.gmat-subhead-1, /* add contact dialog */
+.gvAddContactDialog-header /* add contact dialog */
 {
   color: var(--near-medium-white)!important;
 }
