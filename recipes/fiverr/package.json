@@ -1,0 +1,10 @@
+{
+  "id": "fiverr",
+  "name": "Fiverr",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.fiverr.com/inbox/",
+    "hasNotificationSound": true
+  }
+}

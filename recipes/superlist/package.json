@@ -1,0 +1,10 @@
+{
+  "id": "superlist",
+  "name": "Superlist",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.superlist.com",
+    "hasNotificationSound": true
+  }
+}
