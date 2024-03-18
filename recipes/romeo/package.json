@@ -1,0 +1,10 @@
+{
+  "id": "romeo",
+  "name": "Romeo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "http://romeo.com",
+    "hasNotificationSound": true
+  }
+}

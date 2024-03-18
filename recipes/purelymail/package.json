@@ -1,0 +1,10 @@
+{
+  "id": "purelymail",
+  "name": "Purelymail",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://inbox.purelymail.com",
+    "hasNotificationSound": true
+  }
+}

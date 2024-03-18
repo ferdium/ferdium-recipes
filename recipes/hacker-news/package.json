@@ -1,0 +1,9 @@
+{
+  "id": "hacker-news",
+  "name": "Hacker News",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://news.ycombinator.com/"
+  }
+}

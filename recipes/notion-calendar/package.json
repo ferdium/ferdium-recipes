@@ -1,0 +1,10 @@
+{
+  "id": "notion-calendar",
+  "name": "Notion Calendar",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://calendar.notion.so/",
+    "hasNotificationSound": true
+  }
+}
