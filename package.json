@@ -6,14 +6,14 @@
   },
   "engines": {
     "node": "20.11.1",
-    "pnpm": "8.15.3"
+    "pnpm": "8.15.5"
   },
   "volta": {
     "node": "20.11.1",
-    "pnpm": "8.15.3"
+    "pnpm": "8.15.5"
   },
   "engine-strict": true,
-  "packageManager": "pnpm@8.15.3",
+  "packageManager": "pnpm@8.15.5",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
