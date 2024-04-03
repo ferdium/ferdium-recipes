@@ -13,6 +13,6 @@
 }
 
 /* fix for blank spaces regarding view width on screens larger than 1080p */
-.app-wrapper-web ._1jJ70, .app-wrapper-web ._aigs {
+.app-wrapper-web ._aigs {
   max-width: none !important;
 }
