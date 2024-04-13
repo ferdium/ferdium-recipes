@@ -7,9 +7,9 @@ const _path = _interopRequireDefault(require('path'));
 module.exports = Ferdium => {
   const getMessages = () => {
     let unreadCount = 0;
-    // Loop over all displayed counters and take the highest one (from the "All Mail" folder)
+    // Take the counter element from the "Inbox" folder
     for (const counterElement of document.querySelectorAll(
-      '.navigation-counter-item',
+      '[data-testid="navigation-link:inbox"] [data-testid="navigation-link:unread-count"]',
     )) {
       const unreadCounter = Ferdium.safeParseInt(counterElement.textContent);
       unreadCount = Math.max(unreadCount, unreadCounter);
