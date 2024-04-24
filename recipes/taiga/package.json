@@ -1,0 +1,10 @@
+{
+  "id": "taiga",
+  "name": "Taiga",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/kaleidos-ventures/taiga",
+  "config": {
+    "serviceURL": "https://tree.taiga.io"
+  }
+}
