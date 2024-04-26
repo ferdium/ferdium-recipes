@@ -1,0 +1,9 @@
+{
+  "id": "peopleperhour",
+  "name": "People Per Hour",
+  "version": "0.1.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.peopleperhour.com/notification/list"
+  }
+}
