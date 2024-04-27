@@ -1,0 +1,12 @@
+{
+  "id": "azure-portal",
+  "name": "Azure Portal",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "azpo"
+  ],
+  "config": {
+    "serviceURL": "https://portal.azure.com/"
+  }
+}
