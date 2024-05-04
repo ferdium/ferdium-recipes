@@ -1,5 +1,8 @@
 /* eslint-disable no-console */
 
+// Capture the start time
+const startTime = new Date();
+
 /**
  * Package all recipes
  */
@@ -13,7 +16,8 @@ const pkgVersionChangedMatcher = /\n\+.*version.*/;
 
 // Publicly availible link to this repository's recipe folder
 // Used for generating public icon URLs
-const repo = 'https://cdn.jsdelivr.net/gh/ferdium/ferdium-recipes/recipes/';
+const repo =
+  'https://cdn.jsdelivr.net/gh/ferdium/ferdium-recipes@main/recipes/';
 
 // Helper: Compress src folder into dest file
 const compress = (src, dest) =>
@@ -25,7 +29,11 @@ const compress = (src, dest) =>
         tar: {
           // Don't package .DS_Store files and .md files
           ignore(name) {
-            return path.basename(name) === '.DS_Store' || name.endsWith('.md');
+            return (
+              path.basename(name) === '.DS_Store' ||
+              name.endsWith('.md') ||
+              name.endsWith('.svg')
+            );
           },
         },
       },
@@ -43,6 +51,7 @@ const compress = (src, dest) =>
 (async () => {
   // Create paths to important files
   const repoRoot = path.join(__dirname, '..');
+  const tempFolder = path.join(repoRoot, 'temp');
   const recipesFolder = path.join(repoRoot, 'recipes');
   const outputFolder = path.join(repoRoot, 'archives');
   const allJson = path.join(repoRoot, 'all.json');
@@ -53,6 +62,8 @@ const compress = (src, dest) =>
 
   await fs.ensureDir(outputFolder);
   await fs.emptyDir(outputFolder);
+  await fs.ensureDir(tempFolder);
+  await fs.emptyDir(tempFolder);
   await fs.remove(allJson);
 
   const git = await simpleGit(repoRoot);
@@ -68,7 +79,7 @@ const compress = (src, dest) =>
 
   for (const recipe of availableRecipes) {
     const recipeSrc = path.join(recipesFolder, recipe);
-    const mandatoryFiles = ['package.json', 'icon.svg', 'webview.js'];
+    const mandatoryFiles = ['package.json', 'webview.js'];
 
     // Check that each mandatory file exists
     for (const file of mandatoryFiles) {
@@ -179,6 +190,7 @@ const compress = (src, dest) =>
       'repository',
       'aliases',
       'config',
+      'defaultIcon',
     ]);
     const unrecognizedKeys = topLevelKeys.filter(
       x => !knownTopLevelKeys.has(x),
@@ -276,8 +288,46 @@ const compress = (src, dest) =>
       unsuccessful += 1;
     }
 
+    // Copy recipe to temp folder
+    // eslint-disable-next-line no-await-in-loop
+    await fs.copy(recipeSrc, path.join(tempFolder, config.id), {
+      filter: src => !src.endsWith('icon.svg'),
+    });
+
+    if (!config.defaultIcon) {
+      // Check if icon.svg exists
+      // eslint-disable-next-line no-await-in-loop
+      if (!(await fs.exists(path.join(recipeSrc, 'icon.svg')))) {
+        console.log(
+          `⚠️ Couldn't package "${recipe}": The recipe doesn't contain a "icon.svg" or "defaultIcon" in package.json`,
+        );
+        unsuccessful += 1;
+      }
+
+      // eslint-disable-next-line no-await-in-loop
+      const tempPackage = await fs.readJSON(
+        path.join(tempFolder, config.id, 'package.json'),
+      );
+      tempPackage.defaultIcon = `${repo}${config.id}/icon.svg`;
+
+      // eslint-disable-next-line no-await-in-loop
+      await fs.writeJSON(
+        path.join(tempFolder, config.id, 'package.json'),
+        tempPackage,
+        // JSON.stringify(tempPackage, null, 2),
+        {
+          spaces: 2,
+          EOL: '\n',
+        },
+      );
+    }
+
     // Package to .tar.gz
-    compress(recipeSrc, path.join(outputFolder, `${config.id}.tar.gz`));
+    // eslint-disable-next-line no-await-in-loop
+    await compress(
+      path.join(tempFolder, config.id),
+      path.join(outputFolder, `${config.id}.tar.gz`),
+    );
 
     // Add recipe to all.json
     const isFeatured = featuredRecipes.includes(config.id);
@@ -305,8 +355,14 @@ const compress = (src, dest) =>
     EOL: '\n',
   });
 
+  // Clean up
+  await fs.remove(tempFolder);
+
+  // Capture the end time
+  const endTime = new Date();
+
   console.log(
-    `✅ Successfully packaged and added ${recipeList.length} recipes (${unsuccessful} unsuccessful recipes)`,
+    `✅ Successfully packaged and added ${recipeList.length} recipes (${unsuccessful} unsuccessful recipes) in ${(endTime - startTime) / 1000} seconds`,
   );
 
   if (unsuccessful > 0) {
