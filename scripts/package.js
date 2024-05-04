@@ -341,7 +341,7 @@ const compress = (src, dest) =>
   recipeList = recipeList.sort((a, b) => {
     const textA = a.id.toLowerCase();
     const textB = b.id.toLowerCase();
-    return textA < textB ? -1 : (textA > textB ? 1 : 0);
+    return textA < textB ? -1 : textA > textB ? 1 : 0;
   });
   fs.writeJsonSync(allJson, recipeList, {
     spaces: 2,
