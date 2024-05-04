@@ -1,7 +1,7 @@
 {
   "id": "awork",
   "name": "Awork",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "config": {
     "serviceURL": "https://{teamId}.awork.io",

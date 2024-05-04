@@ -1,7 +1,7 @@
 {
   "id": "fandom",
   "name": "Fandom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "config": {
     "serviceURL": "https://www.fandom.com"

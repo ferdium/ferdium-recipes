@@ -1,7 +1,7 @@
 {
   "id": "google-spreadsheets",
   "name": "Google Spreadsheets",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "license": "MIT",
   "config": {
     "serviceURL": "https://docs.google.com/spreadsheets/u/0/"

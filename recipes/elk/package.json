@@ -1,7 +1,7 @@
 {
   "id": "elk",
   "name": "Elk",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "repository": "https://github.com/jalil-salame/ferdium-elk-recipe",
   "config": {

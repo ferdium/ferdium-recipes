@@ -1,7 +1,7 @@
 {
   "id": "google-drive",
   "name": "Google Drive",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "repository": "https://github.com/BrianGilbert/franz-recipe-tawk",
   "license": "MIT",
   "config": {
