@@ -1360,6 +1360,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Xaviju",
+      "name": "Xaviju",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1343702?v=4",
+      "profile": "https://github.com/Xaviju",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
