@@ -56,15 +56,15 @@ const compress = (src, dest) =>
   const outputFolder = path.join(repoRoot, 'archives');
   const allJson = path.join(repoRoot, 'all.json');
   const featuredFile = path.join(repoRoot, 'featured.json');
-  const featuredRecipes = await fs.readJSON(featuredFile);
+  const featuredRecipes = fs.readJSONSync(featuredFile);
   let recipeList = [];
   let unsuccessful = 0;
 
-  await fs.ensureDir(outputFolder);
-  await fs.emptyDir(outputFolder);
-  await fs.ensureDir(tempFolder);
-  await fs.emptyDir(tempFolder);
-  await fs.remove(allJson);
+  fs.ensureDirSync(outputFolder);
+  fs.emptyDirSync(outputFolder);
+  fs.ensureDirSync(tempFolder);
+  fs.emptyDirSync(tempFolder);
+  fs.removeSync(allJson);
 
   const git = await simpleGit(repoRoot);
   const isGitRepo = await git.checkIsRepo();
@@ -84,8 +84,7 @@ const compress = (src, dest) =>
     // Check that each mandatory file exists
     for (const file of mandatoryFiles) {
       const filePath = path.join(recipeSrc, file);
-      // eslint-disable-next-line no-await-in-loop
-      if (!(await fs.pathExists(filePath))) {
+      if (!fs.pathExistsSync(filePath)) {
         console.log(
           `⚠️ Couldn't package "${recipe}": Folder doesn't contain a "${file}".`,
         );
@@ -110,8 +109,7 @@ const compress = (src, dest) =>
 
     // Check that user.js does not exist
     const userJs = path.join(recipeSrc, 'user.js');
-    // eslint-disable-next-line no-await-in-loop
-    if (await fs.pathExists(userJs)) {
+    if (fs.pathExistsSync(userJs)) {
       console.log(
         `⚠️ Couldn't package "${recipe}": Folder contains a "user.js".`,
       );
@@ -121,8 +119,7 @@ const compress = (src, dest) =>
 
     // Read package.json
     const packageJson = path.join(recipeSrc, 'package.json');
-    // eslint-disable-next-line no-await-in-loop
-    const config = await fs.readJson(packageJson);
+    const config = fs.readJsonSync(packageJson);
 
     // Make sure it contains all required fields
     if (!config) {
@@ -276,8 +273,9 @@ const compress = (src, dest) =>
     }
 
     if (configErrors.length > 0) {
-      console.log(`⚠️ Couldn't package "${recipe}": There were errors in the recipe's package.json:
-  ${configErrors.reduce((str, err) => `${str}\n${err}`)}`);
+      console.log(
+        `⚠️ Couldn't package "${recipe}": There were errors in the recipe's package.json: ${configErrors.reduce((str, err) => `${str}\n${err}`)}`,
+      );
       unsuccessful += 1;
     }
 
@@ -289,29 +287,25 @@ const compress = (src, dest) =>
     }
 
     // Copy recipe to temp folder
-    // eslint-disable-next-line no-await-in-loop
-    await fs.copy(recipeSrc, path.join(tempFolder, config.id), {
+    fs.copySync(recipeSrc, path.join(tempFolder, config.id), {
       filter: src => !src.endsWith('icon.svg'),
     });
 
     if (!config.defaultIcon) {
       // Check if icon.svg exists
-      // eslint-disable-next-line no-await-in-loop
-      if (!(await fs.exists(path.join(recipeSrc, 'icon.svg')))) {
+      if (!fs.existsSync(path.join(recipeSrc, 'icon.svg'))) {
         console.log(
           `⚠️ Couldn't package "${recipe}": The recipe doesn't contain a "icon.svg" or "defaultIcon" in package.json`,
         );
         unsuccessful += 1;
       }
 
-      // eslint-disable-next-line no-await-in-loop
-      const tempPackage = await fs.readJSON(
+      const tempPackage = fs.readJSONSync(
         path.join(tempFolder, config.id, 'package.json'),
       );
       tempPackage.defaultIcon = `${repo}${config.id}/icon.svg`;
 
-      // eslint-disable-next-line no-await-in-loop
-      await fs.writeJSON(
+      fs.writeJSONSync(
         path.join(tempFolder, config.id, 'package.json'),
         tempPackage,
         // JSON.stringify(tempPackage, null, 2),
@@ -350,13 +344,13 @@ const compress = (src, dest) =>
     const textB = b.id.toLowerCase();
     return textA < textB ? -1 : textA > textB ? 1 : 0;
   });
-  await fs.writeJson(allJson, recipeList, {
+  fs.writeJsonSync(allJson, recipeList, {
     spaces: 2,
     EOL: '\n',
   });
 
   // Clean up
-  await fs.remove(tempFolder);
+  fs.removeSync(tempFolder);
 
   // Capture the end time
   const endTime = new Date();
