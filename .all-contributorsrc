@@ -1351,6 +1351,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "YaMoef",
+      "name": "Brent Claessens",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34712836?v=4",
+      "profile": "https://github.com/YaMoef",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
