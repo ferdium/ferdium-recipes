@@ -1,7 +1,7 @@
 {
   "id": "google-calendar",
   "name": "Google Calendar",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "license": "MIT",
   "aliases": [
     "google-calendar",

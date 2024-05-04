@@ -1,7 +1,7 @@
 {
   "id": "tiktok",
   "name": "Tiktok",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "config": {
     "serviceURL": "https://tiktok.com"

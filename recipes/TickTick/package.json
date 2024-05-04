@@ -1,7 +1,7 @@
 {
   "id": "TickTick",
   "name": "TickTick",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "license": "MIT",
   "config": {
     "serviceURL": "https://www.ticktick.com/#p/inbox/tasks"

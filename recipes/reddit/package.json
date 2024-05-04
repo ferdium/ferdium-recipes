@@ -1,7 +1,7 @@
 {
   "id": "reddit",
   "name": "Reddit",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "license": "MIT",
   "repository": "https://github.com/ferdium/ferdium-recipes",
   "config": {

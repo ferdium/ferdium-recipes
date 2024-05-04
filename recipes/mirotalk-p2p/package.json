@@ -1,7 +1,7 @@
 {
   "id": "mirotalk-p2p",
   "name": "MiroTalk P2P",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "config": {
     "serviceURL": "https://p2p.mirotalk.com",

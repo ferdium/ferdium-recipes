@@ -1,7 +1,7 @@
 {
   "id": "nextcloud-deck",
   "name": "Nextcloud Deck",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "repository": "https://github.com/mindcombatant/ferdium-recipes/tree/master/recipes/nextcloud-deck/",
   "config": {
