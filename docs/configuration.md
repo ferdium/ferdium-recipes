@@ -32,6 +32,9 @@ Link to your Github, Gitlab or Bitbucket public repository. Not used in the appl
 `array[string]` **aliases**<br />
 The list of alternate names that this recipe can be called
 
+`string` **defaultIcon**<br /> (DEFAULT: undefined)
+A URL for the default icon of the recipe. If not provided, then the user must add an SVG file to the root with the name `icon.svg` to serve as the default icon.
+
 `object` **config** _mandatory_<br />
 This is the Ferdium-specific integration config.
 
