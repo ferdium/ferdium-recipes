@@ -1378,6 +1378,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "sakarimov",
+      "name": "sulthankarimov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5676876?v=4",
+      "profile": "https://sulthankarimov.my.id",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
