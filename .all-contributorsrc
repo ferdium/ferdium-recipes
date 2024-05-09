@@ -1360,6 +1360,24 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Xaviju",
+      "name": "Xaviju",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1343702?v=4",
+      "profile": "https://github.com/Xaviju",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "real-or-random",
+      "name": "Tim Ruffing",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1071625?v=4",
+      "profile": "https://github.com/real-or-random",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
