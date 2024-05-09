@@ -1,0 +1,9 @@
+{
+  "id": "truelancer",
+  "name": "Truelancer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.truelancer.com/notifications?page=1"
+  }
+}
