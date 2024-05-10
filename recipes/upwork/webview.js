@@ -6,7 +6,9 @@ const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
-    const directMessages = $('li .notification-row .d-inline-block')?.textContent;
+    const directMessages = $(
+      'li .notification-row .d-inline-block',
+    )?.textContent;
 
     Ferdium.setBadge(directMessages);
   };
