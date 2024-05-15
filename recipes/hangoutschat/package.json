@@ -1,7 +1,7 @@
 {
   "id": "hangoutschat",
   "name": "Hangouts Chat",
-  "version": "1.8.3",
+  "version": "1.9.0",
   "license": "MIT",
   "aliases": [
     "google-chat",
