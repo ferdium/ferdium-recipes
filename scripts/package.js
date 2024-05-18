@@ -84,7 +84,7 @@ const compress = (src, dest) =>
     // Check that each mandatory file exists
     for (const file of mandatoryFiles) {
       const filePath = path.join(recipeSrc, file);
-      if (!fs.pathExistsSync(filePath)) {
+      if (!fs.existsSync(filePath)) {
         console.log(
           `⚠️ Couldn't package "${recipe}": Folder doesn't contain a "${file}".`,
         );
@@ -97,19 +97,21 @@ const compress = (src, dest) =>
 
     // Check icons sizes
     const svgIcon = path.join(recipeSrc, 'icon.svg');
-    const svgSize = sizeOf(svgIcon);
-    const svgHasRightSize = svgSize.width === svgSize.height;
-    if (!svgHasRightSize) {
-      console.log(
-        `⚠️ Couldn't package "${recipe}": Recipe SVG icon isn't a square`,
-      );
-      unsuccessful += 1;
-      continue;
+    if (fs.existsSync(svgIcon)) {
+      const svgSize = sizeOf(svgIcon);
+      const svgHasRightSize = svgSize.width === svgSize.height;
+      if (!svgHasRightSize) {
+        console.log(
+          `⚠️ Couldn't package "${recipe}": Recipe SVG icon isn't a square`,
+        );
+        unsuccessful += 1;
+        continue;
+      }
     }
 
     // Check that user.js does not exist
     const userJs = path.join(recipeSrc, 'user.js');
-    if (fs.pathExistsSync(userJs)) {
+    if (fs.existsSync(userJs)) {
       console.log(
         `⚠️ Couldn't package "${recipe}": Folder contains a "user.js".`,
       );
@@ -293,14 +295,14 @@ const compress = (src, dest) =>
 
     if (!config.defaultIcon) {
       // Check if icon.svg exists
-      if (!fs.existsSync(path.join(recipeSrc, 'icon.svg'))) {
+      if (!fs.existsSync(svgIcon)) {
         console.log(
           `⚠️ Couldn't package "${recipe}": The recipe doesn't contain a "icon.svg" or "defaultIcon" in package.json`,
         );
         unsuccessful += 1;
       }
 
-      const tempPackage = fs.readJSONSync(
+      const tempPackage = fs.readJsonSync(
         path.join(tempFolder, config.id, 'package.json'),
       );
       tempPackage.defaultIcon = `${repo}${config.id}/icon.svg`;
