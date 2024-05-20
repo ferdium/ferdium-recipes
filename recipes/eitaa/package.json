@@ -1,0 +1,9 @@
+{
+  "id": "Eitaa",
+  "name": "Eitaa",
+  "version": "1.0.1",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://web.eitaa.com/"
+  }
+}
