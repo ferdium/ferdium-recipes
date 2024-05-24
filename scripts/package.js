@@ -256,7 +256,9 @@ const compress = (src, dest) =>
             result.insertions !== 0 ||
             result.deletions !== 0)
         ) {
-          const pkgJsonRelative = path.relative(repoRoot, packageJson);
+          const pkgJsonRelative = path.normalize(
+            path.relative(repoRoot, packageJson),
+          );
           if (result.files.some(({ file }) => file === pkgJsonRelative)) {
             git.diff(pkgJsonRelative, (_diffErr, diffResult) => {
               if (diffResult && !pkgVersionChangedMatcher.test(diffResult)) {
