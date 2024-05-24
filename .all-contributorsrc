@@ -1387,6 +1387,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Shampra",
+      "name": "Shampra",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16141040?v=4",
+      "profile": "https://github.com/Shampra",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
