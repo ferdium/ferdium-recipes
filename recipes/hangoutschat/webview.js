@@ -14,9 +14,6 @@ module.exports = Ferdium => {
       'https://accounts.google.com/AccountChooser?continue=https://chat.google.com/?referrer=2';
   }
 
-  // class corresponding to the red badge that is visible for direct messages
-  const directMessageSelector = 'div.V6.CL.su.ahD.X9.Y2 span.akt span.XU';
-
   // class corresponding to the bold text that is visible for room messages
   const indirectMessageSelector = 'div.V6.CL.V2.X9.Y2 span.akt span.XU';
 
@@ -25,10 +22,10 @@ module.exports = Ferdium => {
     let directCount;
     let indirectCount;
 
-    const directCountSelector = document.querySelector(directMessageSelector);
-    if (directCountSelector) {
-      directCount = Number(directCountSelector.textContent);
-    }
+    // get unread messages count
+    directCount = document.querySelectorAll(
+      'link[href^="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon_chat_new_notif_"][href$=".ico"]',
+    ).length;
 
     // get unread indirect messages
     const indirectCountSelector = document.querySelector(

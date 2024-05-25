@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-152-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-153-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -232,6 +232,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/Xaviju' title='Xaviju: code'><img src='https://avatars.githubusercontent.com/u/1343702?v=4' alt='Xaviju' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/real-or-random' title='Tim Ruffing: code'><img src='https://avatars.githubusercontent.com/u/1071625?v=4' alt='real-or-random' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://sulthankarimov.my.id' title='sulthankarimov: code'><img src='https://avatars.githubusercontent.com/u/5676876?v=4' alt='sakarimov' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/Shampra' title='Shampra: code'><img src='https://avatars.githubusercontent.com/u/16141040?v=4' alt='Shampra' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
