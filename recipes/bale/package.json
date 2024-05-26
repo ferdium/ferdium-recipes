@@ -1,0 +1,9 @@
+{
+  "id": "bale",
+  "name": "Bale",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://web.bale.ai/"
+  }
+}
