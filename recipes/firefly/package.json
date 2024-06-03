@@ -1,0 +1,10 @@
+{
+  "id": "firefly",
+  "name": "Firefly",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "hasCustomUrl": true,
+    "serviceURL": "https://{firefly}/"
+  }
+}
