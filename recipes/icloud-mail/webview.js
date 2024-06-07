@@ -11,7 +11,7 @@ module.exports = Ferdium => {
       `.mailbox-list-pane .mailbox-list .mailbox-list-item:first-child p:last-child`,
     );
     if (!unread) return;
-    const count = Number.parseInt(unread.textContent) ?? 0;
+    const count = Ferdium.safePerseInt(unread.textContent) ?? 0;
     Ferdium.setBadge(count);
   };
 
