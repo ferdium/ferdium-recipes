@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-154-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-155-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -234,6 +234,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://sulthankarimov.my.id' title='sulthankarimov: code'><img src='https://avatars.githubusercontent.com/u/5676876?v=4' alt='sakarimov' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/Shampra' title='Shampra: code'><img src='https://avatars.githubusercontent.com/u/16141040?v=4' alt='Shampra' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='http://xmha97.github.io' title='Muhammadhussein Ammari: code'><img src='https://avatars.githubusercontent.com/u/23485114?v=4' alt='xmha97' style='width:100px;'/></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href='http://herculino.com' title='Herculino Trotta: code'><img src='https://avatars.githubusercontent.com/u/10510126?v=4' alt='eitchtee' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
