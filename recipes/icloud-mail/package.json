@@ -1,0 +1,9 @@
+{
+  "id": "icloud-mail",
+  "name": "iCloud Mail",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.icloud.com/mail/"
+  }
+}
