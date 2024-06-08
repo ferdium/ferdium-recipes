@@ -1414,6 +1414,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ismailkarsli",
+      "name": "İsmail Karslı",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17887754?v=4",
+      "profile": "https://ismail.karsli.net/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
