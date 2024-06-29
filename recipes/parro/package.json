@@ -1,0 +1,11 @@
+{
+  "id": "parro",
+  "name": "Parro",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://talk.parro.com/",
+    "hasDirectMessages": true,
+    "hasNotificationSound": true
+  }
+}
