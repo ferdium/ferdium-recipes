@@ -17,6 +17,5 @@ module.exports = Ferdium => {
     Ferdium.setBadge(direct, indirect);
   }
 
-  Ferdium.injectCSS(_path.join(__dirname, 'darkmode.css'));
   Ferdium.loop(getMessages);
 };
