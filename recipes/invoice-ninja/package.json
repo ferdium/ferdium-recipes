@@ -1,9 +1,11 @@
 {
   "id": "invoice-ninja",
   "name": "Invoice Ninja",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://invoicing.co/#/"
+    "serviceURL": "https://invoicing.co/#/",
+    "hasHostedOption": true,
+    "hasCustomUrl": true
   }
 }
