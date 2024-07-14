@@ -5,15 +5,15 @@
     "doc": "docs"
   },
   "engines": {
-    "node": "20.15.0",
-    "pnpm": "9.4.0"
+    "node": "20.15.1",
+    "pnpm": "9.5.0"
   },
   "volta": {
-    "node": "20.15.0",
-    "pnpm": "9.4.0"
+    "node": "20.15.1",
+    "pnpm": "9.5.0"
   },
   "engine-strict": true,
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.5.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
@@ -49,7 +49,7 @@
     "image-size": "1.0.2",
     "is-ci": "3.0.1",
     "open": "10.1.0",
-    "prettier": "3.3.2",
+    "prettier": "3.3.3",
     "simple-git": "3.25.0",
     "targz": "1.0.1"
   }
