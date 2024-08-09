@@ -5,15 +5,15 @@
     "doc": "docs"
   },
   "engines": {
-    "node": "20.15.1",
-    "pnpm": "9.5.0"
+    "node": "20.16.0",
+    "pnpm": "9.7.0"
   },
   "volta": {
-    "node": "20.15.1",
-    "pnpm": "9.5.0"
+    "node": "20.16.0",
+    "pnpm": "9.7.0"
   },
   "engine-strict": true,
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.7.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
@@ -45,7 +45,7 @@
     "eslint": "8.57.0",
     "eslint-plugin-unicorn": "51.0.1",
     "fs-extra": "11.2.0",
-    "husky": "9.0.11",
+    "husky": "9.1.4",
     "image-size": "1.0.2",
     "is-ci": "3.0.1",
     "open": "10.1.0",
