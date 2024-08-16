@@ -11,7 +11,7 @@ module.exports = Ferdium => {
       ?.textContent?.match(/\d+/);
     Ferdium.setBadge(
       Ferdium.safeParseInt(
-        document.querySelector('.filter-list.js-notification-inboxes .count')
+        document.querySelector('li[data-item-id="inbox"] .Counter')
           ?.textContent,
       ) + Ferdium.safeParseInt(newCountMatch ? newCountMatch[0] : 0),
       document.querySelectorAll(
