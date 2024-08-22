@@ -126,4 +126,9 @@ module.exports = (Ferdium, settings) => {
     },
     true,
   );
+
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    Ferdium.injectCSS(_path.default.join(__dirname, 'darkmode.css'));
+  }
+
 };
