@@ -1,0 +1,11 @@
+{
+  "id": "voetbal-nl",
+  "name": "Voetbal",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://voetbal.nl/inloggen",
+    "hasDirectMessages": true,
+    "hasNotificationSound": true
+  }
+}
