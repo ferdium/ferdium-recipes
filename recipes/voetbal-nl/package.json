@@ -1,7 +1,7 @@
 {
   "id": "voetbal-nl",
   "name": "Voetbal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "config": {
     "serviceURL": "https://voetbal.nl/inloggen",
