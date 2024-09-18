@@ -1,7 +1,7 @@
 /*
 @name           Google Calendar Redesigned (Dark Mode)
 @namespace      Globex Designs, Inc.
-@version        20240706.0.1
+@version        20240912.0.1
 @homepageURL    https://github.com/EvHaus/google-redesigned
 @updateURL      https://raw.githubusercontent.com/EvHaus/google-redesigned/master/css/calendar.user.css
 @license        CC-BY-4.0
@@ -64,12 +64,18 @@
 		}
 
         /* Scroll Bar Hover */
-        ::-webkit-scrollbar-thumb:hover, .mDPmMe::-webkit-scrollbar-thumb:hover,  .WefNYe::-webkit-scrollbar-thumb:hover {
+        ::-webkit-scrollbar-thumb:hover,
+		.mDPmMe::-webkit-scrollbar-thumb:hover,
+		.WefNYe::-webkit-scrollbar-thumb:hover {
+			/* stylelint-disable-next-line color-function-notation */
 			background: hsl(from var(--SCROLLBAR) h s l / 0.8);
 		}
     
         /* Scroll Bar Clicked */
-        ::-webkit-scrollbar-thumb:active, .mDPmMe::-webkit-scrollbar-thumb:active, .WefNYe::-webkit-scrollbar-thumb:active {
+        ::-webkit-scrollbar-thumb:active,
+		.mDPmMe::-webkit-scrollbar-thumb:active,
+		.WefNYe::-webkit-scrollbar-thumb:active {
+            /* stylelint-disable-next-line color-function-notation */
             background: hsl(from var(--SCROLLBAR) h s l / 0.7);
         }
 	
@@ -885,7 +891,9 @@
                 }
 	
 		/* Body */
-		.kma42e {
+		.kma42e,
+        .mR2qle /* 2024-09 Update */
+        {
 			background: var(--GR6) !important;
 			color: var(--GR19) !important
 		}
@@ -949,7 +957,8 @@
 			
 			.vfzv a:link:hover,
 			.vfzv a:link:focus,
-            .vfzv a:visited:hover, 
+            .vfzv a:visited:hover,
+ 
             .vfzv a:visited:focus {
 				color: var(--GR19) !important
 			}
@@ -1152,14 +1161,14 @@
 			.sgEL6b { color: var(--GR15) !important }
 		
 			/* "Yes" button */
-			.qydq8.KKjvXb [data-button-type=actionButton],
-			.qydq8.KKjvXb [data-button-type=menuButton] {
+			.qydq8.KKjvXb [data-button-type="actionButton"],
+			.qydq8.KKjvXb [data-button-type="menuButton"] {
 				background: var(--GR6) !important;
 				border-color: var(--GR10) !important
 			}
 	
-				.qydq8.KKjvXb [data-button-type=actionButton]:hover,
-				.qydq8.KKjvXb [data-button-type=menuButton]:hover {
+				.qydq8.KKjvXb [data-button-type="actionButton"]:hover,
+				.qydq8.KKjvXb [data-button-type="menuButton"]:hover {
 					background: var(--GR8) !important;
 				}
 		
@@ -1283,7 +1292,7 @@
         /* When deleting recurring task > "Delete repeating task" modal */
         
             /* Text */
-            .cC1eCc .VfPpkd-cnG4Wd { color: var(--GR15) !important } 
+            .cC1eCc .VfPpkd-cnG4Wd { color: var(--GR15) !important }
 	
 	/* BOOKABLE APPOINTMENT SCHEDULE POPOVER */
 	
