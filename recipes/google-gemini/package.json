@@ -1,0 +1,9 @@
+{
+  "id": "google-gemini",
+  "name": "Google Gemini",
+  "version": "1.0.1",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://gemini.google.com"
+  }
+}

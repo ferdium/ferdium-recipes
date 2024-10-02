@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   clip-rule="evenodd"
+   fill-rule="evenodd"
+   stroke-linejoin="round"
+   stroke-miterlimit="2"
+   viewBox="0 0 1024 1024"
+   version="1.1"
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="swatch3"
+       >
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1"
+       >
+      <stop
+         style="stop-color:#c403a3;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#9f0cc4;stop-opacity:1;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="0"
+       y1="512"
+       x2="1024"
+       y2="512"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.95991019,0,0,0.95991019,20.525985,20.525982)" />
+    <linearGradient
+       xlink:href="#swatch3"
+       id="linearGradient3"
+       x1="0"
+       y1="512"
+       x2="1024"
+       y2="512"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.95991019,0,0,0.95991019,20.525985,20.525982)" />
+  </defs>
+  <rect
+     style="fill:url(#linearGradient2);fill-opacity:1;stroke:url(#linearGradient3);stroke-width:23.0378;stroke-dasharray:none;paint-order:markers fill stroke"
+     id="rect2"
+     width="982.94806"
+     height="982.94806"
+     x="20.525982"
+     y="20.525982"
+     rx="184.30275" />
+  <g
+     fill="var(--theme-text-primary)"
+     fill-rule="nonzero"
+     id="g2"
+     transform="matrix(24.14774,0,0,24.14774,137.54062,302.25012)">
+    <path
+       d="m 26.633,8.69 -3.424,-3.431 1.711,-3.43 5.563,5.575 c 0.709,0.71 0.709,1.861 0,2.572 l -6.847,6.86 c -0.709,0.711 -1.858,0.711 -2.567,0 a 1.821,1.821 0 0 1 0,-2.571 z"
+       fill-opacity="0.64"
+       id="path1"
+       style="fill:#cccccc" />
+    <path
+       d="m 21.07,0.536 a 1.813,1.813 0 0 1 2.568,0 L 24.921,1.822 9.945,16.83 c -0.709,0.71 -1.858,0.71 -2.567,0 L 6.094,15.543 21.071,0.536 Z m -6.418,4.717 -2.567,2.572 -3.424,-3.43 -4.28,4.288 3.424,3.43 -1.71,3.43 L 0.531,9.97 a 1.821,1.821 0 0 1 0,-2.572 L 7.378,0.537 A 1.813,1.813 0 0 1 9.945,0.535 l 4.707,4.717 z"
+       id="path2"
+       style="fill:#f9f9f9" />
+  </g>
+</svg>
