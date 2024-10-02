@@ -1,0 +1,9 @@
+{
+  "id": "daily-dev",
+  "name": "Daily.dev",
+  "version": "1.0.1",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.daily.dev"
+  }
+}
