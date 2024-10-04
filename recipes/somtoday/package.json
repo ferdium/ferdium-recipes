@@ -1,0 +1,11 @@
+{
+  "id": "somtoday",
+  "name": "SomToday",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://inloggen.somtoday.nl",
+    "hasDirectMessages": true,
+    "hasNotificationSound": true
+  }
+}
