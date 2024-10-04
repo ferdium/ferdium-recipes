@@ -1,6 +1,7 @@
 {
   "id": "viva-engage",
   "name": "Viva Engage",
+  "alias": "yammer",
   "version": "1.0.0",
   "license": "MIT",
   "config": {
