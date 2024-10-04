@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-158-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-159-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -240,6 +240,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://ismail.karsli.net/' title='İsmail Karslı: code'><img src='https://avatars.githubusercontent.com/u/17887754?v=4' alt='ismailkarsli' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/richardbeumer' title='Richard Beumer: code'><img src='https://avatars.githubusercontent.com/u/48837088?v=4' alt='richardbeumer' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/Kureii' title='Tomas Adamek: code'><img src='https://avatars.githubusercontent.com/u/50672285?v=4' alt='Kureii' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/marrws' title='Marco Reyes R: code'><img src='https://avatars.githubusercontent.com/u/97241205?v=4' alt='marrws' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
