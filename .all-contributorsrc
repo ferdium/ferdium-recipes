@@ -1432,6 +1432,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Kureii",
+      "name": "Tomas Adamek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50672285?v=4",
+      "profile": "https://github.com/Kureii",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"

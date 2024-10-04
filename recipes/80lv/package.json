@@ -1,0 +1,9 @@
+{
+  "id": "80lv",
+  "name": "80LV",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://80.lv"
+  }
+}
