@@ -8,12 +8,12 @@ module.exports = Ferdium => {
   const getMessages = () => {
     let directMessages = 0;
     let indirectMessages = 0;
-    const notificationElement = document.querySelector(
-      '.yj-notifications-indicator-count',
-    );
-    const newMessagesElement = document.querySelector(
-      '.yj-thread-list--new-messages-notice:not(.is-hidden) .yj-thread-list--new-message-text',
-    );
+    const notificationElement = document.querySelectorAll(
+      'div.badge-136 div.fui-CounterBadge',
+    )[1];
+    const newMessagesElement = document.querySelectorAll(
+      'div.badge-136 div.fui-CounterBadge',
+    )[0];
 
     if (notificationElement) {
       directMessages = Ferdium.safeParseInt(notificationElement.textContent);

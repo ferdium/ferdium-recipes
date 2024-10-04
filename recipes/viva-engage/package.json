@@ -1,0 +1,13 @@
+{
+  "id": "viva-engage",
+  "name": "Viva Engage",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "yammer"
+  ],
+  "config": {
+    "serviceURL": "https://engage.cloud.microsoft",
+    "hasIndirectMessages": true
+  }
+}
