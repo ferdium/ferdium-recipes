@@ -1,0 +1,9 @@
+{
+  "id": "jsoncrack",
+  "name": "JSON Crack",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.jsoncrack.com/"
+  }
+}

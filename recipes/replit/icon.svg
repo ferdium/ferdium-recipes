@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 871.5 871.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f5640c;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="Artwork">
+      <g>
+        <path class="cls-1" d="M435.8,299.7H146.1c-28.3,0-51.2-22.9-51.2-51.2V78.1c0-28.3,22.9-51.2,51.2-51.2h238.4c28.3,0,51.2,22.9,51.2,51.2v221.6Z"/>
+        <path class="cls-1" d="M725.4,572.2h-289.7v-272.6h289.7c28.2,0,51,22.9,51,51v170.3c0,28.3-22.9,51.2-51,51.2Z"/>
+        <path class="cls-1" d="M384.6,845h-238.4c-28.2,0-51-22.9-51-51v-170.3c0-28.2,22.9-51,51-51h289.7v221.6c0,27.8-22.9,50.9-51.2,50.9Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
