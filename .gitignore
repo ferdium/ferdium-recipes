@@ -11,3 +11,4 @@ server*.log
 *.bmp
 *.zwc*
 /all.json
+/temp
