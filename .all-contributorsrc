@@ -1441,6 +1441,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "marrws",
+      "name": "Marco Reyes R",
+      "avatar_url": "https://avatars.githubusercontent.com/u/97241205?v=4",
+      "profile": "https://github.com/marrws",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
