@@ -1,7 +1,7 @@
 {
   "id": "affine",
   "name": "Affine",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "config": {
     "hasCustomUrl": true,
