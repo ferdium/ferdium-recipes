@@ -1,0 +1,9 @@
+{
+  "id": "duckduckgo-ai-chat",
+  "name": "DuckDuckGo AI Chat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://duckduckgo.com/aichat"
+  }
+}
