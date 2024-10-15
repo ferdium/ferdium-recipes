@@ -1450,6 +1450,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "mdSlash",
+      "name": "Haitham Mohamed",
+      "avatar_url": "https://avatars.githubusercontent.com/u/128622475?v=4",
+      "profile": "https://github.com/mdSlash",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
