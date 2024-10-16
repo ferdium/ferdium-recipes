@@ -43,10 +43,13 @@ const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only cont
 (async () => {
   // Folder paths
   const userData =
-    process.env.APPDATA ||
-    (process.platform === 'darwin'
+  process.env.APPDATA || (
+    process.platform === 'win32'
+      ? `${process.env.USERPROFILE}\\AppData\\Roaming\\Ferdium\\recipes\\dev`
+    : process.platform === 'darwin'
       ? `${process.env.HOME}/Library/Application Support`
-      : `${process.env.HOME}/.config`);
+    : `${process.env.HOME}/.config`
+  );
   const recipesFolder = path.join(userData, folderName, 'recipes');
   const devRecipeFolder = path.join(recipesFolder, 'dev');
   const newRecipeFolder = path.join(devRecipeFolder, recipe);
