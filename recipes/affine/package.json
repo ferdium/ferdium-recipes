@@ -1,0 +1,10 @@
+{
+  "id": "affine",
+  "name": "Affine",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "hasCustomUrl": true,
+    "serviceURL": "https://{affine}/"
+  }
+}
