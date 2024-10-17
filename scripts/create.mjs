@@ -43,7 +43,7 @@ const pascalCasedName = toPascalCase(recipe); // PascalCased recipe ID only cont
 (async () => {
   // Folder paths
   const userData =
-  process.env.APPDATA || (  
+  process.env.APPDATA || (
     // Check if this script runs on Windows
     process.platform === 'win32'
       ? `${process.env.USERPROFILE}\\AppData\\Roaming\\Ferdium\\recipes\\dev`
