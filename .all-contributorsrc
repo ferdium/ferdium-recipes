@@ -1495,6 +1495,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "tplobo",
+      "name": "Tiago",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40567154?v=4",
+      "profile": "https://github.com/tplobo",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
