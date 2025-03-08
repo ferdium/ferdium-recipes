@@ -1459,6 +1459,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "stephane-oslo",
+      "name": "stephane-oslo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87529262?v=4",
+      "profile": "https://github.com/stephane-oslo",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
