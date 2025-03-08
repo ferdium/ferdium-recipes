@@ -1,0 +1,10 @@
+{
+  "id": "bycs-messenger",
+  "name": "Bycs-Messenger",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/BlackDemon1000/ferdium-recipes.git",
+  "config": {
+    "serviceURL": "https://messenger.bycs.de/#/home"
+  }
+}
