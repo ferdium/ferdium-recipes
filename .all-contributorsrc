@@ -1468,6 +1468,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ndpm13",
+      "name": "Naz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/123460560?v=4",
+      "profile": "http://ch-naseem.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
