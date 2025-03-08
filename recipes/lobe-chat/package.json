@@ -1,0 +1,11 @@
+{
+  "id": "lobe-chat",
+  "name": "LobeChat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://lobechat.com/chat",
+    "hasHostedOption": true,
+    "hasCustomUrl": true
+  }
+}
