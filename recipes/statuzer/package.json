@@ -1,0 +1,9 @@
+{
+  "id": "statuzer",
+  "name": "Statuzer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://statuzer.com"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "mightytext",
+  "name": "MightyText",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://mightytext.net/web"
+  }
+}

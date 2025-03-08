@@ -1,0 +1,11 @@
+{
+  "id": "1password",
+  "name": "1Password",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://my.1password.com/signin/",
+    "hasNotificationSound": false,
+    "hasIndirectMessages": false
+  }
+}
