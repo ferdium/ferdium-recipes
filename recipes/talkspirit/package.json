@@ -1,0 +1,15 @@
+{
+  "id": "talkspirit",
+  "name": "talkspirit",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/tplobo/ferdium-recipes.git",
+  "config": {
+    "serviceURL": "https://{teamId}.talkspirit.com",
+    "hasTeamId": true,
+    "urlInputPrefix": "worspace:",
+    "urlInputSuffix": ".talkspirit.com",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  }
+}
