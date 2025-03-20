@@ -10,4 +10,13 @@ module.exports = Ferdium => {
   };
 
   Ferdium.loop(getMessages);
+
+  const refreshMinutes = 5;
+
+  setTimeout(
+    () => {
+      window.location.reload();
+    },
+    1000 * 60 * refreshMinutes,
+  );
 };
