@@ -1504,6 +1504,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "L0Lock",
+      "name": "Lauloque",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16049822?v=4",
+      "profile": "http://loic.dautry.fr",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
