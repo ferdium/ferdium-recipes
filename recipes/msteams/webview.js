@@ -8,7 +8,7 @@ module.exports = Ferdium => {
   const getMessages = () => {
     let messages = 0;
 
-    const isTeamsV2 = window.location.href.includes('/v2/');
+    const isTeamsV2 = window.location.href.includes('/v2/') || window.location.href.endsWith("/v2");
 
     let badges = document.querySelectorAll(
       '.activity-badge.dot-activity-badge .activity-badge',
