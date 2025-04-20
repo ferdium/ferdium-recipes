@@ -11,12 +11,42 @@ module.exports = Ferdium => {
 
   Ferdium.loop(getMessages);
 
+  // refresh page if inactive
+
   const refreshMinutes = 5;
 
-  setTimeout(
-    () => {
-      window.location.reload();
-    },
-    1000 * 60 * refreshMinutes,
-  );
+  let timeout;
+  let active;
+
+  const onFocus = focus => {
+    if (active === focus) {
+      return;
+    }
+
+    active = focus;
+
+    if (active && timeout != null) {
+      // console.log("clearing timeout");
+      clearTimeout(timeout);
+      timeout = null;
+    } else if (!active && timeout == null) {
+      // console.log("starting timeout");
+      timeout = setTimeout(
+        () => {
+          window.location.reload();
+        },
+        1000 * 60 * refreshMinutes,
+      );
+    }
+  };
+
+  window.addEventListener('blur', () => {
+    onFocus(false);
+  });
+
+  window.addEventListener('focus', () => {
+    onFocus(true);
+  });
+
+  onFocus(document.hasFocus());
 };
