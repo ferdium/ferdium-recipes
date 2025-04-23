@@ -1,0 +1,10 @@
+{
+  "id": "it-tools",
+  "name": "IT-Tools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://it-tools.tech"
+  },
+  "defaultIcon": "https://it-tools.tech/favicon-32x32.png"
+}
