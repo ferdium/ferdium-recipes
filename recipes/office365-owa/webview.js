@@ -34,17 +34,14 @@ module.exports = (Ferdium, settings) => {
       );
     } else {
       // new app
-      directUnreadCount =
-        settings.onlyShowFavoritesInUnreadCount === true
-          ? collectCounts('div[role=tree]', 0)
-          : collectCounts('div[role=tree]', 1);
+      directUnreadCount = settings.onlyShowFavoritesInUnreadCount === true
+          ? collectCounts('div[role=tree] div[role=group]', 0)
+          : collectCounts('div[role=tree] div[role=group]', 1);
 
       indirectUnreadCount = collectCounts('div[role=tree]:nth-child(4)'); // groups
     }
-
     Ferdium.setBadge(directUnreadCount, indirectUnreadCount);
   };
   Ferdium.loop(getMessages);
-
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
