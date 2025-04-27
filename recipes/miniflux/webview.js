@@ -11,42 +11,23 @@ module.exports = Ferdium => {
 
   Ferdium.loop(getMessages);
 
-  // refresh page if inactive
+  // only reload page if not reading an entry or in settings
+
+  if (
+    window.location.pathname.includes('/entry/') ||
+    window.location.pathname == '/settings'
+  ) {
+    return;
+  }
 
   const refreshMinutes = 5;
 
-  let timeout;
-  let active;
+  // console.log("after "+refreshMinutes+" minutes")
 
-  const onFocus = focus => {
-    if (active === focus) {
-      return;
-    }
-
-    active = focus;
-
-    if (active && timeout != null) {
-      // console.log("clearing timeout");
-      clearTimeout(timeout);
-      timeout = null;
-    } else if (!active && timeout == null) {
-      // console.log("starting timeout");
-      timeout = setTimeout(
-        () => {
-          window.location.reload();
-        },
-        1000 * 60 * refreshMinutes,
-      );
-    }
-  };
-
-  window.addEventListener('blur', () => {
-    onFocus(false);
-  });
-
-  window.addEventListener('focus', () => {
-    onFocus(true);
-  });
-
-  onFocus(document.hasFocus());
+  setTimeout(
+    () => {
+      window.location.reload();
+    },
+    1000 * 60 * refreshMinutes,
+  );
 };
