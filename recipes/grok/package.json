@@ -1,0 +1,9 @@
+{
+  "id": "grok",
+  "name": "Grok",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://grok.com"
+  }
+}
