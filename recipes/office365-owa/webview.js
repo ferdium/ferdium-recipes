@@ -10,7 +10,7 @@ module.exports = (Ferdium, settings) => {
     const foldersElement = document.querySelector(selector);
     if (foldersElement) {
       const allScreenReaders = foldersElement.querySelectorAll(
-        'span.screenReaderOnly',
+        '[aria-labelledby*="primaryMailboxRoot"] span.screenReaderOnly',
       );
       for (const child of allScreenReaders) {
         if (child.previousSibling) {
