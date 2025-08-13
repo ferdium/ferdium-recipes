@@ -5,12 +5,28 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
-  // TODO: If your SNAME service has unread messages, uncomment these lines to implement the logic for updating the badges
-  // const getMessages = () => {
-  //   // TODO: Insert your notification-finding code here
-  //   Ferdium.setBadge(0, 0);
-  // };
-  // Ferdium.loop(getMessages);
+  const getMessages = () => {
+    const hasUnreads = !!document.querySelector(
+      '.unread-icon,.contact aside p',
+    );
+    const count = document
+      .querySelectorAll('.contact aside p')
+      .values()
+      .map(el => Ferdium.safeParseInt(el.textContent) || 1)
+      .reduce((a, b) => a + b, 0);
+
+    Ferdium.setBadge(count || +hasUnreads);
+  };
+
+  const getDialogTitle = () => {
+    const username = location.pathname.match(/^\/inbox\/([^/]+)/)?.[1];
+    Ferdium.setDialogTitle(username ?? null);
+  };
+
+  Ferdium.loop(() => {
+    getMessages();
+    getDialogTitle();
+  });
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
