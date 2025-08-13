@@ -5,15 +5,15 @@
     "doc": "docs"
   },
   "engines": {
-    "node": "22.14.0",
-    "pnpm": "10.4.0"
+    "node": "22.18.0",
+    "pnpm": "10.14.0"
   },
   "volta": {
-    "node": "22.14.0",
-    "pnpm": "10.4.0"
+    "node": "22.18.0",
+    "pnpm": "10.14.0"
   },
   "engine-strict": true,
-  "packageManager": "pnpm@10.4.0",
+  "packageManager": "pnpm@10.14.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "is-ci || husky install",
