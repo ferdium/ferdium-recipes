@@ -1,12 +1,14 @@
 {
   "id": "azure-devops",
   "name": "Azure DevOps",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "license": "MIT",
   "aliases": [
     "azdo"
   ],
   "config": {
-    "serviceURL": "https://dev.azure.com/"
+    "serviceURL": "https://dev.azure.com/{teamId}",
+    "hasTeamId": true,
+    "urlInputPrefix": "dev.azure.com/"
   }
 }
