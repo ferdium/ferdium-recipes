@@ -1,7 +1,7 @@
 {
   "id": "notion-mail",
   "name": "Notion Mail",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://mail.notion.so"
