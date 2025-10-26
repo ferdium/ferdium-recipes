@@ -5,6 +5,9 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
+  // Added: persist Google Calendar session data across Ferdium restarts
+  Ferdium.setDefaultPartition('persist:google-calendar');
+
   // if the user is on googlecalendar landing page, go to the login page.
   if (
     location.hostname === 'workspace.google.com' &&
@@ -21,6 +24,17 @@ module.exports = Ferdium => {
   Ferdium.injectJSUnsafe(
     'https://cdn.statically.io/gh/ferdium/ferdium-recipes/main/recipes/google-calendar/webview-unsave.js',
   );
+
+  // Added: keep Google OAuth/login inside Ferdium by overriding target="_blank" links
+  const fixGoogleLinks = () => {
+    const links = document.querySelectorAll('a[target="_blank"]');
+    links.forEach(link => link.setAttribute('target', '_self'));
+  };
+  fixGoogleLinks();
+  new MutationObserver(fixGoogleLinks).observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
 
   Ferdium.handleDarkMode(isEnabled => {
     const cssId = 'cssDarkModeWorkaround';

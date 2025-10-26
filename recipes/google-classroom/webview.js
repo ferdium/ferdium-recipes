@@ -5,6 +5,9 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
+  // Added: persist Google Classroom session data across Ferdium restarts
+  Ferdium.setDefaultPartition('persist:google-classroom');
+
   // if the user is on googleclassroom landing page, go to the login page.
   if (
     location.hostname === 'edu.google.com' &&
@@ -31,4 +34,15 @@ module.exports = Ferdium => {
   Ferdium.loop(getMessages);
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
+
+  // Added: keep Google OAuth/login inside Ferdium by overriding target="_blank" links
+  const fixGoogleLinks = () => {
+    const links = document.querySelectorAll('a[target="_blank"]');
+    links.forEach(link => link.setAttribute('target', '_self'));
+  };
+  fixGoogleLinks();
+  new MutationObserver(fixGoogleLinks).observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
 };

@@ -5,6 +5,9 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
+  // Added: persist WhatsApp session data to prevent logout after restart
+  Ferdium.setDefaultPartition('persist:whatsapp');
+
   let dbCache;
 
   const getMessages = () => {
@@ -61,7 +64,6 @@ module.exports = Ferdium => {
 
   const getActiveDialogTitle = () => {
     const element = document.querySelector('header .emoji-texttt');
-
     Ferdium.setDialogTitle(element ? element.textContent : '');
   };
 
