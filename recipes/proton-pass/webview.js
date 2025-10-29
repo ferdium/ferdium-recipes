@@ -33,13 +33,14 @@ module.exports = Ferdium => {
 
     const nudge = () => {
       setEndIfAllSelected();
-      if (typeof queueMicrotask === 'function') queueMicrotask(setEndIfAllSelected);
+      if (typeof queueMicrotask === 'function')
+        queueMicrotask(setEndIfAllSelected);
       requestAnimationFrame(setEndIfAllSelected);
       setTimeout(setEndIfAllSelected, 16);
     };
 
     ['input', 'selectionchange', 'compositionend'].forEach(evt =>
-      el.addEventListener(evt, nudge, true)
+      el.addEventListener(evt, nudge, true),
     );
 
     nudge();
@@ -56,8 +57,11 @@ module.exports = Ferdium => {
     findAndWire();
   }
 
-  new MutationObserver(findAndWire).observe(document.documentElement || document, {
-    childList: true,
-    subtree: true,
-  });
+  new MutationObserver(findAndWire).observe(
+    document.documentElement || document,
+    {
+      childList: true,
+      subtree: true,
+    },
+  );
 };
