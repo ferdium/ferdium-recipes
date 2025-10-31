@@ -1513,6 +1513,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "raeffs",
+      "name": "Raphael Fleischlin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1065834?v=4",
+      "profile": "https://github.com/raeffs",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
