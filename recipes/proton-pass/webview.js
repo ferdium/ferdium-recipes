@@ -31,9 +31,8 @@ const wire = el => {
     setTimeout(setEndIfAllSelected, 16);
   };
 
-  ['input', 'selectionchange', 'compositionend'].forEach(evt =>
-    el.addEventListener(evt, nudge, true),
-  );
+  for (const evt of ['input', 'selectionchange', 'compositionend'])
+    el.addEventListener(evt, nudge, true);
 
   nudge();
 };
