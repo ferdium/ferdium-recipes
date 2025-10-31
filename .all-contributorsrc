@@ -1522,6 +1522,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "DominusExult",
+      "name": "Dominik Reichardt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3313896?v=4",
+      "profile": "https://github.com/DominusExult",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
