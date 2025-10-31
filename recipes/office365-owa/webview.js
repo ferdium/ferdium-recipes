@@ -5,12 +5,12 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = (Ferdium, settings) => {
-  const collectCounts = selector => {
+  const collectCounts = (selector, index=0) => {
     let unreadCount = 0;
-    const foldersElement = document.querySelector(selector);
+    const foldersElement = document.querySelectorAll(selector)[index];
     if (foldersElement) {
       const allScreenReaders = foldersElement.querySelectorAll(
-        'span.screenReaderOnly',
+        'div[role=treeitem] > span:last-child span.screenReaderOnly'
       );
       for (const child of allScreenReaders) {
         if (child.previousSibling) {
@@ -68,17 +68,14 @@ module.exports = (Ferdium, settings) => {
       );
     } else {
       // new app
-      directUnreadCount =
-        settings.onlyShowFavoritesInUnreadCount === true
-          ? collectCounts('div[role=tree]:nth-child(2)')
-          : collectCounts('div[role=tree]:nth-child(1)');
+      directUnreadCount = settings.onlyShowFavoritesInUnreadCount === true
+          ? collectCounts('div[role=tree] div[role=group]', 0)
+          : collectCounts('div[role=tree] div[role=group]', 1);
 
       indirectUnreadCount = collectCounts('div[role=tree]:nth-child(4)'); // groups
     }
-
     Ferdium.setBadge(directUnreadCount, indirectUnreadCount);
   };
   Ferdium.loop(getMessages);
-
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
 };
