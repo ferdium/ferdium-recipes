@@ -1,0 +1,11 @@
+{
+  "id": "miniflux",
+  "name": "Miniflux",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://reader.miniflux.app",
+    "hasHostedOption": true,
+    "hasCustomUrl": true
+  }
+}
