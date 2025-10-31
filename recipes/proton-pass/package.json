@@ -1,7 +1,7 @@
 {
   "id": "proton-pass",
   "name": "Proton Pass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "config": {
     "serviceURL": "https://pass.proton.me/"

@@ -4,6 +4,44 @@ function _interopRequireDefault(obj) {
 
 const _path = _interopRequireDefault(require('path'));
 
+// fix React's mangling of the search field
+// see https://github.com/ferdium/ferdium-app/issues/1844
+const SELECTOR = 'input[data-testid="input-input-element"]';
+
+const wire = el => {
+  if (!el || el.__queryFixed) return;
+  el.__queryFixed = true;
+
+  const setEndIfAllSelected = () => {
+    try {
+      const len = el.value.length;
+      if (len > 0 && el.selectionStart === 0 && el.selectionEnd === len) {
+        el.setSelectionRange(len, len);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const nudge = () => {
+    setEndIfAllSelected();
+    if (typeof queueMicrotask === 'function')
+      queueMicrotask(setEndIfAllSelected);
+    requestAnimationFrame(setEndIfAllSelected);
+    setTimeout(setEndIfAllSelected, 16);
+  };
+
+  for (const evt of ['input', 'selectionchange', 'compositionend'])
+    el.addEventListener(evt, nudge, true);
+
+  nudge();
+};
+
+const findAndWire = () => {
+  const el = document.querySelector(SELECTOR);
+  if (el) wire(el);
+};
+
 module.exports = Ferdium => {
   // TODO: If your Proton Pass service has unread messages, uncomment these lines to implement the logic for updating the badges
   // const getMessages = () => {
@@ -13,4 +51,18 @@ module.exports = Ferdium => {
   // Ferdium.loop(getMessages);
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', findAndWire, { once: true });
+  } else {
+    findAndWire();
+  }
+
+  new MutationObserver(findAndWire).observe(
+    document.documentElement || document,
+    {
+      childList: true,
+      subtree: true,
+    },
+  );
 };
