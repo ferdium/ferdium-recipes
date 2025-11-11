@@ -23,7 +23,7 @@ module.exports = Ferdium => {
       inboxCount = Ferdium.safeParseInt(inboxElement.textContent);
     }
 
-    Ferdium.setBadge(inboxCount, todayCount);
+    Ferdium.setBadge(todayCount, inboxCount);
   }
 
   Ferdium.loop(getTasks);
