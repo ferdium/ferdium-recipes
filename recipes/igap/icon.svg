@@ -1,0 +1,30 @@
+<svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        fill: url(#linear-gradient);
+      }
+
+      .st2 {
+        opacity: .5;
+      }</style>
+  <linearGradient id="linear-gradient" x1="25.59" x2="77.58" y1="12.37" y2="74.76" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#c4d838" offset="0"/>
+   <stop stop-color="#bfd638" offset=".17"/>
+   <stop stop-color="#b3d33a" offset=".35"/>
+   <stop stop-color="#9ecd3d" offset=".53"/>
+   <stop stop-color="#81c540" offset=".72"/>
+   <stop stop-color="#5cbb45" offset=".9"/>
+   <stop stop-color="#45b549" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path class="st1" d="M91.67,41.67C91.67,18.65,73.01,0,50,0S8.33,18.65,8.33,41.67s18.65,41.67,41.67,41.67v16.67l28.96-28.37c7.84-7.58,12.71-18.2,12.71-29.96Z"/>
+ <g class="st2">
+  <path class="st0" d="m25 41.67c0 13.81 11.19 25 25 25s25-11.19 25-25-11.19-25-25-25v-10l-17.37 17.02c-4.7 4.55-7.63 10.92-7.63 17.98z"/>
+  <path class="st0" d="m29.16 45.83c0 11.51 9.33 20.84 20.84 20.84s20.84-9.33 20.84-20.84-9.33-20.84-20.84-20.84v-8.33l-14.48 14.19c-3.92 3.79-6.36 9.1-6.36 14.98z"/>
+ </g>
+ <path class="st0" d="m32.63 49.3c0 9.59 7.78 17.37 17.37 17.37s17.37-7.78 17.37-17.37-7.78-17.37-17.37-17.37v-6.95l-12.07 11.83c-3.27 3.16-5.3 7.58-5.3 12.49z"/>
+</svg>
