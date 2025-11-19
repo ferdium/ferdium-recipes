@@ -1,0 +1,9 @@
+{
+  "id": "eestekhdam",
+  "name": "e-Estekhdam",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.e-estekhdam.com/"
+  }
+}
