@@ -1,0 +1,9 @@
+{
+  "id": "karboom",
+  "name": "Karboom",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.karboom.io/"
+  }
+}
