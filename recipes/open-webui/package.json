@@ -5,7 +5,6 @@
   "license": "MIT",
   "config": {
     "hasNotificationSound": true,
-    "hasHostedOption": false,
     "hasCustomUrl": true
   }
 }
