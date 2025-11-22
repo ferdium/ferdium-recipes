@@ -1,0 +1,10 @@
+{
+  "id": "open-webui",
+  "name": "Open WebUI",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "hasNotificationSound": true,
+    "hasCustomUrl": true
+  }
+}
