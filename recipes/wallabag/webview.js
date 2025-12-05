@@ -6,7 +6,9 @@ const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   function getUnreadEntries() {
-    const element = document.querySelector('a[href="/unread/list"]>span.items-number');
+    const element = document.querySelector(
+      'a[href="/unread/list"]>span.items-number',
+    );
     if (element) {
       const parsedValue = Ferdium.safeParseInt(element.textContent);
       Ferdium.setBadge(parsedValue);
