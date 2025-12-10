@@ -1,0 +1,11 @@
+{
+  "id": "wafrn",
+  "name": "Wafrn",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.wafrn.net",
+    "hasCustomUrl": true,
+    "hasNotificationSound": true
+  }
+}
