@@ -1,0 +1,10 @@
+{
+  "id": "super-productivity",
+  "name": "Super Productivity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.super-productivity.com",
+    "hasNotificationSound": false
+  }
+}
