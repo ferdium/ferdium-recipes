@@ -7,7 +7,7 @@
     "teamsChat"
   ],
   "config": {
-    "serviceURL": "https://teams.microsoft.com",
+    "serviceURL": "https://teams.cloud.microsoft",
     "hasNotificationSound": true,
     "hasIndirectMessages": true
   }
