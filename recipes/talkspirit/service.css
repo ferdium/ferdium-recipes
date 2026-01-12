@@ -1,0 +1,9 @@
+.notice {
+  display: none;
+}
+.scrollableContainer-15eg7h {
+  overflow-y: auto;
+}
+/*[class^="scrollableContainer"] {
+  overflow-y: auto;
+}*/

@@ -1,0 +1,9 @@
+{
+  "id": "techmeme",
+  "name": "techmeme",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://techmeme.com"
+  }
+}

@@ -8,39 +8,47 @@ module.exports = Ferdium => {
   const getMessages = () => {
     let count = 0;
 
-    const unreadRed = document.querySelector('.unread-red');
-    if (unreadRed !== null) {
-      switch (unreadRed.classList[1]) {
-        case 'fa-num1': {
+    const unreadBadge = document
+      .querySelector('[data-translate-title="STR_TAB_MESSAGE"]')
+      .querySelector('[class*="leftbar-unread-badge"]');
+    if (unreadBadge !== null) {
+      const unreadBadgeFa = unreadBadge.querySelector('.z-noti-badge__content')
+        .classList[1];
+      switch (true) {
+        case unreadBadgeFa.match('fa-1') !== null: {
           count = 1;
           break;
         }
-        case 'fa-num2': {
+        case unreadBadgeFa.match('fa-2') !== null: {
           count = 2;
           break;
         }
-        case 'fa-num3': {
+        case unreadBadgeFa.match('fa-3') !== null: {
           count = 3;
           break;
         }
-        case 'fa-num4': {
+        case unreadBadgeFa.match('fa-4') !== null: {
           count = 4;
           break;
         }
-        case 'fa-num5': {
+        case unreadBadgeFa.match('fa-5') !== null &&
+          unreadBadgeFa.match('fa-5_Plus') === null: {
           count = 5;
           break;
         }
         default: {
-          // fa-num5plus
+          // fa-5_Plus
           const convUnread = document.querySelectorAll(
-            '.conv-unread:not(.func-unread__muted)',
+            '.conv-action__unread-v2 > div:not([class*="--noti-disable"]',
           );
-          if (convUnread.length === 0)
+          if (convUnread.length === 1)
             count = 6; // 5+
           else
             for (const convUnreadItem of convUnread) {
-              switch (convUnreadItem.classList[1]) {
+              switch (
+                convUnreadItem.querySelector('.z-noti-badge__content')
+                  .classList[1]
+              ) {
                 case 'fa-1_24_Line': {
                   count += 1;
                   break;

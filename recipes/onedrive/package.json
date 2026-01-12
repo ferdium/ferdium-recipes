@@ -1,0 +1,9 @@
+{
+  "id": "onedrive",
+  "name": "OneDrive",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://onedrive.live.com/"
+  }
+}

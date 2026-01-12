@@ -1,0 +1,9 @@
+{
+  "id": "ko-fi",
+  "name": "Ko-fi",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://ko-fi.com"
+  }
+}

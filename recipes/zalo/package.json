@@ -1,7 +1,7 @@
 {
   "id": "zalo",
   "name": "Zalo",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://chat.zalo.me/",

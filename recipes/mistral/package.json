@@ -1,0 +1,9 @@
+{
+  "id": "mistral",
+  "name": "Le Chat by Mistral",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://chat.mistral.ai/chat"
+  }
+}

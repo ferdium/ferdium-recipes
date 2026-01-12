@@ -1,0 +1,9 @@
+{
+  "id": "follow-is",
+  "name": "Follow",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.follow.is/"
+  }
+}
