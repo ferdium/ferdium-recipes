@@ -1531,6 +1531,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "calvin-fisher",
+      "name": "calvin-fisher",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1797159?v=4",
+      "profile": "https://github.com/calvin-fisher",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
