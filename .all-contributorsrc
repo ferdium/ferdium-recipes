@@ -1531,6 +1531,24 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "calvin-fisher",
+      "name": "calvin-fisher",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1797159?v=4",
+      "profile": "https://github.com/calvin-fisher",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "gormanity",
+      "name": "John Gorman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/967905?v=4",
+      "profile": "https://github.com/gormanity",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
