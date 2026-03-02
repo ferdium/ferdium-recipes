@@ -257,6 +257,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/calvin-fisher' title='calvin-fisher: code'><img src='https://avatars.githubusercontent.com/u/1797159?v=4' alt='calvin-fisher' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/gormanity' title='John Gorman: code'><img src='https://avatars.githubusercontent.com/u/967905?v=4' alt='gormanity' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/Kawwabi' title='Kawwabi: code'><img src='https://avatars.githubusercontent.com/u/224683239?v=4' alt='Kawwabi' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/Hugo8220337' title='Hugo Guimarães: code'><img src='https://avatars.githubusercontent.com/u/148533705?v=4' alt='Hugo8220337' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
