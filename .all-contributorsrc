@@ -1549,6 +1549,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Kawwabi",
+      "name": "Kawwabi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/224683239?v=4",
+      "profile": "https://github.com/Kawwabi",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
