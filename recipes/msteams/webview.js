@@ -8,7 +8,9 @@ module.exports = Ferdium => {
   const getMessages = () => {
     let messages = 0;
 
-    const isTeamsV2 = window.location.href.includes('/v2/') || window.location.host == 'teams.cloud.microsoft';
+    const isTeamsV2 =
+      window.location.href.includes('/v2/') ||
+      window.location.host == 'teams.cloud.microsoft';
 
     let badges = document.querySelectorAll(
       '.activity-badge.dot-activity-badge .activity-badge',
