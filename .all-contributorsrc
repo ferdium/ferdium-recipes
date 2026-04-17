@@ -1576,6 +1576,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "joschi127",
+      "name": "joschi127",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1758468?v=4",
+      "profile": "https://github.com/joschi127",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
