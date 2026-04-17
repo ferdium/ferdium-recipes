@@ -24,38 +24,46 @@ module.exports = Ferdium => {
             const rooms = roomsRequest.result;
             let notificationCount = 0;
             let notificationCountRooms = 0;
-            let highlightCount = 0;
-            let highlightCountRooms = 0;
+            // let highlightCount = 0;
+            // let highlightCountRooms = 0;
 
-            rooms.forEach(room => {
-              if (room.highlight_count && room.highlight_count > 0) {
-                // It seems that this function is not fully implemented in fluffy
-                // According to app settings, this field should count @mentions
-                highlightCount += Ferdium.safeParseInt(room.highlight_count);
-                highlightCountRooms += 1;
-              }
+            for (const room of rooms) {
+              /**
+               * It seems that this function is not fully implemented in fluffy
+               * According to app settings, this field should count @mentions but doesn't
+               **/
+              // if (room.highlight_count && room.highlight_count > 0) {
+              //   highlightCount += Ferdium.safeParseInt(room.highlight_count);
+              //   highlightCountRooms += 1;
+              // }
+
               if (room.notification_count && room.notification_count > 0) {
                 notificationCount += Ferdium.safeParseInt(
                   room.notification_count,
                 );
                 notificationCountRooms += 1;
               }
-            });
-
-            // IMPORTANT: Because the hightlight_count (Ferdium equivalent: directMessages) is broken
-            // use Ferdium.setBadge(perRoomNotifications, perMessageNotifications) to simulate how
-            // FluffyChat Web shows it's badges and allow the user to get either room count or message count.
-            Ferdium.setBadge(notificationCountRooms, notificationCount);
+            }
 
             // Ferdium.setBadge(highlightCount, notificationCount);
-            // TODO: In the future there could be a toggle available under
-            // "Settings > Unread message badges" to allow the user
-            // to opt for "Count every room / chat only once"
+
+            /**
+             * IMPORTANT: Because the hightlight_count (Ferdium equivalent: directMessages) is broken
+             * this uses Ferdium.setBadge(perRoomNotifications, perMessageNotifications) to simulate how
+             * FluffyChat Web shows it's badges and allow the user to get either room count or message count.
+             **/
+            Ferdium.setBadge(notificationCountRooms, notificationCount);
+
+            /**
+             * TODO: In the future there could be a toggle available under
+             * "Settings > Unread message badges" to allow the user
+             * to opt for "Count every room / chat only once"
+             **/
             // Ferdium.setBadge(highlightCountRooms, notificationCountRooms);
           };
         }
-      } catch (error) {
-        console.log('Error while accessing FluffyChat IndexedDB content.');
+      } catch {
+        // console.log('Error while accessing FluffyChat IndexedDB content.');
       }
 
       db.close();
