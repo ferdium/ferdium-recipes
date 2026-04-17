@@ -1567,6 +1567,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "delVhariant",
+      "name": "delVhariant",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57427820?v=4",
+      "profile": "https://github.com/delVhariant",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
