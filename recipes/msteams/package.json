@@ -1,7 +1,7 @@
 {
   "id": "msteams",
   "name": "Microsoft Teams",
-  "version": "3.3.3",
+  "version": "3.3.4",
   "license": "MIT",
   "aliases": [
     "teamsChat"
