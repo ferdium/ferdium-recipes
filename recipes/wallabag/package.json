@@ -1,0 +1,11 @@
+{
+  "id": "wallabag",
+  "name": "Wallabag",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.wallabag.it/",
+    "hasCustomUrl": true,
+    "hasHostedOption": true
+  }
+}
