@@ -1,10 +1,9 @@
 {
   "id": "paperless-ngx",
-  "name": "Paperless NGX",
-  "version": "1.0.0",
+  "name": "Paperless-ngx",
+  "version": "1.0.1",
   "license": "MIT",
   "config": {
     "hasCustomUrl": true
-  },
-  "defaultIcon": "https://docs.paperless-ngx.com/assets/favicon.png"
+  }
 }
