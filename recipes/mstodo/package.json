@@ -1,7 +1,7 @@
 {
   "id": "mstodo",
   "name": "Microsoft To Do",
-  "version": "1.3.3,
+  "version": "1.3.3",
   "license": "MIT",
   "config": {
     "serviceURL": "https://to-do.office.com",
