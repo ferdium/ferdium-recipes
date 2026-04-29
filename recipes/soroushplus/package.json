@@ -1,0 +1,9 @@
+{
+  "id": "soroushplus",
+  "name": "Soroush+",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://web.splus.ir/"
+  }
+}
