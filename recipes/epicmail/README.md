@@ -12,6 +12,7 @@ A locally installed Ferdium dev recipe shows up under the `Custom Services` tab,
 - `index.js`: minimal recipe bootstrap
 - `webview.js`: unread badge integration using EpicMail's sidebar badges
 - `icon.png`: EpicMail service icon
+- `icon.svg`: EpicMail catalog icon
 - `..\install-dev-recipe.ps1`: installs the recipe into Ferdium's Windows dev-recipes folder
 
 ## Quick install on Windows
@@ -64,6 +65,7 @@ To make EpicMail available in the official searchable catalog for everyone, subm
    - `index.js`
    - `webview.js`
    - `icon.png`
+   - `icon.svg`
 5. Compare against a few existing first-party recipe folders to match formatting and conventions.
 6. Run whatever validation or lint checks the Ferdium repo requires.
 7. Commit with a clear message such as `Add EpicMail service recipe`.

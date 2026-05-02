@@ -1,10 +1,15 @@
 module.exports = Ferdium => {
-  const safeBadgeValue = text => Ferdium.safeParseInt((text || '').replace(/[^\d]/g, '')) || 0;
+  const safeBadgeValue = text =>
+    Ferdium.safeParseInt((text || '').replace(/\D/g, '')) || 0;
 
   const findUnifiedInboxBadge = () => {
-    const buttons = document.querySelectorAll('nav.em-sidebar button.em-sidebar__item');
+    const buttons = document.querySelectorAll(
+      'nav.em-sidebar button.em-sidebar__item',
+    );
     for (const button of buttons) {
-      const name = button.querySelector('.em-sidebar__item-name')?.textContent?.trim();
+      const name = button
+        .querySelector('.em-sidebar__item-name')
+        ?.textContent?.trim();
       if (name !== 'Unified Inbox') continue;
 
       const badge = button.querySelector('.em-sidebar__badge');
@@ -15,9 +20,12 @@ module.exports = Ferdium => {
     return 0;
   };
 
-  const sumAccountBadges = () => Array
-    .from(document.querySelectorAll('.em-sidebar__account-row .em-sidebar__badge--sm'))
-    .reduce((total, badge) => total + safeBadgeValue(badge.textContent), 0);
+  const sumAccountBadges = () =>
+    [
+      ...document.querySelectorAll(
+        '.em-sidebar__account-row .em-sidebar__badge--sm',
+      ),
+    ].reduce((total, badge) => total + safeBadgeValue(badge.textContent), 0);
 
   const getMessages = () => {
     const direct = findUnifiedInboxBadge() || sumAccountBadges();
