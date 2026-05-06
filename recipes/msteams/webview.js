@@ -17,7 +17,7 @@ module.exports = Ferdium => {
     );
 
     if (isTeamsV2) {
-      badges = document.querySelectorAll('.fui-Badge');
+      badges = document.querySelectorAll('div[data-testid="hamburger-button-badge"]');
     }
 
     if (badges) {
