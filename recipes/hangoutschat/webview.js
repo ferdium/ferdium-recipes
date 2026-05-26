@@ -24,7 +24,7 @@ module.exports = Ferdium => {
 
     // get unread messages count
     directCount = document.querySelectorAll(
-      'link[href^="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon_chat_new_notif_"][href$=".ico"]',
+      'link[rel*="icon"][href*="_favicon_dot_"]',
     ).length;
 
     // get unread indirect messages
