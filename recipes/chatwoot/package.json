@@ -1,10 +1,12 @@
 {
   "id": "chatwoot",
   "name": "Chatwoot",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "license": "MIT",
-  "repository": "https://github.com/maximeMD/ferdi-chatwoot",
   "config": {
-    "serviceURL": "https://app.chatwoot.com/app/login"
+    "serviceURL": "https://app.chatwoot.com/",
+    "message": "Chatwoot's default URL is https://app.chatwoot.com/",
+    "hasHostedOption": true,
+    "hasCustomUrl": true
   }
 }
