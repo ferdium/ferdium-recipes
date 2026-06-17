@@ -1,0 +1,9 @@
+{
+  "id": "wisgoon",
+  "name": "Wisgoon",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://wisgoon.com/"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "sheypoor",
+  "name": "Sheypoor",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.sheypoor.com/"
+  }
+}

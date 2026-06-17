@@ -1,0 +1,58 @@
+<svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.st0 {
+        fill: #0f1318;
+      }
+
+      .st0, .st1, .st2, .st3, .st4 {
+        stroke: #fefefe;
+      }
+
+      .st0, .st1, .st2, .st4 {
+        stroke-width: .8px;
+      }
+
+      .st1 {
+        fill: url(#linear-gradient);
+      }
+
+      .st2 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st5 {
+        stroke: #1cb5f0;
+      }
+
+      .st6 {
+        stroke: #1cc7f0;
+      }
+
+      .st3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: .25px;
+      }
+
+      .st7 {
+        fill: #333739;
+      }</style>
+  <linearGradient id="linear-gradient" x1="-1737.5" x2="-1737.5" y1="45.61" y2="41.34" gradientTransform="translate(40360 -959.32) scale(23.2)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#1c9df0" offset="0"/>
+   <stop stop-color="#1cc7f0" offset=".99"/>
+  </linearGradient>
+  <linearGradient id="linear-gradient1" x1="-1650.4" x2="-1650.4" y1="128.71" y2="124.44" gradientTransform="translate(18181 -954.02) scale(11 8.2)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#1c9df0" offset="0"/>
+   <stop stop-color="#1caaef" offset=".99"/>
+  </linearGradient>
+ </defs>
+ <circle class="st1" cx="50" cy="50" r="50"/>
+ <path class="st2" d="M50,64.66H15.52c-7.76-.29-12.07,3.59-12.93,11.64v23.71h47.41"/>
+ <path class="st3" d="m2.59 91.81c2.87-6.32 7.18-9.63 12.93-9.91h12.93"/>
+ <circle class="st0" cx="50" cy="50" r="14.66"/>
+ <path class="st0" d="M100,9.05C99.71,3.3,96.7.29,90.95,0h-22.84v20.26c.57,7.47,4.6,11.49,12.07,12.07h19.83V9.05h0Z"/>
+ <path class="st4" d="M100,32.76v17.24M67.24,0h-17.24"/>
+ <path class="st7" d="M98.28,30.17V9.48c0-2.59-.72-4.45-2.16-5.6l-23.71,23.71c1.72,1.72,4.31,2.73,7.76,3.02"/>
+ <path class="st5" d="m96.12 50v-15.95"/>
+ <path class="st6" d="m50 3.88h16.38"/>
+</svg>
