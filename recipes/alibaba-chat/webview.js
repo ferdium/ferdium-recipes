@@ -5,13 +5,15 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
-  // TODO: If your SNAME service has unread messages, uncomment these lines to implement the logic for updating the badges
   const getMessages = () => {
-    // TODO: Insert your notification-finding code here
-    const count = document.querySelector(
-      '#im-list > div > div.im-conversation-list-container > div.im-next-tabs.im-next-tabs-pure.im-next-tabs-scrollable.im-next-medium.list-tab > div.im-next-tabs-bar > div > div > div > ul > li:nth-child(2) > div > div > span.red-num',
-    );
-    Ferdium.setBadge(count, 0);
+      const unreadText = document.querySelector(
+        '.inbox-list-container .panel-content .option-item:last-child .item-unread-num',
+      )?.textContent?.trim() ?? '';
+
+      const unreadCount =
+        Number.parseInt(unreadText.replace(/[^\d]/g, ''), 10) || 0;
+
+      Ferdium.setBadge(unreadCount, 0);
   };
   Ferdium.loop(getMessages);
 
