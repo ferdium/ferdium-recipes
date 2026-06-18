@@ -1,0 +1,12 @@
+{
+  "id": "max",
+  "name": "MaX",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "SCaeR",
+  "config": {
+    "serviceURL": "https://web.max.ru/",
+    "hasNotificationSound": true
+  },
+  "defaultIcon": "https://cdn.jsdelivr.net/gh/ferdium/ferdium-recipes@main/recipes/max/icon.svg"
+}
