@@ -11,7 +11,7 @@ module.exports = Ferdium => {
     location.href.includes('products/calendar/')
   ) {
     location.href =
-      'https://accounts.google.com/AccountChooser?continue=https://calendar.google.com/u/0/';
+      'https://accounts.google.com/ServiceLogin?continue=https://calendar.google.com/u/0/';
   }
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));

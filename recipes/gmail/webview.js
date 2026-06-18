@@ -11,7 +11,7 @@ module.exports = Ferdium => {
     location.href.includes('gmail/about/')
   ) {
     location.href =
-      'https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/';
+      'https://accounts.google.com/ServiceLogin?service=mail&continue=https://mail.google.com/mail/';
   }
 
   const getMessages = () => {

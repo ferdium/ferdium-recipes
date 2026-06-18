@@ -10,7 +10,7 @@ module.exports = Ferdium => {
     location.href.includes('products/gemini/')
   ) {
     location.href =
-      'https://accounts.google.com/AccountChooser?continue=https://gemini.google.com/u/0/';
+      'https://accounts.google.com/ServiceLogin?continue=https://gemini.google.com/u/0/';
   }
 
   Ferdium.handleDarkMode(isEnabled => {
