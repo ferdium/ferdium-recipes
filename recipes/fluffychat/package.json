@@ -1,0 +1,19 @@
+{
+  "id": "fluffychat",
+  "name": "FluffyChat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "matrix",
+    "element",
+    "riot.im",
+    "[m]"
+  ],
+  "config": {
+    "serviceURL": "https://fluffychat.im/web",
+    "message": "Default url is https://fluffychat.im/web",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true,
+    "hasCustomUrl": true
+  }
+}
