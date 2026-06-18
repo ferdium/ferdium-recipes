@@ -1,0 +1,10 @@
+{
+  "id": "syncthing",
+  "name": "Syncthing",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "http://localhost:8384",
+    "hasCustomUrl": true
+  }
+}

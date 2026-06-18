@@ -1,0 +1,10 @@
+{
+  "id": "opnsense",
+  "name": "OPNsense",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://opnsense.example.com/ui/core/dashboard",
+    "hasCustomUrl": true
+  }
+}
