@@ -11,7 +11,7 @@ module.exports = Ferdium => {
     location.href.includes('workspace-for-education/classroom/')
   ) {
     location.href =
-      'https://accounts.google.com/AccountChooser?continue=https://classroom.google.com/u/0/';
+      'https://accounts.google.com/ServiceLogin?continue=https://classroom.google.com/u/0/';
   }
 
   const getMessages = () => {

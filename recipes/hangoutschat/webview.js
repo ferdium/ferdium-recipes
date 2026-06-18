@@ -11,7 +11,7 @@ module.exports = Ferdium => {
     location.href.includes('products/chat/')
   ) {
     location.href =
-      'https://accounts.google.com/AccountChooser?continue=https://chat.google.com/?referrer=2';
+      'https://accounts.google.com/ServiceLogin?continue=https://chat.google.com/?referrer=2';
   }
 
   // class corresponding to the bold text that is visible for room messages
