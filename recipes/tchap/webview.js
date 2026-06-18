@@ -6,7 +6,9 @@ const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
-    const count = document.querySelector('.mx_RoomSubList_badge').innerHTML;
+    const count = document.querySelector(
+      '.mx_NotificationBadge_count',
+    ).innerHTML;
     Ferdium.setBadge(count);
   };
 
