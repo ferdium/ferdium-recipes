@@ -1,0 +1,12 @@
+{
+  "id": "epicmail",
+  "name": "EpicMail",
+  "version": "1.0.2",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.epicmail.org/",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": false
+  },
+  "defaultIcon": "https://app.epicmail.org/favicon.png"
+}

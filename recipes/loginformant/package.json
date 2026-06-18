@@ -1,0 +1,12 @@
+{
+  "id": "loginformant",
+  "name": "LogInformant",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://app.loginformant.com/",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": false
+  },
+  "defaultIcon": "https://app.loginformant.com/logo.png"
+}
