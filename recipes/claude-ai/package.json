@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://claude.ai"
+    "serviceURL": "https://claude.ai",
+    "hasCustomUrl": true
   }
 }
