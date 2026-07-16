@@ -1,7 +1,7 @@
 {
   "id": "claude-ai",
   "name": "claude.ai",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://claude.ai",
