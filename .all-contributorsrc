@@ -1585,6 +1585,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "powerfrontier",
+      "name": "David Romero",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3168166?v=4",
+      "profile": "http://www.atenea-studio.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"

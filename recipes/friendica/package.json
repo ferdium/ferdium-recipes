@@ -1,0 +1,13 @@
+{
+  "id": "friendica",
+  "name": "Friendica",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "hasCustomUrl": true,
+    "hasNotificationSound": true,
+    "hasDirectMessages": true,
+    "hasIndirectMessages": true,
+    "message": "Enter the full URL of your Friendica instance, e.g. https://fedibook.de"
+  }
+}
