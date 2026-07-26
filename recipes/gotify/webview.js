@@ -1,16 +1,12 @@
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-const _path = _interopRequireDefault(require('path'));
+const path = require('path');
 
 module.exports = Ferdium => {
-  const getMessages = () => {
-    const count = document.querySelectorAll('#messages').length;
+  window.addEventListener('gotify-ferdium-badge', event => {
+    Ferdium.setBadge(event.detail?.count || 0, 0);
+  });
 
-    Ferdium.setBadge(count);
-  };
-
-  Ferdium.loop(getMessages);
-  Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectJSUnsafe(path.join(__dirname, 'badge.js'));
+  Ferdium.loop(() => {
+    window.dispatchEvent(new CustomEvent('gotify-ferdium-poll'));
+  });
 };
