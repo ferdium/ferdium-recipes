@@ -24,6 +24,9 @@ module.exports = (Ferdium, settings) => {
   Ferdium.loop(getMessages);
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
+  Ferdium.injectJSUnsafe(
+    _path.default.join(__dirname, 'notification-compatibility.js'),
+  );
 
   // TODO: See how this can be moved into the main ferdium app and sent as an ipc message for opening with a new window or same Ferdium recipe's webview based on user's preferences
   document.addEventListener(
