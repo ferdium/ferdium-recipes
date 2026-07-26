@@ -1,0 +1,13 @@
+{
+  "id": "thundermail",
+  "name": "Thundermail",
+  "aliases": [
+    "stormbox",
+    "tb.pro"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://webmail.thundermail.com/"
+  }
+}
