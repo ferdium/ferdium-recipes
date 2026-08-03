@@ -14,20 +14,26 @@ module.exports = Ferdium => {
       'https://accounts.google.com/AccountChooser?continue=https://chat.google.com/?referrer=2';
   }
 
-  // class corresponding to the bold text that is visible for room messages
-  const indirectMessageSelector = 'div.V6.CL.V2.X9.Y2 span.akt span.XU';
+  // div definition of the text element listing the number of unread "Direct messages"
+  const directMessageSelector = 'div[data-section-type="1"] div.TeR7uc';
+  
+  // div definition of the text element listing the number of unread "Spaces" messages
+  const indirectMessageSelector = 'div[data-section-type="2"] div.TeR7uc';
 
   const getMessages = () => {
     // get unread direct messages
     let directCount;
     let indirectCount;
 
-    // get unread messages count
-    directCount = document.querySelectorAll(
-      'link[href^="https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon_chat_new_notif_"][href$=".ico"]',
-    ).length;
+    // get unread direct messages count
+	const directCountSelector = document.querySelector(
+      directMessageSelector,
+    );
+    if (directCountSelector) {
+      directCount = Number(directCountSelector.textContent);
+    }
 
-    // get unread indirect messages
+    // get unread indirect (spaces) messages
     const indirectCountSelector = document.querySelector(
       indirectMessageSelector,
     );
