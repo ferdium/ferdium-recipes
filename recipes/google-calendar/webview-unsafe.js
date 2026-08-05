@@ -26,9 +26,21 @@ const hideModal = () => {
 const createModal = () => {
   const modalDialog = document.createElement('div');
   modalDialog.setAttribute('id', 'franz-modal');
-  modalDialog.textContent =
-    '<div class="modal-content"><span class="close">&times;</span><p></p></div>';
-  modalDialog.querySelector('.close').addEventListener('click', hideModal);
+
+  // Built up with DOM calls instead of a markup string: calendar.google.com
+  // sends `require-trusted-types-for 'script'`, so assigning innerHTML throws.
+  const content = document.createElement('div');
+  content.classList.add('modal-content');
+
+  const close = document.createElement('span');
+  close.classList.add('close');
+  close.textContent = '×';
+  close.addEventListener('click', hideModal);
+
+  const message = document.createElement('p');
+
+  content.append(close, message);
+  modalDialog.append(content);
 
   return modalDialog;
 };
