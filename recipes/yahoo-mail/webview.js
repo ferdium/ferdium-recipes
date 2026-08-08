@@ -6,9 +6,11 @@ const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
-    const count = document.querySelector(
-      'a[data-test-folder-name="Inbox"] span[data-test-id="displayed-count"], [data-test-id="menu-list-item"]:has([aria-label="Inbox"]) [data-test-id="badge"] > span',
-    ).textContent;
+    const count = Ferdium.safeParseInt(
+      document.querySelector(
+        'a[data-test-folder-name="Inbox"] span[data-test-id="displayed-count"], [data-test-id="menu-list-item"]:has([aria-label="Inbox"], [aria-label="Selected, Inbox"]) [data-test-id="badge"] > span',
+      )?.textContent,
+    );
     Ferdium.setBadge(count);
   };
 

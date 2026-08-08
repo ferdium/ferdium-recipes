@@ -1,0 +1,9 @@
+{
+  "id": "stoat",
+  "name": "Stoat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://stoat.chat/app"
+  }
+}
