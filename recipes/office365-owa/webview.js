@@ -68,12 +68,14 @@ module.exports = (Ferdium, settings) => {
       );
     } else {
       // new app
+      indirectUnreadCount = collectCounts(
+        'div[role=tree] > div:nth-of-type(2) > div[role=group] > span',
+      ); // groups
       directUnreadCount =
         settings.onlyShowFavoritesInUnreadCount === true
-          ? collectCounts('div[role=tree]:nth-child(2)')
-          : collectCounts('div[role=tree]:nth-child(1)');
-
-      indirectUnreadCount = collectCounts('div[role=tree]:nth-child(4)'); // groups
+          ? collectCounts('div[role=tree] > div:nth-of-type(1)')
+          : collectCounts('div[role=tree] > div:nth-of-type(2)') -
+            indirectUnreadCount;
     }
 
     Ferdium.setBadge(directUnreadCount, indirectUnreadCount);
