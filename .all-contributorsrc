@@ -1603,6 +1603,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "beto621",
+      "name": "Beto",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96891795?v=4",
+      "profile": "https://github.com/beto621",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
