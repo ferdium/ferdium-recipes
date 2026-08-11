@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-177-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-178-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -265,6 +265,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center" valign="top" width="14.28%"><a href='http://www.milanrybovic.sk' title='Milan Rybovič: code'><img src='https://avatars.githubusercontent.com/u/120911289?v=4' alt='milanrybovic' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/beto621' title='Beto: code'><img src='https://avatars.githubusercontent.com/u/96891795?v=4' alt='beto621' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://prudentdev.com/' title='Prudent App Dev: code'><img src='https://avatars.githubusercontent.com/u/87621722?v=4' alt='Sergey-PrudentDev' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
