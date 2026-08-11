@@ -1567,6 +1567,51 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "delVhariant",
+      "name": "delVhariant",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57427820?v=4",
+      "profile": "https://github.com/delVhariant",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "joschi127",
+      "name": "joschi127",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1758468?v=4",
+      "profile": "https://github.com/joschi127",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "powerfrontier",
+      "name": "David Romero",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3168166?v=4",
+      "profile": "http://www.atenea-studio.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "milanrybovic",
+      "name": "Milan Rybovič",
+      "avatar_url": "https://avatars.githubusercontent.com/u/120911289?v=4",
+      "profile": "http://www.milanrybovic.sk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "beto621",
+      "name": "Beto",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96891795?v=4",
+      "profile": "https://github.com/beto621",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"

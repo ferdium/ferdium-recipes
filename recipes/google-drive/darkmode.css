@@ -1,0 +1,189 @@
+/* === Google Drive Dark Mode for Ferdium === */
+
+html, body {
+  background-color: #1a1b1e !important;
+  color: #e0e0e0 !important;
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-color: #4a4d51 #222428;
+}
+
+/* ── Nuke all white backgrounds on containers ── */
+div, c-wiz, section, main, article,
+header, footer, nav, aside,
+ul, ol, li, dl, dt, dd,
+table, thead, tbody, tfoot, tr, td, th,
+form, fieldset, label,
+[jscontroller], [jsmodel], [jsname] {
+  background-color: #1a1b1e !important;
+  color: #e0e0e0 !important;
+  border-color: #3a3d40 !important;
+}
+
+/* ── Restore transparent where needed (overlays, wrappers) ── */
+svg, path, circle, rect, line, polygon,
+img, video, canvas, iframe {
+  background-color: transparent !important;
+}
+
+/* ── Top Google bar ── */
+header div, [aria-label*="Google"],
+.gb_Kc, .gb_hd, .gb_id {
+  background-color: #1f2023 !important;
+}
+
+/* ── Sidebar ── */
+[role="navigation"],
+[role="navigation"] div,
+[role="navigation"] li,
+[role="navigation"] ul,
+[role="navigation"] span {
+  background-color: #1f2023 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Active item */
+[role="treeitem"][aria-selected="true"],
+[role="treeitem"][aria-current="page"],
+[role="option"][aria-selected="true"] {
+  background-color: #2d3c57 !important;
+}
+
+/* Nav hover */
+[role="treeitem"]:hover,
+[role="option"]:hover {
+  background-color: #2a2d31 !important;
+}
+
+/* ── Folder/file icons: invert so dark icons become visible on dark bg ── */
+[role="row"] img,
+[role="gridcell"] img,
+[role="row"] > div > img,
+[data-id] img {
+  filter: invert(0.85) brightness(1.1) !important;
+}
+
+/* Do NOT invert user avatar photos ── */
+img[src*="googleusercontent.com"],
+img[src*="lh3.google"],
+img[src*="photo"],
+img[src*="s96-c"],
+img[src*="=s"] {
+  filter: none !important;
+}
+
+/* ── File rows ── */
+[role="row"] {
+  background-color: transparent !important;
+  border-bottom-color: #2a2d31 !important;
+}
+
+[role="row"]:hover {
+  background-color: #27292c !important;
+}
+
+[role="row"][aria-selected="true"] {
+  background-color: #2d3c57 !important;
+}
+
+/* ── Column headers ── */
+[role="columnheader"],
+[role="columnheader"] span,
+[role="columnheader"] div {
+  background-color: #1a1b1e !important;
+  color: #9aa0a6 !important;
+  border-bottom-color: #3a3d40 !important;
+}
+
+/* ── Filter chips ── */
+[role="button"],
+button {
+  background-color: #2a2d31 !important;
+  color: #e0e0e0 !important;
+  border-color: #5f6368 !important;
+}
+
+[role="button"]:hover,
+button:hover {
+  background-color: #35383d !important;
+}
+
+/* ── Inputs / Search ── */
+input, textarea, select {
+  background-color: #2a2d31 !important;
+  color: #e0e0e0 !important;
+  border-color: #5f6368 !important;
+}
+
+input:focus, textarea:focus {
+  border-color: #8ab4f8 !important;
+  outline-color: #8ab4f8 !important;
+}
+
+/* ── Menus / dropdowns ── */
+[role="menu"],
+[role="listbox"] {
+  background-color: #2a2d31 !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6) !important;
+}
+
+[role="menuitem"],
+[role="option"] {
+  background-color: #2a2d31 !important;
+  color: #e0e0e0 !important;
+}
+
+[role="menuitem"]:hover,
+[role="option"]:hover {
+  background-color: #35383d !important;
+}
+
+[role="separator"] {
+  border-color: #3a3d40 !important;
+}
+
+/* ── Dialogs ── */
+[role="dialog"] {
+  background-color: #2a2d31 !important;
+  color: #e0e0e0 !important;
+}
+
+/* ── Tooltip ── */
+[role="tooltip"] {
+  background-color: #3c4043 !important;
+  color: #e0e0e0 !important;
+}
+
+/* ── Right info pane ── */
+[role="complementary"],
+[role="complementary"] div {
+  background-color: #1f2023 !important;
+  border-left-color: #3a3d40 !important;
+}
+
+/* ── Alerts / banners ── */
+[role="alert"] {
+  background-color: #2a2d31 !important;
+  color: #e0e0e0 !important;
+}
+
+/* ── Text colors ── */
+h1, h2, h3, h4, h5, h6,
+p, span, a, label, td, th, li {
+  color: #e0e0e0 !important;
+}
+
+a {
+  color: #8ab4f8 !important;
+}
+
+/* Secondary/meta text */
+[aria-label*="owner"] span,
+[aria-label*="modified"] span,
+[data-col-id*="owner"],
+[data-col-id*="modified"],
+[data-col-id*="size"] {
+  color: #9aa0a6 !important;
+}

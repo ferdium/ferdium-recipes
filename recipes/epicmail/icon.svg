@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="1024" height="1024" role="img" aria-labelledby="title">
+  <title id="title">EpicMail</title>
+  <defs>
+    <linearGradient id="top" x1="48" y1="66" x2="158" y2="4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5638ff"/>
+      <stop offset="0.48" stop-color="#2468ff"/>
+      <stop offset="1" stop-color="#28baff"/>
+    </linearGradient>
+    <linearGradient id="upperLeft" x1="0" y1="34" x2="102" y2="87" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8358ff"/>
+      <stop offset="1" stop-color="#2748ee"/>
+    </linearGradient>
+    <linearGradient id="upperRight" x1="107" y1="99" x2="207" y2="31" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3157f8"/>
+      <stop offset="1" stop-color="#22c0f5"/>
+    </linearGradient>
+    <linearGradient id="lowerLeft" x1="1" y1="98" x2="94" y2="98" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a044ff"/>
+      <stop offset="1" stop-color="#4435f1"/>
+    </linearGradient>
+    <linearGradient id="swoosh" x1="8" y1="147" x2="205" y2="79" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5531f0"/>
+      <stop offset="0.55" stop-color="#285cf6"/>
+      <stop offset="1" stop-color="#178fe8"/>
+    </linearGradient>
+    <linearGradient id="base" x1="17" y1="151" x2="190" y2="119" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3d23d8"/>
+      <stop offset="0.55" stop-color="#1827c7"/>
+      <stop offset="1" stop-color="#09178f"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(46 73)" stroke="#1727b8" stroke-opacity="0.28" stroke-width="1" stroke-linejoin="round">
+    <path fill="url(#top)" d="M104 2 160 35 104 69 47 35Z"/>
+    <path fill="url(#upperLeft)" d="M2 31 98 86 2 66Z"/>
+    <path fill="url(#upperRight)" d="M206 31 206 68 108 99 151 72Z"/>
+    <path fill="url(#lowerLeft)" d="M2 75 91 98 2 120Z"/>
+    <path fill="url(#base)" d="M7 151 106 112 203 119 203 153 5 153Z"/>
+    <path fill="url(#swoosh)" d="M7 136 204 75 204 108 8 151Z"/>
+  </g>
+</svg>
