@@ -1612,6 +1612,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Sergey-PrudentDev",
+      "name": "Prudent App Dev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/87621722?v=4",
+      "profile": "https://prudentdev.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
