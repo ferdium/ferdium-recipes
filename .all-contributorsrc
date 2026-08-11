@@ -1594,6 +1594,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "milanrybovic",
+      "name": "Milan Rybovič",
+      "avatar_url": "https://avatars.githubusercontent.com/u/120911289?v=4",
+      "profile": "http://www.milanrybovic.sk",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
