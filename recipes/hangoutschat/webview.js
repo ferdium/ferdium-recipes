@@ -16,7 +16,7 @@ module.exports = Ferdium => {
 
   // div definition of the text element listing the number of unread "Direct messages"
   const directMessageSelector = 'div[data-section-type="1"] div.TeR7uc';
-  
+
   // div definition of the text element listing the number of unread "Spaces" messages
   const indirectMessageSelector = 'div[data-section-type="2"] div.TeR7uc';
 
@@ -26,9 +26,7 @@ module.exports = Ferdium => {
     let indirectCount;
 
     // get unread direct messages count
-	const directCountSelector = document.querySelector(
-      directMessageSelector,
-    );
+    const directCountSelector = document.querySelector(directMessageSelector);
     if (directCountSelector) {
       directCount = Number(directCountSelector.textContent);
     }
