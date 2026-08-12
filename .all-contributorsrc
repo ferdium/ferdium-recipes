@@ -1630,6 +1630,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "lreading",
+      "name": "Leo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5851985?v=4",
+      "profile": "https://www.leoreading.com/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
