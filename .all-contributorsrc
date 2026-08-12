@@ -1639,6 +1639,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "danielmcmillan",
+      "name": "Daniel McMillan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22465798?v=4",
+      "profile": "https://github.com/danielmcmillan",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
