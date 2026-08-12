@@ -3,7 +3,6 @@
   "name": "MaX",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "SCaeR",
   "config": {
     "serviceURL": "https://web.max.ru/",
     "hasNotificationSound": true
