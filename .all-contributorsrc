@@ -1694,6 +1694,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "J4NS-R",
+      "name": "Jans Rautenbach",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14095706?v=4",
+      "profile": "https://rauten.co.za",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
