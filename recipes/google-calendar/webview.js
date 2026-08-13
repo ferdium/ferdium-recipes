@@ -5,15 +5,6 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
-  // if the user is on googlecalendar landing page, go to the login page.
-  if (
-    location.hostname === 'workspace.google.com' &&
-    location.href.includes('products/calendar/')
-  ) {
-    location.href =
-      'https://accounts.google.com/AccountChooser?continue=https://calendar.google.com/u/0/';
-  }
-
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
   // calendar.css is linked rather than passed to Ferdium.injectCSS, because
   // injectCSS fills a <style> element via innerHTML, which calendar.google.com
