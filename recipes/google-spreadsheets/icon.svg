@@ -1,24 +1,126 @@
-<svg width="800" height="581.8182" fill="none" viewBox="0 0 800 581.8182" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-  <path fill="#009954" d="M0 193.6364c0-40.65 0-60.9773 6.3818-77.1a90.91 90.91 0 0 1 51.0637-51.0591c16.1227-6.3864 36.4454-6.3864 77.1-6.3864H410.909c40.65 0 60.9773 0 77.1 6.3818a90.91 90.91 0 0 1 51.0636 51.0637c6.3818 16.1227 6.3818 36.4454 6.3818 77.1v194.5454c0 40.65 0 60.9773-6.3818 77.1a90.91 90.91 0 0 1-51.0636 51.0637c-16.1227 6.3818-36.45 6.3818-77.1 6.3818H134.5454c-40.65 0-60.9772 0-77.1045-6.3818a90.91 90.91 0 0 1-51.059-51.0637C0 449.1591 0 428.8318 0 388.1818Z"/>
-  <mask id="a" width="160" height="128" x="24" y="32" maskUnits="userSpaceOnUse">
-    <rect width="160" height="128" x="24" y="32" fill="#fff" rx="20"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="800"
+   fill="none"
+   viewBox="0 0 800 800.00003"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.1029209"
+     inkscape:cx="-323.68596"
+     inkscape:cy="236.19102"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <mask
+     id="a"
+     width="160"
+     height="128"
+     x="24"
+     y="32"
+     maskUnits="userSpaceOnUse">
+    <rect
+       width="160"
+       height="128"
+       x="24"
+       y="32"
+       fill="#ffffff"
+       rx="20"
+       id="rect1" />
   </mask>
-  <g mask="url(#a)" transform="matrix(4.5454545,0,0,4.5454545,-36.363636,-145.45454)">
-    <path fill="#0ebc5f" d="M24 32h160v128H24Z"/>
-    <g filter="url(#b)">
-      <rect width="144" height="102" fill="url(#c)" rx="25.6" transform="matrix(1,0,0,-1,8,147)" x="0" y="0"/>
+  <path
+     fill="#009954"
+     d="m 0,193.6364 c 0,-40.65 0,-60.9773 6.3818,-77.1 A 90.91,90.91 0 0 1 57.4455,65.4773 c 16.1227,-6.3864 36.4454,-6.3864 77.1,-6.3864 H 410.909 c 40.65,0 60.9773,0 77.1,6.3818 a 90.91,90.91 0 0 1 51.0636,51.0637 c 6.3818,16.1227 6.3818,36.4454 6.3818,77.1 v 194.5454 c 0,40.65 0,60.9773 -6.3818,77.1 a 90.91,90.91 0 0 1 -51.0636,51.0637 c -16.1227,6.3818 -36.45,6.3818 -77.1,6.3818 H 134.5454 c -40.65,0 -60.9772,0 -77.1045,-6.3818 A 90.91,90.91 0 0 1 6.3819,465.2818 C 0,449.1591 0,428.8318 0,388.1818 Z"
+     id="path1"
+     transform="translate(0,109.09091)" />
+  <g
+     mask="url(#a)"
+     transform="matrix(4.5454545,0,0,4.5454545,-36.363636,-36.36363)"
+     id="g3">
+    <path
+       fill="#0ebc5f"
+       d="M 24,32 H 184 V 160 H 24 Z"
+       id="path2" />
+    <g
+       filter="url(#b)"
+       id="g2">
+      <rect
+         width="144"
+         height="102"
+         fill="url(#c)"
+         rx="25.6"
+         transform="matrix(1,0,0,-1,8,147)"
+         x="0"
+         y="0"
+         id="rect2"
+         style="fill:url(#c)" />
     </g>
   </g>
-  <path stroke="#ffffff" stroke-linecap="round" stroke-width="54.5455" d="M327.2727 404.5455H709.091m-90.909 86.3636v-290.909"/>
-  <defs>
-    <linearGradient id="c" x1="122.24" x2="20.76" y1="43.31" y2="43.31" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0ebc5f"/>
-      <stop offset=".95" stop-color="#78c9ff"/>
+  <path
+     stroke="#ffffff"
+     stroke-linecap="round"
+     stroke-width="54.5455"
+     d="M 327.2727,404.5455 H 709.091 m -90.909,86.3636 v -290.909"
+     id="path3"
+     transform="translate(0,109.09091)" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="c"
+       x1="122.24"
+       x2="20.76"
+       y1="43.310001"
+       y2="43.310001"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#0ebc5f"
+         id="stop3" />
+      <stop
+         offset=".95"
+         stop-color="#78c9ff"
+         id="stop4" />
     </linearGradient>
-    <filter id="b" width="168" height="126" x="-4" y="33" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" mode="normal"/>
-      <feGaussianBlur result="effect1_foregroundBlur_37435_8174" stdDeviation="6"/>
+    <filter
+       id="b"
+       width="168"
+       height="126"
+       x="-4"
+       y="33"
+       color-interpolation-filters="sRGB"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         flood-opacity="0"
+         result="BackgroundImageFix"
+         id="feFlood4" />
+      <feBlend
+         in="SourceGraphic"
+         in2="BackgroundImageFix"
+         result="shape"
+         mode="normal"
+         id="feBlend4" />
+      <feGaussianBlur
+         result="effect1_foregroundBlur_37435_8174"
+         stdDeviation="6"
+         id="feGaussianBlur4" />
     </filter>
   </defs>
 </svg>
