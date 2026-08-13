@@ -1721,6 +1721,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "gianlucapisati",
+      "name": "Gianluca",
+      "avatar_url": "https://avatars.githubusercontent.com/u/438602?v=4",
+      "profile": "https://github.com/gianlucapisati",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
