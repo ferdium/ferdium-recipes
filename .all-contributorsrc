@@ -1703,6 +1703,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "remche",
+      "name": "remche",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90197?v=4",
+      "profile": "http://www.remche.org",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
