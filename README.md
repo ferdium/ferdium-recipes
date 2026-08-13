@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-188-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-189-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -278,6 +278,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/codeshell' title='TMW: code'><img src='https://avatars.githubusercontent.com/u/23580812?v=4' alt='codeshell' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://rauten.co.za' title='Jans Rautenbach: code'><img src='https://avatars.githubusercontent.com/u/14095706?v=4' alt='J4NS-R' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='http://www.remche.org' title='remche: code'><img src='https://avatars.githubusercontent.com/u/90197?v=4' alt='remche' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/k1ba-sometimes' title='k1ba-sometimes: code'><img src='https://avatars.githubusercontent.com/u/56705486?v=4' alt='k1ba-sometimes' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>
