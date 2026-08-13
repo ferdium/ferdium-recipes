@@ -218,7 +218,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/Cknight70' title='Cknight70: code'><img src='https://avatars.githubusercontent.com/u/28763729?v=4' alt='Cknight70' style='width:100px;'/></a></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href='https://github.com/Mralexandresys' title='Alexandre: infra'><img src='https://avatars.githubusercontent.com/u/32882826?v=4' alt='Mralexandresys' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/Mralexandresys' title='Alexandre: infra, code'><img src='https://avatars.githubusercontent.com/u/32882826?v=4' alt='Mralexandresys' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://lillecarl.com' title='Ujp8LfXBJ6wCPR: code'><img src='https://avatars.githubusercontent.com/u/207073?v=4' alt='Lillecarl' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='http://claytonbelcher.com' title='Clayton: code'><img src='https://avatars.githubusercontent.com/u/1791012?v=4' alt='cloopadoop' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://martin-braun.net/' title='Martin Braun: code'><img src='https://avatars.githubusercontent.com/u/24259245?v=4' alt='martin-braun' style='width:100px;'/></a></td>
