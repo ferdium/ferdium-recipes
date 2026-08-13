@@ -7,9 +7,7 @@ const _path = _interopRequireDefault(require('path'));
 module.exports = Ferdium => {
   const getMessages = () => {
     // get unread messages
-    let count = 0;
-    for (const span of document.querySelectorAll('span[jsname=DW2nlb]'))
-      count += Ferdium.safeParseInt(span.textContent);
+    let count = document.querySelectorAll('span[data-is-unread="true"]').length;
 
     // set Ferdium badge
     Ferdium.setBadge(count);
