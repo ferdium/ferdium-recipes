@@ -30,8 +30,6 @@ module.exports = Ferdium => {
 
   const refreshMinutes = 5;
 
-  // console.log("after "+refreshMinutes+" minutes")
-
   setTimeout(
     () => {
       window.location.reload();
