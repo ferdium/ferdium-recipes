@@ -28,30 +28,46 @@ module.exports = (Ferdium, settings) => {
   document.addEventListener(
     'click',
     event => {
-      const link = event.target.closest('a');
-      const button = event.target.closest('button');
+      const targetElement = event.target;
+      if (!(targetElement instanceof Element)) {
+        return;
+      }
+      const link = targetElement.closest('a[href]');
 
-      if (link || button) {
-        const url = link
-          ? link.getAttribute('href')
-          : button.getAttribute('title');
+      if (!link || Ferdium.isImage(link)) {
+        return;
+      }
 
-        // check if the URL is relative or absolute
-        if (url.startsWith('/')) {
-          return;
-        }
+      const url = link.getAttribute('href');
+      if (!url || url === '#') {
+        return;
+      }
 
-        // check if we have a valid URL that is not a script nor an image:
-        if (url && url !== '#' && !Ferdium.isImage(link)) {
-          event.preventDefault();
-          event.stopPropagation();
+      // Keep in-app navigation untouched.
+      if (url.startsWith('/')) {
+        return;
+      }
 
-          if (settings.trapLinkClicks === true) {
-            window.location.href = url;
-          } else {
-            Ferdium.openNewWindow(url);
-          }
-        }
+      let parsedUrl;
+      try {
+        parsedUrl = new URL(url, window.location.href);
+      } catch {
+        return;
+      }
+
+      if (
+        !['http:', 'https:', 'ftp:', 'mailto:'].includes(parsedUrl.protocol)
+      ) {
+        return;
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (settings.trapLinkClicks === true) {
+        window.location.href = parsedUrl.toString();
+      } else {
+        Ferdium.openNewWindow(parsedUrl.toString());
       }
     },
     true,
@@ -68,12 +84,14 @@ module.exports = (Ferdium, settings) => {
       );
     } else {
       // new app
+      indirectUnreadCount = collectCounts(
+        'div[role=tree] > div:nth-of-type(2) > div[role=group] > span',
+      ); // groups
       directUnreadCount =
         settings.onlyShowFavoritesInUnreadCount === true
-          ? collectCounts('div[role=tree]:nth-child(2)')
-          : collectCounts('div[role=tree]:nth-child(1)');
-
-      indirectUnreadCount = collectCounts('div[role=tree]:nth-child(4)'); // groups
+          ? collectCounts('div[role=tree] > div:nth-of-type(1)')
+          : collectCounts('div[role=tree] > div:nth-of-type(2)') -
+            indirectUnreadCount;
     }
 
     Ferdium.setBadge(directUnreadCount, indirectUnreadCount);

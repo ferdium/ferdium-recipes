@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml"><img alt="Build Status" src="https://github.com/ferdium/ferdium-recipes/actions/workflows/builds.yml/badge.svg?branch=main&event=push"></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-174-default.svg?logo=github' alt='Contributors'/></a>
+<a href='#contributors-'><img src='https://img.shields.io/badge/contributors-190-default.svg?logo=github' alt='Contributors'/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- TODO: Uncomment once we get funding sorted
 <a href="#backers-via-opencollective"><img alt="Open Collective backers" src="https://img.shields.io/opencollective/backers/getferdi?logo=open-collective"></a>
@@ -218,7 +218,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/Cknight70' title='Cknight70: code'><img src='https://avatars.githubusercontent.com/u/28763729?v=4' alt='Cknight70' style='width:100px;'/></a></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href='https://github.com/Mralexandresys' title='Alexandre: infra'><img src='https://avatars.githubusercontent.com/u/32882826?v=4' alt='Mralexandresys' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/Mralexandresys' title='Alexandre: infra, code'><img src='https://avatars.githubusercontent.com/u/32882826?v=4' alt='Mralexandresys' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://lillecarl.com' title='Ujp8LfXBJ6wCPR: code'><img src='https://avatars.githubusercontent.com/u/207073?v=4' alt='Lillecarl' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='http://claytonbelcher.com' title='Clayton: code'><img src='https://avatars.githubusercontent.com/u/1791012?v=4' alt='cloopadoop' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://martin-braun.net/' title='Martin Braun: code'><img src='https://avatars.githubusercontent.com/u/24259245?v=4' alt='martin-braun' style='width:100px;'/></a></td>
@@ -260,6 +260,28 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/Hugo8220337' title='Hugo Guimarães: code'><img src='https://avatars.githubusercontent.com/u/148533705?v=4' alt='Hugo8220337' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/delVhariant' title='delVhariant: code'><img src='https://avatars.githubusercontent.com/u/57427820?v=4' alt='delVhariant' style='width:100px;'/></a></td>
       <td align="center" valign="top" width="14.28%"><a href='https://github.com/joschi127' title='joschi127: code'><img src='https://avatars.githubusercontent.com/u/1758468?v=4' alt='joschi127' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='http://www.atenea-studio.com' title='David Romero: code'><img src='https://avatars.githubusercontent.com/u/3168166?v=4' alt='powerfrontier' style='width:100px;'/></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href='http://www.milanrybovic.sk' title='Milan Rybovič: code'><img src='https://avatars.githubusercontent.com/u/120911289?v=4' alt='milanrybovic' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/beto621' title='Beto: code'><img src='https://avatars.githubusercontent.com/u/96891795?v=4' alt='beto621' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://prudentdev.com/' title='Prudent App Dev: code'><img src='https://avatars.githubusercontent.com/u/87621722?v=4' alt='Sergey-PrudentDev' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://maki.cafe' title='maki: code'><img src='https://avatars.githubusercontent.com/u/8362329?v=4' alt='makinori' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://www.leoreading.com/' title='Leo: code'><img src='https://avatars.githubusercontent.com/u/5851985?v=4' alt='lreading' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/danielmcmillan' title='Daniel McMillan: code'><img src='https://avatars.githubusercontent.com/u/22465798?v=4' alt='danielmcmillan' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='http://tobiasfluehmann.ch' title='Tobias Flühmann: code'><img src='https://avatars.githubusercontent.com/u/5341776?v=4' alt='tfluehmann' style='width:100px;'/></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/mastercko' title='mastercko: code'><img src='https://avatars.githubusercontent.com/u/6900268?v=4' alt='mastercko' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/SCaeR42' title='SCaeR: code'><img src='https://avatars.githubusercontent.com/u/16041701?v=4' alt='SCaeR42' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://phil.red' title='Philipp A.: code'><img src='https://avatars.githubusercontent.com/u/291575?v=4' alt='flying-sheep' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/codeshell' title='TMW: code'><img src='https://avatars.githubusercontent.com/u/23580812?v=4' alt='codeshell' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://rauten.co.za' title='Jans Rautenbach: code'><img src='https://avatars.githubusercontent.com/u/14095706?v=4' alt='J4NS-R' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='http://www.remche.org' title='remche: code'><img src='https://avatars.githubusercontent.com/u/90197?v=4' alt='remche' style='width:100px;'/></a></td>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/k1ba-sometimes' title='k1ba-sometimes: code'><img src='https://avatars.githubusercontent.com/u/56705486?v=4' alt='k1ba-sometimes' style='width:100px;'/></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href='https://github.com/gianlucapisati' title='Gianluca: code'><img src='https://avatars.githubusercontent.com/u/438602?v=4' alt='gianlucapisati' style='width:100px;'/></a></td>
     </tr>
   </tbody>
 </table>

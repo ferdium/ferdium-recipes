@@ -15,12 +15,27 @@ module.exports = Ferdium => {
   }
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
-  Ferdium.injectCSS(
-    'https://cdn.statically.io/gh/ferdium/ferdium-recipes/main/recipes/google-calendar/calendar.css',
-  );
-  Ferdium.injectJSUnsafe(
-    'https://cdn.statically.io/gh/ferdium/ferdium-recipes/main/recipes/google-calendar/webview-unsave.js',
-  );
+  // calendar.css is linked rather than passed to Ferdium.injectCSS, because
+  // injectCSS fills a <style> element via innerHTML, which calendar.google.com
+  // rejects under `require-trusted-types-for 'script'`. Same approach as the
+  // darkmode.css workaround below.
+  const calendarCssId = 'cssFranzModal';
+  if (!document.querySelector(`#${calendarCssId}`)) {
+    const head = document.querySelectorAll('head')[0];
+    const link = document.createElement('link');
+    link.id = calendarCssId;
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href =
+      'https://cdn.statically.io/gh/ferdium/ferdium-recipes/main/recipes/google-calendar/calendar.css';
+    link.media = 'all';
+    head.append(link);
+  }
+
+  // Injected from disk: injectJSUnsafe only reads local files, handing the
+  // source to webview.executeJavaScript (which page CSP does not apply to).
+  // Passing it a URL silently injected nothing at all.
+  Ferdium.injectJSUnsafe(_path.default.join(__dirname, 'webview-unsafe.js'));
 
   Ferdium.handleDarkMode(isEnabled => {
     const cssId = 'cssDarkModeWorkaround';
