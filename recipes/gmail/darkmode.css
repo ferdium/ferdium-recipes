@@ -20,11 +20,11 @@ body, div, h1, h2, h3, h4, h5, h6, p, span, tr, td, table {
 .a98 > a {
   color: blue !important;
 }
-.a98 > *, .a98 *, .a98{
+.a98 > *, .a98 *, .a98 {
   background-color: var(--gm3-sys-color-on-background) !important;   
   color: #fff !important;
 }
-.hP, .gD, .go, .gK  {
+.hP, .gD, .go, .gK {
   color:  #fff !important;;
 }
 .a3s.aiL > div > div > table > tbody, .a3s.aiL > div > table {
@@ -62,22 +62,13 @@ body, div, h1, h2, h3, h4, h5, h6, p, span, tr, td, table {
   background-color: var(--gm3-sys-color-on-background);
   color: #fff !important;
 }
-.m_1101107240044101454nl-m-block-table {
-  background-color: var(--gm3-sys-color-on-background);
-}
-.m_-9085597476244977982es-m-p20t {
-  background-color: var(--gm3-sys-color-on-background);
-}
 
-.m_-3410381025534480928es-content {
-  background-color: var(--gm3-sys-color-on-background);
-}
 
 .a3s, .a3s > div, .a3s > * .aiL > * {
   background-color: var(--gm3-sys-color-on-background);
 } 
 
-#loading  {
+#loading {
   background-color: rgb(14, 16, 17) !important;
 }
 .la-k .la-m {
@@ -90,21 +81,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, span, tr, td, table {
 .roster_comm_link, .la-i > div, .aDG {
   background-color: rgb(14, 16, 17) !important;
 }
-.m_6739384714865278520es-m-txt-c > h1{
-  color: #fff !important; 
-}
-.m_-5899876277505173878tag {
-  background-color:rgb(14, 16, 17)!important;
-  color: #fff !important;
-}
 
-.msg-5476942933920871755, .m_-5476942933920871755bg-cover {
-  background-color:rgb(14, 16, 17)!important;
-}
-.msg8210101856495818180 .m_8210101856495818180bg-cover {
-  background-color:rgb(14, 16, 17)!important;
-
-}
 
 .rPlcIc {
   border: none;
@@ -176,7 +153,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, span, tr, td, table {
   background-color: rgb(11, 13, 14);
 }
 
-.gb_Kc.gb_hd, .gb_hd.gb_id, .gb-qe{
+.gb_Kc.gb_hd, .gb_hd.gb_id, .gb-qe {
   background-color: rgb(11, 13, 14) !important;
   color: #fff !important;
 }
@@ -249,9 +226,6 @@ body, div, h1, h2, h3, h4, h5, h6, p, span, tr, td, table {
   color: rgb(196, 192, 186)  !important;
 }
 
-.m_2748637039718987311bg-cover > div {
-  max-width: 100%;
-}
 
 [data-darkreader-inline-bgimage] {
   background-image: none !important;
@@ -292,12 +266,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, span, tr, td, table {
   background-color: rgba(108, 108, 108, 0.2) !important;
 }
 
-.msg-7895207889899298162 .m_-7895207889899298162bg-cover, .msg5898900423439880409 .m_5898900423439880409bg-cover, .msg3174298617804948066 .m_3174298617804948066bg-cover, .m_-5635427342892673441bg-cover, .msg-5847429093741280064 .m_-5847429093741280064bg-cover  {
-  background: rgb(15, 17, 18) !important;
-}
-.m_-7895207889899298162bg-cover {
-  background: rgb(15, 17, 18) !important;
-}
+
 .uW2Fw-JD:not(.uW2Fw-JD-ql-aPH) :is(.uW2Fw-bHl,.uW2Fw-bHp,.uW2Fw-bHg) {
   background: rgb(11, 13, 14) !important;
 }
@@ -311,9 +280,6 @@ body, div, h1, h2, h3, h4, h5, h6, p, span, tr, td, table {
   background: black;
 }
 
-.AD > *, div#\:rm, div#\:p6, .aYF span {
-  color: #000000 !important;
-}
 
 .ZZ {
   background-color: rgb(27, 27, 27) !important;
@@ -353,7 +319,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, span, tr, td, table {
   background-color: rgb(19, 19, 19);
 }
 
-.AD > *, div#\:rm, div#\:p6, .aYF span {
+.AD > *, .aYF span {
   color: rgb(217, 215, 212) !important;
 }
 
@@ -378,21 +344,17 @@ body, div, h1, h2, h3, h4, h5, h6, p, span, tr, td, table {
   background-color: rgb(11, 13, 14) !important;
   color: rgb(196, 192, 186) !important;
 }
-.aoT, div#\:rm {
+.aoT {
   background-color: rgb(11, 13, 14) !important;
   color: rgb(196, 192, 186) !important;
 }
 
-div#\:st {
-  color: rgb(196, 192, 186) !important;
-  filter: invert(1) !important;
-}
 
 tr.J-Kw-axF, .J-N-JX.mYVwse, .J-N-Jo, iframe#help_panel_main_frame {
   filter: invert(1);
 }
 
-tr.btC, div#\:og, .bBV, .bfXxob.fbhF2  {
+tr.btC, .bBV, .bfXxob.fbhF2 {
   background-color: rgb(11, 13, 14) !important;
 }
 
@@ -453,8 +415,6 @@ ul.VfPpkd-StrnGf-rymPhb.DMZ54e {
   color: #fff !important;
 }
 
-.TO .aHS-aHP .qj {
-}
 
 .VF {
   background-image: initial;
@@ -504,7 +464,7 @@ button.J-JB-KA-Jk.J-JB-KA-bsP, button.J-JB-KA-Jk.J-JB-KA-bsO, button.J-JB-KA-Jk.
 }
 
 
-.J-N, .J-N-Jz, div#\:nx, .mL.f4.J-N-JX, div#\:vr {
+.J-N, .J-N-Jz, .mL.f4.J-N-JX {
   background: transparent !important;
 }
 .J-M {
@@ -512,19 +472,10 @@ button.J-JB-KA-Jk.J-JB-KA-bsP, button.J-JB-KA-Jk.J-JB-KA-bsO, button.J-JB-KA-Jk.
 }
 
 
-div#\:2cs {
-  background-color: rgb(11, 13, 14) !important;
-}
-
-.msg6026393305677836731 .m_6026393305677836731bg-cover, .msg5915716874261663446 .m_5915716874261663446bg-cover {
-  background: none !important;
-}
-
 .a3s > div > div > div {
   background: rgb(11, 13, 14) !important;
   max-width: 100% !important;
 }
-
 
 
 .aO7 > div {
@@ -538,9 +489,6 @@ div#\:2cs {
   background: #fff !important;
 }
 
-#\:lv > div > .qj {
-  filter: invert(1) !important;
-}
 
 /* ---- Gemini side panel ----
    Gmail forces the LIGHT GM3 palette on the Gemini panel wrapper (.GYfbG),
