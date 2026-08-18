@@ -7,6 +7,8 @@ const _path = _interopRequireDefault(require('path'));
 module.exports = (Ferdium, settings) => {
   Ferdium.injectCSS(_path.default.join(__dirname, 'style.css'));
 
+  if (settings.trapLinkClicks === true) return;
+
   // TODO: See how this can be moved into the main ferdium app and sent as an ipc message for opening with a new window or same Ferdium recipe's webview based on user's preferences
   document.addEventListener(
     'click',
@@ -22,12 +24,7 @@ module.exports = (Ferdium, settings) => {
         if (!Ferdium.isImage(link)) {
           event.preventDefault();
           event.stopPropagation();
-
-          if (settings.trapLinkClicks === true) {
-            window.location.href = url;
-          } else {
-            Ferdium.openNewWindow(url);
-          }
+          Ferdium.openNewWindow(url);
         }
       }
     },
