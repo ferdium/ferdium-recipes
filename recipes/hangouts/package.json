@@ -1,7 +1,7 @@
 {
   "id": "hangouts",
   "name": "Google Chat",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "license": "MIT",
   "config": {
     "serviceURL": "https://mail.google.com/chat/",
