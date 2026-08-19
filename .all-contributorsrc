@@ -1730,6 +1730,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "cheets",
+      "name": "Henri Koskenranta",
+      "avatar_url": "https://avatars.githubusercontent.com/u/289477?v=4",
+      "profile": "https://github.com/cheets",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
