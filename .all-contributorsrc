@@ -1739,6 +1739,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "OmarDerwy",
+      "name": "OmarDerwy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44525929?v=4",
+      "profile": "https://github.com/OmarDerwy",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
