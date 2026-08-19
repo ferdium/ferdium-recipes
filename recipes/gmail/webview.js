@@ -49,7 +49,7 @@ module.exports = Ferdium => {
     if (spaceAndChatBadges.length > 0) {
       const arr = [...spaceAndChatBadges];
       const spaceAndChatCount = arr.reduce(
-        (acc, e) => Ferdium.safeParseInt(e.getInnerHTML()) + acc,
+        (acc, e) => Ferdium.safeParseInt(e.textContent) + acc,
         0,
       );
       countImportant += spaceAndChatCount;
