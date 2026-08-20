@@ -1,12 +1,11 @@
 {
   "id": "whatsapp",
   "name": "WhatsApp",
-  "version": "3.5.7",
+  "version": "3.5.8",
   "license": "MIT",
   "config": {
     "serviceURL": "https://web.whatsapp.com",
     "hasNotificationSound": true,
-    "hasIndirectMessages": true,
-    "disablewebsecurity": true
+    "hasIndirectMessages": true
   }
 }
