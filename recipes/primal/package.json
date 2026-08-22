@@ -1,0 +1,14 @@
+{
+  "id": "primal",
+  "name": "Primal",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "nostr"
+  ],
+  "config": {
+    "serviceURL": "https://primal.net/",
+    "hasDirectMessages": true
+  },
+  "defaultIcon": "https://github.com/PrimalHQ/primal-web-app/raw/refs/heads/main/src/assets/icons/logo.svg"
+}
