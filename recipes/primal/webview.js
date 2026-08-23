@@ -19,9 +19,7 @@ module.exports = Ferdium => {
     if (notificationsElement) {
       direct += Ferdium.safeParseInt(notificationsElement.textContent);
     }
-    const DMElement = document.querySelector(
-      'a[href="/dms"]',
-    ).nextSibling;
+    const DMElement = document.querySelector('a[href="/dms"]').nextSibling;
     if (DMElement) {
       direct += Ferdium.safeParseInt(DMElement.textContent);
     }
