@@ -1,0 +1,14 @@
+{
+  "id": "gather-v2",
+  "name": "Gather 2.0",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "Gather v2",
+    "Gather 2"
+  ],
+  "config": {
+    "serviceURL": "https://app.v2.gather.town/",
+    "hasNotificationSound": true
+  }
+}
