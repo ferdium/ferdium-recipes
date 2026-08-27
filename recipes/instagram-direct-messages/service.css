@@ -11,3 +11,13 @@
 #react-root>section .i0EQd {
     max-width: unset !important;
 }
+
+/* Instagram's DM loading-skeleton shimmer animates height/transform on SVG
+   <rect>s, forcing layout+paint every vsync indefinitely (huge CPU/GPU usage,
+   especially on high-refresh displays). The skeletons are decorative
+   placeholders, so freezing them has no functional impact. Targeting all svg
+   rects (rather than Instagram's compiled class names) keeps the rule working
+   across Instagram deploys. */
+svg rect {
+  animation: none !important;
+}
