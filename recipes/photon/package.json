@@ -1,0 +1,14 @@
+{
+  "id": "photon",
+  "name": "Photon",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": ["lemmy"],
+  "config": {
+    "serviceURL": "https://phtn.app/",
+    "hasCustomUrl": true,
+    "message": "Add your own instance's hosted version, or use the default one at https://phtn.app/",
+    "hasDirectMessages": true,
+    "hasIndirectMessages": true
+  }
+}
