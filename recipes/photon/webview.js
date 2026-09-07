@@ -9,7 +9,7 @@ module.exports = (Ferdium) => {
 
   const getMessages = async () => {
     // Since we're making an API request to obtain unreads,
-    // only check once every five seconds 
+    // only check once every five seconds
     count = (count + 1) % 5;
     if (count > 0) return;
 
