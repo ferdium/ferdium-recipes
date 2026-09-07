@@ -1766,6 +1766,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "nexxai",
+      "name": "JT Smith",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4316564?v=4",
+      "profile": "https://github.com/nexxai",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
