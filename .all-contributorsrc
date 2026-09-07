@@ -1757,6 +1757,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "anhvu-sg",
+      "name": "Vu Nguyen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7898318?v=4",
+      "profile": "https://github.com/anhvu-sg",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
