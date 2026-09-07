@@ -3,7 +3,9 @@
   "name": "Photon",
   "version": "1.0.0",
   "license": "MIT",
-  "aliases": ["lemmy"],
+  "aliases": [
+    "lemmy"
+  ],
   "config": {
     "serviceURL": "https://phtn.app/",
     "hasCustomUrl": true,
