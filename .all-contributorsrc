@@ -1766,6 +1766,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "zquestz",
+      "name": "Josh Ellithorpe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83898?v=4",
+      "profile": "https://thoughts.greyh.at",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
