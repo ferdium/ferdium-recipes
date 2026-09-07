@@ -1784,6 +1784,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "tavaresgmg",
+      "name": "Guilherme Tavares ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95603984?v=4",
+      "profile": "https://github.com/tavaresgmg",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
