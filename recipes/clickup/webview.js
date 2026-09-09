@@ -6,8 +6,11 @@ const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
   const getMessages = () => {
-    const unread = document.querySelector('.cu-notification-alert__dot');
-    Ferdium.setBadge(unread ? 1 : 0);
+    const counter = document.querySelector(
+      '[data-test=simple-bar-item-counter-chat]',
+    );
+    const unread = counter ? Number.parseInt(counter.textContent, 10) || 0 : 0;
+    Ferdium.setBadge(unread);
   };
 
   Ferdium.loop(getMessages);
