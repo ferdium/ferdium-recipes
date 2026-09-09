@@ -1793,6 +1793,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "dansleboby",
+      "name": "Gilbert Paquin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4716382?v=4",
+      "profile": "https://sigp.ca",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "commitType": "docs"
