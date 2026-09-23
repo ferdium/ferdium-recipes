@@ -1,0 +1,13 @@
+{
+  "id": "crm-ai2n",
+  "name": "CRM AI2N",
+  "version": "1.0.0",
+  "description": "Ferdium Recipe for CRM AI2N",
+  "main": "index.js",
+  "author": "AI2N Team",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://crm.ai2n.dev",
+    "hasCustomUrl": true
+  }
+}
