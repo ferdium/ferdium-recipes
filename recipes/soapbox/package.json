@@ -1,0 +1,16 @@
+{
+  "id": "soapbox",
+  "name": "Soapbox",
+  "version": "1.0.0",
+  "aliases": [
+    "Mastodon",
+    "Pleroma",
+    "Nicolium"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/0xCmdrKeen/ferdium-recipe-soapbox",
+  "config": {
+    "hasCustomUrl": true,
+    "message": "Enter the full URL of your Soapbox instance, e.g. https://fe.soapbox.pub"
+  }
+}
