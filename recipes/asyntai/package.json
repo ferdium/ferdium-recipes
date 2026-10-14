@@ -1,0 +1,14 @@
+{
+  "id": "asyntai",
+  "name": "Asyntai AI Chatbot",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "Asyntai",
+    "AI Chatbot"
+  ],
+  "config": {
+    "serviceURL": "https://asyntai.com/dashboard",
+    "message": "Sign in with your Asyntai account. The badge shows unread chats, leads and notifications."
+  }
+}
