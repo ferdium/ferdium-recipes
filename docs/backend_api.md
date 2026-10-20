@@ -8,6 +8,7 @@ Provides a set of helper functions to integrate the recipe into [Ferdium](https:
 * [overrideUserAgent](#overrideuseragent)
 * [modifyRequestHeaders](#modifyrequestheaders)
 * [knownCertificateHosts](#knownCertificateHosts)
+* [resolveLink](#resolvelinklink-context)
 
 ## Events
 
@@ -146,6 +147,46 @@ module.exports = Ferdium => class MicrosoftTeams extends Ferdium {
       'windows.com',
       'windows.net',
     ];
+  };
+};
+```
+
+### resolveLink(link, context)
+
+Decide whether a link that Ferdium was asked to open belongs to this service, and which URL the service should load for it. Ferdium asks the recipe of each service in sidebar order and opens the link in the first service whose recipe returns a URL. When no recipe claims a http(s) link, Ferdium opens it in the first service with the same host.
+
+Links reach Ferdium when it is the default browser, through a link router, or when the user lets Ferdium open the app links of a service (see [protocols](configuration.md#config-flags)).
+
+#### Arguments
+
+1. `string` link: the link Ferdium was asked to open, e.g. `https://example.slack.com/archives/C0123456789` or `slack://channel?team=T0123456789&id=C0123456789`
+2. `object` context: what Ferdium knows about this service
+   * `string` url: the URL of the service
+   * `string` team: the team of the service, for recipes with `hasTeamId`
+   * `object` linkContext: the details the recipe stored with [setLinkContext](frontend_api.md#setlinkcontextcontext)
+
+#### Returns
+
+`string` the URL the service should load, or `null` when the link does not belong to this service. The default implementation returns `null`.
+
+#### Usage
+
+```js
+// Slack integration
+module.exports = Ferdium => class Slack extends Ferdium {
+  resolveLink(link, { team, linkContext }) {
+    const url = new URL(link);
+
+    if (url.protocol === 'slack:') {
+      // Only open app links that are meant for this workspace
+      if (url.searchParams.get('team') !== linkContext.workspaceId) {
+        return null;
+      }
+
+      return `https://${team}.slack.com/messages/${url.searchParams.get('id')}`;
+    }
+
+    return null;
   };
 };
 ```

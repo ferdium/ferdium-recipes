@@ -35,6 +35,9 @@
     - [setDialogTitle(title)](#setdialogtitletitle-1)
       - [Arguments](#arguments-10)
       - [Usage](#usage-10)
+    - [setLinkContext(context)](#setlinkcontextcontext)
+      - [Arguments](#arguments-11)
+      - [Usage](#usage-11)
 
 # Frontend API
 
@@ -334,4 +337,25 @@ When you want to set the title of the Ferdium window (while this service is acti
 
 ```JavaScript
 Ferdium.setDialogTitle(element ? element.textContent : null);
+```
+
+### setLinkContext(context)
+
+Store details that the page knows and Ferdium doesn't, so the recipe's [resolveLink](backend_api.md#resolvelinklink-context) can use them to recognize links to this service. Ferdium saves them with the settings of the service, and only when they change, so it is fine to call this on every loop.
+
+This method was added in a later Ferdium version, so check that it exists before calling it.
+
+#### Arguments
+
+1. `object` context: the details to store, with `string` values
+
+#### Usage
+
+```JavaScript
+// The Slack web client runs on app.slack.com/client/<workspace id>/…
+const workspaceId = /^\/client\/(T[\dA-Z]+)/.exec(window.location.pathname);
+
+if (workspaceId && typeof Ferdium.setLinkContext === 'function') {
+  Ferdium.setLinkContext({ workspaceId: workspaceId[1] });
+}
 ```

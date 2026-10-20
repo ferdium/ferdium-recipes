@@ -214,6 +214,7 @@ const compress = (src, dest) =>
         'allowFavoritesDelineationInUnreadCount',
         'message',
         'disablewebsecurity',
+        'protocols',
       ]);
       const unrecognizedConfigKeys = configKeys.filter(
         x => !knownConfigKeys.has(x),
