@@ -1,0 +1,9 @@
+{
+  "id": "midjourney",
+  "name": "Midjourney",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.midjourney.com/"
+  }
+}
