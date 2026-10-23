@@ -1,0 +1,9 @@
+{
+  "id": "atomicmail",
+  "name": "Atomic Mail",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://atomicmail.io/app"
+  }
+}
