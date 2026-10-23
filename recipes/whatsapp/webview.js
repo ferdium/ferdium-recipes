@@ -4,6 +4,56 @@ function _interopRequireDefault(obj) {
 
 const _path = _interopRequireDefault(require('path'));
 
+const { ipcRenderer } = require('electron');
+
+function openChat(title) {
+  const tryOpen = (attempt = 0) => {
+    let target = null;
+    const spans = document.querySelectorAll('#pane-side span[title]');
+    for (const span of spans) {
+      const t = span.getAttribute('title');
+      if (
+        t === title ||
+        (t && title && (t.includes(title) || title.includes(t)))
+      ) {
+        target = span;
+        break;
+      }
+    }
+
+    if (!target) {
+      const firstRow = document.querySelector(
+        '#pane-side div[role="listitem"], #pane-side div[role="row"]',
+      );
+      if (firstRow) target = firstRow;
+    }
+
+    if (target) {
+      const clickEl =
+        target.closest('div[role="listitem"]') ||
+        target.closest('div[role="row"]') ||
+        target;
+      clickEl.scrollIntoView?.({ block: 'nearest' });
+      const opts = {
+        bubbles: true,
+        cancelable: true,
+        view: window,
+        buttons: 1,
+        button: 0,
+      };
+      for (const evt of ['mousedown', 'mouseup', 'click'])
+        target.dispatchEvent(new MouseEvent(evt, opts));
+      if (clickEl !== target) {
+        for (const evt of ['mousedown', 'mouseup', 'click'])
+          clickEl.dispatchEvent(new MouseEvent(evt, opts));
+      }
+    } else if (attempt < 10) {
+      setTimeout(() => tryOpen(attempt + 1), 200);
+    }
+  };
+
+  setTimeout(() => tryOpen(0), 100);
+}
 module.exports = Ferdium => {
   let dbCache;
 
@@ -85,4 +135,14 @@ module.exports = Ferdium => {
   Ferdium.loop(loopFunc);
 
   Ferdium.injectCSS(_path.default.join(__dirname, 'service.css'));
+
+  Ferdium.onNotify(notification => {
+    const { title, notificationId } = notification;
+
+    ipcRenderer.once(`notification-onclick:${notificationId}`, () => {
+      openChat(title);
+    });
+
+    return notification;
+  });
 };
