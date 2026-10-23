@@ -83,6 +83,8 @@ Info message that will be displayed in the add/edit service preferences screen.
 Some services like hangoutschat need the web security disabled.
 * `boolean` **allowFavoritesDelineationInUnreadCount** _default: false_<br />
 Services like Outlook differentiate between favorites vs other folders. Setting this to `true` will allow the exclusion of the message counts from those non-favorite folders.
+* `array[string]` **protocols** _default: []_<br />
+The app link protocols of the service, e.g. `["slack"]` for `slack://` links. When the user turns on the setting to open app links in Ferdium, Ferdium registers itself as the handler for these protocols. Only list a protocol when the recipe's [resolveLink](backend_api.md#resolvelinklink-context) handles its links.
 
 ## Example
 

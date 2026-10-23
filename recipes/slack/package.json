@@ -1,13 +1,16 @@
 {
   "id": "slack",
   "name": "Slack",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "license": "MIT",
   "config": {
     "serviceURL": "https://{teamId}.slack.com",
     "hasNotificationSound": true,
     "hasIndirectMessages": true,
     "hasTeamId": true,
-    "urlInputSuffix": ".slack.com"
+    "urlInputSuffix": ".slack.com",
+    "protocols": [
+      "slack"
+    ]
   }
 }

@@ -28,9 +28,21 @@ module.exports = Ferdium => {
     );
   };
 
+  // The web client runs on app.slack.com/client/<workspace id>/…; Ferdium uses
+  // that id to recognize links to this workspace. Older Ferdium versions don't
+  // have setLinkContext, so only call it when it's there.
+  const shareWorkspaceId = () => {
+    const workspaceId = /^\/client\/(T[\dA-Z]+)/.exec(window.location.pathname);
+
+    if (workspaceId && typeof Ferdium.setLinkContext === 'function') {
+      Ferdium.setLinkContext({ workspaceId: workspaceId[1] });
+    }
+  };
+
   const loopFunc = () => {
     getMessages();
     getActiveDialogTitle();
+    shareWorkspaceId();
   };
 
   Ferdium.loop(loopFunc);
