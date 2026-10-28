@@ -1,0 +1,9 @@
+{
+  "id": "moin",
+  "name": "MOiN",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://moin.net/"
+  }
+}
