@@ -1,0 +1,16 @@
+{
+  "id": "msteams-personal",
+  "name": "Microsoft Teams Personal",
+  "version": "3.3.2",
+  "license": "MIT",
+  "aliases": [
+    "teamsChat"
+  ],
+  "config": {
+    "serviceURL": "https://teams.live.com",
+    "hasNotificationSound": true,
+    "hasIndirectMessages": true
+  },
+  "defaultIcon": "https://cdn.jsdelivr.net/gh/ferdium/ferdium-recipes@main/recipes/msteams/icon.svg",
+  "message": "Use this to fix logouts when using the Personal team (teams.live.com). For 365-based teams (teams.microsoft.com) use the default Microsoft Teams service."
+}
