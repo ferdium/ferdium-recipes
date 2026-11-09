@@ -1,0 +1,16 @@
+{
+  "id": "rool",
+  "name": "Rool",
+  "version": "1.0.0",
+  "license": "MIT",
+  "aliases": [
+    "rool.dev",
+    "rool.app"
+  ],
+  "config": {
+    "serviceURL": "https://rool.app",
+    "hasDirectMessages": true,
+    "hasIndirectMessages": false,
+    "message": "Sign in with the same account you use in the Rool app. Your chats stay on your own Rool Machine."
+  }
+}
