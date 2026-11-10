@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="120" fill="#1a0d00"/>
+  <!-- Decorative outer ring -->
+  <circle cx="512" cy="512" r="440" fill="none" stroke="#c89b3c" stroke-width="18" opacity="0.7"/>
+  <!-- Inner ring -->
+  <circle cx="512" cy="512" r="370" fill="none" stroke="#8b5e1a" stroke-width="6" opacity="0.5"/>
+  <!-- Stylised PoE gem / orb shape -->
+  <polygon points="512,160 640,340 810,380 690,530 720,710 512,620 304,710 334,530 214,380 384,340" fill="#2a1500" stroke="#c89b3c" stroke-width="12" stroke-linejoin="round"/>
+  <!-- Inner gem facets -->
+  <polygon points="512,240 612,380 512,480 412,380" fill="#c89b3c" opacity="0.25"/>
+  <polygon points="512,480 612,380 710,500 512,620" fill="#a07020" opacity="0.3"/>
+  <polygon points="512,480 412,380 314,500 512,620" fill="#7a5010" opacity="0.3"/>
+  <!-- Trade arrows (two crossing arrows in centre) -->
+  <g fill="#e8c060" opacity="0.95">
+    <!-- Arrow right -->
+    <polygon points="420,490 580,490 580,470 620,512 580,554 580,534 420,534" />
+    <!-- Arrow left (offset) -->
+    <polygon points="604,490 444,490 444,470 404,512 444,554 444,534 604,534" opacity="0.5"/>
+  </g>
+  <!-- PoE2 text -->
+  <text x="512" y="760" font-family="Georgia, serif" font-size="110" font-weight="bold" fill="#c89b3c" text-anchor="middle" letter-spacing="8">PoE2</text>
+</svg>

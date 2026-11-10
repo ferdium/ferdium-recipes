@@ -1,0 +1,9 @@
+{
+  "id": "poe2-trade",
+  "name": "Path of Exile 2 Trade",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://www.pathofexile.com/trade2/exchange/poe2/Runes%20of%20Aldur"
+  }
+}

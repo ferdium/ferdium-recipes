@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="120" fill="#0d1117"/>
+  <!-- Outer ring -->
+  <circle cx="512" cy="512" r="440" fill="none" stroke="#4ecca3" stroke-width="16" opacity="0.6"/>
+  <!-- Inner ring -->
+  <circle cx="512" cy="512" r="370" fill="none" stroke="#2a9d7f" stroke-width="5" opacity="0.4"/>
+  <!-- Ninja shuriken / currency orb shape -->
+  <g transform="translate(512,512)">
+    <!-- Four diamond blades rotated -->
+    <polygon points="0,-260 60,-60 0,0 -60,-60" fill="#4ecca3" opacity="0.9"/>
+    <polygon points="260,0 60,60 0,0 60,-60" fill="#38b28e" opacity="0.9"/>
+    <polygon points="0,260 -60,60 0,0 60,60" fill="#4ecca3" opacity="0.9"/>
+    <polygon points="-260,0 -60,-60 0,0 -60,60" fill="#38b28e" opacity="0.9"/>
+    <!-- Diagonal blades -->
+    <polygon points="0,-260 60,-60 0,0 -60,-60" fill="#4ecca3" opacity="0.5" transform="rotate(45)"/>
+    <polygon points="260,0 60,60 0,0 60,-60" fill="#38b28e" opacity="0.5" transform="rotate(45)"/>
+    <polygon points="0,260 -60,60 0,0 60,60" fill="#4ecca3" opacity="0.5" transform="rotate(45)"/>
+    <polygon points="-260,0 -60,-60 0,0 -60,60" fill="#38b28e" opacity="0.5" transform="rotate(45)"/>
+    <!-- Centre orb -->
+    <circle cx="0" cy="0" r="80" fill="#0d1117" stroke="#4ecca3" stroke-width="10"/>
+    <circle cx="0" cy="0" r="45" fill="#4ecca3" opacity="0.8"/>
+  </g>
+  <!-- poe.ninja text -->
+  <text x="512" y="800" font-family="Georgia, serif" font-size="90" font-weight="bold" fill="#4ecca3" text-anchor="middle" letter-spacing="4">poe.ninja</text>
+</svg>
