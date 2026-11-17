@@ -1,0 +1,15 @@
+/* CRM AI2N Ferdium Dark Mode */
+body {
+  background-color: #1a1b1e !important;
+  color: #e0e0e0 !important;
+}
+
+input, textarea, select {
+  background-color: #2d2d30 !important;
+  color: #e0e0e0 !important;
+}
+
+.card, .panel, .modal {
+  background-color: #25262b !important;
+  border-color: #373a40 !important;
+}
