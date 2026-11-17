@@ -41,6 +41,14 @@ module.exports = (Ferdium, settings) => {
         const anchor = document.querySelector(
           `a[href^='${prefix}'][role='link'][tabindex='0']`,
         );
+        // Conversation rows also start with /messages/t/; they are not tabs.
+        if (
+          /\/messages\/(?:e2ee\/)?t\/\d+/.test(
+            anchor?.getAttribute('href') || '',
+          )
+        ) {
+          continue;
+        }
         const label =
           anchor?.ariaLabel || anchor?.getAttribute?.('aria-label') || null;
         if (label) {
@@ -143,6 +151,25 @@ module.exports = (Ferdium, settings) => {
               }
             }
             if (ariaCount > 0) count = ariaCount;
+          }
+        }
+
+        // Strategy 4b: On facebook.com/messages an unread thread is the only row
+        // with bold text; there is no stable class or aria-label marker for it.
+        if (count === 0) {
+          let unreadRows = 0;
+          for (const row of document.querySelectorAll(
+            'a[href*="/messages/t/"], a[href*="/messages/e2ee/t/"]',
+          )) {
+            const isUnread = [...row.querySelectorAll('span')].some(
+              el => Number.parseInt(getComputedStyle(el).fontWeight, 10) >= 600,
+            );
+            if (isUnread) {
+              unreadRows += 1;
+            }
+          }
+          if (unreadRows > 0) {
+            count = unreadRows;
           }
         }
 
