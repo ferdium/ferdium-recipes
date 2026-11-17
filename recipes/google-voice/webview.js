@@ -5,6 +5,16 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
+  // Google redirects signed-out users to the Workspace marketing page. Send
+  // them directly to the account chooser so authentication stays in Ferdium.
+  if (
+    location.hostname === 'workspace.google.com' &&
+    location.href.includes('products/voice/')
+  ) {
+    location.href =
+      'https://accounts.google.com/AccountChooser?continue=https://voice.google.com/u/0/';
+  }
+
   function parseQuery(query) {
     const el = document.querySelector(query);
     return el && Ferdium.safeParseInt(el.textContent);
