@@ -1,0 +1,12 @@
+{
+  "id": "nostrich",
+  "name": "Nostrich",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://nostrich.org",
+    "hasDirectMessages": false,
+    "hasIndirectMessages": true
+  },
+  "defaultIcon": "https://nostrich.org/favicon.svg"
+}
