@@ -1,7 +1,7 @@
 {
   "id": "zoom",
   "name": "Zoom",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "license": "MIT",
   "config": {
     "serviceURL": "https://app.zoom.us/wc/home",

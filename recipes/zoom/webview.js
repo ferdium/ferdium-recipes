@@ -6,20 +6,15 @@ const _path = _interopRequireDefault(require('path'));
 
 module.exports = (Ferdium, settings) => {
   const getMessages = () => {
-    let directCount = 0;
-    const directCountPerServer = document.querySelectorAll(
-      '[class*="lowerBadge-"] [class*="numberBadge-"]',
+    const chatBadge = document.querySelector(
+      '#home-tab-chat .header-icon__badge',
     );
 
-    for (const directCountBadge of directCountPerServer) {
-      directCount += Ferdium.safeParseInt(directCountBadge.textContent);
-    }
+    const directCount = chatBadge
+      ? Ferdium.safeParseInt(chatBadge.textContent)
+      : 0;
 
-    const indirectCountPerServer = document.querySelectorAll(
-      '[class*="modeUnread-"]',
-    ).length;
-
-    Ferdium.setBadge(directCount, indirectCountPerServer);
+    Ferdium.setBadge(directCount, 0);
   };
 
   Ferdium.loop(getMessages);
