@@ -1,0 +1,6 @@
+/* Onet ad slots. The id/class pair is the only stable hook in Onet's markup
+   (the surrounding classes are build-generated). */
+.onet-ad,
+[id^='slot-'] {
+  display: none !important;
+}
