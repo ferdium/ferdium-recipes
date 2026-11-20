@@ -5,9 +5,9 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 // Ferdium's notification wrapper inherits the native `onclose` setter which will throw an illegal invocation.
-// Element sets `notification.onclose` aborting Matrix's Room.timeline event and leaving new messages unrendered until the room is reopened.
+// Schildi sets `notification.onclose` aborting Matrix's Room.timeline event and leaving new messages unrendered until the room is reopened.
 // This fixes this.
-const injectElementNotificationFixes = () => {
+const injectSchildiNotificationFixes = () => {
   const NotificationClass = window.Notification;
   if (
     NotificationClass?.name === 'WrapNotification' &&
@@ -23,7 +23,7 @@ const injectElementNotificationFixes = () => {
   const platform = window.mxPlatformPeg?.get?.();
   if (
     !platform ||
-    platform.__elementNotificationClickFix ||
+    platform.__schildiNotificationClickFix ||
     typeof platform.displayNotification !== 'function'
   ) {
     return;
@@ -47,7 +47,7 @@ const injectElementNotificationFixes = () => {
 
     return notification;
   };
-  platform.__elementNotificationClickFix = true;
+  platform.__schildiNotificationClickFix = true;
 };
 
 // Ferdium Badge counting function
@@ -67,7 +67,7 @@ module.exports = Ferdium => {
 
   Ferdium.ipcRenderer.sendToHost(
     'inject-js-unsafe',
-    `const fix = ${injectElementNotificationFixes.toString()};
+    `const fix = ${injectSchildiNotificationFixes.toString()};
     fix();
     setTimeout(fix, 1000);`,
   );
