@@ -5,46 +5,28 @@ function _interopRequireDefault(obj) {
 const _path = _interopRequireDefault(require('path'));
 
 module.exports = Ferdium => {
-  function getUnreadMentions() {
-    const anchorWithMentionHref = document.querySelector(
-      'a[href*="is/mentioned"]',
-    );
-    const unreadCountElement =
-      anchorWithMentionHref.querySelector('.unread_count');
-
-    return unreadCountElement == null
-      ? 0
-      : Ferdium.safeParseInt(unreadCountElement.textContent);
-  }
-
-  function getUnreadCount(eltId) {
-    const elt = document.querySelectorAll(`#${eltId} + .unread_count`)[0];
+  // Zulip (2024 on) keeps each count in a `.unread_count` child, empty at 0.
+  // Every lookup is null-safe: an element Zulip renames gives 0, it does not
+  // stop the other counts from reaching the badge.
+  function countIn(selector) {
+    const elt = document.querySelector(`${selector} .unread_count`);
     return elt == null ? 0 : Ferdium.safeParseInt(elt.textContent);
   }
 
-  function getStreamsUnread() {
-    const streamsHeader = document.querySelector('#streams_header');
-    const unreadCountElement = streamsHeader.querySelector('.unread_count');
-
-    return unreadCountElement == null
-      ? 0
-      : Ferdium.safeParseInt(unreadCountElement.textContent);
-  }
-
-  //document.querySelector('#show_all_private_messages + .unread_count')
   const getMessages = () => {
-    // All unread messages
-    const streamUnread = getStreamsUnread();
+    // @ mentions
+    const unreadMentions = countIn('.top_left_mentions');
 
-    // Private messages
-    const unreadPrivate = getUnreadCount('show_all_private_messages');
+    // Direct messages
+    const unreadDirect = countIn('#direct-messages-section-header');
 
-    // @ Mentions messages
-    const unreadMentions = getUnreadMentions();
+    // Everything unread in the home view, direct messages included
+    const unreadAll = countIn('.top_left_condensed_unread_marker');
 
-    const directMessages = unreadPrivate + unreadMentions;
-
-    Ferdium.setBadge(directMessages, streamUnread);
+    Ferdium.setBadge(
+      unreadDirect + unreadMentions,
+      Math.max(unreadAll - unreadDirect, 0),
+    );
   };
 
   Ferdium.loop(getMessages);
