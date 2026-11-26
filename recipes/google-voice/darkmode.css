@@ -1,196 +1,298 @@
+/*
+ * Google Voice dark mode for Ferdium.
+ *
+ * Google Voice ships its own dark theme (Material 3 tokens declared with
+ * light-dark() on .gv-root), which it uses once the page asks for a dark
+ * color scheme. This file turns that on, re-tints Google's tokens with a
+ * warmer palette, and fixes the few spots the theme misses.
+ *
+ * Prefer stable hooks (element names, ARIA roles, gv-test-id attributes,
+ * Google's --mat-sys-* custom properties) over generated class names, and
+ * use !important only where Google's styles win otherwise.
+ */
+
+/* Palette */
 :root {
-  --dark-grey: rgb(24, 26, 27);
-  --dark-medium-grey: rgb(27, 30, 31);
-  --medium-grey: rgb(31, 34, 35);
-  --dark-green: rgb(23, 55, 53);
-  --grey: grey;
-  --light-medium-grey: rgb(140, 130, 115);
-  --light-grey: rgb(208, 204, 197);
-  --near-medium-white: rgb(192, 186, 178);
-  --near-white: rgb(232, 230, 227);
-  --basically-white: #EEE;
+  color-scheme: dark;
+
+  --gv-dm-bg: rgb(24, 26, 27);
+  --gv-dm-bg-lowest: rgb(18, 20, 21);
+  --gv-dm-bg-raised: rgb(34, 38, 40);
+  --gv-dm-bg-high: rgb(42, 46, 48);
+  --gv-dm-bg-highest: rgb(52, 57, 60);
+  --gv-dm-bg-bright: rgb(62, 67, 70);
+  --gv-dm-border: rgb(140, 130, 115);
+  --gv-dm-border-subtle: rgb(64, 61, 56);
+  --gv-dm-text: rgb(232, 230, 227);
+  --gv-dm-text-muted: rgb(192, 186, 178);
+  --gv-dm-accent: rgb(110, 200, 175);
+  --gv-dm-on-accent: rgb(10, 40, 35);
+  --gv-dm-accent-container: rgb(23, 55, 53);
+  --gv-dm-link: rgb(110, 190, 245);
+  --gv-dm-link-hover: rgb(160, 215, 250);
+  --gv-dm-link-visited: rgb(190, 160, 240);
+  --gv-dm-link-on-accent: rgb(120, 210, 235);
+  --gv-dm-link-on-accent-hover: rgb(170, 232, 245);
+  --gv-dm-danger: rgb(240, 110, 100);
 }
 
-* {
-  transition: none !important;
-  animation: none !important;
-  filter: none !important;
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -o-animation: none !important;
-  -ms-animation: none !important;
+/* Google's Material 3 tokens, re-tinted with the palette above.
+   "html .gv-root" outranks Google's own ".gv-root" declaration. */
+html .gv-root {
+  --mat-sys-background: var(--gv-dm-bg);
+  --mat-sys-surface: var(--gv-dm-bg);
+  --mat-sys-surface-dim: var(--gv-dm-bg);
+  --mat-sys-surface-container-lowest: var(--gv-dm-bg-lowest);
+  --mat-sys-surface-container-low: var(--gv-dm-bg);
+  --mat-sys-surface-container: var(--gv-dm-bg-raised);
+  --mat-sys-surface-container-high: var(--gv-dm-bg-high);
+  --mat-sys-surface-container-highest: var(--gv-dm-bg-highest);
+  --mat-sys-surface-bright: var(--gv-dm-bg-bright);
+  --mat-sys-surface-variant: var(--gv-dm-bg-highest);
+  --mat-sys-on-background: var(--gv-dm-text);
+  --mat-sys-on-surface: var(--gv-dm-text);
+  --mat-sys-on-surface-variant: var(--gv-dm-text-muted);
+  --mat-sys-outline: var(--gv-dm-border);
+  --mat-sys-outline-variant: var(--gv-dm-border-subtle);
+  --mat-sys-primary: var(--gv-dm-accent);
+  --mat-sys-on-primary: var(--gv-dm-on-accent);
+  --mat-sys-primary-container: var(--gv-dm-accent-container);
+  --mat-sys-on-primary-container: var(--gv-dm-text);
+  --mat-sys-secondary: var(--gv-dm-accent);
+  --mat-sys-on-secondary: var(--gv-dm-on-accent);
+  --mat-sys-secondary-container: var(--gv-dm-accent-container);
+  --mat-sys-on-secondary-container: var(--gv-dm-text);
+  --mat-sys-inverse-surface: var(--gv-dm-bg-high);
+  --mat-sys-inverse-on-surface: var(--gv-dm-text);
+  --mat-sys-inverse-primary: var(--gv-dm-accent);
+  --mat-sys-link: var(--gv-dm-link);
+  --mat-sys-link-hover: var(--gv-dm-link-hover);
+  --mat-sys-link-visited: var(--gv-dm-link-visited);
+  --mat-sys-error: var(--gv-dm-danger);
 }
 
-::placeholder /* placeholder text */
-{
-  color: var(--grey)!important;
+/* Scrollbars: no custom styling. Google uses the browser's native scrollbars
+   (arrow buttons, normal track and thumb), and color-scheme: dark above makes
+   the browser draw them dark. */
+
+/* Header (Google bar): "Voice" wordmark, page title (e.g. Settings) and
+   search box keep Google's light-theme text colour, so set them here. */
+header#gb a[aria-label='Google Voice'] span,
+header#gb [role='heading'] {
+  color: var(--gv-dm-text) !important;
 }
 
-::-webkit-scrollbar {
-  width: 8px!important;
+header#gb form[role='search'] input {
+  color: var(--gv-dm-text) !important;
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--medium-grey)!important;
+header#gb form[role='search'] input::placeholder {
+  color: var(--gv-dm-text-muted) !important;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--dark-green)!important;
+/* Conversation: sent bubbles. Google paints them with its light
+   --mat-sys-primary-fixed tokens even in dark mode, so give them the accent
+   container colour and a thin border instead. */
+html .gv-root gv-message-item .message-row.outgoing .bubble {
+  background-color: var(--gv-dm-accent-container);
+  color: var(--gv-dm-text);
+  box-shadow: inset 0 0 0 1px var(--gv-dm-border-subtle);
 }
 
-html,
-body,
-input,
-button,
-label,
-header, /* header bar */
-.mat-drawer-container, /* side icons */
-.gvMessagingView-thread-list, /* List of calls */
-.gvMessagingView-conversationListWrap, /* list of messages */
-.gvThreadDetails-messageListHeader, /* header when viewing a message */
-.gvMessageListHeader-subtitle, /* subtitle in message header */
-.gvThreadDetails-root, /* message view */
-.gvVoicemailPlayer-content, /* visual voicemail view */
-.gvCallSidebar-root, /* calling sidebar */
-.gvSettingsView-settingsNavBar, /* settings sidebar */
-.gvSettingsView-sections, /* settings body */
-#contact-list, /* calling sidebar contacts */
-.button, /* calling sidebar */
-.caption, /* calling sidebar */
-.dialpad-button-container, /* calling sidebar */
-md-menu-content,
-gv-availability-view,
-.gvRecipientPicker-chipsWrap, /* selecting to: when sending new msg */
-.gb_te, /* search box dropdown */
-div.mat-mdc-select-panel, /* settings recharge notification amount */
-.gvBillingView-header, /* billing header */
-.full-panel, /* audio settings menu */
-.gb_se, /* top search results */
-.message-input, /* text input for sms */
-md-dialog /* add contact dialog */
-{
-  background-color: var(--dark-grey)!important;
-  border-color: var(--light-medium-grey)!important;
-  color: var(--light-grey)!important;
+/* Links in sent bubbles: pale aqua-blue (7.5:1 on the teal bubble), underlined,
+   so they stand out from the bubble text. Google's navy link colour wins
+   without !important. */
+html .gv-root gv-message-item .message-row.outgoing .bubble a {
+  color: var(--gv-dm-link-on-accent) !important;
+  text-decoration: underline;
 }
 
-.gvThreadItem-selected, /* messages list item */
-.container, /* calls list items and also message text container */
-.mat-mdc-menu-panel, /* context menus */
-.gvMessagingView-sidenav, /* sidenav when people list is expanded */
-.gvPeopleAndOptions-people /* sidenav when people list is expanded */
-{
-  background-color: var(--dark-grey)!important;
+html .gv-root gv-message-item .message-row.outgoing .bubble a:hover {
+  color: var(--gv-dm-link-on-accent-hover) !important;
+}
+/* Call icons: Google hard-codes light-theme blue and red, and the red
+   missed-call icon is too dark on the dark background. */
+html .gv-root mat-icon.gv-call {
+  color: var(--gv-dm-link);
 }
 
-.gvAddContactDialog-autoCompleteMenu > li /* add contact dialog */
-{
-  background-color: var(--medium-grey)!important;
-  color: var(--light-grey)!important;
+html .gv-root mat-icon.gv-call.missed {
+  color: var(--gv-dm-danger);
 }
 
-.gvAddContactDialog-autoCompleteMenu > li:hover
-{
-  background-color: var(--dark-medium-grey)!important;
+/* Availability menu ("Receiving calls"): Do Not Disturb status pill.
+   Grey when off, red when on, so DND is obvious at a glance. */
+.dnd-button[aria-pressed='false'] .dnd-status {
+  background-color: var(--gv-dm-bg-raised) !important;
+  color: var(--gv-dm-text-muted) !important;
+  border: 1px solid var(--gv-dm-border) !important;
+  border-radius: 4px !important;
+  padding: 2px 8px !important;
+  vertical-align: middle;
 }
 
-iframe,
-header form, /* Main search bar */
-header form input, /* Main search bar */
-header form button, /* Main search bar */
-.icon /* settings page icons */
-{
-  background-color: var(--medium-grey)!important;
+.dnd-button[aria-pressed='true'] .dnd-status,
+.dnd-reason {
+  background-color: var(--gv-dm-bg) !important;
+  color: var(--gv-dm-danger) !important;
+  border: 1px solid var(--gv-dm-danger) !important;
+  border-radius: 4px !important;
 }
 
-.mdc-list-item--activated,
-.container.active, /* calls list items and also message text container */
-.gvThreadItem-selected /* message list selected item */
-{
-  background-color: var(--dark-green)!important;
+.dnd-button[aria-pressed='true'] .dnd-status {
+  padding: 2px 8px !important;
+  vertical-align: middle;
+}
+/* Thread lists (calls, messages, voicemail).
+   Previews, transcriptions and timestamps are muted so names stand out.
+   Unread threads get a dark green bar on the left and bold, bright text;
+   Google marks read items with .read on the container. */
+html .gv-root gv-thread-list-item .subtitle,
+html .gv-root gv-thread-list-item .subtitle gv-annotation,
+html .gv-root gv-thread-list-item .timestamp {
+  color: var(--gv-dm-text-muted);
+  font-weight: 400;
 }
 
-.gvThreadItem-root:hover, /* messages list item */
-.gvThreadItem-root:focus, /* messages list item */
-.gvMessagingView-thread-list .container:hover /* calls list items */
-{
-  background-color: var(--dark-medium-grey)!important;
+html .gv-root gv-thread-list-item .container:not(.read) {
+  box-shadow: inset 4px 0 0 var(--gv-dm-accent-container);
 }
 
-.mat-divider {
-  border-color: var(--light-medium-grey)!important;
+html .gv-root gv-thread-list-item .container:not(.read) .title,
+html .gv-root gv-thread-list-item .container:not(.read) gv-annotation {
+  color: var(--gv-dm-text);
+  font-weight: 700;
 }
 
-.bubble /* message bubble */
-{
-  background-color: var(--dark-grey)!important;
-  color: var(--light-grey)!important;
-  border: 1px solid var(--light-medium-grey)!important;
+html .gv-root gv-thread-list-item .container.read:hover {
+  background-color: var(--gv-dm-bg-raised);
 }
 
-input,
-textarea,
-header span[role="heading"],
-.greeting, /* no message selected greeting */
-.mat-icon, /* general icon override */
-.navItemLabel, /* main nav labels */
-.mdc-list-item__primary-text, /* settings nav items */
-.mat-mdc-select, /* settings autorecharge text */
-.grey-900, /* various bolded items */
-.gvThreadItem-contacts, /* message list contact name */
-.phone-number-details, /* calling sidebar label */
-#contact-list ul li .info-container .name, /* calling sidebar contact list */
-.gvThreadItem-contacts, /* contact name in message list */
-.primary-text, /* call header name */
-.title, /* receiving calls button */
-.sectionTitle, /* settings title */
-.internalHeader, /* settings sub title */
-.header, /* settings sub title */
-.device-label, /* settings devices */
-.deviceLabel, /* settings devices */
-.details .name  /* settings greeting label */
-{
-  color: var(--near-white)!important;
+html .gv-root gv-thread-list-item .container:not(.read):hover {
+  background-color: var(--gv-dm-bg-high);
 }
 
-.status, /* various label text (message sender, timestamp etc) */
-.gvThreadItem-root, /* message list text */
-.container .thread-info,
-.call-as-label, /* calling sidebar label */
-#contact-list ul li .info-container .details,
-.latest-item-details, /* call timestamp */
-.secondary-text, /* call header subtext */
-.subheader, /* settings sub sub title */
-.internalSubheader, /* settings sub sub title */
-.device-details, /* settings device number */
-.deviceDetails, /* settings device number */
-.no-devices, /* settings devices */
-.notificationText,  /* settings web notifications */
-.gvPeopleAndOptions-phoneType /* sidenav when people list is expanded */
-.gmat-subhead-1, /* add contact dialog */
-.gvAddContactDialog-header /* add contact dialog */
-{
-  color: var(--near-medium-white)!important;
+/* Conversation: typed text in the compose box is full brightness, not muted. */
+html .gv-root gv-message-entry textarea {
+  color: var(--gv-dm-text);
 }
 
-div[aria-label^="Unread"] .thread-info, /* unread missed calls */
-div[aria-label^="Unread"] .latest-item-details, /* unread missed calls */
-.gvThreadItem-unread /* unread message */
-{
-  color: var(--basically-white)!important;
-  font-weight: 900!important
+/* Open voicemail: rounded card with a soft shadow, spaced apart. */
+html .gv-root gv-voicemail-content .cards {
+  gap: 12px;
 }
 
-.gvMessageItem-bubble /* spam incoming text */
-{
-  background-color: var(--dark-grey)!important;
-  color: var(--light-grey)!important;
-  border: 1px solid var(--light-medium-grey)!important;
+html .gv-root gv-voicemail-content .cards mat-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px 14px;
 }
 
-.bubble a, /* text message hyperlinks */
-.gvMessageItem-bubble a /* spam text message hyperlinks */
-{
-  background-color: var(--dark-grey)!important;
-  color: var(--near-white)!important;
+/* Dialpad: dark green on hover. */
+html .gv-root gv-dialpad button:hover {
+  background-color: var(--gv-dm-accent-container);
+}
+
+/* Menus, dropdowns and dialogs: a visible edge and a deeper shadow so they
+   separate from the page behind them. */
+.mat-mdc-menu-panel,
+.mat-mdc-select-panel,
+.mat-mdc-autocomplete-panel,
+.mat-mdc-dialog-surface {
+  border: 1px solid var(--gv-dm-border);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Slide toggles: dark green track with a bright handle when on, grey when
+   off. Both token families are set (--mdc-switch-* for older Angular
+   Material, --mat-slide-toggle-* for newer). The check and cross icons only
+   show on hover, and "off" shows a cross instead of a dash. */
+html .gv-root .mat-mdc-slide-toggle {
+  --mdc-switch-selected-track-color: var(--gv-dm-accent-container);
+  --mdc-switch-selected-hover-track-color: var(--gv-dm-accent-container);
+  --mdc-switch-selected-focus-track-color: var(--gv-dm-accent-container);
+  --mdc-switch-selected-pressed-track-color: var(--gv-dm-accent-container);
+  --mdc-switch-selected-handle-color: var(--gv-dm-text);
+  --mdc-switch-selected-hover-handle-color: var(--gv-dm-text);
+  --mdc-switch-selected-focus-handle-color: var(--gv-dm-text);
+  --mdc-switch-selected-pressed-handle-color: var(--gv-dm-text);
+  --mdc-switch-selected-icon-color: var(--gv-dm-bg);
+  --mdc-switch-unselected-track-color: var(--gv-dm-bg-high);
+  --mdc-switch-unselected-hover-track-color: var(--gv-dm-bg-high);
+  --mdc-switch-unselected-focus-track-color: var(--gv-dm-bg-high);
+  --mdc-switch-unselected-pressed-track-color: var(--gv-dm-bg-high);
+  --mdc-switch-unselected-handle-color: var(--gv-dm-border);
+  --mdc-switch-unselected-hover-handle-color: var(--gv-dm-border);
+  --mdc-switch-unselected-focus-handle-color: var(--gv-dm-border);
+  --mdc-switch-unselected-pressed-handle-color: var(--gv-dm-border);
+  --mdc-switch-unselected-icon-color: var(--gv-dm-border);
+  --mat-switch-track-outline-color: var(--gv-dm-border);
+  --mat-slide-toggle-selected-track-color: var(--gv-dm-accent-container);
+  --mat-slide-toggle-selected-hover-track-color: var(--gv-dm-accent-container);
+  --mat-slide-toggle-selected-focus-track-color: var(--gv-dm-accent-container);
+  --mat-slide-toggle-selected-pressed-track-color: var(
+    --gv-dm-accent-container
+  );
+  --mat-slide-toggle-selected-handle-color: var(--gv-dm-text);
+  --mat-slide-toggle-selected-hover-handle-color: var(--gv-dm-text);
+  --mat-slide-toggle-selected-focus-handle-color: var(--gv-dm-text);
+  --mat-slide-toggle-selected-pressed-handle-color: var(--gv-dm-text);
+  --mat-slide-toggle-selected-icon-color: var(--gv-dm-bg);
+  --mat-slide-toggle-unselected-track-color: var(--gv-dm-bg-high);
+  --mat-slide-toggle-unselected-hover-track-color: var(--gv-dm-bg-high);
+  --mat-slide-toggle-unselected-focus-track-color: var(--gv-dm-bg-high);
+  --mat-slide-toggle-unselected-pressed-track-color: var(--gv-dm-bg-high);
+  --mat-slide-toggle-unselected-handle-color: var(--gv-dm-border);
+  --mat-slide-toggle-unselected-hover-handle-color: var(--gv-dm-border);
+  --mat-slide-toggle-unselected-focus-handle-color: var(--gv-dm-border);
+  --mat-slide-toggle-unselected-pressed-handle-color: var(--gv-dm-border);
+  --mat-slide-toggle-unselected-icon-color: var(--gv-dm-border);
+  --mat-slide-toggle-track-outline-color: var(--gv-dm-border);
+}
+
+html .gv-root .mdc-switch .mdc-switch__icon {
+  display: none !important;
+}
+
+html .gv-root .mdc-switch.mdc-switch--unselected:hover .mdc-switch__icon--off,
+html .gv-root .mdc-switch.mdc-switch--selected:hover .mdc-switch__icon--on {
+  display: block !important;
+  width: 14px;
+  height: 14px;
+}
+
+html .gv-root .mdc-switch.mdc-switch--unselected .mdc-switch__icon--off path {
+  d: path(
+    'M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'
+  );
+}
+
+/* Header: Google's dark-grey header icons are nearly invisible on the dark
+   bar, and a soft shadow lifts the Voice logo. */
+header#gb svg {
+  fill: var(--gv-dm-text);
+}
+
+header#gb a[aria-label='Google Voice'] img {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+/* Header: hide the Upgrade promo button and the Google apps launcher (other
+   Google apps are out of place inside a Ferdium service). */
+gv-base-product-controls .upgrade-link,
+header#gb a[aria-label='Google apps'] {
+  display: none !important;
+}
+
+/* Help panel and account popup (experimental, easy to drop: delete this block).
+   Its content is a cross-origin page from www.google.com inside
+   #help_panel_main_frame, so recipe CSS can't style it and Google's
+   helpPanelTheme switch has no dark option. The account (profile)
+   popup (an iframe named 'account' that Google fills in itself) is the same. This inverts the whole frame and
+   rotates hues back, so white becomes dark grey and accent colours keep
+   their hue. Images and photos inside these panels are inverted too and can't be
+   corrected from here. */
+#help_panel_main_frame,
+iframe[name='account'] {
+  filter: invert(0.88) hue-rotate(180deg);
 }
