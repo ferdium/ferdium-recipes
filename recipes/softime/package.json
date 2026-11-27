@@ -1,0 +1,9 @@
+{
+  "id": "softime",
+  "name": "Softime",
+  "version": "1.0.0",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://softime.app/today"
+  }
+}
